@@ -8,17 +8,19 @@ Data sourced from [dr5hn/countries-states-cities-database](https://github.com/dr
 
 **Base URL:** `https://geo.harryy.me`
 
+**Interactive docs:** [`https://geo.harryy.me`](https://geo.harryy.me) — powered by [Scalar](https://scalar.com) with a full OpenAPI 3.1 spec at `/openapi.json`.
+
 All endpoints return JSON with aggressive cache headers (`Cache-Control: public, max-age=31536000, immutable`).
 
 ### Authentication
 
-All API endpoints (except the docs page at `/`) require an API key via the `Authorization` header:
+All API endpoints require an API key via the `Authorization` header:
 
 ```
 Authorization: Bearer YOUR_API_KEY
 ```
 
-To request an API key, email [contact@harryy.me](mailto:contact@harryy.me).
+**Get a free API key** at [`https://geo.harryy.me/register`](https://geo.harryy.me/register) — enter your name and email and the key will be sent to your inbox.
 
 ### Field Selection
 
@@ -28,15 +30,23 @@ Every endpoint supports an optional `?fields=` query parameter to return only sp
 GET /countries?fields=name,iso2,emoji
 ```
 
+Dot notation is supported for nested objects:
+
+```
+GET /location?fields=ip,country,countryInfo.name,countryInfo.emoji,cityInfo.population
+```
+
 When omitted, all fields are returned.
 
 ### Location
 
 | Endpoint | Description |
 | --- | --- |
-| `GET /location` | Get the caller's geo info (IP, city, country, coordinates, timezone, etc.) |
+| `GET /location` | Get the caller's geo info, enriched with full country/state/city details from KV |
 
-**Location fields:** `asn`, `asOrganization`, `city`, `colo`, `continent`, `country`, `ip`, `isEU`, `latitude`, `longitude`, `postalCode`, `region`, `regionCode`, `timezone`
+**Location fields:** `asn`, `asOrganization`, `city`, `cityInfo`, `colo`, `continent`, `country`, `countryInfo`, `ip`, `isEU`, `latitude`, `longitude`, `postalCode`, `region`, `regionCode`, `stateInfo`, `timezone`
+
+The `countryInfo`, `stateInfo`, and `cityInfo` fields contain the full objects (same shape as the corresponding `/countries`, `/states`, `/cities` endpoints) matched from KV based on the caller's IP. Use `?fields=` to pick only what you need, e.g. `?fields=ip,country,countryInfo`.
 
 ### Countries
 
@@ -90,6 +100,16 @@ curl -H "Authorization: Bearer YOUR_API_KEY" https://geo.harryy.me/countries/US/
 bun install
 bun dev        # start local dev server
 ```
+
+### Secrets
+
+The worker requires a `RESEND_API_KEY` secret for sending registration emails. Set it via:
+
+```bash
+wrangler secret put RESEND_API_KEY
+```
+
+For local dev, add it to `.dev.vars`.
 
 ## Data Pipeline
 

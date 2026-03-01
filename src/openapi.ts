@@ -3,7 +3,7 @@ const fieldsParameter = {
 	in: 'query' as const,
 	required: false,
 	description:
-		'Comma-separated list of fields to return. When omitted, all fields are returned.',
+		'Comma-separated list of fields to return. Supports dot notation for nested fields (e.g. `countryInfo.name,countryInfo.iso2`). When omitted, all fields are returned.',
 	schema: { type: 'string' as const },
 	example: 'name,iso2',
 }
@@ -124,9 +124,17 @@ const locationSchema = {
 		asn: { type: 'number' as const },
 		asOrganization: { type: 'string' as const },
 		city: { type: 'string' as const },
+		cityInfo: {
+			description: 'Full city details from KV (matched by city name)',
+			...citySchema,
+		},
 		colo: { type: 'string' as const },
 		continent: { type: 'string' as const },
 		country: { type: 'string' as const },
+		countryInfo: {
+			description: 'Full country details from KV (matched by country code)',
+			...countrySchema,
+		},
 		ip: { type: 'string' as const },
 		isEU: { type: 'boolean' as const },
 		latitude: { type: 'string' as const },
@@ -134,6 +142,10 @@ const locationSchema = {
 		postalCode: { type: 'string' as const },
 		region: { type: 'string' as const },
 		regionCode: { type: 'string' as const },
+		stateInfo: {
+			description: 'Full state details from KV (matched by region code)',
+			...stateSchema,
+		},
 		timezone: { type: 'string' as const },
 	},
 }
@@ -144,7 +156,7 @@ export const openApiSpec = {
 		title: 'Geo API',
 		version: '1.0.0',
 		description:
-			'Free country, state, city, and location data. Fast, cached, and filterable.',
+			'Free country, state, city, and location data. Fast, cached, and filterable.\n\n[![Get API Key](https://img.shields.io/badge/Get_API_Key-blue?style=for-the-badge)](/register)\n\nAll endpoints require a Bearer token. [Register here](/register) to get your free API key.',
 		contact: {
 			email: 'contact@harryy.me',
 		},
@@ -157,7 +169,7 @@ export const openApiSpec = {
 				tags: ['Location'],
 				summary: "Get caller's geo info",
 				description:
-					"Returns geographic information about the caller based on their IP address, using Cloudflare's edge network data.",
+					"Returns geographic information about the caller based on their IP address, using Cloudflare's edge network data. Also enriches the response with full country, state, and city details from KV when available (`countryInfo`, `stateInfo`, `cityInfo`).",
 				parameters: [fieldsParameter],
 				responses: {
 					'200': {
@@ -169,9 +181,29 @@ export const openApiSpec = {
 									asn: 13335,
 									asOrganization: 'Cloudflare, Inc.',
 									city: 'San Francisco',
+									cityInfo: {
+										countryCode: 'US',
+										countryName: 'United States',
+										latitude: '37.77493000',
+										longitude: '-122.41942000',
+										name: 'San Francisco',
+										population: 883305,
+										stateCode: 'CA',
+										stateName: 'California',
+										timezone: 'America/Los_Angeles',
+									},
 									colo: 'SFO',
 									continent: 'NA',
 									country: 'US',
+									countryInfo: {
+										capital: 'Washington',
+										currency: 'USD',
+										emoji: '\ud83c\uddfa\ud83c\uddf8',
+										iso2: 'US',
+										iso3: 'USA',
+										name: 'United States',
+										phoneCode: '1',
+									},
 									ip: '1.2.3.4',
 									isEU: false,
 									latitude: '37.7749',
@@ -179,6 +211,13 @@ export const openApiSpec = {
 									postalCode: '94102',
 									region: 'California',
 									regionCode: 'CA',
+									stateInfo: {
+										countryCode: 'US',
+										countryName: 'United States',
+										iso2: 'CA',
+										name: 'California',
+										timezone: 'America/Los_Angeles',
+									},
 									timezone: 'America/Los_Angeles',
 								},
 							},
@@ -382,59 +421,6 @@ export const openApiSpec = {
 						},
 					},
 					'404': errorResponse,
-				},
-			},
-		},
-		'/register': {
-			post: {
-				tags: ['Registration'],
-				summary: 'Register for an API key',
-				description:
-					'Submit your name and email to receive an API key. If the email already has a key, the existing key is resent.',
-				security: [],
-				requestBody: {
-					required: true,
-					content: {
-						'application/json': {
-							schema: {
-								type: 'object' as const,
-								properties: {
-									name: { type: 'string' as const },
-									email: {
-										type: 'string' as const,
-										format: 'email',
-									},
-								},
-								required: ['name', 'email'],
-							},
-							example: {
-								name: 'John Doe',
-								email: 'john@example.com',
-							},
-						},
-					},
-				},
-				responses: {
-					'200': {
-						description: 'API key sent to email',
-						content: {
-							'application/json': {
-								schema: {
-									type: 'object' as const,
-									properties: {
-										message: { type: 'string' as const },
-										success: { type: 'boolean' as const },
-									},
-								},
-								example: {
-									success: true,
-									message: 'API key sent to your email',
-								},
-							},
-						},
-					},
-					'400': errorResponse,
-					'500': errorResponse,
 				},
 			},
 		},

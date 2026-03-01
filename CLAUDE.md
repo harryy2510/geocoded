@@ -36,12 +36,12 @@ Geo API — a Cloudflare Worker serving country, state, city, and location data 
 - `GET /openapi.json` — OpenAPI 3.1 spec (no auth required)
 - `GET /register` — registration form page (no auth required)
 - `POST /register` — API key registration endpoint (no auth required)
-- `GET /location` — caller's geo info from Cloudflare `cf` properties
+- `GET /location` — caller's geo info from Cloudflare `cf` properties, enriched with full country/state/city details from KV (`countryInfo`, `stateInfo`, `cityInfo`)
 - `GET /countries` / `GET /countries/:id` — lookup by iso2, iso3, or name
 - `GET /countries/:country/states` / `…/states/:state`
 - `GET /countries/:country/states/:state/cities` / `…/cities/:city`
 
-All endpoints support an optional `?fields=` query parameter (comma-separated) to return only specific fields, e.g. `?fields=name,iso2`. When omitted, all fields are returned.
+All endpoints support an optional `?fields=` query parameter (comma-separated) to return only specific fields, e.g. `?fields=name,iso2`. Dot notation is supported for nested objects, e.g. `?fields=ip,countryInfo.name,countryInfo.iso2`. When omitted, all fields are returned.
 
 ## Code Conventions
 

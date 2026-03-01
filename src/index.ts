@@ -68,13 +68,32 @@ function pickFields<T extends Record<string, unknown>>(
 	if (!fields) return data
 	const keys = fields.split(',').map((f) => f.trim())
 	const pick = (obj: T): Partial<T> => {
-		const result: Partial<T> = {}
+		const result = {} as Record<string, unknown>
 		for (const key of keys) {
-			if (key in obj) {
-				result[key as keyof T] = obj[key as keyof T]
+			const dotIdx = key.indexOf('.')
+			if (dotIdx === -1) {
+				if (key in obj) {
+					result[key] = obj[key]
+				}
+			} else {
+				const top = key.slice(0, dotIdx)
+				const rest = key.slice(dotIdx + 1)
+				if (top in obj) {
+					const val = obj[top]
+					if (val && typeof val === 'object' && !Array.isArray(val)) {
+						const existing = (result[top] ?? {}) as Record<string, unknown>
+						const nested = pickFields(
+							val as Record<string, unknown>,
+							rest,
+						)
+						result[top] = { ...existing, ...nested }
+					} else {
+						result[top] = val
+					}
+				}
 			}
 		}
-		return result
+		return result as Partial<T>
 	}
 	return Array.isArray(data) ? data.map(pick) : pick(data)
 }
@@ -152,22 +171,48 @@ app.post('/register', async (c) => {
 
 // --- Location ---
 
-app.get('/location', (c) => {
+app.get('/location', async (c) => {
 	const cf = c.req.raw.cf as IncomingRequestCfProperties | undefined
+	const countryCode = cf?.country
+	const regionCode = cf?.regionCode
+	const cityName = cf?.city
+
+	const kv = c.env.GEO_KV
+	const [countries, states, cities] = await Promise.all([
+		countryCode ? kv.get<Country[]>('countries', 'json') : null,
+		countryCode && regionCode
+			? kv.get<State[]>(`states:${countryCode}`, 'json')
+			: null,
+		countryCode && regionCode
+			? kv.get<City[]>(`cities:${countryCode}:${regionCode}`, 'json')
+			: null,
+	])
+
+	const countryInfo = countries?.find((co) => co.iso2 === countryCode)
+	const stateInfo = states?.find((s) => s.iso2 === regionCode)
+	const cityInfo = cityName
+		? cities?.find(
+				(ci) => ci.name.toLowerCase() === cityName.toLowerCase(),
+			)
+		: undefined
+
 	const location: Location = {
 		asn: cf?.asn as number | undefined,
 		asOrganization: cf?.asOrganization,
 		city: cf?.city,
+		cityInfo,
 		colo: cf?.colo,
 		continent: cf?.continent,
-		country: cf?.country,
+		country: countryCode,
+		countryInfo,
 		ip: c.req.header('cf-connecting-ip') ?? '',
 		isEU: cf?.isEU === '1' ? true : cf?.isEU === '0' ? false : undefined,
 		latitude: cf?.latitude,
 		longitude: cf?.longitude,
 		postalCode: cf?.postalCode,
 		region: cf?.region,
-		regionCode: cf?.regionCode,
+		regionCode,
+		stateInfo,
 		timezone: cf?.timezone,
 	}
 	return json(c, pickFields(location, c.req.query('fields')))

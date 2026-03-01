@@ -58,9 +58,11 @@ export type Location = {
 	asn: number | undefined
 	asOrganization: string | undefined
 	city: string | undefined
+	cityInfo: City | undefined
 	colo: string | undefined
 	continent: string | undefined
 	country: string | undefined
+	countryInfo: Country | undefined
 	ip: string
 	isEU: boolean | undefined
 	latitude: string | undefined
@@ -68,6 +70,7 @@ export type Location = {
 	postalCode: string | undefined
 	region: string | undefined
 	regionCode: string | undefined
+	stateInfo: State | undefined
 	timezone: string | undefined
 }
 
