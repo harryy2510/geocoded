@@ -3,6 +3,8 @@ name: Seed KV
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
     paths:
       - 'scripts/seed.ts'
 
