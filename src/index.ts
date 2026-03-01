@@ -1,11 +1,15 @@
+import { apiReference } from '@scalar/hono-api-reference'
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
+import { Resend } from 'resend'
 
-import { docsHtml } from './docs'
+import { openApiSpec } from './openapi'
+import { registerHtml } from './register'
 import type { City, Country, Location, State } from './types'
 
 type Bindings = {
 	GEO_KV: KVNamespace
+	RESEND_API_KEY: string
 }
 
 const app = new Hono<{ Bindings: Bindings }>()
@@ -23,7 +27,7 @@ app.use('*', cors())
 // --- API Key Middleware ---
 
 app.use('*', async (c, next) => {
-	if (c.req.path === '/') return next()
+	if (c.req.path === '/' || c.req.path === '/register' || c.req.path === '/openapi.json') return next()
 
 	const referer = c.req.header('referer')
 	if (referer?.startsWith('https://geo.harryy.me')) return next()
@@ -64,10 +68,72 @@ function pickFields<T extends Record<string, unknown>>(
 	return Array.isArray(data) ? data.map(pick) : pick(data)
 }
 
-// --- Root ---
+// --- Docs (Scalar) ---
 
-app.get('/', (c) => {
-	return c.html(docsHtml)
+app.get('/openapi.json', (c) => {
+	return c.json(openApiSpec)
+})
+
+app.get(
+	'/',
+	apiReference({
+		url: '/openapi.json',
+		theme: 'saturn',
+	}),
+)
+
+// --- Registration ---
+
+app.get('/register', (c) => {
+	return c.html(registerHtml)
+})
+
+app.post('/register', async (c) => {
+	const body = await c.req.json<{ email?: string; name?: string }>()
+	const name = body.name?.trim()
+	const email = body.email?.trim().toLowerCase()
+
+	if (!name || !email) {
+		return c.json({ error: 'Name and email are required' }, 400)
+	}
+
+	const kv = c.env.GEO_KV
+	let apiKey = await kv.get(`email:${email}`)
+
+	if (!apiKey) {
+		apiKey = crypto.randomUUID()
+		await Promise.all([
+			kv.put(`apikey:${apiKey}`, JSON.stringify({ createdAt: new Date().toISOString(), email, name })),
+			kv.put(`email:${email}`, apiKey),
+		])
+	}
+
+	try {
+		const resend = new Resend(c.env.RESEND_API_KEY)
+		await resend.emails.send({
+			from: 'Geo API <geo@harryy.me>',
+			subject: 'Your Geo API Key',
+			to: email,
+			text: [
+				`Hi ${name},`,
+				'',
+				'Here is your Geo API key:',
+				'',
+				apiKey,
+				'',
+				'Include it in your requests as:',
+				`Authorization: Bearer ${apiKey}`,
+				'',
+				'Docs: https://geo.harryy.me',
+				'',
+				'— Geo API',
+			].join('\n'),
+		})
+	} catch {
+		return c.json({ error: 'Failed to send email. Please try again.' }, 500)
+	}
+
+	return c.json({ message: 'API key sent to your email', success: true })
 })
 
 // --- Location ---
@@ -82,7 +148,7 @@ app.get('/location', (c) => {
 		continent: cf?.continent,
 		country: cf?.country,
 		ip: c.req.header('cf-connecting-ip') ?? '',
-		isEU: cf?.isEUCountry === '1' ? true : cf?.isEUCountry === '0' ? false : undefined,
+		isEU: cf?.isEU === '1' ? true : cf?.isEU === '0' ? false : undefined,
 		latitude: cf?.latitude,
 		longitude: cf?.longitude,
 		postalCode: cf?.postalCode,

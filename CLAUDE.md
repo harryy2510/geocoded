@@ -22,14 +22,20 @@ Geo API — a Cloudflare Worker serving country, state, city, and location data 
 - `countries` — all countries array
 - `states:{COUNTRY_ISO2}` — states for a country
 - `cities:{COUNTRY_ISO2}:{STATE_ISO2}` — cities for a country+state
-- `apikey:{KEY}` — valid API keys
+- `apikey:{KEY}` — valid API keys (value: `{ name, email, createdAt }`)
+- `email:{EMAIL}` — maps email to API key (for dedup)
+
+**Secrets**: `RESEND_API_KEY` — Resend API key for sending registration emails (set via `wrangler secret put RESEND_API_KEY`)
 
 **Data pipeline**: `scripts/seed.ts` fetches from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database), maps all fields to camelCase (`src/types.ts`), and writes bulk JSON files. Pass `--upload` to also push to KV (uses `--binding GEO_KV` so the namespace ID is read from `wrangler.jsonc`). A GitHub Actions workflow (`.github/workflows/seed.yml`) runs `bun seed:upload` on pushes to `scripts/seed.ts`.
 
-**Authentication**: All API routes (except `GET /`) require an `Authorization: Bearer <key>` header. Keys are validated against `apikey:{key}` in KV. Requests with a `Referer` starting with `https://geo.harryy.me` are exempt (docs page "Try It" links).
+**Authentication**: All API routes (except `GET /`, `GET /register`, `GET /openapi.json`) require an `Authorization: Bearer <key>` header. Keys are validated against `apikey:{key}` in KV. Requests with a `Referer` starting with `https://geo.harryy.me` are exempt (docs page "Try It" links).
 
 **API routes** (all return JSON with aggressive cache headers):
-- `GET /` — interactive docs page (no auth required)
+- `GET /` — Scalar interactive API docs (no auth required)
+- `GET /openapi.json` — OpenAPI 3.1 spec (no auth required)
+- `GET /register` — registration form page (no auth required)
+- `POST /register` — API key registration endpoint (no auth required)
 - `GET /location` — caller's geo info from Cloudflare `cf` properties
 - `GET /countries` / `GET /countries/:id` — lookup by iso2, iso3, or name
 - `GET /countries/:country/states` / `…/states/:state`
