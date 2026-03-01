@@ -215,7 +215,9 @@ app.get('/location', async (c) => {
 		stateInfo,
 		timezone: cf?.timezone,
 	}
-	return json(c, pickFields(location, c.req.query('fields')))
+	return c.json(pickFields(location, c.req.query('fields')), 200, {
+		'Cache-Control': 'private, no-store',
+	})
 })
 
 // --- Countries ---
