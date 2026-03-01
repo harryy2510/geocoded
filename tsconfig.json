@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"skipLibCheck": true,
+		"lib": ["ESNext"],
+		"types": ["node", "bun"],
+		"jsx": "react-jsx",
+		"jsxImportSource": "hono/jsx",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true
+	},
+	"include": ["src/**/*.ts", "scripts/**/*.ts", "worker-configuration.d.ts"]
+}

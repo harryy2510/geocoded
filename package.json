@@ -1,0 +1,21 @@
+{
+	"name": "geo",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy",
+		"seed": "bun scripts/seed.ts",
+		"seed:upload": "bun scripts/seed.ts --upload",
+		"types": "wrangler types"
+	},
+	"dependencies": {
+		"hono": "^4.12.3"
+	},
+	"devDependencies": {
+		"@types/bun": "^1.3.9",
+		"@types/node": "^25.3.3",
+		"typescript": "^5.9.3",
+		"wrangler": "^4.69.0"
+	}
+}

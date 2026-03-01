@@ -1,0 +1,13 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"account_id": "6d4f1d5f2a1db6a22131641a4b57ef22",
+	"name": "geo",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-03-01",
+	"kv_namespaces": [
+		{
+			"binding": "GEO_KV",
+			"id": "e9d034108990412ba036f9e9d56e79a3"
+		}
+	]
+}
