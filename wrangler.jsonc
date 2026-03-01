@@ -1,7 +1,7 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"account_id": "6d4f1d5f2a1db6a22131641a4b57ef22",
-	"name": "geo",
+	"name": "geo-api",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-03-01",
 	"kv_namespaces": [
