@@ -5,3 +5,4 @@ data/*.json
 .dev.vars
 .idea
 .vscode
+.env*

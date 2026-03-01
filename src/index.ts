@@ -1,4 +1,4 @@
-import { apiReference } from '@scalar/hono-api-reference'
+import { Scalar } from '@scalar/hono-api-reference'
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { Resend } from 'resend'
@@ -7,18 +7,23 @@ import { openApiSpec } from './openapi'
 import { registerHtml } from './register'
 import type { City, Country, Location, State } from './types'
 
-type Bindings = {
-	GEO_KV: KVNamespace
-	RESEND_API_KEY: string
-}
-
-const app = new Hono<{ Bindings: Bindings }>()
+const app = new Hono<{ Bindings: Env }>()
 
 const CACHE_HEADERS = {
 	'Cache-Control': 'public, max-age=31536000, s-maxage=31536000, immutable',
 } as const
 
-function json<T>(c: { json: (data: T, status?: number, headers?: Record<string, string>) => Response }, data: T, status = 200) {
+function json<T>(
+	c: {
+		json: (
+			data: T,
+			status?: number,
+			headers?: Record<string, string>,
+		) => Response
+	},
+	data: T,
+	status = 200,
+) {
 	return c.json(data, status, CACHE_HEADERS)
 }
 
@@ -27,7 +32,12 @@ app.use('*', cors())
 // --- API Key Middleware ---
 
 app.use('*', async (c, next) => {
-	if (c.req.path === '/' || c.req.path === '/register' || c.req.path === '/openapi.json') return next()
+	if (
+		c.req.path === '/' ||
+		c.req.path === '/register' ||
+		c.req.path === '/openapi.json'
+	)
+		return next()
 
 	const referer = c.req.header('referer')
 	if (referer?.startsWith('https://geo.harryy.me')) return next()
@@ -37,7 +47,8 @@ app.use('*', async (c, next) => {
 	if (!token) return c.json({ error: 'Invalid or missing API key' }, 401)
 
 	const valid = await c.env.GEO_KV.get(`apikey:${token}`)
-	if (valid === null) return c.json({ error: 'Invalid or missing API key' }, 401)
+	if (valid === null)
+		return c.json({ error: 'Invalid or missing API key' }, 401)
 
 	return next()
 })
@@ -76,7 +87,7 @@ app.get('/openapi.json', (c) => {
 
 app.get(
 	'/',
-	apiReference({
+	Scalar({
 		url: '/openapi.json',
 		theme: 'saturn',
 	}),
@@ -103,7 +114,10 @@ app.post('/register', async (c) => {
 	if (!apiKey) {
 		apiKey = crypto.randomUUID()
 		await Promise.all([
-			kv.put(`apikey:${apiKey}`, JSON.stringify({ createdAt: new Date().toISOString(), email, name })),
+			kv.put(
+				`apikey:${apiKey}`,
+				JSON.stringify({ createdAt: new Date().toISOString(), email, name }),
+			),
 			kv.put(`email:${email}`, apiKey),
 		])
 	}
@@ -176,9 +190,7 @@ app.get('/countries/:id', async (c) => {
 	const lower = id.toLowerCase()
 	const country = countries.find(
 		(co) =>
-			co.iso2 === upper ||
-			co.iso3 === upper ||
-			co.name.toLowerCase() === lower,
+			co.iso2 === upper || co.iso3 === upper || co.name.toLowerCase() === lower,
 	)
 
 	if (!country) return c.json({ error: 'Country not found' }, 404)
