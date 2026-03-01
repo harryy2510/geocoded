@@ -271,7 +271,7 @@ async function main() {
 		for (const file of files) {
 			const path = join(DATA_DIR, file)
 			console.log(`  Uploading ${file}...`)
-			await $`bunx wrangler kv bulk put ${path} --binding GEO_KV`
+			await $`bunx wrangler kv bulk put ${path} --binding GEO_KV --remote`
 		}
 		console.log(`\nUpload complete!`)
 	} else {
