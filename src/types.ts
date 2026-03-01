@@ -54,6 +54,23 @@ export type State = {
 	wikiDataId: string
 }
 
+export type Location = {
+	asn: number | undefined
+	asOrganization: string | undefined
+	city: string | undefined
+	colo: string | undefined
+	continent: string | undefined
+	country: string | undefined
+	ip: string
+	isEU: boolean | undefined
+	latitude: string | undefined
+	longitude: string | undefined
+	postalCode: string | undefined
+	region: string | undefined
+	regionCode: string | undefined
+	timezone: string | undefined
+}
+
 export type City = {
 	countryCode: string
 	countryName: string

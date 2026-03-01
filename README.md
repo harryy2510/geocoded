@@ -1,6 +1,6 @@
 # Geo API
 
-A Cloudflare Worker serving country, state, and city data from KV storage. Built with [Hono](https://hono.dev) and deployed via [Wrangler](https://developers.cloudflare.com/workers/wrangler/).
+A Cloudflare Worker serving country, state, city, and location data from KV storage. Built with [Hono](https://hono.dev) and deployed via [Wrangler](https://developers.cloudflare.com/workers/wrangler/).
 
 Data sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database).
 
@@ -9,6 +9,16 @@ Data sourced from [dr5hn/countries-states-cities-database](https://github.com/dr
 **Base URL:** `https://geo.harryy.me`
 
 All endpoints return JSON with aggressive cache headers (`Cache-Control: public, max-age=31536000, immutable`).
+
+### Authentication
+
+All API endpoints (except the docs page at `/`) require an API key via the `Authorization` header:
+
+```
+Authorization: Bearer YOUR_API_KEY
+```
+
+To request an API key, email [contact@harryy.me](mailto:contact@harryy.me).
 
 ### Field Selection
 
@@ -19,6 +29,14 @@ GET /countries?fields=name,iso2,emoji
 ```
 
 When omitted, all fields are returned.
+
+### Location
+
+| Endpoint | Description |
+| --- | --- |
+| `GET /location` | Get the caller's geo info (IP, city, country, coordinates, timezone, etc.) |
+
+**Location fields:** `asn`, `asOrganization`, `city`, `colo`, `continent`, `country`, `ip`, `isEU`, `latitude`, `longitude`, `postalCode`, `region`, `regionCode`, `timezone`
 
 ### Countries
 
@@ -50,20 +68,20 @@ When omitted, all fields are returned.
 ### Examples
 
 ```bash
+# Your location info
+curl -H "Authorization: Bearer YOUR_API_KEY" https://geo.harryy.me/location
+
 # All countries, slim response
-curl https://geo.harryy.me/countries?fields=name,iso2,emoji
+curl -H "Authorization: Bearer YOUR_API_KEY" https://geo.harryy.me/countries?fields=name,iso2,emoji
 
 # Single country, full response
-curl https://geo.harryy.me/countries/US
-
-# Single country, just the name
-curl https://geo.harryy.me/countries/US?fields=name
+curl -H "Authorization: Bearer YOUR_API_KEY" https://geo.harryy.me/countries/US
 
 # States for a country
-curl https://geo.harryy.me/countries/US/states?fields=name,iso2
+curl -H "Authorization: Bearer YOUR_API_KEY" https://geo.harryy.me/countries/US/states?fields=name,iso2
 
 # Cities for a state
-curl https://geo.harryy.me/countries/US/states/CA/cities?fields=name,population
+curl -H "Authorization: Bearer YOUR_API_KEY" https://geo.harryy.me/countries/US/states/CA/cities?fields=name,population
 ```
 
 ## Development

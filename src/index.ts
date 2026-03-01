@@ -2,7 +2,7 @@ import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 
 import { docsHtml } from './docs'
-import type { City, Country, State } from './types'
+import type { City, Country, Location, State } from './types'
 
 type Bindings = {
 	GEO_KV: KVNamespace
@@ -19,6 +19,24 @@ function json<T>(c: { json: (data: T, status?: number, headers?: Record<string, 
 }
 
 app.use('*', cors())
+
+// --- API Key Middleware ---
+
+app.use('*', async (c, next) => {
+	if (c.req.path === '/') return next()
+
+	const referer = c.req.header('referer')
+	if (referer?.startsWith('https://geo.harryy.me')) return next()
+
+	const auth = c.req.header('authorization')
+	const token = auth?.startsWith('Bearer ') ? auth.slice(7) : undefined
+	if (!token) return c.json({ error: 'Invalid or missing API key' }, 401)
+
+	const valid = await c.env.GEO_KV.get(`apikey:${token}`)
+	if (valid === null) return c.json({ error: 'Invalid or missing API key' }, 401)
+
+	return next()
+})
 
 function pickFields<T extends Record<string, unknown>>(
 	data: T[],
@@ -50,6 +68,29 @@ function pickFields<T extends Record<string, unknown>>(
 
 app.get('/', (c) => {
 	return c.html(docsHtml)
+})
+
+// --- Location ---
+
+app.get('/location', (c) => {
+	const cf = c.req.raw.cf as IncomingRequestCfProperties | undefined
+	const location: Location = {
+		asn: cf?.asn as number | undefined,
+		asOrganization: cf?.asOrganization,
+		city: cf?.city,
+		colo: cf?.colo,
+		continent: cf?.continent,
+		country: cf?.country,
+		ip: c.req.header('cf-connecting-ip') ?? '',
+		isEU: cf?.isEUCountry === '1' ? true : cf?.isEUCountry === '0' ? false : undefined,
+		latitude: cf?.latitude,
+		longitude: cf?.longitude,
+		postalCode: cf?.postalCode,
+		region: cf?.region,
+		regionCode: cf?.regionCode,
+		timezone: cf?.timezone,
+	}
+	return json(c, pickFields(location, c.req.query('fields')))
 })
 
 // --- Countries ---

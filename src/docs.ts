@@ -76,8 +76,21 @@ export const docsHtml = `<!DOCTYPE html>
 <div class="container">
 	<div class="hero">
 		<h1>Geo API</h1>
-		<p>Free country, state, and city data. Fast, cached, and filterable.</p>
+		<p>Free country, state, city, and location data. Fast, cached, and filterable.</p>
 		<div class="base-url">${BASE}</div>
+	</div>
+
+	<!-- Authentication -->
+	<div class="section">
+		<h2><span class="icon">&#128274;</span> Authentication</h2>
+		<p>All API endpoints require an API key passed via the <code style="font-family:var(--font-mono);background:var(--surface);padding:2px 6px;border-radius:3px">Authorization</code> header using the Bearer scheme.</p>
+		<div class="example">
+			<pre><span class="comment"># include your API key in every request</span>
+curl -H <span class="str">"Authorization: Bearer YOUR_API_KEY"</span> <span class="url">${BASE}/countries</span></pre>
+		</div>
+		<div class="tip">
+			<strong style="color:var(--text)">Need an API key?</strong> Send a request to <a href="mailto:contact@harryy.me">contact@harryy.me</a> to get one.
+		</div>
 	</div>
 
 	<!-- Field Selection -->
@@ -89,6 +102,44 @@ export const docsHtml = `<!DOCTYPE html>
 <span class="url">${BASE}/countries</span><span class="qs">?fields=name,iso2,emoji</span></pre>
 		</div>
 		<div class="tip">When <code>fields</code> is omitted, all fields are returned. Unknown field names are silently ignored.</div>
+	</div>
+
+	<!-- Location -->
+	<div class="section">
+		<h2><span class="icon">&#128205;</span> Location</h2>
+
+		<div class="endpoint-group">
+			<div class="endpoint-header" onclick="this.parentElement.classList.toggle('open')">
+				<span class="method">GET</span>
+				<span class="path">/location</span>
+				<span class="desc">Get caller's geo info</span>
+				<span class="chevron">&#9654;</span>
+			</div>
+			<div class="endpoint-body">
+				<h4>Fields</h4>
+				<div class="fields">
+					<span class="field">asn</span><span class="field">asOrganization</span><span class="field">city</span><span class="field">colo</span><span class="field">continent</span><span class="field">country</span><span class="field">ip</span><span class="field">isEU</span><span class="field">latitude</span><span class="field">longitude</span><span class="field">postalCode</span><span class="field">region</span><span class="field">regionCode</span><span class="field">timezone</span>
+				</div>
+				<p style="color:var(--muted);font-size:0.9rem;margin-top:12px;margin-bottom:12px">Returns geographic information about the caller based on their IP address, using Cloudflare's edge network data.</p>
+
+				<h4>Examples</h4>
+				<div class="example">
+					<pre><span class="comment"># get your full location info</span>
+curl <span class="url">${BASE}/location</span></pre>
+					<a class="try-link" href="${BASE}/location" target="_blank">Try it</a>
+				</div>
+				<div class="example">
+					<pre><span class="comment"># just your IP and country</span>
+curl <span class="url">${BASE}/location</span><span class="qs">?fields=ip,country,city</span></pre>
+					<a class="try-link" href="${BASE}/location?fields=ip,country,city" target="_blank">Try it</a>
+				</div>
+				<div class="example">
+					<pre><span class="comment"># coordinates and timezone</span>
+curl <span class="url">${BASE}/location</span><span class="qs">?fields=latitude,longitude,timezone</span></pre>
+					<a class="try-link" href="${BASE}/location?fields=latitude,longitude,timezone" target="_blank">Try it</a>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Countries -->
@@ -326,7 +377,7 @@ curl <span class="url">${BASE}/countries/DE/states/BE/cities/berlin</span></pre>
 	<div class="section">
 		<h2><span class="icon">&#128161;</span> Tips</h2>
 		<div class="tip" style="margin-top:0">
-			<strong style="color:var(--text)">Responses are cached for 1 year.</strong> Data changes infrequently, so aggressive caching is safe. No API key needed.
+			<strong style="color:var(--text)">Responses are cached for 1 year.</strong> Data changes infrequently, so aggressive caching is safe.
 		</div>
 		<div class="tip">
 			<strong style="color:var(--text)">Use <code>fields</code> to keep payloads small.</strong> A full country list is ~250 KB. With <code>?fields=name,iso2</code> it drops to ~8 KB.
