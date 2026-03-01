@@ -6,6 +6,8 @@ Data sourced from [dr5hn/countries-states-cities-database](https://github.com/dr
 
 ## API
 
+**Base URL:** `https://geo.harryy.me`
+
 All endpoints return JSON with aggressive cache headers (`Cache-Control: public, max-age=31536000, immutable`).
 
 ### Field Selection
@@ -49,19 +51,19 @@ When omitted, all fields are returned.
 
 ```bash
 # All countries, slim response
-curl https://geo.example.com/countries?fields=name,iso2,emoji
+curl https://geo.harryy.me/countries?fields=name,iso2,emoji
 
 # Single country, full response
-curl https://geo.example.com/countries/US
+curl https://geo.harryy.me/countries/US
 
 # Single country, just the name
-curl https://geo.example.com/countries/US?fields=name
+curl https://geo.harryy.me/countries/US?fields=name
 
 # States for a country
-curl https://geo.example.com/countries/US/states?fields=name,iso2
+curl https://geo.harryy.me/countries/US/states?fields=name,iso2
 
 # Cities for a state
-curl https://geo.example.com/countries/US/states/CA/cities?fields=name,population
+curl https://geo.harryy.me/countries/US/states/CA/cities?fields=name,population
 ```
 
 ## Development

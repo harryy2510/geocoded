@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 
+import { docsHtml } from './docs'
 import type { City, Country, State } from './types'
 
 type Bindings = {
@@ -48,26 +49,7 @@ function pickFields<T extends Record<string, unknown>>(
 // --- Root ---
 
 app.get('/', (c) => {
-	return c.json({
-		name: 'Geo API',
-		description: 'Country, state, and city data',
-		endpoints: {
-			countries: '/countries',
-			country: '/countries/:id',
-			states: '/countries/:country/states',
-			state: '/countries/:country/states/:state',
-			cities: '/countries/:country/states/:state/cities',
-			city: '/countries/:country/states/:state/cities/:city',
-		},
-		fieldSelection: 'Add ?fields=name,iso2 to any endpoint to return only specific fields.',
-		examples: [
-			'/countries?fields=name,iso2,emoji',
-			'/countries/US',
-			'/countries/US?fields=name',
-			'/countries/US/states?fields=name,iso2',
-			'/countries/US/states/CA/cities?fields=name,population',
-		],
-	})
+	return c.html(docsHtml)
 })
 
 // --- Countries ---
