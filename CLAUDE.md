@@ -19,6 +19,7 @@ Geo API — a Cloudflare Worker serving country, state, city, and location data 
 
 **Runtime**: Cloudflare Worker with Hono router (`src/index.ts`)
 **Storage**: Cloudflare KV (`GEO_KV` binding) with these key patterns:
+
 - `countries` — all countries array
 - `states:{COUNTRY_ISO2}` — states for a country
 - `cities:{COUNTRY_ISO2}:{STATE_ISO2}` — cities for a country+state
@@ -29,9 +30,10 @@ Geo API — a Cloudflare Worker serving country, state, city, and location data 
 
 **Data pipeline**: `scripts/seed.ts` fetches from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database), maps all fields to camelCase (`src/types.ts`), and writes bulk JSON files. Pass `--upload` to also push to KV (uses `--binding GEO_KV` so the namespace ID is read from `wrangler.jsonc`). A GitHub Actions workflow (`.github/workflows/seed.yml`) runs `bun seed:upload` on pushes to `scripts/seed.ts`.
 
-**Authentication**: All API routes (except `GET /`, `GET /register`, `GET /openapi.json`) require an `Authorization: Bearer <key>` header. Keys are validated against `apikey:{key}` in KV. Requests with a `Referer` starting with `https://geo.harryy.me` are exempt (docs page "Try It" links).
+**Authentication**: All API routes (except `GET /`, `GET /register`, `GET /openapi.json`) require an `Authorization: Bearer <key>` header. Keys are validated against `apikey:{key}` in KV. Requests with a `Referer` starting with `https://geocode.me` are exempt (docs page "Try It" links).
 
 **API routes** (all return JSON with aggressive cache headers):
+
 - `GET /` — Scalar interactive API docs (no auth required)
 - `GET /openapi.json` — OpenAPI 3.1 spec (no auth required)
 - `GET /register` — registration form page (no auth required)

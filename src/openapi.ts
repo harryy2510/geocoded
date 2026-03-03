@@ -161,7 +161,7 @@ export const openApiSpec = {
 			email: 'contact@harryy.me',
 		},
 	},
-	servers: [{ url: 'https://geo.harryy.me' }],
+	servers: [{ url: 'https://geocode.me' }],
 	security: [{ bearerAuth: [] }],
 	paths: {
 		'/location': {
@@ -310,8 +310,7 @@ export const openApiSpec = {
 			get: {
 				tags: ['States'],
 				summary: 'Get one state',
-				description:
-					'Lookup by ISO 2 code or state name (case-insensitive).',
+				description: 'Lookup by ISO 2 code or state name (case-insensitive).',
 				parameters: [
 					{
 						name: 'country',

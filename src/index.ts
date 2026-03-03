@@ -40,7 +40,7 @@ app.use('*', async (c, next) => {
 		return next()
 
 	const referer = c.req.header('referer')
-	if (referer?.startsWith('https://geo.harryy.me')) return next()
+	if (referer?.startsWith('https://geocode.me')) return next()
 
 	const auth = c.req.header('authorization')
 	const token = auth?.startsWith('Bearer ') ? auth.slice(7) : undefined
@@ -82,10 +82,7 @@ function pickFields<T extends Record<string, unknown>>(
 					const val = obj[top]
 					if (val && typeof val === 'object' && !Array.isArray(val)) {
 						const existing = (result[top] ?? {}) as Record<string, unknown>
-						const nested = pickFields(
-							val as Record<string, unknown>,
-							rest,
-						)
+						const nested = pickFields(val as Record<string, unknown>, rest)
 						result[top] = { ...existing, ...nested }
 					} else {
 						result[top] = val
@@ -157,7 +154,7 @@ app.post('/register', async (c) => {
 				'Include it in your requests as:',
 				`Authorization: Bearer ${apiKey}`,
 				'',
-				'Docs: https://geo.harryy.me',
+				'Docs: https://geocode.me',
 				'',
 				'— Geo API',
 			].join('\n'),
@@ -191,9 +188,7 @@ app.get('/location', async (c) => {
 	const countryInfo = countries?.find((co) => co.iso2 === countryCode)
 	const stateInfo = states?.find((s) => s.iso2 === regionCode)
 	const cityInfo = cityName
-		? cities?.find(
-				(ci) => ci.name.toLowerCase() === cityName.toLowerCase(),
-			)
+		? cities?.find((ci) => ci.name.toLowerCase() === cityName.toLowerCase())
 		: undefined
 
 	const location: Location = {
