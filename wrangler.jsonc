@@ -10,6 +10,13 @@
 	"placement": {
 		"mode": "smart"
 	},
+	"rules": [
+		{
+			"type": "Data",
+			"globs": ["**/*.png"],
+			"fallthrough": false
+		}
+	],
 	"kv_namespaces": [
 		{
 			"binding": "GEO_KV",

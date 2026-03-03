@@ -3,7 +3,22 @@ export const registerHtml = `<!DOCTYPE html>
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Register — Geo API</title>
+<title>Get API Key — Geocoded</title>
+<meta name="description" content="Register for a free Geocoded API key to access country, state, city, and IP geolocation data." />
+<meta name="theme-color" content="#0a0a0b" />
+<link rel="canonical" href="https://geocoded.me/register" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://geocoded.me/register" />
+<meta property="og:title" content="Get API Key — Geocoded" />
+<meta property="og:description" content="Register for a free Geocoded API key to access country, state, city, and IP geolocation data." />
+<meta property="og:site_name" content="Geocoded" />
+<meta property="og:image" content="https://geocoded.me/logo.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Get API Key — Geocoded" />
+<meta name="twitter:description" content="Register for a free Geocoded API key to access country, state, city, and IP geolocation data." />
+<meta name="twitter:image" content="https://geocoded.me/logo.png" />
+<link rel="icon" type="image/png" href="/logo.png" />
+<link rel="apple-touch-icon" href="/logo.png" />
 <style>
 	*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 	:root{

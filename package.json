@@ -10,7 +10,6 @@
 		"types": "wrangler types"
 	},
 	"dependencies": {
-		"@scalar/hono-api-reference": "^0.9.46",
 		"hono": "^4.12.3",
 		"resend": "^6.9.3"
 	},

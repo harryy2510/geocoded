@@ -153,12 +153,16 @@ const locationSchema = {
 export const openApiSpec = {
 	openapi: '3.1.0',
 	info: {
-		title: 'Geo API',
+		title: 'Geocoded',
 		version: '1.0.0',
 		description:
 			'Free country, state, city, and location data. Fast, cached, and filterable.\n\n[![Get API Key](https://img.shields.io/badge/Get_API_Key-blue?style=for-the-badge)](/register)\n\nAll endpoints require a Bearer token. [Register here](/register) to get your free API key.',
 		contact: {
 			email: 'contact@harryy.me',
+		},
+		'x-logo': {
+			url: '/logo.png',
+			altText: 'Geocoded',
 		},
 	},
 	servers: [{ url: 'https://geocoded.me' }],

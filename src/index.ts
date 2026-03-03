@@ -1,8 +1,9 @@
-import { Scalar } from '@scalar/hono-api-reference'
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { Resend } from 'resend'
 
+import { docsHtml } from './docs'
+import logo from './logo.png'
 import { openApiSpec } from './openapi'
 import { registerHtml } from './register'
 import type { City, Country, Location, State } from './types'
@@ -34,6 +35,7 @@ app.use('*', cors())
 app.use('*', async (c, next) => {
 	if (
 		c.req.path === '/' ||
+		c.req.path === '/logo.png' ||
 		c.req.path === '/register' ||
 		c.req.path === '/openapi.json'
 	)
@@ -95,19 +97,24 @@ function pickFields<T extends Record<string, unknown>>(
 	return Array.isArray(data) ? data.map(pick) : pick(data)
 }
 
+// --- Static Assets ---
+
+app.get('/logo.png', (c) => {
+	return c.body(logo, 200, {
+		...CACHE_HEADERS,
+		'Content-Type': 'image/png',
+	})
+})
+
 // --- Docs (Scalar) ---
 
 app.get('/openapi.json', (c) => {
 	return c.json(openApiSpec)
 })
 
-app.get(
-	'/',
-	Scalar({
-		url: '/openapi.json',
-		theme: 'saturn',
-	}),
-)
+app.get('/', (c) => {
+	return c.html(docsHtml)
+})
 
 // --- Registration ---
 
