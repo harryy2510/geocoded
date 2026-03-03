@@ -6,9 +6,9 @@ Data sourced from [dr5hn/countries-states-cities-database](https://github.com/dr
 
 ## API
 
-**Base URL:** `https://geocode.me`
+**Base URL:** `https://geocoded.me`
 
-**Interactive docs:** [`https://geocode.me`](https://geocode.me) — powered by [Scalar](https://scalar.com) with a full OpenAPI 3.1 spec at `/openapi.json`.
+**Interactive docs:** [`https://geocoded.me`](https://geocoded.me) — powered by [Scalar](https://scalar.com) with a full OpenAPI 3.1 spec at `/openapi.json`.
 
 All endpoints return JSON with aggressive cache headers (`Cache-Control: public, max-age=31536000, immutable`).
 
@@ -20,7 +20,7 @@ All API endpoints require an API key via the `Authorization` header:
 Authorization: Bearer YOUR_API_KEY
 ```
 
-**Get a free API key** at [`https://geocode.me/register`](https://geocode.me/register) — enter your name and email and the key will be sent to your inbox.
+**Get a free API key** at [`https://geocoded.me/register`](https://geocoded.me/register) — enter your name and email and the key will be sent to your inbox.
 
 ### Field Selection
 
@@ -79,19 +79,19 @@ The `countryInfo`, `stateInfo`, and `cityInfo` fields contain the full objects (
 
 ```bash
 # Your location info
-curl -H "Authorization: Bearer YOUR_API_KEY" https://geocode.me/location
+curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/location
 
 # All countries, slim response
-curl -H "Authorization: Bearer YOUR_API_KEY" https://geocode.me/countries?fields=name,iso2,emoji
+curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/countries?fields=name,iso2,emoji
 
 # Single country, full response
-curl -H "Authorization: Bearer YOUR_API_KEY" https://geocode.me/countries/US
+curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/countries/US
 
 # States for a country
-curl -H "Authorization: Bearer YOUR_API_KEY" https://geocode.me/countries/US/states?fields=name,iso2
+curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/countries/US/states?fields=name,iso2
 
 # Cities for a state
-curl -H "Authorization: Bearer YOUR_API_KEY" https://geocode.me/countries/US/states/CA/cities?fields=name,population
+curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/countries/US/states/CA/cities?fields=name,population
 ```
 
 ## Development

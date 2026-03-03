@@ -21,7 +21,7 @@
 	"routes": [
 		{
 			"custom_domain": true,
-			"pattern": "geocode.me"
+			"pattern": "geocoded.me"
 		}
 	]
 }

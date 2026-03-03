@@ -40,7 +40,7 @@ app.use('*', async (c, next) => {
 		return next()
 
 	const referer = c.req.header('referer')
-	if (referer?.startsWith('https://geocode.me')) return next()
+	if (referer?.startsWith('https://geocoded.me')) return next()
 
 	const auth = c.req.header('authorization')
 	const token = auth?.startsWith('Bearer ') ? auth.slice(7) : undefined
@@ -154,7 +154,7 @@ app.post('/register', async (c) => {
 				'Include it in your requests as:',
 				`Authorization: Bearer ${apiKey}`,
 				'',
-				'Docs: https://geocode.me',
+				'Docs: https://geocoded.me',
 				'',
 				'— Geo API',
 			].join('\n'),

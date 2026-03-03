@@ -161,7 +161,7 @@ export const openApiSpec = {
 			email: 'contact@harryy.me',
 		},
 	},
-	servers: [{ url: 'https://geocode.me' }],
+	servers: [{ url: 'https://geocoded.me' }],
 	security: [{ bearerAuth: [] }],
 	paths: {
 		'/location': {
