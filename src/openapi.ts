@@ -156,7 +156,7 @@ export const openApiSpec = {
 		title: 'Geocoded',
 		version: '1.0.0',
 		description:
-			'Free country, state, city, and location data. Fast, cached, and filterable.\n\n[![Get API Key](https://img.shields.io/badge/Get_API_Key-blue?style=for-the-badge)](/register)\n\nAll endpoints require a Bearer token. [Register here](/register) to get your free API key.',
+			'Free country, state, city, and location data. Fast, cached, and filterable.',
 		contact: {
 			email: 'contact@harryy.me',
 		},
@@ -165,10 +165,9 @@ export const openApiSpec = {
 			altText: 'Geocoded',
 		},
 	},
-	servers: [{ url: 'https://geocoded.me' }],
-	security: [{ bearerAuth: [] }],
+	servers: [{ url: 'https://api.geocoded.me' }],
 	paths: {
-		'/location': {
+		'/': {
 			get: {
 				tags: ['Location'],
 				summary: "Get caller's geo info",
@@ -425,15 +424,6 @@ export const openApiSpec = {
 					},
 					'404': errorResponse,
 				},
-			},
-		},
-	},
-	components: {
-		securitySchemes: {
-			bearerAuth: {
-				type: 'http' as const,
-				scheme: 'bearer',
-				description: 'API key passed as a Bearer token',
 			},
 		},
 	},

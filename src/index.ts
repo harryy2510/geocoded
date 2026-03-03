@@ -1,11 +1,8 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
-import { Resend } from 'resend'
-
 import { docsHtml } from './docs'
 import logo from './logo.png'
 import { openApiSpec } from './openapi'
-import { registerHtml } from './register'
 import type { City, Country, Location, State } from './types'
 
 const app = new Hono<{ Bindings: Env }>()
@@ -29,31 +26,6 @@ function json<T>(
 }
 
 app.use('*', cors())
-
-// --- API Key Middleware ---
-
-app.use('*', async (c, next) => {
-	if (
-		c.req.path === '/' ||
-		c.req.path === '/logo.png' ||
-		c.req.path === '/register' ||
-		c.req.path === '/openapi.json'
-	)
-		return next()
-
-	const referer = c.req.header('referer')
-	if (referer?.startsWith('https://geocoded.me')) return next()
-
-	const auth = c.req.header('authorization')
-	const token = auth?.startsWith('Bearer ') ? auth.slice(7) : undefined
-	if (!token) return c.json({ error: 'Invalid or missing API key' }, 401)
-
-	const valid = await c.env.GEO_KV.get(`apikey:${token}`)
-	if (valid === null)
-		return c.json({ error: 'Invalid or missing API key' }, 401)
-
-	return next()
-})
 
 function pickFields<T extends Record<string, unknown>>(
 	data: T[],
@@ -112,70 +84,10 @@ app.get('/openapi.json', (c) => {
 	return c.json(openApiSpec)
 })
 
-app.get('/', (c) => {
-	return c.html(docsHtml)
-})
+app.get('/', async (c) => {
+	const host = new URL(c.req.url).hostname
+	if (host !== 'api.geocoded.me') return c.html(docsHtml)
 
-// --- Registration ---
-
-app.get('/register', (c) => {
-	return c.html(registerHtml)
-})
-
-app.post('/register', async (c) => {
-	const body = await c.req.json<{ email?: string; name?: string }>()
-	const name = body.name?.trim()
-	const email = body.email?.trim().toLowerCase()
-
-	if (!name || !email) {
-		return c.json({ error: 'Name and email are required' }, 400)
-	}
-
-	const kv = c.env.GEO_KV
-	let apiKey = await kv.get(`email:${email}`)
-
-	if (!apiKey) {
-		apiKey = crypto.randomUUID()
-		await Promise.all([
-			kv.put(
-				`apikey:${apiKey}`,
-				JSON.stringify({ createdAt: new Date().toISOString(), email, name }),
-			),
-			kv.put(`email:${email}`, apiKey),
-		])
-	}
-
-	try {
-		const resend = new Resend(c.env.RESEND_API_KEY)
-		await resend.emails.send({
-			from: 'Geo API <geo@harryy.me>',
-			subject: 'Your Geo API Key',
-			to: email,
-			text: [
-				`Hi ${name},`,
-				'',
-				'Here is your Geo API key:',
-				'',
-				apiKey,
-				'',
-				'Include it in your requests as:',
-				`Authorization: Bearer ${apiKey}`,
-				'',
-				'Docs: https://geocoded.me',
-				'',
-				'— Geo API',
-			].join('\n'),
-		})
-	} catch {
-		return c.json({ error: 'Failed to send email. Please try again.' }, 500)
-	}
-
-	return c.json({ message: 'API key sent to your email', success: true })
-})
-
-// --- Location ---
-
-app.get('/location', async (c) => {
 	const cf = c.req.raw.cf as IncomingRequestCfProperties | undefined
 	const countryCode = cf?.country
 	const regionCode = cf?.regionCode

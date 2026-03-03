@@ -10,8 +10,7 @@
 		"types": "wrangler types"
 	},
 	"dependencies": {
-		"hono": "^4.12.3",
-		"resend": "^6.9.3"
+		"hono": "^4.12.3"
 	},
 	"devDependencies": {
 		"@types/bun": "^1.3.9",

@@ -6,21 +6,11 @@ Data sourced from [dr5hn/countries-states-cities-database](https://github.com/dr
 
 ## API
 
-**Base URL:** `https://geocoded.me`
+**Base URL:** `https://api.geocoded.me`
 
 **Interactive docs:** [`https://geocoded.me`](https://geocoded.me) — powered by [Scalar](https://scalar.com) with a full OpenAPI 3.1 spec at `/openapi.json`.
 
 All endpoints return JSON with aggressive cache headers (`Cache-Control: public, max-age=31536000, immutable`).
-
-### Authentication
-
-All API endpoints require an API key via the `Authorization` header:
-
-```
-Authorization: Bearer YOUR_API_KEY
-```
-
-**Get a free API key** at [`https://geocoded.me/register`](https://geocoded.me/register) — enter your name and email and the key will be sent to your inbox.
 
 ### Field Selection
 
@@ -33,16 +23,16 @@ GET /countries?fields=name,iso2,emoji
 Dot notation is supported for nested objects:
 
 ```
-GET /location?fields=ip,country,countryInfo.name,countryInfo.emoji,cityInfo.population
+GET /?fields=ip,country,countryInfo.name,countryInfo.emoji,cityInfo.population
 ```
 
 When omitted, all fields are returned.
 
 ### Location
 
-| Endpoint        | Description                                                                      |
-| --------------- | -------------------------------------------------------------------------------- |
-| `GET /location` | Get the caller's geo info, enriched with full country/state/city details from KV |
+| Endpoint | Description                                                                      |
+| -------- | -------------------------------------------------------------------------------- |
+| `GET /`  | Get the caller's geo info, enriched with full country/state/city details from KV |
 
 **Location fields:** `asn`, `asOrganization`, `city`, `cityInfo`, `colo`, `continent`, `country`, `countryInfo`, `ip`, `isEU`, `latitude`, `longitude`, `postalCode`, `region`, `regionCode`, `stateInfo`, `timezone`
 
@@ -79,19 +69,19 @@ The `countryInfo`, `stateInfo`, and `cityInfo` fields contain the full objects (
 
 ```bash
 # Your location info
-curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/location
+curl https://api.geocoded.me
 
 # All countries, slim response
-curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/countries?fields=name,iso2,emoji
+curl https://api.geocoded.me/countries?fields=name,iso2,emoji
 
 # Single country, full response
-curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/countries/US
+curl https://api.geocoded.me/countries/US
 
 # States for a country
-curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/countries/US/states?fields=name,iso2
+curl https://api.geocoded.me/countries/US/states?fields=name,iso2
 
 # Cities for a state
-curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/countries/US/states/CA/cities?fields=name,population
+curl https://api.geocoded.me/countries/US/states/CA/cities?fields=name,population
 ```
 
 ## Development
@@ -100,16 +90,6 @@ curl -H "Authorization: Bearer YOUR_API_KEY" https://geocoded.me/countries/US/st
 bun install
 bun dev        # start local dev server
 ```
-
-### Secrets
-
-The worker requires a `RESEND_API_KEY` secret for sending registration emails. Set it via:
-
-```bash
-wrangler secret put RESEND_API_KEY
-```
-
-For local dev, add it to `.dev.vars`.
 
 ## Data Pipeline
 

@@ -29,6 +29,14 @@
 		{
 			"custom_domain": true,
 			"pattern": "geocoded.me"
+		},
+		{
+			"custom_domain": true,
+			"pattern": "www.geocoded.me"
+		},
+		{
+			"custom_domain": true,
+			"pattern": "api.geocoded.me"
 		}
 	]
 }
