@@ -1,111 +1,124 @@
-# Geo API
+<p align="center">
+  <h1 align="center">Geocoded</h1>
+  <p align="center">
+    <strong>Free geolocation REST API on Cloudflare Workers.</strong>
+  </p>
+  <p align="center">
+    Countries, states, cities, IP lookup -- all from KV storage.
+  </p>
+  <p align="center">
+    <code>250 countries</code> · <code>5,000+ states</code> · <code>150,000+ cities</code> · <code>1-year cache</code>
+  </p>
+</p>
 
-A Cloudflare Worker serving country, state, city, and location data from KV storage. Built with [Hono](https://hono.dev) and deployed via [Wrangler](https://developers.cloudflare.com/workers/wrangler/).
+<p align="center">
+  <a href="https://geocoded.me"><img src="https://img.shields.io/badge/Live-geocoded.me-000000?style=flat-square&logo=safari&logoColor=white" alt="Live"></a>
+  <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></a>
+  <a href="https://workers.cloudflare.com"><img src="https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare Workers"></a>
+  <a href="https://hono.dev"><img src="https://img.shields.io/badge/Hono-E36002?style=flat-square&logo=hono&logoColor=white" alt="Hono"></a>
+  <a href="https://bun.sh"><img src="https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white" alt="Bun"></a>
+</p>
 
-Data sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database).
+---
 
-## API
+```
++--------------------------------------------------------------------------+
+|                                                                          |
+|   Base URL:          https://api.geocoded.me                             |
+|   Interactive docs:  https://geocoded.me  (OpenAPI 3.1 + Scalar)         |
+|                                                                          |
++--------------------------------------------------------------------------+
+```
 
-**Base URL:** `https://api.geocoded.me`
+---
 
-**Interactive docs:** [`https://geocoded.me`](https://geocoded.me) — powered by [Scalar](https://scalar.com) with a full OpenAPI 3.1 spec at `/openapi.json`.
+## Quick Start
 
-All endpoints return JSON with aggressive cache headers (`Cache-Control: public, max-age=31536000, immutable`).
+```bash
+# Your location from IP
+curl https://api.geocoded.me
 
-### Field Selection
+# All countries (slim)
+curl https://api.geocoded.me/countries?fields=name,iso2,emoji
 
-Every endpoint supports an optional `?fields=` query parameter to return only specific fields. Pass a comma-separated list of field names:
+# States in a country
+curl https://api.geocoded.me/countries/IN/states?fields=name,iso2
+
+# Cities in a state
+curl https://api.geocoded.me/countries/US/states/CA/cities?fields=name,population
+```
+
+---
+
+## Endpoints
+
+| Method | Path | Description |
+|---|---|---|
+| `GET` | `/` | Caller's geo info from IP, enriched with country/state/city data |
+| `GET` | `/countries` | List all countries |
+| `GET` | `/countries/:id` | Country by iso2, iso3, or name |
+| `GET` | `/countries/:country/states` | States for a country |
+| `GET` | `/countries/:country/states/:state` | State by iso2 or name |
+| `GET` | `/countries/:country/states/:state/cities` | Cities for a state |
+| `GET` | `/countries/:country/states/:state/cities/:city` | City by name |
+
+All responses are JSON with aggressive cache headers (`Cache-Control: public, max-age=31536000, immutable`).
+
+---
+
+## Field Selection
+
+Every endpoint supports `?fields=` to return only what you need. Comma-separated, dot notation for nested objects:
 
 ```
 GET /countries?fields=name,iso2,emoji
-```
-
-Dot notation is supported for nested objects:
-
-```
-GET /?fields=ip,country,countryInfo.name,countryInfo.emoji,cityInfo.population
+GET /?fields=ip,country,countryInfo.name,cityInfo.population
 ```
 
 When omitted, all fields are returned.
 
-### Location
+---
 
-| Endpoint | Description                                                                      |
-| -------- | -------------------------------------------------------------------------------- |
-| `GET /`  | Get the caller's geo info, enriched with full country/state/city details from KV |
+## Available Fields
 
-**Location fields:** `asn`, `asOrganization`, `city`, `cityInfo`, `colo`, `continent`, `country`, `countryInfo`, `ip`, `isEU`, `latitude`, `longitude`, `postalCode`, `region`, `regionCode`, `stateInfo`, `timezone`
-
-The `countryInfo`, `stateInfo`, and `cityInfo` fields contain the full objects (same shape as the corresponding `/countries`, `/states`, `/cities` endpoints) matched from KV based on the caller's IP. Use `?fields=` to pick only what you need, e.g. `?fields=ip,country,countryInfo`.
-
-### Countries
-
-| Endpoint             | Description                          |
-| -------------------- | ------------------------------------ |
-| `GET /countries`     | List all countries                   |
-| `GET /countries/:id` | Get a country by iso2, iso3, or name |
-
-**Country fields:** `areaSqKm`, `capital`, `currency`, `currencyName`, `currencySymbol`, `emoji`, `emojiU`, `gdp`, `iso2`, `iso3`, `latitude`, `longitude`, `name`, `nationality`, `native`, `numericCode`, `phoneCode`, `population`, `postalCodeFormat`, `postalCodeRegex`, `region`, `subregion`, `timezones`, `tld`, `translations`, `wikiDataId`
-
-### States
-
-| Endpoint                                | Description                 |
-| --------------------------------------- | --------------------------- |
-| `GET /countries/:country/states`        | List states for a country   |
-| `GET /countries/:country/states/:state` | Get a state by iso2 or name |
-
-**State fields:** `countryCode`, `countryName`, `fipsCode`, `iso2`, `iso31662`, `latitude`, `level`, `longitude`, `name`, `native`, `parentId`, `population`, `timezone`, `translations`, `type`, `wikiDataId`
-
-### Cities
-
-| Endpoint                                             | Description             |
-| ---------------------------------------------------- | ----------------------- |
-| `GET /countries/:country/states/:state/cities`       | List cities for a state |
-| `GET /countries/:country/states/:state/cities/:city` | Get a city by name      |
-
-**City fields:** `countryCode`, `countryName`, `latitude`, `level`, `longitude`, `name`, `native`, `parentId`, `population`, `stateCode`, `stateName`, `timezone`, `translations`, `type`, `wikiDataId`
-
-### Examples
-
-```bash
-# Your location info
-curl https://api.geocoded.me
-
-# All countries, slim response
-curl https://api.geocoded.me/countries?fields=name,iso2,emoji
-
-# Single country, full response
-curl https://api.geocoded.me/countries/US
-
-# States for a country
-curl https://api.geocoded.me/countries/US/states?fields=name,iso2
-
-# Cities for a state
-curl https://api.geocoded.me/countries/US/states/CA/cities?fields=name,population
+```
+  LOCATION         COUNTRY              STATE              CITY
+  --------         -------              -----              ----
+  ip               name                 name               name
+  country          iso2, iso3           iso2               stateCode
+  city             emoji                countryCode        countryCode
+  region           capital              type               latitude
+  regionCode       currency             latitude           longitude
+  latitude         currencySymbol       longitude          population
+  longitude        phoneCode            timezone           timezone
+  postalCode       population           population         translations
+  timezone         areaSqKm, gdp        translations
+  continent        region, subregion
+  isEU             timezones, tld
+  asn              translations
+  asOrganization
+  countryInfo *
+  stateInfo *
+  cityInfo *
 ```
 
-## Development
+\* Full nested objects from KV, same shape as their standalone endpoints.
+
+---
+
+## Self-Hosting
 
 ```bash
 bun install
-bun dev        # start local dev server
+bun dev             # local dev server
+bun seed:upload     # seed KV with geo data
+bun run deploy      # deploy to Cloudflare
 ```
 
-## Data Pipeline
+Data sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database). The seed script fetches upstream data, converts to camelCase, and writes KV bulk JSON files. A GitHub Actions workflow auto-runs `bun seed:upload` on changes to `scripts/seed.ts`.
 
-The seed script fetches upstream data, converts to camelCase, and writes KV bulk JSON files:
+---
 
-```bash
-bun seed            # generate bulk files only
-bun seed:upload     # generate + upload to Cloudflare KV
-```
+## License
 
-The namespace ID is read from `wrangler.jsonc` via `--binding GEO_KV` — no need to pass it manually.
-
-A GitHub Actions workflow (`.github/workflows/seed.yml`) runs `bun seed:upload` automatically on pushes to `scripts/seed.ts`.
-
-## Deployment
-
-```bash
-bun run deploy
-```
+MIT
