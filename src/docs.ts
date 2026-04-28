@@ -515,7 +515,7 @@ body { background: var(--bg); }
 		</h1>
 		<p class="hero-tagline">Free Country, State, City & Location API</p>
 		<p class="hero-desc">
-			Open-source REST API with 250+ countries, 5,000+ states, and 150,000+ cities.
+			Open-source REST API with 252 countries, 3,800+ states, and 230,000+ cities.
 			No API key required. Deployed on the edge for instant responses worldwide.
 		</p>
 		<div class="hero-actions">
@@ -579,7 +579,7 @@ body { background: var(--bg); }
 				</div>
 				<h3>Rich Data</h3>
 				<p>
-					250+ countries, 5,000+ states, and 150,000+ cities complete with
+					252 countries, 3,800+ states, and 230,000+ cities complete with
 					translations, timezones, coordinates, phone codes, currencies, and more.
 				</p>
 			</div>
@@ -700,9 +700,12 @@ body { background: var(--bg); }
 				</a>
 				<p>
 					Data sourced from
-					<a href="https://github.com/dr5hn/countries-states-cities-database" target="_blank" rel="noopener noreferrer">dr5hn/countries-states-cities-database</a>
-					under the
-					<a href="https://opendatacommons.org/licenses/odbl/" target="_blank" rel="noopener noreferrer">Open Database License (ODbL)</a>.
+					<a href="https://www.geonames.org/" target="_blank" rel="noopener noreferrer">GeoNames</a>,
+					<a href="https://cldr.unicode.org/" target="_blank" rel="noopener noreferrer">Unicode CLDR</a>,
+					<a href="https://www.wikidata.org/" target="_blank" rel="noopener noreferrer">Wikidata</a>, and
+					<a href="https://www.iana.org/time-zones" target="_blank" rel="noopener noreferrer">IANA</a>
+					under
+					<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
 				</p>
 				<p>Built with Hono on Cloudflare Workers.</p>
 			</div>

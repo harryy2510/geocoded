@@ -7,7 +7,7 @@
     Countries, states, cities, IP lookup, and full-text search. All from D1.
   </p>
   <p align="center">
-    <code>250 countries</code> · <code>5,000+ states</code> · <code>150,000+ cities</code>
+    <code>252 countries</code> · <code>3,800+ states</code> · <code>230,000+ cities</code>
   </p>
 </p>
 
@@ -145,13 +145,13 @@ bun dev
 
 All site-specific values live in `wrangler.jsonc` under the `vars` section:
 
-| Variable      | Description                          | Example                                    |
-| ------------- | ------------------------------------ | ------------------------------------------ |
-| `SITE_NAME`   | Name shown in landing page and docs  | `Geocoded`                                 |
-| `SITE_URL`    | Public URL for the landing page      | `https://geocoded.me`                      |
-| `API_URL`     | Public URL for the API               | `https://api.geocoded.me`                  |
-| `GITHUB_URL`  | GitHub repo URL (shown in UI)        | `https://github.com/harryy2510/geocoded`   |
-| `CACHE_ZONE`  | Cloudflare zone name for cache purge | `geocoded.me`                              |
+| Variable     | Description                          | Example                                  |
+| ------------ | ------------------------------------ | ---------------------------------------- |
+| `SITE_NAME`  | Name shown in landing page and docs  | `Geocoded`                               |
+| `SITE_URL`   | Public URL for the landing page      | `https://geocoded.me`                    |
+| `API_URL`    | Public URL for the API               | `https://api.geocoded.me`                |
+| `GITHUB_URL` | GitHub repo URL (shown in UI)        | `https://github.com/harryy2510/geocoded` |
+| `CACHE_ZONE` | Cloudflare zone name for cache purge | `geocoded.me`                            |
 
 When running locally without custom vars, the app defaults to `http://localhost:8787` for all URLs.
 
@@ -198,13 +198,19 @@ For custom domains, uncomment the `routes` section in `wrangler.jsonc` and set `
 
 ---
 
-## Data Source
+## Data Sources
 
-Geographic data sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database), licensed under the [Open Database License (ODbL v1.0)](https://opendatacommons.org/licenses/odbl/).
+Geographic data compiled from multiple official, institutional sources:
 
-You are free to use, share, and modify the data as long as you: **attribute** the source, **share-alike** any derivative databases under ODbL, and **keep open** (no technical restrictions that limit access).
+| Source                                                                                               | License         | What                                                |
+| ---------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------- |
+| [GeoNames](https://www.geonames.org/)                                                                | CC BY 4.0       | Countries, states, cities, coordinates, timezones   |
+| [Unicode CLDR](https://cldr.unicode.org/)                                                            | Unicode License | Translations, currency symbols, measurement systems |
+| [Wikidata](https://www.wikidata.org/)                                                                | CC0             | Nationality, driving side, flags, state capitals    |
+| [IANA](https://www.iana.org/time-zones)                                                              | Public Domain   | Timezone definitions                                |
+| [ISO 4217](https://www.six-group.com/en/products-services/financial-information/data-standards.html) | Free to use     | Currency codes and names                            |
 
-API responses are "Produced Works" under ODbL and are not subject to the share-alike requirement.
+The combined dataset is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (the most restrictive component license). Attribution is required when redistributing the data.
 
 ---
 

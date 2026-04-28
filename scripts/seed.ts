@@ -1,88 +1,104 @@
-import { unlink, writeFile } from 'node:fs/promises'
+import { readFile, unlink, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
-const BASE_URL =
-	'https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master'
+const DATA_DIR = join(import.meta.dirname, '..', 'data')
 const SQL_FILE = join(import.meta.dirname, '..', '.d1-seed.sql')
 
+type RawTimezone = {
+	abbreviation: string
+	gmtOffset: number
+	gmtOffsetName: string
+	tzName: string
+	zoneName: string
+}
+
 type RawCountry = {
-	id: number
 	name: string
-	iso3: string
 	iso2: string
-	numeric_code: string
-	phonecode: string
+	iso3: string
+	numericCode: string
+	geonameId: number
+	wikiDataId: string
 	capital: string
-	currency: string
-	currency_name: string
-	currency_symbol: string
-	tld: string
-	native: string
-	population: number
-	gdp: number | null
-	region: string
-	region_id: number
-	subregion: string
-	subregion_id: number
-	nationality: string
-	area_sq_km: number
-	postal_code_format: string | null
-	postal_code_regex: string | null
-	timezones: {
-		zoneName: string
-		gmtOffset: number
-		gmtOffsetName: string
-		abbreviation: string
-		tzName: string
-	}[]
-	translations: Record<string, string>
 	latitude: string
 	longitude: string
+	areaSqKm: number
+	region: string
+	subregion: string
+	continent: string
+	neighbours: string[]
+	timezones: RawTimezone[]
+	population: number
+	nationality: string
+	languages: string[]
+	native: string
+	gdp: number | null
+	currency: string
+	currencyName: string
+	currencySymbol: string
+	phoneCode: string
+	tld: string
+	postalCodeFormat: string | null
+	postalCodeRegex: string | null
 	emoji: string
 	emojiU: string
-	wikiDataId: string
+	flagUrl: string
+	translations: Record<string, string>
+	drivingSide: string
+	measurementSystem: string
+	firstDayOfWeek: string
+	timeFormat: string
+	motto: string | null
+	anthem: string | null
+	coatOfArmsUrl: string | null
+	independenceDate: string | null
+	literacy: number | null
 }
 
 type RawState = {
-	id: number
 	name: string
-	country_id: number
-	country_code: string
-	country_name: string
 	iso2: string
-	iso3166_2: string
-	fips_code: string
-	type: string
-	level: string | null
-	parent_id: string | null
-	native: string
-	latitude: string
-	longitude: string
-	timezone: string
-	translations: Record<string, string>
+	iso31662: string
+	countryCode: string
+	countryName: string
+	geonameId: number
 	wikiDataId: string
-	population: number | null
-}
-
-type RawNestedCity = {
-	id: number
-	name: string
 	latitude: string
 	longitude: string
 	timezone: string
+	capital: string | null
+	population: number | null
+	type: string
+	native: string | null
+	translations: Record<string, string>
 }
 
-type RawNestedState = {
-	id: number
+type RawCity = {
 	name: string
-	iso2: string
-	cities: RawNestedCity[]
+	countryCode: string
+	countryName: string
+	stateCode: string
+	stateName: string
+	latitude: string
+	longitude: string
+	population: number
+	timezone: string
+	geonameId: number
 }
 
-type RawCombinedCountry = {
+type RawTimezoneEntry = {
+	timezone: string
+	countryCodes: string[]
+	coordinates: string
+	comments: string
+}
+
+type RawCurrencyEntry = {
+	code: string
 	name: string
-	iso2: string
-	states: RawNestedState[]
+	symbol: string
+	decimals: number
+	countries: string[]
 }
 
 function esc(s: string | null | undefined): string {
@@ -95,11 +111,9 @@ function nullable(v: string | number | null | undefined): string {
 	return `'${esc(String(v))}'`
 }
 
-async function fetchJSON<T>(path: string): Promise<T> {
-	console.log(`Fetching ${path}...`)
-	const res = await fetch(`${BASE_URL}/${path}`)
-	if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`)
-	return (await res.json()) as T
+async function readJSON<T>(filename: string): Promise<T> {
+	const raw = await readFile(join(DATA_DIR, filename), 'utf-8')
+	return JSON.parse(raw) as T
 }
 
 async function wrangler(args: string[]): Promise<void> {
@@ -120,14 +134,18 @@ async function main() {
 	console.log(`\nApplying migrations (${isRemote ? 'remote' : 'local'})...`)
 	await wrangler(['d1', 'migrations', 'apply', 'geo-db', target])
 
-	// Fetch upstream data
-	const [rawCountries, rawStates, rawCombined] = await Promise.all([
-		fetchJSON<RawCountry[]>('json/countries.json'),
-		fetchJSON<RawState[]>('json/states.json'),
-		fetchJSON<RawCombinedCountry[]>('json/countries+states+cities.json')
-	])
+	// Read data files
+	console.log('\nReading data files...')
+	const [rawCountries, rawStates, rawCities, rawTimezones, rawCurrencies] =
+		await Promise.all([
+			readJSON<RawCountry[]>('countries.json'),
+			readJSON<RawState[]>('states.json'),
+			readJSON<RawCity[]>('cities.json'),
+			readJSON<RawTimezoneEntry[]>('timezones.json'),
+			readJSON<RawCurrencyEntry[]>('currencies.json')
+		])
 
-	// Build one big SQL file
+	// Build SQL
 	const sql: string[] = []
 
 	// Clear existing data
@@ -135,6 +153,8 @@ async function main() {
 	sql.push('DELETE FROM cities;')
 	sql.push('DELETE FROM states;')
 	sql.push('DELETE FROM countries;')
+	sql.push('DELETE FROM timezones;')
+	sql.push('DELETE FROM currencies;')
 
 	// Countries
 	const sortedCountries = rawCountries.sort((a, b) =>
@@ -145,8 +165,10 @@ async function main() {
 	for (const c of sortedCountries) {
 		const tz = esc(JSON.stringify(c.timezones))
 		const tr = esc(JSON.stringify(c.translations))
+		const nb = esc(JSON.stringify(c.neighbours))
+		const lang = esc(JSON.stringify(c.languages))
 		sql.push(
-			`INSERT INTO countries (iso2,iso3,name,native,capital,currency,currency_name,currency_symbol,tld,phone_code,numeric_code,nationality,region,subregion,emoji,emoji_u,latitude,longitude,area_sq_km,population,gdp,postal_code_format,postal_code_regex,wiki_data_id,timezones,translations) VALUES ('${esc(c.iso2)}','${esc(c.iso3)}','${esc(c.name)}','${esc(c.native)}','${esc(c.capital)}','${esc(c.currency)}','${esc(c.currency_name)}','${esc(c.currency_symbol)}','${esc(c.tld)}','${esc(c.phonecode)}','${esc(c.numeric_code)}','${esc(c.nationality)}','${esc(c.region)}','${esc(c.subregion)}','${esc(c.emoji)}','${esc(c.emojiU)}','${esc(c.latitude)}','${esc(c.longitude)}',${nullable(c.area_sq_km)},${nullable(c.population)},${nullable(c.gdp)},${nullable(c.postal_code_format)},${nullable(c.postal_code_regex)},'${esc(c.wikiDataId)}','${tz}','${tr}');`
+			`INSERT INTO countries (iso2,iso3,name,native,capital,currency,currency_name,currency_symbol,tld,phone_code,numeric_code,nationality,region,subregion,emoji,emoji_u,latitude,longitude,area_sq_km,population,gdp,postal_code_format,postal_code_regex,wiki_data_id,timezones,translations,geoname_id,continent,neighbours,languages,flag_url,driving_side,measurement_system,first_day_of_week,time_format) VALUES ('${esc(c.iso2)}','${esc(c.iso3)}','${esc(c.name)}','${esc(c.native)}','${esc(c.capital)}','${esc(c.currency)}','${esc(c.currencyName)}','${esc(c.currencySymbol)}','${esc(c.tld)}','${esc(c.phoneCode)}','${esc(c.numericCode)}','${esc(c.nationality)}','${esc(c.region)}','${esc(c.subregion)}','${esc(c.emoji)}','${esc(c.emojiU)}','${esc(c.latitude)}','${esc(c.longitude)}',${nullable(c.areaSqKm)},${nullable(c.population)},${nullable(c.gdp)},${nullable(c.postalCodeFormat)},${nullable(c.postalCodeRegex)},'${esc(c.wikiDataId)}','${tz}','${tr}',${nullable(c.geonameId)},'${esc(c.continent)}','${nb}','${lang}','${esc(c.flagUrl)}','${esc(c.drivingSide)}','${esc(c.measurementSystem)}','${esc(c.firstDayOfWeek)}','${esc(c.timeFormat)}');`
 		)
 	}
 
@@ -157,47 +179,36 @@ async function main() {
 	for (const s of sortedStates) {
 		const tr = esc(JSON.stringify(s.translations))
 		sql.push(
-			`INSERT INTO states (country_code,country_name,iso2,iso3166_2,fips_code,name,native,type,level,parent_id,population,latitude,longitude,timezone,wiki_data_id,translations) VALUES ('${esc(s.country_code)}','${esc(s.country_name)}','${esc(s.iso2)}','${esc(s.iso3166_2)}','${esc(s.fips_code)}','${esc(s.name)}','${esc(s.native)}','${esc(s.type)}',${nullable(s.level)},${nullable(s.parent_id)},${nullable(s.population)},'${esc(s.latitude)}','${esc(s.longitude)}','${esc(s.timezone)}','${esc(s.wikiDataId)}','${tr}');`
+			`INSERT INTO states (country_code,country_name,iso2,iso3166_2,name,native,type,population,latitude,longitude,timezone,wiki_data_id,translations,geoname_id,capital) VALUES ('${esc(s.countryCode)}','${esc(s.countryName)}','${esc(s.iso2)}','${esc(s.iso31662)}','${esc(s.name)}','${esc(s.native ?? '')}','${esc(s.type)}',${nullable(s.population)},'${esc(s.latitude)}','${esc(s.longitude)}','${esc(s.timezone)}','${esc(s.wikiDataId)}','${tr}',${nullable(s.geonameId)},${nullable(s.capital)});`
 		)
 	}
 
 	// Cities
-	type CityRow = {
-		countryCode: string
-		countryName: string
-		stateCode: string
-		stateName: string
-		name: string
-		latitude: string
-		longitude: string
-		timezone: string
-	}
+	console.log(`Preparing ${rawCities.length} cities...`)
 
-	const allCities: CityRow[] = []
-	for (const country of rawCombined) {
-		if (!country.states) continue
-		for (const state of country.states) {
-			if (!state.cities) continue
-			for (const city of state.cities) {
-				allCities.push({
-					countryCode: country.iso2,
-					countryName: country.name,
-					stateCode: state.iso2,
-					stateName: state.name,
-					name: city.name,
-					latitude: city.latitude,
-					longitude: city.longitude,
-					timezone: city.timezone
-				})
-			}
-		}
-	}
-
-	console.log(`Preparing ${allCities.length} cities...`)
-
-	for (const c of allCities) {
+	for (const c of rawCities) {
 		sql.push(
-			`INSERT INTO cities (country_code,country_name,state_code,state_name,name,latitude,longitude,timezone) VALUES ('${esc(c.countryCode)}','${esc(c.countryName)}','${esc(c.stateCode)}','${esc(c.stateName)}','${esc(c.name)}','${esc(c.latitude)}','${esc(c.longitude)}','${esc(c.timezone)}');`
+			`INSERT INTO cities (country_code,country_name,state_code,state_name,name,latitude,longitude,timezone,population,geoname_id) VALUES ('${esc(c.countryCode)}','${esc(c.countryName)}','${esc(c.stateCode)}','${esc(c.stateName)}','${esc(c.name)}','${esc(c.latitude)}','${esc(c.longitude)}','${esc(c.timezone)}',${nullable(c.population)},${nullable(c.geonameId)});`
+		)
+	}
+
+	// Timezones
+	console.log(`Preparing ${rawTimezones.length} timezones...`)
+
+	for (const t of rawTimezones) {
+		const codes = esc(JSON.stringify(t.countryCodes))
+		sql.push(
+			`INSERT INTO timezones (timezone,country_codes,coordinates,comments) VALUES ('${esc(t.timezone)}','${codes}','${esc(t.coordinates)}','${esc(t.comments)}');`
+		)
+	}
+
+	// Currencies
+	console.log(`Preparing ${rawCurrencies.length} currencies...`)
+
+	for (const cu of rawCurrencies) {
+		const countries = esc(JSON.stringify(cu.countries))
+		sql.push(
+			`INSERT INTO currencies (code,name,symbol,decimals,countries) VALUES ('${esc(cu.code)}','${esc(cu.name)}','${esc(cu.symbol)}',${cu.decimals},'${countries}');`
 		)
 	}
 
@@ -217,16 +228,19 @@ async function main() {
 	}
 
 	for (const s of sortedStates) {
-		const countryName = countryNameMap.get(s.country_code) ?? s.country_name
+		const countryName = countryNameMap.get(s.countryCode) ?? s.countryName
 		const extra = esc(JSON.stringify({ country_name: countryName }))
 		sql.push(
-			`INSERT INTO search_index (name,type,country_code,state_code,extra) VALUES ('${esc(s.name)}','state','${esc(s.country_code)}','${esc(s.iso2)}','${extra}');`
+			`INSERT INTO search_index (name,type,country_code,state_code,extra) VALUES ('${esc(s.name)}','state','${esc(s.countryCode)}','${esc(s.iso2)}','${extra}');`
 		)
 	}
 
-	for (const c of allCities) {
+	for (const c of rawCities) {
 		const extra = esc(
-			JSON.stringify({ country_name: c.countryName, state_name: c.stateName })
+			JSON.stringify({
+				country_name: c.countryName,
+				state_name: c.stateName
+			})
 		)
 		sql.push(
 			`INSERT INTO search_index (name,type,country_code,state_code,extra) VALUES ('${esc(c.name)}','city','${esc(c.countryCode)}','${esc(c.stateCode)}','${extra}');`
@@ -248,7 +262,7 @@ async function main() {
 	])
 
 	console.log(
-		`\nDone! Loaded ${sortedCountries.length} countries, ${sortedStates.length} states, ${allCities.length} cities`
+		`\nDone! Loaded ${sortedCountries.length} countries, ${sortedStates.length} states, ${rawCities.length} cities, ${rawTimezones.length} timezones, ${rawCurrencies.length} currencies`
 	)
 
 	// Cache purge (remote only)

@@ -41,19 +41,33 @@ const countrySchema = {
 	properties: {
 		areaSqKm: { type: 'number' as const },
 		capital: { type: 'string' as const },
+		continent: { type: 'string' as const },
 		currency: { type: 'string' as const },
 		currencyName: { type: 'string' as const },
 		currencySymbol: { type: 'string' as const },
+		drivingSide: { type: 'string' as const },
 		emoji: { type: 'string' as const },
 		emojiU: { type: 'string' as const },
+		firstDayOfWeek: { type: 'string' as const },
+		flagUrl: { type: 'string' as const },
 		gdp: { type: 'number' as const, nullable: true },
+		geonameId: { type: 'number' as const },
 		iso2: { type: 'string' as const },
 		iso3: { type: 'string' as const },
+		languages: {
+			type: 'array' as const,
+			items: { type: 'string' as const }
+		},
 		latitude: { type: 'string' as const },
 		longitude: { type: 'string' as const },
+		measurementSystem: { type: 'string' as const },
 		name: { type: 'string' as const },
 		nationality: { type: 'string' as const },
 		native: { type: 'string' as const },
+		neighbours: {
+			type: 'array' as const,
+			items: { type: 'string' as const }
+		},
 		numericCode: { type: 'string' as const },
 		phoneCode: { type: 'string' as const },
 		population: { type: 'number' as const },
@@ -61,6 +75,7 @@ const countrySchema = {
 		postalCodeRegex: { type: 'string' as const, nullable: true },
 		region: { type: 'string' as const },
 		subregion: { type: 'string' as const },
+		timeFormat: { type: 'string' as const },
 		timezones: { type: 'array' as const, items: timezoneSchema },
 		tld: { type: 'string' as const },
 		translations: {
@@ -74,17 +89,16 @@ const countrySchema = {
 const stateSchema = {
 	type: 'object' as const,
 	properties: {
+		capital: { type: 'string' as const, nullable: true },
 		countryCode: { type: 'string' as const },
 		countryName: { type: 'string' as const },
-		fipsCode: { type: 'string' as const },
+		geonameId: { type: 'number' as const },
 		iso2: { type: 'string' as const },
 		iso31662: { type: 'string' as const },
 		latitude: { type: 'string' as const },
-		level: { type: 'string' as const, nullable: true },
 		longitude: { type: 'string' as const },
 		name: { type: 'string' as const },
 		native: { type: 'string' as const },
-		parentId: { type: 'string' as const, nullable: true },
 		population: { type: 'number' as const, nullable: true },
 		timezone: { type: 'string' as const },
 		translations: {
@@ -101,9 +115,11 @@ const citySchema = {
 	properties: {
 		countryCode: { type: 'string' as const },
 		countryName: { type: 'string' as const },
+		geonameId: { type: 'number' as const },
 		latitude: { type: 'string' as const },
 		longitude: { type: 'string' as const },
 		name: { type: 'string' as const },
+		population: { type: 'number' as const },
 		stateCode: { type: 'string' as const },
 		stateName: { type: 'string' as const },
 		timezone: { type: 'string' as const }
@@ -201,13 +217,13 @@ export function openApiSpec(config: SiteConfig) {
 			title: config.siteName,
 			version: '1.0.0',
 			description:
-				'Free country, state, city, and location data. Fast, cached, and filterable.\n\nData sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database) under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).',
+				'Free country, state, city, and location data. Fast, cached, and filterable.\n\nData sourced from [GeoNames](https://www.geonames.org/) (CC BY 4.0), [Unicode CLDR](https://cldr.unicode.org/) (Unicode License), [Wikidata](https://www.wikidata.org/) (CC0), and [IANA](https://www.iana.org/time-zones) (Public Domain).',
 			contact: {
 				email: 'contact@harryy.me'
 			},
 			license: {
-				name: 'ODbL-1.0',
-				url: 'https://opendatacommons.org/licenses/odbl/'
+				name: 'CC BY 4.0',
+				url: 'https://creativecommons.org/licenses/by/4.0/'
 			},
 			'x-logo': {
 				url: '/logo.png',

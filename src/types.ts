@@ -16,19 +16,27 @@ export type Timezone = {
 export type Country = {
 	areaSqKm: number
 	capital: string
+	continent: string
 	currency: string
 	currencyName: string
 	currencySymbol: string
+	drivingSide: string
 	emoji: string
 	emojiU: string
+	firstDayOfWeek: string
+	flagUrl: string
 	gdp: number | null
+	geonameId: number
 	iso2: string
 	iso3: string
+	languages: string[]
 	latitude: string
 	longitude: string
+	measurementSystem: string
 	name: string
 	nationality: string
 	native: string
+	neighbours: string[]
 	numericCode: string
 	phoneCode: string
 	population: number
@@ -36,6 +44,7 @@ export type Country = {
 	postalCodeRegex: string | null
 	region: string
 	subregion: string
+	timeFormat: string
 	timezones: Timezone[]
 	tld: string
 	translations: Record<string, string>
@@ -43,22 +52,34 @@ export type Country = {
 }
 
 export type State = {
+	capital: string | null
 	countryCode: string
 	countryName: string
-	fipsCode: string
+	geonameId: number
 	iso2: string
 	iso31662: string
 	latitude: string
-	level: string | null
 	longitude: string
 	name: string
 	native: string
-	parentId: string | null
 	population: number | null
 	timezone: string
 	translations: Record<string, string>
 	type: string
 	wikiDataId: string
+}
+
+export type City = {
+	countryCode: string
+	countryName: string
+	geonameId: number
+	latitude: string
+	longitude: string
+	name: string
+	population: number
+	stateCode: string
+	stateName: string
+	timezone: string
 }
 
 export type Location = {
@@ -81,17 +102,6 @@ export type Location = {
 	timezone: string | undefined
 }
 
-export type City = {
-	countryCode: string
-	countryName: string
-	latitude: string
-	longitude: string
-	name: string
-	stateCode: string
-	stateName: string
-	timezone: string
-}
-
 export type SearchResult = {
 	type: 'country' | 'state' | 'city'
 	name: string
@@ -109,4 +119,19 @@ export type PaginatedResponse<T> = {
 		offset: number
 		hasMore: boolean
 	}
+}
+
+export type TimezoneEntry = {
+	countryCodes: string[]
+	comments: string
+	coordinates: string
+	timezone: string
+}
+
+export type CurrencyEntry = {
+	code: string
+	countries: string[]
+	decimals: number
+	name: string
+	symbol: string
 }
