@@ -7,3 +7,4 @@ data/*.json
 .idea
 .vscode
 .env*
+.DS_Store
