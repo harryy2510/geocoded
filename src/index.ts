@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
-import { docsHtml } from './docs'
+import { docsHtml, scalarHtml } from './docs'
 import logo from './logo.png'
 import { openApiSpec } from './openapi'
 import type { City, Country, Location, State } from './types'
@@ -82,6 +82,10 @@ app.get('/logo.png', (c) => {
 
 app.get('/openapi.json', (c) => {
 	return c.json(openApiSpec)
+})
+
+app.get('/docs', (c) => {
+	return c.html(scalarHtml)
 })
 
 app.get('/', async (c) => {

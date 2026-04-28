@@ -100,21 +100,11 @@ const citySchema = {
 		countryCode: { type: 'string' as const },
 		countryName: { type: 'string' as const },
 		latitude: { type: 'string' as const },
-		level: { type: 'string' as const, nullable: true },
 		longitude: { type: 'string' as const },
 		name: { type: 'string' as const },
-		native: { type: 'string' as const },
-		parentId: { type: 'string' as const, nullable: true },
-		population: { type: 'number' as const },
 		stateCode: { type: 'string' as const },
 		stateName: { type: 'string' as const },
 		timezone: { type: 'string' as const },
-		translations: {
-			type: 'object' as const,
-			additionalProperties: { type: 'string' as const },
-		},
-		type: { type: 'string' as const },
-		wikiDataId: { type: 'string' as const },
 	},
 }
 
@@ -156,9 +146,13 @@ export const openApiSpec = {
 		title: 'Geocoded',
 		version: '1.0.0',
 		description:
-			'Free country, state, city, and location data. Fast, cached, and filterable.',
+			'Free country, state, city, and location data. Fast, cached, and filterable.\n\nData sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database) under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).',
 		contact: {
 			email: 'contact@harryy.me',
+		},
+		license: {
+			name: 'ODbL-1.0',
+			url: 'https://opendatacommons.org/licenses/odbl/',
 		},
 		'x-logo': {
 			url: '/logo.png',

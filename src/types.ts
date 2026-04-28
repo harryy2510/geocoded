@@ -78,16 +78,9 @@ export type City = {
 	countryCode: string
 	countryName: string
 	latitude: string
-	level: string | null
 	longitude: string
 	name: string
-	native: string
-	parentId: string | null
-	population: number
 	stateCode: string
 	stateName: string
 	timezone: string
-	translations: Record<string, string>
-	type: string
-	wikiDataId: string
 }

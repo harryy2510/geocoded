@@ -7,7 +7,7 @@
     Countries, states, cities, IP lookup -- all from KV storage.
   </p>
   <p align="center">
-    <code>250 countries</code> · <code>5,000+ states</code> · <code>150,000+ cities</code> · <code>1-year cache</code>
+    <code>250 countries</code> · <code>5,000+ states</code> · <code>150,000+ cities</code>
   </p>
 </p>
 
@@ -87,11 +87,11 @@ When omitted, all fields are returned.
   ip               name                 name               name
   country          iso2, iso3           iso2               stateCode
   city             emoji                countryCode        countryCode
-  region           capital              type               latitude
-  regionCode       currency             latitude           longitude
-  latitude         currencySymbol       longitude          population
-  longitude        phoneCode            timezone           timezone
-  postalCode       population           population         translations
+  region           capital              type               countryName
+  regionCode       currency             latitude           stateName
+  latitude         currencySymbol       longitude          latitude
+  longitude        phoneCode            timezone           longitude
+  postalCode       population           population         timezone
   timezone         areaSqKm, gdp        translations
   continent        region, subregion
   isEU             timezones, tld
@@ -111,14 +111,23 @@ When omitted, all fields are returned.
 ```bash
 bun install
 bun dev             # local dev server
-bun seed:upload     # seed KV with geo data
+bun seed            # generate KV bulk files only
+bun seed:upload     # generate + upload to KV + purge edge cache
 bun run deploy      # deploy to Cloudflare
 ```
 
-Data sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database). The seed script fetches upstream data, converts to camelCase, and writes KV bulk JSON files. A GitHub Actions workflow auto-runs `bun seed:upload` on changes to `scripts/seed.ts`.
+The seed script fetches upstream data from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database), converts to camelCase, and writes KV bulk JSON files. When run with `--upload`, it also purges the Cloudflare edge cache so new data is served immediately (requires `CLOUDFLARE_API_TOKEN`).
+
+A GitHub Actions workflow (`.github/workflows/seed.yml`) auto-runs `bun seed:upload` on changes to `scripts/seed.ts`.
 
 ---
 
-## License
+## Data & License
 
-MIT
+The geographic data is sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database) and licensed under the [Open Database License (ODbL v1.0)](https://opendatacommons.org/licenses/odbl/).
+
+You are free to use, share, and modify the data as long as you: **attribute** the source, **share-alike** any derivative databases under ODbL, and **keep open** (no technical restrictions that limit access).
+
+API responses are "Produced Works" under ODbL and are not subject to the share-alike requirement.
+
+The API source code is MIT licensed.

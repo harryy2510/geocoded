@@ -1,6 +1,5 @@
 import { $ } from 'bun'
 import { mkdir, writeFile } from 'node:fs/promises'
-import { gunzipSync } from 'node:zlib'
 import { join } from 'node:path'
 
 import type { City, Country, State } from '../src/types'
@@ -62,25 +61,25 @@ type RawState = {
 	population: number | null
 }
 
-type RawCity = {
+type RawNestedCity = {
 	id: number
 	name: string
-	state_id: number
-	state_code: string
-	state_name: string
-	country_id: number
-	country_code: string
-	country_name: string
 	latitude: string
 	longitude: string
-	native: string
-	type: string
-	level: string | null
-	parent_id: string | null
-	population: number
 	timezone: string
-	translations: Record<string, string>
-	wikiDataId: string
+}
+
+type RawNestedState = {
+	id: number
+	name: string
+	iso2: string
+	cities: RawNestedCity[]
+}
+
+type RawCombinedCountry = {
+	name: string
+	iso2: string
+	states: RawNestedState[]
 }
 
 type KVEntry = {
@@ -92,13 +91,6 @@ async function fetchJSON<T>(path: string): Promise<T> {
 	console.log(`Fetching ${path}...`)
 	const res = await fetch(`${BASE_URL}/${path}`)
 	if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`)
-
-	if (path.endsWith('.gz')) {
-		const buffer = await res.arrayBuffer()
-		const decompressed = gunzipSync(Buffer.from(buffer))
-		return JSON.parse(decompressed.toString('utf-8')) as T
-	}
-
 	return (await res.json()) as T
 }
 
@@ -154,39 +146,14 @@ function mapState(s: RawState): State {
 	}
 }
 
-function mapCity(c: RawCity): City {
-	return {
-		countryCode: c.country_code,
-		countryName: c.country_name,
-		latitude: c.latitude,
-		level: c.level,
-		longitude: c.longitude,
-		name: c.name,
-		native: c.native,
-		parentId: c.parent_id,
-		population: c.population,
-		stateCode: c.state_code,
-		stateName: c.state_name,
-		timezone: c.timezone,
-		translations: c.translations,
-		type: c.type,
-		wikiDataId: c.wikiDataId,
-	}
-}
-
 async function main() {
 	await mkdir(DATA_DIR, { recursive: true })
 
-	// Fetch raw data
-	const [rawCountries, rawStates, rawCities] = await Promise.all([
+	const [rawCountries, rawStates, rawCombined] = await Promise.all([
 		fetchJSON<RawCountry[]>('json/countries.json'),
 		fetchJSON<RawState[]>('json/states.json'),
-		fetchJSON<RawCity[]>('json/cities.json.gz'),
+		fetchJSON<RawCombinedCountry[]>('json/countries+states+cities.json'),
 	])
-
-	console.log(
-		`Loaded: ${rawCountries.length} countries, ${rawStates.length} states, ${rawCities.length} cities`,
-	)
 
 	// --- Countries ---
 	const countries = rawCountries
@@ -206,7 +173,6 @@ async function main() {
 		statesByCountry.get(key)!.push(mapState(s))
 	}
 
-	// Sort states alphabetically within each country
 	for (const states of statesByCountry.values()) {
 		states.sort((a, b) => a.name.localeCompare(b.name))
 	}
@@ -218,18 +184,29 @@ async function main() {
 		}),
 	)
 
-	// --- Cities grouped by country+state ---
+	// --- Cities from combined file (cities.json was removed upstream) ---
 	const citiesByCountryState = new Map<string, City[]>()
+	let totalCities = 0
 
-	for (const c of rawCities) {
-		const key = `${c.country_code}:${c.state_code}`
-		if (!citiesByCountryState.has(key)) citiesByCountryState.set(key, [])
-		citiesByCountryState.get(key)!.push(mapCity(c))
-	}
-
-	// Sort cities alphabetically within each state
-	for (const cities of citiesByCountryState.values()) {
-		cities.sort((a, b) => a.name.localeCompare(b.name))
+	for (const country of rawCombined) {
+		if (!country.states) continue
+		for (const state of country.states) {
+			if (!state.cities) continue
+			const mapKey = `${country.iso2}:${state.iso2}`
+			const cities: City[] = state.cities.map((c) => ({
+				countryCode: country.iso2,
+				countryName: country.name,
+				latitude: c.latitude,
+				longitude: c.longitude,
+				name: c.name,
+				stateCode: state.iso2,
+				stateName: state.name,
+				timezone: c.timezone,
+			}))
+			cities.sort((a, b) => a.name.localeCompare(b.name))
+			citiesByCountryState.set(mapKey, cities)
+			totalCities += cities.length
+		}
 	}
 
 	const citiesBulk: KVEntry[] = [...citiesByCountryState.entries()].map(
@@ -255,6 +232,9 @@ async function main() {
 		),
 	])
 
+	console.log(
+		`\nLoaded: ${rawCountries.length} countries, ${rawStates.length} states, ${totalCities} cities`,
+	)
 	console.log(`\nGenerated bulk files:`)
 	console.log(`  countries: 1 key`)
 	console.log(`  states: ${statesBulk.length} keys`)
@@ -274,6 +254,56 @@ async function main() {
 			await $`bunx wrangler kv bulk put ${path} --binding GEO_KV --remote`
 		}
 		console.log(`\nUpload complete!`)
+
+		const cfToken = process.env.CLOUDFLARE_API_TOKEN
+		if (!cfToken) {
+			console.log(
+				`\nWarning: CLOUDFLARE_API_TOKEN not set -- skipping cache purge.`,
+			)
+		} else {
+			console.log(`\nPurging Cloudflare cache...`)
+
+			const zoneRes = await fetch(
+				'https://api.cloudflare.com/client/v4/zones?name=geocoded.me',
+				{
+					headers: {
+						Authorization: `Bearer ${cfToken}`,
+						'Content-Type': 'application/json',
+					},
+				},
+			)
+			const zoneData = (await zoneRes.json()) as {
+				success: boolean
+				result: { id: string }[]
+			}
+
+			const zone = zoneData.result[0]
+			if (!zoneData.success || !zone) {
+				console.error('Failed to look up zone ID for geocoded.me')
+			} else {
+				const zoneId = zone.id
+				console.log(`  Found zone ID: ${zoneId}`)
+
+				const purgeRes = await fetch(
+					`https://api.cloudflare.com/client/v4/zones/${zoneId}/purge_cache`,
+					{
+						method: 'POST',
+						headers: {
+							Authorization: `Bearer ${cfToken}`,
+							'Content-Type': 'application/json',
+						},
+						body: JSON.stringify({ purge_everything: true }),
+					},
+				)
+				const purgeData = (await purgeRes.json()) as { success: boolean }
+
+				if (purgeData.success) {
+					console.log('  Cache purged successfully!')
+				} else {
+					console.error('  Failed to purge cache:', purgeData)
+				}
+			}
+		}
 	} else {
 		console.log(`\nRun with --upload to push to KV, or run: bun seed:upload`)
 	}
