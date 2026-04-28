@@ -23,7 +23,7 @@ Geo API — a Cloudflare Worker serving country, state, city, and location data 
 - `countries` — all countries array
 - `states:{COUNTRY_ISO2}` — states for a country
 - `cities:{COUNTRY_ISO2}:{STATE_ISO2}` — cities for a country+state
-**Data pipeline**: `scripts/seed.ts` fetches from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database), maps all fields to camelCase (`src/types.ts`), and writes bulk JSON files. Pass `--upload` to also push to KV (uses `--binding GEO_KV` so the namespace ID is read from `wrangler.jsonc`). A GitHub Actions workflow (`.github/workflows/seed.yml`) runs `bun seed:upload` on pushes to `scripts/seed.ts`.
+  **Data pipeline**: `scripts/seed.ts` fetches from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database), maps all fields to camelCase (`src/types.ts`), and writes bulk JSON files. Pass `--upload` to also push to KV (uses `--binding GEO_KV` so the namespace ID is read from `wrangler.jsonc`). A GitHub Actions workflow (`.github/workflows/seed.yml`) runs `bun seed:upload` on pushes to `scripts/seed.ts`.
 
 **API routes** (all return JSON with aggressive cache headers):
 

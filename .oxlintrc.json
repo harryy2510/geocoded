@@ -1,0 +1,44 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"plugins": ["typescript", "unicorn"],
+	"categories": {
+		"correctness": "off",
+		"suspicious": "off",
+		"pedantic": "off",
+		"perf": "off",
+		"style": "off"
+	},
+	"options": {
+		"typeAware": true,
+		"typeCheck": true
+	},
+	"env": {
+		"builtin": true,
+		"es2024": true
+	},
+	"ignorePatterns": ["worker-configuration.d.ts", "scripts/**"],
+	"rules": {
+		"eqeqeq": ["error", "always"],
+		"no-var": "error",
+		"prefer-const": "error",
+		"typescript/consistent-type-definitions": ["error", "type"],
+		"typescript/consistent-type-exports": [
+			"error",
+			{
+				"fixMixedExportsWithInlineTypeSpecifier": true
+			}
+		],
+		"typescript/consistent-type-imports": [
+			"error",
+			{
+				"fixStyle": "inline-type-imports",
+				"prefer": "type-imports"
+			}
+		],
+		"typescript/no-floating-promises": "error",
+		"import/consistent-type-specifier-style": ["error", "prefer-top-level"],
+		"import/first": "error",
+		"import/no-commonjs": "error",
+		"import/no-duplicates": "error"
+	}
+}

@@ -45,22 +45,22 @@ curl https://api.geocoded.me/countries?fields=name,iso2,emoji
 curl https://api.geocoded.me/countries/IN/states?fields=name,iso2
 
 # Cities in a state
-curl https://api.geocoded.me/countries/US/states/CA/cities?fields=name,population
+curl https://api.geocoded.me/countries/US/states/CA/cities?fields=name,timezone
 ```
 
 ---
 
 ## Endpoints
 
-| Method | Path | Description |
-|---|---|---|
-| `GET` | `/` | Caller's geo info from IP, enriched with country/state/city data |
-| `GET` | `/countries` | List all countries |
-| `GET` | `/countries/:id` | Country by iso2, iso3, or name |
-| `GET` | `/countries/:country/states` | States for a country |
-| `GET` | `/countries/:country/states/:state` | State by iso2 or name |
-| `GET` | `/countries/:country/states/:state/cities` | Cities for a state |
-| `GET` | `/countries/:country/states/:state/cities/:city` | City by name |
+| Method | Path                                             | Description                                                      |
+| ------ | ------------------------------------------------ | ---------------------------------------------------------------- |
+| `GET`  | `/`                                              | Caller's geo info from IP, enriched with country/state/city data |
+| `GET`  | `/countries`                                     | List all countries                                               |
+| `GET`  | `/countries/:id`                                 | Country by iso2, iso3, or name                                   |
+| `GET`  | `/countries/:country/states`                     | States for a country                                             |
+| `GET`  | `/countries/:country/states/:state`              | State by iso2 or name                                            |
+| `GET`  | `/countries/:country/states/:state/cities`       | Cities for a state                                               |
+| `GET`  | `/countries/:country/states/:state/cities/:city` | City by name                                                     |
 
 All responses are JSON with aggressive cache headers (`Cache-Control: public, max-age=31536000, immutable`).
 
@@ -72,7 +72,7 @@ Every endpoint supports `?fields=` to return only what you need. Comma-separated
 
 ```
 GET /countries?fields=name,iso2,emoji
-GET /?fields=ip,country,countryInfo.name,cityInfo.population
+GET /?fields=ip,country,countryInfo.name,cityInfo.name
 ```
 
 When omitted, all fields are returned.
@@ -108,17 +108,64 @@ When omitted, all fields are returned.
 
 ## Self-Hosting
 
+### Prerequisites
+
+- [Bun](https://bun.sh) (runtime and package manager)
+- A [Cloudflare account](https://dash.cloudflare.com/sign-up) (free tier works)
+- A Cloudflare API token with the required permissions (see below)
+
+### Cloudflare Setup
+
+1. **Create a Cloudflare account** at [dash.cloudflare.com/sign-up](https://dash.cloudflare.com/sign-up) if you don't have one.
+
+2. **Add your domain** (or use `workers.dev` for testing). Go to **Websites** > **Add a site** and follow the DNS setup.
+
+3. **Create a KV namespace.** Go to **Workers & Pages** > **KV** > **Create a namespace**. Name it anything (e.g. `geo-kv`). Copy the namespace ID and update `kv_namespaces[0].id` in `wrangler.jsonc`.
+
+4. **Create an API token.** Go to **My Profile** > **API Tokens** > **Create Token** > **Create Custom Token** with these permissions:
+
+   | Permission                   | Access |
+   | ---------------------------- | ------ |
+   | Account / Workers KV Storage | Edit   |
+   | Account / Workers Scripts    | Edit   |
+   | Zone / Cache Purge           | Purge  |
+   | Zone / Zone                  | Read   |
+
+   Set **Account Resources** to your account and **Zone Resources** to your domain (or "All zones").
+
+5. **Set the token** for local use:
+
+   ```bash
+   export CLOUDFLARE_API_TOKEN="your-token-here"
+   ```
+
+6. **For GitHub Actions**, add `CLOUDFLARE_API_TOKEN` as a repository secret under **Settings** > **Secrets and variables** > **Actions**.
+
+### Running Locally
+
 ```bash
 bun install
-bun dev             # local dev server
-bun seed            # generate KV bulk files only
-bun seed:upload     # generate + upload to KV + purge edge cache
-bun run deploy      # deploy to Cloudflare
+bun dev             # local dev server (no token needed)
 ```
 
-The seed script fetches upstream data from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database), converts to camelCase, and writes KV bulk JSON files. When run with `--upload`, it also purges the Cloudflare edge cache so new data is served immediately (requires `CLOUDFLARE_API_TOKEN`).
+### Seeding Data
 
-A GitHub Actions workflow (`.github/workflows/seed.yml`) auto-runs `bun seed:upload` on changes to `scripts/seed.ts`.
+```bash
+bun seed            # generate KV bulk files only (no token needed)
+bun seed:upload     # generate + upload to KV + purge edge cache
+```
+
+The seed script fetches upstream data from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database), converts to camelCase, and writes KV bulk JSON files. When run with `--upload`, it also purges the Cloudflare edge cache so new data is served immediately.
+
+A GitHub Actions workflow (`.github/workflows/seed.yml`) auto-runs `bun seed:upload` on pushes to `scripts/seed.ts`.
+
+### Deploying
+
+```bash
+bun run deploy      # deploy to Cloudflare Workers
+```
+
+Update the `routes` in `wrangler.jsonc` to match your own domain, or remove them to use the default `workers.dev` subdomain.
 
 ---
 

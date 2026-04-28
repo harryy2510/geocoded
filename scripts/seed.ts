@@ -31,7 +31,13 @@ type RawCountry = {
 	area_sq_km: number
 	postal_code_format: string | null
 	postal_code_regex: string | null
-	timezones: { zoneName: string; gmtOffset: number; gmtOffsetName: string; abbreviation: string; tzName: string }[]
+	timezones: {
+		zoneName: string
+		gmtOffset: number
+		gmtOffsetName: string
+		abbreviation: string
+		tzName: string
+	}[]
 	translations: Record<string, string>
 	latitude: string
 	longitude: string

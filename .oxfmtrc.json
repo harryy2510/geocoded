@@ -1,0 +1,23 @@
+{
+	"$schema": "./node_modules/oxfmt/configuration_schema.json",
+	"arrowParens": "always",
+	"semi": false,
+	"singleQuote": true,
+	"tabWidth": 2,
+	"trailingComma": "all",
+	"useTabs": true,
+	"printWidth": 80,
+	"sortPackageJson": false,
+	"ignorePatterns": [
+		"node_modules/",
+		"dist/",
+		".output/",
+		".wrangler/",
+		"worker-configuration.d.ts",
+		"data/*.json",
+		".idea/",
+		".vscode/",
+		"*.min.js",
+		"bun.lock"
+	]
+}
