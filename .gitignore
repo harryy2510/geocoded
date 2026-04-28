@@ -2,6 +2,7 @@ node_modules/
 dist/
 .wrangler/
 data/*.json
+.d1-seed.sql
 .dev.vars
 .idea
 .vscode

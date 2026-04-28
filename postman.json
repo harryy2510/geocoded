@@ -1,0 +1,332 @@
+{
+	"info": {
+		"name": "Geocoded API",
+		"description": "Free country, state, city, and location API. Powered by Cloudflare Workers with D1 database.\n\nDocs: https://geocoded.me\nGitHub: https://github.com/harryy2510/geocoded",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.geocoded.me",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "Location",
+			"item": [
+				{
+					"name": "Get caller's geo info",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/",
+							"host": ["{{baseUrl}}"],
+							"path": [""]
+						},
+						"description": "Returns geographic information about the caller based on their IP address, enriched with full country, state, and city details."
+					}
+				},
+				{
+					"name": "Get caller's geo info (with fields)",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/?fields=ip,country,city,latitude,longitude",
+							"host": ["{{baseUrl}}"],
+							"path": [""],
+							"query": [
+								{
+									"key": "fields",
+									"value": "ip,country,city,latitude,longitude"
+								}
+							]
+						},
+						"description": "Returns only selected fields from the caller's geo info."
+					}
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "Search all entities",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/search?q=lond",
+							"host": ["{{baseUrl}}"],
+							"path": ["search"],
+							"query": [
+								{
+									"key": "q",
+									"value": "lond"
+								}
+							]
+						},
+						"description": "Full-text search across countries, states, and cities. Returns paginated results ranked by relevance."
+					}
+				},
+				{
+					"name": "Search with pagination",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/search?q=san&limit=5&offset=0",
+							"host": ["{{baseUrl}}"],
+							"path": ["search"],
+							"query": [
+								{
+									"key": "q",
+									"value": "san"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						},
+						"description": "Search with pagination parameters."
+					}
+				}
+			]
+		},
+		{
+			"name": "Countries",
+			"item": [
+				{
+					"name": "List all countries",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries"]
+						},
+						"description": "Returns all countries."
+					}
+				},
+				{
+					"name": "List countries (paginated)",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries?limit=10&offset=0",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries"],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						},
+						"description": "Returns paginated countries with { data, meta } wrapper."
+					}
+				},
+				{
+					"name": "List countries (with fields)",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries?fields=name,iso2,capital,currency",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries"],
+							"query": [
+								{
+									"key": "fields",
+									"value": "name,iso2,capital,currency"
+								}
+							]
+						},
+						"description": "Returns all countries with only selected fields."
+					}
+				},
+				{
+					"name": "Get country by ISO2",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "US"]
+						},
+						"description": "Lookup by ISO 2 code."
+					}
+				},
+				{
+					"name": "Get country by ISO3",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/USA",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "USA"]
+						},
+						"description": "Lookup by ISO 3 code."
+					}
+				},
+				{
+					"name": "Get country by name",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/india",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "india"]
+						},
+						"description": "Lookup by country name (case-insensitive)."
+					}
+				}
+			]
+		},
+		{
+			"name": "States",
+			"item": [
+				{
+					"name": "List states for a country",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US/states",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "US", "states"]
+						},
+						"description": "Returns all states for a country."
+					}
+				},
+				{
+					"name": "List states (paginated)",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US/states?limit=10&offset=0",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "US", "states"],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						},
+						"description": "Returns paginated states with { data, meta } wrapper."
+					}
+				},
+				{
+					"name": "Get state by ISO2",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US/states/CA",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "US", "states", "CA"]
+						},
+						"description": "Lookup by state ISO 2 code."
+					}
+				},
+				{
+					"name": "Get state by name",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US/states/california",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "US", "states", "california"]
+						},
+						"description": "Lookup by state name (case-insensitive)."
+					}
+				}
+			]
+		},
+		{
+			"name": "Cities",
+			"item": [
+				{
+					"name": "List cities for a state",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US/states/CA/cities",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "US", "states", "CA", "cities"]
+						},
+						"description": "Returns all cities for a country + state."
+					}
+				},
+				{
+					"name": "List cities (paginated)",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US/states/CA/cities?limit=10&offset=0",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "US", "states", "CA", "cities"],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						},
+						"description": "Returns paginated cities with { data, meta } wrapper."
+					}
+				},
+				{
+					"name": "List cities (with fields)",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US/states/CA/cities?fields=name,latitude,longitude",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "US", "states", "CA", "cities"],
+							"query": [
+								{
+									"key": "fields",
+									"value": "name,latitude,longitude"
+								}
+							]
+						},
+						"description": "Returns cities with only selected fields."
+					}
+				},
+				{
+					"name": "Get city by name",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US/states/CA/cities/Los Angeles",
+							"host": ["{{baseUrl}}"],
+							"path": [
+								"countries",
+								"US",
+								"states",
+								"CA",
+								"cities",
+								"Los Angeles"
+							]
+						},
+						"description": "Lookup by city name (case-insensitive)."
+					}
+				}
+			]
+		}
+	]
+}

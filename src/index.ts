@@ -1,26 +1,38 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
+import {
+	getAllCountries,
+	getCitiesByCountryState,
+	getCitiesPaginated,
+	getCityByName,
+	getCountriesPaginated,
+	getCountryById,
+	getStateByIso2OrName,
+	getStatesByCountry,
+	getStatesPaginated,
+	search
+} from './db/queries'
 import { docsHtml, scalarHtml } from './docs'
 import logo from './logo.png'
 import { openApiSpec } from './openapi'
-import type { City, Country, Location, State } from './types'
+import type { Location, PaginatedResponse } from './types'
 
 const app = new Hono<{ Bindings: Env }>()
 
 const CACHE_HEADERS = {
-	'Cache-Control': 'public, max-age=31536000, s-maxage=31536000, immutable',
+	'Cache-Control': 'public, max-age=31536000, s-maxage=31536000, immutable'
 } as const
 
-function json<T>(
+function jsonResponse<T>(
 	c: {
 		json: (
 			data: T,
 			status?: number,
-			headers?: Record<string, string>,
+			headers?: Record<string, string>
 		) => Response
 	},
 	data: T,
-	status = 200,
+	status = 200
 ) {
 	return c.json(data, status, CACHE_HEADERS)
 }
@@ -29,15 +41,15 @@ app.use('*', cors())
 
 function pickFields<T extends Record<string, unknown>>(
 	data: T[],
-	fields: string | undefined,
+	fields: string | undefined
 ): Partial<T>[]
 function pickFields<T extends Record<string, unknown>>(
 	data: T,
-	fields: string | undefined,
+	fields: string | undefined
 ): Partial<T>
 function pickFields<T extends Record<string, unknown>>(
 	data: T | T[],
-	fields: string | undefined,
+	fields: string | undefined
 ): Partial<T> | Partial<T>[] {
 	if (!fields) return data
 	const keys = fields.split(',').map((f) => f.trim())
@@ -69,12 +81,35 @@ function pickFields<T extends Record<string, unknown>>(
 	return Array.isArray(data) ? data.map(pick) : pick(data)
 }
 
+function parsePagination(c: {
+	req: { query: (k: string) => string | undefined }
+}): { limit: number; offset: number } | null {
+	const rawLimit = c.req.query('limit')
+	const rawOffset = c.req.query('offset')
+	if (!rawLimit && !rawOffset) return null
+	const limit = Math.min(Math.max(parseInt(rawLimit || '25', 10) || 25, 1), 250)
+	const offset = Math.max(parseInt(rawOffset || '0', 10) || 0, 0)
+	return { limit, offset }
+}
+
+function paginated<T>(
+	data: T[],
+	total: number,
+	limit: number,
+	offset: number
+): PaginatedResponse<T> {
+	return {
+		data,
+		meta: { total, limit, offset, hasMore: offset + limit < total }
+	}
+}
+
 // --- Static Assets ---
 
 app.get('/logo.png', (c) => {
 	return c.body(logo, 200, {
 		...CACHE_HEADERS,
-		'Content-Type': 'image/png',
+		'Content-Type': 'image/png'
 	})
 })
 
@@ -97,19 +132,17 @@ app.get('/', async (c) => {
 	const regionCode = cf?.regionCode
 	const cityName = cf?.city
 
-	const kv = c.env.GEO_KV
-	const [countries, states, cities] = await Promise.all([
-		countryCode ? kv.get<Country[]>('countries', 'json') : null,
+	const db = c.env.GEO_DB
+	const [countryInfo, stateInfo, cities] = await Promise.all([
+		countryCode ? getCountryById(db, countryCode) : null,
 		countryCode && regionCode
-			? kv.get<State[]>(`states:${countryCode}`, 'json')
+			? getStateByIso2OrName(db, countryCode, regionCode)
 			: null,
 		countryCode && regionCode
-			? kv.get<City[]>(`cities:${countryCode}:${regionCode}`, 'json')
-			: null,
+			? getCitiesByCountryState(db, countryCode, regionCode)
+			: null
 	])
 
-	const countryInfo = countries?.find((co) => co.iso2 === countryCode)
-	const stateInfo = states?.find((s) => s.iso2 === regionCode)
 	const cityInfo = cityName
 		? cities?.find((ci) => ci.name.toLowerCase() === cityName.toLowerCase())
 		: undefined
@@ -122,7 +155,7 @@ app.get('/', async (c) => {
 		colo: cf?.colo,
 		continent: cf?.continent,
 		country: countryCode,
-		countryInfo,
+		countryInfo: countryInfo ?? undefined,
 		ip: c.req.header('cf-connecting-ip') ?? '',
 		isEU: cf?.isEU === '1' ? true : cf?.isEU === '0' ? false : undefined,
 		latitude: cf?.latitude,
@@ -130,97 +163,127 @@ app.get('/', async (c) => {
 		postalCode: cf?.postalCode,
 		region: cf?.region,
 		regionCode,
-		stateInfo,
-		timezone: cf?.timezone,
+		stateInfo: stateInfo ?? undefined,
+		timezone: cf?.timezone
 	}
 	return c.json(pickFields(location, c.req.query('fields')), 200, {
-		'Cache-Control': 'private, no-store',
+		'Cache-Control': 'private, no-store'
 	})
+})
+
+// --- Search ---
+
+app.get('/search', async (c) => {
+	const q = c.req.query('q')
+	if (!q || q.trim().length === 0) {
+		return c.json({ error: 'Query parameter "q" is required' }, 400)
+	}
+	const limit = Math.min(
+		Math.max(parseInt(c.req.query('limit') || '25', 10) || 25, 1),
+		250
+	)
+	const offset = Math.max(parseInt(c.req.query('offset') || '0', 10) || 0, 0)
+	const { rows, total } = await search(c.env.GEO_DB, q, limit, offset)
+	return jsonResponse(c, paginated(rows, total, limit, offset))
 })
 
 // --- Countries ---
 
 app.get('/countries', async (c) => {
-	const countries = await c.env.GEO_KV.get<Country[]>('countries', 'json')
-	if (!countries) return c.json({ error: 'Countries not found' }, 404)
-	return json(c, pickFields(countries, c.req.query('fields')))
+	const db = c.env.GEO_DB
+	const page = parsePagination(c)
+	const fields = c.req.query('fields')
+	if (page) {
+		const { rows, total } = await getCountriesPaginated(
+			db,
+			page.limit,
+			page.offset
+		)
+		return jsonResponse(
+			c,
+			paginated(pickFields(rows, fields), total, page.limit, page.offset)
+		)
+	}
+	const countries = await getAllCountries(db)
+	if (countries.length === 0)
+		return c.json({ error: 'Countries not found' }, 404)
+	return jsonResponse(c, pickFields(countries, fields))
 })
 
 app.get('/countries/:id', async (c) => {
-	const id = c.req.param('id')
-	const countries = await c.env.GEO_KV.get<Country[]>('countries', 'json')
-	if (!countries) return c.json({ error: 'Countries not found' }, 404)
-
-	const upper = id.toUpperCase()
-	const lower = id.toLowerCase()
-	const country = countries.find(
-		(co) =>
-			co.iso2 === upper || co.iso3 === upper || co.name.toLowerCase() === lower,
-	)
-
+	const db = c.env.GEO_DB
+	const country = await getCountryById(db, c.req.param('id'))
 	if (!country) return c.json({ error: 'Country not found' }, 404)
-	return json(c, pickFields(country, c.req.query('fields')))
+	return jsonResponse(c, pickFields(country, c.req.query('fields')))
 })
 
 // --- States ---
 
 app.get('/countries/:country/states', async (c) => {
+	const db = c.env.GEO_DB
 	const countryCode = c.req.param('country').toUpperCase()
-	const states = await c.env.GEO_KV.get<State[]>(
-		`states:${countryCode}`,
-		'json',
-	)
-	if (!states) return c.json({ error: 'States not found' }, 404)
-	return json(c, pickFields(states, c.req.query('fields')))
+	const page = parsePagination(c)
+	const fields = c.req.query('fields')
+	if (page) {
+		const { rows, total } = await getStatesPaginated(
+			db,
+			countryCode,
+			page.limit,
+			page.offset
+		)
+		return jsonResponse(
+			c,
+			paginated(pickFields(rows, fields), total, page.limit, page.offset)
+		)
+	}
+	const states = await getStatesByCountry(db, countryCode)
+	if (states.length === 0) return c.json({ error: 'States not found' }, 404)
+	return jsonResponse(c, pickFields(states, fields))
 })
 
 app.get('/countries/:country/states/:state', async (c) => {
+	const db = c.env.GEO_DB
 	const countryCode = c.req.param('country').toUpperCase()
 	const stateId = c.req.param('state')
-	const states = await c.env.GEO_KV.get<State[]>(
-		`states:${countryCode}`,
-		'json',
-	)
-	if (!states) return c.json({ error: 'States not found' }, 404)
-
-	const upper = stateId.toUpperCase()
-	const lower = stateId.toLowerCase()
-	const state = states.find(
-		(s) => s.iso2 === upper || s.name.toLowerCase() === lower,
-	)
-
+	const state = await getStateByIso2OrName(db, countryCode, stateId)
 	if (!state) return c.json({ error: 'State not found' }, 404)
-	return json(c, pickFields(state, c.req.query('fields')))
+	return jsonResponse(c, pickFields(state, c.req.query('fields')))
 })
 
 // --- Cities ---
 
 app.get('/countries/:country/states/:state/cities', async (c) => {
+	const db = c.env.GEO_DB
 	const countryCode = c.req.param('country').toUpperCase()
 	const stateCode = c.req.param('state').toUpperCase()
-	const cities = await c.env.GEO_KV.get<City[]>(
-		`cities:${countryCode}:${stateCode}`,
-		'json',
-	)
-	if (!cities) return c.json({ error: 'Cities not found' }, 404)
-	return json(c, pickFields(cities, c.req.query('fields')))
+	const page = parsePagination(c)
+	const fields = c.req.query('fields')
+	if (page) {
+		const { rows, total } = await getCitiesPaginated(
+			db,
+			countryCode,
+			stateCode,
+			page.limit,
+			page.offset
+		)
+		return jsonResponse(
+			c,
+			paginated(pickFields(rows, fields), total, page.limit, page.offset)
+		)
+	}
+	const cities = await getCitiesByCountryState(db, countryCode, stateCode)
+	if (cities.length === 0) return c.json({ error: 'Cities not found' }, 404)
+	return jsonResponse(c, pickFields(cities, fields))
 })
 
 app.get('/countries/:country/states/:state/cities/:city', async (c) => {
+	const db = c.env.GEO_DB
 	const countryCode = c.req.param('country').toUpperCase()
 	const stateCode = c.req.param('state').toUpperCase()
 	const cityName = c.req.param('city')
-	const cities = await c.env.GEO_KV.get<City[]>(
-		`cities:${countryCode}:${stateCode}`,
-		'json',
-	)
-	if (!cities) return c.json({ error: 'Cities not found' }, 404)
-
-	const lower = cityName.toLowerCase()
-	const city = cities.find((ci) => ci.name.toLowerCase() === lower)
-
+	const city = await getCityByName(db, countryCode, stateCode, cityName)
 	if (!city) return c.json({ error: 'City not found' }, 404)
-	return json(c, pickFields(city, c.req.query('fields')))
+	return jsonResponse(c, pickFields(city, c.req.query('fields')))
 })
 
 export default app

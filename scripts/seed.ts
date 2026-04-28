@@ -1,12 +1,9 @@
-import { $ } from 'bun'
-import { mkdir, writeFile } from 'node:fs/promises'
+import { unlink, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
-import type { City, Country, State } from '../src/types'
-
-const DATA_DIR = join(import.meta.dirname, '..', 'data')
 const BASE_URL =
 	'https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master'
+const SQL_FILE = join(import.meta.dirname, '..', '.d1-seed.sql')
 
 type RawCountry = {
 	id: number
@@ -88,9 +85,14 @@ type RawCombinedCountry = {
 	states: RawNestedState[]
 }
 
-type KVEntry = {
-	key: string
-	value: string
+function esc(s: string | null | undefined): string {
+	return (s ?? '').replace(/'/g, "''")
+}
+
+function nullable(v: string | number | null | undefined): string {
+	if (v === null || v === undefined || v === '') return 'NULL'
+	if (typeof v === 'number') return String(v)
+	return `'${esc(String(v))}'`
 }
 
 async function fetchJSON<T>(path: string): Promise<T> {
@@ -100,183 +102,173 @@ async function fetchJSON<T>(path: string): Promise<T> {
 	return (await res.json()) as T
 }
 
-function mapCountry(c: RawCountry): Country {
-	return {
-		areaSqKm: c.area_sq_km,
-		capital: c.capital,
-		currency: c.currency,
-		currencyName: c.currency_name,
-		currencySymbol: c.currency_symbol,
-		emoji: c.emoji,
-		emojiU: c.emojiU,
-		gdp: c.gdp,
-		iso2: c.iso2,
-		iso3: c.iso3,
-		latitude: c.latitude,
-		longitude: c.longitude,
-		name: c.name,
-		nationality: c.nationality,
-		native: c.native,
-		numericCode: c.numeric_code,
-		phoneCode: c.phonecode,
-		population: c.population,
-		postalCodeFormat: c.postal_code_format,
-		postalCodeRegex: c.postal_code_regex,
-		region: c.region,
-		subregion: c.subregion,
-		timezones: c.timezones,
-		tld: c.tld,
-		translations: c.translations,
-		wikiDataId: c.wikiDataId,
-	}
-}
-
-function mapState(s: RawState): State {
-	return {
-		countryCode: s.country_code,
-		countryName: s.country_name,
-		fipsCode: s.fips_code,
-		iso2: s.iso2,
-		iso31662: s.iso3166_2,
-		latitude: s.latitude,
-		level: s.level,
-		longitude: s.longitude,
-		name: s.name,
-		native: s.native,
-		parentId: s.parent_id,
-		population: s.population,
-		timezone: s.timezone,
-		translations: s.translations,
-		type: s.type,
-		wikiDataId: s.wikiDataId,
-	}
+async function wrangler(args: string[]): Promise<void> {
+	const proc = Bun.spawn(['bunx', 'wrangler', ...args], {
+		stdout: 'inherit',
+		stderr: 'inherit'
+	})
+	const code = await proc.exited
+	if (code !== 0)
+		throw new Error(`wrangler ${args.join(' ')} failed (exit ${code})`)
 }
 
 async function main() {
-	await mkdir(DATA_DIR, { recursive: true })
+	const isRemote = process.argv.includes('--remote')
+	const target = isRemote ? '--remote' : '--local'
 
+	// Apply migrations
+	console.log(`\nApplying migrations (${isRemote ? 'remote' : 'local'})...`)
+	await wrangler(['d1', 'migrations', 'apply', 'geo-db', target])
+
+	// Fetch upstream data
 	const [rawCountries, rawStates, rawCombined] = await Promise.all([
 		fetchJSON<RawCountry[]>('json/countries.json'),
 		fetchJSON<RawState[]>('json/states.json'),
-		fetchJSON<RawCombinedCountry[]>('json/countries+states+cities.json'),
+		fetchJSON<RawCombinedCountry[]>('json/countries+states+cities.json')
 	])
 
-	// --- Countries ---
-	const countries = rawCountries
-		.map(mapCountry)
-		.sort((a, b) => a.name.localeCompare(b.name))
+	// Build one big SQL file
+	const sql: string[] = []
 
-	const countriesBulk: KVEntry[] = [
-		{ key: 'countries', value: JSON.stringify(countries) },
-	]
+	// Clear existing data
+	sql.push('DELETE FROM search_index;')
+	sql.push('DELETE FROM cities;')
+	sql.push('DELETE FROM states;')
+	sql.push('DELETE FROM countries;')
 
-	// --- States grouped by country ---
-	const statesByCountry = new Map<string, State[]>()
-
-	for (const s of rawStates) {
-		const key = s.country_code
-		if (!statesByCountry.has(key)) statesByCountry.set(key, [])
-		statesByCountry.get(key)!.push(mapState(s))
-	}
-
-	for (const states of statesByCountry.values()) {
-		states.sort((a, b) => a.name.localeCompare(b.name))
-	}
-
-	const statesBulk: KVEntry[] = [...statesByCountry.entries()].map(
-		([cc, states]) => ({
-			key: `states:${cc}`,
-			value: JSON.stringify(states),
-		}),
+	// Countries
+	const sortedCountries = rawCountries.sort((a, b) =>
+		a.name.localeCompare(b.name)
 	)
+	console.log(`\nPreparing ${sortedCountries.length} countries...`)
 
-	// --- Cities from combined file (cities.json was removed upstream) ---
-	const citiesByCountryState = new Map<string, City[]>()
-	let totalCities = 0
+	for (const c of sortedCountries) {
+		const tz = esc(JSON.stringify(c.timezones))
+		const tr = esc(JSON.stringify(c.translations))
+		sql.push(
+			`INSERT INTO countries (iso2,iso3,name,native,capital,currency,currency_name,currency_symbol,tld,phone_code,numeric_code,nationality,region,subregion,emoji,emoji_u,latitude,longitude,area_sq_km,population,gdp,postal_code_format,postal_code_regex,wiki_data_id,timezones,translations) VALUES ('${esc(c.iso2)}','${esc(c.iso3)}','${esc(c.name)}','${esc(c.native)}','${esc(c.capital)}','${esc(c.currency)}','${esc(c.currency_name)}','${esc(c.currency_symbol)}','${esc(c.tld)}','${esc(c.phonecode)}','${esc(c.numeric_code)}','${esc(c.nationality)}','${esc(c.region)}','${esc(c.subregion)}','${esc(c.emoji)}','${esc(c.emojiU)}','${esc(c.latitude)}','${esc(c.longitude)}',${nullable(c.area_sq_km)},${nullable(c.population)},${nullable(c.gdp)},${nullable(c.postal_code_format)},${nullable(c.postal_code_regex)},'${esc(c.wikiDataId)}','${tz}','${tr}');`
+		)
+	}
 
+	// States
+	const sortedStates = rawStates.sort((a, b) => a.name.localeCompare(b.name))
+	console.log(`Preparing ${sortedStates.length} states...`)
+
+	for (const s of sortedStates) {
+		const tr = esc(JSON.stringify(s.translations))
+		sql.push(
+			`INSERT INTO states (country_code,country_name,iso2,iso3166_2,fips_code,name,native,type,level,parent_id,population,latitude,longitude,timezone,wiki_data_id,translations) VALUES ('${esc(s.country_code)}','${esc(s.country_name)}','${esc(s.iso2)}','${esc(s.iso3166_2)}','${esc(s.fips_code)}','${esc(s.name)}','${esc(s.native)}','${esc(s.type)}',${nullable(s.level)},${nullable(s.parent_id)},${nullable(s.population)},'${esc(s.latitude)}','${esc(s.longitude)}','${esc(s.timezone)}','${esc(s.wikiDataId)}','${tr}');`
+		)
+	}
+
+	// Cities
+	type CityRow = {
+		countryCode: string
+		countryName: string
+		stateCode: string
+		stateName: string
+		name: string
+		latitude: string
+		longitude: string
+		timezone: string
+	}
+
+	const allCities: CityRow[] = []
 	for (const country of rawCombined) {
 		if (!country.states) continue
 		for (const state of country.states) {
 			if (!state.cities) continue
-			const mapKey = `${country.iso2}:${state.iso2}`
-			const cities: City[] = state.cities.map((c) => ({
-				countryCode: country.iso2,
-				countryName: country.name,
-				latitude: c.latitude,
-				longitude: c.longitude,
-				name: c.name,
-				stateCode: state.iso2,
-				stateName: state.name,
-				timezone: c.timezone,
-			}))
-			cities.sort((a, b) => a.name.localeCompare(b.name))
-			citiesByCountryState.set(mapKey, cities)
-			totalCities += cities.length
+			for (const city of state.cities) {
+				allCities.push({
+					countryCode: country.iso2,
+					countryName: country.name,
+					stateCode: state.iso2,
+					stateName: state.name,
+					name: city.name,
+					latitude: city.latitude,
+					longitude: city.longitude,
+					timezone: city.timezone
+				})
+			}
 		}
 	}
 
-	const citiesBulk: KVEntry[] = [...citiesByCountryState.entries()].map(
-		([key, cities]) => ({
-			key: `cities:${key}`,
-			value: JSON.stringify(cities),
-		}),
-	)
+	console.log(`Preparing ${allCities.length} cities...`)
 
-	// Write bulk files
-	await Promise.all([
-		writeFile(
-			join(DATA_DIR, 'kv-bulk-countries.json'),
-			JSON.stringify(countriesBulk, null, 2),
-		),
-		writeFile(
-			join(DATA_DIR, 'kv-bulk-states.json'),
-			JSON.stringify(statesBulk, null, 2),
-		),
-		writeFile(
-			join(DATA_DIR, 'kv-bulk-cities.json'),
-			JSON.stringify(citiesBulk, null, 2),
-		),
+	for (const c of allCities) {
+		sql.push(
+			`INSERT INTO cities (country_code,country_name,state_code,state_name,name,latitude,longitude,timezone) VALUES ('${esc(c.countryCode)}','${esc(c.countryName)}','${esc(c.stateCode)}','${esc(c.stateName)}','${esc(c.name)}','${esc(c.latitude)}','${esc(c.longitude)}','${esc(c.timezone)}');`
+		)
+	}
+
+	// Search index
+	console.log('Preparing search index...')
+
+	const countryNameMap = new Map<string, string>()
+	for (const c of rawCountries) {
+		countryNameMap.set(c.iso2, c.name)
+	}
+
+	for (const c of sortedCountries) {
+		const extra = esc(JSON.stringify({ country_name: c.name }))
+		sql.push(
+			`INSERT INTO search_index (name,type,country_code,state_code,extra) VALUES ('${esc(c.name)}','country','${esc(c.iso2)}','','${extra}');`
+		)
+	}
+
+	for (const s of sortedStates) {
+		const countryName = countryNameMap.get(s.country_code) ?? s.country_name
+		const extra = esc(JSON.stringify({ country_name: countryName }))
+		sql.push(
+			`INSERT INTO search_index (name,type,country_code,state_code,extra) VALUES ('${esc(s.name)}','state','${esc(s.country_code)}','${esc(s.iso2)}','${extra}');`
+		)
+	}
+
+	for (const c of allCities) {
+		const extra = esc(
+			JSON.stringify({ country_name: c.countryName, state_name: c.stateName })
+		)
+		sql.push(
+			`INSERT INTO search_index (name,type,country_code,state_code,extra) VALUES ('${esc(c.name)}','city','${esc(c.countryCode)}','${esc(c.stateCode)}','${extra}');`
+		)
+	}
+
+	// Write and execute
+	console.log(`\nWriting ${sql.length} SQL statements...`)
+	await writeFile(SQL_FILE, sql.join('\n'))
+
+	console.log('Executing SQL...')
+	await wrangler([
+		'd1',
+		'execute',
+		'geo-db',
+		`--file=${SQL_FILE}`,
+		target,
+		'--yes'
 	])
 
 	console.log(
-		`\nLoaded: ${rawCountries.length} countries, ${rawStates.length} states, ${totalCities} cities`,
+		`\nDone! Loaded ${sortedCountries.length} countries, ${sortedStates.length} states, ${allCities.length} cities`
 	)
-	console.log(`\nGenerated bulk files:`)
-	console.log(`  countries: 1 key`)
-	console.log(`  states: ${statesBulk.length} keys`)
-	console.log(`  cities: ${citiesBulk.length} keys`)
-	console.log(`\nFiles written to ${DATA_DIR}/`)
 
-	if (process.argv.includes('--upload')) {
-		console.log(`\nUploading to KV...`)
-		const files = [
-			'kv-bulk-countries.json',
-			'kv-bulk-states.json',
-			'kv-bulk-cities.json',
-		]
-		for (const file of files) {
-			const path = join(DATA_DIR, file)
-			console.log(`  Uploading ${file}...`)
-			await $`bunx wrangler kv bulk put ${path} --binding GEO_KV --remote`
-		}
-		console.log(`\nUpload complete!`)
-
+	// Cache purge (remote only)
+	if (isRemote) {
 		const cfToken = process.env.CLOUDFLARE_API_TOKEN
 		if (!cfToken) {
 			console.log(
-				`\nWarning: CLOUDFLARE_API_TOKEN not set -- skipping cache purge.`,
+				'\nWarning: CLOUDFLARE_API_TOKEN not set -- skipping cache purge.'
 			)
 		} else {
-			console.log(`\nPurging Cloudflare cache...`)
+			console.log('\nPurging Cloudflare cache...')
 
 			const zoneRes = await fetch(
 				'https://api.cloudflare.com/client/v4/zones?name=geocoded.me',
 				{
 					headers: {
 						Authorization: `Bearer ${cfToken}`,
-						'Content-Type': 'application/json',
-					},
-				},
+						'Content-Type': 'application/json'
+					}
+				}
 			)
 			const zoneData = (await zoneRes.json()) as {
 				success: boolean
@@ -296,10 +288,10 @@ async function main() {
 						method: 'POST',
 						headers: {
 							Authorization: `Bearer ${cfToken}`,
-							'Content-Type': 'application/json',
+							'Content-Type': 'application/json'
 						},
-						body: JSON.stringify({ purge_everything: true }),
-					},
+						body: JSON.stringify({ purge_everything: true })
+					}
 				)
 				const purgeData = (await purgeRes.json()) as { success: boolean }
 
@@ -310,9 +302,9 @@ async function main() {
 				}
 			}
 		}
-	} else {
-		console.log(`\nRun with --upload to push to KV, or run: bun seed:upload`)
 	}
 }
 
-main().catch(console.error)
+main()
+	.catch(console.error)
+	.finally(() => unlink(SQL_FILE).catch(() => {}))

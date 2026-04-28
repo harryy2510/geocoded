@@ -1,42 +1,46 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"account_id": "6d4f1d5f2a1db6a22131641a4b57ef22",
 	"name": "geo-api",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-03-01",
 	"version_metadata": {
-		"binding": "CF_VERSION_METADATA",
+		"binding": "CF_VERSION_METADATA"
+	},
+	"observability": {
+		"enabled": true
 	},
 	"placement": {
-		"mode": "smart",
+		"mode": "smart"
 	},
 	"rules": [
 		{
 			"type": "Data",
 			"globs": ["**/*.png"],
-			"fallthrough": false,
-		},
+			"fallthrough": false
+		}
 	],
-	"kv_namespaces": [
+	"d1_databases": [
 		{
-			"binding": "GEO_KV",
-			"id": "e9d034108990412ba036f9e9d56e79a3",
-		},
+			"binding": "GEO_DB",
+			"database_name": "geo-db",
+			"database_id": "f9662148-1ef8-42f2-becd-ce834767dc5d",
+			"migrations_dir": "migrations"
+		}
 	],
 	"workers_dev": false,
 	"preview_urls": false,
 	"routes": [
 		{
 			"custom_domain": true,
-			"pattern": "geocoded.me",
+			"pattern": "geocoded.me"
 		},
 		{
 			"custom_domain": true,
-			"pattern": "www.geocoded.me",
+			"pattern": "www.geocoded.me"
 		},
 		{
 			"custom_domain": true,
-			"pattern": "api.geocoded.me",
-		},
-	],
+			"pattern": "api.geocoded.me"
+		}
+	]
 }

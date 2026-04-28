@@ -84,3 +84,22 @@ export type City = {
 	stateName: string
 	timezone: string
 }
+
+export type SearchResult = {
+	type: 'country' | 'state' | 'city'
+	name: string
+	countryCode: string
+	countryName: string
+	stateCode: string | null
+	stateName: string | null
+}
+
+export type PaginatedResponse<T> = {
+	data: T[]
+	meta: {
+		total: number
+		limit: number
+		offset: number
+		hasMore: boolean
+	}
+}

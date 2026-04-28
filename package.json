@@ -6,7 +6,7 @@
 		"dev": "wrangler dev",
 		"deploy": "wrangler deploy",
 		"seed": "bun scripts/seed.ts",
-		"seed:upload": "bun scripts/seed.ts --upload",
+		"seed:upload": "bun scripts/seed.ts --remote",
 		"types": "wrangler types",
 		"check": "bun lint:check && bun format:check",
 		"fix": "bun lint:fix && bun format:fix",

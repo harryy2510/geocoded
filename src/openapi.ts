@@ -5,7 +5,7 @@ const fieldsParameter = {
 	description:
 		'Comma-separated list of fields to return. Supports dot notation for nested fields (e.g. `countryInfo.name,countryInfo.iso2`). When omitted, all fields are returned.',
 	schema: { type: 'string' as const },
-	example: 'name,iso2',
+	example: 'name,iso2'
 }
 
 const errorResponse = {
@@ -15,12 +15,12 @@ const errorResponse = {
 			schema: {
 				type: 'object' as const,
 				properties: {
-					error: { type: 'string' as const },
+					error: { type: 'string' as const }
 				},
-				required: ['error'],
-			},
-		},
-	},
+				required: ['error']
+			}
+		}
+	}
 }
 
 const timezoneSchema = {
@@ -30,8 +30,8 @@ const timezoneSchema = {
 		gmtOffset: { type: 'number' as const },
 		gmtOffsetName: { type: 'string' as const },
 		tzName: { type: 'string' as const },
-		zoneName: { type: 'string' as const },
-	},
+		zoneName: { type: 'string' as const }
+	}
 }
 
 const countrySchema = {
@@ -63,10 +63,10 @@ const countrySchema = {
 		tld: { type: 'string' as const },
 		translations: {
 			type: 'object' as const,
-			additionalProperties: { type: 'string' as const },
+			additionalProperties: { type: 'string' as const }
 		},
-		wikiDataId: { type: 'string' as const },
-	},
+		wikiDataId: { type: 'string' as const }
+	}
 }
 
 const stateSchema = {
@@ -87,11 +87,11 @@ const stateSchema = {
 		timezone: { type: 'string' as const },
 		translations: {
 			type: 'object' as const,
-			additionalProperties: { type: 'string' as const },
+			additionalProperties: { type: 'string' as const }
 		},
 		type: { type: 'string' as const },
-		wikiDataId: { type: 'string' as const },
-	},
+		wikiDataId: { type: 'string' as const }
+	}
 }
 
 const citySchema = {
@@ -104,8 +104,8 @@ const citySchema = {
 		name: { type: 'string' as const },
 		stateCode: { type: 'string' as const },
 		stateName: { type: 'string' as const },
-		timezone: { type: 'string' as const },
-	},
+		timezone: { type: 'string' as const }
+	}
 }
 
 const locationSchema = {
@@ -115,15 +115,15 @@ const locationSchema = {
 		asOrganization: { type: 'string' as const },
 		city: { type: 'string' as const },
 		cityInfo: {
-			description: 'Full city details from KV (matched by city name)',
-			...citySchema,
+			description: 'Full city details (matched by city name)',
+			...citySchema
 		},
 		colo: { type: 'string' as const },
 		continent: { type: 'string' as const },
 		country: { type: 'string' as const },
 		countryInfo: {
-			description: 'Full country details from KV (matched by country code)',
-			...countrySchema,
+			description: 'Full country details (matched by country code)',
+			...countrySchema
 		},
 		ip: { type: 'string' as const },
 		isEU: { type: 'boolean' as const },
@@ -133,11 +133,63 @@ const locationSchema = {
 		region: { type: 'string' as const },
 		regionCode: { type: 'string' as const },
 		stateInfo: {
-			description: 'Full state details from KV (matched by region code)',
-			...stateSchema,
+			description: 'Full state details (matched by region code)',
+			...stateSchema
 		},
-		timezone: { type: 'string' as const },
+		timezone: { type: 'string' as const }
+	}
+}
+
+const paginationParams = [
+	{
+		name: 'limit',
+		in: 'query' as const,
+		required: false,
+		description:
+			'Maximum number of results to return (1-250, default 25). When provided, response is wrapped in `{ data, meta }`.',
+		schema: {
+			type: 'integer' as const,
+			minimum: 1,
+			maximum: 250,
+			default: 25
+		}
 	},
+	{
+		name: 'offset',
+		in: 'query' as const,
+		required: false,
+		description: 'Number of results to skip (default 0).',
+		schema: { type: 'integer' as const, minimum: 0, default: 0 }
+	}
+]
+
+const paginationMeta = {
+	type: 'object' as const,
+	properties: {
+		total: {
+			type: 'integer' as const,
+			description: 'Total number of matching records'
+		},
+		limit: { type: 'integer' as const },
+		offset: { type: 'integer' as const },
+		hasMore: { type: 'boolean' as const }
+	},
+	required: ['total', 'limit', 'offset', 'hasMore']
+}
+
+const searchResultSchema = {
+	type: 'object' as const,
+	properties: {
+		type: {
+			type: 'string' as const,
+			enum: ['country', 'state', 'city']
+		},
+		name: { type: 'string' as const },
+		countryCode: { type: 'string' as const },
+		countryName: { type: 'string' as const },
+		stateCode: { type: 'string' as const, nullable: true },
+		stateName: { type: 'string' as const, nullable: true }
+	}
 }
 
 export const openApiSpec = {
@@ -148,16 +200,16 @@ export const openApiSpec = {
 		description:
 			'Free country, state, city, and location data. Fast, cached, and filterable.\n\nData sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database) under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).',
 		contact: {
-			email: 'contact@harryy.me',
+			email: 'contact@harryy.me'
 		},
 		license: {
 			name: 'ODbL-1.0',
-			url: 'https://opendatacommons.org/licenses/odbl/',
+			url: 'https://opendatacommons.org/licenses/odbl/'
 		},
 		'x-logo': {
 			url: '/logo.png',
-			altText: 'Geocoded',
-		},
+			altText: 'Geocoded'
+		}
 	},
 	servers: [{ url: 'https://api.geocoded.me' }],
 	paths: {
@@ -166,7 +218,7 @@ export const openApiSpec = {
 				tags: ['Location'],
 				summary: "Get caller's geo info",
 				description:
-					"Returns geographic information about the caller based on their IP address, using Cloudflare's edge network data. Also enriches the response with full country, state, and city details from KV when available (`countryInfo`, `stateInfo`, `cityInfo`).",
+					"Returns geographic information about the caller based on their IP address, using Cloudflare's edge network data. Also enriches the response with full country, state, and city details when available (`countryInfo`, `stateInfo`, `cityInfo`).",
 				parameters: [fieldsParameter],
 				responses: {
 					'200': {
@@ -187,7 +239,7 @@ export const openApiSpec = {
 										population: 883305,
 										stateCode: 'CA',
 										stateName: 'California',
-										timezone: 'America/Los_Angeles',
+										timezone: 'America/Los_Angeles'
 									},
 									colo: 'SFO',
 									continent: 'NA',
@@ -199,7 +251,7 @@ export const openApiSpec = {
 										iso2: 'US',
 										iso3: 'USA',
 										name: 'United States',
-										phoneCode: '1',
+										phoneCode: '1'
 									},
 									ip: '1.2.3.4',
 									isEU: false,
@@ -213,21 +265,60 @@ export const openApiSpec = {
 										countryName: 'United States',
 										iso2: 'CA',
 										name: 'California',
-										timezone: 'America/Los_Angeles',
+										timezone: 'America/Los_Angeles'
 									},
-									timezone: 'America/Los_Angeles',
-								},
-							},
-						},
+									timezone: 'America/Los_Angeles'
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		'/search': {
+			get: {
+				tags: ['Search'],
+				summary: 'Search countries, states, and cities',
+				description:
+					'Full-text search across all entity types. Returns matching results ranked by relevance. Always paginated.',
+				parameters: [
+					{
+						name: 'q',
+						in: 'query' as const,
+						required: true,
+						description: 'Search query (prefix matching supported)',
+						schema: { type: 'string' as const },
+						example: 'lond'
 					},
-				},
-			},
+					...paginationParams
+				],
+				responses: {
+					'200': {
+						description: 'Paginated search results',
+						content: {
+							'application/json': {
+								schema: {
+									type: 'object' as const,
+									properties: {
+										data: {
+											type: 'array' as const,
+											items: searchResultSchema
+										},
+										meta: paginationMeta
+									}
+								}
+							}
+						}
+					},
+					'400': errorResponse
+				}
+			}
 		},
 		'/countries': {
 			get: {
 				tags: ['Countries'],
 				summary: 'List all countries',
-				parameters: [fieldsParameter],
+				parameters: [fieldsParameter, ...paginationParams],
 				responses: {
 					'200': {
 						description: 'Array of countries',
@@ -235,14 +326,14 @@ export const openApiSpec = {
 							'application/json': {
 								schema: {
 									type: 'array' as const,
-									items: countrySchema,
-								},
-							},
-						},
+									items: countrySchema
+								}
+							}
+						}
 					},
-					'404': errorResponse,
-				},
-			},
+					'404': errorResponse
+				}
+			}
 		},
 		'/countries/{id}': {
 			get: {
@@ -257,20 +348,20 @@ export const openApiSpec = {
 						required: true,
 						description: 'ISO 2 code, ISO 3 code, or country name',
 						schema: { type: 'string' as const },
-						example: 'US',
+						example: 'US'
 					},
-					fieldsParameter,
+					fieldsParameter
 				],
 				responses: {
 					'200': {
 						description: 'Country object',
 						content: {
-							'application/json': { schema: countrySchema },
-						},
+							'application/json': { schema: countrySchema }
+						}
 					},
-					'404': errorResponse,
-				},
-			},
+					'404': errorResponse
+				}
+			}
 		},
 		'/countries/{country}/states': {
 			get: {
@@ -283,9 +374,10 @@ export const openApiSpec = {
 						required: true,
 						description: 'Country ISO 2 code',
 						schema: { type: 'string' as const },
-						example: 'US',
+						example: 'US'
 					},
 					fieldsParameter,
+					...paginationParams
 				],
 				responses: {
 					'200': {
@@ -294,14 +386,14 @@ export const openApiSpec = {
 							'application/json': {
 								schema: {
 									type: 'array' as const,
-									items: stateSchema,
-								},
-							},
-						},
+									items: stateSchema
+								}
+							}
+						}
 					},
-					'404': errorResponse,
-				},
-			},
+					'404': errorResponse
+				}
+			}
 		},
 		'/countries/{country}/states/{state}': {
 			get: {
@@ -315,7 +407,7 @@ export const openApiSpec = {
 						required: true,
 						description: 'Country ISO 2 code',
 						schema: { type: 'string' as const },
-						example: 'US',
+						example: 'US'
 					},
 					{
 						name: 'state',
@@ -323,20 +415,20 @@ export const openApiSpec = {
 						required: true,
 						description: 'State ISO 2 code or state name',
 						schema: { type: 'string' as const },
-						example: 'CA',
+						example: 'CA'
 					},
-					fieldsParameter,
+					fieldsParameter
 				],
 				responses: {
 					'200': {
 						description: 'State object',
 						content: {
-							'application/json': { schema: stateSchema },
-						},
+							'application/json': { schema: stateSchema }
+						}
 					},
-					'404': errorResponse,
-				},
-			},
+					'404': errorResponse
+				}
+			}
 		},
 		'/countries/{country}/states/{state}/cities': {
 			get: {
@@ -349,7 +441,7 @@ export const openApiSpec = {
 						required: true,
 						description: 'Country ISO 2 code',
 						schema: { type: 'string' as const },
-						example: 'US',
+						example: 'US'
 					},
 					{
 						name: 'state',
@@ -357,9 +449,10 @@ export const openApiSpec = {
 						required: true,
 						description: 'State ISO 2 code',
 						schema: { type: 'string' as const },
-						example: 'CA',
+						example: 'CA'
 					},
 					fieldsParameter,
+					...paginationParams
 				],
 				responses: {
 					'200': {
@@ -368,14 +461,14 @@ export const openApiSpec = {
 							'application/json': {
 								schema: {
 									type: 'array' as const,
-									items: citySchema,
-								},
-							},
-						},
+									items: citySchema
+								}
+							}
+						}
 					},
-					'404': errorResponse,
-				},
-			},
+					'404': errorResponse
+				}
+			}
 		},
 		'/countries/{country}/states/{state}/cities/{city}': {
 			get: {
@@ -389,7 +482,7 @@ export const openApiSpec = {
 						required: true,
 						description: 'Country ISO 2 code',
 						schema: { type: 'string' as const },
-						example: 'US',
+						example: 'US'
 					},
 					{
 						name: 'state',
@@ -397,7 +490,7 @@ export const openApiSpec = {
 						required: true,
 						description: 'State ISO 2 code',
 						schema: { type: 'string' as const },
-						example: 'CA',
+						example: 'CA'
 					},
 					{
 						name: 'city',
@@ -405,20 +498,20 @@ export const openApiSpec = {
 						required: true,
 						description: 'City name',
 						schema: { type: 'string' as const },
-						example: 'Los Angeles',
+						example: 'Los Angeles'
 					},
-					fieldsParameter,
+					fieldsParameter
 				],
 				responses: {
 					'200': {
 						description: 'City object',
 						content: {
-							'application/json': { schema: citySchema },
-						},
+							'application/json': { schema: citySchema }
+						}
 					},
-					'404': errorResponse,
-				},
-			},
-		},
-	},
+					'404': errorResponse
+				}
+			}
+		}
+	}
 }

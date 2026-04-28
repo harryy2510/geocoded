@@ -4,41 +4,50 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Geo API — a Cloudflare Worker serving country, state, city, and location data from KV storage. Built with Hono and deployed via Wrangler.
+Geo API -- a Cloudflare Worker serving country, state, city, and location data from a D1 database. Built with Hono and deployed via Wrangler.
 
 ## Commands
 
-- `bun dev` — start local dev server (wrangler dev)
-- `bun run deploy` — deploy to Cloudflare
-- `bun seed` — generate KV bulk JSON files from upstream data into `data/`
-- `bun seed:upload` — generate + upload to Cloudflare KV (reads namespace ID from `wrangler.jsonc`)
-- `bun run types` — regenerate `worker-configuration.d.ts` (auto-generated, do not edit)
-- `bunx tsc --noEmit` — type-check
+- `bun dev` -- start local dev server (wrangler dev)
+- `bun run deploy` -- deploy to Cloudflare
+- `bun seed` -- seed local D1 database from upstream data
+- `bun seed:upload` -- seed remote (production) D1 database
+- `bun run types` -- regenerate `worker-configuration.d.ts` (auto-generated, do not edit)
+- `bun check` -- run linting and formatting checks (oxlint + oxfmt)
+- `bunx tsc --noEmit` -- type-check
+- `bunx wrangler d1 migrations apply geo-db --local` -- apply migrations to local D1
 
 ## Architecture
 
 **Runtime**: Cloudflare Worker with Hono router (`src/index.ts`)
-**Storage**: Cloudflare KV (`GEO_KV` binding) with these key patterns:
 
-- `countries` — all countries array
-- `states:{COUNTRY_ISO2}` — states for a country
-- `cities:{COUNTRY_ISO2}:{STATE_ISO2}` — cities for a country+state
-  **Data pipeline**: `scripts/seed.ts` fetches from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database), maps all fields to camelCase (`src/types.ts`), and writes bulk JSON files. Pass `--upload` to also push to KV (uses `--binding GEO_KV` so the namespace ID is read from `wrangler.jsonc`). A GitHub Actions workflow (`.github/workflows/seed.yml`) runs `bun seed:upload` on pushes to `scripts/seed.ts`.
+**Storage**: Cloudflare D1 (`GEO_DB` binding) with these tables:
+
+- `countries` -- all countries (keyed by `iso2`)
+- `states` -- all states (indexed by `country_code`)
+- `cities` -- all cities (indexed by `country_code` + `state_code`)
+- `search_index` -- FTS5 virtual table for full-text search across all entities
+
+**Migrations**: SQL migration files in `migrations/`, applied via `wrangler d1 migrations apply`. Migrations are immutable -- never edit an already-applied migration.
+
+**Data pipeline**: `scripts/seed.ts` fetches from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database), maps fields to snake_case for D1 columns, and inserts into D1 via batched SQL. Pass `--remote` to seed the production database. A GitHub Actions workflow (`.github/workflows/seed.yml`) runs `bun seed:upload` on pushes to `scripts/seed.ts` or `migrations/`.
 
 **API routes** (all return JSON with aggressive cache headers):
 
-- `GET /` — on `geocoded.me`: interactive API docs; on `api.geocoded.me`: caller's geo info
-- `GET /openapi.json` — OpenAPI 3.1 spec — caller's geo info from Cloudflare `cf` properties, enriched with full country/state/city details from KV (`countryInfo`, `stateInfo`, `cityInfo`)
-- `GET /countries` / `GET /countries/:id` — lookup by iso2, iso3, or name
-- `GET /countries/:country/states` / `…/states/:state`
-- `GET /countries/:country/states/:state/cities` / `…/cities/:city`
+- `GET /` -- on `geocoded.me`: interactive API docs; on `api.geocoded.me`: caller's geo info from Cloudflare `cf` properties, enriched with full country/state/city details from D1 (`countryInfo`, `stateInfo`, `cityInfo`)
+- `GET /openapi.json` -- OpenAPI 3.1 spec
+- `GET /search?q=` -- full-text search across countries, states, cities (always paginated, returns `{ data, meta }`)
+- `GET /countries` / `GET /countries/:id` -- lookup by iso2, iso3, or name
+- `GET /countries/:country/states` / `.../:state`
+- `GET /countries/:country/states/:state/cities` / `.../:city`
+
+All list endpoints support `?limit=&offset=` for pagination (returns `{ data, meta }` wrapper with `total`, `limit`, `offset`, `hasMore`). When pagination params are omitted, the full array is returned directly.
 
 All endpoints support an optional `?fields=` query parameter (comma-separated) to return only specific fields, e.g. `?fields=name,iso2`. Dot notation is supported for nested objects, e.g. `?fields=ip,countryInfo.name,countryInfo.iso2`. When omitted, all fields are returned.
 
 ## Code Conventions
 
 - **Package manager**: bun (never npm/yarn)
-- **Formatting**: Prettier — tabs, single quotes, no semicolons, trailing commas (see `.prettierrc`)
+- **Formatting/Linting**: oxfmt + oxlint (tabs, single quotes, no semicolons, trailing commas)
 - **Types**: `type` keyword only, no `interface`. Inline type imports: `import { type Foo } from './bar'`
 - **Auto-generated files**: never edit `worker-configuration.d.ts`
-- **Data files**: `data/*.json` is gitignored (generated by seed script)
