@@ -15,7 +15,17 @@ import {
 import { docsHtml, scalarHtml } from './docs'
 import logo from './logo.png'
 import { openApiSpec } from './openapi'
-import type { Location, PaginatedResponse } from './types'
+import type { Location, PaginatedResponse, SiteConfig } from './types'
+
+function getSiteConfig(env: Env, requestUrl?: string): SiteConfig {
+	const origin = requestUrl ? new URL(requestUrl).origin : ''
+	return {
+		siteName: env.SITE_NAME || 'Geocoded',
+		siteUrl: env.SITE_URL || origin || 'http://localhost:8787',
+		apiUrl: env.API_URL || origin || 'http://localhost:8787',
+		githubUrl: env.GITHUB_URL || ''
+	}
+}
 
 const app = new Hono<{ Bindings: Env }>()
 
@@ -116,16 +126,20 @@ app.get('/logo.png', (c) => {
 // --- Docs (Scalar) ---
 
 app.get('/openapi.json', (c) => {
-	return c.json(openApiSpec)
+	const config = getSiteConfig(c.env, c.req.url)
+	return c.json(openApiSpec(config))
 })
 
 app.get('/docs', (c) => {
-	return c.html(scalarHtml)
+	const config = getSiteConfig(c.env, c.req.url)
+	return c.html(scalarHtml(config))
 })
 
 app.get('/', async (c) => {
+	const config = getSiteConfig(c.env, c.req.url)
+	const apiHost = config.apiUrl ? new URL(config.apiUrl).hostname : null
 	const host = new URL(c.req.url).hostname
-	if (host !== 'api.geocoded.me') return c.html(docsHtml)
+	if (apiHost && host !== apiHost) return c.html(docsHtml(config))
 
 	const cf = c.req.raw.cf as IncomingRequestCfProperties | undefined
 	const countryCode = cf?.country

@@ -1,3 +1,5 @@
+import type { SiteConfig } from './types'
+
 const fieldsParameter = {
 	name: 'fields',
 	in: 'query' as const,
@@ -192,324 +194,326 @@ const searchResultSchema = {
 	}
 }
 
-export const openApiSpec = {
-	openapi: '3.1.0',
-	info: {
-		title: 'Geocoded',
-		version: '1.0.0',
-		description:
-			'Free country, state, city, and location data. Fast, cached, and filterable.\n\nData sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database) under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).',
-		contact: {
-			email: 'contact@harryy.me'
+export function openApiSpec(config: SiteConfig) {
+	return {
+		openapi: '3.1.0',
+		info: {
+			title: config.siteName,
+			version: '1.0.0',
+			description:
+				'Free country, state, city, and location data. Fast, cached, and filterable.\n\nData sourced from [dr5hn/countries-states-cities-database](https://github.com/dr5hn/countries-states-cities-database) under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).',
+			contact: {
+				email: 'contact@harryy.me'
+			},
+			license: {
+				name: 'ODbL-1.0',
+				url: 'https://opendatacommons.org/licenses/odbl/'
+			},
+			'x-logo': {
+				url: '/logo.png',
+				altText: config.siteName
+			}
 		},
-		license: {
-			name: 'ODbL-1.0',
-			url: 'https://opendatacommons.org/licenses/odbl/'
-		},
-		'x-logo': {
-			url: '/logo.png',
-			altText: 'Geocoded'
-		}
-	},
-	servers: [{ url: 'https://api.geocoded.me' }],
-	paths: {
-		'/': {
-			get: {
-				tags: ['Location'],
-				summary: "Get caller's geo info",
-				description:
-					"Returns geographic information about the caller based on their IP address, using Cloudflare's edge network data. Also enriches the response with full country, state, and city details when available (`countryInfo`, `stateInfo`, `cityInfo`).",
-				parameters: [fieldsParameter],
-				responses: {
-					'200': {
-						description: 'Location info',
-						content: {
-							'application/json': {
-								schema: locationSchema,
-								example: {
-									asn: 13335,
-									asOrganization: 'Cloudflare, Inc.',
-									city: 'San Francisco',
-									cityInfo: {
-										countryCode: 'US',
-										countryName: 'United States',
-										latitude: '37.77493000',
-										longitude: '-122.41942000',
-										name: 'San Francisco',
-										population: 883305,
-										stateCode: 'CA',
-										stateName: 'California',
+		servers: [{ url: config.apiUrl }],
+		paths: {
+			'/': {
+				get: {
+					tags: ['Location'],
+					summary: "Get caller's geo info",
+					description:
+						"Returns geographic information about the caller based on their IP address, using Cloudflare's edge network data. Also enriches the response with full country, state, and city details when available (`countryInfo`, `stateInfo`, `cityInfo`).",
+					parameters: [fieldsParameter],
+					responses: {
+						'200': {
+							description: 'Location info',
+							content: {
+								'application/json': {
+									schema: locationSchema,
+									example: {
+										asn: 13335,
+										asOrganization: 'Cloudflare, Inc.',
+										city: 'San Francisco',
+										cityInfo: {
+											countryCode: 'US',
+											countryName: 'United States',
+											latitude: '37.77493000',
+											longitude: '-122.41942000',
+											name: 'San Francisco',
+											population: 883305,
+											stateCode: 'CA',
+											stateName: 'California',
+											timezone: 'America/Los_Angeles'
+										},
+										colo: 'SFO',
+										continent: 'NA',
+										country: 'US',
+										countryInfo: {
+											capital: 'Washington',
+											currency: 'USD',
+											emoji: '\ud83c\uddfa\ud83c\uddf8',
+											iso2: 'US',
+											iso3: 'USA',
+											name: 'United States',
+											phoneCode: '1'
+										},
+										ip: '1.2.3.4',
+										isEU: false,
+										latitude: '37.7749',
+										longitude: '-122.4194',
+										postalCode: '94102',
+										region: 'California',
+										regionCode: 'CA',
+										stateInfo: {
+											countryCode: 'US',
+											countryName: 'United States',
+											iso2: 'CA',
+											name: 'California',
+											timezone: 'America/Los_Angeles'
+										},
 										timezone: 'America/Los_Angeles'
-									},
-									colo: 'SFO',
-									continent: 'NA',
-									country: 'US',
-									countryInfo: {
-										capital: 'Washington',
-										currency: 'USD',
-										emoji: '\ud83c\uddfa\ud83c\uddf8',
-										iso2: 'US',
-										iso3: 'USA',
-										name: 'United States',
-										phoneCode: '1'
-									},
-									ip: '1.2.3.4',
-									isEU: false,
-									latitude: '37.7749',
-									longitude: '-122.4194',
-									postalCode: '94102',
-									region: 'California',
-									regionCode: 'CA',
-									stateInfo: {
-										countryCode: 'US',
-										countryName: 'United States',
-										iso2: 'CA',
-										name: 'California',
-										timezone: 'America/Los_Angeles'
-									},
-									timezone: 'America/Los_Angeles'
+									}
 								}
 							}
 						}
 					}
 				}
-			}
-		},
-		'/search': {
-			get: {
-				tags: ['Search'],
-				summary: 'Search countries, states, and cities',
-				description:
-					'Full-text search across all entity types. Returns matching results ranked by relevance. Always paginated.',
-				parameters: [
-					{
-						name: 'q',
-						in: 'query' as const,
-						required: true,
-						description: 'Search query (prefix matching supported)',
-						schema: { type: 'string' as const },
-						example: 'lond'
-					},
-					...paginationParams
-				],
-				responses: {
-					'200': {
-						description: 'Paginated search results',
-						content: {
-							'application/json': {
-								schema: {
-									type: 'object' as const,
-									properties: {
-										data: {
-											type: 'array' as const,
-											items: searchResultSchema
-										},
-										meta: paginationMeta
+			},
+			'/search': {
+				get: {
+					tags: ['Search'],
+					summary: 'Search countries, states, and cities',
+					description:
+						'Full-text search across all entity types. Returns matching results ranked by relevance. Always paginated.',
+					parameters: [
+						{
+							name: 'q',
+							in: 'query' as const,
+							required: true,
+							description: 'Search query (prefix matching supported)',
+							schema: { type: 'string' as const },
+							example: 'lond'
+						},
+						...paginationParams
+					],
+					responses: {
+						'200': {
+							description: 'Paginated search results',
+							content: {
+								'application/json': {
+									schema: {
+										type: 'object' as const,
+										properties: {
+											data: {
+												type: 'array' as const,
+												items: searchResultSchema
+											},
+											meta: paginationMeta
+										}
 									}
 								}
 							}
-						}
-					},
-					'400': errorResponse
+						},
+						'400': errorResponse
+					}
 				}
-			}
-		},
-		'/countries': {
-			get: {
-				tags: ['Countries'],
-				summary: 'List all countries',
-				parameters: [fieldsParameter, ...paginationParams],
-				responses: {
-					'200': {
-						description: 'Array of countries',
-						content: {
-							'application/json': {
-								schema: {
-									type: 'array' as const,
-									items: countrySchema
+			},
+			'/countries': {
+				get: {
+					tags: ['Countries'],
+					summary: 'List all countries',
+					parameters: [fieldsParameter, ...paginationParams],
+					responses: {
+						'200': {
+							description: 'Array of countries',
+							content: {
+								'application/json': {
+									schema: {
+										type: 'array' as const,
+										items: countrySchema
+									}
 								}
 							}
-						}
-					},
-					'404': errorResponse
+						},
+						'404': errorResponse
+					}
 				}
-			}
-		},
-		'/countries/{id}': {
-			get: {
-				tags: ['Countries'],
-				summary: 'Get one country',
-				description:
-					'Lookup by ISO 2 code, ISO 3 code, or country name (case-insensitive).',
-				parameters: [
-					{
-						name: 'id',
-						in: 'path' as const,
-						required: true,
-						description: 'ISO 2 code, ISO 3 code, or country name',
-						schema: { type: 'string' as const },
-						example: 'US'
-					},
-					fieldsParameter
-				],
-				responses: {
-					'200': {
-						description: 'Country object',
-						content: {
-							'application/json': { schema: countrySchema }
-						}
-					},
-					'404': errorResponse
+			},
+			'/countries/{id}': {
+				get: {
+					tags: ['Countries'],
+					summary: 'Get one country',
+					description:
+						'Lookup by ISO 2 code, ISO 3 code, or country name (case-insensitive).',
+					parameters: [
+						{
+							name: 'id',
+							in: 'path' as const,
+							required: true,
+							description: 'ISO 2 code, ISO 3 code, or country name',
+							schema: { type: 'string' as const },
+							example: 'US'
+						},
+						fieldsParameter
+					],
+					responses: {
+						'200': {
+							description: 'Country object',
+							content: {
+								'application/json': { schema: countrySchema }
+							}
+						},
+						'404': errorResponse
+					}
 				}
-			}
-		},
-		'/countries/{country}/states': {
-			get: {
-				tags: ['States'],
-				summary: 'List states for a country',
-				parameters: [
-					{
-						name: 'country',
-						in: 'path' as const,
-						required: true,
-						description: 'Country ISO 2 code',
-						schema: { type: 'string' as const },
-						example: 'US'
-					},
-					fieldsParameter,
-					...paginationParams
-				],
-				responses: {
-					'200': {
-						description: 'Array of states',
-						content: {
-							'application/json': {
-								schema: {
-									type: 'array' as const,
-									items: stateSchema
+			},
+			'/countries/{country}/states': {
+				get: {
+					tags: ['States'],
+					summary: 'List states for a country',
+					parameters: [
+						{
+							name: 'country',
+							in: 'path' as const,
+							required: true,
+							description: 'Country ISO 2 code',
+							schema: { type: 'string' as const },
+							example: 'US'
+						},
+						fieldsParameter,
+						...paginationParams
+					],
+					responses: {
+						'200': {
+							description: 'Array of states',
+							content: {
+								'application/json': {
+									schema: {
+										type: 'array' as const,
+										items: stateSchema
+									}
 								}
 							}
-						}
-					},
-					'404': errorResponse
+						},
+						'404': errorResponse
+					}
 				}
-			}
-		},
-		'/countries/{country}/states/{state}': {
-			get: {
-				tags: ['States'],
-				summary: 'Get one state',
-				description: 'Lookup by ISO 2 code or state name (case-insensitive).',
-				parameters: [
-					{
-						name: 'country',
-						in: 'path' as const,
-						required: true,
-						description: 'Country ISO 2 code',
-						schema: { type: 'string' as const },
-						example: 'US'
-					},
-					{
-						name: 'state',
-						in: 'path' as const,
-						required: true,
-						description: 'State ISO 2 code or state name',
-						schema: { type: 'string' as const },
-						example: 'CA'
-					},
-					fieldsParameter
-				],
-				responses: {
-					'200': {
-						description: 'State object',
-						content: {
-							'application/json': { schema: stateSchema }
-						}
-					},
-					'404': errorResponse
+			},
+			'/countries/{country}/states/{state}': {
+				get: {
+					tags: ['States'],
+					summary: 'Get one state',
+					description: 'Lookup by ISO 2 code or state name (case-insensitive).',
+					parameters: [
+						{
+							name: 'country',
+							in: 'path' as const,
+							required: true,
+							description: 'Country ISO 2 code',
+							schema: { type: 'string' as const },
+							example: 'US'
+						},
+						{
+							name: 'state',
+							in: 'path' as const,
+							required: true,
+							description: 'State ISO 2 code or state name',
+							schema: { type: 'string' as const },
+							example: 'CA'
+						},
+						fieldsParameter
+					],
+					responses: {
+						'200': {
+							description: 'State object',
+							content: {
+								'application/json': { schema: stateSchema }
+							}
+						},
+						'404': errorResponse
+					}
 				}
-			}
-		},
-		'/countries/{country}/states/{state}/cities': {
-			get: {
-				tags: ['Cities'],
-				summary: 'List cities for a state',
-				parameters: [
-					{
-						name: 'country',
-						in: 'path' as const,
-						required: true,
-						description: 'Country ISO 2 code',
-						schema: { type: 'string' as const },
-						example: 'US'
-					},
-					{
-						name: 'state',
-						in: 'path' as const,
-						required: true,
-						description: 'State ISO 2 code',
-						schema: { type: 'string' as const },
-						example: 'CA'
-					},
-					fieldsParameter,
-					...paginationParams
-				],
-				responses: {
-					'200': {
-						description: 'Array of cities',
-						content: {
-							'application/json': {
-								schema: {
-									type: 'array' as const,
-									items: citySchema
+			},
+			'/countries/{country}/states/{state}/cities': {
+				get: {
+					tags: ['Cities'],
+					summary: 'List cities for a state',
+					parameters: [
+						{
+							name: 'country',
+							in: 'path' as const,
+							required: true,
+							description: 'Country ISO 2 code',
+							schema: { type: 'string' as const },
+							example: 'US'
+						},
+						{
+							name: 'state',
+							in: 'path' as const,
+							required: true,
+							description: 'State ISO 2 code',
+							schema: { type: 'string' as const },
+							example: 'CA'
+						},
+						fieldsParameter,
+						...paginationParams
+					],
+					responses: {
+						'200': {
+							description: 'Array of cities',
+							content: {
+								'application/json': {
+									schema: {
+										type: 'array' as const,
+										items: citySchema
+									}
 								}
 							}
-						}
-					},
-					'404': errorResponse
+						},
+						'404': errorResponse
+					}
 				}
-			}
-		},
-		'/countries/{country}/states/{state}/cities/{city}': {
-			get: {
-				tags: ['Cities'],
-				summary: 'Get one city',
-				description: 'Lookup by city name (case-insensitive).',
-				parameters: [
-					{
-						name: 'country',
-						in: 'path' as const,
-						required: true,
-						description: 'Country ISO 2 code',
-						schema: { type: 'string' as const },
-						example: 'US'
-					},
-					{
-						name: 'state',
-						in: 'path' as const,
-						required: true,
-						description: 'State ISO 2 code',
-						schema: { type: 'string' as const },
-						example: 'CA'
-					},
-					{
-						name: 'city',
-						in: 'path' as const,
-						required: true,
-						description: 'City name',
-						schema: { type: 'string' as const },
-						example: 'Los Angeles'
-					},
-					fieldsParameter
-				],
-				responses: {
-					'200': {
-						description: 'City object',
-						content: {
-							'application/json': { schema: citySchema }
-						}
-					},
-					'404': errorResponse
+			},
+			'/countries/{country}/states/{state}/cities/{city}': {
+				get: {
+					tags: ['Cities'],
+					summary: 'Get one city',
+					description: 'Lookup by city name (case-insensitive).',
+					parameters: [
+						{
+							name: 'country',
+							in: 'path' as const,
+							required: true,
+							description: 'Country ISO 2 code',
+							schema: { type: 'string' as const },
+							example: 'US'
+						},
+						{
+							name: 'state',
+							in: 'path' as const,
+							required: true,
+							description: 'State ISO 2 code',
+							schema: { type: 'string' as const },
+							example: 'CA'
+						},
+						{
+							name: 'city',
+							in: 'path' as const,
+							required: true,
+							description: 'City name',
+							schema: { type: 'string' as const },
+							example: 'Los Angeles'
+						},
+						fieldsParameter
+					],
+					responses: {
+						'200': {
+							description: 'City object',
+							content: {
+								'application/json': { schema: citySchema }
+							}
+						},
+						'404': errorResponse
+					}
 				}
 			}
 		}

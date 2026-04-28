@@ -1,0 +1,54 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "geocoded",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-03-01",
+	"version_metadata": {
+		"binding": "CF_VERSION_METADATA"
+	},
+	"observability": {
+		"enabled": true
+	},
+	"placement": {
+		"mode": "smart"
+	},
+	// Customize these for your deployment
+	"vars": {
+		"SITE_NAME": "Geocoded",
+		"SITE_URL": "https://your-domain.com",
+		"API_URL": "https://api.your-domain.com",
+		"GITHUB_URL": "https://github.com/your-org/geocoded",
+		"CACHE_ZONE": "your-domain.com"
+	},
+	"rules": [
+		{
+			"type": "Data",
+			"globs": ["**/*.png"],
+			"fallthrough": false
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "GEO_DB",
+			"database_name": "geo-db",
+			// Replace with your D1 database ID from: bunx wrangler d1 create geo-db
+			"database_id": "YOUR_D1_DATABASE_ID",
+			"migrations_dir": "migrations"
+		}
+	],
+	// Set to true if you want to use the default workers.dev subdomain
+	// Set to false and configure routes below for custom domains
+	"workers_dev": true,
+	"preview_urls": false
+	// Uncomment and customize for custom domains:
+	// "routes": [
+	// 	{
+	// 		"custom_domain": true,
+	// 		"pattern": "your-domain.com"
+	// 	},
+	// 	{
+	// 		"custom_domain": true,
+	// 		"pattern": "api.your-domain.com"
+	// 	}
+	// ]
+}

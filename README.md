@@ -4,7 +4,7 @@
     <strong>Free geolocation REST API on Cloudflare Workers.</strong>
   </p>
   <p align="center">
-    Countries, states, cities, IP lookup, full-text search -- all from D1.
+    Countries, states, cities, IP lookup, and full-text search. All from D1.
   </p>
   <p align="center">
     <code>250 countries</code> · <code>5,000+ states</code> · <code>150,000+ cities</code>
@@ -23,10 +23,10 @@
 
 ## Features
 
-- IP geolocation -- resolve the caller's country, state, city from Cloudflare's edge
+- IP geolocation: resolve the caller's country, state, city from Cloudflare's edge
 - Country, state, city lookup with nested hierarchical routes
 - Full-text search across all entities via FTS5
-- Field selection (`?fields=`) on every endpoint -- return only what you need
+- Field selection (`?fields=`) on every endpoint (return only what you need)
 - Pagination (`?limit=&offset=`) on all list endpoints
 - Aggressive edge caching (1-year immutable `Cache-Control`)
 - Zero cold starts with Cloudflare Smart Placement
@@ -120,14 +120,16 @@ When `limit` or `offset` is provided, the response wraps in:
 
 ```bash
 # Clone and install
-git clone https://github.com/harimandir/geocoded.git
+git clone https://github.com/harryy2510/geocoded.git
 cd geocoded
 bun install
 
+# Copy the example config and customize it
+cp wrangler.example.jsonc wrangler.jsonc
+
 # Create a D1 database
 bunx wrangler d1 create geo-db
-
-# Update database_id in wrangler.jsonc with the ID from the output above
+# Copy the database_id from the output into wrangler.jsonc
 
 # Apply migrations locally
 bunx wrangler d1 migrations apply geo-db --local
@@ -138,6 +140,20 @@ bun seed
 # Start dev server
 bun dev
 ```
+
+### Configuration
+
+All site-specific values live in `wrangler.jsonc` under the `vars` section:
+
+| Variable      | Description                          | Example                                    |
+| ------------- | ------------------------------------ | ------------------------------------------ |
+| `SITE_NAME`   | Name shown in landing page and docs  | `Geocoded`                                 |
+| `SITE_URL`    | Public URL for the landing page      | `https://geocoded.me`                      |
+| `API_URL`     | Public URL for the API               | `https://api.geocoded.me`                  |
+| `GITHUB_URL`  | GitHub repo URL (shown in UI)        | `https://github.com/harryy2510/geocoded`   |
+| `CACHE_ZONE`  | Cloudflare zone name for cache purge | `geocoded.me`                              |
+
+When running locally without custom vars, the app defaults to `http://localhost:8787` for all URLs.
 
 ### Cloudflare API Token
 
@@ -155,7 +171,13 @@ export CLOUDFLARE_ACCOUNT_ID="your-account-id"
 export CLOUDFLARE_API_TOKEN="your-token-here"
 ```
 
-For GitHub Actions, add both as repository secrets under **Settings** > **Secrets and variables** > **Actions**.
+For cache purge during seeding, also set:
+
+```bash
+export CACHE_ZONE="your-domain.com"
+```
+
+For GitHub Actions, add `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN`, and `CACHE_ZONE` as repository secrets under **Settings** > **Secrets and variables** > **Actions**.
 
 ---
 
@@ -172,7 +194,7 @@ bun seed:upload
 bun run deploy
 ```
 
-Update the `routes` in `wrangler.jsonc` to match your own domain, or remove them and set `workers_dev: true` to use the default `workers.dev` subdomain.
+For custom domains, uncomment the `routes` section in `wrangler.jsonc` and set `workers_dev` to `false`. Otherwise, the Worker is available at the default `workers.dev` subdomain.
 
 ---
 

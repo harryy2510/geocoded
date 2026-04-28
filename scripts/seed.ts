@@ -254,15 +254,18 @@ async function main() {
 	// Cache purge (remote only)
 	if (isRemote) {
 		const cfToken = process.env.CLOUDFLARE_API_TOKEN
+		const cacheZone = process.env.CACHE_ZONE
 		if (!cfToken) {
 			console.log(
-				'\nWarning: CLOUDFLARE_API_TOKEN not set -- skipping cache purge.'
+				'\nWarning: CLOUDFLARE_API_TOKEN not set, skipping cache purge.'
 			)
+		} else if (!cacheZone) {
+			console.log('\nWarning: CACHE_ZONE not set, skipping cache purge.')
 		} else {
-			console.log('\nPurging Cloudflare cache...')
+			console.log(`\nPurging Cloudflare cache for ${cacheZone}...`)
 
 			const zoneRes = await fetch(
-				'https://api.cloudflare.com/client/v4/zones?name=geocoded.me',
+				`https://api.cloudflare.com/client/v4/zones?name=${encodeURIComponent(cacheZone)}`,
 				{
 					headers: {
 						Authorization: `Bearer ${cfToken}`,
@@ -277,7 +280,7 @@ async function main() {
 
 			const zone = zoneData.result[0]
 			if (!zoneData.success || !zone) {
-				console.error('Failed to look up zone ID for geocoded.me')
+				console.error(`Failed to look up zone ID for ${cacheZone}`)
 			} else {
 				const zoneId = zone.id
 				console.log(`  Found zone ID: ${zoneId}`)

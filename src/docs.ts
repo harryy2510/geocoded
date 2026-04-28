@@ -1,22 +1,41 @@
-export const docsHtml = `<!DOCTYPE html>
+import type { SiteConfig } from './types'
+
+function escHtml(s: string): string {
+	return s
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;')
+}
+
+export function docsHtml(config: SiteConfig): string {
+	const { siteName, siteUrl, apiUrl, githubUrl } = config
+	const e = {
+		siteName: escHtml(siteName),
+		siteUrl: escHtml(siteUrl),
+		apiUrl: escHtml(apiUrl),
+		githubUrl: escHtml(githubUrl)
+	}
+
+	return `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Geocoded | Free Country, State, City & Location API</title>
+<title>${e.siteName} | Free Country, State, City & Location API</title>
 <meta name="description" content="Free, fast REST API for country, state, city, and IP geolocation data. Powered by Cloudflare Workers with global edge caching." />
 <meta name="theme-color" content="#0a0a0b" />
-<link rel="canonical" href="https://geocoded.me" />
+<link rel="canonical" href="${e.siteUrl}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://geocoded.me" />
-<meta property="og:title" content="Geocoded | Free Country, State, City & Location API" />
+<meta property="og:url" content="${e.siteUrl}" />
+<meta property="og:title" content="${e.siteName} | Free Country, State, City & Location API" />
 <meta property="og:description" content="Free, fast REST API for country, state, city, and IP geolocation data. Powered by Cloudflare Workers with global edge caching." />
-<meta property="og:site_name" content="Geocoded" />
-<meta property="og:image" content="https://geocoded.me/logo.png" />
+<meta property="og:site_name" content="${e.siteName}" />
+<meta property="og:image" content="${e.siteUrl}/logo.png" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Geocoded | Free Country, State, City & Location API" />
+<meta name="twitter:title" content="${e.siteName} | Free Country, State, City & Location API" />
 <meta name="twitter:description" content="Free, fast REST API for country, state, city, and IP geolocation data. Powered by Cloudflare Workers with global edge caching." />
-<meta name="twitter:image" content="https://geocoded.me/logo.png" />
+<meta name="twitter:image" content="${e.siteUrl}/logo.png" />
 <link rel="icon" type="image/png" href="/logo.png" />
 <link rel="apple-touch-icon" href="/logo.png" />
 <style type="text/css">
@@ -473,14 +492,14 @@ body { background: var(--bg); }
 <nav class="landing-nav">
 	<div class="landing-container">
 		<a href="/" class="nav-brand">
-			<img src="/logo.png" alt="Geocoded logo" width="32" height="32" />
-			Geocoded
+			<img src="/logo.png" alt="${e.siteName} logo" width="32" height="32" />
+			${e.siteName}
 		</a>
 		<div class="nav-links">
 			<a href="#features" class="hide-mobile">Features</a>
 			<a href="#examples" class="hide-mobile">Examples</a>
 			<a href="/docs">API Docs</a>
-			<a href="https://github.com/harryy2510/geocoded" target="_blank" rel="noopener noreferrer" class="gh-link" aria-label="GitHub repository">
+			<a href="${e.githubUrl}" target="_blank" rel="noopener noreferrer" class="gh-link" aria-label="GitHub repository">
 				<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
 			</a>
 		</div>
@@ -492,7 +511,7 @@ body { background: var(--bg); }
 	<div class="landing-container">
 		<img src="/logo.png" alt="" class="hero-logo" width="72" height="72" />
 		<h1>
-			<span class="accent">Geocoded</span>
+			<span class="accent">${e.siteName}</span>
 		</h1>
 		<p class="hero-tagline">Free Country, State, City & Location API</p>
 		<p class="hero-desc">
@@ -504,7 +523,7 @@ body { background: var(--bg); }
 				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
 				View API Docs
 			</a>
-			<a href="https://github.com/harryy2510/geocoded" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+			<a href="${e.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
 				<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
 				GitHub
 			</a>
@@ -515,12 +534,12 @@ body { background: var(--bg); }
 				<div class="hero-curl-dots">
 					<span></span><span></span><span></span>
 				</div>
-				<button class="copy-btn" onclick="copyCode(this, 'curl https://api.geocoded.me')" aria-label="Copy curl command">
+				<button class="copy-btn" onclick="copyCode(this, 'curl ${e.apiUrl}')" aria-label="Copy curl command">
 					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
 					Copy
 				</button>
 			</div>
-			<pre><span class="prompt">$</span> curl <span class="url">https://api.geocoded.me</span></pre>
+			<pre><span class="prompt">$</span> curl <span class="url">${e.apiUrl}</span></pre>
 		</div>
 	</div>
 </section>
@@ -528,7 +547,7 @@ body { background: var(--bg); }
 <!-- ==================== FEATURES ==================== -->
 <section class="features" id="features">
 	<div class="landing-container">
-		<p class="section-label">Why Geocoded</p>
+		<p class="section-label">Why ${e.siteName}</p>
 		<h2 class="section-title">Built for developers who ship fast</h2>
 		<p class="section-desc">
 			No signup, no API key, no rate limits. Just clean JSON over HTTPS.
@@ -597,7 +616,7 @@ body { background: var(--bg); }
 				<div class="example-content">
 					<div class="example-req">
 						<div class="example-req-label">Request</div>
-						<pre><span class="prompt">$</span> curl <span class="url">https://api.geocoded.me</span></pre>
+						<pre><span class="prompt">$</span> curl <span class="url">${e.apiUrl}</span></pre>
 					</div>
 					<div class="example-res">
 						<div class="example-res-label">Response</div>
@@ -623,7 +642,7 @@ body { background: var(--bg); }
 				<div class="example-content">
 					<div class="example-req">
 						<div class="example-req-label">Request</div>
-						<pre><span class="prompt">$</span> curl <span class="url">https://api.geocoded.me/countries/US?fields=name,iso2,capital,currency</span></pre>
+						<pre><span class="prompt">$</span> curl <span class="url">${e.apiUrl}/countries/US?fields=name,iso2,capital,currency</span></pre>
 					</div>
 					<div class="example-res">
 						<div class="example-res-label">Response</div>
@@ -646,7 +665,7 @@ body { background: var(--bg); }
 				<div class="example-content">
 					<div class="example-req">
 						<div class="example-req-label">Request</div>
-						<pre><span class="prompt">$</span> curl <span class="url">https://api.geocoded.me/countries/US/states/CA/cities?fields=name,latitude,longitude</span></pre>
+						<pre><span class="prompt">$</span> curl <span class="url">${e.apiUrl}/countries/US/states/CA/cities?fields=name,latitude,longitude</span></pre>
 					</div>
 					<div class="example-res">
 						<div class="example-res-label">Response</div>
@@ -677,7 +696,7 @@ body { background: var(--bg); }
 			<div class="footer-left">
 				<a href="/" class="footer-brand">
 					<img src="/logo.png" alt="" width="24" height="24" />
-					Geocoded
+					${e.siteName}
 				</a>
 				<p>
 					Data sourced from
@@ -688,7 +707,7 @@ body { background: var(--bg); }
 				<p>Built with Hono on Cloudflare Workers.</p>
 			</div>
 			<div class="footer-right">
-				<a href="https://github.com/harryy2510/geocoded" target="_blank" rel="noopener noreferrer">GitHub</a>
+				<a href="${e.githubUrl}" target="_blank" rel="noopener noreferrer">GitHub</a>
 				<a href="/docs">API Docs</a>
 				<a href="/openapi.json">OpenAPI Spec</a>
 			</div>
@@ -709,14 +728,19 @@ body { background: var(--bg); }
 
 </body>
 </html>`
+}
 
-export const scalarHtml = `<!DOCTYPE html>
+export function scalarHtml(config: SiteConfig): string {
+	const { siteName } = config
+	const e = { siteName: escHtml(siteName) }
+
+	return `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>API Reference | Geocoded</title>
-<meta name="description" content="Interactive API reference for Geocoded. Full OpenAPI 3.1 documentation." />
+<title>API Reference | ${e.siteName}</title>
+<meta name="description" content="Interactive API reference for ${e.siteName}. Full OpenAPI 3.1 documentation." />
 <meta name="theme-color" content="#0a0a0b" />
 <link rel="icon" type="image/png" href="/logo.png" />
 <style type="text/css">
@@ -780,3 +804,4 @@ export const scalarHtml = `<!DOCTYPE html>
 </script>
 </body>
 </html>`
+}

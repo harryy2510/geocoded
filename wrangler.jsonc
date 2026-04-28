@@ -1,6 +1,6 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "geo-api",
+	"name": "geocoded",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-03-01",
 	"version_metadata": {
@@ -11,6 +11,13 @@
 	},
 	"placement": {
 		"mode": "smart"
+	},
+	"vars": {
+		"SITE_NAME": "Geocoded",
+		"SITE_URL": "https://geocoded.me",
+		"API_URL": "https://api.geocoded.me",
+		"GITHUB_URL": "https://github.com/harryy2510/geocoded",
+		"CACHE_ZONE": "geocoded.me"
 	},
 	"rules": [
 		{
