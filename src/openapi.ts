@@ -98,15 +98,9 @@ const stateSchema = {
 		latitude: { type: 'string' as const },
 		longitude: { type: 'string' as const },
 		name: { type: 'string' as const },
-		native: { type: 'string' as const },
 		population: { type: 'number' as const, nullable: true },
 		timezone: { type: 'string' as const },
-		translations: {
-			type: 'object' as const,
-			additionalProperties: { type: 'string' as const }
-		},
-		type: { type: 'string' as const },
-		wikiDataId: { type: 'string' as const }
+		type: { type: 'string' as const }
 	}
 }
 

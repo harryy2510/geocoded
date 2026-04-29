@@ -57,12 +57,9 @@ const rowToState = (row: D1Row): State => ({
 	latitude: row.latitude as string,
 	longitude: row.longitude as string,
 	name: row.name as string,
-	native: row.native as string,
 	population: (row.population as number) ?? null,
 	timezone: row.timezone as string,
-	translations: JSON.parse((row.translations as string) || '{}'),
-	type: row.type as string,
-	wikiDataId: row.wiki_data_id as string
+	type: row.type as string
 })
 
 const rowToCity = (row: D1Row): City => ({

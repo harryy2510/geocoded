@@ -61,12 +61,9 @@ export type State = {
 	latitude: string
 	longitude: string
 	name: string
-	native: string
 	population: number | null
 	timezone: string
-	translations: Record<string, string>
 	type: string
-	wikiDataId: string
 }
 
 export type City = {

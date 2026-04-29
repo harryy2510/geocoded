@@ -62,15 +62,12 @@ type RawState = {
 	countryCode: string
 	countryName: string
 	geonameId: number
-	wikiDataId: string
 	latitude: string
 	longitude: string
 	timezone: string
 	capital: string | null
 	population: number | null
 	type: string
-	native: string | null
-	translations: Record<string, string>
 }
 
 type RawCity = {
@@ -177,9 +174,8 @@ async function main() {
 	console.log(`Preparing ${sortedStates.length} states...`)
 
 	for (const s of sortedStates) {
-		const tr = esc(JSON.stringify(s.translations))
 		sql.push(
-			`INSERT INTO states (country_code,country_name,iso2,iso3166_2,name,native,type,population,latitude,longitude,timezone,wiki_data_id,translations,geoname_id,capital) VALUES ('${esc(s.countryCode)}','${esc(s.countryName)}','${esc(s.iso2)}','${esc(s.iso31662)}','${esc(s.name)}','${esc(s.native ?? '')}','${esc(s.type)}',${nullable(s.population)},'${esc(s.latitude)}','${esc(s.longitude)}','${esc(s.timezone)}','${esc(s.wikiDataId)}','${tr}',${nullable(s.geonameId)},${nullable(s.capital)});`
+			`INSERT INTO states (country_code,country_name,iso2,iso3166_2,name,type,population,latitude,longitude,timezone,geoname_id,capital) VALUES ('${esc(s.countryCode)}','${esc(s.countryName)}','${esc(s.iso2)}','${esc(s.iso31662)}','${esc(s.name)}','${esc(s.type)}',${nullable(s.population)},'${esc(s.latitude)}','${esc(s.longitude)}','${esc(s.timezone)}',${nullable(s.geonameId)},${nullable(s.capital)});`
 		)
 	}
 
