@@ -51,7 +51,7 @@ const countrySchema = {
 		firstDayOfWeek: { type: 'string' as const },
 		flagUrl: { type: 'string' as const },
 		gdp: { type: 'number' as const, nullable: true },
-		geonameId: { type: 'number' as const },
+
 		iso2: { type: 'string' as const },
 		iso3: { type: 'string' as const },
 		languages: {
@@ -92,7 +92,7 @@ const stateSchema = {
 		capital: { type: 'string' as const, nullable: true },
 		countryCode: { type: 'string' as const },
 		countryName: { type: 'string' as const },
-		geonameId: { type: 'number' as const },
+
 		iso2: { type: 'string' as const },
 		iso31662: { type: 'string' as const },
 		latitude: { type: 'string' as const },
@@ -109,7 +109,7 @@ const citySchema = {
 	properties: {
 		countryCode: { type: 'string' as const },
 		countryName: { type: 'string' as const },
-		geonameId: { type: 'number' as const },
+
 		latitude: { type: 'string' as const },
 		longitude: { type: 'string' as const },
 		name: { type: 'string' as const },

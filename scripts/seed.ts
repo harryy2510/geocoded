@@ -17,7 +17,7 @@ type RawCountry = {
 	iso2: string
 	iso3: string
 	numericCode: string
-	geonameId: number
+
 	capital: string
 	latitude: string
 	longitude: string
@@ -56,7 +56,7 @@ type RawState = {
 	iso31662: string
 	countryCode: string
 	countryName: string
-	geonameId: number
+
 	latitude: string
 	longitude: string
 	timezone: string
@@ -75,7 +75,6 @@ type RawCity = {
 	longitude: string
 	population: number
 	timezone: string
-	geonameId: number
 }
 
 type RawTimezoneEntry = {
@@ -160,7 +159,7 @@ async function main() {
 		const nb = esc(JSON.stringify(c.neighbours))
 		const lang = esc(JSON.stringify(c.languages))
 		sql.push(
-			`INSERT INTO countries (iso2,iso3,name,native,capital,currency,currency_name,currency_symbol,tld,phone_code,numeric_code,nationality,region,subregion,emoji,emoji_u,latitude,longitude,area_sq_km,population,gdp,postal_code_format,postal_code_regex,timezones,translations,geoname_id,continent,neighbours,languages,flag_url,driving_side,measurement_system,first_day_of_week,time_format,literacy) VALUES ('${esc(c.iso2)}','${esc(c.iso3)}','${esc(c.name)}','${esc(c.native)}','${esc(c.capital)}','${esc(c.currency)}','${esc(c.currencyName)}','${esc(c.currencySymbol)}','${esc(c.tld)}','${esc(c.phoneCode)}','${esc(c.numericCode)}','${esc(c.nationality)}','${esc(c.region)}','${esc(c.subregion)}','${esc(c.emoji)}','${esc(c.emojiU)}','${esc(c.latitude)}','${esc(c.longitude)}',${nullable(c.areaSqKm)},${nullable(c.population)},${nullable(c.gdp)},${nullable(c.postalCodeFormat)},${nullable(c.postalCodeRegex)},'${tz}','${tr}',${nullable(c.geonameId)},'${esc(c.continent)}','${nb}','${lang}','${esc(c.flagUrl)}','${esc(c.drivingSide)}','${esc(c.measurementSystem)}','${esc(c.firstDayOfWeek)}','${esc(c.timeFormat)}',${nullable(c.literacy)});`
+			`INSERT INTO countries (iso2,iso3,name,native,capital,currency,currency_name,currency_symbol,tld,phone_code,numeric_code,nationality,region,subregion,emoji,emoji_u,latitude,longitude,area_sq_km,population,gdp,postal_code_format,postal_code_regex,timezones,translations,continent,neighbours,languages,flag_url,driving_side,measurement_system,first_day_of_week,time_format,literacy) VALUES ('${esc(c.iso2)}','${esc(c.iso3)}','${esc(c.name)}','${esc(c.native)}','${esc(c.capital)}','${esc(c.currency)}','${esc(c.currencyName)}','${esc(c.currencySymbol)}','${esc(c.tld)}','${esc(c.phoneCode)}','${esc(c.numericCode)}','${esc(c.nationality)}','${esc(c.region)}','${esc(c.subregion)}','${esc(c.emoji)}','${esc(c.emojiU)}','${esc(c.latitude)}','${esc(c.longitude)}',${nullable(c.areaSqKm)},${nullable(c.population)},${nullable(c.gdp)},${nullable(c.postalCodeFormat)},${nullable(c.postalCodeRegex)},'${tz}','${tr}','${esc(c.continent)}','${nb}','${lang}','${esc(c.flagUrl)}','${esc(c.drivingSide)}','${esc(c.measurementSystem)}','${esc(c.firstDayOfWeek)}','${esc(c.timeFormat)}',${nullable(c.literacy)});`
 		)
 	}
 
@@ -170,7 +169,7 @@ async function main() {
 
 	for (const s of sortedStates) {
 		sql.push(
-			`INSERT INTO states (country_code,country_name,iso2,iso3166_2,name,type,population,latitude,longitude,timezone,geoname_id,capital) VALUES ('${esc(s.countryCode)}','${esc(s.countryName)}','${esc(s.iso2)}','${esc(s.iso31662)}','${esc(s.name)}','${esc(s.type)}',${nullable(s.population)},'${esc(s.latitude)}','${esc(s.longitude)}','${esc(s.timezone)}',${nullable(s.geonameId)},${nullable(s.capital)});`
+			`INSERT INTO states (country_code,country_name,iso2,iso3166_2,name,type,population,latitude,longitude,timezone,capital) VALUES ('${esc(s.countryCode)}','${esc(s.countryName)}','${esc(s.iso2)}','${esc(s.iso31662)}','${esc(s.name)}','${esc(s.type)}',${nullable(s.population)},'${esc(s.latitude)}','${esc(s.longitude)}','${esc(s.timezone)}',${nullable(s.capital)});`
 		)
 	}
 
@@ -179,7 +178,7 @@ async function main() {
 
 	for (const c of rawCities) {
 		sql.push(
-			`INSERT INTO cities (country_code,country_name,state_code,state_name,name,latitude,longitude,timezone,population,geoname_id) VALUES ('${esc(c.countryCode)}','${esc(c.countryName)}','${esc(c.stateCode)}','${esc(c.stateName)}','${esc(c.name)}','${esc(c.latitude)}','${esc(c.longitude)}','${esc(c.timezone)}',${nullable(c.population)},${nullable(c.geonameId)});`
+			`INSERT INTO cities (country_code,country_name,state_code,state_name,name,latitude,longitude,timezone,population) VALUES ('${esc(c.countryCode)}','${esc(c.countryName)}','${esc(c.stateCode)}','${esc(c.stateName)}','${esc(c.name)}','${esc(c.latitude)}','${esc(c.longitude)}','${esc(c.timezone)}',${nullable(c.population)});`
 		)
 	}
 

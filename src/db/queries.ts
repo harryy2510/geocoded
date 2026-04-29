@@ -22,7 +22,7 @@ const rowToCountry = (row: D1Row): Country => ({
 	firstDayOfWeek: row.first_day_of_week as string,
 	flagUrl: row.flag_url as string,
 	gdp: (row.gdp as number) ?? null,
-	geonameId: row.geoname_id as number,
+
 	iso2: row.iso2 as string,
 	iso3: row.iso3 as string,
 	languages: JSON.parse((row.languages as string) || '[]'),
@@ -51,7 +51,7 @@ const rowToState = (row: D1Row): State => ({
 	capital: (row.capital as string) ?? null,
 	countryCode: row.country_code as string,
 	countryName: row.country_name as string,
-	geonameId: row.geoname_id as number,
+
 	iso2: row.iso2 as string,
 	iso31662: row.iso3166_2 as string,
 	latitude: row.latitude as string,
@@ -65,7 +65,7 @@ const rowToState = (row: D1Row): State => ({
 const rowToCity = (row: D1Row): City => ({
 	countryCode: row.country_code as string,
 	countryName: row.country_name as string,
-	geonameId: row.geoname_id as number,
+
 	latitude: row.latitude as string,
 	longitude: row.longitude as string,
 	name: row.name as string,

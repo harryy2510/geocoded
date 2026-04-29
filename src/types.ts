@@ -26,7 +26,7 @@ export type Country = {
 	firstDayOfWeek: string
 	flagUrl: string
 	gdp: number | null
-	geonameId: number
+
 	iso2: string
 	iso3: string
 	languages: string[]
@@ -55,7 +55,7 @@ export type State = {
 	capital: string | null
 	countryCode: string
 	countryName: string
-	geonameId: number
+
 	iso2: string
 	iso31662: string
 	latitude: string
@@ -69,7 +69,7 @@ export type State = {
 export type City = {
 	countryCode: string
 	countryName: string
-	geonameId: number
+
 	latitude: string
 	longitude: string
 	name: string

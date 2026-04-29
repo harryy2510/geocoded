@@ -1,5 +1,4 @@
 -- Countries: add new fields from geocoded-data pipeline
-ALTER TABLE countries ADD COLUMN geoname_id INTEGER NOT NULL DEFAULT 0;
 ALTER TABLE countries ADD COLUMN continent TEXT NOT NULL DEFAULT '';
 ALTER TABLE countries ADD COLUMN neighbours TEXT NOT NULL DEFAULT '[]';
 ALTER TABLE countries ADD COLUMN languages TEXT NOT NULL DEFAULT '[]';
@@ -14,7 +13,6 @@ ALTER TABLE countries ADD COLUMN literacy REAL;
 ALTER TABLE countries DROP COLUMN wiki_data_id;
 
 -- States: add new fields
-ALTER TABLE states ADD COLUMN geoname_id INTEGER NOT NULL DEFAULT 0;
 ALTER TABLE states ADD COLUMN capital TEXT;
 
 -- States: drop removed fields
@@ -27,7 +25,6 @@ ALTER TABLE states DROP COLUMN wiki_data_id;
 
 -- Cities: add new fields
 ALTER TABLE cities ADD COLUMN population INTEGER NOT NULL DEFAULT 0;
-ALTER TABLE cities ADD COLUMN geoname_id INTEGER NOT NULL DEFAULT 0;
 
 -- Timezones table
 CREATE TABLE IF NOT EXISTS timezones (
