@@ -66,6 +66,10 @@ curl "https://api.geocoded.me/search?q=new+york"
 | `GET`  | `/countries/:country/states/:state`              | State by iso2 or name                                            |
 | `GET`  | `/countries/:country/states/:state/cities`       | Cities for a state                                               |
 | `GET`  | `/countries/:country/states/:state/cities/:city` | City by name                                                     |
+| `GET`  | `/timezones`                                     | List all IANA timezones                                          |
+| `GET`  | `/timezones/:id`                                 | Timezone by IANA ID (e.g. America/New_York)                      |
+| `GET`  | `/currencies`                                    | List all ISO 4217 currencies                                     |
+| `GET`  | `/currencies/:code`                              | Currency by code (e.g. USD, EUR)                                 |
 
 All responses are JSON with `Cache-Control: public, max-age=31536000, immutable`.
 
@@ -86,24 +90,40 @@ When omitted, all fields are returned.
 
 ## Pagination
 
-All list endpoints (`/countries`, `/states`, `/cities`, `/search`) support pagination:
+All list endpoints (`/countries`, `/states`, `/cities`, `/timezones`, `/currencies`, `/search`) support pagination. Two styles are available:
+
+**Offset-based:**
 
 ```
 GET /countries?limit=10&offset=20
 ```
 
-When `limit` or `offset` is provided, the response wraps in:
+**Cursor-based:**
+
+```
+GET /countries?limit=10&cursor=<opaque_cursor>
+```
+
+When any pagination param is provided, the response wraps in:
 
 ```json
 {
   "data": [...],
-  "meta": { "total": 250, "limit": 10, "offset": 20, "hasMore": true }
+  "meta": {
+    "total": 252,
+    "limit": 10,
+    "offset": 20,
+    "hasMore": true,
+    "cursor": "MzA"
+  }
 }
 ```
 
+Pass the `cursor` value from `meta` as `?cursor=` to fetch the next page.
+
 - `limit` defaults to 25, max 250
-- `offset` defaults to 0
-- When neither is provided, the full array is returned directly (no wrapper)
+- `offset` and `cursor` are mutually exclusive (use one or the other)
+- When no pagination params are provided, the full array is returned directly (no wrapper)
 - `/search` is always paginated
 
 ---

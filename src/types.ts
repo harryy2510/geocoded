@@ -118,6 +118,7 @@ export type PaginatedResponse<T> = {
 		limit: number
 		offset: number
 		hasMore: boolean
+		cursor: string | null
 	}
 }
 

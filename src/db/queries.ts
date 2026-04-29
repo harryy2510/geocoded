@@ -1,8 +1,10 @@
 import {
 	type City,
 	type Country,
+	type CurrencyEntry,
 	type SearchResult,
-	type State
+	type State,
+	type TimezoneEntry
 } from '../types'
 
 type D1Row = Record<string, unknown>
@@ -259,4 +261,119 @@ export const search = async (
 
 	const total = (batch[1]!.results[0] as D1Row).total as number
 	return { rows, total }
+}
+
+// --- Timezones ---
+
+const rowToTimezone = (row: D1Row): TimezoneEntry => ({
+	comments: row.comments as string,
+	coordinates: row.coordinates as string,
+	countryCodes: JSON.parse((row.country_codes as string) || '[]'),
+	timezone: row.timezone as string
+})
+
+export const getAllTimezones = async (
+	db: D1Database
+): Promise<TimezoneEntry[]> => {
+	const { results } = await db
+		.prepare('SELECT * FROM timezones ORDER BY timezone')
+		.all()
+	return results.map(rowToTimezone)
+}
+
+export const getTimezonesPaginated = async (
+	db: D1Database,
+	limit: number,
+	offset: number
+): Promise<{ rows: TimezoneEntry[]; total: number }> => {
+	const batch = await db.batch([
+		db
+			.prepare('SELECT * FROM timezones ORDER BY timezone LIMIT ? OFFSET ?')
+			.bind(limit, offset),
+		db.prepare('SELECT COUNT(*) AS total FROM timezones')
+	])
+	const rows = (batch[0]!.results as D1Row[]).map(rowToTimezone)
+	const total = (batch[1]!.results[0] as D1Row).total as number
+	return { rows, total }
+}
+
+export const getTimezoneById = async (
+	db: D1Database,
+	id: string
+): Promise<TimezoneEntry | null> => {
+	const row = await db
+		.prepare('SELECT * FROM timezones WHERE timezone = ? LIMIT 1')
+		.bind(id)
+		.first()
+	return row ? rowToTimezone(row) : null
+}
+
+export const getTimezonesByCountry = async (
+	db: D1Database,
+	countryCode: string
+): Promise<TimezoneEntry[]> => {
+	const { results } = await db
+		.prepare(
+			'SELECT * FROM timezones WHERE country_codes LIKE ? ORDER BY timezone'
+		)
+		.bind(`%"${countryCode.toUpperCase()}"%`)
+		.all()
+	return results.map(rowToTimezone)
+}
+
+// --- Currencies ---
+
+const rowToCurrency = (row: D1Row): CurrencyEntry => ({
+	code: row.code as string,
+	countries: JSON.parse((row.countries as string) || '[]'),
+	decimals: row.decimals as number,
+	name: row.name as string,
+	symbol: row.symbol as string
+})
+
+export const getAllCurrencies = async (
+	db: D1Database
+): Promise<CurrencyEntry[]> => {
+	const { results } = await db
+		.prepare('SELECT * FROM currencies ORDER BY code')
+		.all()
+	return results.map(rowToCurrency)
+}
+
+export const getCurrenciesPaginated = async (
+	db: D1Database,
+	limit: number,
+	offset: number
+): Promise<{ rows: CurrencyEntry[]; total: number }> => {
+	const batch = await db.batch([
+		db
+			.prepare('SELECT * FROM currencies ORDER BY code LIMIT ? OFFSET ?')
+			.bind(limit, offset),
+		db.prepare('SELECT COUNT(*) AS total FROM currencies')
+	])
+	const rows = (batch[0]!.results as D1Row[]).map(rowToCurrency)
+	const total = (batch[1]!.results[0] as D1Row).total as number
+	return { rows, total }
+}
+
+export const getCurrencyByCode = async (
+	db: D1Database,
+	code: string
+): Promise<CurrencyEntry | null> => {
+	const row = await db
+		.prepare('SELECT * FROM currencies WHERE code = ? LIMIT 1')
+		.bind(code.toUpperCase())
+		.first()
+	return row ? rowToCurrency(row) : null
+}
+
+export const getCurrenciesByCountry = async (
+	db: D1Database,
+	countryCode: string
+): Promise<CurrencyEntry[]> => {
+	const { results } = await db
+		.prepare('SELECT * FROM currencies WHERE countries LIKE ? ORDER BY code')
+		.bind(`%"${countryCode.toUpperCase()}"%`)
+		.all()
+	return results.map(rowToCurrency)
 }

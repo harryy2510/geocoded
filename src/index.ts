@@ -2,18 +2,26 @@ import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import {
 	getAllCountries,
+	getAllCurrencies,
+	getAllTimezones,
 	getCitiesByCountryState,
 	getCitiesPaginated,
 	getCityByName,
 	getCountriesPaginated,
 	getCountryById,
+	getCurrenciesPaginated,
+	getCurrencyByCode,
 	getStateByIso2OrName,
 	getStatesByCountry,
 	getStatesPaginated,
+	getTimezoneById,
+	getTimezonesPaginated,
 	search
 } from './db/queries'
 import { docsHtml, scalarHtml } from './docs'
-import logo from './logo.png'
+import logoSvg from './logo.svg'
+import logoBackgroundSvg from './logo-background.svg'
+import logoPng from './logo-background.png'
 import { openApiSpec } from './openapi'
 import type { Location, PaginatedResponse, SiteConfig } from './types'
 
@@ -91,15 +99,35 @@ function pickFields<T extends Record<string, unknown>>(
 	return Array.isArray(data) ? data.map(pick) : pick(data)
 }
 
+type PaginationParams = {
+	limit: number
+	offset: number
+	cursor: string | null
+}
+
 function parsePagination(c: {
 	req: { query: (k: string) => string | undefined }
-}): { limit: number; offset: number } | null {
+}): PaginationParams | null {
 	const rawLimit = c.req.query('limit')
 	const rawOffset = c.req.query('offset')
-	if (!rawLimit && !rawOffset) return null
+	const rawCursor = c.req.query('cursor')
+	if (!rawLimit && !rawOffset && !rawCursor) return null
 	const limit = Math.min(Math.max(parseInt(rawLimit || '25', 10) || 25, 1), 250)
+	if (rawCursor) {
+		const decoded = decodeCursor(rawCursor)
+		return { limit, offset: decoded, cursor: rawCursor }
+	}
 	const offset = Math.max(parseInt(rawOffset || '0', 10) || 0, 0)
-	return { limit, offset }
+	return { limit, offset, cursor: null }
+}
+
+function encodeCursor(offset: number): string {
+	return Buffer.from(String(offset)).toString('base64url')
+}
+
+function decodeCursor(cursor: string): number {
+	const decoded = parseInt(Buffer.from(cursor, 'base64url').toString(), 10)
+	return Number.isNaN(decoded) ? 0 : Math.max(decoded, 0)
 }
 
 function paginated<T>(
@@ -108,16 +136,37 @@ function paginated<T>(
 	limit: number,
 	offset: number
 ): PaginatedResponse<T> {
+	const nextOffset = offset + limit
 	return {
 		data,
-		meta: { total, limit, offset, hasMore: offset + limit < total }
+		meta: {
+			total,
+			limit,
+			offset,
+			hasMore: nextOffset < total,
+			cursor: nextOffset < total ? encodeCursor(nextOffset) : null
+		}
 	}
 }
 
 // --- Static Assets ---
 
+app.get('/logo.svg', (c) => {
+	return c.body(logoSvg, 200, {
+		...CACHE_HEADERS,
+		'Content-Type': 'image/svg+xml'
+	})
+})
+
+app.get('/logo-background.svg', (c) => {
+	return c.body(logoBackgroundSvg, 200, {
+		...CACHE_HEADERS,
+		'Content-Type': 'image/svg+xml'
+	})
+})
+
 app.get('/logo.png', (c) => {
-	return c.body(logo, 200, {
+	return c.body(logoPng, 200, {
 		...CACHE_HEADERS,
 		'Content-Type': 'image/png'
 	})
@@ -298,6 +347,63 @@ app.get('/countries/:country/states/:state/cities/:city', async (c) => {
 	const city = await getCityByName(db, countryCode, stateCode, cityName)
 	if (!city) return c.json({ error: 'City not found' }, 404)
 	return jsonResponse(c, pickFields(city, c.req.query('fields')))
+})
+
+// --- Timezones ---
+
+app.get('/timezones', async (c) => {
+	const db = c.env.GEO_DB
+	const page = parsePagination(c)
+	const fields = c.req.query('fields')
+	if (page) {
+		const { rows, total } = await getTimezonesPaginated(
+			db,
+			page.limit,
+			page.offset
+		)
+		return jsonResponse(
+			c,
+			paginated(pickFields(rows, fields), total, page.limit, page.offset)
+		)
+	}
+	const timezones = await getAllTimezones(db)
+	return jsonResponse(c, pickFields(timezones, fields))
+})
+
+app.get('/timezones/:id{.+}', async (c) => {
+	const db = c.env.GEO_DB
+	const id = c.req.param('id')
+	const tz = await getTimezoneById(db, id)
+	if (!tz) return c.json({ error: 'Timezone not found' }, 404)
+	return jsonResponse(c, pickFields(tz, c.req.query('fields')))
+})
+
+// --- Currencies ---
+
+app.get('/currencies', async (c) => {
+	const db = c.env.GEO_DB
+	const page = parsePagination(c)
+	const fields = c.req.query('fields')
+	if (page) {
+		const { rows, total } = await getCurrenciesPaginated(
+			db,
+			page.limit,
+			page.offset
+		)
+		return jsonResponse(
+			c,
+			paginated(pickFields(rows, fields), total, page.limit, page.offset)
+		)
+	}
+	const currencies = await getAllCurrencies(db)
+	return jsonResponse(c, pickFields(currencies, fields))
+})
+
+app.get('/currencies/:code', async (c) => {
+	const db = c.env.GEO_DB
+	const currency = await getCurrencyByCode(db, c.req.param('code'))
+	if (!currency) return c.json({ error: 'Currency not found' }, 404)
+	return jsonResponse(c, pickFields(currency, c.req.query('fields')))
 })
 
 export default app

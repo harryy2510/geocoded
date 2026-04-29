@@ -176,8 +176,17 @@ const paginationParams = [
 		name: 'offset',
 		in: 'query' as const,
 		required: false,
-		description: 'Number of results to skip (default 0).',
+		description:
+			'Number of results to skip (default 0). Cannot be combined with `cursor`.',
 		schema: { type: 'integer' as const, minimum: 0, default: 0 }
+	},
+	{
+		name: 'cursor',
+		in: 'query' as const,
+		required: false,
+		description:
+			'Opaque cursor for cursor-based pagination. Use the `cursor` value from a previous response `meta` to fetch the next page. Cannot be combined with `offset`.',
+		schema: { type: 'string' as const }
 	}
 ]
 
@@ -190,9 +199,67 @@ const paginationMeta = {
 		},
 		limit: { type: 'integer' as const },
 		offset: { type: 'integer' as const },
-		hasMore: { type: 'boolean' as const }
+		hasMore: { type: 'boolean' as const },
+		cursor: {
+			type: 'string' as const,
+			nullable: true,
+			description:
+				'Opaque cursor to pass as `?cursor=` to fetch the next page. Null when there are no more results.'
+		}
 	},
-	required: ['total', 'limit', 'offset', 'hasMore']
+	required: ['total', 'limit', 'offset', 'hasMore', 'cursor']
+}
+
+function listResponseSchema(itemSchema: Record<string, unknown>) {
+	return {
+		oneOf: [
+			{
+				type: 'array' as const,
+				items: itemSchema,
+				description: 'Full array (when no pagination params are provided)'
+			},
+			{
+				type: 'object' as const,
+				properties: {
+					data: {
+						type: 'array' as const,
+						items: itemSchema
+					},
+					meta: paginationMeta
+				},
+				required: ['data', 'meta'],
+				description:
+					'Paginated response (when `limit`, `offset`, or `cursor` is provided)'
+			}
+		]
+	}
+}
+
+const timezoneEntrySchema = {
+	type: 'object' as const,
+	properties: {
+		comments: { type: 'string' as const },
+		coordinates: { type: 'string' as const },
+		countryCodes: {
+			type: 'array' as const,
+			items: { type: 'string' as const }
+		},
+		timezone: { type: 'string' as const }
+	}
+}
+
+const currencyEntrySchema = {
+	type: 'object' as const,
+	properties: {
+		code: { type: 'string' as const },
+		countries: {
+			type: 'array' as const,
+			items: { type: 'string' as const }
+		},
+		decimals: { type: 'number' as const },
+		name: { type: 'string' as const },
+		symbol: { type: 'string' as const }
+	}
 }
 
 const searchResultSchema = {
@@ -340,13 +407,11 @@ export function openApiSpec(config: SiteConfig) {
 					parameters: [fieldsParameter, ...paginationParams],
 					responses: {
 						'200': {
-							description: 'Array of countries',
+							description:
+								'Array of countries, or paginated wrapper when `limit`/`offset`/`cursor` is provided',
 							content: {
 								'application/json': {
-									schema: {
-										type: 'array' as const,
-										items: countrySchema
-									}
+									schema: listResponseSchema(countrySchema)
 								}
 							}
 						},
@@ -400,13 +465,11 @@ export function openApiSpec(config: SiteConfig) {
 					],
 					responses: {
 						'200': {
-							description: 'Array of states',
+							description:
+								'Array of states, or paginated wrapper when limit/offset/cursor is provided',
 							content: {
 								'application/json': {
-									schema: {
-										type: 'array' as const,
-										items: stateSchema
-									}
+									schema: listResponseSchema(stateSchema)
 								}
 							}
 						},
@@ -475,13 +538,11 @@ export function openApiSpec(config: SiteConfig) {
 					],
 					responses: {
 						'200': {
-							description: 'Array of cities',
+							description:
+								'Array of cities, or paginated wrapper when limit/offset/cursor is provided',
 							content: {
 								'application/json': {
-									schema: {
-										type: 'array' as const,
-										items: citySchema
-									}
+									schema: listResponseSchema(citySchema)
 								}
 							}
 						},
@@ -526,6 +587,100 @@ export function openApiSpec(config: SiteConfig) {
 							description: 'City object',
 							content: {
 								'application/json': { schema: citySchema }
+							}
+						},
+						'404': errorResponse
+					}
+				}
+			},
+			'/timezones': {
+				get: {
+					tags: ['Timezones'],
+					summary: 'List all timezones',
+					parameters: [fieldsParameter, ...paginationParams],
+					responses: {
+						'200': {
+							description:
+								'Array of timezones, or paginated wrapper when limit/offset/cursor is provided',
+							content: {
+								'application/json': {
+									schema: listResponseSchema(timezoneEntrySchema)
+								}
+							}
+						}
+					}
+				}
+			},
+			'/timezones/{id}': {
+				get: {
+					tags: ['Timezones'],
+					summary: 'Get one timezone',
+					description: 'Lookup by IANA timezone ID (e.g. America/New_York).',
+					parameters: [
+						{
+							name: 'id',
+							in: 'path' as const,
+							required: true,
+							description: 'IANA timezone ID',
+							schema: { type: 'string' as const },
+							example: 'America/New_York'
+						},
+						fieldsParameter
+					],
+					responses: {
+						'200': {
+							description: 'Timezone object',
+							content: {
+								'application/json': {
+									schema: timezoneEntrySchema
+								}
+							}
+						},
+						'404': errorResponse
+					}
+				}
+			},
+			'/currencies': {
+				get: {
+					tags: ['Currencies'],
+					summary: 'List all currencies',
+					parameters: [fieldsParameter, ...paginationParams],
+					responses: {
+						'200': {
+							description:
+								'Array of currencies, or paginated wrapper when limit/offset/cursor is provided',
+							content: {
+								'application/json': {
+									schema: listResponseSchema(currencyEntrySchema)
+								}
+							}
+						}
+					}
+				}
+			},
+			'/currencies/{code}': {
+				get: {
+					tags: ['Currencies'],
+					summary: 'Get one currency',
+					description: 'Lookup by ISO 4217 currency code (e.g. USD, EUR).',
+					parameters: [
+						{
+							name: 'code',
+							in: 'path' as const,
+							required: true,
+							description: 'ISO 4217 currency code',
+							schema: { type: 'string' as const },
+							example: 'USD'
+						},
+						fieldsParameter
+					],
+					responses: {
+						'200': {
+							description: 'Currency object',
+							content: {
+								'application/json': {
+									schema: currencyEntrySchema
+								}
 							}
 						},
 						'404': errorResponse

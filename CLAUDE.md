@@ -42,6 +42,8 @@ Geo API: a Cloudflare Worker serving country, state, city, and location data fro
 - `GET /countries` / `GET /countries/:id`: lookup by iso2, iso3, or name
 - `GET /countries/:country/states` / `.../:state`
 - `GET /countries/:country/states/:state/cities` / `.../:city`
+- `GET /timezones` / `GET /timezones/:id`: IANA timezone lookup (ID contains slashes, e.g. `America/New_York`)
+- `GET /currencies` / `GET /currencies/:code`: ISO 4217 currency lookup
 
 All list endpoints support `?limit=&offset=` for pagination (returns `{ data, meta }` wrapper with `total`, `limit`, `offset`, `hasMore`). When pagination params are omitted, the full array is returned directly.
 
