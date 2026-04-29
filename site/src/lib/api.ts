@@ -9,8 +9,8 @@ export type Country = {
 	iso2: string
 	iso3: string
 	capital: string
-	latitude: number
-	longitude: number
+	latitude: string
+	longitude: string
 	areaSqKm: number
 	region: string
 	subregion: string
@@ -50,11 +50,11 @@ export type State = {
 	iso31662: string
 	countryCode: string
 	countryName: string
-	latitude: number
-	longitude: number
+	latitude: string
+	longitude: string
 	timezone: string
-	capital: boolean
-	population: number
+	capital: string | null
+	population: number | null
 	type: string
 }
 
@@ -70,14 +70,11 @@ export type City = {
 	timezone: string
 }
 
-export type Timezone = {
-	zoneName: string
-	abbreviation: string
-	gmtOffset: number
-	gmtOffsetName: string
-	tzName: string
-	countryCode: string
-	countryName: string
+export type TimezoneEntry = {
+	timezone: string
+	countryCodes: string[]
+	coordinates: string
+	comments: string
 }
 
 export type Currency = {
@@ -123,8 +120,8 @@ export async function fetchCities(
 	)
 }
 
-export async function fetchTimezones(): Promise<Timezone[]> {
-	return apiFetch<Timezone[]>('/timezones')
+export async function fetchTimezones(): Promise<TimezoneEntry[]> {
+	return apiFetch<TimezoneEntry[]>('/timezones')
 }
 
 export async function fetchCurrencies(): Promise<Currency[]> {
