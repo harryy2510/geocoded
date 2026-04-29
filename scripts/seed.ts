@@ -18,7 +18,6 @@ type RawCountry = {
 	iso3: string
 	numericCode: string
 	geonameId: number
-	wikiDataId: string
 	capital: string
 	latitude: string
 	longitude: string
@@ -48,10 +47,6 @@ type RawCountry = {
 	measurementSystem: string
 	firstDayOfWeek: string
 	timeFormat: string
-	motto: string | null
-	anthem: string | null
-	coatOfArmsUrl: string | null
-	independenceDate: string | null
 	literacy: number | null
 }
 
@@ -165,7 +160,7 @@ async function main() {
 		const nb = esc(JSON.stringify(c.neighbours))
 		const lang = esc(JSON.stringify(c.languages))
 		sql.push(
-			`INSERT INTO countries (iso2,iso3,name,native,capital,currency,currency_name,currency_symbol,tld,phone_code,numeric_code,nationality,region,subregion,emoji,emoji_u,latitude,longitude,area_sq_km,population,gdp,postal_code_format,postal_code_regex,wiki_data_id,timezones,translations,geoname_id,continent,neighbours,languages,flag_url,driving_side,measurement_system,first_day_of_week,time_format) VALUES ('${esc(c.iso2)}','${esc(c.iso3)}','${esc(c.name)}','${esc(c.native)}','${esc(c.capital)}','${esc(c.currency)}','${esc(c.currencyName)}','${esc(c.currencySymbol)}','${esc(c.tld)}','${esc(c.phoneCode)}','${esc(c.numericCode)}','${esc(c.nationality)}','${esc(c.region)}','${esc(c.subregion)}','${esc(c.emoji)}','${esc(c.emojiU)}','${esc(c.latitude)}','${esc(c.longitude)}',${nullable(c.areaSqKm)},${nullable(c.population)},${nullable(c.gdp)},${nullable(c.postalCodeFormat)},${nullable(c.postalCodeRegex)},'${esc(c.wikiDataId)}','${tz}','${tr}',${nullable(c.geonameId)},'${esc(c.continent)}','${nb}','${lang}','${esc(c.flagUrl)}','${esc(c.drivingSide)}','${esc(c.measurementSystem)}','${esc(c.firstDayOfWeek)}','${esc(c.timeFormat)}');`
+			`INSERT INTO countries (iso2,iso3,name,native,capital,currency,currency_name,currency_symbol,tld,phone_code,numeric_code,nationality,region,subregion,emoji,emoji_u,latitude,longitude,area_sq_km,population,gdp,postal_code_format,postal_code_regex,timezones,translations,geoname_id,continent,neighbours,languages,flag_url,driving_side,measurement_system,first_day_of_week,time_format,literacy) VALUES ('${esc(c.iso2)}','${esc(c.iso3)}','${esc(c.name)}','${esc(c.native)}','${esc(c.capital)}','${esc(c.currency)}','${esc(c.currencyName)}','${esc(c.currencySymbol)}','${esc(c.tld)}','${esc(c.phoneCode)}','${esc(c.numericCode)}','${esc(c.nationality)}','${esc(c.region)}','${esc(c.subregion)}','${esc(c.emoji)}','${esc(c.emojiU)}','${esc(c.latitude)}','${esc(c.longitude)}',${nullable(c.areaSqKm)},${nullable(c.population)},${nullable(c.gdp)},${nullable(c.postalCodeFormat)},${nullable(c.postalCodeRegex)},'${tz}','${tr}',${nullable(c.geonameId)},'${esc(c.continent)}','${nb}','${lang}','${esc(c.flagUrl)}','${esc(c.drivingSide)}','${esc(c.measurementSystem)}','${esc(c.firstDayOfWeek)}','${esc(c.timeFormat)}',${nullable(c.literacy)});`
 		)
 	}
 

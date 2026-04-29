@@ -35,6 +35,7 @@ export type Country = {
 	measurementSystem: string
 	name: string
 	nationality: string
+	literacy: number | null
 	native: string
 	neighbours: string[]
 	numericCode: string
@@ -48,7 +49,6 @@ export type Country = {
 	timezones: Timezone[]
 	tld: string
 	translations: Record<string, string>
-	wikiDataId: string
 }
 
 export type State = {

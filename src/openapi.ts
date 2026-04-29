@@ -63,6 +63,7 @@ const countrySchema = {
 		measurementSystem: { type: 'string' as const },
 		name: { type: 'string' as const },
 		nationality: { type: 'string' as const },
+		literacy: { type: 'number' as const, nullable: true },
 		native: { type: 'string' as const },
 		neighbours: {
 			type: 'array' as const,
@@ -81,8 +82,7 @@ const countrySchema = {
 		translations: {
 			type: 'object' as const,
 			additionalProperties: { type: 'string' as const }
-		},
-		wikiDataId: { type: 'string' as const }
+		}
 	}
 }
 

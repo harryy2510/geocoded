@@ -8,6 +8,10 @@ ALTER TABLE countries ADD COLUMN driving_side TEXT NOT NULL DEFAULT '';
 ALTER TABLE countries ADD COLUMN measurement_system TEXT NOT NULL DEFAULT '';
 ALTER TABLE countries ADD COLUMN first_day_of_week TEXT NOT NULL DEFAULT '';
 ALTER TABLE countries ADD COLUMN time_format TEXT NOT NULL DEFAULT '';
+ALTER TABLE countries ADD COLUMN literacy REAL;
+
+-- Countries: drop removed fields
+ALTER TABLE countries DROP COLUMN wiki_data_id;
 
 -- States: add new fields
 ALTER TABLE states ADD COLUMN geoname_id INTEGER NOT NULL DEFAULT 0;

@@ -31,6 +31,7 @@ const rowToCountry = (row: D1Row): Country => ({
 	measurementSystem: row.measurement_system as string,
 	name: row.name as string,
 	nationality: row.nationality as string,
+	literacy: (row.literacy as number) ?? null,
 	native: row.native as string,
 	neighbours: JSON.parse((row.neighbours as string) || '[]'),
 	numericCode: row.numeric_code as string,
@@ -43,8 +44,7 @@ const rowToCountry = (row: D1Row): Country => ({
 	timeFormat: row.time_format as string,
 	timezones: JSON.parse((row.timezones as string) || '[]'),
 	tld: row.tld as string,
-	translations: JSON.parse((row.translations as string) || '{}'),
-	wikiDataId: row.wiki_data_id as string
+	translations: JSON.parse((row.translations as string) || '{}')
 })
 
 const rowToState = (row: D1Row): State => ({
