@@ -1,8 +1,252 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import { Dashboard } from '../components/Dashboard'
+
+const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
+const githubUrl = import.meta.env.PUBLIC_GITHUB_URL || 'https://github.com/harryy2510/geocoded'
+
+const features = [
+	{
+		title: 'Free & Open Source',
+		description: 'No API key, no signup, no rate limits. Data sourced from official institutions (GeoNames, CLDR, Wikidata, IANA) under CC BY 4.0. Use it for anything.',
+		iconColor: 'bg-blue-500/15 text-blue-500',
+		icon: 'shield',
+	},
+	{
+		title: 'Global Edge Network',
+		description: 'Powered by Cloudflare Workers with near-zero cold starts. Responses are cached aggressively at the edge, so your users get data in milliseconds from the closest POP.',
+		iconColor: 'bg-emerald-500/15 text-emerald-500',
+		icon: 'clock',
+	},
+	{
+		title: 'Rich Data',
+		description: '252 countries, 3,800+ states, and 230,000+ cities complete with translations, timezones, coordinates, phone codes, currencies, and more.',
+		iconColor: 'bg-purple-500/15 text-purple-500',
+		icon: 'globe',
+	},
+	{
+		title: 'Field Selection',
+		description: 'Pick exactly the fields you need with the ?fields= parameter. Supports dot notation for nested objects. Smaller payloads, faster apps.',
+		iconColor: 'bg-orange-500/15 text-orange-500',
+		icon: 'filter',
+	},
+]
+
+const dataPages = [
+	{
+		href: '/dashboard',
+		title: 'Dashboard',
+		description: 'Global data overview with interactive charts and key metrics across all 252 countries.',
+	},
+	{
+		href: '/explorer',
+		title: 'Explorer',
+		description: 'Browse and filter countries, states, and cities with an interactive world map.',
+	},
+	{
+		href: '/statistics',
+		title: 'Statistics',
+		description: 'Dive into population, area, GDP, literacy, and other comparative statistics.',
+	},
+	{
+		href: '/quiz',
+		title: 'Quiz',
+		description: 'Test your geography knowledge with fun quizzes on flags, capitals, and more.',
+	},
+]
+
+const examples = [
+	{
+		title: 'Your location from IP',
+		curl: `curl ${apiUrl}`,
+		response: `{
+  "ip": "203.0.113.42",
+  "country": "US",
+  "region": "California",
+  "city": "San Francisco",
+  "latitude": "37.7749",
+  "longitude": "-122.4194",
+  "timezone": "America/Los_Angeles"
+}`,
+	},
+	{
+		title: 'Countries with field selection',
+		curl: `curl ${apiUrl}/countries/US?fields=name,iso2,capital,currency`,
+		response: `{
+  "name": "United States",
+  "iso2": "US",
+  "capital": "Washington",
+  "currency": "USD"
+}`,
+	},
+	{
+		title: 'Drill down to states and cities',
+		curl: `curl ${apiUrl}/countries/US/states/CA/cities?fields=name,latitude,longitude`,
+		response: `[
+  {
+    "name": "Los Angeles",
+    "latitude": "34.05223420",
+    "longitude": "-118.24368490"
+  },
+  {
+    "name": "San Francisco",
+    "latitude": "37.77492950",
+    "longitude": "-122.41941550"
+  }
+]`,
+	},
+]
 ---
 
-<Layout title="Geocoded - Global Data Dashboard">
-	<Dashboard client:load />
+<Layout title="Geocoded | Free Country, State, City & Location API" description="Free, fast REST API for country, state, city, and IP geolocation data. Powered by Cloudflare Workers with global edge caching.">
+	<!-- Hero -->
+	<section class="py-20 text-center sm:py-28">
+		<div class="flex size-[72px] items-center justify-center rounded-2xl bg-accent text-2xl font-bold text-white mx-auto mb-6">
+			G
+		</div>
+		<h1 class="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+			<span class="text-accent">Geocoded</span>
+		</h1>
+		<p class="mx-auto mb-3 max-w-xl text-lg font-medium text-text-muted sm:text-xl">
+			Free Country, State, City & Location API
+		</p>
+		<p class="mx-auto mb-10 max-w-lg text-base text-text-dim">
+			Open-source REST API with 252 countries, 3,800+ states, and 230,000+ cities.
+			No API key required. Deployed on the edge for instant responses worldwide.
+		</p>
+		<div class="mb-12 flex flex-wrap items-center justify-center gap-3">
+			<a
+				href="/docs"
+				class="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
+			>
+				<svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+				View API Docs
+			</a>
+			<a
+				href={githubUrl}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="inline-flex items-center gap-2 rounded-xl border border-border px-6 py-3 text-sm font-semibold text-text transition-colors hover:border-border-hover hover:bg-bg-card"
+			>
+				<svg class="size-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+				GitHub
+			</a>
+		</div>
+
+		<!-- Curl example block -->
+		<div class="mx-auto max-w-xl overflow-hidden rounded-xl border border-border bg-bg-surface text-left">
+			<div class="flex items-center justify-between border-b border-border bg-bg-card/50 px-4 py-2.5">
+				<div class="flex gap-1.5">
+					<span class="size-2.5 rounded-full bg-white/10"></span>
+					<span class="size-2.5 rounded-full bg-white/10"></span>
+					<span class="size-2.5 rounded-full bg-white/10"></span>
+				</div>
+				<button
+					class="copy-btn inline-flex items-center gap-1.5 rounded-md border border-border bg-white/5 px-2.5 py-1 text-xs text-text-dim transition-colors hover:bg-white/10 hover:text-text-muted"
+					data-copy={`curl ${apiUrl}`}
+				>
+					<svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+					Copy
+				</button>
+			</div>
+			<pre class="overflow-x-auto px-5 py-4 font-mono text-sm leading-relaxed text-text-muted"><span class="text-accent select-none">$ </span>curl <span class="text-success">{apiUrl}</span></pre>
+		</div>
+	</section>
+
+	<!-- Features -->
+	<section class="py-16" id="features">
+		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">Why Geocoded</p>
+		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-3xl">Built for developers who ship fast</h2>
+		<p class="mb-12 max-w-lg text-base text-text-muted">
+			No signup, no API key, no rate limits. Just clean JSON over HTTPS.
+		</p>
+		<div class="grid gap-4 sm:grid-cols-2">
+			{features.map((f) => (
+				<div class="rounded-xl border border-border bg-bg-card p-7 transition-colors hover:border-border-hover">
+					<div class={`mb-4 flex size-10 items-center justify-center rounded-lg ${f.iconColor}`}>
+						{f.icon === 'shield' && (
+							<svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+						)}
+						{f.icon === 'clock' && (
+							<svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+						)}
+						{f.icon === 'globe' && (
+							<svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+						)}
+						{f.icon === 'filter' && (
+							<svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+						)}
+					</div>
+					<h3 class="mb-2 text-base font-semibold">{f.title}</h3>
+					<p class="text-sm leading-relaxed text-text-muted">{f.description}</p>
+				</div>
+			))}
+		</div>
+	</section>
+
+	<!-- See the Data CTA -->
+	<section class="py-16">
+		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">See the Data</p>
+		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-3xl">Explore the full dataset</h2>
+		<p class="mb-12 max-w-lg text-base text-text-muted">
+			Interactive tools to browse, visualize, and analyze geography data from the API.
+		</p>
+		<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+			{dataPages.map((page) => (
+				<a
+					href={page.href}
+					class="group rounded-xl border border-border bg-bg-card p-6 transition-all hover:border-border-hover hover:bg-bg-card-hover"
+				>
+					<h3 class="mb-2 text-base font-semibold text-text group-hover:text-accent transition-colors">{page.title}</h3>
+					<p class="text-sm leading-relaxed text-text-muted">{page.description}</p>
+					<span class="mt-4 inline-flex items-center gap-1 text-xs font-medium text-accent opacity-0 transition-opacity group-hover:opacity-100">
+						Open
+						<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+					</span>
+				</a>
+			))}
+		</div>
+	</section>
+
+	<!-- Examples -->
+	<section class="py-16" id="examples">
+		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">Quick Start</p>
+		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-3xl">Three endpoints, zero config</h2>
+		<p class="mb-12 max-w-lg text-base text-text-muted">
+			Every response is JSON with aggressive cache headers. Try these from your terminal right now.
+		</p>
+		<div class="flex flex-col gap-6">
+			{examples.map((ex) => (
+				<div class="overflow-hidden rounded-xl border border-border bg-bg-card">
+					<div class="flex items-center justify-between border-b border-border px-5 py-3.5">
+						<h3 class="text-sm font-semibold">{ex.title}</h3>
+						<span class="rounded bg-success/10 px-2 py-0.5 font-mono text-xs font-bold text-success">GET</span>
+					</div>
+					<div class="grid md:grid-cols-2">
+						<div class="border-b border-border p-5 md:border-b-0 md:border-r">
+							<p class="mb-2.5 text-[11px] font-semibold uppercase tracking-wider text-text-dim">Request</p>
+							<pre class="overflow-x-auto font-mono text-[13px] leading-relaxed text-text-muted"><span class="text-accent select-none">$ </span>{ex.curl}</pre>
+						</div>
+						<div class="p-5">
+							<p class="mb-2.5 text-[11px] font-semibold uppercase tracking-wider text-text-dim">Response</p>
+							<pre class="overflow-x-auto font-mono text-[13px] leading-relaxed text-text-muted">{ex.response}</pre>
+						</div>
+					</div>
+				</div>
+			))}
+		</div>
+	</section>
+
+	<script>
+		document.querySelectorAll('.copy-btn').forEach((btn) => {
+			btn.addEventListener('click', () => {
+				const text = btn.getAttribute('data-copy')
+				if (!text) return
+				navigator.clipboard.writeText(text).then(() => {
+					const original = btn.innerHTML
+					btn.innerHTML = '<svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!'
+					setTimeout(() => { btn.innerHTML = original }, 2000)
+				})
+			})
+		})
+	</script>
 </Layout>

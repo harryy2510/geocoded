@@ -18,11 +18,6 @@ import {
 	getTimezonesPaginated,
 	search
 } from './db/queries'
-import { docsHtml, scalarHtml } from './docs'
-import { exploreHtml } from './explore'
-import logoSvg from './logo.svg'
-import logoBackgroundSvg from './logo-background.svg'
-import logoPng from './logo-background.png'
 import { openApiSpec } from './openapi'
 import type { Location, PaginatedResponse, SiteConfig } from './types'
 
@@ -156,52 +151,14 @@ function paginated<T>(
 	}
 }
 
-// --- Static Assets ---
-
-app.get('/logo.svg', (c) => {
-	return c.body(logoSvg, 200, {
-		...CACHE_HEADERS,
-		'Content-Type': 'image/svg+xml'
-	})
-})
-
-app.get('/logo-background.svg', (c) => {
-	return c.body(logoBackgroundSvg, 200, {
-		...CACHE_HEADERS,
-		'Content-Type': 'image/svg+xml'
-	})
-})
-
-app.get('/logo.png', (c) => {
-	return c.body(logoPng, 200, {
-		...CACHE_HEADERS,
-		'Content-Type': 'image/png'
-	})
-})
-
-// --- Docs (Scalar) ---
+// --- OpenAPI Spec ---
 
 app.get('/openapi.json', (c) => {
 	const config = getSiteConfig(c.env, c.req.url)
 	return c.json(openApiSpec(config))
 })
 
-app.get('/explore', (c) => {
-	const config = getSiteConfig(c.env, c.req.url)
-	return c.html(exploreHtml(config))
-})
-
-app.get('/docs', (c) => {
-	const config = getSiteConfig(c.env, c.req.url)
-	return c.html(scalarHtml(config))
-})
-
 app.get('/', async (c) => {
-	const config = getSiteConfig(c.env, c.req.url)
-	const apiHost = config.apiUrl ? new URL(config.apiUrl).hostname : null
-	const host = new URL(c.req.url).hostname
-	if (apiHost && host !== apiHost) return c.html(docsHtml(config))
-
 	const cf = c.req.raw.cf as IncomingRequestCfProperties | undefined
 	const countryCode = cf?.country
 	const regionCode = cf?.regionCode

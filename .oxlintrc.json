@@ -16,7 +16,7 @@
 		"builtin": true,
 		"es2024": true
 	},
-	"ignorePatterns": ["worker-configuration.d.ts", "scripts/**"],
+	"ignorePatterns": ["worker-configuration.d.ts", "scripts/**", "site/**"],
 	"rules": {
 		"eqeqeq": ["error", "always"],
 		"no-var": "error",

@@ -14,11 +14,12 @@ const {
 const currentPath = Astro.url.pathname
 
 const navLinks = [
-	{ href: '/', label: 'Dashboard' },
+	{ href: '/', label: 'Home' },
+	{ href: '/dashboard', label: 'Dashboard' },
 	{ href: '/explorer', label: 'Explorer' },
 	{ href: '/statistics', label: 'Statistics' },
 	{ href: '/quiz', label: 'Quiz' },
-	{ href: 'https://geocoded.me', label: 'API Docs', external: true },
+	{ href: '/docs', label: 'API Docs' },
 ]
 ---
 
@@ -61,13 +62,8 @@ const navLinks = [
 									? 'bg-accent-muted text-accent'
 									: 'text-text-muted hover:bg-bg-card hover:text-text',
 							]}
-							target={link.external ? '_blank' : undefined}
-							rel={link.external ? 'noopener noreferrer' : undefined}
 						>
 							{link.label}
-							{link.external && (
-								<span class="ml-1 text-xs opacity-50">&nearr;</span>
-							)}
 						</a>
 					))}
 				</div>
@@ -92,8 +88,6 @@ const navLinks = [
 									? 'bg-accent-muted text-accent'
 									: 'text-text-muted hover:bg-bg-card hover:text-text',
 							]}
-							target={link.external ? '_blank' : undefined}
-							rel={link.external ? 'noopener noreferrer' : undefined}
 						>
 							{link.label}
 						</a>
@@ -130,16 +124,14 @@ const navLinks = [
 						</a>
 						<span>&middot;</span>
 						<a
-							href="https://geocoded.me"
+							href="/docs"
 							class="text-text-muted hover:text-text"
-							target="_blank"
-							rel="noopener noreferrer"
 						>
 							API Docs
 						</a>
 						<span>&middot;</span>
 						<a
-							href="https://github.com/harimandir/geocoded"
+							href="https://github.com/harryy2510/geocoded"
 							class="text-text-muted hover:text-text"
 							target="_blank"
 							rel="noopener noreferrer"
