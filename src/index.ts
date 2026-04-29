@@ -19,6 +19,7 @@ import {
 	search
 } from './db/queries'
 import { docsHtml, scalarHtml } from './docs'
+import { exploreHtml } from './explore'
 import logoSvg from './logo.svg'
 import logoBackgroundSvg from './logo-background.svg'
 import logoPng from './logo-background.png'
@@ -177,6 +178,11 @@ app.get('/logo.png', (c) => {
 app.get('/openapi.json', (c) => {
 	const config = getSiteConfig(c.env, c.req.url)
 	return c.json(openApiSpec(config))
+})
+
+app.get('/explore', (c) => {
+	const config = getSiteConfig(c.env, c.req.url)
+	return c.html(exploreHtml(config))
 })
 
 app.get('/docs', (c) => {
