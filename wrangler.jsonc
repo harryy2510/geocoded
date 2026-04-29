@@ -26,6 +26,12 @@
 			"fallthrough": false
 		}
 	],
+	"assets": {
+		"directory": "site/dist",
+		"binding": "ASSETS",
+		"html_handling": "auto-trailing-slash",
+		"not_found_handling": "none"
+	},
 	"d1_databases": [
 		{
 			"binding": "GEO_DB",

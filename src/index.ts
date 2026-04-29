@@ -159,6 +159,13 @@ app.get('/openapi.json', (c) => {
 })
 
 app.get('/', async (c) => {
+	const config = getSiteConfig(c.env, c.req.url)
+	const apiHost = config.apiUrl ? new URL(config.apiUrl).hostname : null
+	const host = new URL(c.req.url).hostname
+	if (apiHost && host !== apiHost) {
+		return c.env.ASSETS.fetch(c.req.raw)
+	}
+
 	const cf = c.req.raw.cf as IncomingRequestCfProperties | undefined
 	const countryCode = cf?.country
 	const regionCode = cf?.regionCode
@@ -434,6 +441,18 @@ app.get('/quiz/stats/:mode', async (c) => {
 		totalAttempts: total?.count ?? 0,
 		distribution: distribution.results ?? []
 	})
+})
+
+// --- Catch-all: static assets for site, 404 for API ---
+
+app.all('*', async (c) => {
+	const config = getSiteConfig(c.env, c.req.url)
+	const apiHost = config.apiUrl ? new URL(config.apiUrl).hostname : null
+	const host = new URL(c.req.url).hostname
+	if (apiHost && host === apiHost) {
+		return c.json({ error: 'Not found' }, 404)
+	}
+	return c.env.ASSETS.fetch(c.req.raw)
 })
 
 export default app
