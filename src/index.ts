@@ -123,11 +123,17 @@ function parsePagination(c: {
 }
 
 function encodeCursor(offset: number): string {
-	return Buffer.from(String(offset)).toString('base64url')
+	return btoa(String(offset))
+		.replace(/\+/g, '-')
+		.replace(/\//g, '_')
+		.replace(/=/g, '')
 }
 
 function decodeCursor(cursor: string): number {
-	const decoded = parseInt(Buffer.from(cursor, 'base64url').toString(), 10)
+	const padded =
+		cursor.replace(/-/g, '+').replace(/_/g, '/') +
+		'=='.slice(0, (4 - (cursor.length % 4)) % 4)
+	const decoded = parseInt(atob(padded), 10)
 	return Number.isNaN(decoded) ? 0 : Math.max(decoded, 0)
 }
 
