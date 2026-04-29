@@ -278,7 +278,7 @@ export function openApiSpec(config: SiteConfig) {
 			title: config.siteName,
 			version: '1.0.0',
 			description:
-				'Free country, state, city, and location data. Fast, cached, and filterable.\n\nData sourced from [GeoNames](https://www.geonames.org/) (CC BY 4.0), [Unicode CLDR](https://cldr.unicode.org/) (Unicode License), [Wikidata](https://www.wikidata.org/) (CC0), and [IANA](https://www.iana.org/time-zones) (Public Domain).',
+				'Free country, state, city, and location data. Fast, cached, and filterable.\n\nData sourced from [GeoNames](https://www.geonames.org/) (CC BY 4.0), [Unicode CLDR](https://cldr.unicode.org/) (Unicode License), [IANA](https://www.iana.org/time-zones) (Public Domain), [ISO 4217 / SIX Group](https://www.six-group.com/en/products-services/financial-information/data-standards.html), [Natural Earth](https://www.naturalearthdata.com/) (Public Domain), and [CIA World Factbook](https://www.cia.gov/the-world-factbook/) (Public Domain).',
 			contact: {
 				email: 'contact@harryy.me'
 			},
