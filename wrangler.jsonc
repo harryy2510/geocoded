@@ -22,7 +22,7 @@
 	"rules": [
 		{
 			"type": "Data",
-			"globs": ["**/*.png"],
+			"globs": ["**/*.png", "**/*.svg"],
 			"fallthrough": false
 		}
 	],

@@ -4517,7 +4517,7 @@
 		"latitude": "50.84877",
 		"longitude": "4.34664",
 		"timezone": "Europe/Brussels",
-		"capital": "Anderlecht",
+		"capital": null,
 		"population": 1249597,
 		"type": "capital region"
 	},
@@ -4531,7 +4531,7 @@
 		"latitude": "50.63427",
 		"longitude": "5.56543",
 		"timezone": "Europe/Brussels",
-		"capital": "Lincent",
+		"capital": null,
 		"population": 1119038,
 		"type": "province"
 	},
@@ -4559,7 +4559,7 @@
 		"latitude": "50.75",
 		"longitude": "4.58333",
 		"timezone": "Europe/Brussels",
-		"capital": "Tubize",
+		"capital": null,
 		"population": 414130,
 		"type": "province"
 	},
@@ -4601,7 +4601,7 @@
 		"latitude": "51.16558",
 		"longitude": "4.83402",
 		"timezone": "Europe/Brussels",
-		"capital": "Zoersel",
+		"capital": "Turnhout",
 		"population": 1926522,
 		"type": "province"
 	},
@@ -4643,7 +4643,7 @@
 		"latitude": "50.91667",
 		"longitude": "4.58333",
 		"timezone": "Europe/Brussels",
-		"capital": "Grimbergen",
+		"capital": null,
 		"population": 1196773,
 		"type": "province"
 	},
@@ -12735,7 +12735,7 @@
 		"latitude": "49.5",
 		"longitude": "16.03333",
 		"timezone": "Europe/Prague",
-		"capital": "Velká Bíteš",
+		"capital": null,
 		"population": 118094,
 		"type": "district"
 	},
@@ -18335,7 +18335,7 @@
 		"latitude": "44.09829",
 		"longitude": "6.26537",
 		"timezone": "Europe/Paris",
-		"capital": "Pierrerue",
+		"capital": "Forcalquier",
 		"population": 167179,
 		"type": "metropolitan department"
 	},
@@ -18811,7 +18811,7 @@
 		"latitude": "48.12019",
 		"longitude": "5.24038",
 		"timezone": "Europe/Paris",
-		"capital": "Saulxures",
+		"capital": "Saint-Dizier",
 		"population": 169865,
 		"type": "metropolitan department"
 	},
@@ -18867,7 +18867,7 @@
 		"latitude": "44.68055",
 		"longitude": "6.28969",
 		"timezone": "Europe/Paris",
-		"capital": "Le Dévoluy",
+		"capital": "Gap",
 		"population": 141677,
 		"type": "metropolitan department"
 	},
@@ -18909,7 +18909,7 @@
 		"latitude": "43.66667",
 		"longitude": "3.5",
 		"timezone": "Europe/Paris",
-		"capital": "Pierrerue",
+		"capital": "Montpellier",
 		"population": 1217331,
 		"type": "metropolitan department"
 	},
@@ -19399,7 +19399,7 @@
 		"latitude": "49.67278",
 		"longitude": "1.12519",
 		"timezone": "Europe/Paris",
-		"capital": "Saint-Lucien",
+		"capital": "Le Havre",
 		"population": 1260205,
 		"type": "metropolitan department"
 	},
@@ -20225,7 +20225,7 @@
 		"latitude": "52.33333",
 		"longitude": "0.08333",
 		"timezone": "Europe/London",
-		"capital": "Whaddon",
+		"capital": "Cambridge",
 		"population": 651940,
 		"type": "administrative county"
 	},
@@ -20631,7 +20631,7 @@
 		"latitude": "53.16667",
 		"longitude": "-1.58333",
 		"timezone": "Europe/London",
-		"capital": "Shirley",
+		"capital": "Matlock",
 		"population": 1096526,
 		"type": "administrative county"
 	},
@@ -20701,7 +20701,7 @@
 		"latitude": "50.75",
 		"longitude": "-2.33333",
 		"timezone": "Europe/London",
-		"capital": "Poyntington",
+		"capital": "Dorchester",
 		"population": 389947,
 		"type": "administrative county"
 	},
@@ -20855,7 +20855,7 @@
 		"latitude": "51.83333",
 		"longitude": "0.58333",
 		"timezone": "Europe/London",
-		"capital": "Tiptree",
+		"capital": "Chelmsford",
 		"population": 1929610,
 		"type": "administrative county"
 	},
@@ -20939,7 +20939,7 @@
 		"latitude": "51.83333",
 		"longitude": "-2.16667",
 		"timezone": "Europe/London",
-		"capital": "Swindon",
+		"capital": "Gloucester",
 		"population": 975712,
 		"type": "administrative county"
 	},
@@ -21023,7 +21023,7 @@
 		"latitude": "51.83333",
 		"longitude": "-0.25",
 		"timezone": "Europe/London",
-		"capital": "Potters Bar",
+		"capital": "Hertford",
 		"population": 1236191,
 		"type": "administrative county"
 	},
@@ -21093,7 +21093,7 @@
 		"latitude": "51.16667",
 		"longitude": "0.66667",
 		"timezone": "Europe/London",
-		"capital": "Yalding",
+		"capital": "Maidstone",
 		"population": 1931684,
 		"type": "administrative county"
 	},
@@ -21135,7 +21135,7 @@
 		"latitude": "53.83333",
 		"longitude": "-2.5",
 		"timezone": "Europe/London",
-		"capital": "Warton",
+		"capital": "Preston",
 		"population": 1294914,
 		"type": "administrative county"
 	},
@@ -21149,7 +21149,7 @@
 		"latitude": "52.66667",
 		"longitude": "-1",
 		"timezone": "Europe/London",
-		"capital": "Wymondham",
+		"capital": "Glenfield",
 		"population": 1133921,
 		"type": "kingdom"
 	},
@@ -21163,7 +21163,7 @@
 		"latitude": "53.16667",
 		"longitude": "-0.26",
 		"timezone": "Europe/London",
-		"capital": "Thimbleby",
+		"capital": "Lincoln",
 		"population": 1120749,
 		"type": "administrative county"
 	},
@@ -21429,7 +21429,7 @@
 		"latitude": "52.66667",
 		"longitude": "1",
 		"timezone": "Europe/London",
-		"capital": "Sprowston",
+		"capital": "Norwich",
 		"population": 940359,
 		"type": "administrative county"
 	},
@@ -21541,7 +21541,7 @@
 		"latitude": "54.16667",
 		"longitude": "-1.5",
 		"timezone": "Europe/London",
-		"capital": "Wintringham",
+		"capital": "Northallerton",
 		"population": 1201415,
 		"type": "administrative county"
 	},
@@ -22059,7 +22059,7 @@
 		"latitude": "52.16667",
 		"longitude": "1",
 		"timezone": "Europe/London",
-		"capital": "Wrentham",
+		"capital": "Ipswich",
 		"population": 786231,
 		"type": "administrative county"
 	},
@@ -22087,7 +22087,7 @@
 		"latitude": "51.25",
 		"longitude": "-0.33333",
 		"timezone": "Europe/London",
-		"capital": "Shalford",
+		"capital": "Felbridge",
 		"population": 1248649,
 		"type": "administrative county"
 	},
@@ -22269,7 +22269,7 @@
 		"latitude": "51",
 		"longitude": "-0.41667",
 		"timezone": "Europe/London",
-		"capital": "Henfield",
+		"capital": "Chichester",
 		"population": 915037,
 		"type": "administrative county"
 	},
@@ -65347,7 +65347,7 @@
 		"latitude": "0.48331",
 		"longitude": "30.20403",
 		"timezone": "Africa/Kampala",
-		"capital": "Kibiito",
+		"capital": null,
 		"population": 0,
 		"type": "district"
 	},
@@ -66019,7 +66019,7 @@
 		"latitude": "-0.63925",
 		"longitude": "31.54435",
 		"timezone": "Africa/Kampala",
-		"capital": "Kasaali",
+		"capital": null,
 		"population": 0,
 		"type": "district"
 	},
@@ -66369,7 +66369,7 @@
 		"latitude": "0.81626",
 		"longitude": "34.38245",
 		"timezone": "Africa/Kampala",
-		"capital": "Bupoto",
+		"capital": null,
 		"population": 0,
 		"type": "district"
 	},
