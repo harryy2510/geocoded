@@ -759,7 +759,7 @@
 		"currency": "",
 		"currencyName": "",
 		"currencySymbol": "",
-		"phoneCode": "",
+		"phoneCode": "672",
 		"tld": ".aq",
 		"postalCodeFormat": null,
 		"postalCodeRegex": null,
@@ -2456,7 +2456,7 @@
 		"iso3": "BES",
 		"numericCode": "535",
 		"geonameId": 7626844,
-		"capital": "",
+		"capital": "Kralendijk",
 		"latitude": "12.21286",
 		"longitude": "-68.29445",
 		"areaSqKm": 328,
@@ -2721,14 +2721,14 @@
 			}
 		],
 		"population": 1,
-		"nationality": "",
+		"nationality": "Bouvet Islander",
 		"languages": [],
 		"native": "Bouvet Island",
 		"gdp": 54050,
 		"currency": "NOK",
 		"currencyName": "Norwegian Krone",
 		"currencySymbol": "kr",
-		"phoneCode": "",
+		"phoneCode": "47",
 		"tld": ".bv",
 		"postalCodeFormat": null,
 		"postalCodeRegex": null,
@@ -4226,10 +4226,10 @@
 				"zoneName": "America/Santiago"
 			},
 			{
-				"abbreviation": "GMT-3",
-				"gmtOffset": -10800,
-				"gmtOffsetName": "UTC-03:00",
-				"tzName": "GMT-03:00",
+				"abbreviation": "",
+				"gmtOffset": 0,
+				"gmtOffsetName": "UTC+00:00",
+				"tzName": "",
 				"zoneName": "America/Coyhaique"
 			},
 			{
@@ -7036,7 +7036,7 @@
 		"currency": "EUR",
 		"currencyName": "Euro",
 		"currencySymbol": "€",
-		"phoneCode": "",
+		"phoneCode": "262",
 		"tld": ".tf",
 		"postalCodeFormat": null,
 		"postalCodeRegex": null,
@@ -8540,7 +8540,7 @@
 		"currency": "AUD",
 		"currencyName": "Australian Dollar",
 		"currencySymbol": "$",
-		"phoneCode": "",
+		"phoneCode": "672",
 		"tld": ".hm",
 		"postalCodeFormat": "####",
 		"postalCodeRegex": "^(\\d{4})$",
@@ -10076,49 +10076,49 @@
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "Kazakhstan Time",
+				"tzName": "West Kazakhstan Time",
 				"zoneName": "Asia/Almaty"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "Kazakhstan Time",
+				"tzName": "West Kazakhstan Time",
 				"zoneName": "Asia/Qyzylorda"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "Kazakhstan Time",
+				"tzName": "West Kazakhstan Time",
 				"zoneName": "Asia/Qostanay"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "Kazakhstan Time",
+				"tzName": "West Kazakhstan Time",
 				"zoneName": "Asia/Aqtobe"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "Kazakhstan Time",
+				"tzName": "West Kazakhstan Time",
 				"zoneName": "Asia/Aqtau"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "Kazakhstan Time",
+				"tzName": "West Kazakhstan Time",
 				"zoneName": "Asia/Atyrau"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "Kazakhstan Time",
+				"tzName": "West Kazakhstan Time",
 				"zoneName": "Asia/Oral"
 			}
 		],
@@ -15040,9 +15040,9 @@
 		],
 		"timezones": [
 			{
-				"abbreviation": "GMT-3",
-				"gmtOffset": -10800,
-				"gmtOffsetName": "UTC-03:00",
+				"abbreviation": "GMT-4",
+				"gmtOffset": -14400,
+				"gmtOffsetName": "UTC-04:00",
 				"tzName": "Paraguay Standard Time",
 				"zoneName": "America/Asuncion"
 			}
@@ -18227,7 +18227,7 @@
 		"currency": "GBP",
 		"currencyName": "British Pound",
 		"currencySymbol": "£",
-		"phoneCode": "",
+		"phoneCode": "500",
 		"tld": ".gs",
 		"postalCodeFormat": "SIQQ 1ZZ",
 		"postalCodeRegex": "SIQQ 1ZZ",
@@ -21028,7 +21028,7 @@
 				"abbreviation": "HST",
 				"gmtOffset": -36000,
 				"gmtOffsetName": "UTC-10:00",
-				"tzName": "GMT-10:00",
+				"tzName": "Hawaii-Aleutian Standard Time",
 				"zoneName": "Pacific/Honolulu"
 			}
 		],
