@@ -9,7 +9,7 @@ const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
 		<title>API Reference | Geocoded</title>
 		<meta name="description" content="Interactive API reference for Geocoded. Full OpenAPI 3.1 documentation." />
 		<meta name="theme-color" content="#0a0a0b" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/logo-background.svg" />
 		<style>
 			.dark-mode {
 				color-scheme: dark;
@@ -57,16 +57,16 @@ const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
 		</style>
 	</head>
 	<body>
-		<div id="app"></div>
-		<script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
-		<script define:vars={{ apiUrl }}>
-			Scalar.createApiReference('#app', {
-				url: apiUrl + '/openapi.json',
+		<script
+			id="api-reference"
+			data-url={`${apiUrl}/openapi.json`}
+			data-configuration={JSON.stringify({
 				theme: 'saturn',
 				darkMode: true,
 				hideDarkModeToggle: true,
 				defaultOpenAllTags: true,
-			})
-		</script>
+			})}
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
 	</body>
 </html>

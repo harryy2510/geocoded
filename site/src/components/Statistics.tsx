@@ -75,16 +75,8 @@ export function Statistics() {
 
 	if (loading) {
 		return (
-			<div className="space-y-8">
-				{[1, 2, 3, 4].map((i) => (
-					<div key={i} className="space-y-4">
-						<Skeleton className="h-8 w-48" />
-						<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-							<Skeleton className="h-[300px]" />
-							<Skeleton className="h-[300px]" />
-						</div>
-					</div>
-				))}
+			<div className="flex items-center justify-center py-20">
+				<div className="size-8 animate-spin rounded-full border-2 border-accent border-t-transparent" />
 			</div>
 		)
 	}

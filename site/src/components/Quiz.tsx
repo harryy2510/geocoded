@@ -2,14 +2,27 @@ import { useState, useEffect, useCallback, useMemo } from 'react'
 import { type Country, fetchCountries } from '../lib/api'
 import { formatCompact, formatArea } from '../lib/format'
 
+const API_URL =
+	typeof import.meta !== 'undefined' && (import.meta as Record<string, unknown>).env
+		? ((import.meta as Record<string, unknown>).env as Record<string, string>)
+				.PUBLIC_API_URL || 'https://api.geocoded.me'
+		: 'https://api.geocoded.me'
+
 type QuizMode = 'capital' | 'flag' | 'population' | 'geography' | 'neighbour'
 type Phase = 'menu' | 'playing' | 'result'
 
 type Question = {
 	prompt: string
 	subtext?: string
+	revealText?: string
 	options: string[]
 	correctIndex: number
+}
+
+type QuizStatsResponse = {
+	totalAttempts: number
+	avgScore: number
+	percentile: number
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -72,7 +85,8 @@ function generateQuestions(
 			const options = [`${a.emoji} ${a.name}`, `${b.emoji} ${b.name}`]
 			questions.push({
 				prompt: 'Which country has a larger population?',
-				subtext: `${a.emoji} ${a.name} (${formatCompact(a.population)}) vs ${b.emoji} ${b.name} (${formatCompact(b.population)})`,
+				subtext: `${a.emoji} ${a.name} vs ${b.emoji} ${b.name}`,
+				revealText: `${a.emoji} ${a.name} (${formatCompact(a.population)}) vs ${b.emoji} ${b.name} (${formatCompact(b.population)})`,
 				options,
 				correctIndex: options.indexOf(`${bigger.emoji} ${bigger.name}`),
 			})
@@ -85,7 +99,8 @@ function generateQuestions(
 			const options = [`${a.emoji} ${a.name}`, `${b.emoji} ${b.name}`]
 			questions.push({
 				prompt: 'Which country is larger by area?',
-				subtext: `${a.emoji} ${a.name} (${formatArea(a.areaSqKm)}) vs ${b.emoji} ${b.name} (${formatArea(b.areaSqKm)})`,
+				subtext: `${a.emoji} ${a.name} vs ${b.emoji} ${b.name}`,
+				revealText: `${a.emoji} ${a.name} (${formatArea(a.areaSqKm)}) vs ${b.emoji} ${b.name} (${formatArea(b.areaSqKm)})`,
 				options,
 				correctIndex: options.indexOf(`${bigger.emoji} ${bigger.name}`),
 			})
@@ -121,31 +136,47 @@ function generateQuestions(
 	return questions.slice(0, count)
 }
 
-const MODES: { id: QuizMode; label: string; icon: string; description: string; color: string }[] = [
-	{ id: 'capital', label: 'Capital Quiz', icon: '🏛️', description: 'Guess the capital city', color: 'from-blue-500/10 to-blue-500/[0.02]' },
-	{ id: 'flag', label: 'Flag Quiz', icon: '🏴', description: 'Identify countries by flag', color: 'from-purple-500/10 to-purple-500/[0.02]' },
+const MODES: { id: QuizMode; label: string; description: string; color: string; iconColor: string }[] = [
+	{ id: 'capital', label: 'Capital Quiz', description: 'Guess the capital city', color: 'from-blue-500/10 to-blue-500/[0.02]', iconColor: 'text-blue-400' },
+	{ id: 'flag', label: 'Flag Quiz', description: 'Identify countries by flag', color: 'from-purple-500/10 to-purple-500/[0.02]', iconColor: 'text-purple-400' },
 	{
 		id: 'population',
 		label: 'Population Quiz',
-		icon: '👥',
 		description: 'Which country has more people?',
 		color: 'from-emerald-500/10 to-emerald-500/[0.02]',
+		iconColor: 'text-emerald-400',
 	},
 	{
 		id: 'geography',
 		label: 'Geography Quiz',
-		icon: '🗺️',
 		description: 'Which country is larger?',
 		color: 'from-orange-500/10 to-orange-500/[0.02]',
+		iconColor: 'text-orange-400',
 	},
 	{
 		id: 'neighbour',
 		label: 'Neighbour Quiz',
-		icon: '🤝',
 		description: 'Which country borders this one?',
 		color: 'from-cyan-500/10 to-cyan-500/[0.02]',
+		iconColor: 'text-cyan-400',
 	},
 ]
+
+function ModeIcon({ mode, className }: { mode: QuizMode; className?: string }) {
+	const cls = `size-7 ${className ?? ''}`
+	switch (mode) {
+		case 'capital':
+			return <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
+		case 'flag':
+			return <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+		case 'population':
+			return <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+		case 'geography':
+			return <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+		case 'neighbour':
+			return <svg className={cls} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+	}
+}
 
 function getHighScore(mode: QuizMode): number {
 	try {
@@ -166,6 +197,20 @@ function setHighScore(mode: QuizMode, score: number) {
 	}
 }
 
+async function submitQuizStats(mode: QuizMode, score: number): Promise<QuizStatsResponse | null> {
+	try {
+		const res = await fetch(`${API_URL}/quiz/stats`, {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({ mode, score, total: 10 }),
+		})
+		if (!res.ok) return null
+		return res.json() as Promise<QuizStatsResponse>
+	} catch {
+		return null
+	}
+}
+
 export function Quiz() {
 	const [countries, setCountries] = useState<Country[]>([])
 	const [loading, setLoading] = useState(true)
@@ -176,6 +221,7 @@ export function Quiz() {
 	const [score, setScore] = useState(0)
 	const [selected, setSelected] = useState<number | null>(null)
 	const [answered, setAnswered] = useState(false)
+	const [quizStats, setQuizStats] = useState<QuizStatsResponse | null>(null)
 
 	useEffect(() => {
 		fetchCountries()
@@ -193,6 +239,7 @@ export function Quiz() {
 			setScore(0)
 			setSelected(null)
 			setAnswered(false)
+			setQuizStats(null)
 			setPhase('playing')
 		},
 		[countries],
@@ -203,15 +250,16 @@ export function Quiz() {
 			if (answered) return
 			setSelected(idx)
 			setAnswered(true)
-			if (idx === questions[currentQ].correctIndex) {
+			const isCorrect = idx === questions[currentQ].correctIndex
+			if (isCorrect) {
 				setScore((s) => s + 1)
 			}
 
 			setTimeout(() => {
 				if (currentQ + 1 >= questions.length) {
-					const finalScore =
-						idx === questions[currentQ].correctIndex ? score + 1 : score
+					const finalScore = isCorrect ? score + 1 : score
 					setHighScore(mode, finalScore)
+					submitQuizStats(mode, finalScore).then(setQuizStats)
 					setPhase('result')
 				} else {
 					setCurrentQ((q) => q + 1)
@@ -261,8 +309,8 @@ export function Quiz() {
 							onClick={() => startQuiz(m.id)}
 							className="gradient-border-hover group flex flex-col items-start gap-4 rounded-xl bg-bg-card/60 p-6 text-left backdrop-blur-sm transition-all hover:bg-bg-card/80 hover:-translate-y-0.5 active:scale-[0.98]"
 						>
-							<div className={`flex size-14 items-center justify-center rounded-xl bg-gradient-to-br ${m.color}`}>
-								<span className="text-3xl transition-transform group-hover:scale-110">{m.icon}</span>
+							<div className={`flex size-14 items-center justify-center rounded-xl bg-gradient-to-br ${m.color} ${m.iconColor}`}>
+								<ModeIcon mode={m.id} className="transition-transform group-hover:scale-110" />
 							</div>
 							<div>
 								<h3 className="font-semibold text-text group-hover:text-accent transition-colors">
@@ -270,13 +318,7 @@ export function Quiz() {
 								</h3>
 								<p className="mt-1 text-xs text-text-muted">{m.description}</p>
 							</div>
-							{highScores[m.id] > 0 ? (
-								<div className="mt-auto flex items-center gap-1.5 text-xs text-text-dim">
-									<span>🏆</span>
-									Best: {highScores[m.id]}/10
-								</div>
-							) : null}
-						</button>
+							</button>
 					))}
 				</div>
 			</div>
@@ -319,6 +361,19 @@ export function Quiz() {
 						</div>
 					</div>
 
+					{quizStats ? (
+						<div className="mx-auto max-w-xs space-y-2 rounded-xl border border-border/50 bg-bg-card/60 p-4 backdrop-blur-sm">
+							<p className="text-sm font-medium text-text">
+								You scored better than <span className="gradient-text font-bold">{quizStats.percentile}%</span> of players
+							</p>
+							<div className="flex items-center justify-center gap-4 text-xs text-text-dim">
+								<span>{quizStats.totalAttempts.toLocaleString()} attempts</span>
+								<span>·</span>
+								<span>Avg: {quizStats.avgScore}/10</span>
+							</div>
+						</div>
+					) : null}
+
 					<div className="text-sm text-text-dim">
 						High score: {getHighScore(mode)}/10
 					</div>
@@ -357,6 +412,7 @@ export function Quiz() {
 	}
 
 	const progressPct = ((currentQ) / questions.length) * 100
+	const displaySubtext = answered && q.revealText ? q.revealText : q.subtext
 
 	return (
 		<div className="mx-auto max-w-2xl space-y-8 py-8">
@@ -385,14 +441,14 @@ export function Quiz() {
 			</div>
 
 			<div className="animate-fade-in space-y-8 text-center" key={currentQ}>
-				{q.subtext && mode === 'flag' ? (
-					<div className="text-8xl">{q.subtext}</div>
+				{displaySubtext && mode === 'flag' ? (
+					<div className="text-8xl">{displaySubtext}</div>
 				) : null}
 
 				<h2 className="text-xl font-bold text-text">{q.prompt}</h2>
 
-				{q.subtext && mode !== 'flag' ? (
-					<p className="text-sm text-text-muted">{q.subtext}</p>
+				{displaySubtext && mode !== 'flag' ? (
+					<p className="text-sm text-text-muted">{displaySubtext}</p>
 				) : null}
 
 				<div className="grid grid-cols-1 gap-3 sm:grid-cols-2">

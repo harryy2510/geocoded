@@ -122,17 +122,8 @@ export function Dashboard() {
 
 	if (loading) {
 		return (
-			<div className="space-y-8">
-				<div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-					{[1, 2, 3, 4, 5].map((i) => (
-						<Skeleton key={i} className="h-28" />
-					))}
-				</div>
-				<Skeleton className="h-[420px]" />
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-					<Skeleton className="h-[350px]" />
-					<Skeleton className="h-[350px]" />
-				</div>
+			<div className="flex items-center justify-center py-20">
+				<div className="size-8 animate-spin rounded-full border-2 border-accent border-t-transparent" />
 			</div>
 		)
 	}

@@ -159,13 +159,8 @@ export function Explorer() {
 
 	if (loading) {
 		return (
-			<div className="space-y-6">
-				<Skeleton className="h-10 w-full max-w-md" />
-				<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-					{Array.from({ length: 12 }, (_, i) => (
-						<Skeleton key={i} className="h-40" />
-					))}
-				</div>
+			<div className="flex items-center justify-center py-20">
+				<div className="size-8 animate-spin rounded-full border-2 border-accent border-t-transparent" />
 			</div>
 		)
 	}

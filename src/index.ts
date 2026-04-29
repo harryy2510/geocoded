@@ -375,4 +375,65 @@ app.get('/currencies/:code', async (c) => {
 	return jsonResponse(c, pickFields(currency, c.req.query('fields')))
 })
 
+// --- Quiz Stats ---
+
+app.post('/quiz/stats', async (c) => {
+	const db = c.env.GEO_DB
+	const body = await c.req.json<{ mode: string; score: number; total?: number }>()
+	const { mode, score, total = 10 } = body
+
+	const validModes = ['capital', 'flag', 'population', 'geography', 'neighbour']
+	if (!validModes.includes(mode) || typeof score !== 'number' || score < 0 || score > total) {
+		return c.json({ error: 'Invalid input' }, 400)
+	}
+
+	await db
+		.prepare('INSERT INTO quiz_stats (mode, score, total) VALUES (?, ?, ?)')
+		.bind(mode, score, total)
+		.run()
+
+	const stats = await db
+		.prepare(
+			`SELECT
+				COUNT(*) AS total_attempts,
+				ROUND(AVG(score), 1) AS avg_score,
+				COUNT(CASE WHEN score <= ? THEN 1 END) AS at_or_below
+			FROM quiz_stats WHERE mode = ?`
+		)
+		.bind(score, mode)
+		.first<{ total_attempts: number; avg_score: number; at_or_below: number }>()
+
+	const percentile = stats && stats.total_attempts > 0
+		? Math.round((stats.at_or_below / stats.total_attempts) * 100)
+		: 50
+
+	return c.json({
+		totalAttempts: stats?.total_attempts ?? 0,
+		avgScore: stats?.avg_score ?? 0,
+		percentile
+	})
+})
+
+app.get('/quiz/stats/:mode', async (c) => {
+	const db = c.env.GEO_DB
+	const mode = c.req.param('mode')
+
+	const distribution = await db
+		.prepare(
+			'SELECT score, COUNT(*) AS count FROM quiz_stats WHERE mode = ? GROUP BY score ORDER BY score'
+		)
+		.bind(mode)
+		.all<{ score: number; count: number }>()
+
+	const total = await db
+		.prepare('SELECT COUNT(*) AS count FROM quiz_stats WHERE mode = ?')
+		.bind(mode)
+		.first<{ count: number }>()
+
+	return c.json({
+		totalAttempts: total?.count ?? 0,
+		distribution: distribution.results ?? []
+	})
+})
+
 export default app

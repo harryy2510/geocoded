@@ -40,29 +40,33 @@ const dataPages = [
 		href: '/dashboard',
 		title: 'Dashboard',
 		description: 'Global data overview with interactive charts and key metrics across all 252 countries.',
-		emoji: '📊',
+		icon: 'dashboard',
 		accent: 'group-hover:text-blue-400',
+		iconColor: 'text-blue-400',
 	},
 	{
 		href: '/explorer',
 		title: 'Explorer',
 		description: 'Browse and filter countries, states, and cities with an interactive world map.',
-		emoji: '🗺️',
+		icon: 'explorer',
 		accent: 'group-hover:text-emerald-400',
+		iconColor: 'text-emerald-400',
 	},
 	{
 		href: '/statistics',
 		title: 'Statistics',
 		description: 'Dive into population, area, GDP, literacy, and other comparative statistics.',
-		emoji: '📈',
+		icon: 'statistics',
 		accent: 'group-hover:text-purple-400',
+		iconColor: 'text-purple-400',
 	},
 	{
 		href: '/quiz',
 		title: 'Quiz',
 		description: 'Test your geography knowledge with fun quizzes on flags, capitals, and more.',
-		emoji: '🧠',
+		icon: 'quiz',
 		accent: 'group-hover:text-orange-400',
+		iconColor: 'text-orange-400',
 	},
 ]
 
@@ -125,6 +129,29 @@ const examples = [
 			jsonBr('  }') +
 			jsonBr(']'),
 	},
+	{
+		title: 'Search across all entities',
+		curl: `curl ${apiUrl}/search?q=tokyo`,
+		responseHtml:
+			jsonBr('{') +
+			`  <span class="json-key">"data"</span><span class="json-colon">: </span>[...],\n` +
+			`  <span class="json-key">"meta"</span><span class="json-colon">: </span>{\n` +
+			jsonKvi('total', '12') +
+			jsonKvi('hasMore', 'false', true) +
+			`  }\n` +
+			jsonBr('}'),
+	},
+	{
+		title: 'Timezones and currencies',
+		curl: `curl ${apiUrl}/timezones/America/New_York`,
+		responseHtml:
+			jsonBr('{') +
+			jsonKv('timezone', 'America/New_York') +
+			jsonKv('countryCodes', '["US"]') +
+			jsonKv('coordinates', '+404251-0740023') +
+			jsonKv('comments', 'Eastern', true) +
+			jsonBr('}'),
+	},
 ]
 
 const stats = [
@@ -144,11 +171,9 @@ const stats = [
 			<div class="absolute left-1/3 top-1/3 size-[320px] rounded-full bg-purple-500/[0.05] blur-[100px]"></div>
 		</div>
 
-		<div class="flex size-16 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-purple-500 text-3xl mx-auto mb-8 shadow-lg shadow-accent/20">
-			🌍
-		</div>
-		<h1 class="mb-5 text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
-			<span class="gradient-text">Geocoded</span>
+		<img src="/logo-background.svg" alt="Geocoded" class="size-16 rounded-2xl mx-auto mb-8" width="64" height="64" />
+		<h1 class="mb-5 text-5xl font-extrabold tracking-tight text-text sm:text-6xl lg:text-7xl">
+			Geocoded
 		</h1>
 		<p class="mx-auto mb-4 max-w-xl text-xl font-medium text-text-muted sm:text-2xl">
 			Free Country, State, City & Location API
@@ -257,7 +282,20 @@ const stats = [
 					href={page.href}
 					class="gradient-border-hover group rounded-xl bg-bg-card/60 p-6 backdrop-blur-sm transition-all hover:bg-bg-card/80 hover:-translate-y-0.5"
 				>
-					<div class="mb-3 text-3xl">{page.emoji}</div>
+					<div class={`mb-3 ${page.iconColor}`}>
+						{page.icon === 'dashboard' && (
+							<svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+						)}
+						{page.icon === 'explorer' && (
+							<svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+						)}
+						{page.icon === 'statistics' && (
+							<svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+						)}
+						{page.icon === 'quiz' && (
+							<svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="12" r="10"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+						)}
+					</div>
 					<h3 class={`mb-2 text-base font-semibold text-text transition-colors ${page.accent}`}>{page.title}</h3>
 					<p class="text-sm leading-relaxed text-text-muted">{page.description}</p>
 					<span class="mt-4 inline-flex items-center gap-1 text-xs font-medium text-accent opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5">
@@ -272,7 +310,7 @@ const stats = [
 	<!-- Examples -->
 	<section class="py-20" id="examples">
 		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">Quick Start</p>
-		<h2 class="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">Three endpoints, zero config</h2>
+		<h2 class="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">Simple endpoints, zero config</h2>
 		<p class="mb-14 max-w-lg text-base text-text-muted leading-relaxed">
 			Every response is JSON with aggressive cache headers. Try these from your terminal right now.
 		</p>

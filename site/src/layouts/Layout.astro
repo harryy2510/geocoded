@@ -26,8 +26,8 @@ const navLinks = [
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href="/logo-background.svg" />
+		<link rel="icon" href="/logo-background.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content={description} />
 		<meta name="theme-color" content="#0a0a0b" />
@@ -43,16 +43,14 @@ const navLinks = [
 		/>
 		<title>{title}</title>
 	</head>
-	<body class="min-h-dvh bg-bg text-text">
+	<body class="flex min-h-dvh flex-col bg-bg text-text">
 		<nav class="sticky top-0 z-50 border-b border-border/50 bg-bg/70 backdrop-blur-2xl">
 			<!-- Subtle bottom glow -->
 			<div class="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"></div>
 			<div class="absolute inset-x-0 -bottom-8 h-8 bg-gradient-to-b from-accent/[0.04] to-transparent pointer-events-none"></div>
 			<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6">
 				<a href="/" class="group flex items-center gap-2.5">
-					<div class="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent to-purple-500 text-base transition-transform group-hover:scale-105">
-						🌍
-					</div>
+					<img src="/logo-background.svg" alt="Geocoded" class="size-8 rounded-lg transition-transform group-hover:scale-105" width="32" height="32" />
 					<span class="text-lg font-bold tracking-tight">Geocoded</span>
 				</a>
 				<div class="hidden items-center gap-0.5 md:flex">
@@ -99,7 +97,7 @@ const navLinks = [
 			</div>
 		</nav>
 
-		<main class="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+		<main class="mx-auto max-w-7xl flex-1 px-4 py-8 sm:px-6">
 			<slot />
 		</main>
 
@@ -109,20 +107,22 @@ const navLinks = [
 			<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6">
 				<div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
 					<div class="flex items-center gap-3">
-						<div class="flex size-7 items-center justify-center rounded-md bg-gradient-to-br from-accent/80 to-purple-500/80 text-xs">
-							🌍
-						</div>
+						<img src="/logo-background.svg" alt="Geocoded" class="size-7 rounded-md" width="28" height="28" />
 						<span class="text-sm font-semibold text-text-muted">Geocoded</span>
 					</div>
 					<div class="flex flex-wrap items-center justify-center gap-2 text-sm text-text-dim">
 						<span>Data from</span>
 						<a href="https://www.geonames.org/" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">GeoNames</a>
 						<span class="text-border">/</span>
-						<a href="https://cldr.unicode.org/" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">CLDR</a>
-						<span class="text-border">/</span>
-						<a href="https://www.wikidata.org/" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">Wikidata</a>
+						<a href="https://cldr.unicode.org/" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">Unicode CLDR</a>
 						<span class="text-border">/</span>
 						<a href="https://www.iana.org/time-zones" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">IANA</a>
+						<span class="text-border">/</span>
+						<a href="https://www.six-group.com/en/products-services/financial-information/data-standards.html" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">ISO 4217</a>
+						<span class="text-border">/</span>
+						<a href="https://www.naturalearthdata.com/" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">Natural Earth</a>
+						<span class="text-border">/</span>
+						<a href="https://www.cia.gov/the-world-factbook/" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">CIA Factbook</a>
 					</div>
 					<div class="flex items-center gap-4 text-sm">
 						<a
