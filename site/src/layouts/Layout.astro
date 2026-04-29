@@ -1,0 +1,160 @@
+---
+type Props = {
+	title?: string
+	description?: string
+}
+
+const {
+	title = 'Geocoded - Global Geography Data Visualization',
+	description = 'Explore 252 countries, 5000+ states, and 232K+ cities with interactive charts, maps, and quizzes. Powered by the Geocoded API.',
+} = Astro.props
+
+const currentPath = Astro.url.pathname
+
+const navLinks = [
+	{ href: '/', label: 'Dashboard' },
+	{ href: '/explorer', label: 'Explorer' },
+	{ href: '/statistics', label: 'Statistics' },
+	{ href: '/quiz', label: 'Quiz' },
+	{ href: 'https://geocoded.me', label: 'API Docs', external: true },
+]
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content={description} />
+		<meta name="theme-color" content="#0a0a0b" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<title>{title}</title>
+	</head>
+	<body class="min-h-dvh bg-bg text-text">
+		<nav class="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur-xl">
+			<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+				<a href="/" class="flex items-center gap-2.5">
+					<div class="flex size-8 items-center justify-center rounded-lg bg-accent text-sm font-bold text-white">
+						G
+					</div>
+					<span class="text-lg font-semibold tracking-tight">Geocoded</span>
+				</a>
+				<div class="hidden items-center gap-1 md:flex">
+					{navLinks.map((link) => (
+						<a
+							href={link.href}
+							class:list={[
+								'rounded-lg px-3 py-1.5 text-sm font-medium transition-colors',
+								currentPath === link.href
+									? 'bg-accent-muted text-accent'
+									: 'text-text-muted hover:bg-bg-card hover:text-text',
+							]}
+							target={link.external ? '_blank' : undefined}
+							rel={link.external ? 'noopener noreferrer' : undefined}
+						>
+							{link.label}
+							{link.external && (
+								<span class="ml-1 text-xs opacity-50">&nearr;</span>
+							)}
+						</a>
+					))}
+				</div>
+				<button
+					id="mobile-menu-btn"
+					class="flex size-9 items-center justify-center rounded-lg text-text-muted hover:bg-bg-card md:hidden"
+					aria-label="Toggle menu"
+				>
+					<svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+			</div>
+			<div id="mobile-menu" class="hidden border-t border-border md:hidden">
+				<div class="flex flex-col gap-1 px-4 py-3">
+					{navLinks.map((link) => (
+						<a
+							href={link.href}
+							class:list={[
+								'rounded-lg px-3 py-2 text-sm font-medium transition-colors',
+								currentPath === link.href
+									? 'bg-accent-muted text-accent'
+									: 'text-text-muted hover:bg-bg-card hover:text-text',
+							]}
+							target={link.external ? '_blank' : undefined}
+							rel={link.external ? 'noopener noreferrer' : undefined}
+						>
+							{link.label}
+						</a>
+					))}
+				</div>
+			</div>
+		</nav>
+
+		<main class="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+			<slot />
+		</main>
+
+		<footer class="mt-auto border-t border-border">
+			<div class="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+				<div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
+					<div class="flex items-center gap-2 text-sm text-text-dim">
+						<span>Data sourced from</span>
+						<a href="https://www.geonames.org/" class="text-text-muted hover:text-text" target="_blank" rel="noopener noreferrer">GeoNames</a>
+						<span>&middot;</span>
+						<a href="https://cldr.unicode.org/" class="text-text-muted hover:text-text" target="_blank" rel="noopener noreferrer">CLDR</a>
+						<span>&middot;</span>
+						<a href="https://www.wikidata.org/" class="text-text-muted hover:text-text" target="_blank" rel="noopener noreferrer">Wikidata</a>
+						<span>&middot;</span>
+						<a href="https://www.iana.org/time-zones" class="text-text-muted hover:text-text" target="_blank" rel="noopener noreferrer">IANA</a>
+					</div>
+					<div class="flex items-center gap-3 text-sm text-text-dim">
+						<a
+							href="https://creativecommons.org/licenses/by/4.0/"
+							class="text-text-muted hover:text-text"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							CC BY 4.0
+						</a>
+						<span>&middot;</span>
+						<a
+							href="https://geocoded.me"
+							class="text-text-muted hover:text-text"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							API Docs
+						</a>
+						<span>&middot;</span>
+						<a
+							href="https://github.com/harimandir/geocoded"
+							class="text-text-muted hover:text-text"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							GitHub
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			const btn = document.getElementById('mobile-menu-btn')
+			const menu = document.getElementById('mobile-menu')
+			btn?.addEventListener('click', () => {
+				menu?.classList.toggle('hidden')
+			})
+		</script>
+	</body>
+</html>

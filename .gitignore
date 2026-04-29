@@ -6,4 +6,6 @@ dist/
 .idea
 .vscode
 .env*
-.DS_Store
+.DS_Storesite/node_modules/
+site/dist/
+site/.astro/
