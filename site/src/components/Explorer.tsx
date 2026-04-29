@@ -18,10 +18,10 @@ function Pill({
 	return (
 		<button
 			onClick={onClick}
-			className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+			className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition-all ${
 				active
-					? 'bg-accent text-white'
-					: 'bg-bg-card text-text-muted hover:bg-bg-card-hover hover:text-text'
+					? 'bg-accent text-white shadow-sm shadow-accent/20'
+					: 'bg-bg-card/80 text-text-muted hover:bg-bg-card-hover hover:text-text'
 			}`}
 		>
 			{label}
@@ -163,7 +163,7 @@ export function Explorer() {
 				<Skeleton className="h-10 w-full max-w-md" />
 				<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
 					{Array.from({ length: 12 }, (_, i) => (
-						<Skeleton key={i} className="h-36" />
+						<Skeleton key={i} className="h-40" />
 					))}
 				</div>
 			</div>
@@ -174,7 +174,7 @@ export function Explorer() {
 		<div className="space-y-6">
 			<div>
 				<h1 className="text-3xl font-bold tracking-tight text-text">Explorer</h1>
-				<p className="mt-1 text-sm text-text-muted">
+				<p className="mt-1.5 text-sm text-text-muted">
 					Browse and filter {countries.length} countries
 				</p>
 			</div>
@@ -182,7 +182,7 @@ export function Explorer() {
 			<div className="flex flex-col gap-3 sm:flex-row sm:items-center">
 				<div className="relative flex-1">
 					<svg
-						className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-text-dim"
+						className="absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-text-dim"
 						fill="none"
 						stroke="currentColor"
 						viewBox="0 0 24 24"
@@ -199,16 +199,16 @@ export function Explorer() {
 						placeholder="Search countries, capitals, ISO codes..."
 						value={searchQuery}
 						onChange={(e) => setSearchQuery(e.target.value)}
-						className="w-full rounded-lg border border-border bg-bg-card py-2.5 pl-10 pr-4 text-sm text-text placeholder:text-text-dim focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+						className="w-full rounded-xl border border-border/60 bg-bg-card/60 py-2.5 pl-11 pr-4 text-sm text-text backdrop-blur-sm placeholder:text-text-dim focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent/50 transition-all"
 					/>
 				</div>
 				<div className="flex items-center gap-2">
 					<button
 						onClick={() => setShowFilters(!showFilters)}
-						className={`flex items-center gap-1.5 rounded-lg border px-3 py-2.5 text-sm font-medium transition-colors ${
+						className={`flex items-center gap-1.5 rounded-xl border px-4 py-2.5 text-sm font-medium transition-all ${
 							showFilters || activeFilterCount > 0
-								? 'border-accent bg-accent-muted text-accent'
-								: 'border-border bg-bg-card text-text-muted hover:border-border-hover'
+								? 'border-accent/50 bg-accent/10 text-accent shadow-sm shadow-accent/10'
+								: 'border-border/60 bg-bg-card/60 text-text-muted hover:border-border-hover backdrop-blur-sm'
 						}`}
 					>
 						<svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -233,7 +233,7 @@ export function Explorer() {
 							setSortField(f)
 							setSortDir(d)
 						}}
-						className="rounded-lg border border-border bg-bg-card px-3 py-2.5 text-sm text-text-muted focus:border-accent focus:outline-none"
+						className="rounded-xl border border-border/60 bg-bg-card/60 px-3 py-2.5 text-sm text-text-muted backdrop-blur-sm focus:border-accent focus:outline-none"
 					>
 						<option value="name-asc">Name A-Z</option>
 						<option value="name-desc">Name Z-A</option>
@@ -248,9 +248,10 @@ export function Explorer() {
 			</div>
 
 			{showFilters ? (
-				<div className="animate-fade-in space-y-4 rounded-xl border border-border bg-bg-card p-5">
-					<div>
-						<label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-text-dim">
+				<div className="animate-fade-in rounded-xl border border-border/50 bg-bg-card/40 backdrop-blur-sm overflow-hidden">
+					{/* Region */}
+					<div className="border-b border-border/30 p-5">
+						<label className="mb-2.5 block text-xs font-semibold uppercase tracking-wider text-text-dim">
 							Region
 						</label>
 						<div className="flex flex-wrap gap-1.5">
@@ -265,15 +266,16 @@ export function Explorer() {
 						</div>
 					</div>
 
-					<div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+					{/* Other filters */}
+					<div className="grid grid-cols-2 gap-4 p-5 sm:grid-cols-4">
 						<div>
-							<label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-text-dim">
+							<label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-text-dim">
 								Continent
 							</label>
 							<select
 								value={selectedContinent}
 								onChange={(e) => setSelectedContinent(e.target.value)}
-								className="w-full rounded-lg border border-border bg-bg-surface px-3 py-2 text-sm text-text-muted focus:border-accent focus:outline-none"
+								className="w-full rounded-lg border border-border/50 bg-bg-surface/80 px-3 py-2 text-sm text-text-muted focus:border-accent focus:outline-none"
 							>
 								<option value="">All</option>
 								{continents.map((c) => (
@@ -285,7 +287,7 @@ export function Explorer() {
 						</div>
 
 						<div>
-							<label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-text-dim">
+							<label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-text-dim">
 								Driving Side
 							</label>
 							<div className="flex gap-1.5">
@@ -304,7 +306,7 @@ export function Explorer() {
 						</div>
 
 						<div>
-							<label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-text-dim">
+							<label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-text-dim">
 								Measurement
 							</label>
 							<div className="flex gap-1.5">
@@ -327,7 +329,7 @@ export function Explorer() {
 						</div>
 
 						<div>
-							<label className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-text-dim">
+							<label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-text-dim">
 								Min Population
 							</label>
 							<input
@@ -348,18 +350,20 @@ export function Explorer() {
 					</div>
 
 					{activeFilterCount > 0 ? (
-						<button
-							onClick={() => {
-								setSelectedRegions([])
-								setSelectedContinent('')
-								setDrivingSide('')
-								setMeasurementSystem('')
-								setPopRange([0, 1_500_000_000])
-							}}
-							className="text-xs text-accent hover:underline"
-						>
-							Clear all filters
-						</button>
+						<div className="border-t border-border/30 px-5 py-3">
+							<button
+								onClick={() => {
+									setSelectedRegions([])
+									setSelectedContinent('')
+									setDrivingSide('')
+									setMeasurementSystem('')
+									setPopRange([0, 1_500_000_000])
+								}}
+								className="text-xs font-medium text-accent hover:underline"
+							>
+								Clear all filters
+							</button>
+						</div>
 					) : null}
 				</div>
 			) : null}
@@ -380,8 +384,8 @@ export function Explorer() {
 
 			{filtered.length === 0 ? (
 				<div className="py-20 text-center">
-					<div className="text-4xl">🔍</div>
-					<p className="mt-3 text-sm text-text-muted">No countries match your filters</p>
+					<div className="text-5xl">🔍</div>
+					<p className="mt-4 text-sm text-text-muted">No countries match your filters</p>
 					<button
 						onClick={() => {
 							setSearchQuery('')
@@ -391,7 +395,7 @@ export function Explorer() {
 							setMeasurementSystem('')
 							setPopRange([0, 1_500_000_000])
 						}}
-						className="mt-2 text-sm text-accent hover:underline"
+						className="mt-3 text-sm font-medium text-accent hover:underline"
 					>
 						Reset filters
 					</button>

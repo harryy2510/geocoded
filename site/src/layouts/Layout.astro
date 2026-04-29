@@ -38,29 +38,32 @@ const navLinks = [
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
 			rel="stylesheet"
 		/>
 		<title>{title}</title>
 	</head>
 	<body class="min-h-dvh bg-bg text-text">
-		<nav class="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur-xl">
-			<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
-				<a href="/" class="flex items-center gap-2.5">
-					<div class="flex size-8 items-center justify-center rounded-lg bg-accent text-sm font-bold text-white">
-						G
+		<nav class="sticky top-0 z-50 border-b border-border/50 bg-bg/70 backdrop-blur-2xl">
+			<!-- Subtle bottom glow -->
+			<div class="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"></div>
+			<div class="absolute inset-x-0 -bottom-8 h-8 bg-gradient-to-b from-accent/[0.04] to-transparent pointer-events-none"></div>
+			<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6">
+				<a href="/" class="group flex items-center gap-2.5">
+					<div class="flex size-8 items-center justify-center rounded-lg bg-gradient-to-br from-accent to-purple-500 text-base transition-transform group-hover:scale-105">
+						🌍
 					</div>
-					<span class="text-lg font-semibold tracking-tight">Geocoded</span>
+					<span class="text-lg font-bold tracking-tight">Geocoded</span>
 				</a>
-				<div class="hidden items-center gap-1 md:flex">
+				<div class="hidden items-center gap-0.5 md:flex">
 					{navLinks.map((link) => (
 						<a
 							href={link.href}
 							class:list={[
-								'rounded-lg px-3 py-1.5 text-sm font-medium transition-colors',
+								'rounded-lg px-3 py-1.5 text-sm font-medium transition-all',
 								currentPath === link.href
-									? 'bg-accent-muted text-accent'
-									: 'text-text-muted hover:bg-bg-card hover:text-text',
+									? 'bg-accent/15 text-accent shadow-[inset_0_1px_0_0_rgba(59,130,246,0.1)]'
+									: 'text-text-muted hover:bg-white/[0.04] hover:text-text',
 							]}
 						>
 							{link.label}
@@ -77,7 +80,7 @@ const navLinks = [
 					</svg>
 				</button>
 			</div>
-			<div id="mobile-menu" class="hidden border-t border-border md:hidden">
+			<div id="mobile-menu" class="hidden border-t border-border/50 md:hidden">
 				<div class="flex flex-col gap-1 px-4 py-3">
 					{navLinks.map((link) => (
 						<a
@@ -85,7 +88,7 @@ const navLinks = [
 							class:list={[
 								'rounded-lg px-3 py-2 text-sm font-medium transition-colors',
 								currentPath === link.href
-									? 'bg-accent-muted text-accent'
+									? 'bg-accent/15 text-accent'
 									: 'text-text-muted hover:bg-bg-card hover:text-text',
 							]}
 						>
@@ -100,39 +103,45 @@ const navLinks = [
 			<slot />
 		</main>
 
-		<footer class="mt-auto border-t border-border">
-			<div class="mx-auto max-w-7xl px-4 py-8 sm:px-6">
-				<div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
-					<div class="flex items-center gap-2 text-sm text-text-dim">
-						<span>Data sourced from</span>
-						<a href="https://www.geonames.org/" class="text-text-muted hover:text-text" target="_blank" rel="noopener noreferrer">GeoNames</a>
-						<span>&middot;</span>
-						<a href="https://cldr.unicode.org/" class="text-text-muted hover:text-text" target="_blank" rel="noopener noreferrer">CLDR</a>
-						<span>&middot;</span>
-						<a href="https://www.wikidata.org/" class="text-text-muted hover:text-text" target="_blank" rel="noopener noreferrer">Wikidata</a>
-						<span>&middot;</span>
-						<a href="https://www.iana.org/time-zones" class="text-text-muted hover:text-text" target="_blank" rel="noopener noreferrer">IANA</a>
+		<footer class="mt-auto border-t border-border/50 relative">
+			<!-- Top gradient glow -->
+			<div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent"></div>
+			<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6">
+				<div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+					<div class="flex items-center gap-3">
+						<div class="flex size-7 items-center justify-center rounded-md bg-gradient-to-br from-accent/80 to-purple-500/80 text-xs">
+							🌍
+						</div>
+						<span class="text-sm font-semibold text-text-muted">Geocoded</span>
 					</div>
-					<div class="flex items-center gap-3 text-sm text-text-dim">
+					<div class="flex flex-wrap items-center justify-center gap-2 text-sm text-text-dim">
+						<span>Data from</span>
+						<a href="https://www.geonames.org/" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">GeoNames</a>
+						<span class="text-border">/</span>
+						<a href="https://cldr.unicode.org/" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">CLDR</a>
+						<span class="text-border">/</span>
+						<a href="https://www.wikidata.org/" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">Wikidata</a>
+						<span class="text-border">/</span>
+						<a href="https://www.iana.org/time-zones" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">IANA</a>
+					</div>
+					<div class="flex items-center gap-4 text-sm">
 						<a
 							href="https://creativecommons.org/licenses/by/4.0/"
-							class="text-text-muted hover:text-text"
+							class="text-text-dim transition-colors hover:text-accent"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							CC BY 4.0
 						</a>
-						<span>&middot;</span>
 						<a
 							href="/docs"
-							class="text-text-muted hover:text-text"
+							class="text-text-dim transition-colors hover:text-accent"
 						>
-							API Docs
+							Docs
 						</a>
-						<span>&middot;</span>
 						<a
 							href="https://github.com/harryy2510/geocoded"
-							class="text-text-muted hover:text-text"
+							class="text-text-dim transition-colors hover:text-accent"
 							target="_blank"
 							rel="noopener noreferrer"
 						>

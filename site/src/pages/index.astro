@@ -7,26 +7,30 @@ const githubUrl = import.meta.env.PUBLIC_GITHUB_URL || 'https://github.com/harry
 const features = [
 	{
 		title: 'Free & Open Source',
-		description: 'No API key, no signup, no rate limits. Data sourced from official institutions (GeoNames, CLDR, Wikidata, IANA) under CC BY 4.0. Use it for anything.',
-		iconColor: 'bg-blue-500/15 text-blue-500',
+		description: 'No API key, no signup, no rate limits. Data sourced from official institutions (GeoNames, CLDR, Wikidata, IANA) under CC BY 4.0.',
+		iconBg: 'from-blue-500/20 to-blue-500/5',
+		iconColor: 'text-blue-400',
 		icon: 'shield',
 	},
 	{
 		title: 'Global Edge Network',
-		description: 'Powered by Cloudflare Workers with near-zero cold starts. Responses are cached aggressively at the edge, so your users get data in milliseconds from the closest POP.',
-		iconColor: 'bg-emerald-500/15 text-emerald-500',
+		description: 'Powered by Cloudflare Workers with near-zero cold starts. Cached at the edge for millisecond responses from the closest POP.',
+		iconBg: 'from-emerald-500/20 to-emerald-500/5',
+		iconColor: 'text-emerald-400',
 		icon: 'clock',
 	},
 	{
 		title: 'Rich Data',
-		description: '252 countries, 3,800+ states, and 230,000+ cities complete with translations, timezones, coordinates, phone codes, currencies, and more.',
-		iconColor: 'bg-purple-500/15 text-purple-500',
+		description: '252 countries, 3,800+ states, and 230,000+ cities with translations, timezones, coordinates, phone codes, currencies, and more.',
+		iconBg: 'from-purple-500/20 to-purple-500/5',
+		iconColor: 'text-purple-400',
 		icon: 'globe',
 	},
 	{
 		title: 'Field Selection',
-		description: 'Pick exactly the fields you need with the ?fields= parameter. Supports dot notation for nested objects. Smaller payloads, faster apps.',
-		iconColor: 'bg-orange-500/15 text-orange-500',
+		description: 'Pick exactly the fields you need with ?fields= parameter. Supports dot notation for nested objects. Smaller payloads, faster apps.',
+		iconBg: 'from-orange-500/20 to-orange-500/5',
+		iconColor: 'text-orange-400',
 		icon: 'filter',
 	},
 ]
@@ -36,87 +40,127 @@ const dataPages = [
 		href: '/dashboard',
 		title: 'Dashboard',
 		description: 'Global data overview with interactive charts and key metrics across all 252 countries.',
+		emoji: '📊',
+		accent: 'group-hover:text-blue-400',
 	},
 	{
 		href: '/explorer',
 		title: 'Explorer',
 		description: 'Browse and filter countries, states, and cities with an interactive world map.',
+		emoji: '🗺️',
+		accent: 'group-hover:text-emerald-400',
 	},
 	{
 		href: '/statistics',
 		title: 'Statistics',
 		description: 'Dive into population, area, GDP, literacy, and other comparative statistics.',
+		emoji: '📈',
+		accent: 'group-hover:text-purple-400',
 	},
 	{
 		href: '/quiz',
 		title: 'Quiz',
 		description: 'Test your geography knowledge with fun quizzes on flags, capitals, and more.',
+		emoji: '🧠',
+		accent: 'group-hover:text-orange-400',
 	},
 ]
+
+function jsonKv(k: string, v: string, last = false) {
+	return `  <span class="json-key">"${k}"</span><span class="json-colon">: </span><span class="json-string">"${v}"</span>${last ? '' : ','}\n`
+}
+function jsonKvNum(k: string, v: string, last = false) {
+	return `  <span class="json-key">"${k}"</span><span class="json-colon">: </span><span class="json-number">"${v}"</span>${last ? '' : ','}\n`
+}
+function jsonKvi(k: string, v: string, last = false) {
+	return `    <span class="json-key">"${k}"</span><span class="json-colon">: </span><span class="json-string">"${v}"</span>${last ? '' : ','}\n`
+}
+function jsonKviNum(k: string, v: string, last = false) {
+	return `    <span class="json-key">"${k}"</span><span class="json-colon">: </span><span class="json-number">"${v}"</span>${last ? '' : ','}\n`
+}
+function jsonBr(v: string) {
+	return `<span class="json-bracket">${v}</span>\n`
+}
 
 const examples = [
 	{
 		title: 'Your location from IP',
 		curl: `curl ${apiUrl}`,
-		response: `{
-  "ip": "203.0.113.42",
-  "country": "US",
-  "region": "California",
-  "city": "San Francisco",
-  "latitude": "37.7749",
-  "longitude": "-122.4194",
-  "timezone": "America/Los_Angeles"
-}`,
+		responseHtml:
+			jsonBr('{') +
+			jsonKv('ip', '203.0.113.42') +
+			jsonKv('country', 'US') +
+			jsonKv('region', 'California') +
+			jsonKv('city', 'San Francisco') +
+			jsonKv('latitude', '37.7749') +
+			jsonKv('longitude', '-122.4194') +
+			jsonKv('timezone', 'America/Los_Angeles', true) +
+			jsonBr('}'),
 	},
 	{
 		title: 'Countries with field selection',
 		curl: `curl ${apiUrl}/countries/US?fields=name,iso2,capital,currency`,
-		response: `{
-  "name": "United States",
-  "iso2": "US",
-  "capital": "Washington",
-  "currency": "USD"
-}`,
+		responseHtml:
+			jsonBr('{') +
+			jsonKv('name', 'United States') +
+			jsonKv('iso2', 'US') +
+			jsonKv('capital', 'Washington') +
+			jsonKv('currency', 'USD', true) +
+			jsonBr('}'),
 	},
 	{
 		title: 'Drill down to states and cities',
 		curl: `curl ${apiUrl}/countries/US/states/CA/cities?fields=name,latitude,longitude`,
-		response: `[
-  {
-    "name": "Los Angeles",
-    "latitude": "34.05223420",
-    "longitude": "-118.24368490"
-  },
-  {
-    "name": "San Francisco",
-    "latitude": "37.77492950",
-    "longitude": "-122.41941550"
-  }
-]`,
+		responseHtml:
+			jsonBr('[') +
+			jsonBr('  {') +
+			jsonKvi('name', 'Los Angeles') +
+			jsonKviNum('latitude', '34.05223420') +
+			jsonKviNum('longitude', '-118.24368490', true) +
+			jsonBr('  },') +
+			jsonBr('  {') +
+			jsonKvi('name', 'San Francisco') +
+			jsonKviNum('latitude', '37.77492950') +
+			jsonKviNum('longitude', '-122.41941550', true) +
+			jsonBr('  }') +
+			jsonBr(']'),
 	},
+]
+
+const stats = [
+	{ label: 'Countries', value: '252', suffix: '' },
+	{ label: 'States', value: '5,084', suffix: '+' },
+	{ label: 'Cities', value: '232K', suffix: '+' },
+	{ label: 'Timezones', value: '312', suffix: '' },
 ]
 ---
 
 <Layout title="Geocoded | Free Country, State, City & Location API" description="Free, fast REST API for country, state, city, and IP geolocation data. Powered by Cloudflare Workers with global edge caching.">
 	<!-- Hero -->
-	<section class="py-20 text-center sm:py-28">
-		<div class="flex size-[72px] items-center justify-center rounded-2xl bg-accent text-2xl font-bold text-white mx-auto mb-6">
-			G
+	<section class="relative py-24 text-center sm:py-32 overflow-hidden">
+		<!-- Background radial glow -->
+		<div class="absolute inset-0 -z-10">
+			<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-[640px] rounded-full bg-accent/[0.07] blur-[120px]"></div>
+			<div class="absolute left-1/3 top-1/3 size-[320px] rounded-full bg-purple-500/[0.05] blur-[100px]"></div>
 		</div>
-		<h1 class="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-			<span class="text-accent">Geocoded</span>
+
+		<div class="flex size-16 items-center justify-center rounded-2xl bg-gradient-to-br from-accent to-purple-500 text-3xl mx-auto mb-8 shadow-lg shadow-accent/20">
+			🌍
+		</div>
+		<h1 class="mb-5 text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
+			<span class="gradient-text">Geocoded</span>
 		</h1>
-		<p class="mx-auto mb-3 max-w-xl text-lg font-medium text-text-muted sm:text-xl">
+		<p class="mx-auto mb-4 max-w-xl text-xl font-medium text-text-muted sm:text-2xl">
 			Free Country, State, City & Location API
 		</p>
-		<p class="mx-auto mb-10 max-w-lg text-base text-text-dim">
+		<p class="mx-auto mb-12 max-w-lg text-base text-text-dim leading-relaxed">
 			Open-source REST API with 252 countries, 3,800+ states, and 230,000+ cities.
 			No API key required. Deployed on the edge for instant responses worldwide.
 		</p>
-		<div class="mb-12 flex flex-wrap items-center justify-center gap-3">
+		<div class="mb-14 flex flex-wrap items-center justify-center gap-4">
 			<a
 				href="/docs"
-				class="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-hover"
+				class="glow-hover inline-flex items-center gap-2.5 rounded-xl bg-accent px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all hover:bg-accent-hover hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-0.5"
 			>
 				<svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
 				View API Docs
@@ -125,7 +169,7 @@ const examples = [
 				href={githubUrl}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex items-center gap-2 rounded-xl border border-border px-6 py-3 text-sm font-semibold text-text transition-colors hover:border-border-hover hover:bg-bg-card"
+				class="inline-flex items-center gap-2.5 rounded-xl border border-border bg-bg-card/50 px-8 py-3.5 text-sm font-semibold text-text backdrop-blur-sm transition-all hover:border-border-hover hover:bg-bg-card hover:-translate-y-0.5"
 			>
 				<svg class="size-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
 				GitHub
@@ -133,50 +177,67 @@ const examples = [
 		</div>
 
 		<!-- Curl example block -->
-		<div class="mx-auto max-w-xl overflow-hidden rounded-xl border border-border bg-bg-surface text-left">
-			<div class="flex items-center justify-between border-b border-border bg-bg-card/50 px-4 py-2.5">
+		<div class="mx-auto max-w-xl overflow-hidden rounded-xl border border-border/60 bg-bg-surface/80 text-left backdrop-blur-sm shadow-2xl shadow-black/30">
+			<div class="flex items-center justify-between border-b border-border/50 bg-bg-card/30 px-4 py-2.5">
 				<div class="flex gap-1.5">
-					<span class="size-2.5 rounded-full bg-white/10"></span>
-					<span class="size-2.5 rounded-full bg-white/10"></span>
-					<span class="size-2.5 rounded-full bg-white/10"></span>
+					<span class="size-3 rounded-full bg-red-500/60"></span>
+					<span class="size-3 rounded-full bg-yellow-500/60"></span>
+					<span class="size-3 rounded-full bg-green-500/60"></span>
 				</div>
 				<button
-					class="copy-btn inline-flex items-center gap-1.5 rounded-md border border-border bg-white/5 px-2.5 py-1 text-xs text-text-dim transition-colors hover:bg-white/10 hover:text-text-muted"
+					class="copy-btn inline-flex items-center gap-1.5 rounded-md border border-border/50 bg-white/[0.03] px-2.5 py-1 text-xs text-text-dim transition-all hover:bg-white/[0.06] hover:text-text-muted"
 					data-copy={`curl ${apiUrl}`}
 				>
 					<svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
 					Copy
 				</button>
 			</div>
-			<pre class="overflow-x-auto px-5 py-4 font-mono text-sm leading-relaxed text-text-muted"><span class="text-accent select-none">$ </span>curl <span class="text-success">{apiUrl}</span></pre>
+			<pre class="overflow-x-auto px-5 py-4 font-mono text-sm leading-relaxed"><span class="json-key select-none">$ </span><span class="text-text-muted">curl</span> <span class="json-string">{apiUrl}</span></pre>
+		</div>
+	</section>
+
+	<!-- Stats Banner -->
+	<section class="py-8">
+		<div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+			{stats.map((stat, i) => (
+				<div class="relative rounded-xl border border-border/50 bg-bg-card/40 p-6 text-center backdrop-blur-sm overflow-hidden group">
+					<div class="absolute inset-0 bg-gradient-to-b from-accent/[0.03] to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
+					<div class="relative">
+						<div class="stat-counter text-3xl font-extrabold tracking-tight text-text sm:text-4xl" data-target={stat.value} data-suffix={stat.suffix} data-delay={i * 100}>
+							{stat.value}{stat.suffix}
+						</div>
+						<div class="mt-1 text-sm font-medium text-text-muted">{stat.label}</div>
+					</div>
+				</div>
+			))}
 		</div>
 	</section>
 
 	<!-- Features -->
-	<section class="py-16" id="features">
+	<section class="py-20" id="features">
 		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">Why Geocoded</p>
-		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-3xl">Built for developers who ship fast</h2>
-		<p class="mb-12 max-w-lg text-base text-text-muted">
+		<h2 class="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">Built for developers who ship fast</h2>
+		<p class="mb-14 max-w-lg text-base text-text-muted leading-relaxed">
 			No signup, no API key, no rate limits. Just clean JSON over HTTPS.
 		</p>
 		<div class="grid gap-4 sm:grid-cols-2">
 			{features.map((f) => (
-				<div class="rounded-xl border border-border bg-bg-card p-7 transition-colors hover:border-border-hover">
-					<div class={`mb-4 flex size-10 items-center justify-center rounded-lg ${f.iconColor}`}>
+				<div class="gradient-border-hover group rounded-xl bg-bg-card/60 p-8 backdrop-blur-sm transition-all hover:bg-bg-card/80">
+					<div class={`mb-5 flex size-12 items-center justify-center rounded-xl bg-gradient-to-br ${f.iconBg}`}>
 						{f.icon === 'shield' && (
-							<svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+							<svg class={`size-6 ${f.iconColor}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
 						)}
 						{f.icon === 'clock' && (
-							<svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+							<svg class={`size-6 ${f.iconColor}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
 						)}
 						{f.icon === 'globe' && (
-							<svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+							<svg class={`size-6 ${f.iconColor}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
 						)}
 						{f.icon === 'filter' && (
-							<svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+							<svg class={`size-6 ${f.iconColor}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
 						)}
 					</div>
-					<h3 class="mb-2 text-base font-semibold">{f.title}</h3>
+					<h3 class="mb-2.5 text-lg font-semibold">{f.title}</h3>
 					<p class="text-sm leading-relaxed text-text-muted">{f.description}</p>
 				</div>
 			))}
@@ -184,21 +245,22 @@ const examples = [
 	</section>
 
 	<!-- See the Data CTA -->
-	<section class="py-16">
+	<section class="py-20">
 		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">See the Data</p>
-		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-3xl">Explore the full dataset</h2>
-		<p class="mb-12 max-w-lg text-base text-text-muted">
+		<h2 class="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">Explore the full dataset</h2>
+		<p class="mb-14 max-w-lg text-base text-text-muted leading-relaxed">
 			Interactive tools to browse, visualize, and analyze geography data from the API.
 		</p>
 		<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 			{dataPages.map((page) => (
 				<a
 					href={page.href}
-					class="group rounded-xl border border-border bg-bg-card p-6 transition-all hover:border-border-hover hover:bg-bg-card-hover"
+					class="gradient-border-hover group rounded-xl bg-bg-card/60 p-6 backdrop-blur-sm transition-all hover:bg-bg-card/80 hover:-translate-y-0.5"
 				>
-					<h3 class="mb-2 text-base font-semibold text-text group-hover:text-accent transition-colors">{page.title}</h3>
+					<div class="mb-3 text-3xl">{page.emoji}</div>
+					<h3 class={`mb-2 text-base font-semibold text-text transition-colors ${page.accent}`}>{page.title}</h3>
 					<p class="text-sm leading-relaxed text-text-muted">{page.description}</p>
-					<span class="mt-4 inline-flex items-center gap-1 text-xs font-medium text-accent opacity-0 transition-opacity group-hover:opacity-100">
+					<span class="mt-4 inline-flex items-center gap-1 text-xs font-medium text-accent opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5">
 						Open
 						<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
 					</span>
@@ -208,27 +270,27 @@ const examples = [
 	</section>
 
 	<!-- Examples -->
-	<section class="py-16" id="examples">
+	<section class="py-20" id="examples">
 		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">Quick Start</p>
-		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-3xl">Three endpoints, zero config</h2>
-		<p class="mb-12 max-w-lg text-base text-text-muted">
+		<h2 class="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">Three endpoints, zero config</h2>
+		<p class="mb-14 max-w-lg text-base text-text-muted leading-relaxed">
 			Every response is JSON with aggressive cache headers. Try these from your terminal right now.
 		</p>
 		<div class="flex flex-col gap-6">
 			{examples.map((ex) => (
-				<div class="overflow-hidden rounded-xl border border-border bg-bg-card">
-					<div class="flex items-center justify-between border-b border-border px-5 py-3.5">
+				<div class="overflow-hidden rounded-xl border border-border/60 bg-bg-card/60 backdrop-blur-sm shadow-lg shadow-black/10">
+					<div class="flex items-center justify-between border-b border-border/50 px-5 py-3.5">
 						<h3 class="text-sm font-semibold">{ex.title}</h3>
-						<span class="rounded bg-success/10 px-2 py-0.5 font-mono text-xs font-bold text-success">GET</span>
+						<span class="rounded-md bg-success/10 px-2.5 py-1 font-mono text-xs font-bold text-success">GET</span>
 					</div>
 					<div class="grid md:grid-cols-2">
-						<div class="border-b border-border p-5 md:border-b-0 md:border-r">
+						<div class="border-b border-border/50 p-5 md:border-b-0 md:border-r md:border-border/50">
 							<p class="mb-2.5 text-[11px] font-semibold uppercase tracking-wider text-text-dim">Request</p>
-							<pre class="overflow-x-auto font-mono text-[13px] leading-relaxed text-text-muted"><span class="text-accent select-none">$ </span>{ex.curl}</pre>
+							<pre class="overflow-x-auto font-mono text-[13px] leading-relaxed"><span class="json-key select-none">$ </span><span class="text-text-muted">{ex.curl}</span></pre>
 						</div>
 						<div class="p-5">
 							<p class="mb-2.5 text-[11px] font-semibold uppercase tracking-wider text-text-dim">Response</p>
-							<pre class="overflow-x-auto font-mono text-[13px] leading-relaxed text-text-muted">{ex.response}</pre>
+							<pre class="overflow-x-auto font-mono text-[13px] leading-relaxed" set:html={ex.responseHtml} />
 						</div>
 					</div>
 				</div>
@@ -237,6 +299,7 @@ const examples = [
 	</section>
 
 	<script>
+		// Copy button
 		document.querySelectorAll('.copy-btn').forEach((btn) => {
 			btn.addEventListener('click', () => {
 				const text = btn.getAttribute('data-copy')
@@ -248,5 +311,51 @@ const examples = [
 				})
 			})
 		})
+
+		// Animated counters
+		function animateCounter(el: Element) {
+			const target = el.getAttribute('data-target') || '0'
+			const suffix = el.getAttribute('data-suffix') || ''
+			const delay = parseInt(el.getAttribute('data-delay') || '0', 10)
+
+			// Parse the target: could be "252", "5,084", "232K"
+			const hasK = target.includes('K')
+			const numericStr = target.replace(/[,K]/g, '')
+			const targetNum = parseInt(numericStr, 10)
+			const duration = 1500
+
+			setTimeout(() => {
+				const start = performance.now()
+				function update(now: number) {
+					const elapsed = now - start
+					const progress = Math.min(elapsed / duration, 1)
+					// ease out cubic
+					const eased = 1 - Math.pow(1 - progress, 3)
+					const current = Math.round(targetNum * eased)
+
+					if (hasK) {
+						el.textContent = `${current.toLocaleString('en-US')}K${suffix}`
+					} else {
+						el.textContent = `${current.toLocaleString('en-US')}${suffix}`
+					}
+
+					if (progress < 1) {
+						requestAnimationFrame(update)
+					}
+				}
+				requestAnimationFrame(update)
+			}, delay + 200)
+		}
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					animateCounter(entry.target)
+					observer.unobserve(entry.target)
+				}
+			})
+		}, { threshold: 0.5 })
+
+		document.querySelectorAll('.stat-counter').forEach((el) => observer.observe(el))
 	</script>
 </Layout>

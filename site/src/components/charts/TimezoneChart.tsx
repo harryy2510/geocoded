@@ -11,16 +11,19 @@ import { type Country } from '../../lib/api'
 import { CONTINENT_COLORS } from '../../lib/format'
 
 const tooltipStyle = {
-	backgroundColor: '#131316',
-	border: '1px solid #2a2a30',
-	borderRadius: '8px',
+	backgroundColor: 'rgba(17, 17, 20, 0.95)',
+	border: '1px solid rgba(255, 255, 255, 0.08)',
+	borderRadius: '10px',
 	fontSize: '12px',
 	color: '#e5e5e5',
+	backdropFilter: 'blur(12px)',
+	boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
+	padding: '8px 12px',
 }
 
 const palette = [
-	'#3b82f6', '#a855f7', '#f59e0b', '#10b981', '#ef4444',
-	'#06b6d4', '#f97316', '#8b5cf6', '#14b8a6', '#ec4899',
+	'#3b82f6', '#8b5cf6', '#06b6d4', '#10b981', '#f59e0b',
+	'#ec4899', '#f97316', '#14b8a6', '#a855f7', '#6366f1',
 ]
 
 export function TimezonesPerCountry({ countries }: { countries: Country[] }) {

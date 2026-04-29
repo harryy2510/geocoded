@@ -21,10 +21,6 @@ function shuffle<T>(arr: T[]): T[] {
 	return copy
 }
 
-function pickRandom<T>(arr: T[], count: number): T[] {
-	return shuffle(arr).slice(0, count)
-}
-
 function generateQuestions(
 	mode: QuizMode,
 	countries: Country[],
@@ -125,26 +121,29 @@ function generateQuestions(
 	return questions.slice(0, count)
 }
 
-const MODES: { id: QuizMode; label: string; icon: string; description: string }[] = [
-	{ id: 'capital', label: 'Capital Quiz', icon: '🏛️', description: 'Guess the capital city' },
-	{ id: 'flag', label: 'Flag Quiz', icon: '🏴', description: 'Identify countries by flag' },
+const MODES: { id: QuizMode; label: string; icon: string; description: string; color: string }[] = [
+	{ id: 'capital', label: 'Capital Quiz', icon: '🏛️', description: 'Guess the capital city', color: 'from-blue-500/10 to-blue-500/[0.02]' },
+	{ id: 'flag', label: 'Flag Quiz', icon: '🏴', description: 'Identify countries by flag', color: 'from-purple-500/10 to-purple-500/[0.02]' },
 	{
 		id: 'population',
 		label: 'Population Quiz',
 		icon: '👥',
 		description: 'Which country has more people?',
+		color: 'from-emerald-500/10 to-emerald-500/[0.02]',
 	},
 	{
 		id: 'geography',
 		label: 'Geography Quiz',
 		icon: '🗺️',
 		description: 'Which country is larger?',
+		color: 'from-orange-500/10 to-orange-500/[0.02]',
 	},
 	{
 		id: 'neighbour',
 		label: 'Neighbour Quiz',
 		icon: '🤝',
 		description: 'Which country borders this one?',
+		color: 'from-cyan-500/10 to-cyan-500/[0.02]',
 	},
 ]
 
@@ -250,7 +249,7 @@ export function Quiz() {
 			<div className="space-y-8">
 				<div>
 					<h1 className="text-3xl font-bold tracking-tight text-text">Geography Quiz</h1>
-					<p className="mt-1 text-sm text-text-muted">
+					<p className="mt-1.5 text-sm text-text-muted">
 						Test your knowledge across 5 quiz modes, 10 questions each
 					</p>
 				</div>
@@ -260,17 +259,20 @@ export function Quiz() {
 						<button
 							key={m.id}
 							onClick={() => startQuiz(m.id)}
-							className="group flex flex-col items-start gap-3 rounded-xl border border-border bg-bg-card p-6 text-left transition-all hover:border-accent hover:bg-bg-card-hover active:scale-[0.98]"
+							className="gradient-border-hover group flex flex-col items-start gap-4 rounded-xl bg-bg-card/60 p-6 text-left backdrop-blur-sm transition-all hover:bg-bg-card/80 hover:-translate-y-0.5 active:scale-[0.98]"
 						>
-							<span className="text-3xl">{m.icon}</span>
+							<div className={`flex size-14 items-center justify-center rounded-xl bg-gradient-to-br ${m.color}`}>
+								<span className="text-3xl transition-transform group-hover:scale-110">{m.icon}</span>
+							</div>
 							<div>
-								<h3 className="font-semibold text-text group-hover:text-accent">
+								<h3 className="font-semibold text-text group-hover:text-accent transition-colors">
 									{m.label}
 								</h3>
-								<p className="mt-0.5 text-xs text-text-muted">{m.description}</p>
+								<p className="mt-1 text-xs text-text-muted">{m.description}</p>
 							</div>
 							{highScores[m.id] > 0 ? (
-								<div className="mt-auto text-xs text-text-dim">
+								<div className="mt-auto flex items-center gap-1.5 text-xs text-text-dim">
+									<span>🏆</span>
 									Best: {highScores[m.id]}/10
 								</div>
 							) : null}
@@ -295,30 +297,41 @@ export function Quiz() {
 
 		return (
 			<div className="flex flex-col items-center justify-center py-16">
-				<div className="animate-fade-in space-y-6 text-center">
-					<div className="text-6xl">{emoji}</div>
+				<div className="animate-fade-in space-y-8 text-center">
+					<div className="text-7xl animate-count-up">{emoji}</div>
 					<div>
-						<h2 className="text-2xl font-bold text-text">{message}</h2>
-						<p className="mt-1 text-text-muted">
+						<h2 className="text-3xl font-bold text-text">{message}</h2>
+						<p className="mt-2 text-lg text-text-muted">
 							You scored{' '}
-							<span className="font-bold text-accent">
+							<span className="font-bold gradient-text">
 								{score}/{questions.length}
 							</span>
 						</p>
 					</div>
+
+					{/* Score bar */}
+					<div className="mx-auto w-64">
+						<div className="h-3 w-full overflow-hidden rounded-full bg-bg-card">
+							<div
+								className="progress-bar h-full"
+								style={{ width: `${pct}%` }}
+							/>
+						</div>
+					</div>
+
 					<div className="text-sm text-text-dim">
 						High score: {getHighScore(mode)}/10
 					</div>
 					<div className="flex gap-3">
 						<button
 							onClick={() => startQuiz(mode)}
-							className="rounded-lg bg-accent px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent-hover"
+							className="glow-hover rounded-xl bg-accent px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/20 transition-all hover:bg-accent-hover hover:-translate-y-0.5"
 						>
 							Play Again
 						</button>
 						<button
 							onClick={() => setPhase('menu')}
-							className="rounded-lg border border-border bg-bg-card px-6 py-2.5 text-sm font-medium text-text-muted transition-colors hover:bg-bg-card-hover"
+							className="rounded-xl border border-border/60 bg-bg-card/60 px-8 py-3 text-sm font-semibold text-text-muted backdrop-blur-sm transition-all hover:bg-bg-card-hover hover:-translate-y-0.5"
 						>
 							Back to Menu
 						</button>
@@ -343,38 +356,35 @@ export function Quiz() {
 		)
 	}
 
+	const progressPct = ((currentQ) / questions.length) * 100
+
 	return (
 		<div className="mx-auto max-w-2xl space-y-8 py-8">
-			<div className="flex items-center justify-between">
-				<button
-					onClick={() => setPhase('menu')}
-					className="text-sm text-text-dim hover:text-text"
-				>
-					&larr; Quit
-				</button>
-				<div className="flex items-center gap-3">
-					<span className="text-sm text-text-muted">
-						{currentQ + 1}/{questions.length}
-					</span>
-					<div className="flex gap-1">
-						{questions.map((_, i) => (
-							<div
-								key={i}
-								className={`size-2 rounded-full transition-colors ${
-									i < currentQ
-										? 'bg-accent'
-										: i === currentQ
-											? 'bg-accent/50'
-											: 'bg-border'
-								}`}
-							/>
-						))}
+			{/* Progress bar */}
+			<div className="space-y-3">
+				<div className="flex items-center justify-between">
+					<button
+						onClick={() => setPhase('menu')}
+						className="text-sm text-text-dim hover:text-text transition-colors"
+					>
+						&larr; Quit
+					</button>
+					<div className="flex items-center gap-3">
+						<span className="text-sm text-text-muted">
+							{currentQ + 1}/{questions.length}
+						</span>
+						<span className="text-sm font-semibold text-accent">{score} pts</span>
 					</div>
-					<span className="text-sm font-semibold text-accent">{score} pts</span>
+				</div>
+				<div className="h-1.5 w-full overflow-hidden rounded-full bg-bg-card">
+					<div
+						className="progress-bar h-full"
+						style={{ width: `${progressPct}%` }}
+					/>
 				</div>
 			</div>
 
-			<div className="animate-fade-in space-y-6 text-center" key={currentQ}>
+			<div className="animate-fade-in space-y-8 text-center" key={currentQ}>
 				{q.subtext && mode === 'flag' ? (
 					<div className="text-8xl">{q.subtext}</div>
 				) : null}
@@ -387,14 +397,14 @@ export function Quiz() {
 
 				<div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
 					{q.options.map((opt, idx) => {
-						let bg = 'border-border bg-bg-card hover:border-border-hover hover:bg-bg-card-hover'
+						let classes = 'border-border/60 bg-bg-card/60 backdrop-blur-sm hover:border-border-hover hover:bg-bg-card/80 hover:-translate-y-0.5 hover:shadow-md'
 						if (answered) {
 							if (idx === q.correctIndex) {
-								bg = 'border-green-500/50 bg-green-500/10 text-green-400'
+								classes = 'border-green-500/50 bg-green-500/10 text-green-400 scale-[1.02] shadow-lg shadow-green-500/10'
 							} else if (idx === selected && idx !== q.correctIndex) {
-								bg = 'border-red-500/50 bg-red-500/10 text-red-400'
+								classes = 'border-red-500/50 bg-red-500/10 text-red-400 scale-[0.98]'
 							} else {
-								bg = 'border-border bg-bg-card opacity-50'
+								classes = 'border-border/30 bg-bg-card/30 opacity-40'
 							}
 						}
 
@@ -403,7 +413,7 @@ export function Quiz() {
 								key={idx}
 								onClick={() => handleAnswer(idx)}
 								disabled={answered}
-								className={`rounded-xl border p-4 text-center text-sm font-medium transition-all ${bg} ${
+								className={`rounded-xl border p-5 text-center text-sm font-medium transition-all ${classes} ${
 									!answered ? 'active:scale-[0.97]' : ''
 								}`}
 							>

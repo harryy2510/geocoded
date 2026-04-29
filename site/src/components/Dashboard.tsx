@@ -7,11 +7,14 @@ import { TopPopulationBar, TopAreaBar, PopulationTreemap } from './charts/Popula
 import { RegionPie } from './charts/RegionPie'
 import { CountryDetail } from './CountryDetail'
 
-function ChartCard({ title, children }: { title: string; children: React.ReactNode }) {
+function ChartCard({ title, subtitle, children }: { title: string; subtitle?: string; children: React.ReactNode }) {
 	return (
-		<div className="rounded-xl border border-border bg-bg-card p-5">
-			<h3 className="mb-4 text-sm font-semibold text-text">{title}</h3>
-			{children}
+		<div className="gradient-border-hover rounded-xl bg-bg-card/60 backdrop-blur-sm overflow-hidden">
+			<div className="border-b border-border/30 bg-gradient-to-r from-accent/[0.04] to-transparent px-6 py-4">
+				<h3 className="text-sm font-semibold text-text">{title}</h3>
+				{subtitle ? <p className="mt-0.5 text-xs text-text-dim">{subtitle}</p> : null}
+			</div>
+			<div className="p-5">{children}</div>
 		</div>
 	)
 }
@@ -20,11 +23,22 @@ function Skeleton({ className = '' }: { className?: string }) {
 	return <div className={`animate-pulse-subtle rounded-lg bg-bg-card ${className}`} />
 }
 
-function QuickFact({ label, value }: { label: string; value: string }) {
+type QuickFactProps = {
+	label: string
+	value: string
+	emoji: string
+}
+
+function QuickFact({ label, value, emoji }: QuickFactProps) {
 	return (
-		<div className="rounded-xl border border-border bg-bg-card p-4 transition-colors hover:border-border-hover">
-			<div className="text-xs text-text-dim">{label}</div>
-			<div className="mt-1 text-sm font-semibold text-text">{value}</div>
+		<div className="gradient-border-hover group rounded-xl bg-bg-card/60 p-5 backdrop-blur-sm transition-all">
+			<div className="flex items-start gap-3">
+				<span className="text-xl transition-transform group-hover:scale-110">{emoji}</span>
+				<div className="min-w-0">
+					<div className="text-xs font-medium text-text-dim">{label}</div>
+					<div className="mt-1 text-sm font-semibold text-text leading-snug">{value}</div>
+				</div>
+			</div>
 		</div>
 	)
 }
@@ -65,28 +79,34 @@ export function Dashboard() {
 
 		return [
 			{
+				emoji: '👥',
 				label: 'Most populated',
 				value: `${mostPopulated?.emoji} ${mostPopulated?.name} (${formatCompact(mostPopulated?.population || 0)})`,
 			},
 			{
+				emoji: '🗺️',
 				label: 'Largest by area',
 				value: `${biggestArea?.emoji} ${biggestArea?.name} (${formatArea(biggestArea?.areaSqKm || 0)})`,
 			},
 			{
+				emoji: '🏝️',
 				label: 'Smallest by area',
 				value: `${smallestCountry?.emoji} ${smallestCountry?.name} (${formatArea(smallestCountry?.areaSqKm || 0)})`,
 			},
 			{
+				emoji: '🕐',
 				label: 'Most timezones',
 				value: `${mostTimezones?.emoji} ${mostTimezones?.name} (${mostTimezones?.timezones?.length})`,
 			},
 			{
+				emoji: '🗣️',
 				label: 'Most languages',
 				value: `${mostLanguages?.emoji} ${mostLanguages?.name} (${mostLanguages?.languages?.length})`,
 			},
-			{ label: 'Highest literacy', value: `${highLiteracy} countries at 100%` },
-			{ label: 'Drives on left', value: `${leftDrive} countries` },
+			{ emoji: '📚', label: 'Highest literacy', value: `${highLiteracy} countries at 100%` },
+			{ emoji: '🚗', label: 'Drives on left', value: `${leftDrive} countries` },
 			{
+				emoji: '💰',
 				label: 'Most common currency',
 				value: (() => {
 					const m = new Map<string, number>()
@@ -105,7 +125,7 @@ export function Dashboard() {
 			<div className="space-y-8">
 				<div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
 					{[1, 2, 3, 4, 5].map((i) => (
-						<Skeleton key={i} className="h-24" />
+						<Skeleton key={i} className="h-28" />
 					))}
 				</div>
 				<Skeleton className="h-[420px]" />
@@ -118,12 +138,12 @@ export function Dashboard() {
 	}
 
 	return (
-		<div className="space-y-8">
+		<div className="space-y-10">
 			<div>
 				<h1 className="text-3xl font-bold tracking-tight text-text">
 					Global Data Dashboard
 				</h1>
-				<p className="mt-1 text-sm text-text-muted">
+				<p className="mt-1.5 text-sm text-text-muted">
 					Explore geography, demographics, and culture across 252 countries
 				</p>
 			</div>
@@ -137,12 +157,8 @@ export function Dashboard() {
 			</div>
 
 			<div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-				<h2 className="mb-3 text-lg font-semibold text-text">World Map</h2>
-				<p className="mb-3 text-xs text-text-dim">
-					Countries colored by continent. Hover to see details, click to explore.
-				</p>
 				<WorldMap countries={countries} onCountryClick={setSelectedIso} />
-				<div className="mt-2 flex flex-wrap gap-3">
+				<div className="mt-3 flex flex-wrap gap-4">
 					{Object.entries({
 						Africa: '#c87f32',
 						Americas: '#2da06a',
@@ -159,35 +175,35 @@ export function Dashboard() {
 			</div>
 
 			<div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
-				<ChartCard title="Population Treemap (Top 30 countries)">
+				<ChartCard title="Population Treemap" subtitle="Top 30 countries by population, sized proportionally">
 					<PopulationTreemap countries={countries} />
 				</ChartCard>
 			</div>
 
 			<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
 				<div className="animate-fade-in" style={{ animationDelay: '0.35s' }}>
-					<ChartCard title="Top 10 Most Populated Countries">
+					<ChartCard title="Top 10 Most Populated" subtitle="Countries ranked by total population">
 						<TopPopulationBar countries={countries} />
 					</ChartCard>
 				</div>
 				<div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
-					<ChartCard title="Top 10 Largest Countries by Area">
+					<ChartCard title="Top 10 Largest by Area" subtitle="Countries ranked by total land area in km">
 						<TopAreaBar countries={countries} />
 					</ChartCard>
 				</div>
 			</div>
 
 			<div className="animate-fade-in" style={{ animationDelay: '0.45s' }}>
-				<ChartCard title="Countries by Region">
+				<ChartCard title="Countries by Region" subtitle="Distribution of countries across world regions">
 					<RegionPie countries={countries} />
 				</ChartCard>
 			</div>
 
 			<div>
-				<h2 className="mb-3 text-lg font-semibold text-text">Quick Facts</h2>
+				<h2 className="gradient-underline mb-5 text-xl font-bold text-text">Quick Facts</h2>
 				<div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
 					{quickFacts.map((fact) => (
-						<QuickFact key={fact.label} label={fact.label} value={fact.value} />
+						<QuickFact key={fact.label} emoji={fact.emoji} label={fact.label} value={fact.value} />
 					))}
 				</div>
 			</div>
