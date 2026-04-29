@@ -41,6 +41,21 @@ body {
 	background-color: var(--color-bg);
 }
 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+	caret-color: transparent;
+}
+
+input:not([type='text']):not([type='search']) {
+	caret-color: transparent;
+}
+
 /* Noise texture overlay */
 body::before {
 	content: '';
