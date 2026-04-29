@@ -559,8 +559,8 @@ body { background: var(--bg); }
 				</div>
 				<h3>Free & Open Source</h3>
 				<p>
-					No API key, no signup, no rate limits. The underlying data is sourced from an
-					open community database and licensed under ODbL. Use it for anything.
+					No API key, no signup, no rate limits. Data sourced from official institutions
+					(GeoNames, CLDR, Wikidata, IANA) under CC BY 4.0. Use it for anything.
 				</p>
 			</div>
 			<div class="feature-card">
