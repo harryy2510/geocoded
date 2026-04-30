@@ -4,13 +4,22 @@ import { describe, expect, test } from 'bun:test'
 describe('seed script safety', () => {
 	test('wraps destructive refresh SQL in a transaction', async () => {
 		const source = await readFile('scripts/seed.ts', 'utf-8')
-		const begin = source.indexOf("sql.push('BEGIN TRANSACTION;')")
+		const begin = source.indexOf(
+			"if (!isRemote) sql.push('BEGIN TRANSACTION;')"
+		)
 		const firstDelete = source.indexOf('DELETE FROM search_index;')
-		const commit = source.indexOf("sql.push('COMMIT;')")
+		const commit = source.indexOf("if (!isRemote) sql.push('COMMIT;')")
 
 		expect(begin).toBeGreaterThanOrEqual(0)
 		expect(firstDelete).toBeGreaterThan(begin)
 		expect(commit).toBeGreaterThan(firstDelete)
+	})
+
+	test('does not send SQL transaction statements to remote D1 execute', async () => {
+		const source = await readFile('scripts/seed.ts', 'utf-8')
+
+		expect(source).not.toContain("\n\tsql.push('BEGIN TRANSACTION;')")
+		expect(source).not.toContain("\n\tsql.push('COMMIT;')")
 	})
 
 	test('exits non-zero when seeding fails', async () => {

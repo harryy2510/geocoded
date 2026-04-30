@@ -139,7 +139,7 @@ async function main() {
 
 	// Build SQL
 	const sql: string[] = []
-	sql.push('BEGIN TRANSACTION;')
+	if (!isRemote) sql.push('BEGIN TRANSACTION;')
 
 	// Clear existing data
 	sql.push('DELETE FROM search_index;')
@@ -240,7 +240,7 @@ async function main() {
 		)
 	}
 
-	sql.push('COMMIT;')
+	if (!isRemote) sql.push('COMMIT;')
 
 	// Write and execute
 	console.log(`\nWriting ${sql.length} SQL statements...`)
