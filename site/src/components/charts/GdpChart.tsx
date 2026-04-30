@@ -15,7 +15,7 @@ import {
 	ZAxis,
 } from 'recharts'
 import { type Country } from '../../lib/api'
-import { formatCompact, getContinentColor } from '../../lib/format'
+import { formatCompact, getContinentColor, resolveContinentName, axisTickStyle } from '../../lib/format'
 
 const tooltipStyle = {
 	backgroundColor: 'rgba(17, 17, 20, 0.95)',
@@ -38,7 +38,7 @@ export function TopGdpBar({ countries }: { countries: Country[] }) {
 			fullName: c.name,
 			gdp: c.gdp,
 			emoji: c.emoji,
-			continent: c.continent,
+			continent: resolveContinentName(c.continent),
 		}))
 
 	return (
@@ -50,8 +50,9 @@ export function TopGdpBar({ countries }: { countries: Country[] }) {
 						tickFormatter={(v: number) => `$${formatCompact(v)}M`}
 						axisLine={false}
 						tickLine={false}
+						tick={axisTickStyle}
 					/>
-					<YAxis type="category" dataKey="name" width={100} axisLine={false} tickLine={false} tick={{ fontSize: 11 }} />
+					<YAxis type="category" dataKey="name" width={100} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
 						contentStyle={tooltipStyle}
 						formatter={(v: number) => [`$${new Intl.NumberFormat('en-US').format(v)}M`, 'GDP']}
@@ -78,7 +79,7 @@ export function GdpVsPopulationScatter({ countries }: { countries: Country[] }) 
 			y: c.gdp,
 			name: c.name,
 			emoji: c.emoji,
-			continent: c.continent,
+			continent: resolveContinentName(c.continent),
 		}))
 
 	return (
@@ -94,6 +95,7 @@ export function GdpVsPopulationScatter({ countries }: { countries: Country[] }) 
 						axisLine={false}
 						tickLine={false}
 						tickFormatter={(v: number) => formatCompact(v)}
+						tick={axisTickStyle}
 						label={{ value: 'Population', position: 'bottom', offset: -5, style: { fill: '#71717a', fontSize: 11 } }}
 					/>
 					<YAxis
@@ -104,6 +106,7 @@ export function GdpVsPopulationScatter({ countries }: { countries: Country[] }) 
 						axisLine={false}
 						tickLine={false}
 						tickFormatter={(v: number) => `$${formatCompact(v)}M`}
+						tick={axisTickStyle}
 					/>
 					<ZAxis range={[30, 30]} />
 					<Tooltip
@@ -170,7 +173,7 @@ export function CurrencyUsagePie({ countries }: { countries: Country[] }) {
 					</Pie>
 					<Tooltip
 						contentStyle={tooltipStyle}
-						formatter={(v: number) => [`${v} countries`, '']}
+						formatter={(value: number, name: string) => [`${value} countries`, name]}
 					/>
 					<Legend
 						verticalAlign="bottom"

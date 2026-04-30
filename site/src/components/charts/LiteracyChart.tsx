@@ -8,7 +8,7 @@ import {
 	Cell,
 } from 'recharts'
 import { type Country } from '../../lib/api'
-import { getContinentColor } from '../../lib/format'
+import { getContinentColor, resolveContinentName, axisTickStyle } from '../../lib/format'
 
 const tooltipStyle = {
 	backgroundColor: 'rgba(17, 17, 20, 0.95)',
@@ -44,8 +44,8 @@ export function LiteracyHistogram({ countries }: { countries: Country[] }) {
 		<div className="h-[280px] w-full">
 			<ResponsiveContainer>
 				<BarChart data={buckets} margin={{ left: 0, right: 10, bottom: 0 }}>
-					<XAxis dataKey="label" axisLine={false} tickLine={false} tick={{ fontSize: 11 }} />
-					<YAxis axisLine={false} tickLine={false} />
+					<XAxis dataKey="label" axisLine={false} tickLine={false} tick={axisTickStyle} />
+					<YAxis axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
 						contentStyle={tooltipStyle}
 						formatter={(v: number) => [`${v} countries`, '']}
@@ -71,7 +71,7 @@ export function TopLiteracyBar({ countries }: { countries: Country[] }) {
 			fullName: c.name,
 			literacy: c.literacy,
 			emoji: c.emoji,
-			continent: c.continent,
+			continent: resolveContinentName(c.continent),
 		}))
 
 	return (
@@ -84,8 +84,9 @@ export function TopLiteracyBar({ countries }: { countries: Country[] }) {
 						tickFormatter={(v: number) => `${v}%`}
 						axisLine={false}
 						tickLine={false}
+						tick={axisTickStyle}
 					/>
-					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={{ fontSize: 11 }} />
+					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
 						contentStyle={tooltipStyle}
 						formatter={(v: number) => [`${v}%`, 'Literacy']}
@@ -114,7 +115,7 @@ export function BottomLiteracyBar({ countries }: { countries: Country[] }) {
 			fullName: c.name,
 			literacy: c.literacy,
 			emoji: c.emoji,
-			continent: c.continent,
+			continent: resolveContinentName(c.continent),
 		}))
 
 	return (
@@ -127,8 +128,9 @@ export function BottomLiteracyBar({ countries }: { countries: Country[] }) {
 						tickFormatter={(v: number) => `${v}%`}
 						axisLine={false}
 						tickLine={false}
+						tick={axisTickStyle}
 					/>
-					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={{ fontSize: 11 }} />
+					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
 						contentStyle={tooltipStyle}
 						formatter={(v: number) => [`${v}%`, 'Literacy']}

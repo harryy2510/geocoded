@@ -9,7 +9,7 @@ import {
 	Treemap,
 } from 'recharts'
 import { type Country } from '../../lib/api'
-import { formatCompact, getContinentColor } from '../../lib/format'
+import { formatCompact, getContinentColor, resolveContinentName, axisTickStyle } from '../../lib/format'
 
 const tooltipStyle = {
 	backgroundColor: 'rgba(17, 17, 20, 0.95)',
@@ -31,7 +31,7 @@ export function TopPopulationBar({ countries }: { countries: Country[] }) {
 			fullName: c.name,
 			population: c.population,
 			emoji: c.emoji,
-			continent: c.continent,
+			continent: resolveContinentName(c.continent),
 		}))
 
 	return (
@@ -43,6 +43,7 @@ export function TopPopulationBar({ countries }: { countries: Country[] }) {
 						tickFormatter={(v: number) => formatCompact(v)}
 						axisLine={false}
 						tickLine={false}
+						tick={axisTickStyle}
 					/>
 					<YAxis
 						type="category"
@@ -50,7 +51,7 @@ export function TopPopulationBar({ countries }: { countries: Country[] }) {
 						width={100}
 						axisLine={false}
 						tickLine={false}
-						tick={{ fontSize: 11 }}
+						tick={axisTickStyle}
 					/>
 					<Tooltip
 						contentStyle={tooltipStyle}
@@ -81,7 +82,7 @@ export function TopAreaBar({ countries }: { countries: Country[] }) {
 			fullName: c.name,
 			area: c.areaSqKm,
 			emoji: c.emoji,
-			continent: c.continent,
+			continent: resolveContinentName(c.continent),
 		}))
 
 	return (
@@ -93,6 +94,7 @@ export function TopAreaBar({ countries }: { countries: Country[] }) {
 						tickFormatter={(v: number) => `${(v / 1_000_000).toFixed(1)}M`}
 						axisLine={false}
 						tickLine={false}
+						tick={axisTickStyle}
 					/>
 					<YAxis
 						type="category"
@@ -100,7 +102,7 @@ export function TopAreaBar({ countries }: { countries: Country[] }) {
 						width={100}
 						axisLine={false}
 						tickLine={false}
-						tick={{ fontSize: 11 }}
+						tick={axisTickStyle}
 					/>
 					<Tooltip
 						contentStyle={tooltipStyle}

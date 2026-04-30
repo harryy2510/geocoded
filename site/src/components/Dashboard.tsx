@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { type Country, fetchCountries } from '../lib/api'
-import { formatCompact, formatArea } from '../lib/format'
+import { formatCompact, formatArea, resolveContinentName } from '../lib/format'
 import { StatsCard } from './StatsCard'
 import { WorldMap } from './WorldMap'
 import { TopPopulationBar, TopAreaBar, PopulationTreemap } from './charts/PopulationChart'

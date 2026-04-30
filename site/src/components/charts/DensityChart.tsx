@@ -8,7 +8,7 @@ import {
 	Cell,
 } from 'recharts'
 import { type Country } from '../../lib/api'
-import { formatCompact, getContinentColor } from '../../lib/format'
+import { formatCompact, getContinentColor, resolveContinentName, axisTickStyle } from '../../lib/format'
 
 const tooltipStyle = {
 	backgroundColor: 'rgba(17, 17, 20, 0.95)',
@@ -29,7 +29,7 @@ export function MostDenseBar({ countries }: { countries: Country[] }) {
 			fullName: c.name,
 			density: Math.round(c.population / c.areaSqKm),
 			emoji: c.emoji,
-			continent: c.continent,
+			continent: resolveContinentName(c.continent),
 		}))
 		.sort((a, b) => b.density - a.density)
 		.slice(0, 20)
@@ -43,8 +43,9 @@ export function MostDenseBar({ countries }: { countries: Country[] }) {
 						tickFormatter={(v: number) => formatCompact(v)}
 						axisLine={false}
 						tickLine={false}
+						tick={axisTickStyle}
 					/>
-					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={{ fontSize: 10 }} />
+					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={{ ...axisTickStyle, fontSize: 10 }} />
 					<Tooltip
 						contentStyle={tooltipStyle}
 						formatter={(v: number) => [`${new Intl.NumberFormat('en-US').format(v)}/km²`, 'Density']}
@@ -71,7 +72,7 @@ export function LeastDenseBar({ countries }: { countries: Country[] }) {
 			fullName: c.name,
 			density: parseFloat((c.population / c.areaSqKm).toFixed(2)),
 			emoji: c.emoji,
-			continent: c.continent,
+			continent: resolveContinentName(c.continent),
 		}))
 		.sort((a, b) => a.density - b.density)
 		.slice(0, 20)
@@ -85,8 +86,9 @@ export function LeastDenseBar({ countries }: { countries: Country[] }) {
 						axisLine={false}
 						tickLine={false}
 						tickFormatter={(v: number) => `${v}/km²`}
+						tick={axisTickStyle}
 					/>
-					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={{ fontSize: 10 }} />
+					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={{ ...axisTickStyle, fontSize: 10 }} />
 					<Tooltip
 						contentStyle={tooltipStyle}
 						formatter={(v: number) => [`${v}/km²`, 'Density']}

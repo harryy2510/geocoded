@@ -8,6 +8,7 @@ import {
 	Cell,
 } from 'recharts'
 import { type Country } from '../../lib/api'
+import { axisTickStyle } from '../../lib/format'
 
 const tooltipStyle = {
 	backgroundColor: 'rgba(17, 17, 20, 0.95)',
@@ -44,8 +45,8 @@ export function MostCommonLanguages({ countries }: { countries: Country[] }) {
 		<div className="h-[380px] w-full">
 			<ResponsiveContainer>
 				<BarChart data={data} layout="vertical" margin={{ left: 5, right: 20 }}>
-					<XAxis type="number" axisLine={false} tickLine={false} />
-					<YAxis type="category" dataKey="name" width={90} axisLine={false} tickLine={false} tick={{ fontSize: 11 }} />
+					<XAxis type="number" axisLine={false} tickLine={false} tick={axisTickStyle} />
+					<YAxis type="category" dataKey="name" width={90} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
 						contentStyle={tooltipStyle}
 						formatter={(v: number) => [`${v} countries`, '']}
@@ -77,8 +78,8 @@ export function MostLanguagesPerCountry({ countries }: { countries: Country[] })
 		<div className="h-[300px] w-full">
 			<ResponsiveContainer>
 				<BarChart data={data} layout="vertical" margin={{ left: 10, right: 20 }}>
-					<XAxis type="number" axisLine={false} tickLine={false} />
-					<YAxis type="category" dataKey="name" width={130} axisLine={false} tickLine={false} tick={{ fontSize: 11 }} />
+					<XAxis type="number" axisLine={false} tickLine={false} tick={axisTickStyle} />
+					<YAxis type="category" dataKey="name" width={130} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
 						contentStyle={tooltipStyle}
 						formatter={(v: number) => [`${v} languages`, '']}

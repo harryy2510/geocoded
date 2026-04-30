@@ -8,7 +8,7 @@ import {
 	Cell,
 } from 'recharts'
 import { type Country } from '../../lib/api'
-import { CONTINENT_COLORS } from '../../lib/format'
+import { resolveContinentName, CONTINENT_COLORS, axisTickStyle } from '../../lib/format'
 
 const tooltipStyle = {
 	backgroundColor: 'rgba(17, 17, 20, 0.95)',
@@ -42,8 +42,8 @@ export function TimezonesPerCountry({ countries }: { countries: Country[] }) {
 		<div className="h-[300px] w-full">
 			<ResponsiveContainer>
 				<BarChart data={data} layout="vertical" margin={{ left: 5, right: 20 }}>
-					<XAxis type="number" axisLine={false} tickLine={false} />
-					<YAxis type="category" dataKey="name" width={100} axisLine={false} tickLine={false} tick={{ fontSize: 11 }} />
+					<XAxis type="number" axisLine={false} tickLine={false} tick={axisTickStyle} />
+					<YAxis type="category" dataKey="name" width={100} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
 						contentStyle={tooltipStyle}
 						formatter={(v: number) => [`${v} timezones`, '']}
@@ -65,7 +65,7 @@ export function TimezonesPerCountry({ countries }: { countries: Country[] }) {
 export function TimezonesByContinent({ countries }: { countries: Country[] }) {
 	const continentTzs = new Map<string, Set<string>>()
 	for (const c of countries) {
-		const ct = c.continent || 'Other'
+		const ct = resolveContinentName(c.continent) || 'Other'
 		if (!continentTzs.has(ct)) continentTzs.set(ct, new Set())
 		const set = continentTzs.get(ct)!
 		if (c.timezones) {
@@ -83,8 +83,8 @@ export function TimezonesByContinent({ countries }: { countries: Country[] }) {
 		<div className="h-[280px] w-full">
 			<ResponsiveContainer>
 				<BarChart data={data} margin={{ left: 0, right: 10, bottom: 0 }}>
-					<XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fontSize: 11 }} />
-					<YAxis axisLine={false} tickLine={false} />
+					<XAxis dataKey="name" axisLine={false} tickLine={false} tick={axisTickStyle} />
+					<YAxis axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
 						contentStyle={tooltipStyle}
 						formatter={(v: number) => [`${v} unique timezones`, '']}

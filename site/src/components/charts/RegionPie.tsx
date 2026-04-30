@@ -47,7 +47,7 @@ export function RegionPie({ countries }: { countries: Country[] }) {
 					</Pie>
 					<Tooltip
 						contentStyle={tooltipStyle}
-						formatter={(value: number) => [`${value} countries`, '']}
+						formatter={(value: number, name: string) => [`${value} countries`, name]}
 					/>
 					<Legend
 						verticalAlign="bottom"

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 3,
+  "instructions": {
+    "path": "AGENTS.md"
+  },
+  "integrations": {
+    "enabled": [
+      "codex",
+      "claude",
+      "gemini",
+      "copilot_vscode",
+      "cursor",
+      "antigravity",
+      "windsurf",
+      "opencode",
+      "junie"
+    ],
+    "options": {
+      "cursorAutoApprove": false,
+      "antigravityGlobalSync": true
+    }
+  },
+  "syncMode": "source-only",
+  "mcp": {
+    "servers": {
+      "fetch": {
+        "label": "Fetch",
+        "description": "HTTP fetching and scraping helpers",
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "mcp-server-fetch"
+        ],
+        "env": {
+          "FASTMCP_LOG_LEVEL": "ERROR"
+        },
+        "targets": [
+          "codex",
+          "claude",
+          "gemini",
+          "copilot_vscode",
+          "cursor",
+          "antigravity",
+          "windsurf",
+          "opencode",
+          "junie"
+        ],
+        "enabled": true
+      },
+      "git": {
+        "label": "Git",
+        "description": "Repository-aware git operations",
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "mcp-server-git",
+          "--repository",
+          "${PROJECT_ROOT}"
+        ],
+        "env": {
+          "FASTMCP_LOG_LEVEL": "ERROR"
+        },
+        "targets": [
+          "codex",
+          "claude",
+          "gemini",
+          "copilot_vscode",
+          "cursor",
+          "antigravity",
+          "windsurf",
+          "opencode",
+          "junie"
+        ],
+        "enabled": true
+      }
+    }
+  },
+  "workspace": {
+    "vscode": {
+      "hideGenerated": true,
+      "hiddenPaths": [
+        "**/.codex",
+        "**/.claude",
+        "**/.gemini",
+        "**/.cursor",
+        "**/.antigravity",
+        "**/.windsurf",
+        "**/.opencode",
+        "**/opencode.json",
+        "**/.agents/generated"
+      ]
+    }
+  },
+  "lastSync": "2026-04-30T00:20:27.684Z",
+  "lastSyncSourceHash": "6eb1ed1f14fa2a5cfce3def7530b49f2cec7623d12b12c6a2a1e5d342921767c"
+}

@@ -41,6 +41,22 @@ export function formatDensity(pop: number, area: number): string {
 	return `${density.toFixed(1)}/km²`
 }
 
+export const axisTickStyle = { fill: '#a1a1aa', fontSize: 11 }
+
+const CONTINENT_CODE_TO_NAME: Record<string, string> = {
+	AF: 'Africa',
+	AN: 'Antarctica',
+	AS: 'Asia',
+	EU: 'Europe',
+	NA: 'Americas',
+	SA: 'Americas',
+	OC: 'Oceania',
+}
+
+export function resolveContinentName(code: string): string {
+	return CONTINENT_CODE_TO_NAME[code] || code
+}
+
 export const CONTINENT_COLORS: Record<string, string> = {
 	Africa: '#c87f32',
 	Americas: '#2da06a',
@@ -62,5 +78,6 @@ export const REGION_COLORS: Record<string, string> = {
 }
 
 export function getContinentColor(continent: string): string {
-	return CONTINENT_COLORS[continent] || '#6b7280'
+	const resolved = CONTINENT_CODE_TO_NAME[continent] || continent
+	return CONTINENT_COLORS[resolved] || '#6b7280'
 }
