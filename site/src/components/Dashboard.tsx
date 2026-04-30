@@ -29,6 +29,18 @@ type QuickFactProps = {
 	emoji: string
 }
 
+const DATA_SOURCES = [
+	{ name: 'GeoNames', href: 'https://www.geonames.org/' },
+	{ name: 'Unicode CLDR', href: 'https://cldr.unicode.org/' },
+	{ name: 'IANA', href: 'https://www.iana.org/time-zones' },
+	{
+		name: 'ISO 4217 / SIX Group',
+		href: 'https://www.six-group.com/en/products-services/financial-information/data-standards.html',
+	},
+	{ name: 'Natural Earth', href: 'https://www.naturalearthdata.com/' },
+	{ name: 'CIA World Factbook', href: 'https://www.cia.gov/the-world-factbook/' },
+]
+
 function QuickFact({ label, value, emoji }: QuickFactProps) {
 	return (
 		<div className="gradient-border-hover group rounded-xl bg-bg-card/60 p-5 backdrop-blur-sm transition-all">
@@ -39,6 +51,31 @@ function QuickFact({ label, value, emoji }: QuickFactProps) {
 					<div className="mt-1 text-sm font-semibold text-text leading-snug">{value}</div>
 				</div>
 			</div>
+		</div>
+	)
+}
+
+function DataSources() {
+	return (
+		<div className="rounded-xl border border-border/50 bg-bg-card/40 p-5 text-sm text-text-muted backdrop-blur-sm">
+			<span className="font-medium text-text">Data sourced from </span>
+			{DATA_SOURCES.map((source, index) => (
+				<span key={source.name}>
+					<a
+						href={source.href}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="font-medium text-text-muted underline decoration-border underline-offset-4 transition-colors hover:text-accent"
+					>
+						{source.name}
+					</a>
+					{index === DATA_SOURCES.length - 2
+						? ', and '
+						: index === DATA_SOURCES.length - 1
+							? '.'
+							: ', '}
+				</span>
+			))}
 		</div>
 	)
 }
@@ -138,6 +175,8 @@ export function Dashboard() {
 					Explore geography, demographics, and culture across 252 countries
 				</p>
 			</div>
+
+			<DataSources />
 
 			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
 				<StatsCard icon="🌍" label="Countries" value={`${countries.length}`} delay={0} />

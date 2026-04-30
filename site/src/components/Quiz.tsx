@@ -137,7 +137,7 @@ function generateQuestions(
 }
 
 const MODES: { id: QuizMode; label: string; description: string; color: string; iconColor: string }[] = [
-	{ id: 'capital', label: 'Capital Quiz', description: 'Guess the capital city', color: 'from-blue-500/10 to-blue-500/[0.02]', iconColor: 'text-blue-400' },
+	{ id: 'capital', label: 'Capital Quiz', description: 'Guess the capital city', color: 'from-green-500/10 to-green-500/[0.02]', iconColor: 'text-green-400' },
 	{ id: 'flag', label: 'Flag Quiz', description: 'Identify countries by flag', color: 'from-purple-500/10 to-purple-500/[0.02]', iconColor: 'text-purple-400' },
 	{
 		id: 'population',
@@ -150,8 +150,8 @@ const MODES: { id: QuizMode; label: string; description: string; color: string; 
 		id: 'geography',
 		label: 'Geography Quiz',
 		description: 'Which country is larger?',
-		color: 'from-orange-500/10 to-orange-500/[0.02]',
-		iconColor: 'text-orange-400',
+		color: 'from-green-500/10 to-green-500/[0.02]',
+		iconColor: 'text-green-400',
 	},
 	{
 		id: 'neighbour',

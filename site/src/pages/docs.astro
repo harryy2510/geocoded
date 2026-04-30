@@ -1,5 +1,6 @@
 ---
 const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
+const openApiUrl = `${apiUrl}/openapi.json`
 const postmanUrl = `${apiUrl}/postman.json`
 ---
 
@@ -10,8 +11,9 @@ const postmanUrl = `${apiUrl}/postman.json`
 		<title>API Reference | Geocoded</title>
 		<meta name="description" content="Interactive API reference for Geocoded. Full OpenAPI 3.1 documentation." />
 		<meta name="theme-color" content="#0a0a0b" />
-		<link rel="icon" type="image/svg+xml" href="/logo-background.svg" />
-		<style>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<style is:global>
 			.dark-mode {
 				color-scheme: dark;
 				--scalar-color-1: rgba(255, 255, 245, .86);
@@ -19,12 +21,12 @@ const postmanUrl = `${apiUrl}/postman.json`
 				--scalar-color-3: rgba(255, 255, 245, .38);
 				--scalar-color-disabled: rgba(255, 255, 245, .25);
 				--scalar-color-ghost: rgba(255, 255, 245, .25);
-				--scalar-color-accent: #3b82f6;
+				--scalar-color-accent: #22c55e;
 				--scalar-background-1: #0a0a0b;
 				--scalar-background-2: #131316;
 				--scalar-background-3: #1e1e24;
 				--scalar-background-4: rgba(255, 255, 255, 0.06);
-				--scalar-background-accent: #3b82f61f;
+				--scalar-background-accent: #22c55e1f;
 				--scalar-border-color: rgba(255, 255, 255, 0.1);
 				--scalar-scrollbar-color: rgba(255, 255, 255, 0.24);
 				--scalar-scrollbar-color-active: rgba(255, 255, 255, 0.48);
@@ -55,86 +57,186 @@ const postmanUrl = `${apiUrl}/postman.json`
 				--scalar-sidebar-search-border-color: transparent;
 				--scalar-sidebar-search-color: var(--scalar-color-3);
 			}
-			.geocoded-postman-link {
-				align-items: center;
-				gap: .625rem;
-				justify-content: space-between;
+			.tag-section-container > .section:has(.endpoints-card) {
+				display: none;
 			}
-			.geocoded-postman-badge {
-				background: var(--scalar-button-1);
+			.geocoded-docs-links {
+				align-items: center;
+				display: flex;
+				flex-wrap: wrap;
+				gap: .625rem;
+				margin-top: 1.25rem;
+			}
+			.geocoded-docs-link {
+				align-items: center;
+				background: #131316;
+				border: 1px solid rgba(255, 255, 255, .16);
 				border-radius: 999px;
-				color: var(--scalar-button-1-color);
-				font-size: .75em;
+				color: rgba(255, 255, 245, .86);
+				display: inline-flex;
+				gap: .625rem;
+				font: 600 14px/1 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+				padding: .75rem 1rem;
+				text-decoration: none !important;
+				text-decoration-line: none !important;
+			}
+			.markdown a.geocoded-docs-link,
+			.markdown a.geocoded-docs-link:hover,
+			.geocoded-docs-link {
+				-webkit-text-fill-color: currentColor !important;
+				color: currentColor !important;
+				text-decoration: none !important;
+				text-decoration-line: none !important;
+			}
+			.geocoded-docs-link > span:not(.geocoded-docs-badge) {
+				-webkit-text-fill-color: currentColor !important;
+				color: currentColor !important;
+				text-decoration: none !important;
+				text-decoration-line: none !important;
+			}
+			.geocoded-docs-link-primary,
+			.geocoded-docs-link-secondary {
+				background: #131316;
+				border: 1px solid rgba(255, 255, 255, .16);
+				color: rgba(255, 255, 245, .86);
+			}
+			.geocoded-docs-link-primary:hover,
+			.geocoded-docs-link-secondary:hover {
+				background: #1e1e24;
+			}
+			.geocoded-docs-badge {
+				-webkit-text-fill-color: #0a0a0b !important;
+				background: #f6f6f6;
+				border-radius: 999px;
+				color: #0a0a0b !important;
+				font-size: .72em;
 				line-height: 1;
 				padding: .35em .65em;
-				text-decoration: none;
+				text-decoration: none !important;
+				text-decoration-line: none !important;
+			}
+			@media (max-width: 720px) {
+				.geocoded-docs-link {
+					flex: 1;
+					justify-content: center;
+				}
 			}
 		</style>
 	</head>
-	<body>
-		<script
-			id="api-reference"
-			data-url={`${apiUrl}/openapi.json`}
-			data-configuration={JSON.stringify({
-				theme: 'saturn',
-				darkMode: true,
-				hideDarkModeToggle: true,
-				defaultOpenAllTags: true,
-			})}
-		></script>
-		<script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
-		<script define:vars={{ postmanUrl }}>
-			const isDownloadItem = (element) =>
-				element.textContent?.includes('Download OpenAPI Document')
+	<body class="dark-mode">
+		<div data-open-api-url={openApiUrl} data-postman-url={postmanUrl}></div>
+		<script is:inline>
+			;(() => {
+				const root = document.querySelector('[data-open-api-url]')
+				const openApiUrl = root?.dataset.openApiUrl
+				const postmanUrl = root?.dataset.postmanUrl
 
-			const getDownloadMenu = (element) => {
-				let current = element.parentElement
-				while (current && current !== document.body) {
-					const downloadItemCount = Array.from(
-						current.querySelectorAll('a, button')
-					).filter(isDownloadItem).length
-					if (downloadItemCount >= 2) return current
-					current = current.parentElement
+				if (!root || !openApiUrl || !postmanUrl) {
+					return
 				}
-				return element.parentElement
-			}
 
-			const addPostmanLink = () => {
-				const downloadItems = Array.from(
-					document.querySelectorAll('a, button')
-				).filter(isDownloadItem)
+				const downloadActions = [
+					{
+						badge: 'json',
+						className: 'geocoded-docs-link-primary',
+						download: 'geocoded-openapi.json',
+						href: openApiUrl,
+						label: 'Download OpenAPI JSON'
+					},
+					{
+						badge: 'postman',
+						className: 'geocoded-docs-link-secondary',
+						download: 'geocoded-postman-collection.json',
+						href: postmanUrl,
+						label: 'Download Postman Collection'
+					}
+				]
 
-				for (const item of downloadItems) {
-					const menu = getDownloadMenu(item)
-					if (!menu || menu.querySelector('[data-geocoded-postman-link]')) {
-						continue
+				function buildDocsLinks() {
+					const container = document.createElement('nav')
+					container.className = 'geocoded-docs-links'
+					container.setAttribute('aria-label', 'Download API documents')
+
+					for (const action of downloadActions) {
+						const link = document.createElement('a')
+						link.className = `geocoded-docs-link ${action.className}`
+						link.href = action.href
+						link.target = '_blank'
+						link.rel = 'noreferrer'
+						link.download = action.download
+
+						const label = document.createElement('span')
+						label.textContent = action.label
+
+						const badge = document.createElement('span')
+						badge.className = 'geocoded-docs-badge'
+						badge.textContent = action.badge
+
+						link.append(label, badge)
+						container.append(link)
 					}
 
-					const link = document.createElement('a')
-					link.href = postmanUrl
-					link.target = '_blank'
-					link.rel = 'noreferrer'
-					link.download = 'geocoded-postman-collection.json'
-					link.className = `${item.className} geocoded-postman-link`.trim()
-					link.setAttribute('data-geocoded-postman-link', 'true')
-
-					const label = document.createElement('span')
-					label.textContent = 'Download Postman Collection'
-
-					const badge = document.createElement('span')
-					badge.className = 'geocoded-postman-badge'
-					badge.textContent = 'postman'
-
-					link.replaceChildren(label, badge)
-					menu.append(link)
+					return container
 				}
-			}
 
-			new MutationObserver(addPostmanLink).observe(document.body, {
-				childList: true,
-				subtree: true,
-			})
-			addPostmanLink()
+				function mountDocsLinks() {
+					if (document.querySelector('.geocoded-docs-links')) {
+						return true
+					}
+
+					const intro =
+						document.querySelector('.introduction-section .markdown') ??
+						document.querySelector('.introduction-section')
+
+					if (!intro) {
+						return false
+					}
+
+					const firstParagraph = intro.querySelector('p')
+					const links = buildDocsLinks()
+
+					if (firstParagraph) {
+						firstParagraph.after(links)
+						return true
+					}
+
+					intro.append(links)
+					return true
+				}
+
+				function watchDocsLinks() {
+					let attempts = 0
+					const interval = window.setInterval(() => {
+						attempts += 1
+
+						if (mountDocsLinks() || attempts > 120) {
+							window.clearInterval(interval)
+						}
+					}, 100)
+				}
+
+				window.mountGeocodedDocsReference = function mountGeocodedDocsReference() {
+					if (!window.Scalar || root.dataset.scalarMounted === 'true') {
+						return
+					}
+
+					root.dataset.scalarMounted = 'true'
+					window.Scalar.createApiReference(root, {
+						url: openApiUrl,
+						theme: 'saturn',
+						darkMode: true,
+						hideDarkModeToggle: true,
+						defaultOpenAllTags: true,
+						documentDownloadType: 'none',
+					})
+					watchDocsLinks()
+				}
+
+				if (window.Scalar) {
+					window.mountGeocodedDocsReference()
+				}
+			})()
 		</script>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/@scalar/api-reference" onload="window.mountGeocodedDocsReference()"></script>
 	</body>
 </html>

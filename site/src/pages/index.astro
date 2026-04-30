@@ -8,8 +8,8 @@ const features = [
 	{
 		title: 'Free & Open Source',
 		description: 'No API key, no signup, no rate limits. Data sourced from official institutions (GeoNames, CLDR, Wikidata, IANA) under CC BY 4.0.',
-		iconBg: 'from-blue-500/20 to-blue-500/5',
-		iconColor: 'text-blue-400',
+		iconBg: 'from-green-500/20 to-green-500/5',
+		iconColor: 'text-green-400',
 		icon: 'shield',
 	},
 	{
@@ -29,8 +29,8 @@ const features = [
 	{
 		title: 'Field Selection',
 		description: 'Pick exactly the fields you need with ?fields= parameter. Supports dot notation for nested objects. Smaller payloads, faster apps.',
-		iconBg: 'from-orange-500/20 to-orange-500/5',
-		iconColor: 'text-orange-400',
+		iconBg: 'from-green-500/20 to-green-500/5',
+		iconColor: 'text-green-400',
 		icon: 'filter',
 	},
 ]
@@ -41,8 +41,8 @@ const dataPages = [
 		title: 'Dashboard',
 		description: 'Global data overview with interactive charts and key metrics across all 252 countries.',
 		icon: 'dashboard',
-		accent: 'group-hover:text-blue-400',
-		iconColor: 'text-blue-400',
+		accent: 'group-hover:text-green-400',
+		iconColor: 'text-green-400',
 	},
 	{
 		href: '/explorer',
@@ -65,8 +65,8 @@ const dataPages = [
 		title: 'Quiz',
 		description: 'Test your geography knowledge with fun quizzes on flags, capitals, and more.',
 		icon: 'quiz',
-		accent: 'group-hover:text-orange-400',
-		iconColor: 'text-orange-400',
+		accent: 'group-hover:text-green-400',
+		iconColor: 'text-green-400',
 	},
 ]
 
@@ -81,6 +81,9 @@ function jsonKvi(k: string, v: string, last = false) {
 }
 function jsonKviNum(k: string, v: string, last = false) {
 	return `    <span class="json-key">"${k}"</span><span class="json-colon">: </span><span class="json-number">"${v}"</span>${last ? '' : ','}\n`
+}
+function jsonKviRaw(k: string, v: string, last = false) {
+	return `    <span class="json-key">"${k}"</span><span class="json-colon">: </span>${v}${last ? '' : ','}\n`
 }
 function jsonBr(v: string) {
 	return `<span class="json-bracket">${v}</span>\n`
@@ -142,14 +145,43 @@ const examples = [
 			jsonBr('}'),
 	},
 	{
-		title: 'Timezones and currencies',
-		curl: `curl ${apiUrl}/timezones/America/New_York`,
+		title: 'List timezones',
+		curl: `curl ${apiUrl}/timezones?limit=2&fields=timezone,countryCodes`,
 		responseHtml:
 			jsonBr('{') +
-			jsonKv('timezone', 'America/New_York') +
-			jsonKv('countryCodes', '["US"]') +
-			jsonKv('coordinates', '+404251-0740023') +
-			jsonKv('comments', 'Eastern', true) +
+			`  <span class="json-key">"data"</span><span class="json-colon">: </span>[\n` +
+			jsonBr('    {') +
+			jsonKvi('timezone', 'America/New_York') +
+			jsonKviRaw('countryCodes', '<span class="json-bracket">["US"]</span>', true) +
+			jsonBr('    },') +
+			jsonBr('    {') +
+			jsonKvi('timezone', 'Europe/London') +
+			jsonKviRaw('countryCodes', '<span class="json-bracket">["GB"]</span>', true) +
+			jsonBr('    }') +
+			`  ],\n` +
+			`  <span class="json-key">"meta"</span><span class="json-colon">: </span>{ ... }\n` +
+			jsonBr('}'),
+	},
+	{
+		title: 'List currencies',
+		curl: `curl ${apiUrl}/currencies?limit=2&fields=code,name,symbol,countries`,
+		responseHtml:
+			jsonBr('{') +
+			`  <span class="json-key">"data"</span><span class="json-colon">: </span>[\n` +
+			jsonBr('    {') +
+			jsonKvi('code', 'USD') +
+			jsonKvi('name', 'US Dollar') +
+			jsonKvi('symbol', '$') +
+			jsonKviRaw('countries', '<span class="json-bracket">["US"]</span>', true) +
+			jsonBr('    },') +
+			jsonBr('    {') +
+			jsonKvi('code', 'EUR') +
+			jsonKvi('name', 'Euro') +
+			jsonKvi('symbol', '€') +
+			jsonKviRaw('countries', '<span class="json-bracket">["AD","AT","BE"]</span>', true) +
+			jsonBr('    }') +
+			`  ],\n` +
+			`  <span class="json-key">"meta"</span><span class="json-colon">: </span>{ ... }\n` +
 			jsonBr('}'),
 	},
 ]
@@ -171,7 +203,6 @@ const stats = [
 			<div class="absolute left-1/3 top-1/3 size-[320px] rounded-full bg-purple-500/[0.05] blur-[100px]"></div>
 		</div>
 
-		<img src="/logo-background.svg" alt="Geocoded" class="size-16 rounded-2xl mx-auto mb-8" width="64" height="64" />
 		<h1 class="mb-5 text-5xl font-extrabold tracking-tight text-text sm:text-6xl lg:text-7xl">
 			Geocoded
 		</h1>

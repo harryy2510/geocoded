@@ -36,6 +36,7 @@ export function MostDenseBar({ countries }: { countries: Country[] }) {
 					/>
 					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={{ ...axisTickStyle, fontSize: 10 }} />
 					<Tooltip
+						cursor={false}
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${new Intl.NumberFormat('en-US').format(v)}/km²`, 'Density']}
 						labelFormatter={(_: string, payload: Array<{ payload?: { fullName?: string; emoji?: string } }>) =>
@@ -79,6 +80,7 @@ export function LeastDenseBar({ countries }: { countries: Country[] }) {
 					/>
 					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={{ ...axisTickStyle, fontSize: 10 }} />
 					<Tooltip
+						cursor={false}
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v}/km²`, 'Density']}
 						labelFormatter={(_: string, payload: Array<{ payload?: { fullName?: string; emoji?: string } }>) =>

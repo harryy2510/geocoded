@@ -89,8 +89,8 @@ const MemoGeography = memo(function MemoGeo({
 			onClick={onClick}
 			style={{
 				default: { outline: 'none' },
-				hover: { outline: 'none', fill: '#3b82f6', cursor: 'pointer' },
-				pressed: { outline: 'none', fill: '#2563eb' },
+				hover: { outline: 'none', fill: '#22c55e', cursor: 'pointer' },
+				pressed: { outline: 'none', fill: '#16a34a' },
 			}}
 		/>
 	)
