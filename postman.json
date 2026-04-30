@@ -113,7 +113,7 @@
 								}
 							]
 						},
-						"description": "Search with pagination parameters."
+						"description": "Search with pagination parameters. Limit supports 1-2000 results per page."
 					}
 				}
 			]
@@ -156,13 +156,13 @@
 					"request": {
 						"method": "GET",
 						"url": {
-							"raw": "{{baseUrl}}/countries?limit=10&offset=0",
+							"raw": "{{baseUrl}}/countries?limit=2000&offset=0",
 							"host": ["{{baseUrl}}"],
 							"path": ["countries"],
 							"query": [
 								{
 									"key": "limit",
-									"value": "10"
+									"value": "2000"
 								},
 								{
 									"key": "offset",
@@ -170,7 +170,7 @@
 								}
 							]
 						},
-						"description": "Returns paginated countries with { data, meta } wrapper."
+						"description": "Returns paginated countries with { data, meta } wrapper. Limit supports 1-2000 results per page."
 					}
 				},
 				{
@@ -267,13 +267,13 @@
 					"request": {
 						"method": "GET",
 						"url": {
-							"raw": "{{baseUrl}}/countries/US/states?limit=10&offset=0",
+							"raw": "{{baseUrl}}/countries/US/states?limit=2000&offset=0",
 							"host": ["{{baseUrl}}"],
 							"path": ["countries", "US", "states"],
 							"query": [
 								{
 									"key": "limit",
-									"value": "10"
+									"value": "2000"
 								},
 								{
 									"key": "offset",
@@ -281,7 +281,7 @@
 								}
 							]
 						},
-						"description": "Returns paginated states with { data, meta } wrapper."
+						"description": "Returns paginated states with { data, meta } wrapper. Limit supports 1-2000 results per page."
 					}
 				},
 				{
@@ -348,13 +348,13 @@
 					"request": {
 						"method": "GET",
 						"url": {
-							"raw": "{{baseUrl}}/countries/US/states/CA/cities?limit=10&offset=0",
+							"raw": "{{baseUrl}}/countries/US/states/CA/cities?limit=2000&offset=0",
 							"host": ["{{baseUrl}}"],
 							"path": ["countries", "US", "states", "CA", "cities"],
 							"query": [
 								{
 									"key": "limit",
-									"value": "10"
+									"value": "2000"
 								},
 								{
 									"key": "offset",
@@ -362,7 +362,7 @@
 								}
 							]
 						},
-						"description": "Returns paginated cities with { data, meta } wrapper."
+						"description": "Returns paginated cities with { data, meta } wrapper. Limit supports 1-2000 results per page."
 					}
 				},
 				{

@@ -179,11 +179,11 @@ const paginationParams = [
 		in: 'query' as const,
 		required: false,
 		description:
-			'Maximum number of results to return (1-250, default 25). List responses are always wrapped in `{ data, meta }`.',
+			'Maximum number of results to return (1-2000, default 25). List responses are always wrapped in `{ data, meta }`.',
 		schema: {
 			type: 'integer' as const,
 			minimum: 1,
-			maximum: 250,
+			maximum: 2000,
 			default: 25
 		}
 	},

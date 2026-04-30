@@ -145,7 +145,7 @@ When any pagination param is provided, the response wraps in:
 
 Pass the `cursor` value from `meta` as `?cursor=` to fetch the next page.
 
-- `limit` defaults to 25, max 250
+- `limit` defaults to 25, max 2000
 - `offset` and `cursor` are mutually exclusive (use one or the other)
 - When no pagination params are provided, `limit` defaults to 25 and `offset` defaults to 0
 

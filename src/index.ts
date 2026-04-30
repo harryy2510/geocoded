@@ -112,7 +112,10 @@ function parsePagination(c: {
 	const rawLimit = c.req.query('limit')
 	const rawOffset = c.req.query('offset')
 	const rawCursor = c.req.query('cursor')
-	const limit = Math.min(Math.max(parseInt(rawLimit || '25', 10) || 25, 1), 250)
+	const limit = Math.min(
+		Math.max(parseInt(rawLimit || '25', 10) || 25, 1),
+		2000
+	)
 	if (rawCursor) {
 		const decoded = decodeCursor(rawCursor)
 		return { limit, offset: decoded, cursor: rawCursor }
