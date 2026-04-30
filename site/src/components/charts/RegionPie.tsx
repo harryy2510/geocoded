@@ -1,17 +1,6 @@
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recharts'
 import { type Country } from '../../lib/api'
-import { REGION_COLORS } from '../../lib/format'
-
-const tooltipStyle = {
-	backgroundColor: 'rgba(17, 17, 20, 0.95)',
-	border: '1px solid rgba(255, 255, 255, 0.08)',
-	borderRadius: '10px',
-	fontSize: '12px',
-	color: '#e5e5e5',
-	backdropFilter: 'blur(12px)',
-	boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-	padding: '8px 12px',
-}
+import { REGION_COLORS, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
 
 export function RegionPie({ countries }: { countries: Country[] }) {
 	const regionCounts = new Map<string, number>()
@@ -46,7 +35,7 @@ export function RegionPie({ countries }: { countries: Country[] }) {
 						))}
 					</Pie>
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(value: number, name: string) => [`${value} countries`, name]}
 					/>
 					<Legend

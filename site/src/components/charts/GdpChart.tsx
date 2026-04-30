@@ -15,18 +15,7 @@ import {
 	ZAxis,
 } from 'recharts'
 import { type Country } from '../../lib/api'
-import { formatCompact, getContinentColor, resolveContinentName, axisTickStyle } from '../../lib/format'
-
-const tooltipStyle = {
-	backgroundColor: 'rgba(17, 17, 20, 0.95)',
-	border: '1px solid rgba(255, 255, 255, 0.08)',
-	borderRadius: '10px',
-	fontSize: '12px',
-	color: '#e5e5e5',
-	backdropFilter: 'blur(12px)',
-	boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-	padding: '8px 12px',
-}
+import { formatCompact, getContinentColor, resolveContinentName, axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
 
 export function TopGdpBar({ countries }: { countries: Country[] }) {
 	const data = [...countries]
@@ -54,7 +43,7 @@ export function TopGdpBar({ countries }: { countries: Country[] }) {
 					/>
 					<YAxis type="category" dataKey="name" width={100} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`$${new Intl.NumberFormat('en-US').format(v)}M`, 'GDP']}
 						labelFormatter={(_: string, payload: Array<{ payload?: { fullName?: string; emoji?: string } }>) =>
 							payload[0]?.payload ? `${payload[0].payload.emoji} ${payload[0].payload.fullName}` : _
@@ -172,7 +161,7 @@ export function CurrencyUsagePie({ countries }: { countries: Country[] }) {
 						))}
 					</Pie>
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(value: number, name: string) => [`${value} countries`, name]}
 					/>
 					<Legend

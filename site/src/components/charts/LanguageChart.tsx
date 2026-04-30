@@ -8,18 +8,7 @@ import {
 	Cell,
 } from 'recharts'
 import { type Country } from '../../lib/api'
-import { axisTickStyle } from '../../lib/format'
-
-const tooltipStyle = {
-	backgroundColor: 'rgba(17, 17, 20, 0.95)',
-	border: '1px solid rgba(255, 255, 255, 0.08)',
-	borderRadius: '10px',
-	fontSize: '12px',
-	color: '#e5e5e5',
-	backdropFilter: 'blur(12px)',
-	boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-	padding: '8px 12px',
-}
+import { axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
 
 const palette = [
 	'#3b82f6', '#8b5cf6', '#06b6d4', '#10b981', '#f59e0b',
@@ -48,7 +37,7 @@ export function MostCommonLanguages({ countries }: { countries: Country[] }) {
 					<XAxis type="number" axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<YAxis type="category" dataKey="name" width={90} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v} countries`, '']}
 					/>
 					<Bar dataKey="count" radius={[0, 4, 4, 0]} maxBarSize={20}>
@@ -81,7 +70,7 @@ export function MostLanguagesPerCountry({ countries }: { countries: Country[] })
 					<XAxis type="number" axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<YAxis type="category" dataKey="name" width={130} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v} languages`, '']}
 						labelFormatter={(_: string, payload: Array<{ payload?: { fullName?: string; emoji?: string } }>) =>
 							payload[0]?.payload ? `${payload[0].payload.emoji} ${payload[0].payload.fullName}` : _

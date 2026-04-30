@@ -9,18 +9,7 @@ import {
 	Treemap,
 } from 'recharts'
 import { type Country } from '../../lib/api'
-import { formatCompact, getContinentColor, resolveContinentName, axisTickStyle } from '../../lib/format'
-
-const tooltipStyle = {
-	backgroundColor: 'rgba(17, 17, 20, 0.95)',
-	border: '1px solid rgba(255, 255, 255, 0.08)',
-	borderRadius: '10px',
-	fontSize: '12px',
-	color: '#e5e5e5',
-	backdropFilter: 'blur(12px)',
-	boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-	padding: '8px 12px',
-}
+import { formatCompact, getContinentColor, resolveContinentName, axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
 
 export function TopPopulationBar({ countries }: { countries: Country[] }) {
 	const data = [...countries]
@@ -54,7 +43,7 @@ export function TopPopulationBar({ countries }: { countries: Country[] }) {
 						tick={axisTickStyle}
 					/>
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(value: number) => [formatCompact(value), 'Population']}
 						labelFormatter={(_: string, payload: Array<{ payload?: { fullName?: string; emoji?: string } }>) =>
 							payload[0]?.payload
@@ -105,7 +94,7 @@ export function TopAreaBar({ countries }: { countries: Country[] }) {
 						tick={axisTickStyle}
 					/>
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(value: number) => [
 							`${new Intl.NumberFormat('en-US').format(value)} km²`,
 							'Area',
@@ -190,7 +179,7 @@ export function PopulationTreemap({ countries }: { countries: Country[] }) {
 					content={<TreemapContent x={0} y={0} width={0} height={0} name="" color="" emoji="" />}
 				>
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(value: number) => [formatCompact(value), 'Population']}
 					/>
 				</Treemap>

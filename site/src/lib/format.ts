@@ -32,6 +32,9 @@ export function formatArea(sqKm: number): string {
 	if (sqKm >= 1_000) {
 		return `${(sqKm / 1_000).toFixed(0)}K km²`
 	}
+	if (sqKm < 1 && sqKm > 0) {
+		return `${sqKm.toFixed(2)} km²`
+	}
 	return `${sqKm.toFixed(0)} km²`
 }
 
@@ -42,6 +45,21 @@ export function formatDensity(pop: number, area: number): string {
 }
 
 export const axisTickStyle = { fill: '#a1a1aa', fontSize: 11 }
+
+export const tooltipStyle = {
+	backgroundColor: 'rgba(17, 17, 20, 0.95)',
+	border: '1px solid rgba(255, 255, 255, 0.08)',
+	borderRadius: '10px',
+	fontSize: '12px',
+	color: '#e5e5e5',
+	backdropFilter: 'blur(12px)',
+	boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
+	padding: '8px 12px',
+}
+
+export const tooltipLabelStyle = { color: '#e5e5e5' }
+
+export const tooltipItemStyle = { color: '#d4d4d8' }
 
 const CONTINENT_CODE_TO_NAME: Record<string, string> = {
 	AF: 'Africa',

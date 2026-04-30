@@ -8,18 +8,7 @@ import {
 	Cell,
 } from 'recharts'
 import { type Country } from '../../lib/api'
-import { getContinentColor, resolveContinentName, axisTickStyle } from '../../lib/format'
-
-const tooltipStyle = {
-	backgroundColor: 'rgba(17, 17, 20, 0.95)',
-	border: '1px solid rgba(255, 255, 255, 0.08)',
-	borderRadius: '10px',
-	fontSize: '12px',
-	color: '#e5e5e5',
-	backdropFilter: 'blur(12px)',
-	boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-	padding: '8px 12px',
-}
+import { getContinentColor, resolveContinentName, axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
 
 export function LiteracyHistogram({ countries }: { countries: Country[] }) {
 	const buckets = [
@@ -47,7 +36,7 @@ export function LiteracyHistogram({ countries }: { countries: Country[] }) {
 					<XAxis dataKey="label" axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<YAxis axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v} countries`, '']}
 					/>
 					<Bar dataKey="count" radius={[4, 4, 0, 0]} maxBarSize={52}>
@@ -88,7 +77,7 @@ export function TopLiteracyBar({ countries }: { countries: Country[] }) {
 					/>
 					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v}%`, 'Literacy']}
 						labelFormatter={(_: string, payload: Array<{ payload?: { fullName?: string; emoji?: string } }>) =>
 							payload[0]?.payload ? `${payload[0].payload.emoji} ${payload[0].payload.fullName}` : _
@@ -132,7 +121,7 @@ export function BottomLiteracyBar({ countries }: { countries: Country[] }) {
 					/>
 					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v}%`, 'Literacy']}
 						labelFormatter={(_: string, payload: Array<{ payload?: { fullName?: string; emoji?: string } }>) =>
 							payload[0]?.payload ? `${payload[0].payload.emoji} ${payload[0].payload.fullName}` : _

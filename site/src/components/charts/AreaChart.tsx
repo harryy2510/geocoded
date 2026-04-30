@@ -14,18 +14,7 @@ import {
 	Area,
 } from 'recharts'
 import { type Country } from '../../lib/api'
-import { formatCompact, getContinentColor, resolveContinentName, CONTINENT_COLORS, axisTickStyle } from '../../lib/format'
-
-const tooltipStyle = {
-	backgroundColor: 'rgba(17, 17, 20, 0.95)',
-	border: '1px solid rgba(255, 255, 255, 0.08)',
-	borderRadius: '10px',
-	fontSize: '12px',
-	color: '#e5e5e5',
-	backdropFilter: 'blur(12px)',
-	boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-	padding: '8px 12px',
-}
+import { formatCompact, getContinentColor, resolveContinentName, CONTINENT_COLORS, axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
 
 export function ContinentCountBar({ countries }: { countries: Country[] }) {
 	const counts = new Map<string, number>()
@@ -43,7 +32,7 @@ export function ContinentCountBar({ countries }: { countries: Country[] }) {
 				<BarChart data={data} margin={{ left: 0, right: 10, bottom: 0 }}>
 					<XAxis dataKey="name" axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<YAxis axisLine={false} tickLine={false} tick={axisTickStyle} />
-					<Tooltip contentStyle={tooltipStyle} formatter={(v: number) => [`${v} countries`, '']} />
+					<Tooltip contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle} formatter={(v: number) => [`${v} countries`, '']} />
 					<Bar dataKey="count" radius={[4, 4, 0, 0]} maxBarSize={48}>
 						{data.map((entry, i) => (
 							<Cell key={i} fill={CONTINENT_COLORS[entry.name] || '#6b7280'} />
@@ -127,7 +116,7 @@ export function SmallestCountriesBar({ countries }: { countries: Country[] }) {
 					<XAxis type="number" axisLine={false} tickLine={false} tickFormatter={(v: number) => `${v} km²`} tick={axisTickStyle} />
 					<YAxis type="category" dataKey="name" width={120} axisLine={false} tickLine={false} tick={axisTickStyle} />
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${new Intl.NumberFormat('en-US').format(v)} km²`, 'Area']}
 					/>
 					<Bar dataKey="area" radius={[0, 4, 4, 0]} maxBarSize={24}>
@@ -165,7 +154,7 @@ export function PopulationDistributionArea({ countries }: { countries: Country[]
 						tick={axisTickStyle}
 					/>
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						labelFormatter={(_: string, payload: Array<{ payload?: { name?: string } }>) =>
 							payload[0]?.payload?.name || ''
 						}
@@ -232,7 +221,7 @@ export function PopVsAreaScatter({ countries }: { countries: Country[] }) {
 					/>
 					<ZAxis type="number" dataKey="z" range={[20, 400]} />
 					<Tooltip
-						contentStyle={tooltipStyle}
+						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						content={({ payload }) => {
 							if (!payload?.length) return null
 							const d = payload[0].payload as (typeof data)[0]
