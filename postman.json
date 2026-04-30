@@ -69,6 +69,28 @@
 					}
 				},
 				{
+					"name": "Search cities only",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/search?q=san&type=city",
+							"host": ["{{baseUrl}}"],
+							"path": ["search"],
+							"query": [
+								{
+									"key": "q",
+									"value": "san"
+								},
+								{
+									"key": "type",
+									"value": "city"
+								}
+							]
+						},
+						"description": "Full-text search limited to one entity type. Type can be country, state, or city."
+					}
+				},
+				{
 					"name": "Search with pagination",
 					"request": {
 						"method": "GET",
@@ -108,7 +130,25 @@
 							"host": ["{{baseUrl}}"],
 							"path": ["countries"]
 						},
-						"description": "Returns all countries."
+						"description": "Returns paginated countries with the default limit."
+					}
+				},
+				{
+					"name": "Search countries",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries?q=uni",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries"],
+							"query": [
+								{
+									"key": "q",
+									"value": "uni"
+								}
+							]
+						},
+						"description": "Filters countries by name, ISO 2, or ISO 3."
 					}
 				},
 				{
@@ -148,7 +188,7 @@
 								}
 							]
 						},
-						"description": "Returns all countries with only selected fields."
+						"description": "Returns paginated countries with only selected fields."
 					}
 				},
 				{
@@ -201,7 +241,25 @@
 							"host": ["{{baseUrl}}"],
 							"path": ["countries", "US", "states"]
 						},
-						"description": "Returns all states for a country."
+						"description": "Returns paginated states for a country with the default limit."
+					}
+				},
+				{
+					"name": "Search states for a country",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US/states?q=cal",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "US", "states"],
+							"query": [
+								{
+									"key": "q",
+									"value": "cal"
+								}
+							]
+						},
+						"description": "Filters states within a country by name, ISO 2, or ISO 3166-2."
 					}
 				},
 				{
@@ -264,7 +322,25 @@
 							"host": ["{{baseUrl}}"],
 							"path": ["countries", "US", "states", "CA", "cities"]
 						},
-						"description": "Returns all cities for a country + state."
+						"description": "Returns paginated cities for a country + state with the default limit."
+					}
+				},
+				{
+					"name": "Search cities for a state",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/US/states/CA/cities?q=san",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "US", "states", "CA", "cities"],
+							"query": [
+								{
+									"key": "q",
+									"value": "san"
+								}
+							]
+						},
+						"description": "Filters cities within a state by name."
 					}
 				},
 				{

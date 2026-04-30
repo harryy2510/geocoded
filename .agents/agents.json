@@ -1,96 +1,90 @@
 {
-  "schemaVersion": 3,
-  "instructions": {
-    "path": "AGENTS.md"
-  },
-  "integrations": {
-    "enabled": [
-      "codex",
-      "claude",
-      "gemini",
-      "copilot_vscode",
-      "cursor",
-      "antigravity",
-      "windsurf",
-      "opencode",
-      "junie"
-    ],
-    "options": {
-      "cursorAutoApprove": false,
-      "antigravityGlobalSync": true
-    }
-  },
-  "syncMode": "source-only",
-  "mcp": {
-    "servers": {
-      "fetch": {
-        "label": "Fetch",
-        "description": "HTTP fetching and scraping helpers",
-        "transport": "stdio",
-        "command": "uvx",
-        "args": [
-          "mcp-server-fetch"
-        ],
-        "env": {
-          "FASTMCP_LOG_LEVEL": "ERROR"
-        },
-        "targets": [
-          "codex",
-          "claude",
-          "gemini",
-          "copilot_vscode",
-          "cursor",
-          "antigravity",
-          "windsurf",
-          "opencode",
-          "junie"
-        ],
-        "enabled": true
-      },
-      "git": {
-        "label": "Git",
-        "description": "Repository-aware git operations",
-        "transport": "stdio",
-        "command": "uvx",
-        "args": [
-          "mcp-server-git",
-          "--repository",
-          "${PROJECT_ROOT}"
-        ],
-        "env": {
-          "FASTMCP_LOG_LEVEL": "ERROR"
-        },
-        "targets": [
-          "codex",
-          "claude",
-          "gemini",
-          "copilot_vscode",
-          "cursor",
-          "antigravity",
-          "windsurf",
-          "opencode",
-          "junie"
-        ],
-        "enabled": true
-      }
-    }
-  },
-  "workspace": {
-    "vscode": {
-      "hideGenerated": true,
-      "hiddenPaths": [
-        "**/.codex",
-        "**/.claude",
-        "**/.gemini",
-        "**/.cursor",
-        "**/.antigravity",
-        "**/.windsurf",
-        "**/.opencode",
-        "**/opencode.json",
-        "**/.agents/generated"
-      ]
-    }
-  },
-  "lastSync": "2026-04-30T00:30:27.196Z",
-  "lastSyncSourceHash": "b51343c3c52f29b3c54bf6503197dc9d2b600fbdef0ce67d1373fa7a9b19e329"
+	"schemaVersion": 3,
+	"instructions": {
+		"path": "AGENTS.md"
+	},
+	"integrations": {
+		"enabled": [
+			"codex",
+			"claude",
+			"gemini",
+			"copilot_vscode",
+			"cursor",
+			"antigravity",
+			"windsurf",
+			"opencode",
+			"junie"
+		],
+		"options": {
+			"cursorAutoApprove": false,
+			"antigravityGlobalSync": true
+		}
+	},
+	"syncMode": "source-only",
+	"mcp": {
+		"servers": {
+			"fetch": {
+				"label": "Fetch",
+				"description": "HTTP fetching and scraping helpers",
+				"transport": "stdio",
+				"command": "uvx",
+				"args": ["mcp-server-fetch"],
+				"env": {
+					"FASTMCP_LOG_LEVEL": "ERROR"
+				},
+				"targets": [
+					"codex",
+					"claude",
+					"gemini",
+					"copilot_vscode",
+					"cursor",
+					"antigravity",
+					"windsurf",
+					"opencode",
+					"junie"
+				],
+				"enabled": true
+			},
+			"git": {
+				"label": "Git",
+				"description": "Repository-aware git operations",
+				"transport": "stdio",
+				"command": "uvx",
+				"args": ["mcp-server-git", "--repository", "${PROJECT_ROOT}"],
+				"env": {
+					"FASTMCP_LOG_LEVEL": "ERROR"
+				},
+				"targets": [
+					"codex",
+					"claude",
+					"gemini",
+					"copilot_vscode",
+					"cursor",
+					"antigravity",
+					"windsurf",
+					"opencode",
+					"junie"
+				],
+				"enabled": true
+			}
+		}
+	},
+	"workspace": {
+		"vscode": {
+			"hideGenerated": true,
+			"hiddenPaths": [
+				"**/.codex",
+				"**/.claude",
+				"**/.gemini",
+				"**/.cursor",
+				"**/.antigravity",
+				"**/.windsurf",
+				"**/.opencode",
+				"**/opencode.json",
+				"**/.agents/generated"
+			]
+		}
+	},
+	"lastSync": "2026-04-30T01:00:18.239Z",
+	"lastSyncSourceHash": "4c580353555391adf6abd0d12a85029e8453112bd467cd9fa3d6aa0134a341a8"
 }

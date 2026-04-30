@@ -1,5 +1,6 @@
 ---
 const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
+const postmanUrl = `${apiUrl}/postman.json`
 ---
 
 <html lang="en">
@@ -54,6 +55,20 @@ const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
 				--scalar-sidebar-search-border-color: transparent;
 				--scalar-sidebar-search-color: var(--scalar-color-3);
 			}
+			.geocoded-postman-link {
+				align-items: center;
+				gap: .625rem;
+				justify-content: space-between;
+			}
+			.geocoded-postman-badge {
+				background: var(--scalar-button-1);
+				border-radius: 999px;
+				color: var(--scalar-button-1-color);
+				font-size: .75em;
+				line-height: 1;
+				padding: .35em .65em;
+				text-decoration: none;
+			}
 		</style>
 	</head>
 	<body>
@@ -68,5 +83,58 @@ const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
 			})}
 		></script>
 		<script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
+		<script define:vars={{ postmanUrl }}>
+			const isDownloadItem = (element) =>
+				element.textContent?.includes('Download OpenAPI Document')
+
+			const getDownloadMenu = (element) => {
+				let current = element.parentElement
+				while (current && current !== document.body) {
+					const downloadItemCount = Array.from(
+						current.querySelectorAll('a, button')
+					).filter(isDownloadItem).length
+					if (downloadItemCount >= 2) return current
+					current = current.parentElement
+				}
+				return element.parentElement
+			}
+
+			const addPostmanLink = () => {
+				const downloadItems = Array.from(
+					document.querySelectorAll('a, button')
+				).filter(isDownloadItem)
+
+				for (const item of downloadItems) {
+					const menu = getDownloadMenu(item)
+					if (!menu || menu.querySelector('[data-geocoded-postman-link]')) {
+						continue
+					}
+
+					const link = document.createElement('a')
+					link.href = postmanUrl
+					link.target = '_blank'
+					link.rel = 'noreferrer'
+					link.download = 'geocoded-postman-collection.json'
+					link.className = `${item.className} geocoded-postman-link`.trim()
+					link.setAttribute('data-geocoded-postman-link', 'true')
+
+					const label = document.createElement('span')
+					label.textContent = 'Download Postman Collection'
+
+					const badge = document.createElement('span')
+					badge.className = 'geocoded-postman-badge'
+					badge.textContent = 'postman'
+
+					link.replaceChildren(label, badge)
+					menu.append(link)
+				}
+			}
+
+			new MutationObserver(addPostmanLink).observe(document.body, {
+				childList: true,
+				subtree: true,
+			})
+			addPostmanLink()
+		</script>
 	</body>
 </html>

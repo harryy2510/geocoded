@@ -25,7 +25,7 @@
 
 - IP geolocation: resolve the caller's country, state, city from Cloudflare's edge
 - Country, state, city lookup with nested hierarchical routes
-- Full-text search across all entities via FTS5
+- Full-text search across all entities via FTS5, with optional type filtering
 - Field selection (`?fields=`) on every endpoint (return only what you need)
 - Pagination (`?limit=&offset=`) on all list endpoints
 - Aggressive edge caching (1-year immutable `Cache-Control`)
@@ -49,17 +49,19 @@ curl https://api.geocoded.me/countries/IN/states?fields=name,iso2
 curl https://api.geocoded.me/countries/US/states/CA/cities?fields=name,timezone
 
 # Search
-curl "https://api.geocoded.me/search?q=new+york"
+curl "https://api.geocoded.me/search?q=new+york&type=city"
 ```
 
 ---
 
 ## API Endpoints
 
+Postman collection: `https://api.geocoded.me/postman.json`
+
 | Method | Path                                             | Description                                                      |
 | ------ | ------------------------------------------------ | ---------------------------------------------------------------- |
 | `GET`  | `/`                                              | Caller's geo info from IP, enriched with country/state/city data |
-| `GET`  | `/search?q=`                                     | Full-text search across countries, states, cities                |
+| `GET`  | `/search?q=&type=`                               | Full-text search across countries, states, cities                |
 | `GET`  | `/countries`                                     | List all countries                                               |
 | `GET`  | `/countries/:id`                                 | Country by iso2, iso3, or name                                   |
 | `GET`  | `/countries/:country/states`                     | States for a country                                             |
@@ -88,9 +90,31 @@ When omitted, all fields are returned.
 
 ---
 
+## Search And Filtering
+
+Global search is available across countries, states, and cities:
+
+```
+GET /search?q=san&type=city
+```
+
+`type` is optional and accepts `country`, `state`, or `city`.
+
+Scoped list endpoints support `q` as a filter:
+
+```
+GET /countries?q=uni
+GET /countries/US/states?q=cal
+GET /countries/US/states/CA/cities?q=san
+```
+
+Scoped filters keep the normal list response shape: `{ data, meta }`.
+
+---
+
 ## Pagination
 
-All list endpoints (`/countries`, `/states`, `/cities`, `/timezones`, `/currencies`, `/search`) support pagination. Two styles are available:
+All list endpoints (`/countries`, `/states`, `/cities`, `/timezones`, `/currencies`, `/search`) are paginated and return `{ data, meta }`. Two styles are available:
 
 **Offset-based:**
 
@@ -123,8 +147,7 @@ Pass the `cursor` value from `meta` as `?cursor=` to fetch the next page.
 
 - `limit` defaults to 25, max 250
 - `offset` and `cursor` are mutually exclusive (use one or the other)
-- When no pagination params are provided, the full array is returned directly (no wrapper)
-- `/search` is always paginated
+- When no pagination params are provided, `limit` defaults to 25 and `offset` defaults to 0
 
 ---
 

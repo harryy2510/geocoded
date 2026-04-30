@@ -61,7 +61,7 @@ The private `geocoded-data` repo updates `data/*.json` through the data pipeline
 - `GET /timezones` and `GET /timezones/:id`: IANA timezone list and lookup. Timezone IDs may contain slashes.
 - `GET /currencies` and `GET /currencies/:code`: ISO 4217 currency list and lookup.
 
-All JSON responses use aggressive cache headers unless the route intentionally handles caller-specific data. List endpoints support pagination with `?limit=&offset=` and cursor pagination where implemented. When pagination params are omitted, list endpoints return the full array directly. All endpoints support `?fields=` with comma-separated field names and dot notation for nested fields.
+All JSON responses use aggressive cache headers unless the route intentionally handles caller-specific data. List endpoints are always paginated and return `{ data, meta }`; when pagination params are omitted, `limit` defaults to 25 and `offset` defaults to 0. All endpoints support `?fields=` with comma-separated field names and dot notation for nested fields.
 
 ## Hard Rules
 

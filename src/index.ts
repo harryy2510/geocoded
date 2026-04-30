@@ -1,9 +1,6 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import {
-	getAllCountries,
-	getAllCurrencies,
-	getAllTimezones,
 	getCitiesByCountryState,
 	getCitiesPaginated,
 	getCityByName,
@@ -12,14 +9,22 @@ import {
 	getCurrenciesPaginated,
 	getCurrencyByCode,
 	getStateByIso2OrName,
-	getStatesByCountry,
 	getStatesPaginated,
 	getTimezoneById,
 	getTimezonesPaginated,
-	search
+	search,
+	searchCitiesPaginated,
+	searchCountriesPaginated,
+	searchStatesPaginated
 } from './db/queries'
 import { openApiSpec } from './openapi'
-import type { Location, PaginatedResponse, SiteConfig } from './types'
+import type {
+	Location,
+	PaginatedResponse,
+	SearchResult,
+	SiteConfig
+} from './types'
+import postmanCollection from '../postman.json'
 
 function getSiteConfig(env: Env, requestUrl?: string): SiteConfig {
 	const origin = requestUrl ? new URL(requestUrl).origin : ''
@@ -103,11 +108,10 @@ type PaginationParams = {
 
 function parsePagination(c: {
 	req: { query: (k: string) => string | undefined }
-}): PaginationParams | null {
+}): PaginationParams {
 	const rawLimit = c.req.query('limit')
 	const rawOffset = c.req.query('offset')
 	const rawCursor = c.req.query('cursor')
-	if (!rawLimit && !rawOffset && !rawCursor) return null
 	const limit = Math.min(Math.max(parseInt(rawLimit || '25', 10) || 25, 1), 250)
 	if (rawCursor) {
 		const decoded = decodeCursor(rawCursor)
@@ -130,6 +134,21 @@ function decodeCursor(cursor: string): number {
 		'=='.slice(0, (4 - (cursor.length % 4)) % 4)
 	const decoded = parseInt(atob(padded), 10)
 	return Number.isNaN(decoded) ? 0 : Math.max(decoded, 0)
+}
+
+function parseSearchType(
+	value: string | undefined
+): SearchResult['type'] | null | undefined {
+	switch (value) {
+		case undefined:
+			return undefined
+		case 'country':
+		case 'state':
+		case 'city':
+			return value
+		default:
+			return null
+	}
 }
 
 function paginated<T>(
@@ -157,6 +176,14 @@ app.get('/openapi.json', (c) => {
 	const config = getSiteConfig(c.env, c.req.url)
 	return c.json(openApiSpec(config))
 })
+
+app.get('/postman.json', (c) =>
+	c.json(postmanCollection, 200, {
+		'Cache-Control': 'public, max-age=3600',
+		'Content-Disposition':
+			'attachment; filename="geocoded-postman-collection.json"'
+	})
+)
 
 app.get('/', async (c) => {
 	const config = getSiteConfig(c.env, c.req.url)
@@ -217,13 +244,22 @@ app.get('/search', async (c) => {
 	if (!q || q.trim().length === 0) {
 		return c.json({ error: 'Query parameter "q" is required' }, 400)
 	}
-	const limit = Math.min(
-		Math.max(parseInt(c.req.query('limit') || '25', 10) || 25, 1),
-		250
+	const type = parseSearchType(c.req.query('type'))
+	if (type === null) {
+		return c.json(
+			{ error: 'Query parameter "type" must be one of: country, state, city' },
+			400
+		)
+	}
+	const page = parsePagination(c)
+	const { rows, total } = await search(
+		c.env.GEO_DB,
+		q,
+		page.limit,
+		page.offset,
+		type
 	)
-	const offset = Math.max(parseInt(c.req.query('offset') || '0', 10) || 0, 0)
-	const { rows, total } = await search(c.env.GEO_DB, q, limit, offset)
-	return jsonResponse(c, paginated(rows, total, limit, offset))
+	return jsonResponse(c, paginated(rows, total, page.limit, page.offset))
 })
 
 // --- Countries ---
@@ -232,9 +268,11 @@ app.get('/countries', async (c) => {
 	const db = c.env.GEO_DB
 	const page = parsePagination(c)
 	const fields = c.req.query('fields')
-	if (page) {
-		const { rows, total } = await getCountriesPaginated(
+	const q = c.req.query('q')?.trim()
+	if (q) {
+		const { rows, total } = await searchCountriesPaginated(
 			db,
+			q,
 			page.limit,
 			page.offset
 		)
@@ -243,10 +281,15 @@ app.get('/countries', async (c) => {
 			paginated(pickFields(rows, fields), total, page.limit, page.offset)
 		)
 	}
-	const countries = await getAllCountries(db)
-	if (countries.length === 0)
-		return c.json({ error: 'Countries not found' }, 404)
-	return jsonResponse(c, pickFields(countries, fields))
+	const { rows, total } = await getCountriesPaginated(
+		db,
+		page.limit,
+		page.offset
+	)
+	return jsonResponse(
+		c,
+		paginated(pickFields(rows, fields), total, page.limit, page.offset)
+	)
 })
 
 app.get('/countries/:id', async (c) => {
@@ -263,10 +306,12 @@ app.get('/countries/:country/states', async (c) => {
 	const countryCode = c.req.param('country').toUpperCase()
 	const page = parsePagination(c)
 	const fields = c.req.query('fields')
-	if (page) {
-		const { rows, total } = await getStatesPaginated(
+	const q = c.req.query('q')?.trim()
+	if (q) {
+		const { rows, total } = await searchStatesPaginated(
 			db,
 			countryCode,
+			q,
 			page.limit,
 			page.offset
 		)
@@ -275,9 +320,16 @@ app.get('/countries/:country/states', async (c) => {
 			paginated(pickFields(rows, fields), total, page.limit, page.offset)
 		)
 	}
-	const states = await getStatesByCountry(db, countryCode)
-	if (states.length === 0) return c.json({ error: 'States not found' }, 404)
-	return jsonResponse(c, pickFields(states, fields))
+	const { rows, total } = await getStatesPaginated(
+		db,
+		countryCode,
+		page.limit,
+		page.offset
+	)
+	return jsonResponse(
+		c,
+		paginated(pickFields(rows, fields), total, page.limit, page.offset)
+	)
 })
 
 app.get('/countries/:country/states/:state', async (c) => {
@@ -297,11 +349,13 @@ app.get('/countries/:country/states/:state/cities', async (c) => {
 	const stateCode = c.req.param('state').toUpperCase()
 	const page = parsePagination(c)
 	const fields = c.req.query('fields')
-	if (page) {
-		const { rows, total } = await getCitiesPaginated(
+	const q = c.req.query('q')?.trim()
+	if (q) {
+		const { rows, total } = await searchCitiesPaginated(
 			db,
 			countryCode,
 			stateCode,
+			q,
 			page.limit,
 			page.offset
 		)
@@ -310,9 +364,17 @@ app.get('/countries/:country/states/:state/cities', async (c) => {
 			paginated(pickFields(rows, fields), total, page.limit, page.offset)
 		)
 	}
-	const cities = await getCitiesByCountryState(db, countryCode, stateCode)
-	if (cities.length === 0) return c.json({ error: 'Cities not found' }, 404)
-	return jsonResponse(c, pickFields(cities, fields))
+	const { rows, total } = await getCitiesPaginated(
+		db,
+		countryCode,
+		stateCode,
+		page.limit,
+		page.offset
+	)
+	return jsonResponse(
+		c,
+		paginated(pickFields(rows, fields), total, page.limit, page.offset)
+	)
 })
 
 app.get('/countries/:country/states/:state/cities/:city', async (c) => {
@@ -331,19 +393,15 @@ app.get('/timezones', async (c) => {
 	const db = c.env.GEO_DB
 	const page = parsePagination(c)
 	const fields = c.req.query('fields')
-	if (page) {
-		const { rows, total } = await getTimezonesPaginated(
-			db,
-			page.limit,
-			page.offset
-		)
-		return jsonResponse(
-			c,
-			paginated(pickFields(rows, fields), total, page.limit, page.offset)
-		)
-	}
-	const timezones = await getAllTimezones(db)
-	return jsonResponse(c, pickFields(timezones, fields))
+	const { rows, total } = await getTimezonesPaginated(
+		db,
+		page.limit,
+		page.offset
+	)
+	return jsonResponse(
+		c,
+		paginated(pickFields(rows, fields), total, page.limit, page.offset)
+	)
 })
 
 app.get('/timezones/:id{.+}', async (c) => {
@@ -360,19 +418,15 @@ app.get('/currencies', async (c) => {
 	const db = c.env.GEO_DB
 	const page = parsePagination(c)
 	const fields = c.req.query('fields')
-	if (page) {
-		const { rows, total } = await getCurrenciesPaginated(
-			db,
-			page.limit,
-			page.offset
-		)
-		return jsonResponse(
-			c,
-			paginated(pickFields(rows, fields), total, page.limit, page.offset)
-		)
-	}
-	const currencies = await getAllCurrencies(db)
-	return jsonResponse(c, pickFields(currencies, fields))
+	const { rows, total } = await getCurrenciesPaginated(
+		db,
+		page.limit,
+		page.offset
+	)
+	return jsonResponse(
+		c,
+		paginated(pickFields(rows, fields), total, page.limit, page.offset)
+	)
 })
 
 app.get('/currencies/:code', async (c) => {
@@ -386,11 +440,20 @@ app.get('/currencies/:code', async (c) => {
 
 app.post('/quiz/stats', async (c) => {
 	const db = c.env.GEO_DB
-	const body = await c.req.json<{ mode: string; score: number; total?: number }>()
+	const body = await c.req.json<{
+		mode: string
+		score: number
+		total?: number
+	}>()
 	const { mode, score, total = 10 } = body
 
 	const validModes = ['capital', 'flag', 'population', 'geography', 'neighbour']
-	if (!validModes.includes(mode) || typeof score !== 'number' || score < 0 || score > total) {
+	if (
+		!validModes.includes(mode) ||
+		typeof score !== 'number' ||
+		score < 0 ||
+		score > total
+	) {
 		return c.json({ error: 'Invalid input' }, 400)
 	}
 
@@ -410,9 +473,10 @@ app.post('/quiz/stats', async (c) => {
 		.bind(score, mode)
 		.first<{ total_attempts: number; avg_score: number; at_or_below: number }>()
 
-	const percentile = stats && stats.total_attempts > 0
-		? Math.round((stats.at_or_below / stats.total_attempts) * 100)
-		: 50
+	const percentile =
+		stats && stats.total_attempts > 0
+			? Math.round((stats.at_or_below / stats.total_attempts) * 100)
+			: 50
 
 	return c.json({
 		totalAttempts: stats?.total_attempts ?? 0,

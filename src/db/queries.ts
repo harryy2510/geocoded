@@ -8,6 +8,15 @@ import {
 } from '../types'
 
 type D1Row = Record<string, unknown>
+type SearchResultType = SearchResult['type']
+
+const toFtsPrefixQuery = (query: string): string => {
+	const sanitized = query.trim().replace(/"/g, '""')
+	return `"${sanitized}"*`
+}
+
+const toContainsLikeQuery = (query: string): string =>
+	`%${query.trim().replace(/[\^%_]/g, '^$&')}%`
 
 const rowToCountry = (row: D1Row): Country => ({
 	areaSqKm: row.area_sq_km as number,
@@ -75,13 +84,6 @@ const rowToCity = (row: D1Row): City => ({
 	timezone: row.timezone as string
 })
 
-export const getAllCountries = async (db: D1Database): Promise<Country[]> => {
-	const { results } = await db
-		.prepare('SELECT * FROM countries ORDER BY name')
-		.all()
-	return results.map(rowToCountry)
-}
-
 export const getCountryById = async (
 	db: D1Database,
 	id: string
@@ -95,17 +97,6 @@ export const getCountryById = async (
 		.bind(upper, lower)
 		.first()
 	return row ? rowToCountry(row) : null
-}
-
-export const getStatesByCountry = async (
-	db: D1Database,
-	countryCode: string
-): Promise<State[]> => {
-	const { results } = await db
-		.prepare('SELECT * FROM states WHERE country_code = ? ORDER BY name')
-		.bind(countryCode.toUpperCase())
-		.all()
-	return results.map(rowToState)
 }
 
 export const getStateByIso2OrName = async (
@@ -173,6 +164,31 @@ export const getCountriesPaginated = async (
 	return { rows, total }
 }
 
+export const searchCountriesPaginated = async (
+	db: D1Database,
+	query: string,
+	limit: number,
+	offset: number
+): Promise<{ rows: Country[]; total: number }> => {
+	const like = toContainsLikeQuery(query)
+	const where = `name COLLATE NOCASE LIKE ? ESCAPE '^'
+		OR iso2 COLLATE NOCASE LIKE ? ESCAPE '^'
+		OR iso3 COLLATE NOCASE LIKE ? ESCAPE '^'`
+	const batch = await db.batch([
+		db
+			.prepare(
+				`SELECT * FROM countries WHERE ${where} ORDER BY name LIMIT ? OFFSET ?`
+			)
+			.bind(like, like, like, limit, offset),
+		db
+			.prepare(`SELECT COUNT(*) AS total FROM countries WHERE ${where}`)
+			.bind(like, like, like)
+	])
+	const rows = (batch[0]!.results as D1Row[]).map(rowToCountry)
+	const total = (batch[1]!.results[0] as D1Row).total as number
+	return { rows, total }
+}
+
 export const getStatesPaginated = async (
 	db: D1Database,
 	countryCode: string,
@@ -189,6 +205,36 @@ export const getStatesPaginated = async (
 		db
 			.prepare('SELECT COUNT(*) AS total FROM states WHERE country_code = ?')
 			.bind(code)
+	])
+	const rows = (batch[0]!.results as D1Row[]).map(rowToState)
+	const total = (batch[1]!.results[0] as D1Row).total as number
+	return { rows, total }
+}
+
+export const searchStatesPaginated = async (
+	db: D1Database,
+	countryCode: string,
+	query: string,
+	limit: number,
+	offset: number
+): Promise<{ rows: State[]; total: number }> => {
+	const code = countryCode.toUpperCase()
+	const like = toContainsLikeQuery(query)
+	const where = `country_code = ?
+		AND (
+			name COLLATE NOCASE LIKE ? ESCAPE '^'
+			OR iso2 COLLATE NOCASE LIKE ? ESCAPE '^'
+			OR iso3166_2 COLLATE NOCASE LIKE ? ESCAPE '^'
+		)`
+	const batch = await db.batch([
+		db
+			.prepare(
+				`SELECT * FROM states WHERE ${where} ORDER BY name LIMIT ? OFFSET ?`
+			)
+			.bind(code, like, like, like, limit, offset),
+		db
+			.prepare(`SELECT COUNT(*) AS total FROM states WHERE ${where}`)
+			.bind(code, like, like, like)
 	])
 	const rows = (batch[0]!.results as D1Row[]).map(rowToState)
 	const total = (batch[1]!.results[0] as D1Row).total as number
@@ -221,26 +267,63 @@ export const getCitiesPaginated = async (
 	return { rows, total }
 }
 
+export const searchCitiesPaginated = async (
+	db: D1Database,
+	countryCode: string,
+	stateCode: string,
+	query: string,
+	limit: number,
+	offset: number
+): Promise<{ rows: City[]; total: number }> => {
+	const cc = countryCode.toUpperCase()
+	const sc = stateCode.toUpperCase()
+	const like = toContainsLikeQuery(query)
+	const where = `country_code = ?
+		AND state_code = ?
+		AND name COLLATE NOCASE LIKE ? ESCAPE '^'`
+	const batch = await db.batch([
+		db
+			.prepare(
+				`SELECT * FROM cities WHERE ${where} ORDER BY name LIMIT ? OFFSET ?`
+			)
+			.bind(cc, sc, like, limit, offset),
+		db
+			.prepare(`SELECT COUNT(*) AS total FROM cities WHERE ${where}`)
+			.bind(cc, sc, like)
+	])
+	const rows = (batch[0]!.results as D1Row[]).map(rowToCity)
+	const total = (batch[1]!.results[0] as D1Row).total as number
+	return { rows, total }
+}
+
 export const search = async (
 	db: D1Database,
 	query: string,
 	limit: number,
-	offset: number
+	offset: number,
+	type?: SearchResultType
 ): Promise<{ rows: SearchResult[]; total: number }> => {
-	const sanitized = query.replace(/"/g, '""')
-	const ftsQuery = `"${sanitized}"*`
+	const ftsQuery = toFtsPrefixQuery(query)
+	const filters = ['search_index MATCH ?']
+	const searchBindings: Array<string | number> = [ftsQuery]
+	if (type) {
+		filters.push('type = ?')
+		searchBindings.push(type)
+	}
+	const where = filters.join(' AND ')
 
 	const batch = await db.batch([
 		db
 			.prepare(
-				'SELECT name, type, country_code, state_code, extra FROM search_index WHERE search_index MATCH ? LIMIT ? OFFSET ?'
+				`SELECT name, type, country_code, state_code, extra
+				FROM search_index
+				WHERE ${where}
+				LIMIT ? OFFSET ?`
 			)
-			.bind(ftsQuery, limit, offset),
+			.bind(...searchBindings, limit, offset),
 		db
-			.prepare(
-				'SELECT COUNT(*) AS total FROM search_index WHERE search_index MATCH ?'
-			)
-			.bind(ftsQuery)
+			.prepare(`SELECT COUNT(*) AS total FROM search_index WHERE ${where}`)
+			.bind(...searchBindings)
 	])
 
 	const rows = (batch[0]!.results as D1Row[]).map((row): SearchResult => {
@@ -268,15 +351,6 @@ const rowToTimezone = (row: D1Row): TimezoneEntry => ({
 	countryCodes: JSON.parse((row.country_codes as string) || '[]'),
 	timezone: row.timezone as string
 })
-
-export const getAllTimezones = async (
-	db: D1Database
-): Promise<TimezoneEntry[]> => {
-	const { results } = await db
-		.prepare('SELECT * FROM timezones ORDER BY timezone')
-		.all()
-	return results.map(rowToTimezone)
-}
 
 export const getTimezonesPaginated = async (
 	db: D1Database,
@@ -327,15 +401,6 @@ const rowToCurrency = (row: D1Row): CurrencyEntry => ({
 	name: row.name as string,
 	symbol: row.symbol as string
 })
-
-export const getAllCurrencies = async (
-	db: D1Database
-): Promise<CurrencyEntry[]> => {
-	const { results } = await db
-		.prepare('SELECT * FROM currencies ORDER BY code')
-		.all()
-	return results.map(rowToCurrency)
-}
 
 export const getCurrenciesPaginated = async (
 	db: D1Database,

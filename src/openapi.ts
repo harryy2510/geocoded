@@ -10,6 +10,27 @@ const fieldsParameter = {
 	example: 'name,iso2'
 }
 
+const listSearchParameter = {
+	name: 'q',
+	in: 'query' as const,
+	required: false,
+	description:
+		'Search query for filtering this list. Countries match name, ISO 2, or ISO 3. States match name, ISO 2, or ISO 3166-2. Cities match name.',
+	schema: { type: 'string' as const },
+	example: 'san'
+}
+
+const searchTypeParameter = {
+	name: 'type',
+	in: 'query' as const,
+	required: false,
+	description: 'Limit global search results to one entity type.',
+	schema: {
+		type: 'string' as const,
+		enum: ['country', 'state', 'city']
+	}
+}
+
 const errorResponse = {
 	description: 'Error response',
 	content: {
@@ -158,7 +179,7 @@ const paginationParams = [
 		in: 'query' as const,
 		required: false,
 		description:
-			'Maximum number of results to return (1-250, default 25). When provided, response is wrapped in `{ data, meta }`.',
+			'Maximum number of results to return (1-250, default 25). List responses are always wrapped in `{ data, meta }`.',
 		schema: {
 			type: 'integer' as const,
 			minimum: 1,
@@ -206,26 +227,16 @@ const paginationMeta = {
 
 function listResponseSchema(itemSchema: Record<string, unknown>) {
 	return {
-		oneOf: [
-			{
+		type: 'object' as const,
+		properties: {
+			data: {
 				type: 'array' as const,
-				items: itemSchema,
-				description: 'Full array (when no pagination params are provided)'
+				items: itemSchema
 			},
-			{
-				type: 'object' as const,
-				properties: {
-					data: {
-						type: 'array' as const,
-						items: itemSchema
-					},
-					meta: paginationMeta
-				},
-				required: ['data', 'meta'],
-				description:
-					'Paginated response (when `limit`, `offset`, or `cursor` is provided)'
-			}
-		]
+			meta: paginationMeta
+		},
+		required: ['data', 'meta'],
+		description: 'Paginated response'
 	}
 }
 
@@ -370,6 +381,7 @@ export function openApiSpec(config: SiteConfig) {
 							schema: { type: 'string' as const },
 							example: 'lond'
 						},
+						searchTypeParameter,
 						...paginationParams
 					],
 					responses: {
@@ -398,11 +410,14 @@ export function openApiSpec(config: SiteConfig) {
 				get: {
 					tags: ['Countries'],
 					summary: 'List all countries',
-					parameters: [fieldsParameter, ...paginationParams],
+					parameters: [
+						listSearchParameter,
+						fieldsParameter,
+						...paginationParams
+					],
 					responses: {
 						'200': {
-							description:
-								'Array of countries, or paginated wrapper when `limit`/`offset`/`cursor` is provided',
+							description: 'Paginated countries response',
 							content: {
 								'application/json': {
 									schema: listResponseSchema(countrySchema)
@@ -455,12 +470,12 @@ export function openApiSpec(config: SiteConfig) {
 							example: 'US'
 						},
 						fieldsParameter,
+						listSearchParameter,
 						...paginationParams
 					],
 					responses: {
 						'200': {
-							description:
-								'Array of states, or paginated wrapper when limit/offset/cursor is provided',
+							description: 'Paginated states response',
 							content: {
 								'application/json': {
 									schema: listResponseSchema(stateSchema)
@@ -528,12 +543,12 @@ export function openApiSpec(config: SiteConfig) {
 							example: 'CA'
 						},
 						fieldsParameter,
+						listSearchParameter,
 						...paginationParams
 					],
 					responses: {
 						'200': {
-							description:
-								'Array of cities, or paginated wrapper when limit/offset/cursor is provided',
+							description: 'Paginated cities response',
 							content: {
 								'application/json': {
 									schema: listResponseSchema(citySchema)
@@ -594,8 +609,7 @@ export function openApiSpec(config: SiteConfig) {
 					parameters: [fieldsParameter, ...paginationParams],
 					responses: {
 						'200': {
-							description:
-								'Array of timezones, or paginated wrapper when limit/offset/cursor is provided',
+							description: 'Paginated timezones response',
 							content: {
 								'application/json': {
 									schema: listResponseSchema(timezoneEntrySchema)
@@ -641,8 +655,7 @@ export function openApiSpec(config: SiteConfig) {
 					parameters: [fieldsParameter, ...paginationParams],
 					responses: {
 						'200': {
-							description:
-								'Array of currencies, or paginated wrapper when limit/offset/cursor is provided',
+							description: 'Paginated currencies response',
 							content: {
 								'application/json': {
 									schema: listResponseSchema(currencyEntrySchema)
