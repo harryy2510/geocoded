@@ -48,6 +48,9 @@ curl https://api.geocoded.me/countries/IN/states?fields=name,iso2
 # Cities in a state
 curl https://api.geocoded.me/countries/US/states/CA/cities?fields=name,timezone
 
+# City by stable GeoNames ID
+curl https://api.geocoded.me/cities/5391959
+
 # Search
 curl "https://api.geocoded.me/search?q=new+york&type=city"
 ```
@@ -67,7 +70,8 @@ Postman collection: `https://api.geocoded.me/postman.json`
 | `GET`  | `/countries/:country/states`                     | States for a country                                             |
 | `GET`  | `/countries/:country/states/:state`              | State by iso2 or name                                            |
 | `GET`  | `/countries/:country/states/:state/cities`       | Cities for a state                                               |
-| `GET`  | `/countries/:country/states/:state/cities/:city` | City by name                                                     |
+| `GET`  | `/countries/:country/states/:state/cities/:city` | City by name; returns 409 when the name is ambiguous             |
+| `GET`  | `/cities/:geonameId`                             | City by stable GeoNames ID                                       |
 | `GET`  | `/timezones`                                     | List all IANA timezones                                          |
 | `GET`  | `/timezones/:id`                                 | Timezone by IANA ID (e.g. America/New_York)                      |
 | `GET`  | `/currencies`                                    | List all ISO 4217 currencies                                     |

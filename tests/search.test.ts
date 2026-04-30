@@ -41,6 +41,11 @@ class FakeStatement {
 		const [first] = this.db.select(this.sql, this.parameters)
 		return Promise.resolve((first as T | undefined) ?? null)
 	}
+
+	run(): Promise<{ success: true }> {
+		this.db.execute(this.sql, this.parameters)
+		return Promise.resolve({ success: true })
+	}
 }
 
 class FakeD1Database {
@@ -55,11 +60,17 @@ class FakeD1Database {
 	]
 
 	readonly cities = [
-		cityRow('US', 'United States', 'CA', 'California', 'San Francisco'),
-		cityRow('US', 'United States', 'CA', 'California', 'Los Angeles')
+		cityRow(1, 'US', 'United States', 'CA', 'California', 'San Francisco'),
+		cityRow(2, 'US', 'United States', 'CA', 'California', 'Los Angeles'),
+		cityRow(3, 'ID', 'Indonesia', 'JI', 'East Java', 'Krajan'),
+		cityRow(4, 'ID', 'Indonesia', 'JI', 'East Java', 'Krajan')
 	]
 
 	readonly searchRows = [
+		searchRow('Springfield', 'city', 'US', 'CA', {
+			country_name: 'United States',
+			state_name: 'California'
+		}),
 		searchRow('California', 'state', 'US', 'CA', {
 			country_name: 'United States'
 		}),
@@ -73,6 +84,8 @@ class FakeD1Database {
 		})
 	]
 
+	readonly quizStats: Row[] = []
+
 	prepare(sql: string): FakeStatement {
 		return new FakeStatement(this, sql)
 	}
@@ -82,6 +95,9 @@ class FakeD1Database {
 	}
 
 	select(sql: string, parameters: unknown[]): Row[] {
+		if (sql.includes('COUNT(*) AS count') && sql.includes('FROM quiz_stats')) {
+			return this.selectQuizStats(sql, parameters)
+		}
 		if (sql.includes('COUNT(*) AS total')) {
 			return [{ total: this.selectRows(sql, parameters).length }]
 		}
@@ -101,7 +117,22 @@ class FakeD1Database {
 		if (sql.includes('FROM cities')) {
 			return this.selectCities(sql, parameters)
 		}
+		if (sql.includes('FROM quiz_stats')) {
+			return this.selectQuizStats(sql, parameters)
+		}
 		return []
+	}
+
+	execute(sql: string, parameters: unknown[]): void {
+		if (sql.includes('INSERT INTO quiz_stats')) {
+			this.quizStats.push({
+				mode: parameters[0],
+				score: parameters[1],
+				total: parameters[2],
+				client_hash: parameters[3] ?? null,
+				created_at: '2026-04-30 00:00:00'
+			})
+		}
 	}
 
 	private selectSearchRows(sql: string, parameters: unknown[]): Row[] {
@@ -109,8 +140,14 @@ class FakeD1Database {
 		const typeParameter = parameters.find((parameter) =>
 			['country', 'state', 'city'].includes(String(parameter))
 		)
+		const searchesAllIndexedColumns = sql.includes('search_index MATCH')
 		return this.searchRows.filter((row) => {
-			const matchesName = String(row.name).toLowerCase().includes(query)
+			const values = searchesAllIndexedColumns
+				? [row.name, row.type, row.country_code, row.state_code, row.extra]
+				: [row.name]
+			const matchesName = values.some((value) =>
+				String(value).toLowerCase().includes(query)
+			)
 			const matchesType =
 				!sql.includes('type = ?') || row.type === typeParameter
 			return matchesName && matchesType
@@ -142,17 +179,63 @@ class FakeD1Database {
 	}
 
 	private selectCities(sql: string, parameters: unknown[]): Row[] {
+		if (sql.includes('geoname_id = ?')) {
+			const geonameId = Number(parameters[0])
+			return this.cities.filter((city) => city.geoname_id === geonameId)
+		}
 		const countryCode = String(parameters[0] ?? '').toUpperCase()
 		const stateCode = String(parameters[1] ?? '').toUpperCase()
-		const rows = this.cities.filter(
+		let rows = this.cities.filter(
 			(city) =>
 				city.country_code === countryCode && city.state_code === stateCode
 		)
+		if (sql.includes('LOWER(name) = ?') || sql.includes('name = ?')) {
+			const query = String(parameters[2] ?? '').toLowerCase()
+			rows = rows.filter((city) => String(city.name).toLowerCase() === query)
+		}
 		if (!sql.includes('LIKE')) return rows
 		const query = likeParameterToQuery(parameters.find(isLikeParameter))
 		return rows.filter((city) =>
 			String(city.name).toLowerCase().includes(query)
 		)
+	}
+
+	private selectQuizStats(sql: string, parameters: unknown[]): Row[] {
+		if (sql.includes('client_hash')) {
+			const clientHash = parameters[0]
+			return [
+				{
+					count: this.quizStats.filter(
+						(stat) => stat.client_hash === clientHash
+					).length
+				}
+			]
+		}
+		if (sql.includes('GROUP BY score')) {
+			const mode = parameters[0]
+			const counts = new Map<number, number>()
+			for (const stat of this.quizStats.filter((row) => row.mode === mode)) {
+				const score = Number(stat.score)
+				counts.set(score, (counts.get(score) ?? 0) + 1)
+			}
+			return [...counts.entries()].map(([score, count]) => ({ score, count }))
+		}
+		if (sql.includes('ROUND(AVG(score)')) {
+			const score = Number(parameters[0])
+			const mode = parameters[1]
+			const rows = this.quizStats.filter((row) => row.mode === mode)
+			const avg =
+				rows.reduce((sum, row) => sum + Number(row.score), 0) /
+				Math.max(rows.length, 1)
+			return [
+				{
+					total_attempts: rows.length,
+					avg_score: Math.round(avg * 10) / 10,
+					at_or_below: rows.filter((row) => Number(row.score) <= score).length
+				}
+			]
+		}
+		return [{ count: this.quizStats.length }]
 	}
 }
 
@@ -183,6 +266,34 @@ describe('search routes', () => {
 		expect(body.data.map((result) => result.type)).toEqual(['city'])
 	})
 
+	test('global search only matches entity names, not indexed metadata columns', async () => {
+		const response = await request('/search?q=city')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<{ name: string }>
+		expect(body.data).toEqual([])
+	})
+
+	test('rejects mutually exclusive offset and cursor pagination params', async () => {
+		const response = await request('/countries?offset=1&cursor=Mg')
+
+		expect(response.status).toBe(400)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({
+			error: 'Query parameters "offset" and "cursor" cannot be combined'
+		})
+	})
+
+	test('rejects invalid cursor pagination params', async () => {
+		const response = await request('/countries?cursor=not-a-valid-cursor')
+
+		expect(response.status).toBe(400)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({
+			error: 'Query parameter "cursor" is invalid'
+		})
+	})
+
 	test('searches countries with q', async () => {
 		const response = await request('/countries?q=uni')
 
@@ -208,6 +319,85 @@ describe('search routes', () => {
 		const body = (await response.json()) as PaginatedBody<{ name: string }>
 		expect(body.data.map((city) => city.name)).toEqual(['San Francisco'])
 		expect(body.meta.total).toBe(1)
+	})
+
+	test('returns conflict instead of an arbitrary city when city name is ambiguous', async () => {
+		const response = await request('/countries/ID/states/JI/cities/Krajan')
+
+		expect(response.status).toBe(409)
+		const body = (await response.json()) as {
+			error: string
+			matches: Array<{ geonameId: number; name: string }>
+		}
+		expect(body.error).toBe('City name is ambiguous')
+		expect(body.matches.map((city) => city.geonameId)).toEqual([3, 4])
+	})
+
+	test('root location enrichment looks up the city directly', async () => {
+		const db = new FakeD1Database()
+		const response = await request('/', {
+			db,
+			cf: {
+				country: 'US',
+				regionCode: 'CA',
+				city: 'San Francisco'
+			}
+		})
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as { cityInfo?: { name: string } }
+		expect(body.cityInfo?.name).toBe('San Francisco')
+	})
+
+	test('rejects quiz stat writes from untrusted browser origins', async () => {
+		const response = await request('/quiz/stats', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				Origin: 'https://bad.test'
+			},
+			body: JSON.stringify({ mode: 'capital', score: 5, total: 10 })
+		})
+
+		expect(response.status).toBe(403)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'Forbidden origin' })
+	})
+
+	test('rate limits quiz stat writes by client', async () => {
+		const db = new FakeD1Database()
+		for (let i = 0; i < 60; i++) {
+			const response = await request('/quiz/stats', {
+				db,
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ mode: 'capital', score: 5, total: 10 })
+			})
+			expect(response.status).toBe(200)
+		}
+
+		const response = await request('/quiz/stats', {
+			db,
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({ mode: 'capital', score: 5, total: 10 })
+		})
+
+		expect(response.status).toBe(429)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'Rate limit exceeded' })
+	})
+
+	test('invalid quiz stat JSON returns a client error', async () => {
+		const response = await request('/quiz/stats', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: '{'
+		})
+
+		expect(response.status).toBe(400)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'Invalid JSON body' })
 	})
 
 	test('documents scoped search parameters in OpenAPI', async () => {
@@ -242,15 +432,34 @@ describe('search routes', () => {
 	})
 })
 
-async function request(path: string): Promise<Response> {
+async function request(
+	path: string,
+	options: {
+		body?: BodyInit
+		cf?: Partial<IncomingRequestCfProperties>
+		db?: FakeD1Database
+		headers?: HeadersInit
+		method?: string
+	} = {}
+): Promise<Response> {
 	const env = {
-		GEO_DB: new FakeD1Database(),
+		API_URL: 'https://api.geocoded.me',
+		SITE_URL: 'https://geocoded.me',
+		GEO_DB: options.db ?? new FakeD1Database(),
 		ASSETS: {
 			fetch: () => new Response('not found', { status: 404 })
 		}
 	}
 
-	return await app.fetch(new Request(`https://api.geocoded.me${path}`), env)
+	const rawRequest = new Request(`https://api.geocoded.me${path}`, {
+		body: options.body,
+		headers: options.headers,
+		method: options.method
+	})
+	if (options.cf) {
+		Object.defineProperty(rawRequest, 'cf', { value: options.cf })
+	}
+	return await app.fetch(rawRequest, env)
 }
 
 function parameterNames(
@@ -371,6 +580,7 @@ function stateRow(
 }
 
 function cityRow(
+	geonameId: number,
 	countryCode: string,
 	countryName: string,
 	stateCode: string,
@@ -380,6 +590,7 @@ function cityRow(
 	return {
 		country_code: countryCode,
 		country_name: countryName,
+		geoname_id: geonameId,
 		latitude: '0',
 		longitude: '0',
 		name,

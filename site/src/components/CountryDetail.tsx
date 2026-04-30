@@ -52,15 +52,14 @@ export function CountryDetail({
 			return
 		}
 		setExpandedState(stateCode)
-		if (!stateCities[stateCode]) {
-			setLoadingCities(stateCode)
-			try {
-				const result = await fetchCities(country.iso2, stateCode, 20)
-				const cities = Array.isArray(result) ? result : result.data
-				setStateCities((prev) => ({ ...prev, [stateCode]: cities }))
-			} catch {
-				setStateCities((prev) => ({ ...prev, [stateCode]: [] }))
-			} finally {
+			if (!stateCities[stateCode]) {
+				setLoadingCities(stateCode)
+				try {
+					const result = await fetchCities(country.iso2, stateCode, 20)
+					setStateCities((prev) => ({ ...prev, [stateCode]: result.data }))
+				} catch {
+					setStateCities((prev) => ({ ...prev, [stateCode]: [] }))
+				} finally {
 				setLoadingCities(null)
 			}
 		}

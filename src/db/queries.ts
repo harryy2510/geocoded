@@ -74,6 +74,7 @@ const rowToState = (row: D1Row): State => ({
 const rowToCity = (row: D1Row): City => ({
 	countryCode: row.country_code as string,
 	countryName: row.country_name as string,
+	geonameId: (row.geoname_id as number | null) ?? null,
 
 	latitude: row.latitude as string,
 	longitude: row.longitude as string,
@@ -89,12 +90,11 @@ export const getCountryById = async (
 	id: string
 ): Promise<Country | null> => {
 	const upper = id.toUpperCase()
-	const lower = id.toLowerCase()
 	const row = await db
 		.prepare(
-			'SELECT * FROM countries WHERE iso2 = ?1 OR iso3 = ?1 OR LOWER(name) = ?2 LIMIT 1'
+			'SELECT * FROM countries WHERE iso2 = ?1 OR iso3 = ?1 OR name = ?2 COLLATE NOCASE LIMIT 1'
 		)
-		.bind(upper, lower)
+		.bind(upper, id)
 		.first()
 	return row ? rowToCountry(row) : null
 }
@@ -105,12 +105,11 @@ export const getStateByIso2OrName = async (
 	stateId: string
 ): Promise<State | null> => {
 	const upper = stateId.toUpperCase()
-	const lower = stateId.toLowerCase()
 	const row = await db
 		.prepare(
-			'SELECT * FROM states WHERE country_code = ?1 AND (iso2 = ?2 OR LOWER(name) = ?3) LIMIT 1'
+			'SELECT * FROM states WHERE country_code = ?1 AND (iso2 = ?2 OR name = ?3 COLLATE NOCASE) LIMIT 1'
 		)
-		.bind(countryCode.toUpperCase(), upper, lower)
+		.bind(countryCode.toUpperCase(), upper, stateId)
 		.first()
 	return row ? rowToState(row) : null
 }
@@ -137,13 +136,35 @@ export const getCityByName = async (
 ): Promise<City | null> => {
 	const row = await db
 		.prepare(
-			'SELECT * FROM cities WHERE country_code = ? AND state_code = ? AND LOWER(name) = ? LIMIT 1'
+			'SELECT * FROM cities WHERE country_code = ? AND state_code = ? AND name = ? COLLATE NOCASE ORDER BY population DESC, geoname_id LIMIT 1'
 		)
-		.bind(
-			countryCode.toUpperCase(),
-			stateCode.toUpperCase(),
-			cityName.toLowerCase()
+		.bind(countryCode.toUpperCase(), stateCode.toUpperCase(), cityName)
+		.first()
+	return row ? rowToCity(row) : null
+}
+
+export const getCityByNameMatches = async (
+	db: D1Database,
+	countryCode: string,
+	stateCode: string,
+	cityName: string
+): Promise<City[]> => {
+	const { results } = await db
+		.prepare(
+			'SELECT * FROM cities WHERE country_code = ? AND state_code = ? AND name = ? COLLATE NOCASE ORDER BY population DESC, geoname_id LIMIT 100'
 		)
+		.bind(countryCode.toUpperCase(), stateCode.toUpperCase(), cityName)
+		.all()
+	return results.map(rowToCity)
+}
+
+export const getCityByGeonameId = async (
+	db: D1Database,
+	geonameId: number
+): Promise<City | null> => {
+	const row = await db
+		.prepare('SELECT * FROM cities WHERE geoname_id = ? LIMIT 1')
+		.bind(geonameId)
 		.first()
 	return row ? rowToCity(row) : null
 }
@@ -304,7 +325,7 @@ export const search = async (
 	type?: SearchResultType
 ): Promise<{ rows: SearchResult[]; total: number }> => {
 	const ftsQuery = toFtsPrefixQuery(query)
-	const filters = ['search_index MATCH ?']
+	const filters = ['name MATCH ?']
 	const searchBindings: Array<string | number> = [ftsQuery]
 	if (type) {
 		filters.push('type = ?')
@@ -316,9 +337,10 @@ export const search = async (
 		db
 			.prepare(
 				`SELECT name, type, country_code, state_code, extra
-				FROM search_index
-				WHERE ${where}
-				LIMIT ? OFFSET ?`
+					FROM search_index
+					WHERE ${where}
+					ORDER BY rank
+					LIMIT ? OFFSET ?`
 			)
 			.bind(...searchBindings, limit, offset),
 		db
@@ -334,6 +356,7 @@ export const search = async (
 			countryCode: row.country_code as string,
 			countryName:
 				(extra.country_name as string) ?? (row.country_code as string),
+			geonameId: (extra.geoname_id as number | null) ?? null,
 			stateCode: (row.state_code as string) ?? null,
 			stateName: (extra.state_name as string) ?? null
 		}

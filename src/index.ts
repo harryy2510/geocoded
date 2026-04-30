@@ -1,9 +1,10 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import {
-	getCitiesByCountryState,
-	getCitiesPaginated,
+	getCityByGeonameId,
 	getCityByName,
+	getCityByNameMatches,
+	getCitiesPaginated,
 	getCountriesPaginated,
 	getCountryById,
 	getCurrenciesPaginated,
@@ -41,6 +42,8 @@ const app = new Hono<{ Bindings: Env }>()
 const CACHE_HEADERS = {
 	'Cache-Control': 'public, max-age=31536000, s-maxage=31536000, immutable'
 } as const
+
+const QUIZ_RATE_LIMIT_PER_HOUR = 60
 
 function jsonResponse<T>(
 	c: {
@@ -108,20 +111,72 @@ type PaginationParams = {
 
 function parsePagination(c: {
 	req: { query: (k: string) => string | undefined }
-}): PaginationParams {
+	json: (
+		data: { error: string },
+		status?: number,
+		headers?: Record<string, string>
+	) => Response
+}): PaginationParams | Response {
 	const rawLimit = c.req.query('limit')
 	const rawOffset = c.req.query('offset')
 	const rawCursor = c.req.query('cursor')
-	const limit = Math.min(
-		Math.max(parseInt(rawLimit || '25', 10) || 25, 1),
-		2000
-	)
-	if (rawCursor) {
+	const limitResult = parsePositiveInteger(rawLimit, 'limit', 25)
+	if (typeof limitResult === 'string')
+		return c.json({ error: limitResult }, 400)
+	const limit = Math.min(limitResult, 2000)
+
+	if (rawCursor !== undefined && rawOffset !== undefined) {
+		return c.json(
+			{ error: 'Query parameters "offset" and "cursor" cannot be combined' },
+			400
+		)
+	}
+
+	if (rawCursor !== undefined) {
+		if (rawCursor.trim().length === 0) {
+			return c.json({ error: 'Query parameter "cursor" is invalid' }, 400)
+		}
 		const decoded = decodeCursor(rawCursor)
+		if (decoded === null) {
+			return c.json({ error: 'Query parameter "cursor" is invalid' }, 400)
+		}
 		return { limit, offset: decoded, cursor: rawCursor }
 	}
-	const offset = Math.max(parseInt(rawOffset || '0', 10) || 0, 0)
+	const offsetResult = parseNonNegativeInteger(rawOffset, 'offset', 0)
+	if (typeof offsetResult === 'string')
+		return c.json({ error: offsetResult }, 400)
+	const offset = offsetResult
 	return { limit, offset, cursor: null }
+}
+
+function parsePositiveInteger(
+	value: string | undefined,
+	name: string,
+	defaultValue: number
+): number | string {
+	if (value === undefined || value === '') return defaultValue
+	if (!/^\d+$/.test(value))
+		return `Query parameter "${name}" must be an integer`
+	const parsed = Number(value)
+	if (!Number.isSafeInteger(parsed) || parsed < 1) {
+		return `Query parameter "${name}" must be greater than 0`
+	}
+	return parsed
+}
+
+function parseNonNegativeInteger(
+	value: string | undefined,
+	name: string,
+	defaultValue: number
+): number | string {
+	if (value === undefined || value === '') return defaultValue
+	if (!/^\d+$/.test(value))
+		return `Query parameter "${name}" must be an integer`
+	const parsed = Number(value)
+	if (!Number.isSafeInteger(parsed)) {
+		return `Query parameter "${name}" is too large`
+	}
+	return parsed
 }
 
 function encodeCursor(offset: number): string {
@@ -131,12 +186,19 @@ function encodeCursor(offset: number): string {
 		.replace(/=/g, '')
 }
 
-function decodeCursor(cursor: string): number {
+function decodeCursor(cursor: string): number | null {
+	if (!/^[A-Za-z0-9_-]+$/.test(cursor)) return null
 	const padded =
 		cursor.replace(/-/g, '+').replace(/_/g, '/') +
 		'=='.slice(0, (4 - (cursor.length % 4)) % 4)
-	const decoded = parseInt(atob(padded), 10)
-	return Number.isNaN(decoded) ? 0 : Math.max(decoded, 0)
+	try {
+		const decodedText = atob(padded)
+		if (!/^\d+$/.test(decodedText)) return null
+		const decoded = Number(decodedText)
+		return Number.isSafeInteger(decoded) ? decoded : null
+	} catch {
+		return null
+	}
 }
 
 function parseSearchType(
@@ -151,6 +213,111 @@ function parseSearchType(
 			return value
 		default:
 			return null
+	}
+}
+
+function isTrustedQuizOrigin(
+	env: Env,
+	requestUrl: string,
+	origin: string | undefined
+): boolean {
+	if (!origin) return true
+	const parsedOrigin = parseOrigin(origin)
+	if (!parsedOrigin) return false
+	const originHost = new URL(parsedOrigin).hostname
+	if (originHost === 'localhost' || originHost === '127.0.0.1') return true
+
+	const trusted = new Set<string>()
+	for (const value of [env.SITE_URL, env.API_URL, requestUrl]) {
+		addTrustedOrigin(trusted, value)
+	}
+	return trusted.has(parsedOrigin)
+}
+
+function addTrustedOrigin(
+	trusted: Set<string>,
+	value: string | undefined
+): void {
+	if (!value) return
+	const parsed = parseOrigin(value)
+	if (!parsed) return
+	trusted.add(parsed)
+
+	const url = new URL(parsed)
+	if (url.hostname === 'localhost' || url.hostname === '127.0.0.1') return
+	if (url.hostname.startsWith('www.')) {
+		url.hostname = url.hostname.slice(4)
+		trusted.add(url.origin)
+		return
+	}
+	url.hostname = `www.${url.hostname}`
+	trusted.add(url.origin)
+}
+
+function parseOrigin(value: string): string | null {
+	try {
+		return new URL(value).origin
+	} catch {
+		return null
+	}
+}
+
+async function sha256Hex(value: string): Promise<string> {
+	const data = new TextEncoder().encode(value)
+	const digest = await crypto.subtle.digest('SHA-256', data)
+	return [...new Uint8Array(digest)]
+		.map((byte) => byte.toString(16).padStart(2, '0'))
+		.join('')
+}
+
+async function getQuizClientHash(c: {
+	req: {
+		header: (name: string) => string | undefined
+	}
+}): Promise<string> {
+	const ip = c.req.header('cf-connecting-ip') ?? 'unknown'
+	const userAgent = c.req.header('user-agent') ?? ''
+	return sha256Hex(`${ip}\n${userAgent}`)
+}
+
+async function getRecentQuizAttemptCount(
+	db: D1Database,
+	clientHash: string
+): Promise<number | null> {
+	try {
+		const row = await db
+			.prepare(
+				`SELECT COUNT(*) AS count
+				FROM quiz_stats
+				WHERE client_hash = ? AND created_at >= datetime('now', '-1 hour')`
+			)
+			.bind(clientHash)
+			.first<{ count: number }>()
+		return row?.count ?? 0
+	} catch {
+		return null
+	}
+}
+
+async function insertQuizStat(
+	db: D1Database,
+	mode: string,
+	score: number,
+	total: number,
+	clientHash: string
+): Promise<void> {
+	try {
+		await db
+			.prepare(
+				'INSERT INTO quiz_stats (mode, score, total, client_hash) VALUES (?, ?, ?, ?)'
+			)
+			.bind(mode, score, total, clientHash)
+			.run()
+	} catch {
+		await db
+			.prepare('INSERT INTO quiz_stats (mode, score, total) VALUES (?, ?, ?)')
+			.bind(mode, score, total)
+			.run()
 	}
 }
 
@@ -202,25 +369,21 @@ app.get('/', async (c) => {
 	const cityName = cf?.city
 
 	const db = c.env.GEO_DB
-	const [countryInfo, stateInfo, cities] = await Promise.all([
+	const [countryInfo, stateInfo, cityInfo] = await Promise.all([
 		countryCode ? getCountryById(db, countryCode) : null,
 		countryCode && regionCode
 			? getStateByIso2OrName(db, countryCode, regionCode)
 			: null,
-		countryCode && regionCode
-			? getCitiesByCountryState(db, countryCode, regionCode)
+		countryCode && regionCode && cityName
+			? getCityByName(db, countryCode, regionCode, cityName)
 			: null
 	])
-
-	const cityInfo = cityName
-		? cities?.find((ci) => ci.name.toLowerCase() === cityName.toLowerCase())
-		: undefined
 
 	const location: Location = {
 		asn: cf?.asn as number | undefined,
 		asOrganization: cf?.asOrganization,
 		city: cf?.city,
-		cityInfo,
+		cityInfo: cityInfo ?? undefined,
 		colo: cf?.colo,
 		continent: cf?.continent,
 		country: countryCode,
@@ -255,6 +418,7 @@ app.get('/search', async (c) => {
 		)
 	}
 	const page = parsePagination(c)
+	if (page instanceof Response) return page
 	const { rows, total } = await search(
 		c.env.GEO_DB,
 		q,
@@ -270,6 +434,7 @@ app.get('/search', async (c) => {
 app.get('/countries', async (c) => {
 	const db = c.env.GEO_DB
 	const page = parsePagination(c)
+	if (page instanceof Response) return page
 	const fields = c.req.query('fields')
 	const q = c.req.query('q')?.trim()
 	if (q) {
@@ -308,6 +473,7 @@ app.get('/countries/:country/states', async (c) => {
 	const db = c.env.GEO_DB
 	const countryCode = c.req.param('country').toUpperCase()
 	const page = parsePagination(c)
+	if (page instanceof Response) return page
 	const fields = c.req.query('fields')
 	const q = c.req.query('q')?.trim()
 	if (q) {
@@ -351,6 +517,7 @@ app.get('/countries/:country/states/:state/cities', async (c) => {
 	const countryCode = c.req.param('country').toUpperCase()
 	const stateCode = c.req.param('state').toUpperCase()
 	const page = parsePagination(c)
+	if (page instanceof Response) return page
 	const fields = c.req.query('fields')
 	const q = c.req.query('q')?.trim()
 	if (q) {
@@ -385,7 +552,25 @@ app.get('/countries/:country/states/:state/cities/:city', async (c) => {
 	const countryCode = c.req.param('country').toUpperCase()
 	const stateCode = c.req.param('state').toUpperCase()
 	const cityName = c.req.param('city')
-	const city = await getCityByName(db, countryCode, stateCode, cityName)
+	const cities = await getCityByNameMatches(
+		db,
+		countryCode,
+		stateCode,
+		cityName
+	)
+	if (cities.length === 0) return c.json({ error: 'City not found' }, 404)
+	if (cities.length > 1) {
+		return c.json({ error: 'City name is ambiguous', matches: cities }, 409)
+	}
+	return jsonResponse(c, pickFields(cities[0]!, c.req.query('fields')))
+})
+
+app.get('/cities/:geonameId', async (c) => {
+	const id = c.req.param('geonameId')
+	if (!/^\d+$/.test(id)) {
+		return c.json({ error: 'City ID must be a GeoNames integer ID' }, 400)
+	}
+	const city = await getCityByGeonameId(c.env.GEO_DB, Number(id))
 	if (!city) return c.json({ error: 'City not found' }, 404)
 	return jsonResponse(c, pickFields(city, c.req.query('fields')))
 })
@@ -395,6 +580,7 @@ app.get('/countries/:country/states/:state/cities/:city', async (c) => {
 app.get('/timezones', async (c) => {
 	const db = c.env.GEO_DB
 	const page = parsePagination(c)
+	if (page instanceof Response) return page
 	const fields = c.req.query('fields')
 	const { rows, total } = await getTimezonesPaginated(
 		db,
@@ -420,6 +606,7 @@ app.get('/timezones/:id{.+}', async (c) => {
 app.get('/currencies', async (c) => {
 	const db = c.env.GEO_DB
 	const page = parsePagination(c)
+	if (page instanceof Response) return page
 	const fields = c.req.query('fields')
 	const { rows, total } = await getCurrenciesPaginated(
 		db,
@@ -442,28 +629,43 @@ app.get('/currencies/:code', async (c) => {
 // --- Quiz Stats ---
 
 app.post('/quiz/stats', async (c) => {
+	if (!isTrustedQuizOrigin(c.env, c.req.url, c.req.header('origin'))) {
+		return c.json({ error: 'Forbidden origin' }, 403)
+	}
+
 	const db = c.env.GEO_DB
-	const body = await c.req.json<{
+	let body: {
 		mode: string
 		score: number
 		total?: number
-	}>()
+	}
+	try {
+		body = await c.req.json<typeof body>()
+	} catch {
+		return c.json({ error: 'Invalid JSON body' }, 400)
+	}
 	const { mode, score, total = 10 } = body
 
 	const validModes = ['capital', 'flag', 'population', 'geography', 'neighbour']
 	if (
 		!validModes.includes(mode) ||
-		typeof score !== 'number' ||
+		!Number.isInteger(score) ||
+		!Number.isInteger(total) ||
 		score < 0 ||
-		score > total
+		score > total ||
+		total < 1 ||
+		total > 50
 	) {
 		return c.json({ error: 'Invalid input' }, 400)
 	}
 
-	await db
-		.prepare('INSERT INTO quiz_stats (mode, score, total) VALUES (?, ?, ?)')
-		.bind(mode, score, total)
-		.run()
+	const clientHash = await getQuizClientHash(c)
+	const recentAttempts = await getRecentQuizAttemptCount(db, clientHash)
+	if (recentAttempts !== null && recentAttempts >= QUIZ_RATE_LIMIT_PER_HOUR) {
+		return c.json({ error: 'Rate limit exceeded' }, 429)
+	}
+
+	await insertQuizStat(db, mode, score, total, clientHash)
 
 	const stats = await db
 		.prepare(

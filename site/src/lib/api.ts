@@ -1,8 +1,6 @@
-const API_URL =
-	typeof import.meta !== 'undefined' && (import.meta as Record<string, unknown>).env
-		? ((import.meta as Record<string, unknown>).env as Record<string, string>)
-				.PUBLIC_API_URL || 'https://api.geocoded.me'
-		: 'https://api.geocoded.me'
+const importMetaEnv = (import.meta as unknown as { env?: Record<string, string> })
+	.env
+const API_URL = importMetaEnv?.PUBLIC_API_URL || 'https://api.geocoded.me'
 
 export type Country = {
 	name: string
@@ -64,8 +62,9 @@ export type City = {
 	countryName: string
 	stateCode: string
 	stateName: string
-	latitude: number
-	longitude: number
+	geonameId: number | null
+	latitude: string
+	longitude: string
 	population: number
 	timezone: string
 }
@@ -91,6 +90,7 @@ type PaginatedResponse<T> = {
 		limit: number
 		offset: number
 		hasMore: boolean
+		cursor: string | null
 	}
 }
 
@@ -103,33 +103,40 @@ async function apiFetch<T>(path: string): Promise<T> {
 }
 
 export async function fetchCountries(): Promise<Country[]> {
-	return apiFetch<Country[]>('/countries')
+	return fetchPaginatedList<Country>('/countries?limit=2000')
 }
 
 export async function fetchStates(countryCode: string): Promise<State[]> {
-	return apiFetch<State[]>(`/countries/${countryCode}/states`)
+	return fetchPaginatedList<State>(
+		`/countries/${encodeURIComponent(countryCode)}/states?limit=2000`,
+	)
 }
 
 export async function fetchCities(
 	countryCode: string,
 	stateCode: string,
 	limit = 50,
-): Promise<City[] | PaginatedResponse<City>> {
-	return apiFetch<City[] | PaginatedResponse<City>>(
-		`/countries/${countryCode}/states/${stateCode}/cities?limit=${limit}`,
+): Promise<PaginatedResponse<City>> {
+	return apiFetch<PaginatedResponse<City>>(
+		`/countries/${encodeURIComponent(countryCode)}/states/${encodeURIComponent(stateCode)}/cities?limit=${limit}`,
 	)
 }
 
 export async function fetchTimezones(): Promise<TimezoneEntry[]> {
-	return apiFetch<TimezoneEntry[]>('/timezones')
+	return fetchPaginatedList<TimezoneEntry>('/timezones?limit=2000')
 }
 
 export async function fetchCurrencies(): Promise<Currency[]> {
-	return apiFetch<Currency[]>('/currencies')
+	return fetchPaginatedList<Currency>('/currencies?limit=2000')
 }
 
 export async function search(
 	query: string,
 ): Promise<PaginatedResponse<{ type: string; name: string; [key: string]: unknown }>> {
 	return apiFetch(`/search?q=${encodeURIComponent(query)}`)
+}
+
+async function fetchPaginatedList<T>(path: string): Promise<T[]> {
+	const response = await apiFetch<PaginatedResponse<T>>(path)
+	return response.data
 }

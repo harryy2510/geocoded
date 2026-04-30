@@ -15,6 +15,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+
+      - name: Detect deploy-coupled changes
+        id: changes
+        run: |
+          changed="$(git diff --name-only HEAD^ HEAD 2>/dev/null || git ls-files)"
+          if printf '%s\n' "$changed" | grep -Eq '^(src/|site/|wrangler\.jsonc|migrations/)'; then
+            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
 
       - uses: oven-sh/setup-bun@v2
         with:
@@ -22,9 +38,29 @@ jobs:
 
       - run: bun install
 
+      - name: Check Worker
+        run: bun check
+
+      - name: Test Worker
+        run: bun test
+
+      - name: Check seed safety
+        run: bun test tests/seed.test.ts
+
       - name: Seed D1 database
         run: bun seed:upload
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CACHE_ZONE: ${{ secrets.CACHE_ZONE }}
+
+      - name: Build Astro site
+        if: steps.changes.outputs.should_deploy == 'true'
+        run: cd site && bun install && bun run build
+
+      - name: Deploy Worker
+        if: steps.changes.outputs.should_deploy == 'true'
+        run: bun run deploy
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

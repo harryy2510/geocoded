@@ -75,6 +75,7 @@ type RawCity = {
 	longitude: string
 	population: number
 	timezone: string
+	geonameId: number
 }
 
 type RawTimezoneEntry = {
@@ -138,6 +139,7 @@ async function main() {
 
 	// Build SQL
 	const sql: string[] = []
+	sql.push('BEGIN TRANSACTION;')
 
 	// Clear existing data
 	sql.push('DELETE FROM search_index;')
@@ -178,7 +180,7 @@ async function main() {
 
 	for (const c of rawCities) {
 		sql.push(
-			`INSERT INTO cities (country_code,country_name,state_code,state_name,name,latitude,longitude,timezone,population) VALUES ('${esc(c.countryCode)}','${esc(c.countryName)}','${esc(c.stateCode)}','${esc(c.stateName)}','${esc(c.name)}','${esc(c.latitude)}','${esc(c.longitude)}','${esc(c.timezone)}',${nullable(c.population)});`
+			`INSERT INTO cities (country_code,country_name,state_code,state_name,name,latitude,longitude,timezone,population,geoname_id) VALUES ('${esc(c.countryCode)}','${esc(c.countryName)}','${esc(c.stateCode)}','${esc(c.stateName)}','${esc(c.name)}','${esc(c.latitude)}','${esc(c.longitude)}','${esc(c.timezone)}',${nullable(c.population)},${nullable(c.geonameId)});`
 		)
 	}
 
@@ -229,6 +231,7 @@ async function main() {
 		const extra = esc(
 			JSON.stringify({
 				country_name: c.countryName,
+				geoname_id: c.geonameId,
 				state_name: c.stateName
 			})
 		)
@@ -236,6 +239,8 @@ async function main() {
 			`INSERT INTO search_index (name,type,country_code,state_code,extra) VALUES ('${esc(c.name)}','city','${esc(c.countryCode)}','${esc(c.stateCode)}','${extra}');`
 		)
 	}
+
+	sql.push('COMMIT;')
 
 	// Write and execute
 	console.log(`\nWriting ${sql.length} SQL statements...`)
@@ -313,5 +318,8 @@ async function main() {
 }
 
 main()
-	.catch(console.error)
+	.catch((error) => {
+		console.error(error)
+		process.exitCode = 1
+	})
 	.finally(() => unlink(SQL_FILE).catch(() => {}))

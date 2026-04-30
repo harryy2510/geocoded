@@ -69,6 +69,7 @@ export type State = {
 export type City = {
 	countryCode: string
 	countryName: string
+	geonameId: number | null
 
 	latitude: string
 	longitude: string
@@ -104,6 +105,7 @@ export type SearchResult = {
 	name: string
 	countryCode: string
 	countryName: string
+	geonameId: number | null
 	stateCode: string | null
 	stateName: string | null
 }

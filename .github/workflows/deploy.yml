@@ -16,21 +16,46 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+
+      - name: Detect seed-coupled changes
+        id: changes
+        run: |
+          changed="$(git diff --name-only HEAD^ HEAD 2>/dev/null || git ls-files)"
+          if printf '%s\n' "$changed" | grep -Eq '^(data/.*\.json|scripts/seed\.ts|migrations/)'; then
+            echo "skip_deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip_deploy=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - uses: actions/setup-node@v4
+        if: steps.changes.outputs.skip_deploy != 'true'
         with:
           node-version: 24
 
       - uses: oven-sh/setup-bun@v2
+        if: steps.changes.outputs.skip_deploy != 'true'
         with:
           bun-version: latest
 
       - run: bun install
+        if: steps.changes.outputs.skip_deploy != 'true'
+
+      - name: Check Worker
+        if: steps.changes.outputs.skip_deploy != 'true'
+        run: bun check
+
+      - name: Test Worker
+        if: steps.changes.outputs.skip_deploy != 'true'
+        run: bun test
 
       - name: Build Astro site
+        if: steps.changes.outputs.skip_deploy != 'true'
         run: cd site && bun install && bun run build
 
       - name: Deploy Worker
+        if: steps.changes.outputs.skip_deploy != 'true'
         run: bun run deploy
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

@@ -130,6 +130,7 @@ const citySchema = {
 	properties: {
 		countryCode: { type: 'string' as const },
 		countryName: { type: 'string' as const },
+		geonameId: { type: 'number' as const, nullable: true },
 
 		latitude: { type: 'string' as const },
 		longitude: { type: 'string' as const },
@@ -277,6 +278,7 @@ const searchResultSchema = {
 		name: { type: 'string' as const },
 		countryCode: { type: 'string' as const },
 		countryName: { type: 'string' as const },
+		geonameId: { type: 'number' as const, nullable: true },
 		stateCode: { type: 'string' as const, nullable: true },
 		stateName: { type: 'string' as const, nullable: true }
 	}
@@ -563,7 +565,8 @@ export function openApiSpec(config: SiteConfig) {
 				get: {
 					tags: ['Cities'],
 					summary: 'Get one city',
-					description: 'Lookup by city name (case-insensitive).',
+					description:
+						'Lookup by city name (case-insensitive). If multiple cities in the same state share the same name, this returns `409` with matching city records. Use `/cities/{geonameId}` for an unambiguous lookup.',
 					parameters: [
 						{
 							name: 'country',
@@ -598,6 +601,53 @@ export function openApiSpec(config: SiteConfig) {
 								'application/json': { schema: citySchema }
 							}
 						},
+						'404': errorResponse,
+						'409': {
+							description: 'Multiple city records matched this name',
+							content: {
+								'application/json': {
+									schema: {
+										type: 'object' as const,
+										properties: {
+											error: { type: 'string' as const },
+											matches: {
+												type: 'array' as const,
+												items: citySchema
+											}
+										},
+										required: ['error', 'matches']
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			'/cities/{geonameId}': {
+				get: {
+					tags: ['Cities'],
+					summary: 'Get one city by GeoNames ID',
+					description:
+						'Lookup by stable GeoNames city ID. Prefer this endpoint when a city name is ambiguous inside a state.',
+					parameters: [
+						{
+							name: 'geonameId',
+							in: 'path' as const,
+							required: true,
+							description: 'GeoNames city ID',
+							schema: { type: 'integer' as const },
+							example: 5391959
+						},
+						fieldsParameter
+					],
+					responses: {
+						'200': {
+							description: 'City object',
+							content: {
+								'application/json': { schema: citySchema }
+							}
+						},
+						'400': errorResponse,
 						'404': errorResponse
 					}
 				}
