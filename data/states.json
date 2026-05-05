@@ -5427,7 +5427,7 @@
 		}
 	},
 	{
-		"name": "State of Salzburg",
+		"name": "Salzburg",
 		"iso2": "5",
 		"iso31662": "AT-5",
 		"countryCode": "AT",
@@ -30128,7 +30128,46 @@
 		}
 	},
 	{
-		"name": "Free and Hanseatic City of Hamburg",
+		"name": "Bremen",
+		"iso2": "HB",
+		"iso31662": "DE-HB",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"geonameId": 2944387,
+		"latitude": "53.08333",
+		"longitude": "8.83333",
+		"timezone": "Europe/Berlin",
+		"capital": "Bremen",
+		"population": 680130,
+		"type": "state",
+		"native": "Freie Hansestadt Bremen",
+		"wikidataId": "Q1209",
+		"translations": {
+			"es": "Ciudad libre hanseática de Bremen",
+			"fr": "Ville libre hanséatique de Brême",
+			"it": "Città libera anseatica di Brema",
+			"nl": "Vrije Hanzestad Bremen",
+			"ko": "자유 한자 도시 브레멘",
+			"mr": "ब्रेमन",
+			"uk": "Бремен",
+			"ar": "ولاية بريمن",
+			"ja": "ブレーメン州",
+			"th": "รัฐเบรเมิน",
+			"pl": "Brema",
+			"ru": "Бремен",
+			"zh": "不來梅州",
+			"pa": "ਬਰੇਮਨ",
+			"hi": "ब्रेमेन",
+			"ur": "برمن",
+			"de": "Freie Hansestadt Bremen",
+			"en": "Free Hanseatic City of Bremen",
+			"bn": "ব্রেমেন",
+			"jv": "Bremen",
+			"pt": "Bremen"
+		}
+	},
+	{
+		"name": "Hamburg",
 		"iso2": "HH",
 		"iso31662": "DE-HH",
 		"countryCode": "DE",
@@ -30172,45 +30211,6 @@
 			"pa": "ਹਾਮਬੁਰਗ",
 			"pl": "Hamburg",
 			"en": "Free and Hanseatic City of Hamburg"
-		}
-	},
-	{
-		"name": "Free Hanseatic City of Bremen",
-		"iso2": "HB",
-		"iso31662": "DE-HB",
-		"countryCode": "DE",
-		"countryName": "Germany",
-		"geonameId": 2944387,
-		"latitude": "53.08333",
-		"longitude": "8.83333",
-		"timezone": "Europe/Berlin",
-		"capital": "Bremen",
-		"population": 680130,
-		"type": "state",
-		"native": "Freie Hansestadt Bremen",
-		"wikidataId": "Q1209",
-		"translations": {
-			"es": "Ciudad libre hanseática de Bremen",
-			"fr": "Ville libre hanséatique de Brême",
-			"it": "Città libera anseatica di Brema",
-			"nl": "Vrije Hanzestad Bremen",
-			"ko": "자유 한자 도시 브레멘",
-			"mr": "ब्रेमन",
-			"uk": "Бремен",
-			"ar": "ولاية بريمن",
-			"ja": "ブレーメン州",
-			"th": "รัฐเบรเมิน",
-			"pl": "Brema",
-			"ru": "Бремен",
-			"zh": "不來梅州",
-			"pa": "ਬਰੇਮਨ",
-			"hi": "ब्रेमेन",
-			"ur": "برمن",
-			"de": "Freie Hansestadt Bremen",
-			"en": "Free Hanseatic City of Bremen",
-			"bn": "ব্রেমেন",
-			"jv": "Bremen",
-			"pt": "Bremen"
 		}
 	},
 	{
@@ -65748,30 +65748,6 @@
 		}
 	},
 	{
-		"name": "Province of Aosta",
-		"iso2": "23",
-		"iso31662": "IT-23",
-		"countryCode": "IT",
-		"countryName": "Italy",
-		"geonameId": 3182996,
-		"latitude": "45.76667",
-		"longitude": "7.41667",
-		"timezone": "Europe/Rome",
-		"capital": "Aosta",
-		"population": 125666,
-		"type": "province",
-		"native": "Provincia di Aosta",
-		"wikidataId": "",
-		"translations": {
-			"it": "Provincia di Aosta",
-			"fr": "Province d'Aoste",
-			"nl": "Provincie Aosta",
-			"de": "Provinz Aosta",
-			"es": "Provincia de Aosta",
-			"en": "Province of Aosta"
-		}
-	},
-	{
 		"name": "Province of Arezzo",
 		"iso2": "AR",
 		"iso31662": "IT-AR",
@@ -67885,6 +67861,30 @@
 		"translations": {
 			"it": "Udine",
 			"de": "Friaul"
+		}
+	},
+	{
+		"name": "Valle d'Aosta",
+		"iso2": "23",
+		"iso31662": "IT-23",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"geonameId": 3182996,
+		"latitude": "45.76667",
+		"longitude": "7.41667",
+		"timezone": "Europe/Rome",
+		"capital": "Aosta",
+		"population": 125666,
+		"type": "province",
+		"native": "Provincia di Aosta",
+		"wikidataId": "Q1222",
+		"translations": {
+			"it": "Provincia di Aosta",
+			"fr": "Vallée d'Aoste",
+			"nl": "Provincie Aosta",
+			"de": "Provinz Aosta",
+			"es": "Provincia de Aosta",
+			"en": "Valle d'Aosta"
 		}
 	},
 	{
