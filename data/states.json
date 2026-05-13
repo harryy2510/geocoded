@@ -38976,10 +38976,10 @@
 		"capital": "Donostia / San Sebastián",
 		"population": 726712,
 		"type": "autonomous community",
-		"native": "Provincia de Guipúzcoa",
+		"native": "Guipúzcoa",
 		"wikidataId": "Q95010",
 		"translations": {
-			"es": "Provincia de Guipúzcoa",
+			"es": "Guipúzcoa",
 			"de": "Guipuzcoa",
 			"fr": "Guipúzcoa",
 			"en": "Gipuzkoa",
@@ -65650,8 +65650,8 @@
 		"native": "Provincia di Messina",
 		"wikidataId": "Q16208",
 		"translations": {
-			"it": "Provincia di Messina",
 			"fr": "Province de Messine",
+			"it": "Provincia di Messina",
 			"en": "Province of Messina",
 			"de": "Provinz Messina",
 			"es": "Provincia de Mesina",
@@ -65664,7 +65664,8 @@
 			"pl": "Prowincja Mesyna",
 			"ru": "Мессина",
 			"zh": "墨西拿省",
-			"ur": "صوبہ میسینا"
+			"ur": "صوبہ میسینا",
+			"nl": "Provincie Messina"
 		}
 	},
 	{
@@ -65683,11 +65684,11 @@
 		"native": "Provincia di Napoli",
 		"wikidataId": "Q15123",
 		"translations": {
-			"it": "Provincia di Napoli",
 			"es": "Provincia de Nápoles",
 			"fr": "Province de Naples",
 			"de": "Provinz Neapel",
 			"pt": "Província de Nápoles",
+			"it": "Provincia di Napoli",
 			"en": "Province of Naples",
 			"nl": "Provincie Napels"
 		}
@@ -65876,7 +65877,11 @@
 		"wikidataId": "Q23498165",
 		"translations": {
 			"en": "Province of South Sardinia",
-			"it": "Provincia del Sud Sardegna"
+			"it": "Provincia del Sud Sardegna",
+			"nl": "Provincie Zuid-Sardinië",
+			"de": "Provinz Südsardinien",
+			"es": "Provincia di Cerdeña del Sur",
+			"fr": "Province du Sud-Sardaigne"
 		}
 	},
 	{
@@ -66915,9 +66920,11 @@
 		"native": "Provincia di Modena",
 		"wikidataId": "",
 		"translations": {
-			"es": "Módena",
-			"fr": "Modène",
-			"en": "Province of Modena"
+			"es": "Provincia de Módena",
+			"fr": "Province de Modène",
+			"en": "Province of Modena",
+			"nl": "Provincie Modena",
+			"de": "Provinz Modena"
 		}
 	},
 	{
@@ -66957,8 +66964,11 @@
 		"wikidataId": "Q16216",
 		"translations": {
 			"it": "Novara",
-			"fr": "Novare",
-			"en": "Province of Novara"
+			"fr": "Province de Novare",
+			"en": "Province of Novara",
+			"nl": "Provincie Novara",
+			"de": "Provinz Novara",
+			"es": "Provincia de Novara"
 		}
 	},
 	{
@@ -66978,7 +66988,11 @@
 		"wikidataId": "Q16220",
 		"translations": {
 			"it": "Nuoro",
-			"en": "Province of Nuoro"
+			"en": "Province of Nuoro",
+			"nl": "Provincie Nuoro",
+			"de": "Provinz Nuoro",
+			"es": "Provincia de Nuoro",
+			"fr": "Province de Nuoro"
 		}
 	},
 	{
@@ -66998,7 +67012,11 @@
 		"wikidataId": "Q16225",
 		"translations": {
 			"it": "Oristano",
-			"en": "Province of Oristano"
+			"en": "Province of Oristano",
+			"de": "Provinz Oristano",
+			"es": "Provincia de Oristano",
+			"nl": "Provincie Oristano",
+			"fr": "Province d'Oristano"
 		}
 	},
 	{
@@ -67020,7 +67038,9 @@
 			"de": "Padua",
 			"pt": "Pádua",
 			"en": "Province of Padua",
-			"nl": "Provincie Padua"
+			"nl": "Provincie Padua",
+			"es": "Provincia de Padua",
+			"fr": "Province de Padoue"
 		}
 	},
 	{
@@ -67042,7 +67062,8 @@
 			"fr": "Province de Parme",
 			"en": "Province of Parma",
 			"nl": "Provincie Parma",
-			"de": "Provinz Parma"
+			"de": "Provinz Parma",
+			"es": "Provincia de Parma"
 		}
 	},
 	{
@@ -67058,12 +67079,15 @@
 		"capital": "Pavia",
 		"population": 545888,
 		"type": "province",
-		"native": "Pavia",
+		"native": "Provincia di Pavia",
 		"wikidataId": "Q16231",
 		"translations": {
-			"it": "Pavia",
-			"es": "Pavía",
-			"en": "Province of Pavia"
+			"it": "Provincia di Pavia",
+			"es": "Provincia de Pavía",
+			"en": "Province of Pavia",
+			"nl": "Provincie Pavia",
+			"de": "Provinz Pavia",
+			"fr": "Province de Pavie"
 		}
 	},
 	{
