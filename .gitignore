@@ -10,6 +10,9 @@ dist/
 site/node_modules/
 site/dist/
 site/.astro/
+apps/*/node_modules/
+apps/*/dist/
+apps/*/.astro/
 .agents/local.json
 .agents/generated/
 .codex/

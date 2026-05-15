@@ -33,6 +33,21 @@
 
 ---
 
+## Monorepo Layout
+
+```text
+apps/
+├── api/      # Cloudflare Worker API
+└── site/     # Astro documentation site
+packages/
+└── client/   # Shared TypeScript API client
+```
+
+Add new reusable SDKs, client libraries, and shared packages under `packages/*`.
+App workspaces live under `apps/*`.
+
+---
+
 ## Quick Start
 
 ```bash
@@ -175,17 +190,20 @@ bun install
 cp wrangler.example.jsonc wrangler.jsonc
 
 # Create a D1 database
-bunx wrangler d1 create geo-db
+bun --bun wrangler d1 create geo-db
 # Copy the database_id from the output into wrangler.jsonc
 
 # Apply migrations locally
-bunx wrangler d1 migrations apply geo-db --local
+bun --bun wrangler d1 migrations apply geo-db --local
 
 # Seed local database
 bun seed
 
 # Start dev server
 bun dev
+
+# Start the Astro site dev server
+bun dev:site
 ```
 
 ### Configuration
@@ -232,7 +250,7 @@ For GitHub Actions, add `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN`, and `CA
 
 ```bash
 # Apply migrations to production D1
-bunx wrangler d1 migrations apply geo-db --remote
+bun --bun wrangler d1 migrations apply geo-db --remote
 
 # Seed production database
 bun seed:upload

@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, test } from 'bun:test'
-import { fetchCountries } from '../site/src/lib/api'
+import { fetchCountries } from '../packages/client/src/index'
 
 const originalFetch = globalThis.fetch
 

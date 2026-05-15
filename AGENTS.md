@@ -14,37 +14,41 @@ These instructions are the canonical guide for agents working in this repo. Clau
 
 ## Project Overview
 
-Geocoded is a Cloudflare Worker API serving country, state, city, timezone, currency, search, and IP geolocation data from Cloudflare D1. The Worker uses Hono and serves an Astro site from `site/dist` through Cloudflare Workers static assets.
+Geocoded is a Bun workspace monorepo. It contains a Cloudflare Worker API serving country, state, city, timezone, currency, search, and IP geolocation data from Cloudflare D1, an Astro docs site, and reusable client packages. The Worker uses Hono and serves the Astro site from `apps/site/dist` through Cloudflare Workers static assets.
 
 ## Commands
 
-- `bun install`: install dependencies.
+- `bun install`: install dependencies for all Bun workspaces.
 - `bun dev`: start the Worker dev server with Wrangler.
 - `bun run deploy`: deploy to Cloudflare. Only run when the user explicitly asks.
 - `bun seed`: seed the local D1 database from `data/*.json`.
 - `bun seed:upload`: seed the remote production D1 database. Only run when the user explicitly asks.
 - `bun run types`: regenerate `worker-configuration.d.ts`. This file is generated, do not edit it by hand.
+- `bun dev:site`: start the Astro site dev server.
+- `bun build:site`: build the Astro site.
+- `bun preview:site`: preview the Astro build.
 - `bun check`: run oxlint and oxfmt checks.
 - `bun run fix`: run automatic lint and format fixes.
-- `bunx tsc --noEmit`: type-check the Worker and seed script.
-- `bunx wrangler d1 migrations apply geo-db --local`: apply D1 migrations locally.
-- `cd site && bun run dev`: start the Astro site dev server.
-- `cd site && bun run build`: build the Astro site.
-- `cd site && bun run preview`: preview the Astro build.
+- `bun x --bun tsc --noEmit`: type-check the Worker and seed script.
+- `bun --bun wrangler d1 migrations apply geo-db --local`: apply D1 migrations locally.
 
 ## Architecture
 
-- Worker entrypoint: `src/index.ts`.
+- Workspace apps live under `apps/*`.
+- Reusable packages live under `packages/*`.
+- Worker package: `apps/api`.
+- Worker entrypoint: `apps/api/src/index.ts`.
 - Route framework: Hono.
 - Database binding: `GEO_DB`.
 - Generated Worker types: `worker-configuration.d.ts`.
-- Query layer: `src/db/queries.ts`.
-- Shared API types: `src/types.ts`.
-- OpenAPI spec: `src/openapi.ts`.
-- Seed script: `scripts/seed.ts`.
+- Query layer: `apps/api/src/db/queries.ts`.
+- Shared API types: `apps/api/src/types.ts`.
+- OpenAPI spec: `apps/api/src/openapi.ts`.
+- Seed script: `apps/api/scripts/seed.ts`.
 - Data files: `data/*.json`.
 - D1 migrations: `migrations/`.
-- Astro site: `site/`.
+- Astro site: `apps/site`.
+- TypeScript API client: `packages/client`.
 
 D1 tables include `countries`, `states`, `cities`, `timezones`, `currencies`, and `search_index`. The search index is an FTS5 virtual table spanning searchable geographic entities.
 
@@ -66,6 +70,9 @@ All JSON responses use aggressive cache headers unless the route intentionally h
 ## Hard Rules
 
 - Use Bun for this repo. Do not use npm, yarn, pnpm, or npx for project commands.
+- Run package binaries through Bun, preferably with `bun --bun <bin>` or `bun x --bun <bin>`.
+- Do not add tracked `.js`, `.mjs`, or `.cjs` source/config files. Use TypeScript.
+- Prefer Bun runtime APIs over `node:*` imports in repo scripts and tests.
 - Do not edit, create, overwrite, or delete `.env*` files.
 - Do not edit generated files by hand, especially `worker-configuration.d.ts`.
 - Do not edit existing migrations. Add a new timestamped migration for schema changes.
@@ -97,18 +104,25 @@ All JSON responses use aggressive cache headers unless the route intentionally h
 
 ## Site Work
 
-- The site is an Astro app under `site/`.
-- Use the site package scripts from inside `site/`.
+- The site is an Astro app under `apps/site`.
+- Use the site workspace scripts from the repo root with `bun run --filter @geocoded/site <script>`, or the root aliases `bun dev:site`, `bun build:site`, and `bun preview:site`.
 - Keep UI changes consistent with existing Astro, React, Tailwind, and component patterns.
-- Build the site with `cd site && bun run build` before Worker deploy changes that depend on `site/dist`.
+- Build the site with `bun build:site` before Worker deploy changes that depend on `apps/site/dist`.
+
+## Package Work
+
+- Reusable client packages belong under `packages/*`.
+- Keep shared client logic out of `apps/site/src` when it can be reused by other clients.
+- The default TypeScript client package is `@geocoded/client` in `packages/client`.
+- App workspaces can depend on internal packages with `workspace:*`.
 
 ## Validation
 
 Run the smallest meaningful verification for the change:
 
 - Instruction or config changes: `agents sync --check` and `git diff --check`.
-- Worker code changes: `bunx tsc --noEmit` and `bun check`.
-- Site changes: `cd site && bun run build`.
+- Worker code changes: `bun x --bun tsc --noEmit` and `bun check`.
+- Site changes: `bun build:site`.
 - D1 behavior changes: apply local migrations, seed local D1 when practical, and smoke test affected endpoints through `bun dev`.
 
 If a check is skipped, state why in the final response.

@@ -1,0 +1,15 @@
+{
+	"name": "@geocoded/api",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "bun --bun wrangler dev --cwd ../..",
+		"deploy": "bun --bun wrangler deploy --cwd ../..",
+		"seed": "bun scripts/seed.ts",
+		"seed:upload": "bun scripts/seed.ts --remote",
+		"types": "bun --bun wrangler types --cwd ../.. worker-configuration.d.ts"
+	},
+	"dependencies": {
+		"hono": "^4.12.15"
+	}
+}

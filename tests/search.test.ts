@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test'
-import app from '../src/index'
+import app from '../apps/api/src/index'
 
 type Row = Record<string, unknown>
 
@@ -66,6 +66,17 @@ class FakeD1Database {
 		cityRow(4, 'ID', 'Indonesia', 'JI', 'East Java', 'Krajan')
 	]
 
+	readonly timezones = [
+		timezoneRow('America/Los_Angeles', ['US'], '+3403-11815', 'Pacific Time'),
+		timezoneRow('America/New_York', ['US'], '+4042-07400', 'Eastern Time'),
+		timezoneRow('Asia/Tokyo', ['JP'], '+353916+1394441', '')
+	]
+
+	readonly currencies = [
+		currencyRow('CAD', 'Canadian Dollar', '$', ['CA']),
+		currencyRow('USD', 'US Dollar', '$', ['US'])
+	]
+
 	readonly searchRows = [
 		searchRow('Springfield', 'city', 'US', 'CA', {
 			country_name: 'United States',
@@ -95,6 +106,9 @@ class FakeD1Database {
 	}
 
 	select(sql: string, parameters: unknown[]): Row[] {
+		if (sql.includes('ROUND(AVG(score)') && sql.includes('FROM quiz_stats')) {
+			return this.selectQuizStats(sql, parameters)
+		}
 		if (sql.includes('COUNT(*) AS count') && sql.includes('FROM quiz_stats')) {
 			return this.selectQuizStats(sql, parameters)
 		}
@@ -116,6 +130,12 @@ class FakeD1Database {
 		}
 		if (sql.includes('FROM cities')) {
 			return this.selectCities(sql, parameters)
+		}
+		if (sql.includes('FROM timezones')) {
+			return this.selectTimezones(sql, parameters)
+		}
+		if (sql.includes('FROM currencies')) {
+			return this.selectCurrencies(sql, parameters)
 		}
 		if (sql.includes('FROM quiz_stats')) {
 			return this.selectQuizStats(sql, parameters)
@@ -141,7 +161,7 @@ class FakeD1Database {
 			['country', 'state', 'city'].includes(String(parameter))
 		)
 		const searchesAllIndexedColumns = sql.includes('search_index MATCH')
-		return this.searchRows.filter((row) => {
+		const rows = this.searchRows.filter((row) => {
 			const values = searchesAllIndexedColumns
 				? [row.name, row.type, row.country_code, row.state_code, row.extra]
 				: [row.name]
@@ -152,30 +172,56 @@ class FakeD1Database {
 				!sql.includes('type = ?') || row.type === typeParameter
 			return matchesName && matchesType
 		})
+		return applyLimitOffset(rows, sql, parameters)
 	}
 
 	private selectCountries(sql: string, parameters: unknown[]): Row[] {
-		if (!sql.includes('WHERE')) return this.countries
+		if (!sql.includes('WHERE')) {
+			return applyLimitOffset(sortByName(this.countries), sql, parameters)
+		}
+		if (sql.includes('iso2 = ?1') || sql.includes('iso3 = ?1')) {
+			const upper = String(parameters[0] ?? '').toUpperCase()
+			const name = String(parameters[1] ?? '').toLowerCase()
+			const rows = this.countries.filter(
+				(country) =>
+					country.iso2 === upper ||
+					country.iso3 === upper ||
+					String(country.name).toLowerCase() === name
+			)
+			return applyLimitOffset(sortByName(rows), sql, parameters)
+		}
 		const query = likeParameterToQuery(parameters.find(isLikeParameter))
-		return this.countries.filter((country) =>
+		const rows = this.countries.filter((country) =>
 			[String(country.name), String(country.iso2), String(country.iso3)].some(
 				(value) => value.toLowerCase().includes(query)
 			)
 		)
+		return applyLimitOffset(sortByName(rows), sql, parameters)
 	}
 
 	private selectStates(sql: string, parameters: unknown[]): Row[] {
 		const countryCode = String(parameters[0] ?? '').toUpperCase()
-		const rows = this.states.filter(
-			(state) => state.country_code === countryCode
-		)
-		if (!sql.includes('LIKE')) return rows
+		let rows = this.states.filter((state) => state.country_code === countryCode)
+		if (sql.includes('iso2 = ?2') || sql.includes('name = ?3')) {
+			const stateCode = String(parameters[1] ?? '').toUpperCase()
+			const stateName = String(parameters[2] ?? '').toLowerCase()
+			rows = rows.filter(
+				(state) =>
+					state.iso2 === stateCode ||
+					String(state.name).toLowerCase() === stateName
+			)
+			return applyLimitOffset(sortByName(rows), sql, parameters)
+		}
+		if (!sql.includes('LIKE')) {
+			return applyLimitOffset(sortByName(rows), sql, parameters)
+		}
 		const query = likeParameterToQuery(parameters.find(isLikeParameter))
-		return rows.filter((state) =>
+		rows = rows.filter((state) =>
 			[String(state.name), String(state.iso2), String(state.iso3166_2)].some(
 				(value) => value.toLowerCase().includes(query)
 			)
 		)
+		return applyLimitOffset(sortByName(rows), sql, parameters)
 	}
 
 	private selectCities(sql: string, parameters: unknown[]): Row[] {
@@ -193,11 +239,32 @@ class FakeD1Database {
 			const query = String(parameters[2] ?? '').toLowerCase()
 			rows = rows.filter((city) => String(city.name).toLowerCase() === query)
 		}
-		if (!sql.includes('LIKE')) return rows
+		if (!sql.includes('LIKE')) {
+			return applyLimitOffset(sortByName(rows), sql, parameters)
+		}
 		const query = likeParameterToQuery(parameters.find(isLikeParameter))
-		return rows.filter((city) =>
+		rows = rows.filter((city) =>
 			String(city.name).toLowerCase().includes(query)
 		)
+		return applyLimitOffset(sortByName(rows), sql, parameters)
+	}
+
+	private selectTimezones(sql: string, parameters: unknown[]): Row[] {
+		let rows = this.timezones
+		if (sql.includes('timezone = ?')) {
+			const timezone = String(parameters[0] ?? '')
+			rows = rows.filter((row) => row.timezone === timezone)
+		}
+		return applyLimitOffset(sortByKey(rows, 'timezone'), sql, parameters)
+	}
+
+	private selectCurrencies(sql: string, parameters: unknown[]): Row[] {
+		let rows = this.currencies
+		if (sql.includes('code = ?')) {
+			const code = String(parameters[0] ?? '').toUpperCase()
+			rows = rows.filter((row) => row.code === code)
+		}
+		return applyLimitOffset(sortByKey(rows, 'code'), sql, parameters)
 	}
 
 	private selectQuizStats(sql: string, parameters: unknown[]): Row[] {
@@ -235,6 +302,14 @@ class FakeD1Database {
 				}
 			]
 		}
+		if (sql.includes('WHERE mode = ?')) {
+			const mode = parameters[0]
+			return [
+				{
+					count: this.quizStats.filter((row) => row.mode === mode).length
+				}
+			]
+		}
 		return [{ count: this.quizStats.length }]
 	}
 }
@@ -246,8 +321,8 @@ describe('search routes', () => {
 		expect(response.status).toBe(200)
 		const body = (await response.json()) as PaginatedBody<{ name: string }>
 		expect(body.data.map((country) => country.name)).toEqual([
-			'United States',
-			'Canada'
+			'Canada',
+			'United States'
 		])
 		expect(body.meta).toEqual({
 			total: 2,
@@ -258,12 +333,114 @@ describe('search routes', () => {
 		})
 	})
 
+	test('returns a cursor when a list page has more rows', async () => {
+		const response = await request('/countries?limit=1')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<{ name: string }>
+		expect(body.data.map((country) => country.name)).toEqual(['Canada'])
+		expect(body.meta).toEqual({
+			total: 2,
+			limit: 1,
+			offset: 0,
+			hasMore: true,
+			cursor: 'MQ'
+		})
+	})
+
+	test('uses cursor pagination as the next offset', async () => {
+		const response = await request('/countries?limit=1&cursor=MQ')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<{ name: string }>
+		expect(body.data.map((country) => country.name)).toEqual(['United States'])
+		expect(body.meta).toEqual({
+			total: 2,
+			limit: 1,
+			offset: 1,
+			hasMore: false,
+			cursor: null
+		})
+	})
+
+	test('caps oversized list limits', async () => {
+		const response = await request('/countries?limit=999999')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<{ name: string }>
+		expect(body.meta.limit).toBe(2000)
+		expect(body.meta.total).toBe(2)
+	})
+
+	test('rejects zero list limits', async () => {
+		const response = await request('/countries?limit=0')
+
+		expect(response.status).toBe(400)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({
+			error: 'Query parameter "limit" must be greater than 0'
+		})
+	})
+
+	test('rejects non-integer offsets', async () => {
+		const response = await request('/countries?offset=1.5')
+
+		expect(response.status).toBe(400)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({
+			error: 'Query parameter "offset" must be an integer'
+		})
+	})
+
+	test('applies top-level field projection on lists', async () => {
+		const response = await request('/countries?fields=name,iso2&limit=1')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<
+			Record<string, unknown>
+		>
+		expect(body.data).toEqual([{ name: 'Canada', iso2: 'CA' }])
+	})
+
 	test('filters global search by type', async () => {
 		const response = await request('/search?q=ca&type=city')
 
 		expect(response.status).toBe(200)
 		const body = (await response.json()) as PaginatedBody<{ type: string }>
 		expect(body.data.map((result) => result.type)).toEqual(['city'])
+	})
+
+	test('paginates global search results', async () => {
+		const response = await request('/search?q=ca&limit=1')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<{ name: string }>
+		expect(body.data.map((result) => result.name)).toEqual(['California'])
+		expect(body.meta).toEqual({
+			total: 2,
+			limit: 1,
+			offset: 0,
+			hasMore: true,
+			cursor: 'MQ'
+		})
+	})
+
+	test('rejects blank global search queries', async () => {
+		const response = await request('/search?q=%20%20')
+
+		expect(response.status).toBe(400)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'Query parameter "q" is required' })
+	})
+
+	test('rejects invalid global search type filters', async () => {
+		const response = await request('/search?q=ca&type=continent')
+
+		expect(response.status).toBe(400)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({
+			error: 'Query parameter "type" must be one of: country, state, city'
+		})
 	})
 
 	test('global search only matches entity names, not indexed metadata columns', async () => {
@@ -303,6 +480,41 @@ describe('search routes', () => {
 		expect(body.meta.total).toBe(1)
 	})
 
+	test('trims scoped country search queries', async () => {
+		const response = await request('/countries?q=%20can%20')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<{ name: string }>
+		expect(body.data.map((country) => country.name)).toEqual(['Canada'])
+		expect(body.meta.total).toBe(1)
+	})
+
+	test('looks up countries by lower-case ISO3 code', async () => {
+		const response = await request('/countries/usa?fields=name,iso3')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({ name: 'United States', iso3: 'USA' })
+	})
+
+	test('looks up countries by case-insensitive name', async () => {
+		const response = await request(
+			'/countries/united%20states?fields=name,iso2'
+		)
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({ name: 'United States', iso2: 'US' })
+	})
+
+	test('returns 404 when a country lookup misses', async () => {
+		const response = await request('/countries/ZZZ')
+
+		expect(response.status).toBe(404)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'Country not found' })
+	})
+
 	test('searches states within a country with q', async () => {
 		const response = await request('/countries/US/states?q=cal')
 
@@ -312,6 +524,47 @@ describe('search routes', () => {
 		expect(body.meta.total).toBe(1)
 	})
 
+	test('lists states with cursor pagination', async () => {
+		const response = await request('/countries/us/states?limit=1')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<{ name: string }>
+		expect(body.data.map((state) => state.name)).toEqual(['California'])
+		expect(body.meta).toEqual({
+			total: 2,
+			limit: 1,
+			offset: 0,
+			hasMore: true,
+			cursor: 'MQ'
+		})
+	})
+
+	test('looks up states by lower-case ISO2 code', async () => {
+		const response = await request('/countries/US/states/ca?fields=name,iso2')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({ name: 'California', iso2: 'CA' })
+	})
+
+	test('looks up states by case-insensitive name', async () => {
+		const response = await request(
+			'/countries/US/states/new%20york?fields=name,iso31662'
+		)
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({ name: 'New York', iso31662: 'US-NY' })
+	})
+
+	test('returns 404 when a state lookup misses', async () => {
+		const response = await request('/countries/US/states/TX')
+
+		expect(response.status).toBe(404)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'State not found' })
+	})
+
 	test('searches cities within a state with q', async () => {
 		const response = await request('/countries/US/states/CA/cities?q=san')
 
@@ -319,6 +572,63 @@ describe('search routes', () => {
 		const body = (await response.json()) as PaginatedBody<{ name: string }>
 		expect(body.data.map((city) => city.name)).toEqual(['San Francisco'])
 		expect(body.meta.total).toBe(1)
+	})
+
+	test('lists cities with cursor pagination', async () => {
+		const response = await request('/countries/US/states/CA/cities?limit=1')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<{ name: string }>
+		expect(body.data.map((city) => city.name)).toEqual(['Los Angeles'])
+		expect(body.meta).toEqual({
+			total: 2,
+			limit: 1,
+			offset: 0,
+			hasMore: true,
+			cursor: 'MQ'
+		})
+	})
+
+	test('looks up city names with field projection', async () => {
+		const response = await request(
+			'/countries/US/states/CA/cities/Los%20Angeles?fields=name,geonameId'
+		)
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({ name: 'Los Angeles', geonameId: 2 })
+	})
+
+	test('returns 404 when a city name lookup misses', async () => {
+		const response = await request('/countries/US/states/CA/cities/Oakland')
+
+		expect(response.status).toBe(404)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'City not found' })
+	})
+
+	test('looks up cities by GeoNames ID', async () => {
+		const response = await request('/cities/1?fields=name,stateCode')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({ name: 'San Francisco', stateCode: 'CA' })
+	})
+
+	test('rejects non-integer GeoNames IDs', async () => {
+		const response = await request('/cities/not-an-id')
+
+		expect(response.status).toBe(400)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'City ID must be a GeoNames integer ID' })
+	})
+
+	test('returns 404 when a GeoNames lookup misses', async () => {
+		const response = await request('/cities/999')
+
+		expect(response.status).toBe(404)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'City not found' })
 	})
 
 	test('returns conflict instead of an arbitrary city when city name is ambiguous', async () => {
@@ -331,6 +641,80 @@ describe('search routes', () => {
 		}
 		expect(body.error).toBe('City name is ambiguous')
 		expect(body.matches.map((city) => city.geonameId)).toEqual([3, 4])
+	})
+
+	test('lists timezones with field projection', async () => {
+		const response = await request('/timezones?limit=2&fields=timezone')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<
+			Record<string, unknown>
+		>
+		expect(body.data).toEqual([
+			{ timezone: 'America/Los_Angeles' },
+			{ timezone: 'America/New_York' }
+		])
+		expect(body.meta).toEqual({
+			total: 3,
+			limit: 2,
+			offset: 0,
+			hasMore: true,
+			cursor: 'Mg'
+		})
+	})
+
+	test('looks up timezone IDs that contain slashes', async () => {
+		const response = await request(
+			'/timezones/America/Los_Angeles?fields=timezone,countryCodes'
+		)
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({
+			timezone: 'America/Los_Angeles',
+			countryCodes: ['US']
+		})
+	})
+
+	test('returns 404 when a timezone lookup misses', async () => {
+		const response = await request('/timezones/Etc/Missing')
+
+		expect(response.status).toBe(404)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'Timezone not found' })
+	})
+
+	test('lists currencies with pagination', async () => {
+		const response = await request('/currencies?limit=1&fields=code,name')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<
+			Record<string, unknown>
+		>
+		expect(body.data).toEqual([{ code: 'CAD', name: 'Canadian Dollar' }])
+		expect(body.meta).toEqual({
+			total: 2,
+			limit: 1,
+			offset: 0,
+			hasMore: true,
+			cursor: 'MQ'
+		})
+	})
+
+	test('looks up currencies by lower-case code', async () => {
+		const response = await request('/currencies/usd?fields=code,countries')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({ code: 'USD', countries: ['US'] })
+	})
+
+	test('returns 404 when a currency lookup misses', async () => {
+		const response = await request('/currencies/XXX')
+
+		expect(response.status).toBe(404)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'Currency not found' })
 	})
 
 	test('root location enrichment looks up the city directly', async () => {
@@ -347,6 +731,70 @@ describe('search routes', () => {
 		expect(response.status).toBe(200)
 		const body = (await response.json()) as { cityInfo?: { name: string } }
 		expect(body.cityInfo?.name).toBe('San Francisco')
+	})
+
+	test('root location enrichment supports nested fields and private cache', async () => {
+		const response = await request(
+			'/?fields=countryInfo.name,cityInfo.name,ip',
+			{
+				cf: {
+					country: 'US',
+					regionCode: 'CA',
+					city: 'San Francisco'
+				},
+				headers: { 'cf-connecting-ip': '203.0.113.8' }
+			}
+		)
+
+		expect(response.status).toBe(200)
+		expect(response.headers.get('Cache-Control')).toBe('private, no-store')
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({
+			countryInfo: { name: 'United States' },
+			cityInfo: { name: 'San Francisco' },
+			ip: '203.0.113.8'
+		})
+	})
+
+	test('docs host root delegates to static assets', async () => {
+		const response = await request('/', {
+			url: 'https://geocoded.me/',
+			assetsFetch: (request) =>
+				Response.json({ host: new URL(request.url).hostname })
+		})
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({ host: 'geocoded.me' })
+	})
+
+	test('API host catch-all returns JSON 404', async () => {
+		const response = await request('/missing-route')
+
+		expect(response.status).toBe(404)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'Not found' })
+	})
+
+	test('docs host catch-all delegates to static assets', async () => {
+		const response = await request('/missing-route', {
+			url: 'https://geocoded.me/missing-route',
+			assetsFetch: (request) =>
+				Response.json({ path: new URL(request.url).pathname })
+		})
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toEqual({ path: '/missing-route' })
+	})
+
+	test('postman collection route uses an attachment filename', async () => {
+		const response = await request('/postman.json')
+
+		expect(response.status).toBe(200)
+		expect(response.headers.get('Content-Disposition')).toBe(
+			'attachment; filename="geocoded-postman-collection.json"'
+		)
 	})
 
 	test('rejects quiz stat writes from untrusted browser origins', async () => {
@@ -400,6 +848,85 @@ describe('search routes', () => {
 		expect(body).toEqual({ error: 'Invalid JSON body' })
 	})
 
+	test('rejects unknown quiz stat modes', async () => {
+		const response = await request('/quiz/stats', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({ mode: 'unknown', score: 5, total: 10 })
+		})
+
+		expect(response.status).toBe(400)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'Invalid input' })
+	})
+
+	test('rejects quiz scores greater than the total', async () => {
+		const response = await request('/quiz/stats', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({ mode: 'capital', score: 11, total: 10 })
+		})
+
+		expect(response.status).toBe(400)
+		const body = (await response.json()) as { error: string }
+		expect(body).toEqual({ error: 'Invalid input' })
+	})
+
+	test('accepts quiz stat writes from trusted www site origins', async () => {
+		const response = await request('/quiz/stats', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+				Origin: 'https://www.geocoded.me'
+			},
+			body: JSON.stringify({ mode: 'capital', score: 8, total: 10 })
+		})
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as {
+			avgScore: number
+			percentile: number
+			totalAttempts: number
+		}
+		expect(body).toEqual({
+			totalAttempts: 1,
+			avgScore: 8,
+			percentile: 100
+		})
+	})
+
+	test('returns quiz score distribution for one mode only', async () => {
+		const db = new FakeD1Database()
+		for (const stat of [
+			{ mode: 'capital', score: 7, total: 10 },
+			{ mode: 'capital', score: 9, total: 10 },
+			{ mode: 'flag', score: 2, total: 10 }
+		]) {
+			const response = await request('/quiz/stats', {
+				db,
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(stat)
+			})
+			expect(response.status).toBe(200)
+		}
+
+		const response = await request('/quiz/stats/capital', { db })
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as {
+			distribution: Array<{ count: number; score: number }>
+			totalAttempts: number
+		}
+		expect(body).toEqual({
+			totalAttempts: 2,
+			distribution: [
+				{ score: 7, count: 1 },
+				{ score: 9, count: 1 }
+			]
+		})
+	})
+
 	test('documents scoped search parameters in OpenAPI', async () => {
 		const response = await request('/openapi.json')
 
@@ -435,11 +962,13 @@ describe('search routes', () => {
 async function request(
 	path: string,
 	options: {
+		assetsFetch?: (request: Request) => Promise<Response> | Response
 		body?: BodyInit
 		cf?: Partial<IncomingRequestCfProperties>
 		db?: FakeD1Database
 		headers?: HeadersInit
 		method?: string
+		url?: string
 	} = {}
 ): Promise<Response> {
 	const env = {
@@ -447,15 +976,20 @@ async function request(
 		SITE_URL: 'https://geocoded.me',
 		GEO_DB: options.db ?? new FakeD1Database(),
 		ASSETS: {
-			fetch: () => new Response('not found', { status: 404 })
+			fetch: (request: Request) =>
+				options.assetsFetch?.(request) ??
+				new Response('not found', { status: 404 })
 		}
 	}
 
-	const rawRequest = new Request(`https://api.geocoded.me${path}`, {
-		body: options.body,
-		headers: options.headers,
-		method: options.method
-	})
+	const rawRequest = new Request(
+		options.url ?? `https://api.geocoded.me${path}`,
+		{
+			body: options.body,
+			headers: options.headers,
+			method: options.method
+		}
+	)
 	if (options.cf) {
 		Object.defineProperty(rawRequest, 'cf', { value: options.cf })
 	}
@@ -517,6 +1051,25 @@ function likeParameterToQuery(parameter: unknown): string {
 
 function isLikeParameter(parameter: unknown): boolean {
 	return typeof parameter === 'string' && parameter.includes('%')
+}
+
+function applyLimitOffset(
+	rows: Row[],
+	sql: string,
+	parameters: unknown[]
+): Row[] {
+	if (!sql.includes('LIMIT ? OFFSET ?')) return rows
+	const limit = Number(parameters[parameters.length - 2] ?? rows.length)
+	const offset = Number(parameters[parameters.length - 1] ?? 0)
+	return rows.slice(offset, offset + limit)
+}
+
+function sortByName(rows: Row[]): Row[] {
+	return sortByKey(rows, 'name')
+}
+
+function sortByKey(rows: Row[], key: string): Row[] {
+	return [...rows].sort((a, b) => String(a[key]).localeCompare(String(b[key])))
 }
 
 function countryRow(iso2: string, iso3: string, name: string): Row {
@@ -614,5 +1167,34 @@ function searchRow(
 		country_code: countryCode,
 		state_code: stateCode,
 		extra: JSON.stringify(extra)
+	}
+}
+
+function timezoneRow(
+	timezone: string,
+	countryCodes: string[],
+	coordinates: string,
+	comments: string
+): Row {
+	return {
+		comments,
+		coordinates,
+		country_codes: JSON.stringify(countryCodes),
+		timezone
+	}
+}
+
+function currencyRow(
+	code: string,
+	name: string,
+	symbol: string,
+	countries: string[]
+): Row {
+	return {
+		code,
+		countries: JSON.stringify(countries),
+		decimals: 2,
+		name,
+		symbol
 	}
 }

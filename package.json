@@ -1,13 +1,21 @@
 {
-	"name": "geo-api",
+	"name": "geocoded",
 	"version": "1.0.0",
 	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
 	"scripts": {
-		"dev": "wrangler dev",
-		"deploy": "wrangler deploy",
-		"seed": "bun scripts/seed.ts",
-		"seed:upload": "bun scripts/seed.ts --remote",
-		"types": "wrangler types",
+		"dev": "bun run --filter @geocoded/api dev",
+		"dev:site": "bun run --filter @geocoded/site dev",
+		"build:site": "bun run --filter @geocoded/site build",
+		"preview:site": "bun run --filter @geocoded/site preview",
+		"deploy": "bun run --filter @geocoded/api deploy",
+		"seed": "bun run --filter @geocoded/api seed",
+		"seed:upload": "bun run --filter @geocoded/api seed:upload",
+		"types": "bun run --filter @geocoded/api types",
+		"test": "bun test",
 		"check": "bun lint:check && bun format:check",
 		"fix": "bun lint:fix && bun format:fix",
 		"lint:check": "oxlint --type-aware --type-check --max-warnings 0",
@@ -15,12 +23,8 @@
 		"format:check": "oxfmt --check",
 		"format:fix": "oxfmt"
 	},
-	"dependencies": {
-		"hono": "^4.12.15"
-	},
 	"devDependencies": {
 		"@types/bun": "^1.3.13",
-		"@types/node": "^25.6.0",
 		"oxfmt": "^0.47.0",
 		"oxlint": "^1.62.0",
 		"oxlint-tsgolint": "^0.22.0",

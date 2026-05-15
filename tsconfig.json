@@ -8,7 +8,7 @@
 		"noUncheckedIndexedAccess": true,
 		"skipLibCheck": true,
 		"lib": ["ESNext"],
-		"types": ["node", "bun"],
+		"types": ["bun"],
 		"jsx": "react-jsx",
 		"jsxImportSource": "hono/jsx",
 		"resolveJsonModule": true,
@@ -16,8 +16,9 @@
 		"noEmit": true
 	},
 	"include": [
-		"src/**/*.ts",
-		"scripts/**/*.ts",
+		"apps/api/src/**/*.ts",
+		"apps/api/scripts/**/*.ts",
+		"packages/**/*.ts",
 		"tests/**/*.ts",
 		"worker-configuration.d.ts"
 	]

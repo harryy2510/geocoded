@@ -6,8 +6,11 @@ on:
     branches:
       - main
     paths:
-      - 'src/**'
-      - 'site/**'
+      - 'apps/api/src/**'
+      - 'apps/site/**'
+      - 'packages/**'
+      - 'package.json'
+      - 'bun.lock'
       - 'wrangler.jsonc'
       - 'migrations/**'
 
@@ -23,16 +26,11 @@ jobs:
         id: changes
         run: |
           changed="$(git diff --name-only HEAD^ HEAD 2>/dev/null || git ls-files)"
-          if printf '%s\n' "$changed" | grep -Eq '^(data/.*\.json|scripts/seed\.ts|migrations/)'; then
+          if printf '%s\n' "$changed" | grep -Eq '^(data/.*\.json|apps/api/scripts/seed\.ts|migrations/)'; then
             echo "skip_deploy=true" >> "$GITHUB_OUTPUT"
           else
             echo "skip_deploy=false" >> "$GITHUB_OUTPUT"
           fi
-
-      - uses: actions/setup-node@v4
-        if: steps.changes.outputs.skip_deploy != 'true'
-        with:
-          node-version: 24
 
       - uses: oven-sh/setup-bun@v2
         if: steps.changes.outputs.skip_deploy != 'true'
@@ -52,7 +50,7 @@ jobs:
 
       - name: Build Astro site
         if: steps.changes.outputs.skip_deploy != 'true'
-        run: cd site && bun install && bun run build
+        run: bun run --filter @geocoded/site build
 
       - name: Deploy Worker
         if: steps.changes.outputs.skip_deploy != 'true'

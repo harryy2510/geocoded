@@ -1,16 +1,17 @@
-import { readFile } from 'node:fs/promises'
 import { describe, expect, test } from 'bun:test'
 
 describe('site copy and docs affordances', () => {
 	test('documents timezone and currency list endpoints on the homepage', async () => {
-		const source = await readFile('site/src/pages/index.astro', 'utf-8')
+		const source = await Bun.file('apps/site/src/pages/index.astro').text()
 
 		expect(source).toContain('/timezones?limit=')
 		expect(source).toContain('/currencies?limit=')
 	})
 
 	test('shows data source attribution on the dashboard page', async () => {
-		const source = await readFile('site/src/components/Dashboard.tsx', 'utf-8')
+		const source = await Bun.file(
+			'apps/site/src/components/Dashboard.tsx'
+		).text()
 
 		for (const sourceName of [
 			'GeoNames',
@@ -25,7 +26,7 @@ describe('site copy and docs affordances', () => {
 	})
 
 	test('renders in-document docs download links and hides Scalar downloads', async () => {
-		const source = await readFile('site/src/pages/docs.astro', 'utf-8')
+		const source = await Bun.file('apps/site/src/pages/docs.astro').text()
 
 		expect(source).toContain('<style is:global>')
 		expect(source).toContain('data-open-api-url={openApiUrl}')
@@ -62,10 +63,9 @@ describe('site copy and docs affordances', () => {
 	})
 
 	test('disables the density chart tooltip cursor overlay', async () => {
-		const source = await readFile(
-			'site/src/components/charts/DensityChart.tsx',
-			'utf-8'
-		)
+		const source = await Bun.file(
+			'apps/site/src/components/charts/DensityChart.tsx'
+		).text()
 
 		expect(source.match(/cursor=\{false\}/g)?.length).toBe(2)
 	})

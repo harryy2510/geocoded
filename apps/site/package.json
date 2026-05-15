@@ -1,0 +1,29 @@
+{
+	"name": "@geocoded/site",
+	"type": "module",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "bun --bun ./node_modules/.bin/astro dev",
+		"build": "bun --bun ./node_modules/.bin/astro build",
+		"preview": "bun --bun ./node_modules/.bin/astro preview",
+		"astro": "bun --bun ./node_modules/.bin/astro"
+	},
+	"dependencies": {
+		"@astrojs/react": "^5.0.4",
+		"@geocoded/client": "workspace:*",
+		"@tailwindcss/vite": "^4.2.4",
+		"@types/react": "^19.2.14",
+		"@types/react-dom": "^19.2.3",
+		"astro": "^6.1.10",
+		"d3-geo": "^3.1.1",
+		"react": "^19.2.5",
+		"react-dom": "^19.2.5",
+		"react-simple-maps": "^3.0.0",
+		"recharts": "^3.8.1",
+		"tailwindcss": "^4.2.4"
+	},
+	"devDependencies": {
+		"@astrojs/cloudflare": "^13.2.2"
+	}
+}
