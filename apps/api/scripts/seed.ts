@@ -1,4 +1,5 @@
 const ROOT_DIR = `${import.meta.dir}/../../..`
+const API_DIR = `${ROOT_DIR}/apps/api`
 const DATA_DIR = `${ROOT_DIR}/data`
 const SQL_FILE = `${ROOT_DIR}/.d1-seed.sql`
 
@@ -108,7 +109,7 @@ async function readJSON<T>(filename: string): Promise<T> {
 
 async function wrangler(args: string[]): Promise<void> {
 	const proc = Bun.spawn(['bun', '--bun', 'wrangler', ...args], {
-		cwd: ROOT_DIR,
+		cwd: API_DIR,
 		stdout: 'inherit',
 		stderr: 'inherit'
 	})

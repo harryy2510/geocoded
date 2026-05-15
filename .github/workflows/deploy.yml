@@ -11,7 +11,7 @@ on:
       - 'packages/**'
       - 'package.json'
       - 'bun.lock'
-      - 'wrangler.jsonc'
+      - 'apps/api/wrangler.jsonc'
       - 'migrations/**'
 
 jobs:

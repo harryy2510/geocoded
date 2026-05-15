@@ -1,7 +1,7 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
+	"$schema": "../../node_modules/wrangler/config-schema.json",
 	"name": "geocoded",
-	"main": "apps/api/src/index.ts",
+	"main": "src/index.ts",
 	"compatibility_date": "2025-03-01",
 	"version_metadata": {
 		"binding": "CF_VERSION_METADATA"
@@ -27,7 +27,7 @@
 		}
 	],
 	"assets": {
-		"directory": "apps/site/dist",
+		"directory": "../site/dist",
 		"binding": "ASSETS",
 		"html_handling": "auto-trailing-slash",
 		"not_found_handling": "none",
@@ -38,7 +38,7 @@
 			"binding": "GEO_DB",
 			"database_name": "geo-db",
 			"database_id": "f9662148-1ef8-42f2-becd-ce834767dc5d",
-			"migrations_dir": "migrations"
+			"migrations_dir": "../../migrations"
 		}
 	],
 	"workers_dev": false,

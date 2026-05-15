@@ -40,6 +40,7 @@ describe('seed script safety', () => {
 		const source = await Bun.file('apps/api/scripts/seed.ts').text()
 
 		expect(source).toContain("'bun', '--bun', 'wrangler'")
+		expect(source).toContain('cwd: API_DIR')
 		expect(source).not.toContain('bunx')
 	})
 

@@ -30,7 +30,7 @@ Geocoded is a Bun workspace monorepo. It contains a Cloudflare Worker API servin
 - `bun check`: run oxlint and oxfmt checks.
 - `bun run fix`: run automatic lint and format fixes.
 - `bun x --bun tsc --noEmit`: type-check the Worker and seed script.
-- `bun --bun wrangler d1 migrations apply geo-db --local`: apply D1 migrations locally.
+- `cd apps/api && bun --bun wrangler d1 migrations apply geo-db --local`: apply D1 migrations locally.
 
 ## Architecture
 
@@ -38,6 +38,7 @@ Geocoded is a Bun workspace monorepo. It contains a Cloudflare Worker API servin
 - Reusable packages live under `packages/*`.
 - Worker package: `apps/api`.
 - Worker entrypoint: `apps/api/src/index.ts`.
+- Wrangler config: `apps/api/wrangler.jsonc`.
 - Route framework: Hono.
 - Database binding: `GEO_DB`.
 - Generated Worker types: `worker-configuration.d.ts`.

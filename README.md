@@ -187,14 +187,16 @@ cd geocoded
 bun install
 
 # Copy the example config and customize it
-cp wrangler.example.jsonc wrangler.jsonc
+cp apps/api/wrangler.example.jsonc apps/api/wrangler.jsonc
 
 # Create a D1 database
+cd apps/api
 bun --bun wrangler d1 create geo-db
-# Copy the database_id from the output into wrangler.jsonc
+# Copy the database_id from the output into apps/api/wrangler.jsonc
 
 # Apply migrations locally
 bun --bun wrangler d1 migrations apply geo-db --local
+cd ../..
 
 # Seed local database
 bun seed
@@ -208,7 +210,7 @@ bun dev:site
 
 ### Configuration
 
-All site-specific values live in `wrangler.jsonc` under the `vars` section:
+All site-specific values live in `apps/api/wrangler.jsonc` under the `vars` section:
 
 | Variable     | Description                          | Example                                  |
 | ------------ | ------------------------------------ | ---------------------------------------- |
@@ -250,7 +252,9 @@ For GitHub Actions, add `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN`, and `CA
 
 ```bash
 # Apply migrations to production D1
+cd apps/api
 bun --bun wrangler d1 migrations apply geo-db --remote
+cd ../..
 
 # Seed production database
 bun seed:upload
@@ -259,7 +263,7 @@ bun seed:upload
 bun run deploy
 ```
 
-For custom domains, uncomment the `routes` section in `wrangler.jsonc` and set `workers_dev` to `false`. Otherwise, the Worker is available at the default `workers.dev` subdomain.
+For custom domains, uncomment the `routes` section in `apps/api/wrangler.jsonc` and set `workers_dev` to `false`. Otherwise, the Worker is available at the default `workers.dev` subdomain.
 
 ---
 

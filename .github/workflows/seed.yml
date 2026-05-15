@@ -22,7 +22,7 @@ jobs:
         id: changes
         run: |
           changed="$(git diff --name-only HEAD^ HEAD 2>/dev/null || git ls-files)"
-          if printf '%s\n' "$changed" | grep -Eq '^(apps/api/src/|apps/site/|packages/|wrangler\.jsonc|migrations/)'; then
+          if printf '%s\n' "$changed" | grep -Eq '^(apps/api/src/|apps/site/|packages/|apps/api/wrangler\.jsonc|migrations/)'; then
             echo "should_deploy=true" >> "$GITHUB_OUTPUT"
           else
             echo "should_deploy=false" >> "$GITHUB_OUTPUT"
