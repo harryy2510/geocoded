@@ -244,12 +244,38 @@ function listResponseSchema(itemSchema: Record<string, unknown>) {
 const timezoneEntrySchema = {
 	type: 'object' as const,
 	properties: {
-		comments: { type: 'string' as const },
+		abbreviation: { type: 'string' as const },
+		area: { type: 'string' as const },
 		coordinates: { type: 'string' as const },
 		countryCodes: {
 			type: 'array' as const,
 			items: { type: 'string' as const }
 		},
+		daylightAbbreviation: {
+			type: 'string' as const,
+			nullable: true
+		},
+		daylightName: {
+			type: 'string' as const,
+			nullable: true
+		},
+		daylightOffset: {
+			type: 'number' as const,
+			nullable: true
+		},
+		daylightOffsetName: {
+			type: 'string' as const,
+			nullable: true
+		},
+		latitude: { type: 'number' as const },
+		location: { type: 'string' as const },
+		longitude: { type: 'number' as const },
+		name: { type: 'string' as const },
+		observesDst: { type: 'boolean' as const },
+		standardAbbreviation: { type: 'string' as const },
+		standardName: { type: 'string' as const },
+		standardOffset: { type: 'number' as const },
+		standardOffsetName: { type: 'string' as const },
 		timezone: { type: 'string' as const }
 	}
 }

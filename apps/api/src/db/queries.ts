@@ -369,9 +369,23 @@ export const search = async (
 // --- Timezones ---
 
 const rowToTimezone = (row: D1Row): TimezoneEntry => ({
-	comments: row.comments as string,
+	abbreviation: row.abbreviation as string,
+	area: row.area as string,
 	coordinates: row.coordinates as string,
 	countryCodes: JSON.parse((row.country_codes as string) || '[]'),
+	daylightAbbreviation: (row.daylight_abbreviation as string | null) ?? null,
+	daylightName: (row.daylight_name as string | null) ?? null,
+	daylightOffset: (row.daylight_offset as number | null) ?? null,
+	daylightOffsetName: (row.daylight_offset_name as string | null) ?? null,
+	latitude: row.latitude as number,
+	location: row.location as string,
+	longitude: row.longitude as number,
+	name: row.name as string,
+	observesDst: Boolean(row.observes_dst),
+	standardAbbreviation: row.standard_abbreviation as string,
+	standardName: row.standard_name as string,
+	standardOffset: row.standard_offset as number,
+	standardOffsetName: row.standard_offset_name as string,
 	timezone: row.timezone as string
 })
 

@@ -67,9 +67,44 @@ class FakeD1Database {
 	]
 
 	readonly timezones = [
-		timezoneRow('America/Los_Angeles', ['US'], '+3403-11815', 'Pacific Time'),
-		timezoneRow('America/New_York', ['US'], '+4042-07400', 'Eastern Time'),
-		timezoneRow('Asia/Tokyo', ['JP'], '+353916+1394441', '')
+		timezoneRow('America/Los_Angeles', ['US'], '+3403-11815', {
+			abbreviation: 'PT',
+			name: 'Pacific Time',
+			standard_offset: -28800,
+			standard_offset_name: 'UTC-08:00',
+			standard_abbreviation: 'PST',
+			standard_name: 'Pacific Standard Time',
+			daylight_offset: -25200,
+			daylight_offset_name: 'UTC-07:00',
+			daylight_abbreviation: 'PDT',
+			daylight_name: 'Pacific Daylight Time',
+			observes_dst: 1
+		}),
+		timezoneRow('America/New_York', ['US'], '+4042-07400', {
+			abbreviation: 'ET',
+			name: 'Eastern Time',
+			standard_offset: -18000,
+			standard_offset_name: 'UTC-05:00',
+			standard_abbreviation: 'EST',
+			standard_name: 'Eastern Standard Time',
+			daylight_offset: -14400,
+			daylight_offset_name: 'UTC-04:00',
+			daylight_abbreviation: 'EDT',
+			daylight_name: 'Eastern Daylight Time',
+			observes_dst: 1
+		}),
+		timezoneRow('Asia/Tokyo', ['JP'], '+353916+1394441', {
+			area: 'Asia',
+			location: 'Tokyo',
+			latitude: 35.654444,
+			longitude: 139.744722,
+			abbreviation: 'JST',
+			name: 'Japan Standard Time',
+			standard_offset: 32400,
+			standard_offset_name: 'UTC+09:00',
+			standard_abbreviation: 'JST',
+			standard_name: 'Japan Standard Time'
+		})
 	]
 
 	readonly currencies = [
@@ -665,15 +700,47 @@ describe('search routes', () => {
 
 	test('looks up timezone IDs that contain slashes', async () => {
 		const response = await request(
-			'/timezones/America/Los_Angeles?fields=timezone,countryCodes'
+			'/timezones/America/Los_Angeles?fields=timezone,countryCodes,name,standardOffsetName,daylightOffsetName,observesDst'
 		)
 
 		expect(response.status).toBe(200)
 		const body = (await response.json()) as Record<string, unknown>
 		expect(body).toEqual({
 			timezone: 'America/Los_Angeles',
-			countryCodes: ['US']
+			countryCodes: ['US'],
+			name: 'Pacific Time',
+			standardOffsetName: 'UTC-08:00',
+			daylightOffsetName: 'UTC-07:00',
+			observesDst: true
 		})
+	})
+
+	test('returns enriched timezones without source comments', async () => {
+		const response = await request('/timezones/Asia/Tokyo')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as Record<string, unknown>
+		expect(body).toMatchObject({
+			timezone: 'Asia/Tokyo',
+			countryCodes: ['JP'],
+			coordinates: '+353916+1394441',
+			latitude: 35.654444,
+			longitude: 139.744722,
+			area: 'Asia',
+			location: 'Tokyo',
+			abbreviation: 'JST',
+			name: 'Japan Standard Time',
+			standardOffset: 32400,
+			standardOffsetName: 'UTC+09:00',
+			standardAbbreviation: 'JST',
+			standardName: 'Japan Standard Time',
+			daylightOffset: null,
+			daylightOffsetName: null,
+			daylightAbbreviation: null,
+			daylightName: null,
+			observesDst: false
+		})
+		expect(body).not.toHaveProperty('comments')
 	})
 
 	test('returns 404 when a timezone lookup misses', async () => {
@@ -1174,13 +1241,28 @@ function timezoneRow(
 	timezone: string,
 	countryCodes: string[],
 	coordinates: string,
-	comments: string
+	overrides: Partial<Row> = {}
 ): Row {
 	return {
-		comments,
+		abbreviation: 'UTC',
+		area: timezone.split('/')[0] ?? '',
 		coordinates,
 		country_codes: JSON.stringify(countryCodes),
-		timezone
+		daylight_abbreviation: null,
+		daylight_name: null,
+		daylight_offset: null,
+		daylight_offset_name: null,
+		latitude: 0,
+		location: timezone.split('/').at(-1)?.replaceAll('_', ' ') ?? timezone,
+		longitude: 0,
+		name: 'Universal Time',
+		observes_dst: 0,
+		standard_abbreviation: 'UTC',
+		standard_name: 'Universal Time',
+		standard_offset: 0,
+		standard_offset_name: 'UTC+00:00',
+		timezone,
+		...overrides
 	}
 }
 

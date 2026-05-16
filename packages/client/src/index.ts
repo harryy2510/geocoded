@@ -75,10 +75,24 @@ export type City = {
 }
 
 export type TimezoneEntry = {
-	timezone: string
+	abbreviation: string
+	area: string
 	countryCodes: string[]
 	coordinates: string
-	comments: string
+	daylightAbbreviation: string | null
+	daylightName: string | null
+	daylightOffset: number | null
+	daylightOffsetName: string | null
+	latitude: number
+	location: string
+	longitude: number
+	name: string
+	observesDst: boolean
+	standardAbbreviation: string
+	standardName: string
+	standardOffset: number
+	standardOffsetName: string
+	timezone: string
 }
 
 export type Currency = {

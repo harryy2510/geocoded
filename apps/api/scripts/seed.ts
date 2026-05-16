@@ -81,7 +81,21 @@ type RawTimezoneEntry = {
 	timezone: string
 	countryCodes: string[]
 	coordinates: string
-	comments: string
+	latitude: number
+	longitude: number
+	area: string
+	location: string
+	abbreviation: string
+	name: string
+	standardOffset: number
+	standardOffsetName: string
+	standardAbbreviation: string
+	standardName: string
+	daylightOffset: number | null
+	daylightOffsetName: string | null
+	daylightAbbreviation: string | null
+	daylightName: string | null
+	observesDst: boolean
 }
 
 type RawCurrencyEntry = {
@@ -190,7 +204,7 @@ async function main() {
 	for (const t of rawTimezones) {
 		const codes = esc(JSON.stringify(t.countryCodes))
 		sql.push(
-			`INSERT INTO timezones (timezone,country_codes,coordinates,comments) VALUES ('${esc(t.timezone)}','${codes}','${esc(t.coordinates)}','${esc(t.comments)}');`
+			`INSERT INTO timezones (timezone,country_codes,coordinates,latitude,longitude,area,location,abbreviation,name,standard_offset,standard_offset_name,standard_abbreviation,standard_name,daylight_offset,daylight_offset_name,daylight_abbreviation,daylight_name,observes_dst) VALUES ('${esc(t.timezone)}','${codes}','${esc(t.coordinates)}',${t.latitude},${t.longitude},'${esc(t.area)}','${esc(t.location)}','${esc(t.abbreviation)}','${esc(t.name)}',${t.standardOffset},'${esc(t.standardOffsetName)}','${esc(t.standardAbbreviation)}','${esc(t.standardName)}',${nullable(t.daylightOffset)},${nullable(t.daylightOffsetName)},${nullable(t.daylightAbbreviation)},${nullable(t.daylightName)},${t.observesDst ? 1 : 0});`
 		)
 	}
 

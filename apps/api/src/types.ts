@@ -122,9 +122,23 @@ export type PaginatedResponse<T> = {
 }
 
 export type TimezoneEntry = {
+	abbreviation: string
+	area: string
 	countryCodes: string[]
-	comments: string
 	coordinates: string
+	daylightAbbreviation: string | null
+	daylightName: string | null
+	daylightOffset: number | null
+	daylightOffsetName: string | null
+	latitude: number
+	location: string
+	longitude: number
+	name: string
+	observesDst: boolean
+	standardAbbreviation: string
+	standardName: string
+	standardOffset: number
+	standardOffsetName: string
 	timezone: string
 }
 

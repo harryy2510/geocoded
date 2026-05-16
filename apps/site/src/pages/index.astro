@@ -146,17 +146,21 @@ const examples = [
 	},
 	{
 		title: 'List timezones',
-		curl: `curl ${apiUrl}/timezones?limit=2&fields=timezone,countryCodes`,
+		curl: `curl ${apiUrl}/timezones?limit=2&fields=timezone,name,standardOffsetName,observesDst`,
 		responseHtml:
 			jsonBr('{') +
 			`  <span class="json-key">"data"</span><span class="json-colon">: </span>[\n` +
 			jsonBr('    {') +
 			jsonKvi('timezone', 'America/New_York') +
-			jsonKviRaw('countryCodes', '<span class="json-bracket">["US"]</span>', true) +
+			jsonKvi('name', 'Eastern Time') +
+			jsonKvi('standardOffsetName', 'UTC-05:00') +
+			jsonKviRaw('observesDst', '<span class="json-boolean">true</span>', true) +
 			jsonBr('    },') +
 			jsonBr('    {') +
 			jsonKvi('timezone', 'Europe/London') +
-			jsonKviRaw('countryCodes', '<span class="json-bracket">["GB"]</span>', true) +
+			jsonKvi('name', 'United Kingdom Time') +
+			jsonKvi('standardOffsetName', 'UTC+00:00') +
+			jsonKviRaw('observesDst', '<span class="json-boolean">true</span>', true) +
 			jsonBr('    }') +
 			`  ],\n` +
 			`  <span class="json-key">"meta"</span><span class="json-colon">: </span>{ ... }\n` +

@@ -1,0 +1,15 @@
+ALTER TABLE timezones ADD COLUMN latitude REAL NOT NULL DEFAULT 0;
+ALTER TABLE timezones ADD COLUMN longitude REAL NOT NULL DEFAULT 0;
+ALTER TABLE timezones ADD COLUMN area TEXT NOT NULL DEFAULT '';
+ALTER TABLE timezones ADD COLUMN location TEXT NOT NULL DEFAULT '';
+ALTER TABLE timezones ADD COLUMN abbreviation TEXT NOT NULL DEFAULT '';
+ALTER TABLE timezones ADD COLUMN name TEXT NOT NULL DEFAULT '';
+ALTER TABLE timezones ADD COLUMN standard_offset INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE timezones ADD COLUMN standard_offset_name TEXT NOT NULL DEFAULT '';
+ALTER TABLE timezones ADD COLUMN standard_abbreviation TEXT NOT NULL DEFAULT '';
+ALTER TABLE timezones ADD COLUMN standard_name TEXT NOT NULL DEFAULT '';
+ALTER TABLE timezones ADD COLUMN daylight_offset INTEGER;
+ALTER TABLE timezones ADD COLUMN daylight_offset_name TEXT;
+ALTER TABLE timezones ADD COLUMN daylight_abbreviation TEXT;
+ALTER TABLE timezones ADD COLUMN daylight_name TEXT;
+ALTER TABLE timezones ADD COLUMN observes_dst INTEGER NOT NULL DEFAULT 0;
