@@ -94,7 +94,37 @@ jobs:
 
       - name: Deploy Worker
         if: steps.changes.outputs.deploy == 'true'
-        run: bun run deploy
+        run: bun --bun wrangler deploy --config apps/api/wrangler.jsonc
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+      - name: Verify deployed timezone schema
+        if: steps.changes.outputs.deploy == 'true'
+        run: |
+          bun -e '
+            const cacheBust = encodeURIComponent(process.env.GITHUB_SHA ?? String(Date.now()))
+            const specResponse = await fetch(`https://api.geocoded.me/openapi.json?deploy_check=${cacheBust}`, {
+              headers: { "Cache-Control": "no-cache" },
+            })
+            if (!specResponse.ok) {
+              throw new Error(`OpenAPI check failed: ${specResponse.status}`)
+            }
+            const spec = await specResponse.json()
+            const props = spec.paths?.["/timezones"]?.get?.responses?.["200"]?.content?.["application/json"]?.schema?.properties?.data?.items?.properties
+            if (!props?.standardOffsetName || props?.comments) {
+              throw new Error("Live timezone schema is stale")
+            }
+
+            const dataResponse = await fetch(`https://api.geocoded.me/timezones?limit=1&fields=timezone,standardOffsetName,observesDst&deploy_check=${cacheBust}`, {
+              headers: { "Cache-Control": "no-cache" },
+            })
+            if (!dataResponse.ok) {
+              throw new Error(`Timezone API check failed: ${dataResponse.status}`)
+            }
+            const body = await dataResponse.json()
+            const row = body.data?.[0]
+            if (!row || !("standardOffsetName" in row) || !("observesDst" in row) || "comments" in row) {
+              throw new Error("Live timezone response is stale")
+            }
+          '
