@@ -122,7 +122,7 @@ async function readJSON<T>(filename: string): Promise<T> {
 }
 
 async function wrangler(args: string[]): Promise<void> {
-	const proc = Bun.spawn(['bun', '--bun', 'wrangler', ...args], {
+	const proc = Bun.spawn(['bun', 'wrangler', ...args], {
 		cwd: API_DIR,
 		stdout: 'inherit',
 		stderr: 'inherit'
