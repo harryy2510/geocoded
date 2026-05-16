@@ -4226,10 +4226,10 @@
 				"zoneName": "America/Santiago"
 			},
 			{
-				"abbreviation": "",
-				"gmtOffset": 0,
-				"gmtOffsetName": "UTC+00:00",
-				"tzName": "",
+				"abbreviation": "GMT-3",
+				"gmtOffset": -10800,
+				"gmtOffsetName": "UTC-03:00",
+				"tzName": "GMT-03:00",
 				"zoneName": "America/Coyhaique"
 			},
 			{
@@ -10076,49 +10076,49 @@
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "West Kazakhstan Time",
+				"tzName": "Kazakhstan Time",
 				"zoneName": "Asia/Almaty"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "West Kazakhstan Time",
+				"tzName": "Kazakhstan Time",
 				"zoneName": "Asia/Qyzylorda"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "West Kazakhstan Time",
+				"tzName": "Kazakhstan Time",
 				"zoneName": "Asia/Qostanay"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "West Kazakhstan Time",
+				"tzName": "Kazakhstan Time",
 				"zoneName": "Asia/Aqtobe"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "West Kazakhstan Time",
+				"tzName": "Kazakhstan Time",
 				"zoneName": "Asia/Aqtau"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "West Kazakhstan Time",
+				"tzName": "Kazakhstan Time",
 				"zoneName": "Asia/Atyrau"
 			},
 			{
 				"abbreviation": "GMT+5",
 				"gmtOffset": 18000,
 				"gmtOffsetName": "UTC+05:00",
-				"tzName": "West Kazakhstan Time",
+				"tzName": "Kazakhstan Time",
 				"zoneName": "Asia/Oral"
 			}
 		],
@@ -15040,9 +15040,9 @@
 		],
 		"timezones": [
 			{
-				"abbreviation": "GMT-4",
-				"gmtOffset": -14400,
-				"gmtOffsetName": "UTC-04:00",
+				"abbreviation": "GMT-3",
+				"gmtOffset": -10800,
+				"gmtOffsetName": "UTC-03:00",
 				"tzName": "Paraguay Standard Time",
 				"zoneName": "America/Asuncion"
 			}
@@ -21028,7 +21028,7 @@
 				"abbreviation": "HST",
 				"gmtOffset": -36000,
 				"gmtOffsetName": "UTC-10:00",
-				"tzName": "Hawaii-Aleutian Standard Time",
+				"tzName": "GMT-10:00",
 				"zoneName": "Pacific/Honolulu"
 			}
 		],
