@@ -36,10 +36,11 @@ describe('seed script safety', () => {
 		expect(source).not.toContain('node:')
 	})
 
-	test('runs wrangler through Bun instead of bunx', async () => {
+	test('runs wrangler through Bun without forcing the Bun runtime', async () => {
 		const source = await Bun.file('apps/api/scripts/seed.ts').text()
 
-		expect(source).toContain("'bun', '--bun', 'wrangler'")
+		expect(source).toContain("'bun', 'wrangler'")
+		expect(source).not.toContain("'bun', '--bun', 'wrangler'")
 		expect(source).toContain('cwd: API_DIR')
 		expect(source).not.toContain('bunx')
 	})
