@@ -19,6 +19,7 @@
 		"apps/api/src/**/*.ts",
 		"apps/api/scripts/**/*.ts",
 		"packages/**/*.ts",
+		"scripts/**/*.ts",
 		"tests/**/*.ts",
 		"worker-configuration.d.ts"
 	]
