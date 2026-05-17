@@ -1,24 +1,35 @@
 import { describe, expect, test } from 'bun:test'
 
 describe('seed script safety', () => {
-	test('wraps destructive refresh SQL in a transaction', async () => {
+	test('does not wipe live tables before loading source data', async () => {
 		const source = await Bun.file('apps/api/scripts/seed.ts').text()
-		const begin = source.indexOf(
-			"if (!isRemote) sql.push('BEGIN TRANSACTION;')"
-		)
-		const firstDelete = source.indexOf('DELETE FROM search_index;')
-		const commit = source.indexOf("if (!isRemote) sql.push('COMMIT;')")
 
-		expect(begin).toBeGreaterThanOrEqual(0)
-		expect(firstDelete).toBeGreaterThan(begin)
-		expect(commit).toBeGreaterThan(firstDelete)
+		expect(source).not.toContain("DELETE FROM search_index;'")
+		expect(source).not.toContain('DELETE FROM search_index;')
+		expect(source).not.toContain('DELETE FROM cities;')
+		expect(source).not.toContain('DELETE FROM states;')
+		expect(source).not.toContain('DELETE FROM countries;')
+		expect(source).not.toContain('DELETE FROM timezones;')
+		expect(source).not.toContain('DELETE FROM currencies;')
 	})
 
-	test('does not send SQL transaction statements to remote D1 execute', async () => {
+	test('uses D1 metadata hashes for incremental publishing', async () => {
 		const source = await Bun.file('apps/api/scripts/seed.ts').text()
 
-		expect(source).not.toContain("\n\tsql.push('BEGIN TRANSACTION;')")
-		expect(source).not.toContain("\n\tsql.push('COMMIT;')")
+		expect(source).toContain('source_hash')
+		expect(source).toContain('seed_files')
+		expect(source).toContain('readSeedFileHashes')
+		expect(source).toContain('readExistingHashes')
+		expect(source).toContain('hashValues')
+	})
+
+	test('uses idempotent upserts instead of insert-only refreshes', async () => {
+		const source = await Bun.file('apps/api/scripts/seed.ts').text()
+
+		expect(source).toContain('ON CONFLICT')
+		expect(source).toContain('DO UPDATE SET')
+		expect(source).toContain('appendSearchRefresh')
+		expect(source).toContain('deleteSearchSql(newEntry)')
 	})
 
 	test('exits non-zero when seeding fails', async () => {
@@ -51,6 +62,14 @@ describe('seed script safety', () => {
 		expect(source).toContain('`--file=${SQL_FILE}`')
 		expect(source).toContain('target,')
 		expect(source).toContain("'--yes'")
+	})
+
+	test('keeps transaction statements local-only', async () => {
+		const source = await Bun.file('apps/api/scripts/seed.ts').text()
+
+		expect(source).toContain('if (!isRemote) {')
+		expect(source).toContain("sql.unshift('BEGIN TRANSACTION;')")
+		expect(source).toContain("sql.push('COMMIT;')")
 	})
 
 	test('cleans up the generated seed SQL file after execution', async () => {
