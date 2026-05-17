@@ -3518,33 +3518,6 @@
 		}
 	},
 	{
-		"name": "Cuando Cobango",
-		"iso2": "CCU",
-		"iso31662": "AO-CCU",
-		"countryCode": "AO",
-		"countryName": "Angola",
-		"geonameId": 876337,
-		"latitude": "-15.94761",
-		"longitude": "19.3832",
-		"timezone": "Africa/Luanda",
-		"capital": "Menongue",
-		"population": 130000,
-		"type": "province",
-		"native": "Cuando Cobango",
-		"wikidataId": "Q215268",
-		"translations": {
-			"en": "Cuando Cobango Province",
-			"es": "Cuando Cobango",
-			"fr": "Cuando Cobango",
-			"bn": "কুয়ান্ডো কোবাঙ্গো",
-			"de": "Cuando Cobango",
-			"ja": "クアンド・コバンゴ州",
-			"jv": "Cuando Cobango",
-			"pa": "ਕੁਆਂਡੋ ਕੋਬਾਂਗੋ",
-			"pt": "Cuando Cobango"
-		}
-	},
-	{
 		"name": "Cuanza Norte",
 		"iso2": "CNO",
 		"iso31662": "AO-CNO",
