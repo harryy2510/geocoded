@@ -148018,7 +148018,7 @@
 		}
 	},
 	{
-		"name": "Chernihiv",
+		"name": "Chernihiv Oblast",
 		"iso2": "74",
 		"iso31662": "UA-74",
 		"countryCode": "UA",
@@ -148259,7 +148259,7 @@
 		}
 	},
 	{
-		"name": "Kharkivs’ka Oblast’",
+		"name": "Kharkiv",
 		"iso2": "63",
 		"iso31662": "UA-63",
 		"countryCode": "UA",
@@ -148275,7 +148275,7 @@
 		"wikidataId": "Q170666",
 		"translations": {
 			"ru": "Харьковская область",
-			"en": "Kharkivs’ka Oblast’",
+			"en": "Kharkiv Oblast",
 			"uk": "Харківська Область",
 			"fr": "Oblast de Kharkiv",
 			"de": "Oblast Charkiw",
@@ -148427,7 +148427,36 @@
 		}
 	},
 	{
-		"name": "Kyiv",
+		"name": "Kyiv City",
+		"iso2": "30",
+		"iso31662": "UA-30",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"geonameId": 703447,
+		"latitude": "50.45",
+		"longitude": "30.53333",
+		"timezone": "Europe/Kyiv",
+		"capital": null,
+		"population": 2847200,
+		"type": "municipality",
+		"native": "Місто Київ",
+		"wikidataId": "",
+		"translations": {
+			"ru": "Киев",
+			"uk": "Місто Київ",
+			"en": "Kyiv City",
+			"fr": "Municipalité de Kiev",
+			"de": "Stadt Kiew",
+			"es": "Ciudad de Kyiv",
+			"bn": "কিয়েভ শহর",
+			"ja": "キイウ市",
+			"jv": "Kota Kyiv",
+			"pa": "ਕਿਆਇਵ ਸ਼ਹਿਰ",
+			"pt": "Cidade de Kyiv"
+		}
+	},
+	{
+		"name": "Kyiv Oblast",
 		"iso2": "32",
 		"iso31662": "UA-32",
 		"countryCode": "UA",
@@ -148457,35 +148486,6 @@
 			"jv": "Kiev",
 			"pa": "ਕਿਏਵ",
 			"pt": "Kiev"
-		}
-	},
-	{
-		"name": "Kyiv City",
-		"iso2": "30",
-		"iso31662": "UA-30",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"geonameId": 703447,
-		"latitude": "50.45",
-		"longitude": "30.53333",
-		"timezone": "Europe/Kyiv",
-		"capital": null,
-		"population": 2847200,
-		"type": "municipality",
-		"native": "Місто Київ",
-		"wikidataId": "",
-		"translations": {
-			"ru": "Киев",
-			"uk": "Місто Київ",
-			"en": "Kyiv City",
-			"fr": "Municipalité de Kiev",
-			"de": "Stadt Kiew",
-			"es": "Ciudad de Kyiv",
-			"bn": "কিয়েভ শহর",
-			"ja": "キイウ市",
-			"jv": "Kota Kyiv",
-			"pa": "ਕਿਆਇਵ ਸ਼ਹਿਰ",
-			"pt": "Cidade de Kyiv"
 		}
 	},
 	{
@@ -148714,7 +148714,7 @@
 		}
 	},
 	{
-		"name": "Rivne",
+		"name": "Rivne Oblast",
 		"iso2": "56",
 		"iso31662": "UA-56",
 		"countryCode": "UA",
@@ -149044,7 +149044,7 @@
 		}
 	},
 	{
-		"name": "Zhytomyr",
+		"name": "Zhytomyr Oblast",
 		"iso2": "18",
 		"iso31662": "UA-18",
 		"countryCode": "UA",
