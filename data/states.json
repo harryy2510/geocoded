@@ -3364,6 +3364,57 @@
 		}
 	},
 	{
+		"name": "AO.CUB",
+		"iso2": "CUB",
+		"iso31662": "AO-CUB",
+		"countryCode": "AO",
+		"countryName": "Angola",
+		"geonameId": 13645452,
+		"latitude": "-15.79664",
+		"longitude": "20.36642",
+		"timezone": "Africa/Luanda",
+		"capital": "Mavinga",
+		"population": 0,
+		"type": "",
+		"native": "AO.CUB",
+		"wikidataId": "Q131753762",
+		"translations": {}
+	},
+	{
+		"name": "AO.ICB",
+		"iso2": "ICB",
+		"iso31662": "AO-ICB",
+		"countryCode": "AO",
+		"countryName": "Angola",
+		"geonameId": 13645450,
+		"latitude": "-9.10799",
+		"longitude": "13.69522",
+		"timezone": "Africa/Luanda",
+		"capital": null,
+		"population": 0,
+		"type": "",
+		"native": "AO.ICB",
+		"wikidataId": "Q131747739",
+		"translations": {}
+	},
+	{
+		"name": "AO.MLE",
+		"iso2": "MLE",
+		"iso31662": "AO-MLE",
+		"countryCode": "AO",
+		"countryName": "Angola",
+		"geonameId": 13645451,
+		"latitude": "-11.90559",
+		"longitude": "22.89121",
+		"timezone": "Africa/Luanda",
+		"capital": "Cazombo",
+		"population": 0,
+		"type": "",
+		"native": "AO.MLE",
+		"wikidataId": "Q131747679",
+		"translations": {}
+	},
+	{
 		"name": "Bengo",
 		"iso2": "BGO",
 		"iso31662": "AO-BGO",
@@ -3560,6 +3611,25 @@
 			"tr": "Cuanza Norte Bölgesi",
 			"jv": "Cuanza Norte",
 			"pa": "ਕੁਆਂਜ਼ਾ ਨੌਰਤੇ"
+		}
+	},
+	{
+		"name": "Cubango",
+		"iso2": "CBG",
+		"iso31662": "AO-CBG",
+		"countryCode": "AO",
+		"countryName": "Angola",
+		"geonameId": 13645449,
+		"latitude": "-14.70247",
+		"longitude": "17.69655",
+		"timezone": "Africa/Luanda",
+		"capital": "Menongue",
+		"population": 0,
+		"type": "",
+		"native": "Cubango",
+		"wikidataId": "Q131759114",
+		"translations": {
+			"en": "Cubango"
 		}
 	},
 	{
