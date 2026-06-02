@@ -32,15 +32,42 @@ html {
 	background-color: var(--color-bg);
 	color: var(--color-text);
 	font-family: var(--font-sans);
+	overflow-x: clip;
 	overflow-y: scroll;
 	scrollbar-gutter: stable;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	min-width: 0;
+}
+
 body {
 	min-height: 100dvh;
 	background-color: var(--color-bg);
+	overflow-x: clip;
+}
+
+img,
+svg,
+video,
+canvas {
+	max-width: 100%;
+}
+
+pre {
+	max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -285,12 +312,27 @@ body::before {
 
 .recharts-tooltip-wrapper {
 	outline: none !important;
+	max-width: min(18rem, calc(100vw - 2rem));
 }
 
 /* Recharts bar hover */
 .recharts-bar-rectangle:hover {
 	filter: brightness(1.2);
 	transition: filter 0.2s;
+}
+
+.recharts-legend-wrapper {
+	max-width: 100% !important;
+}
+
+@media (max-width: 640px) {
+	.recharts-text {
+		font-size: 10px !important;
+	}
+
+	.recharts-legend-wrapper {
+		inset-inline: 0 !important;
+	}
 }
 
 /* Progress bar for quiz */

@@ -43,15 +43,15 @@ const navLinks = [
 		/>
 		<title>{title}</title>
 	</head>
-	<body class="flex min-h-dvh flex-col bg-bg text-text">
+	<body class="flex min-h-dvh flex-col overflow-x-clip bg-bg text-text">
 		<nav class="sticky top-0 z-50 border-b border-border/50 bg-bg/70 backdrop-blur-2xl">
 			<!-- Subtle bottom glow -->
 			<div class="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent"></div>
 			<div class="absolute inset-x-0 -bottom-8 h-8 bg-gradient-to-b from-accent/[0.04] to-transparent pointer-events-none"></div>
-			<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6">
-				<a href="/" class="group flex items-center gap-2.5">
-					<img src="/logo-background.svg" alt="Geocoded" class="size-8 rounded-lg transition-transform group-hover:scale-105" width="32" height="32" />
-					<span class="text-lg font-bold tracking-tight">Geocoded</span>
+			<div class="mx-auto flex w-full max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+				<a href="/" class="group flex min-w-0 items-center gap-2.5">
+					<img src="/logo-background.svg" alt="Geocoded" class="size-8 shrink-0 rounded-lg transition-transform group-hover:scale-105" width="32" height="32" />
+					<span class="truncate text-lg font-bold tracking-tight">Geocoded</span>
 				</a>
 				<div class="hidden items-center gap-0.5 md:flex">
 					{navLinks.map((link) => (
@@ -70,8 +70,10 @@ const navLinks = [
 				</div>
 				<button
 					id="mobile-menu-btn"
-					class="flex size-9 items-center justify-center rounded-lg text-text-muted hover:bg-bg-card md:hidden"
+					class="flex size-9 shrink-0 items-center justify-center rounded-lg text-text-muted hover:bg-bg-card md:hidden"
 					aria-label="Toggle menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
 				>
 					<svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -97,20 +99,20 @@ const navLinks = [
 			</div>
 		</nav>
 
-		<main class="mx-auto max-w-7xl flex-1 px-4 py-8 sm:px-6">
+		<main class="mx-auto w-full max-w-7xl flex-1 px-4 py-6 sm:px-6 sm:py-8">
 			<slot />
 		</main>
 
 		<footer class="mt-auto border-t border-border/50 relative">
 			<!-- Top gradient glow -->
 			<div class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent"></div>
-			<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6">
+			<div class="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 sm:py-12">
 				<div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
 					<div class="flex items-center gap-3">
 						<img src="/logo-background.svg" alt="Geocoded" class="size-7 rounded-md" width="28" height="28" />
 						<span class="text-sm font-semibold text-text-muted">Geocoded</span>
 					</div>
-					<div class="flex flex-wrap items-center justify-center gap-2 text-sm text-text-dim">
+					<div class="flex max-w-3xl flex-wrap items-center justify-center gap-2 text-center text-sm text-text-dim sm:px-4">
 						<span>Data from</span>
 						<a href="https://www.geonames.org/" class="text-text-muted transition-colors hover:text-accent" target="_blank" rel="noopener noreferrer">GeoNames</a>
 						<span class="text-border">/</span>
@@ -157,6 +159,7 @@ const navLinks = [
 			const menu = document.getElementById('mobile-menu')
 			btn?.addEventListener('click', () => {
 				menu?.classList.toggle('hidden')
+				btn.setAttribute('aria-expanded', String(!menu?.classList.contains('hidden')))
 			})
 		</script>
 	</body>
