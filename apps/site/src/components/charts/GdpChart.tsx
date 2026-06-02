@@ -15,9 +15,11 @@ import {
 	ZAxis,
 } from 'recharts'
 import { type Country } from '@geocoded/client'
-import { formatCompact, getContinentColor, resolveContinentName, axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { formatCompact, getContinentColor, resolveContinentName, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { useCompactChart } from './responsive'
 
 export function TopGdpBar({ countries }: { countries: Country[] }) {
+	const { axisWidth, chartMargin, tick } = useCompactChart()
 	const data = [...countries]
 		.filter((c) => c.gdp > 0)
 		.sort((a, b) => b.gdp - a.gdp)
@@ -31,17 +33,17 @@ export function TopGdpBar({ countries }: { countries: Country[] }) {
 		}))
 
 	return (
-		<div className="h-[400px] w-full">
+		<div className="h-[360px] w-full sm:h-[400px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 5, right: 20 }}>
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
 					<XAxis
 						type="number"
 						tickFormatter={(v: number) => `$${formatCompact(v)}M`}
 						axisLine={false}
 						tickLine={false}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
-					<YAxis type="category" dataKey="name" width={100} axisLine={false} tickLine={false} tick={axisTickStyle} />
+					<YAxis type="category" dataKey="name" width={axisWidth} axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`$${new Intl.NumberFormat('en-US').format(v)}M`, 'GDP']}
@@ -61,6 +63,7 @@ export function TopGdpBar({ countries }: { countries: Country[] }) {
 }
 
 export function GdpVsPopulationScatter({ countries }: { countries: Country[] }) {
+	const { chartMargin, isCompact, tick } = useCompactChart()
 	const data = countries
 		.filter((c) => c.gdp > 0 && c.population > 0)
 		.map((c) => ({
@@ -72,9 +75,9 @@ export function GdpVsPopulationScatter({ countries }: { countries: Country[] }) 
 		}))
 
 	return (
-		<div className="h-[350px] w-full">
+		<div className="h-[300px] w-full sm:h-[350px]">
 			<ResponsiveContainer>
-				<ScatterChart margin={{ left: 10, right: 20, top: 10, bottom: 10 }}>
+				<ScatterChart margin={{ ...chartMargin, bottom: 10 }}>
 					<CartesianGrid strokeDasharray="3 3" stroke="#1e1e24" />
 					<XAxis
 						type="number"
@@ -84,8 +87,8 @@ export function GdpVsPopulationScatter({ countries }: { countries: Country[] }) 
 						axisLine={false}
 						tickLine={false}
 						tickFormatter={(v: number) => formatCompact(v)}
-						tick={axisTickStyle}
-						label={{ value: 'Population', position: 'bottom', offset: -5, style: { fill: '#71717a', fontSize: 11 } }}
+						tick={tick}
+						label={isCompact ? undefined : { value: 'Population', position: 'bottom', offset: -5, style: { fill: '#71717a', fontSize: 11 } }}
 					/>
 					<YAxis
 						type="number"
@@ -95,9 +98,9 @@ export function GdpVsPopulationScatter({ countries }: { countries: Country[] }) 
 						axisLine={false}
 						tickLine={false}
 						tickFormatter={(v: number) => `$${formatCompact(v)}M`}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
-					<ZAxis range={[30, 30]} />
+					<ZAxis range={isCompact ? [18, 18] : [30, 30]} />
 					<Tooltip
 						content={({ payload }) => {
 							if (!payload?.length) return null
@@ -122,6 +125,7 @@ export function GdpVsPopulationScatter({ countries }: { countries: Country[] }) 
 }
 
 export function CurrencyUsagePie({ countries }: { countries: Country[] }) {
+	const { isCompact } = useCompactChart()
 	const currencyCounts = new Map<string, number>()
 	for (const c of countries) {
 		const cur = c.currency || 'Unknown'
@@ -142,7 +146,7 @@ export function CurrencyUsagePie({ countries }: { countries: Country[] }) {
 	]
 
 	return (
-		<div className="h-[320px] w-full">
+		<div className="h-[300px] w-full sm:h-[320px]">
 			<ResponsiveContainer>
 				<PieChart>
 					<Pie
@@ -151,8 +155,8 @@ export function CurrencyUsagePie({ countries }: { countries: Country[] }) {
 						nameKey="name"
 						cx="50%"
 						cy="50%"
-						outerRadius={100}
-						innerRadius={50}
+						outerRadius={isCompact ? 78 : 100}
+						innerRadius={isCompact ? 42 : 50}
 						paddingAngle={2}
 						strokeWidth={0}
 					>

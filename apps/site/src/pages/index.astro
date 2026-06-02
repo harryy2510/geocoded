@@ -200,27 +200,27 @@ const stats = [
 
 <Layout title="Geocoded | Free Country, State, City & Location API" description="Free, fast REST API for country, state, city, and IP geolocation data. Powered by Cloudflare Workers with global edge caching.">
 	<!-- Hero -->
-	<section class="relative py-24 text-center sm:py-32 overflow-hidden">
+	<section class="relative overflow-hidden py-16 text-center sm:py-24 lg:py-32">
 		<!-- Background radial glow -->
 		<div class="absolute inset-0 -z-10">
-			<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-[640px] rounded-full bg-accent/[0.07] blur-[120px]"></div>
-			<div class="absolute left-1/3 top-1/3 size-[320px] rounded-full bg-purple-500/[0.05] blur-[100px]"></div>
+			<div class="absolute left-1/2 top-1/2 size-[22rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[90px] sm:size-[640px] sm:blur-[120px]"></div>
+			<div class="absolute left-1/3 top-1/3 size-48 rounded-full bg-purple-500/[0.05] blur-[70px] sm:size-[320px] sm:blur-[100px]"></div>
 		</div>
 
-		<h1 class="mb-5 text-5xl font-extrabold tracking-tight text-text sm:text-6xl lg:text-7xl">
+		<h1 class="mb-4 text-4xl font-extrabold tracking-tight text-text sm:mb-5 sm:text-6xl lg:text-7xl">
 			Geocoded
 		</h1>
-		<p class="mx-auto mb-4 max-w-xl text-xl font-medium text-text-muted sm:text-2xl">
+		<p class="mx-auto mb-4 max-w-xl text-lg font-medium text-text-muted sm:text-2xl">
 			Free Country, State, City & Location API
 		</p>
-		<p class="mx-auto mb-12 max-w-lg text-base text-text-dim leading-relaxed">
+		<p class="mx-auto mb-8 max-w-lg text-sm leading-relaxed text-text-dim sm:mb-12 sm:text-base">
 			Open-source REST API with 252 countries, 3,800+ states, and 230,000+ cities.
 			No API key required. Deployed on the edge for instant responses worldwide.
 		</p>
-		<div class="mb-14 flex flex-wrap items-center justify-center gap-4">
+		<div class="mb-10 flex flex-col items-stretch justify-center gap-3 sm:mb-14 sm:flex-row sm:items-center sm:gap-4">
 			<a
 				href="/docs"
-				class="glow-hover inline-flex items-center gap-2.5 rounded-xl bg-accent px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all hover:bg-accent-hover hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-0.5"
+				class="glow-hover inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-accent px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all hover:-translate-y-0.5 hover:bg-accent-hover hover:shadow-xl hover:shadow-accent/30 sm:w-auto sm:px-8"
 			>
 				<svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
 				View API Docs
@@ -229,7 +229,7 @@ const stats = [
 				href={githubUrl}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex items-center gap-2.5 rounded-xl border border-border bg-bg-card/50 px-8 py-3.5 text-sm font-semibold text-text backdrop-blur-sm transition-all hover:border-border-hover hover:bg-bg-card hover:-translate-y-0.5"
+				class="inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-border bg-bg-card/50 px-5 py-3.5 text-sm font-semibold text-text backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-bg-card sm:w-auto sm:px-8"
 			>
 				<svg class="size-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
 				GitHub
@@ -237,7 +237,7 @@ const stats = [
 		</div>
 
 		<!-- Curl example block -->
-		<div class="mx-auto max-w-xl overflow-hidden rounded-xl border border-border/60 bg-bg-surface/80 text-left backdrop-blur-sm shadow-2xl shadow-black/30">
+		<div class="mx-auto w-full max-w-xl overflow-hidden rounded-xl border border-border/60 bg-bg-surface/80 text-left shadow-2xl shadow-black/30 backdrop-blur-sm">
 			<div class="flex items-center justify-between border-b border-border/50 bg-bg-card/30 px-4 py-2.5">
 				<div class="flex gap-1.5">
 					<span class="size-3 rounded-full bg-red-500/60"></span>
@@ -252,21 +252,21 @@ const stats = [
 					Copy
 				</button>
 			</div>
-			<pre class="overflow-x-auto px-5 py-4 font-mono text-sm leading-relaxed"><span class="json-key select-none">$ </span><span class="text-text-muted">curl</span> <span class="json-string">{apiUrl}</span></pre>
+			<pre class="overflow-x-auto px-4 py-4 font-mono text-xs leading-relaxed sm:px-5 sm:text-sm"><span class="json-key select-none">$ </span><span class="text-text-muted">curl</span> <span class="json-string">{apiUrl}</span></pre>
 		</div>
 	</section>
 
 	<!-- Stats Banner -->
-	<section class="py-8">
-		<div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+	<section class="py-6 sm:py-8">
+		<div class="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
 			{stats.map((stat, i) => (
-				<div class="relative rounded-xl border border-border/50 bg-bg-card/40 p-6 text-center backdrop-blur-sm overflow-hidden group">
+				<div class="group relative overflow-hidden rounded-xl border border-border/50 bg-bg-card/40 p-4 text-center backdrop-blur-sm sm:p-6">
 					<div class="absolute inset-0 bg-gradient-to-b from-accent/[0.03] to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
 					<div class="relative">
-						<div class="stat-counter text-3xl font-extrabold tracking-tight text-text sm:text-4xl" data-target={stat.value} data-suffix={stat.suffix} data-delay={i * 100}>
+						<div class="stat-counter text-2xl font-extrabold tracking-tight text-text sm:text-4xl" data-target={stat.value} data-suffix={stat.suffix} data-delay={i * 100}>
 							{stat.value}{stat.suffix}
 						</div>
-						<div class="mt-1 text-sm font-medium text-text-muted">{stat.label}</div>
+						<div class="mt-1 text-xs font-medium text-text-muted sm:text-sm">{stat.label}</div>
 					</div>
 				</div>
 			))}
@@ -274,15 +274,15 @@ const stats = [
 	</section>
 
 	<!-- Features -->
-	<section class="py-20" id="features">
+	<section class="py-12 sm:py-20" id="features">
 		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">Why Geocoded</p>
-		<h2 class="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">Built for developers who ship fast</h2>
-		<p class="mb-14 max-w-lg text-base text-text-muted leading-relaxed">
+		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-4xl">Built for developers who ship fast</h2>
+		<p class="mb-8 max-w-lg text-sm leading-relaxed text-text-muted sm:mb-14 sm:text-base">
 			No signup, no API key, no rate limits. Just clean JSON over HTTPS.
 		</p>
 		<div class="grid gap-4 sm:grid-cols-2">
 			{features.map((f) => (
-				<div class="gradient-border-hover group rounded-xl bg-bg-card/60 p-8 backdrop-blur-sm transition-all hover:bg-bg-card/80">
+				<div class="gradient-border-hover group rounded-xl bg-bg-card/60 p-5 backdrop-blur-sm transition-all hover:bg-bg-card/80 sm:p-8">
 					<div class={`mb-5 flex size-12 items-center justify-center rounded-xl bg-gradient-to-br ${f.iconBg}`}>
 						{f.icon === 'shield' && (
 							<svg class={`size-6 ${f.iconColor}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -305,10 +305,10 @@ const stats = [
 	</section>
 
 	<!-- See the Data CTA -->
-	<section class="py-20">
+	<section class="py-12 sm:py-20">
 		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">See the Data</p>
-		<h2 class="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">Explore the full dataset</h2>
-		<p class="mb-14 max-w-lg text-base text-text-muted leading-relaxed">
+		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-4xl">Explore the full dataset</h2>
+		<p class="mb-8 max-w-lg text-sm leading-relaxed text-text-muted sm:mb-14 sm:text-base">
 			Interactive tools to browse, visualize, and analyze geography data from the API.
 		</p>
 		<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -343,27 +343,27 @@ const stats = [
 	</section>
 
 	<!-- Examples -->
-	<section class="py-20" id="examples">
+	<section class="py-12 sm:py-20" id="examples">
 		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">Quick Start</p>
-		<h2 class="mb-3 text-3xl font-bold tracking-tight sm:text-4xl">Simple endpoints, zero config</h2>
-		<p class="mb-14 max-w-lg text-base text-text-muted leading-relaxed">
+		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-4xl">Simple endpoints, zero config</h2>
+		<p class="mb-8 max-w-lg text-sm leading-relaxed text-text-muted sm:mb-14 sm:text-base">
 			Every response is JSON with aggressive cache headers. Try these from your terminal right now.
 		</p>
 		<div class="flex flex-col gap-6">
 			{examples.map((ex) => (
 				<div class="overflow-hidden rounded-xl border border-border/60 bg-bg-card/60 backdrop-blur-sm shadow-lg shadow-black/10">
-					<div class="flex items-center justify-between border-b border-border/50 px-5 py-3.5">
-						<h3 class="text-sm font-semibold">{ex.title}</h3>
+					<div class="flex flex-wrap items-center justify-between gap-3 border-b border-border/50 px-4 py-3.5 sm:px-5">
+						<h3 class="text-sm font-semibold leading-snug">{ex.title}</h3>
 						<span class="rounded-md bg-success/10 px-2.5 py-1 font-mono text-xs font-bold text-success">GET</span>
 					</div>
 					<div class="grid md:grid-cols-2">
-						<div class="border-b border-border/50 p-5 md:border-b-0 md:border-r md:border-border/50">
+						<div class="border-b border-border/50 p-4 md:border-b-0 md:border-r md:border-border/50 sm:p-5">
 							<p class="mb-2.5 text-[11px] font-semibold uppercase tracking-wider text-text-dim">Request</p>
-							<pre class="overflow-x-auto font-mono text-[13px] leading-relaxed"><span class="json-key select-none">$ </span><span class="text-text-muted">{ex.curl}</span></pre>
+							<pre class="overflow-x-auto font-mono text-xs leading-relaxed sm:text-[13px]"><span class="json-key select-none">$ </span><span class="text-text-muted">{ex.curl}</span></pre>
 						</div>
-						<div class="p-5">
+						<div class="p-4 sm:p-5">
 							<p class="mb-2.5 text-[11px] font-semibold uppercase tracking-wider text-text-dim">Response</p>
-							<pre class="overflow-x-auto font-mono text-[13px] leading-relaxed" set:html={ex.responseHtml} />
+							<pre class="overflow-x-auto font-mono text-xs leading-relaxed sm:text-[13px]" set:html={ex.responseHtml} />
 						</div>
 					</div>
 				</div>

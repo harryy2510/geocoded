@@ -296,7 +296,7 @@ export function Quiz() {
 		return (
 			<div className="space-y-8">
 				<div>
-					<h1 className="text-3xl font-bold tracking-tight text-text">Geography Quiz</h1>
+					<h1 className="text-2xl font-bold tracking-tight text-text sm:text-3xl">Geography Quiz</h1>
 					<p className="mt-1.5 text-sm text-text-muted">
 						Test your knowledge across 5 quiz modes, 10 questions each
 					</p>
@@ -307,7 +307,7 @@ export function Quiz() {
 						<button
 							key={m.id}
 							onClick={() => startQuiz(m.id)}
-							className="gradient-border-hover group flex flex-col items-start gap-4 rounded-xl bg-bg-card/60 p-6 text-left backdrop-blur-sm transition-all hover:bg-bg-card/80 hover:-translate-y-0.5 active:scale-[0.98]"
+							className="gradient-border-hover group flex flex-col items-start gap-4 rounded-xl bg-bg-card/60 p-5 text-left backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-bg-card/80 active:scale-[0.98] sm:p-6"
 						>
 							<div className={`flex size-14 items-center justify-center rounded-xl bg-gradient-to-br ${m.color} ${m.iconColor}`}>
 								<ModeIcon mode={m.id} className="transition-transform group-hover:scale-110" />
@@ -338,11 +338,11 @@ export function Quiz() {
 						: 'Keep practicing!'
 
 		return (
-			<div className="flex flex-col items-center justify-center py-16">
-				<div className="animate-fade-in space-y-8 text-center">
-					<div className="text-7xl animate-count-up">{emoji}</div>
+			<div className="flex flex-col items-center justify-center py-12 sm:py-16">
+				<div className="w-full animate-fade-in space-y-8 text-center">
+					<div className="animate-count-up text-6xl sm:text-7xl">{emoji}</div>
 					<div>
-						<h2 className="text-3xl font-bold text-text">{message}</h2>
+						<h2 className="text-2xl font-bold text-text sm:text-3xl">{message}</h2>
 						<p className="mt-2 text-lg text-text-muted">
 							You scored{' '}
 							<span className="font-bold gradient-text">
@@ -352,7 +352,7 @@ export function Quiz() {
 					</div>
 
 					{/* Score bar */}
-					<div className="mx-auto w-64">
+					<div className="mx-auto w-full max-w-64">
 						<div className="h-3 w-full overflow-hidden rounded-full bg-bg-card">
 							<div
 								className="progress-bar h-full"
@@ -377,10 +377,10 @@ export function Quiz() {
 					<div className="text-sm text-text-dim">
 						High score: {getHighScore(mode)}/10
 					</div>
-					<div className="flex gap-3">
+					<div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
 						<button
 							onClick={() => startQuiz(mode)}
-							className="glow-hover rounded-xl bg-accent px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/20 transition-all hover:bg-accent-hover hover:-translate-y-0.5"
+							className="glow-hover rounded-xl bg-accent px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/20 transition-all hover:-translate-y-0.5 hover:bg-accent-hover"
 						>
 							Play Again
 						</button>
@@ -418,7 +418,7 @@ export function Quiz() {
 		<div className="mx-auto max-w-2xl space-y-8 py-8">
 			{/* Progress bar */}
 			<div className="space-y-3">
-				<div className="flex items-center justify-between">
+				<div className="flex items-center justify-between gap-3">
 					<button
 						onClick={() => setPhase('menu')}
 						className="text-sm text-text-dim hover:text-text transition-colors"
@@ -442,13 +442,13 @@ export function Quiz() {
 
 			<div className="animate-fade-in space-y-8 text-center" key={currentQ}>
 				{displaySubtext && mode === 'flag' ? (
-					<div className="text-8xl">{displaySubtext}</div>
+					<div className="text-7xl sm:text-8xl">{displaySubtext}</div>
 				) : null}
 
-				<h2 className="text-xl font-bold text-text">{q.prompt}</h2>
+				<h2 className="text-lg font-bold text-text sm:text-xl">{q.prompt}</h2>
 
 				{displaySubtext && mode !== 'flag' ? (
-					<p className="text-sm text-text-muted">{displaySubtext}</p>
+					<p className="break-words text-sm text-text-muted">{displaySubtext}</p>
 				) : null}
 
 				<div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -469,7 +469,7 @@ export function Quiz() {
 								key={idx}
 								onClick={() => handleAnswer(idx)}
 								disabled={answered}
-								className={`rounded-xl border p-5 text-center text-sm font-medium transition-all ${classes} ${
+								className={`rounded-xl border p-4 text-center text-sm font-medium transition-all sm:p-5 ${classes} ${
 									!answered ? 'active:scale-[0.97]' : ''
 								}`}
 							>

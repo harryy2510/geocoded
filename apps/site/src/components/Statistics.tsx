@@ -35,9 +35,9 @@ function Section({
 	return (
 		<section className="space-y-6">
 			<div>
-				<div className="flex items-center gap-2.5 mb-1">
-					{emoji ? <span className="text-xl">{emoji}</span> : null}
-					<h2 className="gradient-underline text-2xl font-bold text-text">{title}</h2>
+				<div className="mb-1 flex items-center gap-2.5">
+					{emoji ? <span className="text-lg sm:text-xl">{emoji}</span> : null}
+					<h2 className="gradient-underline text-xl font-bold text-text sm:text-2xl">{title}</h2>
 				</div>
 				{description ? <p className="mt-2 text-sm text-text-muted">{description}</p> : null}
 			</div>
@@ -48,12 +48,12 @@ function Section({
 
 function ChartCard({ title, subtitle, children }: { title: string; subtitle?: string; children: React.ReactNode }) {
 	return (
-		<div className="gradient-border-hover rounded-xl bg-bg-card/60 backdrop-blur-sm overflow-hidden">
-			<div className="border-b border-border/30 bg-gradient-to-r from-accent/[0.04] to-transparent px-6 py-4">
-				<h3 className="text-sm font-semibold text-text">{title}</h3>
+		<div className="gradient-border-hover overflow-hidden rounded-xl bg-bg-card/60 backdrop-blur-sm">
+			<div className="border-b border-border/30 bg-gradient-to-r from-accent/[0.04] to-transparent px-4 py-3.5 sm:px-6 sm:py-4">
+				<h3 className="text-sm font-semibold leading-snug text-text">{title}</h3>
 				{subtitle ? <p className="mt-0.5 text-xs text-text-dim">{subtitle}</p> : null}
 			</div>
-			<div className="p-5">{children}</div>
+			<div className="p-4 sm:p-5">{children}</div>
 		</div>
 	)
 }
@@ -82,9 +82,9 @@ export function Statistics() {
 	}
 
 	return (
-		<div className="space-y-16">
+		<div className="space-y-12 sm:space-y-16">
 			<div>
-				<h1 className="text-3xl font-bold tracking-tight text-text">Statistics</h1>
+				<h1 className="text-2xl font-bold tracking-tight text-text sm:text-3xl">Statistics</h1>
 				<p className="mt-1.5 text-sm text-text-muted">
 					Deep dive into global data across {countries.length} countries
 				</p>
@@ -94,7 +94,7 @@ export function Statistics() {
 				<ChartCard title="Population Distribution (Log Scale)" subtitle="Each point is a country, sorted smallest to largest. The curve shows concentration in a few nations.">
 					<PopulationDistributionArea countries={countries} />
 				</ChartCard>
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+				<div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
 					<ChartCard title="Top 20 Most Populated" subtitle="Countries ranked by total population">
 						<TopPopulationBar countries={countries} />
 					</ChartCard>
@@ -108,7 +108,7 @@ export function Statistics() {
 			</Section>
 
 			<Section title="Geography" description="Landmass distribution, continents, and regional groupings" emoji="🗺️">
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+				<div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
 					<ChartCard title="Countries by Continent" subtitle="Number of recognized countries per continent">
 						<ContinentCountBar countries={countries} />
 					</ChartCard>
@@ -116,7 +116,7 @@ export function Statistics() {
 						<RegionStackedBar countries={countries} />
 					</ChartCard>
 				</div>
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+				<div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
 					<ChartCard title="Top 10 Largest Countries" subtitle="By total land area in square kilometers">
 						<TopAreaBar countries={countries} />
 					</ChartCard>
@@ -130,7 +130,7 @@ export function Statistics() {
 				<ChartCard title="Top 20 by GDP" subtitle="Gross Domestic Product in millions USD">
 					<TopGdpBar countries={countries} />
 				</ChartCard>
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+				<div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
 					<ChartCard title="GDP vs Population" subtitle="Comparing economic output relative to population size">
 						<GdpVsPopulationScatter countries={countries} />
 					</ChartCard>
@@ -141,7 +141,7 @@ export function Statistics() {
 			</Section>
 
 			<Section title="Culture" description="Driving conventions, measurement systems, calendars, and time formats" emoji="🎭">
-				<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+				<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
 					<ChartCard title="Driving Side" subtitle="Left vs right-hand traffic">
 						<DrivingSideDonut countries={countries} />
 					</ChartCard>
@@ -158,7 +158,7 @@ export function Statistics() {
 			</Section>
 
 			<Section title="Languages" description="Linguistic diversity and official language distribution" emoji="🗣️">
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+				<div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
 					<ChartCard title="Most Common Languages" subtitle="Languages ranked by number of countries where they are official">
 						<MostCommonLanguages countries={countries} />
 					</ChartCard>
@@ -172,7 +172,7 @@ export function Statistics() {
 				<ChartCard title="Literacy Rate Distribution" subtitle="Histogram showing how literacy rates cluster globally">
 					<LiteracyHistogram countries={countries} />
 				</ChartCard>
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+				<div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
 					<ChartCard title="Top 10 Highest Literacy" subtitle="Countries achieving near-universal literacy">
 						<TopLiteracyBar countries={countries} />
 					</ChartCard>
@@ -183,7 +183,7 @@ export function Statistics() {
 			</Section>
 
 			<Section title="Timezones" description="Time zone coverage and distribution by region" emoji="🕐">
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+				<div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
 					<ChartCard title="Countries with Most Timezones" subtitle="Nations spanning the widest range of time zones">
 						<TimezonesPerCountry countries={countries} />
 					</ChartCard>
@@ -194,7 +194,7 @@ export function Statistics() {
 			</Section>
 
 			<Section title="Population Density" description="People per square kilometer, revealing concentration patterns" emoji="🏘️">
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+				<div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
 					<ChartCard title="Top 20 Most Densely Populated" subtitle="City-states and small nations dominate the list">
 						<MostDenseBar countries={countries} />
 					</ChartCard>

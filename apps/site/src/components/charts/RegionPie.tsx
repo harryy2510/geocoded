@@ -1,8 +1,10 @@
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recharts'
 import { type Country } from '@geocoded/client'
 import { REGION_COLORS, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { useCompactChart } from './responsive'
 
 export function RegionPie({ countries }: { countries: Country[] }) {
+	const { isCompact } = useCompactChart()
 	const regionCounts = new Map<string, number>()
 	for (const c of countries) {
 		const region = c.region || 'Other'
@@ -16,7 +18,7 @@ export function RegionPie({ countries }: { countries: Country[] }) {
 	const COLORS = data.map((d) => REGION_COLORS[d.name] || '#6b7280')
 
 	return (
-		<div className="h-[320px] w-full">
+		<div className="h-[300px] w-full sm:h-[320px]">
 			<ResponsiveContainer>
 				<PieChart>
 					<Pie
@@ -25,8 +27,8 @@ export function RegionPie({ countries }: { countries: Country[] }) {
 						nameKey="name"
 						cx="50%"
 						cy="50%"
-						outerRadius={110}
-						innerRadius={55}
+						outerRadius={isCompact ? 78 : 110}
+						innerRadius={isCompact ? 42 : 55}
 						paddingAngle={2}
 						strokeWidth={0}
 					>

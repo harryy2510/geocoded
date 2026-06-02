@@ -8,7 +8,8 @@ import {
 	Cell,
 } from 'recharts'
 import { type Country } from '@geocoded/client'
-import { axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { useCompactChart } from './responsive'
 
 const palette = [
 	'#3b82f6', '#8b5cf6', '#06b6d4', '#10b981', '#f59e0b',
@@ -16,6 +17,7 @@ const palette = [
 ]
 
 export function MostCommonLanguages({ countries }: { countries: Country[] }) {
+	const { narrowAxisWidth, chartMargin, tick } = useCompactChart()
 	const langCounts = new Map<string, number>()
 	for (const c of countries) {
 		if (c.languages) {
@@ -31,11 +33,11 @@ export function MostCommonLanguages({ countries }: { countries: Country[] }) {
 		.map(([name, count]) => ({ name, count }))
 
 	return (
-		<div className="h-[380px] w-full">
+		<div className="h-[340px] w-full sm:h-[380px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 5, right: 20 }}>
-					<XAxis type="number" axisLine={false} tickLine={false} tick={axisTickStyle} />
-					<YAxis type="category" dataKey="name" width={90} axisLine={false} tickLine={false} tick={axisTickStyle} />
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
+					<XAxis type="number" axisLine={false} tickLine={false} tick={tick} />
+					<YAxis type="category" dataKey="name" width={narrowAxisWidth} axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v} countries`, '']}
@@ -52,6 +54,7 @@ export function MostCommonLanguages({ countries }: { countries: Country[] }) {
 }
 
 export function MostLanguagesPerCountry({ countries }: { countries: Country[] }) {
+	const { wideAxisWidth, chartMargin, tick } = useCompactChart()
 	const data = [...countries]
 		.filter((c) => c.languages?.length > 0)
 		.sort((a, b) => b.languages.length - a.languages.length)
@@ -64,11 +67,11 @@ export function MostLanguagesPerCountry({ countries }: { countries: Country[] })
 		}))
 
 	return (
-		<div className="h-[300px] w-full">
+		<div className="h-[280px] w-full sm:h-[300px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 10, right: 20 }}>
-					<XAxis type="number" axisLine={false} tickLine={false} tick={axisTickStyle} />
-					<YAxis type="category" dataKey="name" width={130} axisLine={false} tickLine={false} tick={axisTickStyle} />
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
+					<XAxis type="number" axisLine={false} tickLine={false} tick={tick} />
+					<YAxis type="category" dataKey="name" width={wideAxisWidth} axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v} languages`, '']}

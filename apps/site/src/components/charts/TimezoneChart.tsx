@@ -8,7 +8,8 @@ import {
 	Cell,
 } from 'recharts'
 import { type Country } from '@geocoded/client'
-import { resolveContinentName, CONTINENT_COLORS, axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { resolveContinentName, CONTINENT_COLORS, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { useCompactChart } from './responsive'
 
 const palette = [
 	'#3b82f6', '#8b5cf6', '#06b6d4', '#10b981', '#f59e0b',
@@ -16,6 +17,7 @@ const palette = [
 ]
 
 export function TimezonesPerCountry({ countries }: { countries: Country[] }) {
+	const { axisWidth, chartMargin, tick } = useCompactChart()
 	const data = [...countries]
 		.filter((c) => c.timezones?.length > 0)
 		.sort((a, b) => b.timezones.length - a.timezones.length)
@@ -28,11 +30,11 @@ export function TimezonesPerCountry({ countries }: { countries: Country[] }) {
 		}))
 
 	return (
-		<div className="h-[300px] w-full">
+		<div className="h-[280px] w-full sm:h-[300px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 5, right: 20 }}>
-					<XAxis type="number" axisLine={false} tickLine={false} tick={axisTickStyle} />
-					<YAxis type="category" dataKey="name" width={100} axisLine={false} tickLine={false} tick={axisTickStyle} />
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
+					<XAxis type="number" axisLine={false} tickLine={false} tick={tick} />
+					<YAxis type="category" dataKey="name" width={axisWidth} axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v} timezones`, '']}
@@ -52,6 +54,7 @@ export function TimezonesPerCountry({ countries }: { countries: Country[] }) {
 }
 
 export function TimezonesByContinent({ countries }: { countries: Country[] }) {
+	const { chartMargin, tick } = useCompactChart()
 	const continentTzs = new Map<string, Set<string>>()
 	for (const c of countries) {
 		const ct = resolveContinentName(c.continent) || 'Other'
@@ -69,11 +72,11 @@ export function TimezonesByContinent({ countries }: { countries: Country[] }) {
 		.sort((a, b) => b.count - a.count)
 
 	return (
-		<div className="h-[280px] w-full">
+		<div className="h-[240px] w-full sm:h-[280px]">
 			<ResponsiveContainer>
-				<BarChart data={data} margin={{ left: 0, right: 10, bottom: 0 }}>
-					<XAxis dataKey="name" axisLine={false} tickLine={false} tick={axisTickStyle} />
-					<YAxis axisLine={false} tickLine={false} tick={axisTickStyle} />
+				<BarChart data={data} margin={chartMargin}>
+					<XAxis dataKey="name" axisLine={false} tickLine={false} tick={tick} interval={0} />
+					<YAxis axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v} unique timezones`, '']}

@@ -14,9 +14,11 @@ import {
 	Area,
 } from 'recharts'
 import { type Country } from '@geocoded/client'
-import { formatCompact, getContinentColor, resolveContinentName, CONTINENT_COLORS, axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { formatCompact, getContinentColor, resolveContinentName, CONTINENT_COLORS, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { useCompactChart } from './responsive'
 
 export function ContinentCountBar({ countries }: { countries: Country[] }) {
+	const { chartMargin, tick } = useCompactChart()
 	const counts = new Map<string, number>()
 	for (const c of countries) {
 		const ct = resolveContinentName(c.continent) || 'Other'
@@ -27,11 +29,11 @@ export function ContinentCountBar({ countries }: { countries: Country[] }) {
 		.sort((a, b) => b.count - a.count)
 
 	return (
-		<div className="h-[280px] w-full">
+		<div className="h-[240px] w-full sm:h-[280px]">
 			<ResponsiveContainer>
-				<BarChart data={data} margin={{ left: 0, right: 10, bottom: 0 }}>
-					<XAxis dataKey="name" axisLine={false} tickLine={false} tick={axisTickStyle} />
-					<YAxis axisLine={false} tickLine={false} tick={axisTickStyle} />
+				<BarChart data={data} margin={chartMargin}>
+					<XAxis dataKey="name" axisLine={false} tickLine={false} tick={tick} interval={0} />
+					<YAxis axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle} formatter={(v: number) => [`${v} countries`, '']} />
 					<Bar dataKey="count" radius={[4, 4, 0, 0]} maxBarSize={48}>
 						{data.map((entry, i) => (
@@ -45,6 +47,7 @@ export function ContinentCountBar({ countries }: { countries: Country[] }) {
 }
 
 export function RegionStackedBar({ countries }: { countries: Country[] }) {
+	const { chartMargin, tick } = useCompactChart()
 	const continentRegions = new Map<string, Map<string, number>>()
 	const allRegions = new Set<string>()
 	for (const c of countries) {
@@ -73,11 +76,11 @@ export function RegionStackedBar({ countries }: { countries: Country[] }) {
 	]
 
 	return (
-		<div className="h-[280px] w-full">
+		<div className="h-[240px] w-full sm:h-[280px]">
 			<ResponsiveContainer>
-				<BarChart data={data} margin={{ left: 0, right: 10, bottom: 0 }}>
-					<XAxis dataKey="name" axisLine={false} tickLine={false} tick={axisTickStyle} />
-					<YAxis axisLine={false} tickLine={false} tick={axisTickStyle} />
+				<BarChart data={data} margin={chartMargin}>
+					<XAxis dataKey="name" axisLine={false} tickLine={false} tick={tick} interval={0} />
+					<YAxis axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						contentStyle={{ ...tooltipStyle, maxHeight: '200px', overflowY: 'auto' }}
 						wrapperStyle={{ zIndex: 10 }}
@@ -98,6 +101,7 @@ export function RegionStackedBar({ countries }: { countries: Country[] }) {
 }
 
 export function SmallestCountriesBar({ countries }: { countries: Country[] }) {
+	const { axisWidth, chartMargin, tick } = useCompactChart()
 	const data = [...countries]
 		.filter((c) => c.areaSqKm > 0)
 		.sort((a, b) => a.areaSqKm - b.areaSqKm)
@@ -110,11 +114,11 @@ export function SmallestCountriesBar({ countries }: { countries: Country[] }) {
 		}))
 
 	return (
-		<div className="h-[300px] w-full">
+		<div className="h-[280px] w-full sm:h-[300px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 10, right: 20 }}>
-					<XAxis type="number" axisLine={false} tickLine={false} tickFormatter={(v: number) => `${v} km²`} tick={axisTickStyle} />
-					<YAxis type="category" dataKey="name" width={120} axisLine={false} tickLine={false} tick={axisTickStyle} />
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
+					<XAxis type="number" axisLine={false} tickLine={false} tickFormatter={(v: number) => `${v} km²`} tick={tick} />
+					<YAxis type="category" dataKey="name" width={axisWidth} axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${new Intl.NumberFormat('en-US').format(v)} km²`, 'Area']}
@@ -131,6 +135,7 @@ export function SmallestCountriesBar({ countries }: { countries: Country[] }) {
 }
 
 export function PopulationDistributionArea({ countries }: { countries: Country[] }) {
+	const { chartMargin, tick } = useCompactChart()
 	const sorted = [...countries]
 		.filter((c) => c.population > 0)
 		.sort((a, b) => a.population - b.population)
@@ -141,9 +146,9 @@ export function PopulationDistributionArea({ countries }: { countries: Country[]
 		}))
 
 	return (
-		<div className="h-[300px] w-full">
+		<div className="h-[260px] w-full sm:h-[300px]">
 			<ResponsiveContainer>
-				<RechartsAreaChart data={sorted} margin={{ left: 10, right: 10, top: 10, bottom: 0 }}>
+				<RechartsAreaChart data={sorted} margin={chartMargin}>
 					<XAxis dataKey="index" axisLine={false} tickLine={false} tick={false} />
 					<YAxis
 						scale="log"
@@ -151,7 +156,7 @@ export function PopulationDistributionArea({ countries }: { countries: Country[]
 						axisLine={false}
 						tickLine={false}
 						tickFormatter={(v: number) => formatCompact(v)}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
@@ -180,6 +185,7 @@ export function PopulationDistributionArea({ countries }: { countries: Country[]
 }
 
 export function PopVsAreaScatter({ countries }: { countries: Country[] }) {
+	const { chartMargin, isCompact, tick } = useCompactChart()
 	const data = countries
 		.filter((c) => c.population > 0 && c.areaSqKm > 0)
 		.map((c) => ({
@@ -192,9 +198,9 @@ export function PopVsAreaScatter({ countries }: { countries: Country[] }) {
 		}))
 
 	return (
-		<div className="h-[350px] w-full">
+		<div className="h-[300px] w-full sm:h-[350px]">
 			<ResponsiveContainer>
-				<ScatterChart margin={{ left: 10, right: 20, top: 10, bottom: 10 }}>
+				<ScatterChart margin={{ ...chartMargin, bottom: 10 }}>
 					<CartesianGrid strokeDasharray="3 3" stroke="#1e1e24" />
 					<XAxis
 						type="number"
@@ -205,8 +211,8 @@ export function PopVsAreaScatter({ countries }: { countries: Country[] }) {
 						axisLine={false}
 						tickLine={false}
 						tickFormatter={(v: number) => formatCompact(v)}
-						tick={axisTickStyle}
-						label={{ value: 'Area (km²)', position: 'bottom', offset: -5, style: { fill: '#71717a', fontSize: 11 } }}
+						tick={tick}
+						label={isCompact ? undefined : { value: 'Area (km²)', position: 'bottom', offset: -5, style: { fill: '#71717a', fontSize: 11 } }}
 					/>
 					<YAxis
 						type="number"
@@ -217,9 +223,9 @@ export function PopVsAreaScatter({ countries }: { countries: Country[] }) {
 						axisLine={false}
 						tickLine={false}
 						tickFormatter={(v: number) => formatCompact(v)}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
-					<ZAxis type="number" dataKey="z" range={[20, 400]} />
+					<ZAxis type="number" dataKey="z" range={isCompact ? [16, 140] : [20, 400]} />
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						content={({ payload }) => {

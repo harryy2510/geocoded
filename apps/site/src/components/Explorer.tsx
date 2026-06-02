@@ -18,7 +18,7 @@ function Pill({
 	return (
 		<button
 			onClick={onClick}
-			className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition-all ${
+			className={`whitespace-nowrap rounded-full px-3.5 py-1.5 text-xs font-medium transition-all ${
 				active
 					? 'bg-accent text-white shadow-sm shadow-accent/20'
 					: 'bg-bg-card/80 text-text-muted hover:bg-bg-card-hover hover:text-text'
@@ -168,13 +168,13 @@ export function Explorer() {
 	return (
 		<div className="space-y-6">
 			<div>
-				<h1 className="text-3xl font-bold tracking-tight text-text">Explorer</h1>
+				<h1 className="text-2xl font-bold tracking-tight text-text sm:text-3xl">Explorer</h1>
 				<p className="mt-1.5 text-sm text-text-muted">
 					Browse and filter {countries.length} countries
 				</p>
 			</div>
 
-			<div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+			<div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
 				<div className="relative flex-1">
 					<svg
 						className="absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-text-dim"
@@ -197,10 +197,10 @@ export function Explorer() {
 						className="w-full rounded-xl border border-border/60 bg-bg-card/60 py-2.5 pl-11 pr-4 text-sm text-text backdrop-blur-sm placeholder:text-text-dim focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent/50 transition-all"
 					/>
 				</div>
-				<div className="flex items-center gap-2">
+				<div className="grid grid-cols-1 gap-2 sm:flex sm:items-center">
 					<button
 						onClick={() => setShowFilters(!showFilters)}
-						className={`flex items-center gap-1.5 rounded-xl border px-4 py-2.5 text-sm font-medium transition-all ${
+						className={`flex w-full items-center justify-center gap-1.5 rounded-xl border px-4 py-2.5 text-sm font-medium transition-all sm:w-auto ${
 							showFilters || activeFilterCount > 0
 								? 'border-accent/50 bg-accent/10 text-accent shadow-sm shadow-accent/10'
 								: 'border-border/60 bg-bg-card/60 text-text-muted hover:border-border-hover backdrop-blur-sm'
@@ -228,7 +228,7 @@ export function Explorer() {
 							setSortField(f)
 							setSortDir(d)
 						}}
-						className="rounded-xl border border-border/60 bg-bg-card/60 px-3 py-2.5 text-sm text-text-muted backdrop-blur-sm focus:border-accent focus:outline-none"
+						className="w-full rounded-xl border border-border/60 bg-bg-card/60 px-3 py-2.5 text-sm text-text-muted backdrop-blur-sm focus:border-accent focus:outline-none sm:w-auto"
 					>
 						<option value="name-asc">Name A-Z</option>
 						<option value="name-desc">Name Z-A</option>
@@ -243,9 +243,9 @@ export function Explorer() {
 			</div>
 
 			{showFilters ? (
-				<div className="animate-fade-in rounded-xl border border-border/50 bg-bg-card/40 backdrop-blur-sm overflow-hidden">
+				<div className="animate-fade-in overflow-hidden rounded-xl border border-border/50 bg-bg-card/40 backdrop-blur-sm">
 					{/* Region */}
-					<div className="border-b border-border/30 p-5">
+					<div className="border-b border-border/30 p-4 sm:p-5">
 						<label className="mb-2.5 block text-xs font-semibold uppercase tracking-wider text-text-dim">
 							Region
 						</label>
@@ -262,7 +262,7 @@ export function Explorer() {
 					</div>
 
 					{/* Other filters */}
-					<div className="grid grid-cols-2 gap-4 p-5 sm:grid-cols-4">
+					<div className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 sm:p-5 lg:grid-cols-4">
 						<div>
 							<label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-text-dim">
 								Continent
@@ -285,7 +285,7 @@ export function Explorer() {
 							<label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-text-dim">
 								Driving Side
 							</label>
-							<div className="flex gap-1.5">
+							<div className="flex flex-wrap gap-1.5">
 								<Pill label="Any" active={!drivingSide} onClick={() => setDrivingSide('')} />
 								<Pill
 									label="Right"
@@ -304,7 +304,7 @@ export function Explorer() {
 							<label className="mb-2 block text-xs font-semibold uppercase tracking-wider text-text-dim">
 								Measurement
 							</label>
-							<div className="flex gap-1.5">
+							<div className="flex flex-wrap gap-1.5">
 								<Pill label="Any" active={!measurementSystem} onClick={() => setMeasurementSystem('')} />
 								<Pill
 									label="Metric"
@@ -367,7 +367,7 @@ export function Explorer() {
 				{filtered.length} {filtered.length === 1 ? 'country' : 'countries'} found
 			</div>
 
-			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+			<div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
 				{filtered.map((country) => (
 					<CountryCard
 						key={country.iso2}

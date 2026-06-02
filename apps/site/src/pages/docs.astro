@@ -43,6 +43,26 @@ const postmanUrl = `${apiUrl}/postman.json`
 				--scalar-color-blue: #5c73e7;
 				--scalar-color-orange: #ff8d4d;
 				--scalar-color-purple: #b191f9;
+				background: #0a0a0b;
+				margin: 0;
+				min-height: 100dvh;
+				overflow-x: clip;
+			}
+			.dark-mode *,
+			.dark-mode *::before,
+			.dark-mode *::after {
+				box-sizing: border-box;
+				min-width: 0;
+			}
+			.dark-mode img,
+			.dark-mode svg,
+			.dark-mode video,
+			.dark-mode canvas {
+				max-width: 100%;
+			}
+			.dark-mode pre,
+			.dark-mode code {
+				max-width: 100%;
 			}
 			.dark-mode .sidebar {
 				--scalar-sidebar-background-1: #0a0a0b;
@@ -76,6 +96,7 @@ const postmanUrl = `${apiUrl}/postman.json`
 				display: inline-flex;
 				gap: .625rem;
 				font: 600 14px/1 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+				min-height: 2.75rem;
 				padding: .75rem 1rem;
 				text-decoration: none !important;
 				text-decoration-line: none !important;
@@ -116,9 +137,14 @@ const postmanUrl = `${apiUrl}/postman.json`
 				text-decoration-line: none !important;
 			}
 			@media (max-width: 720px) {
+				.geocoded-docs-links {
+					align-items: stretch;
+				}
 				.geocoded-docs-link {
 					flex: 1;
 					justify-content: center;
+					min-width: 100%;
+					padding-inline: .875rem;
 				}
 			}
 		</style>

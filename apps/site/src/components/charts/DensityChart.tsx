@@ -8,9 +8,11 @@ import {
 	Cell,
 } from 'recharts'
 import { type Country } from '@geocoded/client'
-import { formatCompact, getContinentColor, resolveContinentName, axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { formatCompact, getContinentColor, resolveContinentName, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { useCompactChart } from './responsive'
 
 export function MostDenseBar({ countries }: { countries: Country[] }) {
+	const { axisWidth, chartMargin, tick } = useCompactChart()
 	const data = [...countries]
 		.filter((c) => c.areaSqKm > 0 && c.population > 0)
 		.map((c) => ({
@@ -24,17 +26,17 @@ export function MostDenseBar({ countries }: { countries: Country[] }) {
 		.slice(0, 20)
 
 	return (
-		<div className="h-[450px] w-full">
+		<div className="h-[420px] w-full sm:h-[450px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 10, right: 20 }}>
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
 					<XAxis
 						type="number"
 						tickFormatter={(v: number) => formatCompact(v)}
 						axisLine={false}
 						tickLine={false}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
-					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={{ ...axisTickStyle, fontSize: 10 }} />
+					<YAxis type="category" dataKey="name" width={axisWidth} axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						cursor={false}
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
@@ -55,6 +57,7 @@ export function MostDenseBar({ countries }: { countries: Country[] }) {
 }
 
 export function LeastDenseBar({ countries }: { countries: Country[] }) {
+	const { axisWidth, chartMargin, tick } = useCompactChart()
 	const data = [...countries]
 		.filter((c) => c.areaSqKm > 0 && c.population > 0)
 		.map((c) => ({
@@ -68,17 +71,17 @@ export function LeastDenseBar({ countries }: { countries: Country[] }) {
 		.slice(0, 20)
 
 	return (
-		<div className="h-[450px] w-full">
+		<div className="h-[420px] w-full sm:h-[450px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 10, right: 20 }}>
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
 					<XAxis
 						type="number"
 						axisLine={false}
 						tickLine={false}
 						tickFormatter={(v: number) => `${v}/km²`}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
-					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={{ ...axisTickStyle, fontSize: 10 }} />
+					<YAxis type="category" dataKey="name" width={axisWidth} axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						cursor={false}
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}

@@ -9,9 +9,11 @@ import {
 	Treemap,
 } from 'recharts'
 import { type Country } from '@geocoded/client'
-import { formatCompact, getContinentColor, resolveContinentName, axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { formatCompact, getContinentColor, resolveContinentName, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { useCompactChart } from './responsive'
 
 export function TopPopulationBar({ countries }: { countries: Country[] }) {
+	const { axisWidth, chartMargin, tick } = useCompactChart()
 	const data = [...countries]
 		.sort((a, b) => b.population - a.population)
 		.slice(0, 10)
@@ -24,23 +26,23 @@ export function TopPopulationBar({ countries }: { countries: Country[] }) {
 		}))
 
 	return (
-		<div className="h-[300px] w-full">
+		<div className="h-[280px] w-full sm:h-[300px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 5, right: 20 }}>
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
 					<XAxis
 						type="number"
 						tickFormatter={(v: number) => formatCompact(v)}
 						axisLine={false}
 						tickLine={false}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
 					<YAxis
 						type="category"
 						dataKey="name"
-						width={100}
+						width={axisWidth}
 						axisLine={false}
 						tickLine={false}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
@@ -63,6 +65,7 @@ export function TopPopulationBar({ countries }: { countries: Country[] }) {
 }
 
 export function TopAreaBar({ countries }: { countries: Country[] }) {
+	const { axisWidth, chartMargin, tick } = useCompactChart()
 	const data = [...countries]
 		.sort((a, b) => b.areaSqKm - a.areaSqKm)
 		.slice(0, 10)
@@ -75,23 +78,23 @@ export function TopAreaBar({ countries }: { countries: Country[] }) {
 		}))
 
 	return (
-		<div className="h-[300px] w-full">
+		<div className="h-[280px] w-full sm:h-[300px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 5, right: 20 }}>
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
 					<XAxis
 						type="number"
 						tickFormatter={(v: number) => `${(v / 1_000_000).toFixed(1)}M`}
 						axisLine={false}
 						tickLine={false}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
 					<YAxis
 						type="category"
 						dataKey="name"
-						width={100}
+						width={axisWidth}
 						axisLine={false}
 						tickLine={false}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
@@ -170,7 +173,7 @@ export function PopulationTreemap({ countries }: { countries: Country[] }) {
 		}))
 
 	return (
-		<div className="h-[350px] w-full">
+		<div className="h-[300px] w-full sm:h-[350px]">
 			<ResponsiveContainer>
 				<Treemap
 					data={data}

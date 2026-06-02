@@ -8,9 +8,11 @@ import {
 	Cell,
 } from 'recharts'
 import { type Country } from '@geocoded/client'
-import { getContinentColor, resolveContinentName, axisTickStyle, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { getContinentColor, resolveContinentName, tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { useCompactChart } from './responsive'
 
 export function LiteracyHistogram({ countries }: { countries: Country[] }) {
+	const { chartMargin, tick } = useCompactChart()
 	const buckets = [
 		{ label: '0-50%', min: 0, max: 50, count: 0 },
 		{ label: '50-70%', min: 50, max: 70, count: 0 },
@@ -30,11 +32,11 @@ export function LiteracyHistogram({ countries }: { countries: Country[] }) {
 	const colors = ['#ef4444', '#f97316', '#f59e0b', '#84cc16', '#22c55e', '#10b981']
 
 	return (
-		<div className="h-[280px] w-full">
+		<div className="h-[240px] w-full sm:h-[280px]">
 			<ResponsiveContainer>
-				<BarChart data={buckets} margin={{ left: 0, right: 10, bottom: 0 }}>
-					<XAxis dataKey="label" axisLine={false} tickLine={false} tick={axisTickStyle} />
-					<YAxis axisLine={false} tickLine={false} tick={axisTickStyle} />
+				<BarChart data={buckets} margin={chartMargin}>
+					<XAxis dataKey="label" axisLine={false} tickLine={false} tick={tick} interval={0} />
+					<YAxis axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v} countries`, '']}
@@ -51,6 +53,7 @@ export function LiteracyHistogram({ countries }: { countries: Country[] }) {
 }
 
 export function TopLiteracyBar({ countries }: { countries: Country[] }) {
+	const { axisWidth, chartMargin, tick } = useCompactChart()
 	const data = [...countries]
 		.filter((c) => c.literacy != null && c.literacy > 0)
 		.sort((a, b) => b.literacy - a.literacy)
@@ -64,18 +67,18 @@ export function TopLiteracyBar({ countries }: { countries: Country[] }) {
 		}))
 
 	return (
-		<div className="h-[300px] w-full">
+		<div className="h-[280px] w-full sm:h-[300px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 10, right: 20 }}>
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
 					<XAxis
 						type="number"
 						domain={[80, 100]}
 						tickFormatter={(v: number) => `${v}%`}
 						axisLine={false}
 						tickLine={false}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
-					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={axisTickStyle} />
+					<YAxis type="category" dataKey="name" width={axisWidth} axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v}%`, 'Literacy']}
@@ -95,6 +98,7 @@ export function TopLiteracyBar({ countries }: { countries: Country[] }) {
 }
 
 export function BottomLiteracyBar({ countries }: { countries: Country[] }) {
+	const { axisWidth, chartMargin, tick } = useCompactChart()
 	const data = [...countries]
 		.filter((c) => c.literacy != null && c.literacy > 0)
 		.sort((a, b) => a.literacy - b.literacy)
@@ -108,18 +112,18 @@ export function BottomLiteracyBar({ countries }: { countries: Country[] }) {
 		}))
 
 	return (
-		<div className="h-[300px] w-full">
+		<div className="h-[280px] w-full sm:h-[300px]">
 			<ResponsiveContainer>
-				<BarChart data={data} layout="vertical" margin={{ left: 10, right: 20 }}>
+				<BarChart data={data} layout="vertical" margin={chartMargin}>
 					<XAxis
 						type="number"
 						domain={[0, 100]}
 						tickFormatter={(v: number) => `${v}%`}
 						axisLine={false}
 						tickLine={false}
-						tick={axisTickStyle}
+						tick={tick}
 					/>
-					<YAxis type="category" dataKey="name" width={110} axisLine={false} tickLine={false} tick={axisTickStyle} />
+					<YAxis type="category" dataKey="name" width={axisWidth} axisLine={false} tickLine={false} tick={tick} />
 					<Tooltip
 						contentStyle={tooltipStyle} labelStyle={tooltipLabelStyle} itemStyle={tooltipItemStyle}
 						formatter={(v: number) => [`${v}%`, 'Literacy']}

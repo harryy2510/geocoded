@@ -170,10 +170,11 @@ export function WorldMap({
 
 			{tooltip ? (
 				<div
-					className="pointer-events-none absolute z-20 rounded-lg border border-border bg-bg-surface px-3 py-2 shadow-xl"
+					className="pointer-events-none absolute z-20 max-w-[calc(100%-1rem)] rounded-lg border border-border bg-bg-surface px-3 py-2 shadow-xl"
 					style={{
-						left: tooltip.x + 12,
-						top: tooltip.y - 60,
+						left: `min(${tooltip.x + 12}px, calc(100% - 0.5rem))`,
+						top: `max(${tooltip.y - 60}px, 0.5rem)`,
+						transform: tooltip.x > 520 ? 'translateX(-100%)' : undefined,
 					}}
 				>
 					<div className="flex items-center gap-2">

@@ -1,6 +1,7 @@
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
 import { type Country } from '@geocoded/client'
 import { tooltipStyle, tooltipLabelStyle, tooltipItemStyle } from '../../lib/format'
+import { useCompactChart } from './responsive'
 
 function Donut({
 	data,
@@ -9,8 +10,10 @@ function Donut({
 	data: { name: string; value: number }[]
 	colors: string[]
 }) {
+	const { isCompact } = useCompactChart()
+
 	return (
-		<div className="h-[200px] w-full">
+		<div className="h-[210px] w-full sm:h-[200px]">
 			<ResponsiveContainer>
 				<PieChart>
 					<Pie
@@ -19,8 +22,8 @@ function Donut({
 						nameKey="name"
 						cx="50%"
 						cy="50%"
-						outerRadius={80}
-						innerRadius={45}
+						outerRadius={isCompact ? 66 : 80}
+						innerRadius={isCompact ? 36 : 45}
 						paddingAngle={3}
 						strokeWidth={0}
 					>
@@ -34,7 +37,7 @@ function Donut({
 					/>
 				</PieChart>
 			</ResponsiveContainer>
-			<div className="flex flex-wrap justify-center gap-3">
+			<div className="flex flex-wrap justify-center gap-2 sm:gap-3">
 				{data.map((d, i) => (
 					<div key={d.name} className="flex items-center gap-1.5 text-xs text-text-muted">
 						<div

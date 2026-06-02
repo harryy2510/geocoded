@@ -9,12 +9,12 @@ import { CountryDetail } from './CountryDetail'
 
 function ChartCard({ title, subtitle, children }: { title: string; subtitle?: string; children: React.ReactNode }) {
 	return (
-		<div className="gradient-border-hover rounded-xl bg-bg-card/60 backdrop-blur-sm overflow-hidden">
-			<div className="border-b border-border/30 bg-gradient-to-r from-accent/[0.04] to-transparent px-6 py-4">
-				<h3 className="text-sm font-semibold text-text">{title}</h3>
+		<div className="gradient-border-hover overflow-hidden rounded-xl bg-bg-card/60 backdrop-blur-sm">
+			<div className="border-b border-border/30 bg-gradient-to-r from-accent/[0.04] to-transparent px-4 py-3.5 sm:px-6 sm:py-4">
+				<h3 className="text-sm font-semibold leading-snug text-text">{title}</h3>
 				{subtitle ? <p className="mt-0.5 text-xs text-text-dim">{subtitle}</p> : null}
 			</div>
-			<div className="p-5">{children}</div>
+			<div className="p-4 sm:p-5">{children}</div>
 		</div>
 	)
 }
@@ -57,7 +57,7 @@ function QuickFact({ label, value, emoji }: QuickFactProps) {
 
 function DataSources() {
 	return (
-		<div className="rounded-xl border border-border/50 bg-bg-card/40 p-5 text-sm text-text-muted backdrop-blur-sm">
+		<div className="rounded-xl border border-border/50 bg-bg-card/40 p-4 text-sm leading-relaxed text-text-muted backdrop-blur-sm sm:p-5">
 			<span className="font-medium text-text">Data sourced from </span>
 			{DATA_SOURCES.map((source, index) => (
 				<span key={source.name}>
@@ -166,9 +166,9 @@ export function Dashboard() {
 	}
 
 	return (
-		<div className="space-y-10">
+		<div className="space-y-8 sm:space-y-10">
 			<div>
-				<h1 className="text-3xl font-bold tracking-tight text-text">
+				<h1 className="text-2xl font-bold tracking-tight text-text sm:text-3xl">
 					Global Data Dashboard
 				</h1>
 				<p className="mt-1.5 text-sm text-text-muted">
@@ -178,7 +178,7 @@ export function Dashboard() {
 
 			<DataSources />
 
-			<div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+			<div className="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 lg:grid-cols-5">
 				<StatsCard icon="🌍" label="Countries" value={`${countries.length}`} delay={0} />
 				<StatsCard icon="🏛️" label="States" value="5,084+" delay={50} />
 				<StatsCard icon="🏙️" label="Cities" value="232K+" delay={100} />
@@ -188,7 +188,7 @@ export function Dashboard() {
 
 			<div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
 				<WorldMap countries={countries} onCountryClick={setSelectedIso} />
-				<div className="mt-3 flex flex-wrap gap-4">
+				<div className="mt-3 flex flex-wrap gap-3 sm:gap-4">
 					{Object.entries({
 						Africa: '#c87f32',
 						Americas: '#2da06a',
@@ -210,7 +210,7 @@ export function Dashboard() {
 				</ChartCard>
 			</div>
 
-			<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+			<div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-2">
 				<div className="animate-fade-in" style={{ animationDelay: '0.35s' }}>
 					<ChartCard title="Top 10 Most Populated" subtitle="Countries ranked by total population">
 						<TopPopulationBar countries={countries} />

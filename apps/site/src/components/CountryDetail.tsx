@@ -16,7 +16,7 @@ function Badge({ children, onClick }: { children: React.ReactNode; onClick?: () 
 	return (
 		<Tag
 			onClick={onClick}
-			className={`inline-flex items-center rounded-md border border-border px-2 py-1 text-xs font-medium text-text-muted ${onClick ? 'cursor-pointer transition-colors hover:border-accent hover:text-accent' : ''}`}
+			className={`inline-flex max-w-full items-center rounded-md border border-border px-2 py-1 text-xs font-medium text-text-muted ${onClick ? 'cursor-pointer transition-colors hover:border-accent hover:text-accent' : ''}`}
 		>
 			{children}
 		</Tag>
@@ -68,18 +68,18 @@ export function CountryDetail({
 	return (
 		<div className="fixed inset-0 z-50 flex justify-end">
 			<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
-			<div className="relative flex w-full max-w-lg flex-col overflow-y-auto bg-bg-surface shadow-2xl sm:max-w-md">
-				<div className="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-bg-surface/90 px-5 py-4 backdrop-blur-md">
-					<div className="flex items-center gap-3">
-						<span className="text-3xl">{country.emoji}</span>
-						<div>
-							<h2 className="text-lg font-bold text-text">{country.name}</h2>
-							<p className="text-xs text-text-muted">{country.native}</p>
+			<div className="relative flex w-full max-w-full flex-col overflow-y-auto bg-bg-surface shadow-2xl sm:max-w-md md:max-w-lg">
+				<div className="sticky top-0 z-10 flex items-center justify-between gap-3 border-b border-border bg-bg-surface/90 px-4 py-4 backdrop-blur-md sm:px-5">
+					<div className="flex min-w-0 items-center gap-3">
+						<span className="shrink-0 text-3xl">{country.emoji}</span>
+						<div className="min-w-0">
+							<h2 className="truncate text-lg font-bold text-text">{country.name}</h2>
+							<p className="truncate text-xs text-text-muted">{country.native}</p>
 						</div>
 					</div>
 					<button
 						onClick={onClose}
-						className="flex size-8 items-center justify-center rounded-lg text-text-muted transition-colors hover:bg-bg-card hover:text-text"
+						className="flex size-8 shrink-0 items-center justify-center rounded-lg text-text-muted transition-colors hover:bg-bg-card hover:text-text"
 					>
 						<svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -87,8 +87,8 @@ export function CountryDetail({
 					</button>
 				</div>
 
-				<div className="p-5">
-					<div className="grid grid-cols-2 gap-3">
+				<div className="p-4 sm:p-5">
+					<div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2">
 						{[
 							['Capital', country.capital],
 							['Region', `${country.continent} / ${country.region}`],
@@ -107,9 +107,9 @@ export function CountryDetail({
 							['Week starts', country.firstDayOfWeek],
 							['Time', country.timeFormat],
 						].map(([label, value]) => (
-							<div key={label} className="rounded-lg bg-bg-card px-3 py-2">
+							<div key={label} className="min-w-0 rounded-lg bg-bg-card px-3 py-2">
 								<div className="text-[10px] font-medium uppercase tracking-wider text-text-dim">{label}</div>
-								<div className="mt-0.5 text-sm text-text">{value}</div>
+								<div className="mt-0.5 break-words text-sm text-text">{value}</div>
 							</div>
 						))}
 					</div>
@@ -142,10 +142,10 @@ export function CountryDetail({
 								{country.timezones.map((tz) => (
 									<div
 										key={tz.zoneName}
-										className="flex items-center justify-between rounded-lg bg-bg-card px-3 py-1.5 text-xs"
+										className="flex items-center justify-between gap-3 rounded-lg bg-bg-card px-3 py-1.5 text-xs"
 									>
-										<span className="text-text-muted">{tz.zoneName}</span>
-										<span className="font-mono text-text-dim">{tz.gmtOffsetName}</span>
+										<span className="truncate text-text-muted">{tz.zoneName}</span>
+										<span className="shrink-0 font-mono text-text-dim">{tz.gmtOffsetName}</span>
 									</div>
 								))}
 							</div>
@@ -154,7 +154,7 @@ export function CountryDetail({
 
 					{country.translations && Object.keys(country.translations).length > 0 ? (
 						<Section title="Translations">
-							<div className="grid grid-cols-2 gap-1">
+							<div className="grid grid-cols-1 gap-1 min-[420px]:grid-cols-2">
 								{Object.entries(country.translations)
 									.slice(0, 20)
 									.map(([lang, name]) => (
@@ -182,15 +182,15 @@ export function CountryDetail({
 									<div key={st.iso2}>
 										<button
 											onClick={() => handleExpandState(st.iso2)}
-											className="flex w-full items-center justify-between rounded-lg bg-bg-card px-3 py-2 text-left text-xs transition-colors hover:bg-bg-card-hover"
+											className="flex w-full items-center justify-between gap-3 rounded-lg bg-bg-card px-3 py-2 text-left text-xs transition-colors hover:bg-bg-card-hover"
 										>
-											<span className="text-text">{st.name}</span>
-											<span className="text-text-dim">
+											<span className="truncate text-text">{st.name}</span>
+											<span className="shrink-0 text-text-dim">
 												{st.population ? formatFull(st.population) : st.type}
 											</span>
 										</button>
 										{expandedState === st.iso2 ? (
-											<div className="ml-3 mt-1 space-y-0.5 border-l border-border pl-3">
+											<div className="ml-2 mt-1 space-y-0.5 border-l border-border pl-3 sm:ml-3">
 												{loadingCities === st.iso2 ? (
 													<div className="h-5 w-32 animate-pulse-subtle rounded bg-bg-card" />
 												) : (stateCities[st.iso2] || []).length === 0 ? (
@@ -199,11 +199,11 @@ export function CountryDetail({
 													(stateCities[st.iso2] || []).map((city) => (
 														<div
 															key={`${city.name}-${city.stateCode}`}
-															className="flex items-center justify-between py-0.5 text-[11px]"
+															className="flex items-center justify-between gap-3 py-0.5 text-[11px]"
 														>
-															<span className="text-text-muted">{city.name}</span>
+															<span className="truncate text-text-muted">{city.name}</span>
 															{city.population > 0 ? (
-																<span className="text-text-dim">
+																<span className="shrink-0 text-text-dim">
 																	{formatFull(city.population)}
 																</span>
 															) : null}

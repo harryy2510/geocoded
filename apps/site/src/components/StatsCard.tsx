@@ -74,12 +74,12 @@ export function StatsCard({
 	return (
 		<div
 			ref={ref}
-			className="gradient-border-hover group animate-count-up rounded-xl bg-bg-card/60 p-5 backdrop-blur-sm transition-all"
+			className="gradient-border-hover group animate-count-up rounded-xl bg-bg-card/60 p-4 backdrop-blur-sm transition-all sm:p-5"
 			style={{ animationDelay: `${delay}ms` }}
 		>
-			<div className="mb-3 text-3xl transition-transform group-hover:scale-110">{icon}</div>
-			<div className="text-3xl font-extrabold tracking-tight text-text">{display}</div>
-			<div className="mt-1 text-sm font-medium text-text-muted">{label}</div>
+			<div className="mb-2 text-2xl transition-transform group-hover:scale-110 sm:mb-3 sm:text-3xl">{icon}</div>
+			<div className="text-2xl font-extrabold tracking-tight text-text sm:text-3xl">{display}</div>
+			<div className="mt-1 text-xs font-medium text-text-muted sm:text-sm">{label}</div>
 		</div>
 	)
 }
