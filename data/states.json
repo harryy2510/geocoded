@@ -3364,57 +3364,6 @@
 		}
 	},
 	{
-		"name": "AO.CUB",
-		"iso2": "CUB",
-		"iso31662": "AO-CUB",
-		"countryCode": "AO",
-		"countryName": "Angola",
-		"geonameId": 13645452,
-		"latitude": "-15.79664",
-		"longitude": "20.36642",
-		"timezone": "Africa/Luanda",
-		"capital": "Mavinga",
-		"population": 98419,
-		"type": "",
-		"native": "AO.CUB",
-		"wikidataId": "Q131753762",
-		"translations": {}
-	},
-	{
-		"name": "AO.ICB",
-		"iso2": "ICB",
-		"iso31662": "AO-ICB",
-		"countryCode": "AO",
-		"countryName": "Angola",
-		"geonameId": 13645450,
-		"latitude": "-9.10799",
-		"longitude": "13.69522",
-		"timezone": "Africa/Luanda",
-		"capital": "Catete",
-		"population": 1372670,
-		"type": "",
-		"native": "AO.ICB",
-		"wikidataId": "Q131747739",
-		"translations": {}
-	},
-	{
-		"name": "AO.MLE",
-		"iso2": "MLE",
-		"iso31662": "AO-MLE",
-		"countryCode": "AO",
-		"countryName": "Angola",
-		"geonameId": 13645451,
-		"latitude": "-11.90559",
-		"longitude": "22.89121",
-		"timezone": "Africa/Luanda",
-		"capital": "Cazombo",
-		"population": 318582,
-		"type": "",
-		"native": "AO.MLE",
-		"wikidataId": "Q131747679",
-		"translations": {}
-	},
-	{
 		"name": "Bengo",
 		"iso2": "BGO",
 		"iso31662": "AO-BGO",
@@ -3567,6 +3516,23 @@
 			"pa": "ਕਾਬਿਂਦਾ",
 			"pt": "Cabinda"
 		}
+	},
+	{
+		"name": "Cuando Province",
+		"iso2": "CUB",
+		"iso31662": "AO-CUB",
+		"countryCode": "AO",
+		"countryName": "Angola",
+		"geonameId": 13645452,
+		"latitude": "-15.79664",
+		"longitude": "20.36642",
+		"timezone": "Africa/Luanda",
+		"capital": "Mavinga",
+		"population": 98419,
+		"type": "",
+		"native": "Cuando Province",
+		"wikidataId": "Q131753762",
+		"translations": {}
 	},
 	{
 		"name": "Cuanza Norte",
@@ -3766,6 +3732,23 @@
 			"jv": "Huila",
 			"pa": "ਹੁਇਲਾ"
 		}
+	},
+	{
+		"name": "Icolo e Bengo Province",
+		"iso2": "ICB",
+		"iso31662": "AO-ICB",
+		"countryCode": "AO",
+		"countryName": "Angola",
+		"geonameId": 13645450,
+		"latitude": "-9.10799",
+		"longitude": "13.69522",
+		"timezone": "Africa/Luanda",
+		"capital": "Catete",
+		"population": 1372670,
+		"type": "",
+		"native": "Icolo e Bengo Province",
+		"wikidataId": "Q131747739",
+		"translations": {}
 	},
 	{
 		"name": "Kwanza Sul",
@@ -4037,6 +4020,23 @@
 			"jv": "Moxico",
 			"pa": "ਮੋਕਸੀਕੋ"
 		}
+	},
+	{
+		"name": "Moxico Leste Province",
+		"iso2": "MLE",
+		"iso31662": "AO-MLE",
+		"countryCode": "AO",
+		"countryName": "Angola",
+		"geonameId": 13645451,
+		"latitude": "-11.90559",
+		"longitude": "22.89121",
+		"timezone": "Africa/Luanda",
+		"capital": "Cazombo",
+		"population": 318582,
+		"type": "",
+		"native": "Moxico Leste Province",
+		"wikidataId": "Q131747679",
+		"translations": {}
 	},
 	{
 		"name": "Namibe",
