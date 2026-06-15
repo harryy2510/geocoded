@@ -676,7 +676,7 @@ describe('v2 routes', () => {
 		}
 	})
 
-	test('returns new v2 transport and migration collections', async () => {
+	test('returns new v2 transport and migrant-stock collections', async () => {
 		const cases = [
 			{
 				path: '/v2/airlines?filter[country]=US&filter[iata]=GB&fields=id,name,iataCode,countryCode',
@@ -715,7 +715,7 @@ describe('v2 routes', () => {
 				}
 			},
 			{
-				path: '/v2/migration?filter[country]=AE&fields=id,countryCode,totalInternationalMigrants',
+				path: '/v2/migrant-stocks?filter[country]=AE&fields=id,countryCode,totalInternationalMigrants',
 				expected: {
 					id: 'AE',
 					countryCode: 'AE',
@@ -829,7 +829,7 @@ describe('v2 routes', () => {
 				}
 			},
 			{
-				path: '/v2/migration/AE?fields=id,countryCode,totalInternationalMigrants',
+				path: '/v2/migrant-stocks/AE?fields=id,countryCode,totalInternationalMigrants',
 				expected: {
 					id: 'AE',
 					countryCode: 'AE',
@@ -942,8 +942,8 @@ describe('v2 routes', () => {
 			'/v2/ports/{id}',
 			'/v2/border-crossings',
 			'/v2/border-crossings/{id}',
-			'/v2/migration',
-			'/v2/migration/{id}'
+			'/v2/migrant-stocks',
+			'/v2/migrant-stocks/{id}'
 		]) {
 			expect(spec.paths).toHaveProperty(path)
 		}

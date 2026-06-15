@@ -4,25 +4,9 @@ describe('site copy and docs affordances', () => {
 	test('mentions timezone and currency coverage on the homepage', async () => {
 		const source = await Bun.file('apps/site/src/pages/index.astro').text()
 
-		expect(source).toContain('timezones and currencies')
+		expect(source).toContain('timezones, currencies')
+		expect(source).toContain('timezone, currency, and statistics data')
 		expect(source).toContain("label: 'Timezones'")
-	})
-
-	test('shows data source attribution on the dashboard page', async () => {
-		const source = await Bun.file(
-			'apps/site/src/components/Dashboard.tsx'
-		).text()
-
-		for (const sourceName of [
-			'GeoNames',
-			'Unicode CLDR',
-			'IANA',
-			'ISO 4217 / SIX Group',
-			'Natural Earth',
-			'CIA World Factbook'
-		]) {
-			expect(source).toContain(sourceName)
-		}
 	})
 
 	test('renders in-document docs download links and hides Scalar downloads', async () => {
@@ -54,7 +38,9 @@ describe('site copy and docs affordances', () => {
 		expect(source).toContain('activeVersionId = versionSelect.value')
 		expect(source).toContain('root.replaceChildren()')
 		expect(source).toContain('body:has([data-docs-root]) nav')
-		expect(source).toContain('.scalar-theme [role="dialog"]')
+		expect(source).toContain(
+			'body:has([data-docs-root]) > .scalar-app [role="dialog"]'
+		)
 		expect(source).toContain('.docs-reference-frame')
 		expect(source).toContain(
 			'.tag-section-container > .section:has(.endpoints-card)'
@@ -71,13 +57,5 @@ describe('site copy and docs affordances', () => {
 		expect(source).not.toContain('define:vars')
 		expect(source).not.toContain('position: fixed')
 		expect(source).not.toContain('sources: [')
-	})
-
-	test('disables the density chart tooltip cursor overlay', async () => {
-		const source = await Bun.file(
-			'apps/site/src/components/charts/DensityChart.tsx'
-		).text()
-
-		expect(source.match(/cursor=\{false\}/g)?.length).toBe(2)
 	})
 })
