@@ -2,8 +2,23 @@
 import Layout from '../layouts/Layout.astro'
 
 const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
-const openApiUrl = `${apiUrl}/openapi.json`
-const postmanUrl = `${apiUrl}/postman.json`
+const docsVersions = [
+	{
+		id: 'v2',
+		label: 'Geocoded v2',
+		kicker: 'Latest',
+		openApiUrl: `${apiUrl}/v2/openapi.json`,
+		postmanUrl: `${apiUrl}/v2/postman.json`
+	},
+	{
+		id: 'v1',
+		label: 'Geocoded v1',
+		kicker: 'Legacy',
+		openApiUrl: `${apiUrl}/openapi.json`,
+		postmanUrl: `${apiUrl}/postman.json`
+	}
+]
+const defaultDocsVersion = docsVersions[0]
 ---
 
 <Layout title="Geocoded API | Documentation">
@@ -59,53 +74,128 @@ const postmanUrl = `${apiUrl}/postman.json`
 		.scalar-theme .tag-section-container > .section:has(.endpoints-card) {
 			border-top: 1px solid rgba(255,255,255,0.1);
 		}
+
+		.docs-reference-frame {
+			border: 1px solid rgba(255,255,255,0.14);
+			position: sticky;
+			top: 0;
+			z-index: 30;
+		}
+
+		body:has([data-docs-root]) nav {
+			z-index: 20;
+		}
+
+		body:has([data-docs-root]) > .scalar-app [role="dialog"],
+		body:has([data-docs-root]) > .scalar-app [aria-modal="true"],
+		body:has([data-docs-root]) > .scalar-app [class*="modal"],
+		body:has([data-docs-root]) > .scalar-app [class*="dialog"] {
+			z-index: 100 !important;
+		}
 	</style>
 
-	<div class="animate-fade-in">
-		<h1 class="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-4">API Protocol</h1>
-		<p class="text-white/60 text-lg mb-12">Standard operating procedures and endpoint definitions.</p>
+	<div
+		class="animate-fade-in"
+		data-docs-root
+		data-docs-versions={JSON.stringify(docsVersions)}
+	>
+		<div class="mb-12 flex flex-col gap-8 xl:flex-row xl:items-end xl:justify-between">
+			<div>
+				<h1 class="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-4">API Protocol</h1>
+				<p class="text-white/60 text-lg">Standard operating procedures and endpoint definitions.</p>
+			</div>
 
-		<div class="mb-12 flex flex-wrap gap-4">
-			<a href={openApiUrl} target="_blank" class="lux-panel px-6 py-3 font-bold tracking-widest uppercase text-xs hover:bg-white/10 transition-colors inline-block">
-				[ Download OpenAPI JSON ]
-			</a>
-			<a href={postmanUrl} target="_blank" class="lux-panel px-6 py-3 font-bold tracking-widest uppercase text-xs hover:bg-white/10 transition-colors inline-block">
-				[ Download Postman Collection ]
-			</a>
+			<div class="w-full xl:w-auto">
+				<div class="flex flex-col gap-3 sm:flex-row sm:items-stretch xl:justify-end">
+					<label class="lux-panel flex min-h-14 min-w-64 items-center justify-between gap-5 px-5 py-3">
+						<span class="text-[10px] font-bold uppercase tracking-widest text-white/40">Version</span>
+						<select
+							id="docs-version"
+							data-docs-version
+							class="min-w-40 cursor-pointer bg-transparent text-right text-base font-bold uppercase tracking-tight text-white outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+							aria-label="API version"
+						>
+							{docsVersions.map((version) => (
+								<option value={version.id} selected={version.id === defaultDocsVersion.id}>
+									{version.label} ({version.kicker})
+								</option>
+							))}
+						</select>
+					</label>
+
+					<div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+						<a
+							href={defaultDocsVersion.openApiUrl}
+							target="_blank"
+							data-openapi-download
+							class="lux-panel flex min-h-14 items-center justify-center px-6 py-3 text-center text-xs font-bold uppercase tracking-widest transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+						>
+							[ Download OpenAPI JSON ]
+						</a>
+						<a
+							href={defaultDocsVersion.postmanUrl}
+							target="_blank"
+							data-postman-download
+							class="lux-panel flex min-h-14 items-center justify-center px-6 py-3 text-center text-xs font-bold uppercase tracking-widest transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+						>
+							[ Download Postman Collection ]
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<div class="border-t border-b border-white/20 -mx-6 px-6 bg-black">
-			<div id="scalar-root" data-api-url={apiUrl} class="scalar-theme"></div>
+		<div class="docs-reference-frame">
+			<div id="scalar-root" class="scalar-theme min-h-[900px]"></div>
 		</div>
 	</div>
 
-	<script is:inline src="https://cdn.jsdelivr.net/npm/@scalar/api-reference" onload="window.mountGeocodedDocsReference()"></script>
 	<script is:inline>
-		window.mountGeocodedDocsReference = () => {
+		(() => {
+			const shell = document.querySelector('[data-docs-root]')
 			const root = document.getElementById('scalar-root')
-			if (!window.Scalar || !root) return
-			const apiUrl = root.dataset.apiUrl || 'https://api.geocoded.me'
-			window.Scalar.createApiReference(root, {
-				theme: 'none',
-				darkMode: true,
-				hideDarkModeToggle: true,
-				defaultOpenAllTags: true,
-				documentDownloadType: 'none',
-				sources: [
-					{
-						title: 'Geocoded v2 (Latest)',
-						url: `${apiUrl}/v2/openapi.json`,
-					},
-					{
-						title: 'Geocoded v1',
-						url: `${apiUrl}/openapi.json`,
-					}
-				],
-			})
-		}
+			const versionSelect = document.querySelector('[data-docs-version]')
+			const openApiLink = document.querySelector('[data-openapi-download]')
+			const postmanLink = document.querySelector('[data-postman-download]')
+			const versions = JSON.parse(shell?.dataset.docsVersions || '[]')
+			let activeVersionId = versionSelect?.value || versions[0]?.id
 
-		if (window.Scalar) {
-			window.mountGeocodedDocsReference()
-		}
+			function activeVersion() {
+				return versions.find((version) => version.id === activeVersionId) || versions[0]
+			}
+
+			function updateLinks(version) {
+				if (openApiLink) openApiLink.href = version.openApiUrl
+				if (postmanLink) postmanLink.href = version.postmanUrl
+			}
+
+			window.mountGeocodedDocsReference = () => {
+				const version = activeVersion()
+				if (!version) return
+				updateLinks(version)
+				if (!window.Scalar || !root) return
+				root.replaceChildren()
+				window.Scalar.createApiReference(root, {
+					theme: 'none',
+					darkMode: true,
+					hideDarkModeToggle: true,
+					defaultOpenAllTags: true,
+					documentDownloadType: 'none',
+					agent: { disabled: true },
+					url: version.openApiUrl,
+				})
+			}
+
+			versionSelect?.addEventListener('change', () => {
+				activeVersionId = versionSelect.value
+				window.history.replaceState(null, '', window.location.pathname)
+				window.mountGeocodedDocsReference()
+			})
+
+			if (window.Scalar) {
+				window.mountGeocodedDocsReference()
+			}
+		})()
 	</script>
+	<script is:inline src="https://cdn.jsdelivr.net/npm/@scalar/api-reference" onload="window.mountGeocodedDocsReference?.()"></script>
 </Layout>

@@ -6,61 +6,32 @@ const githubUrl = import.meta.env.PUBLIC_GITHUB_URL || 'https://github.com/geoco
 
 const features = [
 	{
-		title: 'Free & Open Source',
-		description: 'No API key, no signup, no rate limits. Data sourced from official institutions (GeoNames, CLDR, Wikidata, IANA) under CC BY 4.0.',
+		title: 'Public by default',
+		description: 'No signup and no API key. Clean JSON for apps, scripts, dashboards, and internal tools.',
 		number: '01'
 	},
 	{
-		title: 'Global Edge Network',
-		description: 'Powered by Cloudflare Workers with near-zero cold starts. Cached at the edge for millisecond responses from the closest POP.',
+		title: 'Root collections',
+		description: 'Countries, states, cities, timezones, currencies, airports, ports, and more as first-class APIs.',
 		number: '02'
 	},
 	{
-		title: 'Rich Data',
-		description: '252 countries, 3,800+ states, and 230,000+ cities with translations, coordinates, phone codes, timezones and currencies.',
+		title: 'Query what you need',
+		description: 'Use `filter[...]`, `fields`, `expand`, pagination, search, and sorting without changing endpoints.',
 		number: '03'
 	},
 	{
-		title: 'Field Selection',
-		description: 'Pick exactly the fields you need with ?fields= parameter. Supports dot notation for nested objects. Smaller payloads, faster apps.',
+		title: 'Edge cached',
+		description: 'Cloudflare Workers and D1 keep reads fast, cacheable, and close to the caller.',
 		number: '04'
-	},
-]
-
-const dataPages = [
-	{
-		href: '/dashboard',
-		title: 'Dashboard',
-		description: 'Global data overview with interactive charts and key metrics across all 252 countries.',
-	},
-	{
-		href: '/explorer',
-		title: 'Explorer',
-		description: 'Browse and filter countries, states, and cities with an interactive world map.',
-	},
-	{
-		href: '/statistics',
-		title: 'Statistics',
-		description: 'Dive into population, area, GDP, literacy, and other comparative statistics.',
-	},
-	{
-		href: '/quiz',
-		title: 'Quiz',
-		description: 'Test your geography knowledge with fun quizzes on flags, capitals, and more.',
 	},
 ]
 
 function jsonKv(k: string, v: string, last = false) {
 	return `  <span class="text-white">"${k}"</span><span class="text-white/50">: </span><span class="text-white/80">"${v}"</span>${last ? '' : ','}\n`
 }
-function jsonKvNum(k: string, v: string, last = false) {
-	return `  <span class="text-white">"${k}"</span><span class="text-white/50">: </span><span class="text-white/80">${v}</span>${last ? '' : ','}\n`
-}
 function jsonKvi(k: string, v: string, last = false) {
 	return `    <span class="text-white">"${k}"</span><span class="text-white/50">: </span><span class="text-white/80">"${v}"</span>${last ? '' : ','}\n`
-}
-function jsonKviNum(k: string, v: string, last = false) {
-	return `    <span class="text-white">"${k}"</span><span class="text-white/50">: </span><span class="text-white/80">${v}</span>${last ? '' : ','}\n`
 }
 function jsonKviRaw(k: string, v: string, last = false) {
 	return `    <span class="text-white">"${k}"</span><span class="text-white/50">: </span>${v}${last ? '' : ','}\n`
@@ -71,124 +42,63 @@ function jsonBr(v: string) {
 
 const examples = [
 	{
-		title: 'Your location from IP',
-		curl: `curl ${apiUrl}`,
+		title: 'Caller location',
+		curl: `curl '${apiUrl}/v2?fields=ip,country,countryInfo.name'`,
 		responseHtml:
 			jsonBr('{') +
 			jsonKv('ip', '203.0.113.42') +
-			jsonKv('country', 'US') +
-			jsonKv('region', 'California') +
-			jsonKv('city', 'San Francisco') +
-			jsonKvNum('latitude', '37.7749') +
-			jsonKvNum('longitude', '-122.4194') +
-			jsonKv('timezone', 'America/Los_Angeles', true) +
+			jsonKv('country', 'AE') +
+			`  <span class="text-white">"countryInfo"</span><span class="text-white/50">: </span><span class="text-white/50">{</span>\n` +
+			jsonKvi('name', 'United Arab Emirates', true) +
+			`  <span class="text-white/50">}</span>\n` +
 			jsonBr('}'),
 	},
 	{
-		title: 'Countries with field selection',
-		curl: `curl ${apiUrl}/countries/US?fields=name,iso2,capital,currency`,
+		title: 'Filter countries',
+		curl: `curl '${apiUrl}/v2/countries?filter[country]=AE&fields=id,iso2,name,currency'`,
 		responseHtml:
 			jsonBr('{') +
-			jsonKv('name', 'United States') +
-			jsonKv('iso2', 'US') +
-			jsonKv('capital', 'Washington') +
-			jsonKv('currency', 'USD', true) +
-			jsonBr('}'),
-	},
-	{
-		title: 'Drill down to states and cities',
-		curl: `curl ${apiUrl}/countries/US/states/CA/cities?fields=name,latitude,longitude`,
-		responseHtml:
-			jsonBr('[') +
+			`  <span class="text-white">"data"</span><span class="text-white/50">: </span><span class="text-white/50">[</span>\n` +
 			jsonBr('  {') +
-			jsonKvi('name', 'Los Angeles') +
-			jsonKviNum('latitude', '34.05223420') +
-			jsonKviNum('longitude', '-118.24368490', true) +
-			jsonBr('  },') +
-			jsonBr('  {') +
-			jsonKvi('name', 'San Francisco') +
-			jsonKviNum('latitude', '37.77492950') +
-			jsonKviNum('longitude', '-122.41941550', true) +
+			jsonKvi('id', 'AE') +
+			jsonKvi('iso2', 'AE') +
+			jsonKvi('name', 'United Arab Emirates') +
+			jsonKvi('currency', 'AED', true) +
 			jsonBr('  }') +
-			jsonBr(']'),
+			`  <span class="text-white/50">],</span>\n` +
+			`  <span class="text-white">"meta"</span><span class="text-white/50">: </span><span class="text-white/80">{ "limit": 25, "offset": 0, "total": 1 }</span>\n` +
+			jsonBr('}'),
 	},
 	{
-		title: 'Search across all entities',
-		curl: `curl ${apiUrl}/search?q=tokyo`,
+		title: 'Expand statistics',
+		curl: `curl '${apiUrl}/v2/countries?filter[country]=AE&expand=statistics&fields=*,statistics.gdpPerCapitaCurrentUsd'`,
 		responseHtml:
 			jsonBr('{') +
-			`  <span class="text-white">"data"</span><span class="text-white/50">: </span>[\n` +
-			jsonBr('    {') +
-			jsonKvi('type', 'state') +
-			jsonKvi('name', 'Tokyo') +
-			jsonKvi('countryCode', 'JP') +
-			jsonKvi('countryName', 'Japan') +
-			jsonKviRaw('geonameId', '<span class="text-white/80">null</span>') +
-			jsonKvi('stateCode', '13') +
-			jsonKviRaw('stateName', '<span class="text-white/80">null</span>', true) +
-			jsonBr('    },') +
-			jsonBr('    {') +
-			jsonKvi('type', 'city') +
-			jsonKvi('name', 'Tokyo') +
-			jsonKvi('countryCode', 'JP') +
-			jsonKvi('countryName', 'Japan') +
-			jsonKviNum('geonameId', '1850147') +
-			jsonKvi('stateCode', '13') +
-			jsonKvi('stateName', 'Tokyo', true) +
-			jsonBr('    },') +
-			jsonBr('    {') +
-			jsonKvi('type', 'city') +
-			jsonKvi('name', 'Nishi-Tokyo-shi') +
-			jsonKvi('countryCode', 'JP') +
-			jsonKvi('countryName', 'Japan') +
-			jsonKviNum('geonameId', '1850692') +
-			jsonKvi('stateCode', '13') +
-			jsonKvi('stateName', 'Tokyo', true) +
-			jsonBr('    }') +
+			`  <span class="text-white">"data"</span><span class="text-white/50">: </span><span class="text-white/50">[</span>\n` +
+			jsonBr('  {') +
+			jsonKvi('id', 'AE') +
+			jsonKvi('name', 'United Arab Emirates') +
+			jsonKvi('currency', 'AED') +
+			`    <span class="text-white">"statistics"</span><span class="text-white/50">: </span><span class="text-white/50">{</span>\n` +
+			`      <span class="text-white">"gdpPerCapitaCurrentUsd"</span><span class="text-white/50">: </span><span class="text-white/80">{ "year": 2024, "value": 53700 }</span>\n` +
+			`    <span class="text-white/50">}</span>\n` +
+			jsonBr('  }') +
 			`  <span class="text-white/50">],</span>\n` +
 			`  <span class="text-white">"meta"</span><span class="text-white/50">: </span><span class="text-white/80">{ ... }</span>\n` +
 			jsonBr('}'),
 	},
 	{
-		title: 'List timezones',
-		curl: `curl ${apiUrl}/timezones?limit=2&fields=timezone,name,standardOffsetName,observesDst`,
+		title: 'List cities',
+		curl: `curl '${apiUrl}/v2/cities?filter[country]=AE&fields=id,name,countryCode,stateCode&limit=2'`,
 		responseHtml:
 			jsonBr('{') +
-			`  <span class="text-white">"data"</span><span class="text-white/50">: </span>[\n` +
-			jsonBr('    {') +
-			jsonKvi('timezone', 'America/New_York') +
-			jsonKvi('name', 'Eastern Time') +
-			jsonKvi('standardOffsetName', 'UTC-05:00') +
-			jsonKviRaw('observesDst', '<span class="text-white/80">true</span>', true) +
-			jsonBr('    },') +
-			jsonBr('    {') +
-			jsonKvi('timezone', 'Europe/London') +
-			jsonKvi('name', 'United Kingdom Time') +
-			jsonKvi('standardOffsetName', 'UTC+00:00') +
-			jsonKviRaw('observesDst', '<span class="text-white/80">true</span>', true) +
-			jsonBr('    }') +
-			`  <span class="text-white/50">],</span>\n` +
-			`  <span class="text-white">"meta"</span><span class="text-white/50">: </span><span class="text-white/80">{ ... }</span>\n` +
-			jsonBr('}'),
-	},
-	{
-		title: 'List currencies',
-		curl: `curl ${apiUrl}/currencies?limit=2&fields=code,name,symbol,countries`,
-		responseHtml:
-			jsonBr('{') +
-			`  <span class="text-white">"data"</span><span class="text-white/50">: </span>[\n` +
-			jsonBr('    {') +
-			jsonKvi('code', 'USD') +
-			jsonKvi('name', 'US Dollar') +
-			jsonKvi('symbol', '$') +
-			jsonKviRaw('countries', '<span class="text-white/80">["US"]</span>', true) +
-			jsonBr('    },') +
-			jsonBr('    {') +
-			jsonKvi('code', 'EUR') +
-			jsonKvi('name', 'Euro') +
-			jsonKvi('symbol', '€') +
-			jsonKviRaw('countries', '<span class="text-white/80">["AD","AT","BE"]</span>', true) +
-			jsonBr('    }') +
+			`  <span class="text-white">"data"</span><span class="text-white/50">: </span><span class="text-white/50">[</span>\n` +
+			jsonBr('  {') +
+			jsonKvi('id', '292968') +
+			jsonKvi('name', 'Abu Dhabi') +
+			jsonKvi('countryCode', 'AE') +
+			jsonKvi('stateCode', 'AZ', true) +
+			jsonBr('  }') +
 			`  <span class="text-white/50">],</span>\n` +
 			`  <span class="text-white">"meta"</span><span class="text-white/50">: </span><span class="text-white/80">{ ... }</span>\n` +
 			jsonBr('}'),
@@ -207,14 +117,14 @@ const stats = [
 	<!-- Hero -->
 	<div class="min-h-[70vh] flex flex-col justify-center items-start border-l border-white/20 pl-10 md:pl-20 mb-32 pt-20">
 		<p class="text-lg font-bold tracking-widest text-white/40 uppercase mb-6 w-full">
-			Free Country, State, City & Location API
+			Global Geography Data API
 		</p>
 		<h1 class="text-6xl md:text-8xl lg:text-[10rem] font-bold tracking-tighter leading-[0.85] uppercase mb-8">
 			Geocoded
 		</h1>
 		<p class="text-xl md:text-2xl font-light text-white/60 max-w-2xl leading-relaxed mb-16">
-			Open-source REST API with 252 countries, 3,800+ states, and 230,000+ cities.
-			No API key required. Deployed on the edge for instant responses worldwide.
+			Open-source geography API for location, administrative, transport,
+			timezone, currency, and statistics data. No API key required.
 		</p>
 
 		<div class="flex flex-wrap gap-6">
@@ -229,7 +139,7 @@ const stats = [
 	</div>
 
 	<!-- Stats Banner -->
-	<div class="mb-32">
+	<div class="mb-24">
 		<div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/20 border border-white/20">
 			{stats.map((stat, i) => (
 				<div class="bg-black p-8 md:p-12 relative overflow-hidden group">
@@ -244,46 +154,20 @@ const stats = [
 	</div>
 
 	<!-- Features Matrix -->
-	<section class="mb-32 pt-12 border-t border-white/20">
+	<section class="mb-24 pt-12 border-t border-white/20">
 		<p class="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">Why Geocoded</p>
-		<h2 class="mb-6 text-4xl md:text-6xl font-bold tracking-tighter uppercase">Built for developers<br/><span class="text-white/40">who ship fast</span></h2>
-		<p class="mb-16 max-w-lg text-lg text-white/60 leading-relaxed">
-			No signup, no API key, no rate limits. Just clean JSON over HTTPS.
-		</p>
-
-		<div class="grid md:grid-cols-2 gap-px bg-white/20 border border-white/20">
-			{features.map((f) => (
-				<div class="bg-black p-12 lg:p-16 flex flex-col justify-between min-h-[350px] group hover:bg-white/[0.02] transition-colors">
-					<div>
-						<h3 class="text-3xl font-bold tracking-tighter uppercase mb-4">{f.title}</h3>
-						<p class="text-white/60 text-lg leading-relaxed">{f.description}</p>
-					</div>
-					<div class="text-6xl font-bold text-white/20 uppercase tracking-tighter mt-12 group-hover:text-white/40 transition-colors">{f.number}</div>
-				</div>
-			))}
-		</div>
-	</section>
-
-	<!-- See the Data CTA -->
-	<section class="mb-32 pt-12 border-t border-white/20">
-		<p class="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">See the Data</p>
-		<h2 class="mb-6 text-4xl md:text-6xl font-bold tracking-tighter uppercase">Explore the<br/><span class="text-white/40">full dataset</span></h2>
-		<p class="mb-16 max-w-lg text-lg text-white/60 leading-relaxed">
-			Interactive tools to browse, visualize, and analyze geography data from the API.
+		<h2 class="mb-6 text-4xl md:text-6xl font-bold tracking-tighter uppercase">One surface<br/><span class="text-white/40">many datasets</span></h2>
+		<p class="mb-10 max-w-xl text-lg text-white/60 leading-relaxed">
+			Use the same query model across reference data, administrative geography, transport, and statistics.
 		</p>
 
 		<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/20 border border-white/20">
-			{dataPages.map((page) => (
-				<a href={page.href} class="bg-black p-8 md:p-12 min-h-[300px] flex flex-col justify-between group hover:bg-white/[0.02] transition-colors cursor-pointer">
-					<div>
-						<h3 class="text-2xl font-bold tracking-tighter uppercase mb-4">{page.title}</h3>
-						<p class="text-white/60 text-base leading-relaxed">{page.description}</p>
-					</div>
-					<div class="mt-8 font-bold tracking-widest uppercase text-xs text-white/40 group-hover:text-white transition-colors flex items-center gap-2">
-						[ Launch ]
-						<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-					</div>
-				</a>
+			{features.map((f) => (
+				<div class="bg-black p-8 lg:p-10 min-h-[240px] group hover:bg-white/[0.02] transition-colors">
+					<div class="mb-8 text-xs font-bold text-white/30 uppercase tracking-widest">{f.number}</div>
+					<h3 class="text-2xl font-bold tracking-tighter uppercase mb-4">{f.title}</h3>
+					<p class="text-white/60 text-base leading-relaxed">{f.description}</p>
+				</div>
 			))}
 		</div>
 	</section>
@@ -306,10 +190,7 @@ const stats = [
 								<span class="rounded-none bg-white text-black px-2 py-1 text-[10px] font-bold tracking-widest uppercase">GET</span>
 							</div>
 							<p class="mb-4 text-xs font-bold uppercase tracking-widest text-white/40">Request</p>
-							<div class="flex flex-wrap items-center gap-3">
-								<span class="text-white/50 font-mono">~</span>
-								<span class="text-white font-mono text-sm break-all">{ex.curl}</span>
-							</div>
+							<pre class="max-w-full overflow-x-auto whitespace-pre font-mono text-sm leading-relaxed text-white">{ex.curl}</pre>
 						</div>
 					</div>
 					<div class="p-8 md:p-10 md:w-1/2 bg-black/50">

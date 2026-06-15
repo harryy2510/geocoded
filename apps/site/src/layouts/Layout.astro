@@ -17,10 +17,10 @@ const { title = 'GEOCODED | Premium Data Layer' } = Astro.props
 	<body class="bg-black text-white antialiased min-h-screen flex flex-col">
 		<div class="noise"></div>
 
-		<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
+		<nav class="sticky top-0 w-full z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
 			<div class="max-w-[1600px] mx-auto px-6 py-5 flex justify-between items-center">
 				<a href="/" class="font-bold text-xl tracking-tighter uppercase flex items-center gap-4 hover:opacity-70 transition-opacity">
-					<div class="w-6 h-6 bg-white rounded-sm"></div>
+					<img src="/favicon.svg" alt="Geocoded Logo" class="w-8 h-8" />
 					GEOCODED
 				</a>
 
@@ -34,7 +34,7 @@ const { title = 'GEOCODED | Premium Data Layer' } = Astro.props
 			</div>
 		</nav>
 
-		<main class="flex-1 w-full max-w-[1600px] mx-auto px-6 pt-32 pb-24 relative z-10">
+		<main class="flex-1 w-full max-w-[1600px] mx-auto px-6 pt-32 pb-24 relative">
 			<slot />
 		</main>
 
