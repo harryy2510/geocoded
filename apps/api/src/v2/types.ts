@@ -29,11 +29,46 @@ export type V2Country = {
 	iso2: string
 	iso3: string
 	name: string
+	native: string
+	capital: string
 	continent: string
 	region: string
+	subregion: string
 	currency: string
+	currencyName: string
+	currencySymbol: string
+	tld: string
+	phoneCode: string
+	numericCode: string
+	nationality: string
+	emoji: string
+	emojiU: string
+	latitude: string
+	longitude: string
+	areaSqKm: number | null
 	population: number
+	gdp: number | null
+	literacy: number | null
+	postalCodeFormat: string | null
+	postalCodeRegex: string | null
+	drivingSide: string
+	measurementSystem: string
+	firstDayOfWeek: string
+	timeFormat: string
+	flagUrl: string
+	languages: string[]
+	neighbours: string[]
+	timezones: V2CountryTimezone[]
+	translations: Record<string, string>
 	statistics?: V2CountryStatistics | null
+}
+
+export type V2CountryTimezone = {
+	zoneName: string
+	gmtOffset: number
+	gmtOffsetName: string
+	abbreviation: string
+	tzName: string
 }
 
 export type V2Continent = {

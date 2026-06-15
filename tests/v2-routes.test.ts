@@ -537,7 +537,7 @@ class FakeV2D1Database {
 describe('v2 routes', () => {
 	test('returns countries with explicit statistics expansion and nested fields', async () => {
 		const response = await request(
-			'/v2/countries?filter[country]=ae&expand=statistics&fields=*,statistics.gdpPerCapitaCurrentUsd'
+			'/v2/countries?filter[country]=ae&expand=statistics&fields=id,iso2,iso3,name,continent,region,currency,population,statistics.gdpPerCapitaCurrentUsd'
 		)
 
 		expect(response.status).toBe(200)
@@ -566,6 +566,78 @@ describe('v2 routes', () => {
 			}
 		])
 		expect(body.meta.total).toBe(1)
+	})
+
+	test('returns a rich default field set for countries', async () => {
+		const response = await request('/v2/countries?filter[country]=AE')
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<
+			Record<string, unknown>
+		>
+
+		const [country] = body.data
+		expect(country).toBeDefined()
+
+		// Default response carries the full descriptive field set, not just the id/iso/name basics.
+		expect(country).toMatchObject({
+			id: 'AE',
+			iso2: 'AE',
+			iso3: 'ARE',
+			name: 'United Arab Emirates',
+			native: 'United Arab Emirates',
+			capital: 'Abu Dhabi',
+			continent: 'AS',
+			region: 'Asia',
+			subregion: 'Western Asia',
+			currency: 'AED',
+			currencyName: 'UAE Dirham',
+			currencySymbol: 'د.إ',
+			tld: '.ae',
+			phoneCode: '971',
+			numericCode: '784',
+			nationality: 'Emirati',
+			emoji: '🇦🇪',
+			emojiU: 'U+1F1E6 U+1F1EA',
+			latitude: '24',
+			longitude: '54',
+			areaSqKm: 83600,
+			population: 10642745,
+			gdp: 504000000000,
+			literacy: 98,
+			postalCodeFormat: null,
+			postalCodeRegex: null,
+			drivingSide: 'right',
+			measurementSystem: 'metric',
+			firstDayOfWeek: 'monday',
+			timeFormat: 'HH:mm',
+			flagUrl: '',
+			languages: ['ar'],
+			neighbours: []
+		})
+
+		// Heavy blobs stay out of the default response but remain reachable via fields.
+		expect(country).not.toHaveProperty('timezones')
+		expect(country).not.toHaveProperty('translations')
+	})
+
+	test('exposes heavy country blobs through explicit fields', async () => {
+		const response = await request(
+			'/v2/countries?filter[country]=AE&fields=id,timezones,translations'
+		)
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<
+			Record<string, unknown>
+		>
+
+		expect(body.data).toEqual([
+			{
+				id: 'AE',
+				timezones: [],
+				translations: {}
+			}
+		])
 	})
 
 	test('returns flattened statistics and uses fields for specific metrics', async () => {

@@ -120,15 +120,56 @@ const v2StatisticsSchema = objectSchema({
 	lifeExpectancy: v2StatisticValueSchema
 })
 
+const v2CountryTimezoneSchema = objectSchema({
+	zoneName: stringSchema,
+	gmtOffset: numberSchema,
+	gmtOffsetName: stringSchema,
+	abbreviation: stringSchema,
+	tzName: stringSchema
+})
+
 const v2CountrySchema = objectSchema({
 	id: stringSchema,
 	iso2: stringSchema,
 	iso3: stringSchema,
 	name: stringSchema,
+	native: stringSchema,
+	capital: stringSchema,
 	continent: stringSchema,
 	region: stringSchema,
+	subregion: stringSchema,
 	currency: stringSchema,
+	currencyName: stringSchema,
+	currencySymbol: stringSchema,
+	tld: stringSchema,
+	phoneCode: stringSchema,
+	numericCode: stringSchema,
+	nationality: stringSchema,
+	emoji: stringSchema,
+	emojiU: stringSchema,
+	latitude: stringSchema,
+	longitude: stringSchema,
+	areaSqKm: nullableNumberSchema,
 	population: numberSchema,
+	gdp: nullableNumberSchema,
+	literacy: nullableNumberSchema,
+	postalCodeFormat: nullableStringSchema,
+	postalCodeRegex: nullableStringSchema,
+	drivingSide: stringSchema,
+	measurementSystem: stringSchema,
+	firstDayOfWeek: stringSchema,
+	timeFormat: stringSchema,
+	flagUrl: stringSchema,
+	languages: stringArraySchema,
+	neighbours: stringArraySchema,
+	timezones: {
+		type: 'array' as const,
+		items: v2CountryTimezoneSchema
+	},
+	translations: {
+		type: 'object' as const,
+		additionalProperties: stringSchema
+	},
 	statistics: {
 		...v2StatisticsSchema,
 		nullable: true

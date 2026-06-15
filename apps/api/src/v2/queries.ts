@@ -6,6 +6,7 @@ import {
 	type V2Continent,
 	type V2Country,
 	type V2CountryStatistics,
+	type V2CountryTimezone,
 	type V2Currency,
 	type V2Language,
 	type V2LanguageName,
@@ -443,10 +444,37 @@ function rowToV2Country(row: D1Row): V2Country {
 		iso2,
 		iso3: stringValue(row.iso3),
 		name: stringValue(row.name),
+		native: stringValue(row.native),
+		capital: stringValue(row.capital),
 		continent: stringValue(row.continent),
 		region: stringValue(row.region),
+		subregion: stringValue(row.subregion),
 		currency: stringValue(row.currency),
-		population: numberValue(row.population)
+		currencyName: stringValue(row.currency_name),
+		currencySymbol: stringValue(row.currency_symbol),
+		tld: stringValue(row.tld),
+		phoneCode: stringValue(row.phone_code),
+		numericCode: stringValue(row.numeric_code),
+		nationality: stringValue(row.nationality),
+		emoji: stringValue(row.emoji),
+		emojiU: stringValue(row.emoji_u),
+		latitude: stringValue(row.latitude),
+		longitude: stringValue(row.longitude),
+		areaSqKm: numberOrNull(row.area_sq_km),
+		population: numberValue(row.population),
+		gdp: numberOrNull(row.gdp),
+		literacy: numberOrNull(row.literacy),
+		postalCodeFormat: nullableString(row.postal_code_format),
+		postalCodeRegex: nullableString(row.postal_code_regex),
+		drivingSide: stringValue(row.driving_side),
+		measurementSystem: stringValue(row.measurement_system),
+		firstDayOfWeek: stringValue(row.first_day_of_week),
+		timeFormat: stringValue(row.time_format),
+		flagUrl: stringValue(row.flag_url),
+		languages: parseJsonArray<string>(row.languages),
+		neighbours: parseJsonArray<string>(row.neighbours),
+		timezones: parseJsonArray<V2CountryTimezone>(row.timezones),
+		translations: parseJsonObject(row.translations)
 	}
 }
 
@@ -701,6 +729,23 @@ function parseJsonArray<T>(value: unknown): T[] {
 		return Array.isArray(parsed) ? (parsed as T[]) : []
 	} catch {
 		return []
+	}
+}
+
+function parseJsonObject(value: unknown): Record<string, string> {
+	if (typeof value !== 'string' || value.trim() === '') return {}
+	try {
+		const parsed = JSON.parse(value) as unknown
+		if (
+			parsed === null ||
+			typeof parsed !== 'object' ||
+			Array.isArray(parsed)
+		) {
+			return {}
+		}
+		return parsed as Record<string, string>
+	} catch {
+		return {}
 	}
 }
 
