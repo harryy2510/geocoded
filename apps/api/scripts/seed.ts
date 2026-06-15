@@ -106,6 +106,115 @@ type RawCurrencyEntry = {
 	countries: string[]
 }
 
+type RawStatisticValue = {
+	code: string
+	name: string
+	year: number
+	value: number | null
+}
+
+type RawCountryStatistics = {
+	countryCode: string
+	countryName: string
+	iso3: string
+	indicators: {
+		populationTotal?: RawStatisticValue
+		populationFemale?: RawStatisticValue
+		populationMale?: RawStatisticValue
+		populationDensity?: RawStatisticValue
+		urbanPopulationPercent?: RawStatisticValue
+		ruralPopulationPercent?: RawStatisticValue
+		age0To14Percent?: RawStatisticValue
+		age15To64Percent?: RawStatisticValue
+		age65PlusPercent?: RawStatisticValue
+		gdpCurrentUsd?: RawStatisticValue
+		gdpPerCapitaCurrentUsd?: RawStatisticValue
+		lifeExpectancy?: RawStatisticValue
+	}
+}
+
+type RawAirline = {
+	name: string
+	iataDesignator: string
+	accountingCode: string | null
+	icaoCode: string | null
+	countryName: string
+	controlledDuplicate: boolean
+	countryCode: string
+}
+
+type RawAirport = {
+	geonameId: number
+	name: string
+	asciiName: string
+	alternateNames: string[]
+	unLocode: string | null
+	airportLocationCode: string | null
+	iataCode: string | null
+	iataCodeSource: string | null
+	latitude: string
+	longitude: string
+	countryCode: string
+	countryName: string
+	admin1Code: string
+	admin1Name: string
+	admin2Code: string
+	elevation: number | null
+	timezone: string
+	modificationDate: string
+}
+
+type RawTransportLocation = {
+	unLocode: string
+	countryCode: string
+	countryName: string
+	locationCode: string
+	iataCode: string | null
+	iataCodeSource: string | null
+	name: string
+	nameWithoutDiacritics: string
+	alternateNames: string[]
+	subdivisionCode: string | null
+	functionCode: string
+	functions: string[]
+	status: string | null
+	statusName: string | null
+	date: string | null
+	coordinates: string | null
+	latitude: number | null
+	longitude: number | null
+	remarks: string | null
+	changeIndicator: string | null
+}
+
+type RawMigrationOrigin = {
+	countryCode: string
+	countryName: string
+	iso3: string
+	m49Code: string
+	count: number
+	maleCount: number
+	femaleCount: number
+	shareOfMigrantsPercent: number
+	shareOfPopulationPercent: number
+}
+
+type RawCountryMigration = {
+	countryCode: string
+	countryName: string
+	iso3: string
+	m49Code: string
+	year: number
+	coverage: string | null
+	sourceDataTypeCode: string | null
+	sourceDataTypeMethods: string[]
+	totalInternationalMigrants: number | null
+	maleInternationalMigrants: number | null
+	femaleInternationalMigrants: number | null
+	migrantShareOfPopulationPercent: number | null
+	origins: RawMigrationOrigin[]
+}
+
 type DataFile<T> = {
 	filename: string
 	hash: string
@@ -196,6 +305,28 @@ function json(value: unknown): string {
 
 function stateKey(countryCode: string, stateCode: string): string {
 	return `${countryCode}:${stateCode}`
+}
+
+function airlineId(airline: RawAirline): string {
+	return [
+		airline.iataDesignator,
+		airline.icaoCode ?? '',
+		airline.accountingCode ?? ''
+	].join(':')
+}
+
+function airportId(airport: RawAirport): string {
+	if (airport.geonameId) return `geoname:${airport.geonameId}`
+	if (airport.unLocode) return `unlocode:${airport.unLocode}`
+	if (airport.iataCode) return `iata:${airport.countryCode}:${airport.iataCode}`
+	return `airport:${sha256(
+		json([
+			airport.countryCode,
+			airport.name,
+			airport.latitude,
+			airport.longitude
+		])
+	)}`
 }
 
 function chunk<T>(values: T[], size: number): T[][] {
@@ -616,6 +747,371 @@ function currencyRow(currency: RawCurrencyEntry): SourceRow {
 	}
 }
 
+function countryStatisticsRow(country: RawCountryStatistics): SourceRow {
+	const columns = [
+		'country_code',
+		'country_name',
+		'iso3',
+		'population_total',
+		'population_total_value',
+		'population_female',
+		'population_female_value',
+		'population_male',
+		'population_male_value',
+		'population_density',
+		'population_density_value',
+		'urban_population_percent',
+		'urban_population_percent_value',
+		'rural_population_percent',
+		'rural_population_percent_value',
+		'age_0_to_14_percent',
+		'age_0_to_14_percent_value',
+		'age_15_to_64_percent',
+		'age_15_to_64_percent_value',
+		'age_65_plus_percent',
+		'age_65_plus_percent_value',
+		'gdp_current_usd',
+		'gdp_current_usd_value',
+		'gdp_per_capita_current_usd',
+		'gdp_per_capita_current_usd_value',
+		'life_expectancy',
+		'life_expectancy_value',
+		'source_hash'
+	]
+	const indicators = country.indicators
+	const values = [
+		country.countryCode,
+		country.countryName,
+		country.iso3,
+		statisticJson(indicators.populationTotal),
+		statisticValue(indicators.populationTotal),
+		statisticJson(indicators.populationFemale),
+		statisticValue(indicators.populationFemale),
+		statisticJson(indicators.populationMale),
+		statisticValue(indicators.populationMale),
+		statisticJson(indicators.populationDensity),
+		statisticValue(indicators.populationDensity),
+		statisticJson(indicators.urbanPopulationPercent),
+		statisticValue(indicators.urbanPopulationPercent),
+		statisticJson(indicators.ruralPopulationPercent),
+		statisticValue(indicators.ruralPopulationPercent),
+		statisticJson(indicators.age0To14Percent),
+		statisticValue(indicators.age0To14Percent),
+		statisticJson(indicators.age15To64Percent),
+		statisticValue(indicators.age15To64Percent),
+		statisticJson(indicators.age65PlusPercent),
+		statisticValue(indicators.age65PlusPercent),
+		statisticJson(indicators.gdpCurrentUsd),
+		statisticValue(indicators.gdpCurrentUsd),
+		statisticJson(indicators.gdpPerCapitaCurrentUsd),
+		statisticValue(indicators.gdpPerCapitaCurrentUsd),
+		statisticJson(indicators.lifeExpectancy),
+		statisticValue(indicators.lifeExpectancy)
+	] satisfies SqlValue[]
+	const hash = hashValues(values)
+	return {
+		key: country.countryCode,
+		hash,
+		sql: upsertSql(
+			'country_statistics',
+			columns,
+			[...values, hash],
+			'(country_code)',
+			[
+				'country_name',
+				'iso3',
+				'population_total',
+				'population_total_value',
+				'population_female',
+				'population_female_value',
+				'population_male',
+				'population_male_value',
+				'population_density',
+				'population_density_value',
+				'urban_population_percent',
+				'urban_population_percent_value',
+				'rural_population_percent',
+				'rural_population_percent_value',
+				'age_0_to_14_percent',
+				'age_0_to_14_percent_value',
+				'age_15_to_64_percent',
+				'age_15_to_64_percent_value',
+				'age_65_plus_percent',
+				'age_65_plus_percent_value',
+				'gdp_current_usd',
+				'gdp_current_usd_value',
+				'gdp_per_capita_current_usd',
+				'gdp_per_capita_current_usd_value',
+				'life_expectancy',
+				'life_expectancy_value',
+				'source_hash'
+			]
+		)
+	}
+}
+
+function airlineRow(airline: RawAirline): SourceRow {
+	const id = airlineId(airline)
+	const columns = [
+		'id',
+		'name',
+		'iata_code',
+		'accounting_code',
+		'icao_code',
+		'country_name',
+		'country_code',
+		'controlled_duplicate',
+		'source_hash'
+	]
+	const values = [
+		id,
+		airline.name,
+		airline.iataDesignator,
+		airline.accountingCode ?? '',
+		airline.icaoCode ?? '',
+		airline.countryName,
+		airline.countryCode,
+		airline.controlledDuplicate ? 1 : 0
+	] satisfies SqlValue[]
+	const hash = hashValues(values)
+	return {
+		key: id,
+		hash,
+		sql: upsertSql('airlines', columns, [...values, hash], '(id)', [
+			'name',
+			'iata_code',
+			'accounting_code',
+			'icao_code',
+			'country_name',
+			'country_code',
+			'controlled_duplicate',
+			'source_hash'
+		])
+	}
+}
+
+function airportRow(airport: RawAirport): SourceRow {
+	const id = airportId(airport)
+	const columns = [
+		'id',
+		'geoname_id',
+		'name',
+		'ascii_name',
+		'alternate_names',
+		'un_locode',
+		'airport_location_code',
+		'iata_code',
+		'iata_code_source',
+		'latitude',
+		'longitude',
+		'country_code',
+		'country_name',
+		'state_code',
+		'state_name',
+		'admin2_code',
+		'elevation',
+		'timezone',
+		'modification_date',
+		'source_hash'
+	]
+	const values = [
+		id,
+		airport.geonameId,
+		airport.name,
+		airport.asciiName,
+		json(airport.alternateNames),
+		airport.unLocode,
+		airport.airportLocationCode,
+		airport.iataCode,
+		airport.iataCodeSource,
+		airport.latitude,
+		airport.longitude,
+		airport.countryCode,
+		airport.countryName,
+		airport.admin1Code,
+		airport.admin1Name,
+		airport.admin2Code,
+		airport.elevation,
+		airport.timezone,
+		airport.modificationDate
+	] satisfies SqlValue[]
+	const hash = hashValues(values)
+	return {
+		key: id,
+		hash,
+		sql: upsertSql('airports', columns, [...values, hash], '(id)', [
+			'geoname_id',
+			'name',
+			'ascii_name',
+			'alternate_names',
+			'un_locode',
+			'airport_location_code',
+			'iata_code',
+			'iata_code_source',
+			'latitude',
+			'longitude',
+			'country_code',
+			'country_name',
+			'state_code',
+			'state_name',
+			'admin2_code',
+			'elevation',
+			'timezone',
+			'modification_date',
+			'source_hash'
+		])
+	}
+}
+
+function transportLocationRow(
+	table: 'ports' | 'border_crossings',
+	location: RawTransportLocation
+): SourceRow {
+	const columns = [
+		'id',
+		'un_locode',
+		'country_code',
+		'country_name',
+		'location_code',
+		'iata_code',
+		'iata_code_source',
+		'name',
+		'name_without_diacritics',
+		'alternate_names',
+		'subdivision_code',
+		'function_code',
+		'functions',
+		'status',
+		'status_name',
+		'date',
+		'coordinates',
+		'latitude',
+		'longitude',
+		'remarks',
+		'change_indicator',
+		'source_hash'
+	]
+	const values = [
+		location.unLocode,
+		location.unLocode,
+		location.countryCode,
+		location.countryName,
+		location.locationCode,
+		location.iataCode,
+		location.iataCodeSource,
+		location.name,
+		location.nameWithoutDiacritics,
+		json(location.alternateNames),
+		location.subdivisionCode,
+		location.functionCode,
+		json(location.functions),
+		location.status ?? '',
+		location.statusName ?? '',
+		location.date ?? '',
+		location.coordinates,
+		location.latitude,
+		location.longitude,
+		location.remarks,
+		location.changeIndicator
+	] satisfies SqlValue[]
+	const hash = hashValues(values)
+	return {
+		key: location.unLocode,
+		hash,
+		sql: upsertSql(table, columns, [...values, hash], '(id)', [
+			'un_locode',
+			'country_code',
+			'country_name',
+			'location_code',
+			'iata_code',
+			'iata_code_source',
+			'name',
+			'name_without_diacritics',
+			'alternate_names',
+			'subdivision_code',
+			'function_code',
+			'functions',
+			'status',
+			'status_name',
+			'date',
+			'coordinates',
+			'latitude',
+			'longitude',
+			'remarks',
+			'change_indicator',
+			'source_hash'
+		])
+	}
+}
+
+function countryMigrationRow(country: RawCountryMigration): SourceRow {
+	const columns = [
+		'country_code',
+		'country_name',
+		'iso3',
+		'm49_code',
+		'year',
+		'coverage',
+		'source_data_type_code',
+		'source_data_type_methods',
+		'total_international_migrants',
+		'male_international_migrants',
+		'female_international_migrants',
+		'migrant_share_of_population_percent',
+		'origins',
+		'source_hash'
+	]
+	const values = [
+		country.countryCode,
+		country.countryName,
+		country.iso3,
+		country.m49Code,
+		country.year,
+		country.coverage,
+		country.sourceDataTypeCode ?? '',
+		json(country.sourceDataTypeMethods),
+		country.totalInternationalMigrants ?? 0,
+		country.maleInternationalMigrants ?? 0,
+		country.femaleInternationalMigrants ?? 0,
+		country.migrantShareOfPopulationPercent ?? 0,
+		json(country.origins)
+	] satisfies SqlValue[]
+	const hash = hashValues(values)
+	return {
+		key: country.countryCode,
+		hash,
+		sql: upsertSql(
+			'country_migration',
+			columns,
+			[...values, hash],
+			'(country_code)',
+			[
+				'country_name',
+				'iso3',
+				'm49_code',
+				'year',
+				'coverage',
+				'source_data_type_code',
+				'source_data_type_methods',
+				'total_international_migrants',
+				'male_international_migrants',
+				'female_international_migrants',
+				'migrant_share_of_population_percent',
+				'origins',
+				'source_hash'
+			]
+		)
+	}
+}
+
+function statisticJson(value: RawStatisticValue | undefined): string {
+	return json(value ?? {})
+}
+
+function statisticValue(value: RawStatisticValue | undefined): number | null {
+	return value?.value ?? null
+}
+
 async function readDataFile<T>(filename: string): Promise<DataFile<T>> {
 	const raw = await Bun.file(`${DATA_DIR}/${filename}`).text()
 	return {
@@ -625,15 +1121,25 @@ async function readDataFile<T>(filename: string): Promise<DataFile<T>> {
 	}
 }
 
-async function wrangler(args: string[]): Promise<void> {
+async function wrangler(
+	args: string[],
+	options: { stdout?: 'inherit' | 'pipe' } = {}
+): Promise<void> {
+	const stdout = options.stdout ?? 'inherit'
 	const proc = Bun.spawn(['bun', 'wrangler', ...args], {
 		cwd: API_DIR,
-		stdout: 'inherit',
+		stdout,
 		stderr: 'inherit'
 	})
+	const output =
+		stdout === 'pipe' && proc.stdout
+			? await new Response(proc.stdout).text()
+			: ''
 	const code = await proc.exited
-	if (code !== 0)
+	if (code !== 0) {
+		if (output) console.error(output)
 		throw new Error(`wrangler ${args.join(' ')} failed (exit ${code})`)
+	}
 }
 
 async function wranglerOutput(args: string[]): Promise<string> {
@@ -999,17 +1505,34 @@ async function main() {
 	await wrangler(['d1', 'migrations', 'apply', 'geo-db', target])
 
 	console.log('\nReading data files...')
-	const [countriesFile, statesFile, citiesFile, timezonesFile, currenciesFile] =
-		await Promise.all([
-			readDataFile<RawCountry[]>('countries.json'),
-			readDataFile<RawState[]>('states.json'),
-			readDataFile<RawCity[]>('cities.json'),
-			readDataFile<RawTimezoneEntry[]>('timezones.json'),
-			readDataFile<RawCurrencyEntry[]>('currencies.json')
-		])
+	const [
+		countriesFile,
+		statesFile,
+		citiesFile,
+		timezonesFile,
+		currenciesFile,
+		countryStatisticsFile,
+		airlinesFile,
+		airportsFile,
+		portsFile,
+		borderCrossingsFile,
+		countryMigrationFile
+	] = await Promise.all([
+		readDataFile<RawCountry[]>('countries.json'),
+		readDataFile<RawState[]>('states.json'),
+		readDataFile<RawCity[]>('cities.json'),
+		readDataFile<RawTimezoneEntry[]>('timezones.json'),
+		readDataFile<RawCurrencyEntry[]>('currencies.json'),
+		readDataFile<RawCountryStatistics[]>('country-indicators.json'),
+		readDataFile<RawAirline[]>('iata-airline-members.json'),
+		readDataFile<RawAirport[]>('airports.json'),
+		readDataFile<RawTransportLocation[]>('ports.json'),
+		readDataFile<RawTransportLocation[]>('border-crossings.json'),
+		readDataFile<RawCountryMigration[]>('country-migrant-origins.json')
+	])
 
 	console.log(
-		`Loaded source rows: ${countriesFile.records.length} countries, ${statesFile.records.length} states, ${citiesFile.records.length} cities, ${timezonesFile.records.length} timezones, ${currenciesFile.records.length} currencies.`
+		`Loaded source rows: ${countriesFile.records.length} countries, ${statesFile.records.length} states, ${citiesFile.records.length} cities, ${timezonesFile.records.length} timezones, ${currenciesFile.records.length} currencies, ${countryStatisticsFile.records.length} country statistics, ${airlinesFile.records.length} airlines, ${airportsFile.records.length} airports, ${portsFile.records.length} ports, ${borderCrossingsFile.records.length} border crossings, ${countryMigrationFile.records.length} migration rows.`
 	)
 	console.log('Reading D1 seed file markers...')
 	const seedFiles = await readSeedFileHashes(target)
@@ -1033,6 +1556,37 @@ async function main() {
 	)
 	const sortedCurrencies = currenciesFile.records.sort((a, b) =>
 		a.code.localeCompare(b.code)
+	)
+	const sortedCountryStatistics = countryStatisticsFile.records.sort((a, b) =>
+		a.countryCode.localeCompare(b.countryCode)
+	)
+	const sortedAirlines = airlinesFile.records.sort(
+		(a, b) =>
+			a.name.localeCompare(b.name) ||
+			a.countryCode.localeCompare(b.countryCode) ||
+			airlineId(a).localeCompare(airlineId(b))
+	)
+	const sortedAirports = airportsFile.records.sort((a, b) => {
+		const country = a.countryCode.localeCompare(b.countryCode)
+		if (country !== 0) return country
+		return (
+			a.name.localeCompare(b.name) || airportId(a).localeCompare(airportId(b))
+		)
+	})
+	const sortedPorts = portsFile.records.sort(
+		(a, b) =>
+			a.countryCode.localeCompare(b.countryCode) ||
+			a.name.localeCompare(b.name) ||
+			a.unLocode.localeCompare(b.unLocode)
+	)
+	const sortedBorderCrossings = borderCrossingsFile.records.sort(
+		(a, b) =>
+			a.countryCode.localeCompare(b.countryCode) ||
+			a.name.localeCompare(b.name) ||
+			a.unLocode.localeCompare(b.unLocode)
+	)
+	const sortedCountryMigration = countryMigrationFile.records.sort((a, b) =>
+		a.countryCode.localeCompare(b.countryCode)
 	)
 	const countryNameMap = new Map(
 		sortedCountries.map((country) => [country.iso2, country.name])
@@ -1113,13 +1667,117 @@ async function main() {
 		deleteSql: (key) => `DELETE FROM currencies WHERE code = ${sqlValue(key)};`
 	})
 
-	const processed = [countries, states, cities, timezones, currencies]
+	const statistics = await processRows({
+		label: 'country statistics',
+		file: countryStatisticsFile,
+		force,
+		target,
+		seedFiles,
+		sourceCount: sortedCountryStatistics.length,
+		buildRows: () => sortedCountryStatistics.map(countryStatisticsRow),
+		hashQuery:
+			'SELECT country_code AS key, source_hash FROM country_statistics',
+		deleteSql: (key) =>
+			`DELETE FROM country_statistics WHERE country_code = ${sqlValue(key)};`
+	})
+
+	const airlines = await processRows({
+		label: 'airlines',
+		file: airlinesFile,
+		force,
+		target,
+		seedFiles,
+		sourceCount: sortedAirlines.length,
+		buildRows: () => sortedAirlines.map(airlineRow),
+		hashQuery: 'SELECT id AS key, source_hash FROM airlines',
+		deleteSql: (key) => `DELETE FROM airlines WHERE id = ${sqlValue(key)};`
+	})
+
+	const airports = await processRows({
+		label: 'airports',
+		file: airportsFile,
+		force,
+		target,
+		seedFiles,
+		sourceCount: sortedAirports.length,
+		buildRows: () => sortedAirports.map(airportRow),
+		hashQuery: 'SELECT id AS key, source_hash FROM airports',
+		deleteSql: (key) => `DELETE FROM airports WHERE id = ${sqlValue(key)};`
+	})
+
+	const ports = await processRows({
+		label: 'ports',
+		file: portsFile,
+		force,
+		target,
+		seedFiles,
+		sourceCount: sortedPorts.length,
+		buildRows: () =>
+			sortedPorts.map((location) => transportLocationRow('ports', location)),
+		hashQuery: 'SELECT id AS key, source_hash FROM ports',
+		deleteSql: (key) => `DELETE FROM ports WHERE id = ${sqlValue(key)};`
+	})
+
+	const borderCrossings = await processRows({
+		label: 'border crossings',
+		file: borderCrossingsFile,
+		force,
+		target,
+		seedFiles,
+		sourceCount: sortedBorderCrossings.length,
+		buildRows: () =>
+			sortedBorderCrossings.map((location) =>
+				transportLocationRow('border_crossings', location)
+			),
+		hashQuery: 'SELECT id AS key, source_hash FROM border_crossings',
+		deleteSql: (key) =>
+			`DELETE FROM border_crossings WHERE id = ${sqlValue(key)};`
+	})
+
+	const migration = await processRows({
+		label: 'country migration',
+		file: countryMigrationFile,
+		force,
+		target,
+		seedFiles,
+		sourceCount: sortedCountryMigration.length,
+		buildRows: () => sortedCountryMigration.map(countryMigrationRow),
+		hashQuery: 'SELECT country_code AS key, source_hash FROM country_migration',
+		deleteSql: (key) =>
+			`DELETE FROM country_migration WHERE country_code = ${sqlValue(key)};`
+	})
+
+	const processed = [
+		countries,
+		states,
+		cities,
+		timezones,
+		currencies,
+		statistics,
+		airlines,
+		airports,
+		ports,
+		borderCrossings,
+		migration
+	]
 	const sql = [
 		...countries.upserts,
 		...states.upserts,
 		...cities.upserts,
 		...timezones.upserts,
 		...currencies.upserts,
+		...statistics.upserts,
+		...airlines.upserts,
+		...airports.upserts,
+		...ports.upserts,
+		...borderCrossings.upserts,
+		...migration.upserts,
+		...migration.deletes,
+		...borderCrossings.deletes,
+		...ports.deletes,
+		...airports.deletes,
+		...airlines.deletes,
+		...statistics.deletes,
 		...cities.deletes,
 		...states.deletes,
 		...countries.deletes,
@@ -1144,19 +1802,17 @@ async function main() {
 		sql.unshift('BEGIN TRANSACTION;')
 		sql.push('COMMIT;')
 	}
+	// Remote D1 execution is kept as ordered statements; seed markers are emitted
+	// last so interrupted uploads can be rerun from the real D1 row hashes.
 
 	console.log(`\nWriting ${sql.length} SQL statements...`)
 	await Bun.write(SQL_FILE, sql.join('\n'))
 
 	console.log('Executing SQL...')
-	await wrangler([
-		'd1',
-		'execute',
-		'geo-db',
-		`--file=${SQL_FILE}`,
-		target,
-		'--yes'
-	])
+	await wrangler(
+		['d1', 'execute', 'geo-db', `--file=${SQL_FILE}`, target, '--yes'],
+		{ stdout: 'pipe' }
+	)
 
 	console.log(
 		`\nDone! Applied ${changedRows} source row change(s) from ${processed.filter((result) => !result.skipped).length} changed file(s).`

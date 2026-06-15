@@ -28,7 +28,8 @@ Run site commands from the repo root through the Bun workspace:
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `bun install`             | Installs all workspace dependencies              |
-| `bun dev:site`            | Starts the site dev server                       |
+| `bun dev`                 | Starts the site dev server                       |
+| `bun dev:api`             | Starts the local API Worker used by the site     |
 | `bun build:site`          | Builds the production site to `apps/site/dist/`  |
 | `bun preview:site`        | Previews the built site locally                  |
 | `bun run --filter @geocoded/site dev`     | Starts the site dev server directly              |

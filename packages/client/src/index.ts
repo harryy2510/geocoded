@@ -30,12 +30,14 @@ export type Country = {
 	nationality: string
 	languages: string[]
 	native: string
-	gdp: number
+	gdp: number | null
 	currency: string
 	currencyName: string
 	currencySymbol: string
 	phoneCode: string
 	tld: string
+	postalCodeFormat: string | null
+	postalCodeRegex: string | null
 	emoji: string
 	emojiU: string
 	flagUrl: string
@@ -44,7 +46,7 @@ export type Country = {
 	measurementSystem: string
 	firstDayOfWeek: string
 	timeFormat: string
-	literacy: number
+	literacy: number | null
 }
 
 export type State = {
@@ -99,6 +101,7 @@ export type Currency = {
 	code: string
 	name: string
 	symbol: string
+	decimals: number
 	countries: string[]
 }
 
@@ -121,6 +124,10 @@ export type GeocodedClientOptions = {
 export type GeocodedClient = {
 	fetchCountries: () => Promise<Country[]>
 	fetchStates: (countryCode: string) => Promise<State[]>
+	fetchCountryCities: (
+		countryCode: string,
+		limit?: number
+	) => Promise<PaginatedResponse<City>>
 	fetchCities: (
 		countryCode: string,
 		stateCode: string,
@@ -164,6 +171,10 @@ export function createGeocodedClient(
 			fetchPaginatedList<State>(
 				`/countries/${encodeURIComponent(countryCode)}/states?limit=2000`
 			),
+		fetchCountryCities: (countryCode, limit = 50) =>
+			apiFetch<PaginatedResponse<City>>(
+				`/countries/${encodeURIComponent(countryCode)}/cities?limit=${limit}`
+			),
 		fetchCities: (countryCode, stateCode, limit = 50) =>
 			apiFetch<PaginatedResponse<City>>(
 				`/countries/${encodeURIComponent(countryCode)}/states/${encodeURIComponent(stateCode)}/cities?limit=${limit}`
@@ -181,6 +192,8 @@ const defaultClient = createGeocodedClient()
 export const fetchCountries = defaultClient.fetchCountries
 
 export const fetchStates = defaultClient.fetchStates
+
+export const fetchCountryCities = defaultClient.fetchCountryCities
 
 export const fetchCities = defaultClient.fetchCities
 

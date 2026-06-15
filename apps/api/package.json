@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "bun wrangler dev",
+		"dev": "bun wrangler dev --env-file .env.local",
 		"deploy": "bun wrangler deploy",
 		"seed": "bun scripts/seed.ts",
 		"seed:upload": "bun scripts/seed.ts --remote",

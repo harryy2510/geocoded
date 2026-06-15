@@ -1,11 +1,11 @@
 import { describe, expect, test } from 'bun:test'
 
 describe('site copy and docs affordances', () => {
-	test('documents timezone and currency list endpoints on the homepage', async () => {
+	test('mentions timezone and currency coverage on the homepage', async () => {
 		const source = await Bun.file('apps/site/src/pages/index.astro').text()
 
-		expect(source).toContain('/timezones?limit=')
-		expect(source).toContain('/currencies?limit=')
+		expect(source).toContain('timezones and currencies')
+		expect(source).toContain("label: 'Timezones'")
 	})
 
 	test('shows data source attribution on the dashboard page', async () => {
@@ -38,13 +38,13 @@ describe('site copy and docs affordances', () => {
 		)
 		expect(source).toContain('onload="window.mountGeocodedDocsReference()"')
 		expect(source).toContain('-webkit-text-fill-color: currentColor')
-		expect(source).toContain('-webkit-text-fill-color: #0a0a0b !important')
+		expect(source).toContain('-webkit-text-fill-color: #000000 !important')
 		expect(source).toContain('.markdown a.geocoded-docs-link')
 		expect(source).toContain(
 			'.geocoded-docs-link > span:not(.geocoded-docs-badge)'
 		)
 		expect(source).toContain('text-decoration: none !important')
-		expect(source).toContain('.geocoded-docs-link-primary,')
+		expect(source).toContain('.geocoded-docs-link-primary {')
 		expect(source).toContain("documentDownloadType: 'none'")
 		expect(source).toContain(
 			'.tag-section-container > .section:has(.endpoints-card)'

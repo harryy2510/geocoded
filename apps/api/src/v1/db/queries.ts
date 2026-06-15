@@ -288,6 +288,28 @@ export const getCitiesPaginated = async (
 	return { rows, total }
 }
 
+export const getCountryCitiesPaginated = async (
+	db: D1Database,
+	countryCode: string,
+	limit: number,
+	offset: number
+): Promise<{ rows: City[]; total: number }> => {
+	const code = countryCode.toUpperCase()
+	const batch = await db.batch([
+		db
+			.prepare(
+				'SELECT * FROM cities WHERE country_code = ? ORDER BY name LIMIT ? OFFSET ?'
+			)
+			.bind(code, limit, offset),
+		db
+			.prepare('SELECT COUNT(*) AS total FROM cities WHERE country_code = ?')
+			.bind(code)
+	])
+	const rows = (batch[0]!.results as D1Row[]).map(rowToCity)
+	const total = (batch[1]!.results[0] as D1Row).total as number
+	return { rows, total }
+}
+
 export const searchCitiesPaginated = async (
 	db: D1Database,
 	countryCode: string,
@@ -311,6 +333,32 @@ export const searchCitiesPaginated = async (
 		db
 			.prepare(`SELECT COUNT(*) AS total FROM cities WHERE ${where}`)
 			.bind(cc, sc, like)
+	])
+	const rows = (batch[0]!.results as D1Row[]).map(rowToCity)
+	const total = (batch[1]!.results[0] as D1Row).total as number
+	return { rows, total }
+}
+
+export const searchCountryCitiesPaginated = async (
+	db: D1Database,
+	countryCode: string,
+	query: string,
+	limit: number,
+	offset: number
+): Promise<{ rows: City[]; total: number }> => {
+	const code = countryCode.toUpperCase()
+	const like = toContainsLikeQuery(query)
+	const where = `country_code = ?
+		AND name COLLATE NOCASE LIKE ? ESCAPE '^'`
+	const batch = await db.batch([
+		db
+			.prepare(
+				`SELECT * FROM cities WHERE ${where} ORDER BY name LIMIT ? OFFSET ?`
+			)
+			.bind(code, like, limit, offset),
+		db
+			.prepare(`SELECT COUNT(*) AS total FROM cities WHERE ${where}`)
+			.bind(code, like)
 	])
 	const rows = (batch[0]!.results as D1Row[]).map(rowToCity)
 	const total = (batch[1]!.results[0] as D1Row).total as number

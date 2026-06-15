@@ -1,7 +1,60 @@
 import { describe, expect, test } from 'bun:test'
-import { createGeocodedClient } from '../packages/client/src/index'
+import {
+	type Country,
+	type Currency,
+	createGeocodedClient
+} from '../packages/client/src/index'
 
 describe('geocoded client', () => {
+	test('client types match nullable country metrics and currency decimals', () => {
+		const country = {
+			name: 'Example',
+			iso2: 'EX',
+			iso3: 'EXA',
+			capital: '',
+			latitude: '0',
+			longitude: '0',
+			areaSqKm: 0,
+			region: '',
+			subregion: '',
+			continent: '',
+			neighbours: [],
+			timezones: [],
+			population: 0,
+			nationality: '',
+			languages: [],
+			native: 'Example',
+			gdp: null,
+			currency: 'XXX',
+			currencyName: '',
+			currencySymbol: '',
+			phoneCode: '',
+			tld: '',
+			postalCodeFormat: null,
+			postalCodeRegex: null,
+			emoji: '',
+			emojiU: '',
+			flagUrl: '',
+			translations: {},
+			drivingSide: '',
+			measurementSystem: '',
+			firstDayOfWeek: '',
+			timeFormat: '',
+			literacy: null
+		} satisfies Country
+		const currency = {
+			code: 'XXX',
+			name: 'No Currency',
+			symbol: '',
+			decimals: 0,
+			countries: ['EX']
+		} satisfies Currency
+
+		expect(country.gdp).toBeNull()
+		expect(country.literacy).toBeNull()
+		expect(currency.decimals).toBe(0)
+	})
+
 	test('trims trailing slashes from custom API URLs', async () => {
 		const server = jsonFetch({
 			data: [{ name: 'Canada' }],
@@ -53,6 +106,26 @@ describe('geocoded client', () => {
 		expect(cities.meta).toEqual(page.meta)
 		expect(server.urls).toEqual([
 			'https://api.test/countries/US%2FCA/states/New%20York/cities?limit=50'
+		])
+	})
+
+	test('fetches country-level cities for rows without state parents', async () => {
+		const page = {
+			data: [{ name: 'Abu Musa', stateCode: '' }],
+			meta: pageMeta(1)
+		}
+		const server = jsonFetch(page)
+		const client = createGeocodedClient({
+			apiUrl: 'https://api.test',
+			fetch: server.fetch
+		})
+
+		const cities = await client.fetchCountryCities('AE', 25)
+
+		expect(cities.data.map((city) => city.name)).toEqual(['Abu Musa'])
+		expect(cities.meta).toEqual(page.meta)
+		expect(server.urls).toEqual([
+			'https://api.test/countries/AE/cities?limit=25'
 		])
 	})
 

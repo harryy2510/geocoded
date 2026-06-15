@@ -314,6 +314,28 @@
 			"name": "Cities",
 			"item": [
 				{
+					"name": "List cities for a country",
+					"request": {
+						"method": "GET",
+						"url": {
+							"raw": "{{baseUrl}}/countries/AE/cities?q=abu&fields=name,stateCode",
+							"host": ["{{baseUrl}}"],
+							"path": ["countries", "AE", "cities"],
+							"query": [
+								{
+									"key": "q",
+									"value": "abu"
+								},
+								{
+									"key": "fields",
+									"value": "name,stateCode"
+								}
+							]
+						},
+						"description": "Returns paginated cities for a country, including rows without state parents."
+					}
+				},
+				{
 					"name": "List cities for a state",
 					"request": {
 						"method": "GET",

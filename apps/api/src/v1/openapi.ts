@@ -1,4 +1,4 @@
-import type { SiteConfig } from './types'
+import type { SiteConfig } from '../site-config'
 
 const fieldsParameter = {
 	name: 'fields',
@@ -478,6 +478,38 @@ export function openApiSpec(config: SiteConfig) {
 							description: 'Country object',
 							content: {
 								'application/json': { schema: countrySchema }
+							}
+						},
+						'404': errorResponse
+					}
+				}
+			},
+			'/countries/{country}/cities': {
+				get: {
+					tags: ['Cities'],
+					summary: 'List cities for a country',
+					description:
+						'Lists all cities for a country, including city rows that do not have a state or administrative subdivision parent.',
+					parameters: [
+						{
+							name: 'country',
+							in: 'path' as const,
+							required: true,
+							description: 'Country ISO 2 code',
+							schema: { type: 'string' as const },
+							example: 'AE'
+						},
+						fieldsParameter,
+						listSearchParameter,
+						...paginationParams
+					],
+					responses: {
+						'200': {
+							description: 'Paginated country cities response',
+							content: {
+								'application/json': {
+									schema: listResponseSchema(citySchema)
+								}
 							}
 						},
 						'404': errorResponse

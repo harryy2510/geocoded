@@ -74,12 +74,20 @@ export function StatsCard({
 	return (
 		<div
 			ref={ref}
-			className="gradient-border-hover group animate-count-up rounded-xl bg-bg-card/60 p-4 backdrop-blur-sm transition-all sm:p-5"
+			className="glass-card group relative animate-count-up overflow-hidden rounded-2xl p-5 transition-all hover:-translate-y-1 hover:shadow-2xl sm:p-6"
 			style={{ animationDelay: `${delay}ms` }}
 		>
-			<div className="mb-2 text-2xl transition-transform group-hover:scale-110 sm:mb-3 sm:text-3xl">{icon}</div>
-			<div className="text-2xl font-extrabold tracking-tight text-text sm:text-3xl">{display}</div>
-			<div className="mt-1 text-xs font-medium text-text-muted sm:text-sm">{label}</div>
+			<div className="absolute inset-0 bg-gradient-to-br from-white/[0.03] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+			<div className="absolute bottom-0 left-0 h-[2px] w-0 bg-accent transition-all duration-500 group-hover:w-full" />
+
+			<div className="mb-4 flex items-center justify-between">
+				<div className="text-2xl transition-transform duration-300 group-hover:scale-110 sm:text-3xl drop-shadow-md">{icon}</div>
+			</div>
+
+			<div className="relative z-10">
+				<div className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">{display}</div>
+				<div className="mt-2 text-xs font-bold uppercase tracking-widest text-text-muted">{label}</div>
+			</div>
 		</div>
 	)
 }

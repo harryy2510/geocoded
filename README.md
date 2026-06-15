@@ -63,6 +63,9 @@ curl https://api.geocoded.me/countries/IN/states?fields=name,iso2
 # Cities in a state
 curl https://api.geocoded.me/countries/US/states/CA/cities?fields=name,timezone
 
+# Cities in a country, including cities without state parents
+curl https://api.geocoded.me/countries/AE/cities?fields=name,stateCode
+
 # City by stable GeoNames ID
 curl https://api.geocoded.me/cities/5391959
 
@@ -82,6 +85,7 @@ Postman collection: `https://api.geocoded.me/postman.json`
 | `GET`  | `/search?q=&type=`                               | Full-text search across countries, states, cities                |
 | `GET`  | `/countries`                                     | List all countries                                               |
 | `GET`  | `/countries/:id`                                 | Country by iso2, iso3, or name                                   |
+| `GET`  | `/countries/:country/cities`                     | Cities for a country, including rows without state parents       |
 | `GET`  | `/countries/:country/states`                     | States for a country                                             |
 | `GET`  | `/countries/:country/states/:state`              | State by iso2 or name                                            |
 | `GET`  | `/countries/:country/states/:state/cities`       | Cities for a state                                               |
@@ -91,6 +95,27 @@ Postman collection: `https://api.geocoded.me/postman.json`
 | `GET`  | `/timezones/:id`                                 | Timezone by IANA ID (e.g. America/New_York)                      |
 | `GET`  | `/currencies`                                    | List all ISO 4217 currencies                                     |
 | `GET`  | `/currencies/:code`                              | Currency by code (e.g. USD, EUR)                                 |
+
+### v2 Root Collections
+
+v2 uses root-level collections with `filter[...]`, `q`, `sort`, pagination,
+`fields`, and explicit `expand` where supported.
+
+| Method | Path                   | Description                             |
+| ------ | ---------------------- | --------------------------------------- |
+| `GET`  | `/v2/continents`       | Derived continents from country data    |
+| `GET`  | `/v2/regions`          | Derived regions from country data       |
+| `GET`  | `/v2/countries`        | Countries; supports `expand=statistics` |
+| `GET`  | `/v2/states`           | States and first-level subdivisions     |
+| `GET`  | `/v2/cities`           | Cities                                  |
+| `GET`  | `/v2/timezones`        | IANA timezones                          |
+| `GET`  | `/v2/currencies`       | ISO 4217 currencies                     |
+| `GET`  | `/v2/airlines`         | IATA airline members                    |
+| `GET`  | `/v2/airports`         | Airports                                |
+| `GET`  | `/v2/ports`            | Ports                                   |
+| `GET`  | `/v2/border-crossings` | Border crossings                        |
+| `GET`  | `/v2/statistics`       | Country statistics; select via `fields` |
+| `GET`  | `/v2/migration`        | Country migration data and origins      |
 
 All responses are JSON with `Cache-Control: public, max-age=31536000, immutable`.
 
@@ -133,7 +158,7 @@ Scoped filters keep the normal list response shape: `{ data, meta }`.
 
 ## Pagination
 
-All list endpoints (`/countries`, `/states`, `/cities`, `/timezones`, `/currencies`, `/search`) are paginated and return `{ data, meta }`. Two styles are available:
+All list endpoints (`/countries`, `/countries/:country/cities`, `/countries/:country/states`, `/countries/:country/states/:state/cities`, `/timezones`, `/currencies`, `/search`) are paginated and return `{ data, meta }`. Two styles are available:
 
 **Offset-based:**
 
@@ -201,11 +226,11 @@ cd ../..
 # Seed local database
 bun seed
 
-# Start dev server
+# Start the Astro dev server
 bun dev
 
-# Start the Astro site dev server
-bun dev:site
+# In another terminal, start the local API Worker for /openapi.json and API requests
+bun dev:api
 ```
 
 ### Configuration
@@ -220,7 +245,7 @@ All site-specific values live in `apps/api/wrangler.jsonc` under the `vars` sect
 | `GITHUB_URL` | GitHub repo URL (shown in UI)        | `https://github.com/harryy2510/geocoded` |
 | `CACHE_ZONE` | Cloudflare zone name for cache purge | `geocoded.me`                            |
 
-When running locally without custom vars, the app defaults to `http://localhost:8787` for all URLs.
+For local development, `bun dev` is always the Astro site dev server. Local `.env.local` files point the site at the Worker API and tell Wrangler that `localhost:8787` is the API host, so API routes stay on `bun dev:api` while the UI stays on `bun dev`.
 
 ### Cloudflare API Token
 

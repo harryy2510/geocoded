@@ -7,8 +7,8 @@
 		"packages/*"
 	],
 	"scripts": {
-		"dev": "bun run --filter @geocoded/api dev",
-		"dev:site": "bun run --filter @geocoded/site dev",
+		"dev": "bun run --filter @geocoded/site dev",
+		"dev:api": "bun run --filter @geocoded/api dev",
 		"build:site": "bun run --filter @geocoded/site build",
 		"preview:site": "bun run --filter @geocoded/site preview",
 		"deploy": "bun run --filter @geocoded/api deploy",

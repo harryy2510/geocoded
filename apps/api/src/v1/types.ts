@@ -1,10 +1,3 @@
-export type SiteConfig = {
-	siteName: string
-	siteUrl: string
-	apiUrl: string
-	githubUrl: string
-}
-
 export type Timezone = {
 	abbreviation: string
 	gmtOffset: number

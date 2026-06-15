@@ -2,36 +2,28 @@
 import Layout from '../layouts/Layout.astro'
 
 const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
-const githubUrl = import.meta.env.PUBLIC_GITHUB_URL || 'https://github.com/harryy2510/geocoded'
+const githubUrl = import.meta.env.PUBLIC_GITHUB_URL || 'https://github.com/geocoded-me/geocoded'
 
 const features = [
 	{
 		title: 'Free & Open Source',
 		description: 'No API key, no signup, no rate limits. Data sourced from official institutions (GeoNames, CLDR, Wikidata, IANA) under CC BY 4.0.',
-		iconBg: 'from-green-500/20 to-green-500/5',
-		iconColor: 'text-green-400',
-		icon: 'shield',
+		number: '01'
 	},
 	{
 		title: 'Global Edge Network',
 		description: 'Powered by Cloudflare Workers with near-zero cold starts. Cached at the edge for millisecond responses from the closest POP.',
-		iconBg: 'from-emerald-500/20 to-emerald-500/5',
-		iconColor: 'text-emerald-400',
-		icon: 'clock',
+		number: '02'
 	},
 	{
 		title: 'Rich Data',
-		description: '252 countries, 3,800+ states, and 230,000+ cities with translations, timezones, coordinates, phone codes, currencies, and more.',
-		iconBg: 'from-purple-500/20 to-purple-500/5',
-		iconColor: 'text-purple-400',
-		icon: 'globe',
+		description: '252 countries, 3,800+ states, and 230,000+ cities with translations, coordinates, phone codes, timezones and currencies.',
+		number: '03'
 	},
 	{
 		title: 'Field Selection',
 		description: 'Pick exactly the fields you need with ?fields= parameter. Supports dot notation for nested objects. Smaller payloads, faster apps.',
-		iconBg: 'from-green-500/20 to-green-500/5',
-		iconColor: 'text-green-400',
-		icon: 'filter',
+		number: '04'
 	},
 ]
 
@@ -40,53 +32,41 @@ const dataPages = [
 		href: '/dashboard',
 		title: 'Dashboard',
 		description: 'Global data overview with interactive charts and key metrics across all 252 countries.',
-		icon: 'dashboard',
-		accent: 'group-hover:text-green-400',
-		iconColor: 'text-green-400',
 	},
 	{
 		href: '/explorer',
 		title: 'Explorer',
 		description: 'Browse and filter countries, states, and cities with an interactive world map.',
-		icon: 'explorer',
-		accent: 'group-hover:text-emerald-400',
-		iconColor: 'text-emerald-400',
 	},
 	{
 		href: '/statistics',
 		title: 'Statistics',
 		description: 'Dive into population, area, GDP, literacy, and other comparative statistics.',
-		icon: 'statistics',
-		accent: 'group-hover:text-purple-400',
-		iconColor: 'text-purple-400',
 	},
 	{
 		href: '/quiz',
 		title: 'Quiz',
 		description: 'Test your geography knowledge with fun quizzes on flags, capitals, and more.',
-		icon: 'quiz',
-		accent: 'group-hover:text-green-400',
-		iconColor: 'text-green-400',
 	},
 ]
 
 function jsonKv(k: string, v: string, last = false) {
-	return `  <span class="json-key">"${k}"</span><span class="json-colon">: </span><span class="json-string">"${v}"</span>${last ? '' : ','}\n`
+	return `  <span class="text-white">"${k}"</span><span class="text-white/50">: </span><span class="text-white/80">"${v}"</span>${last ? '' : ','}\n`
 }
 function jsonKvNum(k: string, v: string, last = false) {
-	return `  <span class="json-key">"${k}"</span><span class="json-colon">: </span><span class="json-number">"${v}"</span>${last ? '' : ','}\n`
+	return `  <span class="text-white">"${k}"</span><span class="text-white/50">: </span><span class="text-white/80">${v}</span>${last ? '' : ','}\n`
 }
 function jsonKvi(k: string, v: string, last = false) {
-	return `    <span class="json-key">"${k}"</span><span class="json-colon">: </span><span class="json-string">"${v}"</span>${last ? '' : ','}\n`
+	return `    <span class="text-white">"${k}"</span><span class="text-white/50">: </span><span class="text-white/80">"${v}"</span>${last ? '' : ','}\n`
 }
 function jsonKviNum(k: string, v: string, last = false) {
-	return `    <span class="json-key">"${k}"</span><span class="json-colon">: </span><span class="json-number">"${v}"</span>${last ? '' : ','}\n`
+	return `    <span class="text-white">"${k}"</span><span class="text-white/50">: </span><span class="text-white/80">${v}</span>${last ? '' : ','}\n`
 }
 function jsonKviRaw(k: string, v: string, last = false) {
-	return `    <span class="json-key">"${k}"</span><span class="json-colon">: </span>${v}${last ? '' : ','}\n`
+	return `    <span class="text-white">"${k}"</span><span class="text-white/50">: </span>${v}${last ? '' : ','}\n`
 }
 function jsonBr(v: string) {
-	return `<span class="json-bracket">${v}</span>\n`
+	return `<span class="text-white/50">${v}</span>\n`
 }
 
 const examples = [
@@ -99,8 +79,8 @@ const examples = [
 			jsonKv('country', 'US') +
 			jsonKv('region', 'California') +
 			jsonKv('city', 'San Francisco') +
-			jsonKv('latitude', '37.7749') +
-			jsonKv('longitude', '-122.4194') +
+			jsonKvNum('latitude', '37.7749') +
+			jsonKvNum('longitude', '-122.4194') +
 			jsonKv('timezone', 'America/Los_Angeles', true) +
 			jsonBr('}'),
 	},
@@ -137,11 +117,36 @@ const examples = [
 		curl: `curl ${apiUrl}/search?q=tokyo`,
 		responseHtml:
 			jsonBr('{') +
-			`  <span class="json-key">"data"</span><span class="json-colon">: </span>[...],\n` +
-			`  <span class="json-key">"meta"</span><span class="json-colon">: </span>{\n` +
-			jsonKvi('total', '12') +
-			jsonKvi('hasMore', 'false', true) +
-			`  }\n` +
+			`  <span class="text-white">"data"</span><span class="text-white/50">: </span>[\n` +
+			jsonBr('    {') +
+			jsonKvi('type', 'state') +
+			jsonKvi('name', 'Tokyo') +
+			jsonKvi('countryCode', 'JP') +
+			jsonKvi('countryName', 'Japan') +
+			jsonKviRaw('geonameId', '<span class="text-white/80">null</span>') +
+			jsonKvi('stateCode', '13') +
+			jsonKviRaw('stateName', '<span class="text-white/80">null</span>', true) +
+			jsonBr('    },') +
+			jsonBr('    {') +
+			jsonKvi('type', 'city') +
+			jsonKvi('name', 'Tokyo') +
+			jsonKvi('countryCode', 'JP') +
+			jsonKvi('countryName', 'Japan') +
+			jsonKviNum('geonameId', '1850147') +
+			jsonKvi('stateCode', '13') +
+			jsonKvi('stateName', 'Tokyo', true) +
+			jsonBr('    },') +
+			jsonBr('    {') +
+			jsonKvi('type', 'city') +
+			jsonKvi('name', 'Nishi-Tokyo-shi') +
+			jsonKvi('countryCode', 'JP') +
+			jsonKvi('countryName', 'Japan') +
+			jsonKviNum('geonameId', '1850692') +
+			jsonKvi('stateCode', '13') +
+			jsonKvi('stateName', 'Tokyo', true) +
+			jsonBr('    }') +
+			`  <span class="text-white/50">],</span>\n` +
+			`  <span class="text-white">"meta"</span><span class="text-white/50">: </span><span class="text-white/80">{ ... }</span>\n` +
 			jsonBr('}'),
 	},
 	{
@@ -149,21 +154,21 @@ const examples = [
 		curl: `curl ${apiUrl}/timezones?limit=2&fields=timezone,name,standardOffsetName,observesDst`,
 		responseHtml:
 			jsonBr('{') +
-			`  <span class="json-key">"data"</span><span class="json-colon">: </span>[\n` +
+			`  <span class="text-white">"data"</span><span class="text-white/50">: </span>[\n` +
 			jsonBr('    {') +
 			jsonKvi('timezone', 'America/New_York') +
 			jsonKvi('name', 'Eastern Time') +
 			jsonKvi('standardOffsetName', 'UTC-05:00') +
-			jsonKviRaw('observesDst', '<span class="json-boolean">true</span>', true) +
+			jsonKviRaw('observesDst', '<span class="text-white/80">true</span>', true) +
 			jsonBr('    },') +
 			jsonBr('    {') +
 			jsonKvi('timezone', 'Europe/London') +
 			jsonKvi('name', 'United Kingdom Time') +
 			jsonKvi('standardOffsetName', 'UTC+00:00') +
-			jsonKviRaw('observesDst', '<span class="json-boolean">true</span>', true) +
+			jsonKviRaw('observesDst', '<span class="text-white/80">true</span>', true) +
 			jsonBr('    }') +
-			`  ],\n` +
-			`  <span class="json-key">"meta"</span><span class="json-colon">: </span>{ ... }\n` +
+			`  <span class="text-white/50">],</span>\n` +
+			`  <span class="text-white">"meta"</span><span class="text-white/50">: </span><span class="text-white/80">{ ... }</span>\n` +
 			jsonBr('}'),
 	},
 	{
@@ -171,21 +176,21 @@ const examples = [
 		curl: `curl ${apiUrl}/currencies?limit=2&fields=code,name,symbol,countries`,
 		responseHtml:
 			jsonBr('{') +
-			`  <span class="json-key">"data"</span><span class="json-colon">: </span>[\n` +
+			`  <span class="text-white">"data"</span><span class="text-white/50">: </span>[\n` +
 			jsonBr('    {') +
 			jsonKvi('code', 'USD') +
 			jsonKvi('name', 'US Dollar') +
 			jsonKvi('symbol', '$') +
-			jsonKviRaw('countries', '<span class="json-bracket">["US"]</span>', true) +
+			jsonKviRaw('countries', '<span class="text-white/80">["US"]</span>', true) +
 			jsonBr('    },') +
 			jsonBr('    {') +
 			jsonKvi('code', 'EUR') +
 			jsonKvi('name', 'Euro') +
 			jsonKvi('symbol', '€') +
-			jsonKviRaw('countries', '<span class="json-bracket">["AD","AT","BE"]</span>', true) +
+			jsonKviRaw('countries', '<span class="text-white/80">["AD","AT","BE"]</span>', true) +
 			jsonBr('    }') +
-			`  ],\n` +
-			`  <span class="json-key">"meta"</span><span class="json-colon">: </span>{ ... }\n` +
+			`  <span class="text-white/50">],</span>\n` +
+			`  <span class="text-white">"meta"</span><span class="text-white/50">: </span><span class="text-white/80">{ ... }</span>\n` +
 			jsonBr('}'),
 	},
 ]
@@ -200,171 +205,116 @@ const stats = [
 
 <Layout title="Geocoded | Free Country, State, City & Location API" description="Free, fast REST API for country, state, city, and IP geolocation data. Powered by Cloudflare Workers with global edge caching.">
 	<!-- Hero -->
-	<section class="relative overflow-hidden py-16 text-center sm:py-24 lg:py-32">
-		<!-- Background radial glow -->
-		<div class="absolute inset-0 -z-10">
-			<div class="absolute left-1/2 top-1/2 size-[22rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.07] blur-[90px] sm:size-[640px] sm:blur-[120px]"></div>
-			<div class="absolute left-1/3 top-1/3 size-48 rounded-full bg-purple-500/[0.05] blur-[70px] sm:size-[320px] sm:blur-[100px]"></div>
-		</div>
-
-		<h1 class="mb-4 text-4xl font-extrabold tracking-tight text-text sm:mb-5 sm:text-6xl lg:text-7xl">
-			Geocoded
-		</h1>
-		<p class="mx-auto mb-4 max-w-xl text-lg font-medium text-text-muted sm:text-2xl">
+	<div class="min-h-[70vh] flex flex-col justify-center items-start border-l border-white/20 pl-10 md:pl-20 mb-32 pt-20">
+		<p class="text-lg font-bold tracking-widest text-white/40 uppercase mb-6 w-full">
 			Free Country, State, City & Location API
 		</p>
-		<p class="mx-auto mb-8 max-w-lg text-sm leading-relaxed text-text-dim sm:mb-12 sm:text-base">
+		<h1 class="text-6xl md:text-8xl lg:text-[10rem] font-bold tracking-tighter leading-[0.85] uppercase mb-8">
+			Geocoded
+		</h1>
+		<p class="text-xl md:text-2xl font-light text-white/60 max-w-2xl leading-relaxed mb-16">
 			Open-source REST API with 252 countries, 3,800+ states, and 230,000+ cities.
 			No API key required. Deployed on the edge for instant responses worldwide.
 		</p>
-		<div class="mb-10 flex flex-col items-stretch justify-center gap-3 sm:mb-14 sm:flex-row sm:items-center sm:gap-4">
-			<a
-				href="/docs"
-				class="glow-hover inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-accent px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all hover:-translate-y-0.5 hover:bg-accent-hover hover:shadow-xl hover:shadow-accent/30 sm:w-auto sm:px-8"
-			>
-				<svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+
+		<div class="flex flex-wrap gap-6">
+			<a href="/docs" class="bg-white text-black px-10 py-5 rounded-none font-bold tracking-widest uppercase text-sm hover:bg-white/80 transition-colors">
 				View API Docs
 			</a>
-			<a
-				href={githubUrl}
-				target="_blank"
-				rel="noopener noreferrer"
-				class="inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-border bg-bg-card/50 px-5 py-3.5 text-sm font-semibold text-text backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:border-border-hover hover:bg-bg-card sm:w-auto sm:px-8"
-			>
+			<a href={githubUrl} target="_blank" class="lux-panel px-10 py-5 rounded-none font-bold tracking-widest uppercase text-sm hover:bg-white/10 transition-colors flex items-center gap-3">
 				<svg class="size-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
 				GitHub
 			</a>
 		</div>
-
-		<!-- Curl example block -->
-		<div class="mx-auto w-full max-w-xl overflow-hidden rounded-xl border border-border/60 bg-bg-surface/80 text-left shadow-2xl shadow-black/30 backdrop-blur-sm">
-			<div class="flex items-center justify-between border-b border-border/50 bg-bg-card/30 px-4 py-2.5">
-				<div class="flex gap-1.5">
-					<span class="size-3 rounded-full bg-red-500/60"></span>
-					<span class="size-3 rounded-full bg-yellow-500/60"></span>
-					<span class="size-3 rounded-full bg-green-500/60"></span>
-				</div>
-				<button
-					class="copy-btn inline-flex items-center gap-1.5 rounded-md border border-border/50 bg-white/[0.03] px-2.5 py-1 text-xs text-text-dim transition-all hover:bg-white/[0.06] hover:text-text-muted"
-					data-copy={`curl ${apiUrl}`}
-				>
-					<svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-					Copy
-				</button>
-			</div>
-			<pre class="overflow-x-auto px-4 py-4 font-mono text-xs leading-relaxed sm:px-5 sm:text-sm"><span class="json-key select-none">$ </span><span class="text-text-muted">curl</span> <span class="json-string">{apiUrl}</span></pre>
-		</div>
-	</section>
+	</div>
 
 	<!-- Stats Banner -->
-	<section class="py-6 sm:py-8">
-		<div class="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+	<div class="mb-32">
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/20 border border-white/20">
 			{stats.map((stat, i) => (
-				<div class="group relative overflow-hidden rounded-xl border border-border/50 bg-bg-card/40 p-4 text-center backdrop-blur-sm sm:p-6">
-					<div class="absolute inset-0 bg-gradient-to-b from-accent/[0.03] to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
-					<div class="relative">
-						<div class="stat-counter text-2xl font-extrabold tracking-tight text-text sm:text-4xl" data-target={stat.value} data-suffix={stat.suffix} data-delay={i * 100}>
-							{stat.value}{stat.suffix}
-						</div>
-						<div class="mt-1 text-xs font-medium text-text-muted sm:text-sm">{stat.label}</div>
+				<div class="bg-black p-8 md:p-12 relative overflow-hidden group">
+					<div class="absolute inset-0 bg-white/[0.02] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+					<div class="text-sm font-bold text-white/40 tracking-widest uppercase mb-4">{stat.label}</div>
+					<div class="stat-counter text-4xl md:text-6xl font-bold tracking-tighter" data-target={stat.value} data-suffix={stat.suffix} data-delay={i * 100}>
+						{stat.value}{stat.suffix}
 					</div>
 				</div>
 			))}
 		</div>
-	</section>
+	</div>
 
-	<!-- Features -->
-	<section class="py-12 sm:py-20" id="features">
-		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">Why Geocoded</p>
-		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-4xl">Built for developers who ship fast</h2>
-		<p class="mb-8 max-w-lg text-sm leading-relaxed text-text-muted sm:mb-14 sm:text-base">
+	<!-- Features Matrix -->
+	<section class="mb-32 pt-12 border-t border-white/20">
+		<p class="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">Why Geocoded</p>
+		<h2 class="mb-6 text-4xl md:text-6xl font-bold tracking-tighter uppercase">Built for developers<br/><span class="text-white/40">who ship fast</span></h2>
+		<p class="mb-16 max-w-lg text-lg text-white/60 leading-relaxed">
 			No signup, no API key, no rate limits. Just clean JSON over HTTPS.
 		</p>
-		<div class="grid gap-4 sm:grid-cols-2">
+
+		<div class="grid md:grid-cols-2 gap-px bg-white/20 border border-white/20">
 			{features.map((f) => (
-				<div class="gradient-border-hover group rounded-xl bg-bg-card/60 p-5 backdrop-blur-sm transition-all hover:bg-bg-card/80 sm:p-8">
-					<div class={`mb-5 flex size-12 items-center justify-center rounded-xl bg-gradient-to-br ${f.iconBg}`}>
-						{f.icon === 'shield' && (
-							<svg class={`size-6 ${f.iconColor}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-						)}
-						{f.icon === 'clock' && (
-							<svg class={`size-6 ${f.iconColor}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-						)}
-						{f.icon === 'globe' && (
-							<svg class={`size-6 ${f.iconColor}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-						)}
-						{f.icon === 'filter' && (
-							<svg class={`size-6 ${f.iconColor}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
-						)}
+				<div class="bg-black p-12 lg:p-16 flex flex-col justify-between min-h-[350px] group hover:bg-white/[0.02] transition-colors">
+					<div>
+						<h3 class="text-3xl font-bold tracking-tighter uppercase mb-4">{f.title}</h3>
+						<p class="text-white/60 text-lg leading-relaxed">{f.description}</p>
 					</div>
-					<h3 class="mb-2.5 text-lg font-semibold">{f.title}</h3>
-					<p class="text-sm leading-relaxed text-text-muted">{f.description}</p>
+					<div class="text-6xl font-bold text-white/20 uppercase tracking-tighter mt-12 group-hover:text-white/40 transition-colors">{f.number}</div>
 				</div>
 			))}
 		</div>
 	</section>
 
 	<!-- See the Data CTA -->
-	<section class="py-12 sm:py-20">
-		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">See the Data</p>
-		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-4xl">Explore the full dataset</h2>
-		<p class="mb-8 max-w-lg text-sm leading-relaxed text-text-muted sm:mb-14 sm:text-base">
+	<section class="mb-32 pt-12 border-t border-white/20">
+		<p class="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">See the Data</p>
+		<h2 class="mb-6 text-4xl md:text-6xl font-bold tracking-tighter uppercase">Explore the<br/><span class="text-white/40">full dataset</span></h2>
+		<p class="mb-16 max-w-lg text-lg text-white/60 leading-relaxed">
 			Interactive tools to browse, visualize, and analyze geography data from the API.
 		</p>
-		<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+		<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/20 border border-white/20">
 			{dataPages.map((page) => (
-				<a
-					href={page.href}
-					class="gradient-border-hover group rounded-xl bg-bg-card/60 p-6 backdrop-blur-sm transition-all hover:bg-bg-card/80 hover:-translate-y-0.5"
-				>
-					<div class={`mb-3 ${page.iconColor}`}>
-						{page.icon === 'dashboard' && (
-							<svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-						)}
-						{page.icon === 'explorer' && (
-							<svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
-						)}
-						{page.icon === 'statistics' && (
-							<svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-						)}
-						{page.icon === 'quiz' && (
-							<svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="12" r="10"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-						)}
+				<a href={page.href} class="bg-black p-8 md:p-12 min-h-[300px] flex flex-col justify-between group hover:bg-white/[0.02] transition-colors cursor-pointer">
+					<div>
+						<h3 class="text-2xl font-bold tracking-tighter uppercase mb-4">{page.title}</h3>
+						<p class="text-white/60 text-base leading-relaxed">{page.description}</p>
 					</div>
-					<h3 class={`mb-2 text-base font-semibold text-text transition-colors ${page.accent}`}>{page.title}</h3>
-					<p class="text-sm leading-relaxed text-text-muted">{page.description}</p>
-					<span class="mt-4 inline-flex items-center gap-1 text-xs font-medium text-accent opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5">
-						Open
+					<div class="mt-8 font-bold tracking-widest uppercase text-xs text-white/40 group-hover:text-white transition-colors flex items-center gap-2">
+						[ Launch ]
 						<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-					</span>
+					</div>
 				</a>
 			))}
 		</div>
 	</section>
 
-	<!-- Examples -->
-	<section class="py-12 sm:py-20" id="examples">
-		<p class="mb-3 text-xs font-semibold uppercase tracking-widest text-accent">Quick Start</p>
-		<h2 class="mb-3 text-2xl font-bold tracking-tight sm:text-4xl">Simple endpoints, zero config</h2>
-		<p class="mb-8 max-w-lg text-sm leading-relaxed text-text-muted sm:mb-14 sm:text-base">
+	<!-- Quick Start Examples -->
+	<section class="mb-32 pt-12 border-t border-white/20" id="examples">
+		<p class="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">Quick Start</p>
+		<h2 class="mb-6 text-4xl md:text-6xl font-bold tracking-tighter uppercase">Simple endpoints<br/><span class="text-white/40">zero config</span></h2>
+		<p class="mb-16 max-w-lg text-lg text-white/60 leading-relaxed">
 			Every response is JSON with aggressive cache headers. Try these from your terminal right now.
 		</p>
-		<div class="flex flex-col gap-6">
+
+		<div class="flex flex-col gap-8">
 			{examples.map((ex) => (
-				<div class="overflow-hidden rounded-xl border border-border/60 bg-bg-card/60 backdrop-blur-sm shadow-lg shadow-black/10">
-					<div class="flex flex-wrap items-center justify-between gap-3 border-b border-border/50 px-4 py-3.5 sm:px-5">
-						<h3 class="text-sm font-semibold leading-snug">{ex.title}</h3>
-						<span class="rounded-md bg-success/10 px-2.5 py-1 font-mono text-xs font-bold text-success">GET</span>
+				<div class="lux-panel p-0 overflow-hidden flex flex-col md:flex-row">
+					<div class="p-8 md:p-10 border-b md:border-b-0 md:border-r border-white/20 md:w-1/2 flex flex-col justify-between">
+						<div>
+							<div class="flex items-center justify-between mb-8">
+								<h3 class="text-xl font-bold tracking-tighter uppercase text-white/80">{ex.title}</h3>
+								<span class="rounded-none bg-white text-black px-2 py-1 text-[10px] font-bold tracking-widest uppercase">GET</span>
+							</div>
+							<p class="mb-4 text-xs font-bold uppercase tracking-widest text-white/40">Request</p>
+							<div class="flex flex-wrap items-center gap-3">
+								<span class="text-white/50 font-mono">~</span>
+								<span class="text-white font-mono text-sm break-all">{ex.curl}</span>
+							</div>
+						</div>
 					</div>
-					<div class="grid md:grid-cols-2">
-						<div class="border-b border-border/50 p-4 md:border-b-0 md:border-r md:border-border/50 sm:p-5">
-							<p class="mb-2.5 text-[11px] font-semibold uppercase tracking-wider text-text-dim">Request</p>
-							<pre class="overflow-x-auto font-mono text-xs leading-relaxed sm:text-[13px]"><span class="json-key select-none">$ </span><span class="text-text-muted">{ex.curl}</span></pre>
-						</div>
-						<div class="p-4 sm:p-5">
-							<p class="mb-2.5 text-[11px] font-semibold uppercase tracking-wider text-text-dim">Response</p>
-							<pre class="overflow-x-auto font-mono text-xs leading-relaxed sm:text-[13px]" set:html={ex.responseHtml} />
-						</div>
+					<div class="p-8 md:p-10 md:w-1/2 bg-black/50">
+						<p class="mb-4 text-xs font-bold uppercase tracking-widest text-white/40">Response</p>
+						<pre class="font-mono text-xs md:text-sm leading-loose overflow-x-auto" set:html={ex.responseHtml} />
 					</div>
 				</div>
 			))}
@@ -372,19 +322,6 @@ const stats = [
 	</section>
 
 	<script>
-		// Copy button
-		document.querySelectorAll('.copy-btn').forEach((btn) => {
-			btn.addEventListener('click', () => {
-				const text = btn.getAttribute('data-copy')
-				if (!text) return
-				navigator.clipboard.writeText(text).then(() => {
-					const original = btn.innerHTML
-					btn.innerHTML = '<svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Copied!'
-					setTimeout(() => { btn.innerHTML = original }, 2000)
-				})
-			})
-		})
-
 		// Animated counters
 		function animateCounter(el: Element) {
 			const target = el.getAttribute('data-target') || '0'
@@ -402,7 +339,6 @@ const stats = [
 				function update(now: number) {
 					const elapsed = now - start
 					const progress = Math.min(elapsed / duration, 1)
-					// ease out cubic
 					const eased = 1 - Math.pow(1 - progress, 3)
 					const current = Math.round(targetNum * eased)
 

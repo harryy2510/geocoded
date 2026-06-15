@@ -63,7 +63,8 @@ class FakeD1Database {
 		cityRow(1, 'US', 'United States', 'CA', 'California', 'San Francisco'),
 		cityRow(2, 'US', 'United States', 'CA', 'California', 'Los Angeles'),
 		cityRow(3, 'ID', 'Indonesia', 'JI', 'East Java', 'Krajan'),
-		cityRow(4, 'ID', 'Indonesia', 'JI', 'East Java', 'Krajan')
+		cityRow(4, 'ID', 'Indonesia', 'JI', 'East Java', 'Krajan'),
+		cityRow(5, 'AE', 'United Arab Emirates', '', '', 'Abu Musa')
 	]
 
 	readonly timezones = [
@@ -265,13 +266,15 @@ class FakeD1Database {
 			return this.cities.filter((city) => city.geoname_id === geonameId)
 		}
 		const countryCode = String(parameters[0] ?? '').toUpperCase()
+		const countryOnly = !sql.includes('state_code = ?')
 		const stateCode = String(parameters[1] ?? '').toUpperCase()
-		let rows = this.cities.filter(
-			(city) =>
-				city.country_code === countryCode && city.state_code === stateCode
+		let rows = this.cities.filter((city) =>
+			countryOnly
+				? city.country_code === countryCode
+				: city.country_code === countryCode && city.state_code === stateCode
 		)
 		if (sql.includes('LOWER(name) = ?') || sql.includes('name = ?')) {
-			const query = String(parameters[2] ?? '').toLowerCase()
+			const query = String(parameters[countryOnly ? 1 : 2] ?? '').toLowerCase()
 			rows = rows.filter((city) => String(city.name).toLowerCase() === query)
 		}
 		if (!sql.includes('LIKE')) {
@@ -678,6 +681,26 @@ describe('search routes', () => {
 		expect(body.matches.map((city) => city.geonameId)).toEqual([3, 4])
 	})
 
+	test('lists country cities that do not have a state parent', async () => {
+		const response = await request(
+			'/countries/AE/cities?q=abu&fields=name,stateCode,stateName,geonameId'
+		)
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<
+			Record<string, unknown>
+		>
+		expect(body.data).toEqual([
+			{
+				name: 'Abu Musa',
+				stateCode: '',
+				stateName: '',
+				geonameId: 5
+			}
+		])
+		expect(body.meta.total).toBe(1)
+	})
+
 	test('lists timezones with field projection', async () => {
 		const response = await request('/timezones?limit=2&fields=timezone')
 
@@ -860,8 +883,11 @@ describe('search routes', () => {
 
 		expect(response.status).toBe(200)
 		expect(response.headers.get('Content-Disposition')).toBe(
-			'attachment; filename="geocoded-postman-collection.json"'
+			'attachment; filename="geocoded-v1-postman-collection.json"'
 		)
+		const text = await response.text()
+		expect(text).toContain('/countries/AE/cities')
+		expect(text).not.toContain('/v2/countries')
 	})
 
 	test('rejects quiz stat writes from untrusted browser origins', async () => {
@@ -1018,11 +1044,13 @@ describe('search routes', () => {
 		}
 		expect(parameterNames(spec, '/search')).toContain('type')
 		expect(parameterNames(spec, '/countries')).toContain('q')
+		expect(parameterNames(spec, '/countries/{country}/cities')).toContain('q')
 		expect(parameterNames(spec, '/countries/{country}/states')).toContain('q')
 		expect(
 			parameterNames(spec, '/countries/{country}/states/{state}/cities')
 		).toContain('q')
 		expect(responseSchema(spec, '/countries')).not.toHaveProperty('oneOf')
+		expect(spec.paths).not.toHaveProperty('/v2/countries')
 	})
 })
 

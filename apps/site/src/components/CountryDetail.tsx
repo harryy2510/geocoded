@@ -4,8 +4,8 @@ import { formatFull, formatArea, formatPercent, formatDensity } from '../lib/for
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
 	return (
-		<div className="mt-5">
-			<h4 className="mb-2 text-xs font-semibold uppercase tracking-wider text-text-dim">{title}</h4>
+		<div className="mt-6">
+			<h4 className="mb-3 text-[10px] font-bold uppercase tracking-widest text-text-dim">{title}</h4>
 			{children}
 		</div>
 	)
@@ -16,7 +16,7 @@ function Badge({ children, onClick }: { children: React.ReactNode; onClick?: () 
 	return (
 		<Tag
 			onClick={onClick}
-			className={`inline-flex max-w-full items-center rounded-md border border-border px-2 py-1 text-xs font-medium text-text-muted ${onClick ? 'cursor-pointer transition-colors hover:border-accent hover:text-accent' : ''}`}
+			className={`inline-flex max-w-full items-center rounded-md border border-white/10 bg-white/[0.02] px-2.5 py-1 text-xs font-semibold text-text-muted ${onClick ? 'cursor-pointer transition-colors hover:border-accent/50 hover:bg-accent/10 hover:text-accent' : ''}`}
 		>
 			{children}
 		</Tag>
@@ -67,19 +67,19 @@ export function CountryDetail({
 
 	return (
 		<div className="fixed inset-0 z-50 flex justify-end">
-			<div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
-			<div className="relative flex w-full max-w-full flex-col overflow-y-auto bg-bg-surface shadow-2xl sm:max-w-md md:max-w-lg">
-				<div className="sticky top-0 z-10 flex items-center justify-between gap-3 border-b border-border bg-bg-surface/90 px-4 py-4 backdrop-blur-md sm:px-5">
-					<div className="flex min-w-0 items-center gap-3">
-						<span className="shrink-0 text-3xl">{country.emoji}</span>
+			<div className="absolute inset-0 bg-black/60 backdrop-blur-md" onClick={onClose} />
+			<div className="relative flex w-full max-w-full flex-col overflow-y-auto bg-black/90 shadow-2xl border-l border-white/10 sm:max-w-md md:max-w-lg backdrop-blur-3xl">
+				<div className="sticky top-0 z-10 flex items-center justify-between gap-3 border-b border-white/10 bg-black/60 px-5 py-5 backdrop-blur-xl sm:px-6">
+					<div className="flex min-w-0 items-center gap-4">
+						<span className="shrink-0 text-4xl drop-shadow-md">{country.emoji}</span>
 						<div className="min-w-0">
-							<h2 className="truncate text-lg font-bold text-text">{country.name}</h2>
-							<p className="truncate text-xs text-text-muted">{country.native}</p>
+							<h2 className="truncate text-xl font-extrabold text-white">{country.name}</h2>
+							<p className="truncate text-xs font-medium text-text-muted mt-0.5">{country.native}</p>
 						</div>
 					</div>
 					<button
 						onClick={onClose}
-						className="flex size-8 shrink-0 items-center justify-center rounded-lg text-text-muted transition-colors hover:bg-bg-card hover:text-text"
+						className="flex size-9 shrink-0 items-center justify-center rounded-full bg-white/5 text-text-muted transition-all hover:bg-white/10 hover:text-white"
 					>
 						<svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -107,9 +107,9 @@ export function CountryDetail({
 							['Week starts', country.firstDayOfWeek],
 							['Time', country.timeFormat],
 						].map(([label, value]) => (
-							<div key={label} className="min-w-0 rounded-lg bg-bg-card px-3 py-2">
-								<div className="text-[10px] font-medium uppercase tracking-wider text-text-dim">{label}</div>
-								<div className="mt-0.5 break-words text-sm text-text">{value}</div>
+							<div key={label} className="min-w-0 rounded-xl border border-white/5 bg-white/[0.02] px-4 py-3">
+								<div className="text-[10px] font-bold uppercase tracking-widest text-text-dim">{label}</div>
+								<div className="mt-1 break-words text-sm font-semibold text-white">{value}</div>
 							</div>
 						))}
 					</div>
@@ -142,10 +142,10 @@ export function CountryDetail({
 								{country.timezones.map((tz) => (
 									<div
 										key={tz.zoneName}
-										className="flex items-center justify-between gap-3 rounded-lg bg-bg-card px-3 py-1.5 text-xs"
+										className="flex items-center justify-between gap-3 rounded-lg border border-white/5 bg-white/[0.02] px-3 py-2 text-xs"
 									>
-										<span className="truncate text-text-muted">{tz.zoneName}</span>
-										<span className="shrink-0 font-mono text-text-dim">{tz.gmtOffsetName}</span>
+										<span className="truncate font-medium text-text-muted">{tz.zoneName}</span>
+										<span className="shrink-0 font-mono font-bold text-accent">{tz.gmtOffsetName}</span>
 									</div>
 								))}
 							</div>
@@ -158,9 +158,9 @@ export function CountryDetail({
 								{Object.entries(country.translations)
 									.slice(0, 20)
 									.map(([lang, name]) => (
-										<div key={lang} className="flex items-center gap-2 rounded px-2 py-1 text-xs">
-											<span className="font-mono uppercase text-text-dim">{lang}</span>
-											<span className="truncate text-text-muted">{name}</span>
+										<div key={lang} className="flex items-center gap-2 rounded-lg border border-white/5 bg-white/[0.02] px-3 py-1.5 text-xs">
+											<span className="font-mono font-bold uppercase text-accent/70">{lang}</span>
+											<span className="truncate font-medium text-text-muted">{name}</span>
 										</div>
 									))}
 							</div>
@@ -171,7 +171,7 @@ export function CountryDetail({
 						{loadingStates ? (
 							<div className="space-y-1.5">
 								{[1, 2, 3].map((i) => (
-									<div key={i} className="h-8 animate-pulse-subtle rounded-lg bg-bg-card" />
+									<div key={i} className="h-10 animate-pulse-subtle rounded-xl bg-white/5" />
 								))}
 							</div>
 						) : states.length === 0 ? (
@@ -182,17 +182,17 @@ export function CountryDetail({
 									<div key={st.iso2}>
 										<button
 											onClick={() => handleExpandState(st.iso2)}
-											className="flex w-full items-center justify-between gap-3 rounded-lg bg-bg-card px-3 py-2 text-left text-xs transition-colors hover:bg-bg-card-hover"
+											className="flex w-full items-center justify-between gap-3 rounded-xl border border-white/5 bg-white/[0.02] px-4 py-3 text-left text-xs transition-colors hover:bg-white/5"
 										>
-											<span className="truncate text-text">{st.name}</span>
-											<span className="shrink-0 text-text-dim">
+											<span className="truncate font-bold text-white">{st.name}</span>
+											<span className="shrink-0 font-medium text-text-dim">
 												{st.population ? formatFull(st.population) : st.type}
 											</span>
 										</button>
 										{expandedState === st.iso2 ? (
 											<div className="ml-2 mt-1 space-y-0.5 border-l border-border pl-3 sm:ml-3">
 												{loadingCities === st.iso2 ? (
-													<div className="h-5 w-32 animate-pulse-subtle rounded bg-bg-card" />
+													<div className="h-5 w-32 animate-pulse-subtle rounded bg-white/5" />
 												) : (stateCities[st.iso2] || []).length === 0 ? (
 													<p className="text-[10px] text-text-dim">No cities</p>
 												) : (

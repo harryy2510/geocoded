@@ -14,17 +14,17 @@ These instructions are the canonical guide for agents working in this repo. Clau
 
 ## Project Overview
 
-Geocoded is a Bun workspace monorepo. It contains a Cloudflare Worker API serving country, state, city, timezone, currency, search, and IP geolocation data from Cloudflare D1, an Astro docs site, and reusable client packages. The Worker uses Hono and serves the Astro site from `apps/site/dist` through Cloudflare Workers static assets.
+Geocoded is a Bun workspace monorepo. It contains a Cloudflare Worker API serving country, state, city, timezone, currency, airline, airport, port, border-crossing, migration, statistics, search, and IP geolocation data from Cloudflare D1, an Astro docs site, and reusable client packages. The Worker uses Hono and serves the Astro site from `apps/site/dist` through Cloudflare Workers static assets.
 
 ## Commands
 
 - `bun install`: install dependencies for all Bun workspaces.
-- `bun dev`: start the Worker dev server with Wrangler.
+- `bun dev`: start the Astro site dev server.
+- `bun dev:api`: start the Worker dev server with Wrangler.
 - `bun run deploy`: deploy to Cloudflare. Only run when the user explicitly asks.
 - `bun seed`: seed the local D1 database from `data/*.json`.
 - `bun seed:upload`: seed the remote production D1 database. Only run when the user explicitly asks.
 - `bun run types`: regenerate `worker-configuration.d.ts`. This file is generated, do not edit it by hand.
-- `bun dev:site`: start the Astro site dev server.
 - `bun build:site`: build the Astro site.
 - `bun preview:site`: preview the Astro build.
 - `bun check`: run oxlint and oxfmt checks.
@@ -42,16 +42,19 @@ Geocoded is a Bun workspace monorepo. It contains a Cloudflare Worker API servin
 - Route framework: Hono.
 - Database binding: `GEO_DB`.
 - Generated Worker types: `worker-configuration.d.ts`.
-- Query layer: `apps/api/src/db/queries.ts`.
-- Shared API types: `apps/api/src/types.ts`.
-- OpenAPI spec: `apps/api/src/openapi.ts`.
+- v1 router: `apps/api/src/v1/index.ts`.
+- v1 query layer: `apps/api/src/v1/db/queries.ts`.
+- v1 shared API types: `apps/api/src/v1/types.ts`.
+- v1 OpenAPI builder: `apps/api/src/v1/openapi.ts`.
+- v2 router and query foundations: `apps/api/src/v2/`.
+- Shared site/API config defaults: `apps/api/src/site-config.ts`.
 - Seed script: `apps/api/scripts/seed.ts`.
 - Data files: `data/*.json`.
 - D1 migrations: `migrations/`.
 - Astro site: `apps/site`.
 - TypeScript API client: `packages/client`.
 
-D1 tables include `countries`, `states`, `cities`, `timezones`, `currencies`, and `search_index`. The search index is an FTS5 virtual table spanning searchable geographic entities.
+D1 tables include `countries`, `states`, `cities`, `timezones`, `currencies`, `country_statistics`, `airlines`, `airports`, `ports`, `border_crossings`, `country_migration`, and `search_index`. The search index is an FTS5 virtual table spanning searchable geographic entities.
 
 The private `geocoded-data` repo updates `data/*.json` through the data pipeline. This repo seeds D1 from those checked-in JSON files. A GitHub Actions workflow seeds D1 after relevant data, script, or migration changes.
 
@@ -65,6 +68,10 @@ The private `geocoded-data` repo updates `data/*.json` through the data pipeline
 - `GET /countries/:country/states/:state/cities` and `GET /countries/:country/states/:state/cities/:city`: city list and lookup.
 - `GET /timezones` and `GET /timezones/:id`: IANA timezone list and lookup. Timezone IDs may contain slashes.
 - `GET /currencies` and `GET /currencies/:code`: ISO 4217 currency list and lookup.
+- `GET /v2/continents`, `/v2/regions`, `/v2/countries`, `/v2/states`, `/v2/cities`: v2 political/geographic collections with strict `filter[...]`, `q`, `sort`, pagination, and nested `fields`.
+- `GET /v2/timezones`, `/v2/currencies`, `/v2/airlines`, `/v2/airports`, `/v2/ports`, `/v2/border-crossings`: v2 reference and transport collections.
+- `GET /v2/statistics`: v2 country statistics resource. Select individual statistics through `fields`, not `indicator`.
+- `GET /v2/migration`: v2 country migration resource.
 
 All JSON responses use aggressive cache headers unless the route intentionally handles caller-specific data. List endpoints are always paginated and return `{ data, meta }`; when pagination params are omitted, `limit` defaults to 25 and `offset` defaults to 0. All endpoints support `?fields=` with comma-separated field names and dot notation for nested fields.
 
@@ -106,7 +113,7 @@ All JSON responses use aggressive cache headers unless the route intentionally h
 ## Site Work
 
 - The site is an Astro app under `apps/site`.
-- Use the site workspace scripts from the repo root with `bun run --filter @geocoded/site <script>`, or the root aliases `bun dev:site`, `bun build:site`, and `bun preview:site`.
+- Use the site workspace scripts from the repo root with `bun run --filter @geocoded/site <script>`, or the root aliases `bun dev`, `bun build:site`, and `bun preview:site`.
 - Keep UI changes consistent with existing Astro, React, Tailwind, and component patterns.
 - Build the site with `bun build:site` before Worker deploy changes that depend on `apps/site/dist`.
 
@@ -124,6 +131,6 @@ Run the smallest meaningful verification for the change:
 - Instruction or config changes: `agents sync --check` and `git diff --check`.
 - Worker code changes: `bun x --bun tsc --noEmit` and `bun check`.
 - Site changes: `bun build:site`.
-- D1 behavior changes: apply local migrations, seed local D1 when practical, and smoke test affected endpoints through `bun dev`.
+- D1 behavior changes: apply local migrations, seed local D1 when practical, and smoke test affected endpoints through `bun dev:api`.
 
 If a check is skipped, state why in the final response.
