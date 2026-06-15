@@ -2,6 +2,111 @@ import { useState, useEffect } from 'react'
 import { type Country, type State, type City, fetchStates, fetchCities } from '@geocoded/client'
 import { formatFull, formatArea, formatPercent, formatDensity } from '../lib/format'
 
+const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
+const compactMetricFormatter = new Intl.NumberFormat('en-US', {
+	notation: 'compact',
+	compactDisplay: 'long',
+	maximumFractionDigits: 1,
+})
+const percentFormatter = new Intl.NumberFormat('en-US', {
+	maximumFractionDigits: 1,
+})
+
+type V2Paginated<T> = {
+	data: T[]
+	meta?: {
+		total?: number
+	}
+}
+
+type V2List<T> = {
+	items: T[]
+	total: number
+}
+
+type V2Metric = {
+	year?: number
+	value?: number
+}
+
+type V2Statistics = {
+	populationTotal?: V2Metric
+	gdpCurrentUsd?: V2Metric
+	gdpPerCapitaCurrentUsd?: V2Metric
+	lifeExpectancy?: V2Metric
+	urbanPopulationPercent?: V2Metric
+}
+
+type V2Migration = {
+	year?: number
+	totalInternationalMigrants?: number
+	migrantShareOfPopulationPercent?: number
+}
+
+type V2TransportRecord = {
+	id: string
+	name: string
+	iataCode?: string
+	icaoCode?: string
+	unLocode?: string
+	stateCode?: string
+	timezone?: string
+	functions?: string[]
+}
+
+type V2LanguageName = {
+	printName: string
+	invertedName: string
+}
+
+type V2Language = {
+	id: string
+	iso6393: string
+	iso6392B?: string | null
+	iso6392T?: string | null
+	iso6391?: string | null
+	referenceName: string
+	names?: V2LanguageName[]
+}
+
+type RelatedData = {
+	statistics: V2Statistics | null
+	migration: V2Migration | null
+	languages: V2List<V2Language>
+	airports: V2List<V2TransportRecord>
+	ports: V2List<V2TransportRecord>
+	borderCrossings: V2List<V2TransportRecord>
+	airlines: V2List<V2TransportRecord>
+}
+
+const emptyRelatedData = (): RelatedData => ({
+	statistics: null,
+	migration: null,
+	languages: { items: [], total: 0 },
+	airports: { items: [], total: 0 },
+	ports: { items: [], total: 0 },
+	borderCrossings: { items: [], total: 0 },
+	airlines: { items: [], total: 0 },
+})
+
+function joinApi(path: string): string {
+	return `${apiUrl.replace(/\/$/, '')}${path}`
+}
+
+async function fetchV2Resource<T>(path: string): Promise<T | null> {
+	const response = await fetch(joinApi(path))
+	if (!response.ok) return null
+	return response.json() as Promise<T>
+}
+
+async function fetchV2List<T>(path: string): Promise<V2List<T>> {
+	const response = await fetchV2Resource<V2Paginated<T>>(path)
+	return {
+		items: response?.data || [],
+		total: response?.meta?.total || response?.data?.length || 0,
+	}
+}
+
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
 	return (
 		<div className="mt-6">
@@ -23,20 +128,138 @@ function Badge({ children, onClick }: { children: React.ReactNode; onClick?: () 
 	)
 }
 
+function Fact({ label, value }: { label: string; value: React.ReactNode }) {
+	return (
+		<div className="min-w-0 bg-black/80 px-5 py-4">
+			<div className="text-[10px] font-bold uppercase tracking-widest text-text-dim">{label}</div>
+			<div className="mt-2 break-words text-base font-semibold text-white">{value}</div>
+		</div>
+	)
+}
+
+function formatMetric(metric: V2Metric | undefined, suffix = ''): string {
+	if (!metric || metric.value == null) return 'N/A'
+	return `${compactMetricFormatter.format(metric.value)}${suffix}`
+}
+
+function formatCurrencyMetric(metric: V2Metric | undefined): string {
+	if (!metric || metric.value == null) return 'N/A'
+	return `$${compactMetricFormatter.format(metric.value)}`
+}
+
+function formatCurrencyValue(value: number | undefined): string {
+	if (value == null) return 'N/A'
+	return `$${compactMetricFormatter.format(value)}`
+}
+
+function formatPercentValue(value: number | undefined): string {
+	if (value == null) return 'N/A'
+	return `${percentFormatter.format(value)}%`
+}
+
+function formatToken(value: string): string {
+	return value
+		.replace(/([a-z])([A-Z])/g, '$1 $2')
+		.replace(/_/g, ' ')
+		.toLowerCase()
+		.replace(/\bbordercrossing\b/g, 'border crossing')
+}
+
+function languageCode(value: string): string {
+	return value.trim().split('-')[0]?.toLowerCase() ?? ''
+}
+
+function cleanLanguageName(value: string): string {
+	return value.replace(/\s+\(macrolanguage\)$/i, '')
+}
+
+function languageListPath(codes: string[]): string | null {
+	const normalized = [
+		...new Set(codes.map(languageCode).filter(Boolean)),
+	]
+	if (normalized.length === 0) return null
+
+	const params = new URLSearchParams()
+	params.set('fields', 'id,iso6393,iso6392B,iso6392T,iso6391,referenceName,names')
+	params.set('limit', '2000')
+	for (const code of normalized) params.append('filter[code]', code)
+	return `/v2/languages?${params.toString()}`
+}
+
+function buildLanguageNameMap(languages: V2Language[]): Map<string, string> {
+	const names = new Map<string, string>()
+	for (const language of languages) {
+		for (const code of [
+			language.id,
+			language.iso6393,
+			language.iso6392B,
+			language.iso6392T,
+			language.iso6391,
+		]) {
+			if (code) names.set(code.toLowerCase(), cleanLanguageName(language.referenceName))
+		}
+	}
+	return names
+}
+
+function resolveLanguageName(code: string, names: Map<string, string>): string | null {
+	return names.get(code.toLowerCase()) || names.get(languageCode(code)) || null
+}
+
+function RelatedList({
+	title,
+	collection,
+}: {
+	title: string
+	collection: V2List<V2TransportRecord>
+}) {
+	const { items, total } = collection
+	if (items.length === 0) return null
+	return (
+		<Section title={`${title} (${total})`}>
+			<div className="grid gap-px bg-white/10 md:grid-cols-2">
+				{items.map((item) => (
+					<div key={item.id} className="min-w-0 bg-black/80 px-4 py-3">
+						<div className="truncate text-sm font-bold text-white">{item.name}</div>
+						<div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[10px] font-bold uppercase tracking-widest text-text-dim">
+							{item.iataCode ? <span>{item.iataCode}</span> : null}
+							{item.icaoCode ? <span>{item.icaoCode}</span> : null}
+							{item.unLocode ? <span>{item.unLocode}</span> : null}
+							{item.stateCode ? <span>{item.stateCode}</span> : null}
+							{item.timezone ? <span>{item.timezone}</span> : null}
+							{item.functions?.length ? <span>{item.functions.map(formatToken).join(', ')}</span> : null}
+						</div>
+					</div>
+				))}
+			</div>
+			{total > items.length ? (
+				<p className="mt-3 text-xs font-medium text-text-dim">
+					Showing {items.length} of {total.toLocaleString('en-US')}
+				</p>
+			) : null}
+		</Section>
+	)
+}
+
 export function CountryDetail({
 	country,
 	onClose,
 	onNavigate,
+	countries,
 }: {
 	country: Country
 	onClose: () => void
 	onNavigate?: (iso2: string) => void
+	countries?: Country[]
 }) {
 	const [states, setStates] = useState<State[]>([])
 	const [loadingStates, setLoadingStates] = useState(false)
 	const [expandedState, setExpandedState] = useState<string | null>(null)
 	const [stateCities, setStateCities] = useState<Record<string, City[]>>({})
 	const [loadingCities, setLoadingCities] = useState<string | null>(null)
+	const [related, setRelated] = useState<RelatedData>(emptyRelatedData)
+	const [loadingRelated, setLoadingRelated] = useState(false)
+	const countryNames = new Map((countries || []).map((item) => [item.iso2, item.name]))
 
 	useEffect(() => {
 		setLoadingStates(true)
@@ -46,49 +269,110 @@ export function CountryDetail({
 			.finally(() => setLoadingStates(false))
 	}, [country.iso2])
 
+	useEffect(() => {
+		let cancelled = false
+		const countryCode = encodeURIComponent(country.iso2)
+		const languagesPath = languageListPath(country.languages)
+
+		setLoadingRelated(true)
+		setRelated(emptyRelatedData())
+
+		Promise.all([
+			fetchV2Resource<V2Statistics>(
+				`/v2/statistics/${countryCode}?fields=populationTotal,gdpCurrentUsd,gdpPerCapitaCurrentUsd,lifeExpectancy,urbanPopulationPercent`
+			),
+			fetchV2Resource<V2Migration>(
+				`/v2/migration/${countryCode}?fields=year,totalInternationalMigrants,migrantShareOfPopulationPercent`
+			),
+			languagesPath
+				? fetchV2List<V2Language>(languagesPath)
+				: Promise.resolve({ items: [], total: 0 }),
+			fetchV2List<V2TransportRecord>(
+				`/v2/airports?filter[country]=${countryCode}&fields=id,name,iataCode,stateCode,timezone&limit=8`
+			),
+			fetchV2List<V2TransportRecord>(
+				`/v2/ports?filter[country]=${countryCode}&fields=id,name,unLocode,functions&limit=8`
+			),
+			fetchV2List<V2TransportRecord>(
+				`/v2/border-crossings?filter[country]=${countryCode}&fields=id,name,unLocode,functions&limit=8`
+			),
+			fetchV2List<V2TransportRecord>(
+				`/v2/airlines?filter[country]=${countryCode}&fields=id,name,iataCode,icaoCode&limit=8`
+			),
+		])
+			.then(([statistics, migration, languages, airports, ports, borderCrossings, airlines]) => {
+				if (cancelled) return
+				setRelated({
+					statistics,
+					migration,
+					languages,
+					airports,
+					ports,
+					borderCrossings,
+					airlines,
+				})
+			})
+			.catch(() => {
+				if (!cancelled) setRelated(emptyRelatedData())
+			})
+			.finally(() => {
+				if (!cancelled) setLoadingRelated(false)
+			})
+
+		return () => {
+			cancelled = true
+		}
+	}, [country.iso2])
+
 	const handleExpandState = async (stateCode: string) => {
 		if (expandedState === stateCode) {
 			setExpandedState(null)
 			return
 		}
 		setExpandedState(stateCode)
-			if (!stateCities[stateCode]) {
-				setLoadingCities(stateCode)
-				try {
-					const result = await fetchCities(country.iso2, stateCode, 20)
-					setStateCities((prev) => ({ ...prev, [stateCode]: result.data }))
-				} catch {
-					setStateCities((prev) => ({ ...prev, [stateCode]: [] }))
-				} finally {
+		if (!stateCities[stateCode]) {
+			setLoadingCities(stateCode)
+			try {
+				const result = await fetchCities(country.iso2, stateCode, 20)
+				setStateCities((prev) => ({ ...prev, [stateCode]: result.data }))
+			} catch {
+				setStateCities((prev) => ({ ...prev, [stateCode]: [] }))
+			} finally {
 				setLoadingCities(null)
 			}
 		}
 	}
 
+	const languageNameMap = buildLanguageNameMap(related.languages.items)
+	const languageNames = country.languages
+		.map((lang) => ({ code: lang, name: resolveLanguageName(lang, languageNameMap) }))
+		.filter((lang): lang is { code: string; name: string } => Boolean(lang.name))
+
 	return (
-		<div className="fixed inset-0 z-50 flex justify-end">
-			<div className="absolute inset-0 bg-black/60 backdrop-blur-md" onClick={onClose} />
-			<div className="relative flex w-full max-w-full flex-col overflow-y-auto bg-black/90 shadow-2xl border-l border-white/10 sm:max-w-md md:max-w-lg backdrop-blur-3xl">
-				<div className="sticky top-0 z-10 flex items-center justify-between gap-3 border-b border-white/10 bg-black/60 px-5 py-5 backdrop-blur-xl sm:px-6">
+		<div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
+			<div className="absolute inset-0 bg-black/75 backdrop-blur-md" onClick={onClose} />
+			<div className="relative flex max-h-[88vh] w-full max-w-6xl flex-col overflow-y-auto border border-white/15 bg-black/90 shadow-2xl backdrop-blur-3xl">
+				<div className="sticky top-0 z-10 flex items-center justify-between gap-4 border-b border-white/10 bg-black/70 px-6 py-6 backdrop-blur-xl sm:px-8">
 					<div className="flex min-w-0 items-center gap-4">
-						<span className="shrink-0 text-4xl drop-shadow-md">{country.emoji}</span>
+						<span className="shrink-0 text-5xl drop-shadow-md">{country.emoji}</span>
 						<div className="min-w-0">
-							<h2 className="truncate text-xl font-extrabold text-white">{country.name}</h2>
-							<p className="truncate text-xs font-medium text-text-muted mt-0.5">{country.native}</p>
+							<h2 className="truncate text-3xl font-extrabold tracking-tight text-white sm:text-4xl">{country.name}</h2>
+							<p className="mt-1 truncate text-sm font-medium text-text-muted">{country.native}</p>
 						</div>
 					</div>
 					<button
 						onClick={onClose}
-						className="flex size-9 shrink-0 items-center justify-center rounded-full bg-white/5 text-text-muted transition-all hover:bg-white/10 hover:text-white"
+						aria-label="Close country details"
+						className="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/5 text-text-muted transition-all hover:bg-white/10 hover:text-white"
 					>
-						<svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<svg className="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
 						</svg>
 					</button>
 				</div>
 
-				<div className="p-4 sm:p-5">
-					<div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2">
+				<div className="p-6 sm:p-8">
+					<div className="grid grid-cols-1 gap-px bg-white/10 sm:grid-cols-2 xl:grid-cols-4">
 						{[
 							['Capital', country.capital],
 							['Region', `${country.continent} / ${country.region}`],
@@ -96,7 +380,7 @@ export function CountryDetail({
 							['Population', formatFull(country.population)],
 							['Area', formatArea(country.areaSqKm)],
 							['Density', formatDensity(country.population, country.areaSqKm)],
-							['GDP', country.gdp ? `$${formatFull(country.gdp)}M` : 'N/A'],
+							['GDP', formatCurrencyValue(country.gdp)],
 							['Literacy', country.literacy ? formatPercent(country.literacy) : 'N/A'],
 							['Currency', `${country.currencySymbol} ${country.currencyName} (${country.currency})`],
 							['Phone', `+${country.phoneCode}`],
@@ -107,18 +391,54 @@ export function CountryDetail({
 							['Week starts', country.firstDayOfWeek],
 							['Time', country.timeFormat],
 						].map(([label, value]) => (
-							<div key={label} className="min-w-0 rounded-xl border border-white/5 bg-white/[0.02] px-4 py-3">
-								<div className="text-[10px] font-bold uppercase tracking-widest text-text-dim">{label}</div>
-								<div className="mt-1 break-words text-sm font-semibold text-white">{value}</div>
-							</div>
+							<Fact key={label} label={label} value={value} />
 						))}
 					</div>
 
-					{country.languages?.length > 0 ? (
+					{loadingRelated ? (
+						<Section title="V2 related data">
+							<div className="h-12 animate-pulse-subtle bg-white/5" />
+						</Section>
+					) : null}
+
+					{related.statistics ? (
+						<Section title="Statistics">
+							<div className="grid grid-cols-1 gap-px bg-white/10 sm:grid-cols-2 xl:grid-cols-5">
+								<Fact label="Population" value={formatMetric(related.statistics.populationTotal)} />
+								<Fact label="GDP" value={formatCurrencyMetric(related.statistics.gdpCurrentUsd)} />
+								<Fact label="GDP / Capita" value={formatCurrencyMetric(related.statistics.gdpPerCapitaCurrentUsd)} />
+								<Fact label="Life expectancy" value={formatMetric(related.statistics.lifeExpectancy, ' yrs')} />
+								<Fact label="Urban population" value={formatPercentValue(related.statistics.urbanPopulationPercent?.value)} />
+							</div>
+						</Section>
+					) : null}
+
+					{related.migration ? (
+						<Section title="Migration">
+							<div className="grid grid-cols-1 gap-px bg-white/10 sm:grid-cols-3">
+								<Fact
+									label="International migrants"
+									value={related.migration.totalInternationalMigrants != null ? compactMetricFormatter.format(related.migration.totalInternationalMigrants) : 'N/A'}
+								/>
+								<Fact
+									label="Share of population"
+									value={formatPercentValue(related.migration.migrantShareOfPopulationPercent)}
+								/>
+								<Fact label="Year" value={related.migration.year || 'N/A'} />
+							</div>
+						</Section>
+					) : null}
+
+					<RelatedList title="Airports" collection={related.airports} />
+					<RelatedList title="Ports" collection={related.ports} />
+					<RelatedList title="Border crossings" collection={related.borderCrossings} />
+					<RelatedList title="Airlines" collection={related.airlines} />
+
+					{languageNames.length > 0 ? (
 						<Section title="Languages">
 							<div className="flex flex-wrap gap-1.5">
-								{country.languages.map((lang) => (
-									<Badge key={lang}>{lang}</Badge>
+								{languageNames.map((lang) => (
+									<Badge key={lang.code}>{lang.name}</Badge>
 								))}
 							</div>
 						</Section>
@@ -129,7 +449,7 @@ export function CountryDetail({
 							<div className="flex flex-wrap gap-1.5">
 								{country.neighbours.map((n) => (
 									<Badge key={n} onClick={onNavigate ? () => onNavigate(n) : undefined}>
-										{n}
+										{countryNames.get(n) || n}
 									</Badge>
 								))}
 							</div>

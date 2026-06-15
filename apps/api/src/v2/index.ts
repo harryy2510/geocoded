@@ -16,6 +16,7 @@ import {
 	getV2ContinentById,
 	getV2CountryById,
 	getV2CurrencyById,
+	getV2LanguageById,
 	getV2MigrationById,
 	getV2PortById,
 	getV2RegionById,
@@ -29,6 +30,7 @@ import {
 	listV2Continents,
 	listV2Countries,
 	listV2Currencies,
+	listV2Languages,
 	listV2Migration,
 	listV2Ports,
 	listV2Regions,
@@ -45,6 +47,7 @@ import {
 	v2ContinentResource,
 	v2CountryResource,
 	v2CurrencyResource,
+	v2LanguageResource,
 	v2MigrationResource,
 	v2PortResource,
 	v2RegionResource,
@@ -128,6 +131,7 @@ registerV2ListRoute('/states', v2StateResource, listV2States)
 registerV2ListRoute('/cities', v2CityResource, listV2Cities)
 registerV2ListRoute('/timezones', v2TimezoneResource, listV2Timezones)
 registerV2ListRoute('/currencies', v2CurrencyResource, listV2Currencies)
+registerV2ListRoute('/languages', v2LanguageResource, listV2Languages)
 registerV2ListRoute('/airlines', v2AirlineResource, listV2Airlines)
 registerV2ListRoute('/airports', v2AirportResource, listV2Airports)
 registerV2ListRoute('/ports', v2PortResource, listV2Ports)
@@ -180,6 +184,12 @@ registerV2DetailRoute(
 	v2CurrencyResource,
 	getV2CurrencyById,
 	'Currency not found'
+)
+registerV2DetailRoute(
+	'/languages/:id',
+	v2LanguageResource,
+	getV2LanguageById,
+	'Language not found'
 )
 registerV2DetailRoute(
 	'/airlines/:id',

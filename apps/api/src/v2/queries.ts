@@ -7,6 +7,8 @@ import {
 	type V2Country,
 	type V2CountryStatistics,
 	type V2Currency,
+	type V2Language,
+	type V2LanguageName,
 	type V2Migration,
 	type V2MigrationOrigin,
 	type V2Region,
@@ -220,6 +222,33 @@ export async function getV2CurrencyById(
 		[id],
 		rowToV2Currency
 	)
+}
+
+export async function listV2Languages(
+	db: D1Database,
+	query: V2ListQuery
+): Promise<{ rows: V2Language[]; total: number }> {
+	return await listRows(db, 'languages', query, rowToV2Language)
+}
+
+export async function getV2LanguageById(
+	db: D1Database,
+	id: string
+): Promise<V2Language | null> {
+	const code = languageCode(id)
+	const row = await db
+		.prepare(
+			`SELECT * FROM languages
+			WHERE id = ?1
+				OR iso6393 = ?1
+				OR iso6392_b = ?1
+				OR iso6392_t = ?1
+				OR iso6391 = ?1
+			LIMIT 1`
+		)
+		.bind(code)
+		.first()
+	return row ? rowToV2Language(row as D1Row) : null
 }
 
 export async function listV2Airlines(
@@ -533,6 +562,27 @@ function rowToV2Currency(row: D1Row): V2Currency {
 	}
 }
 
+function rowToV2Language(row: D1Row): V2Language {
+	const iso6393 = stringValue(row.iso6393)
+	return {
+		id: stringValue(row.id) || iso6393,
+		iso6393,
+		iso6392B: nullableString(row.iso6392_b),
+		iso6392T: nullableString(row.iso6392_t),
+		iso6391: nullableString(row.iso6391),
+		scope: stringValue(row.scope),
+		type: stringValue(row.type),
+		referenceName: stringValue(row.reference_name),
+		names: parseJsonArray<V2LanguageName>(row.names),
+		macrolanguageCode: nullableString(row.macrolanguage_code),
+		macrolanguageMemberCodes: parseJsonArray<string>(
+			row.macrolanguage_member_codes
+		),
+		comment: nullableString(row.comment),
+		lookupCodes: parseJsonArray<string>(row.lookup_codes)
+	}
+}
+
 function rowToV2Airline(row: D1Row): V2Airline {
 	return {
 		id: stringValue(row.id),
@@ -673,4 +723,8 @@ function numberOrNull(value: unknown): number | null {
 
 function booleanValue(value: unknown): boolean {
 	return value === true || value === 1
+}
+
+function languageCode(value: string): string {
+	return value.trim().split('-')[0]?.toLowerCase() ?? ''
 }

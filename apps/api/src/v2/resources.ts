@@ -359,6 +359,78 @@ export const v2CurrencyResource = defineV2Resource({
 	strictUnknownParams: true
 })
 
+export const v2LanguageResource = defineV2Resource({
+	name: 'languages',
+	fields: {
+		id: { type: 'string', column: 'id', normalize: 'lowercase' },
+		iso6393: { type: 'string', column: 'iso6393', normalize: 'lowercase' },
+		iso6392B: {
+			type: 'string',
+			column: 'iso6392_b',
+			normalize: 'lowercase'
+		},
+		iso6392T: {
+			type: 'string',
+			column: 'iso6392_t',
+			normalize: 'lowercase'
+		},
+		iso6391: { type: 'string', column: 'iso6391', normalize: 'lowercase' },
+		scope: { type: 'string', column: 'scope' },
+		type: { type: 'string', column: 'type' },
+		referenceName: {
+			type: 'string',
+			column: 'reference_name',
+			caseInsensitive: true,
+			searchable: true,
+			sortable: true
+		},
+		names: { type: 'array', column: 'names' },
+		macrolanguageCode: {
+			type: 'string',
+			column: 'macrolanguage_code',
+			normalize: 'lowercase'
+		},
+		macrolanguageMemberCodes: {
+			type: 'array',
+			column: 'macrolanguage_member_codes',
+			normalize: 'lowercase'
+		},
+		comment: { type: 'string', column: 'comment' },
+		lookupCodes: {
+			type: 'array',
+			column: 'lookup_codes',
+			normalize: 'lowercase'
+		}
+	},
+	defaultFields: [
+		'id',
+		'iso6393',
+		'iso6392B',
+		'iso6392T',
+		'iso6391',
+		'scope',
+		'type',
+		'referenceName',
+		'names',
+		'macrolanguageCode',
+		'macrolanguageMemberCodes',
+		'comment'
+	],
+	filters: {
+		code: { field: 'lookupCodes', operator: 'contains' },
+		scope: { field: 'scope', operator: 'eq' },
+		type: { field: 'type', operator: 'eq' },
+		macrolanguage: { field: 'macrolanguageCode', operator: 'eq' }
+	},
+	search: {
+		fields: ['referenceName', 'iso6393', 'iso6392B', 'iso6392T', 'iso6391']
+	},
+	sort: {
+		default: { field: 'referenceName', direction: 'asc' }
+	},
+	strictUnknownParams: true
+})
+
 export const v2AirlineResource = defineV2Resource({
 	name: 'airlines',
 	fields: {

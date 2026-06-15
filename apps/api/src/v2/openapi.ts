@@ -208,6 +208,30 @@ const v2CurrencySchema = objectSchema({
 	countries: stringArraySchema
 })
 
+const v2LanguageNameSchema = objectSchema({
+	printName: stringSchema,
+	invertedName: stringSchema
+})
+
+const v2LanguageSchema = objectSchema({
+	id: stringSchema,
+	iso6393: stringSchema,
+	iso6392B: nullableStringSchema,
+	iso6392T: nullableStringSchema,
+	iso6391: nullableStringSchema,
+	scope: stringSchema,
+	type: stringSchema,
+	referenceName: stringSchema,
+	names: {
+		type: 'array' as const,
+		items: v2LanguageNameSchema
+	},
+	macrolanguageCode: nullableStringSchema,
+	macrolanguageMemberCodes: stringArraySchema,
+	comment: nullableStringSchema,
+	lookupCodes: stringArraySchema
+})
+
 const v2AirlineSchema = objectSchema({
 	id: stringSchema,
 	name: stringSchema,
@@ -333,6 +357,10 @@ const filterRegion = filterParameter('region', 'Asia')
 const filterTimezone = filterParameter('timezone', 'Asia/Dubai')
 const filterCurrency = filterParameter('currency', 'AED')
 const filterIata = filterParameter('iata', 'DXB')
+const filterLanguageCode = filterParameter('code', 'en')
+const filterLanguageScope = filterParameter('scope', 'individual')
+const filterLanguageType = filterParameter('type', 'living')
+const filterMacrolanguage = filterParameter('macrolanguage', 'ara')
 const filterMinPopulation = filterParameter('minPopulation', 1000000, 'number')
 const filterMaxPopulation = filterParameter('maxPopulation', 50000000, 'number')
 
@@ -477,6 +505,25 @@ export const v2OpenApiPaths = {
 		schema: v2CurrencySchema,
 		example: 'AED',
 		fieldsExample: 'id,code,name'
+	}),
+	'/v2/languages': listPath({
+		tag: 'Languages',
+		summary: 'List languages',
+		schema: v2LanguageSchema,
+		parameters: [
+			filterLanguageCode,
+			filterLanguageScope,
+			filterLanguageType,
+			filterMacrolanguage
+		],
+		fieldsExample: 'id,iso6391,iso6393,referenceName'
+	}),
+	'/v2/languages/{id}': detailPath({
+		tag: 'Languages',
+		summary: 'Get one language',
+		schema: v2LanguageSchema,
+		example: 'eng',
+		fieldsExample: 'id,iso6391,iso6393,referenceName'
 	}),
 	'/v2/airlines': listPath({
 		tag: 'Airlines',

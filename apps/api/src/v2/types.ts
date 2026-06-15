@@ -109,6 +109,27 @@ export type V2Currency = {
 	countries: string[]
 }
 
+export type V2LanguageName = {
+	printName: string
+	invertedName: string
+}
+
+export type V2Language = {
+	id: string
+	iso6393: string
+	iso6392B: string | null
+	iso6392T: string | null
+	iso6391: string | null
+	scope: string
+	type: string
+	referenceName: string
+	names: V2LanguageName[]
+	macrolanguageCode: string | null
+	macrolanguageMemberCodes: string[]
+	comment: string | null
+	lookupCodes: string[]
+}
+
 export type V2Airline = {
 	id: string
 	name: string

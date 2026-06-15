@@ -106,6 +106,25 @@ type RawCurrencyEntry = {
 	countries: string[]
 }
 
+type RawLanguageName = {
+	printName: string
+	invertedName: string
+}
+
+type RawLanguage = {
+	iso6393: string
+	iso6392B: string | null
+	iso6392T: string | null
+	iso6391: string | null
+	scope: string
+	type: string
+	referenceName: string
+	names: RawLanguageName[]
+	macrolanguageCode: string | null
+	macrolanguageMemberCodes: string[]
+	comment: string | null
+}
+
 type RawStatisticValue = {
 	code: string
 	name: string
@@ -745,6 +764,75 @@ function currencyRow(currency: RawCurrencyEntry): SourceRow {
 			'source_hash'
 		])
 	}
+}
+
+function languageRow(language: RawLanguage): SourceRow {
+	const columns = [
+		'id',
+		'iso6393',
+		'iso6392_b',
+		'iso6392_t',
+		'iso6391',
+		'scope',
+		'type',
+		'reference_name',
+		'names',
+		'macrolanguage_code',
+		'macrolanguage_member_codes',
+		'comment',
+		'lookup_codes',
+		'source_hash'
+	]
+	const lookupCodes = languageLookupCodes(language)
+	const values = [
+		language.iso6393,
+		language.iso6393,
+		language.iso6392B,
+		language.iso6392T,
+		language.iso6391,
+		language.scope,
+		language.type,
+		language.referenceName,
+		json(language.names),
+		language.macrolanguageCode,
+		json(language.macrolanguageMemberCodes),
+		language.comment,
+		json(lookupCodes)
+	] satisfies SqlValue[]
+	const hash = hashValues(values)
+	return {
+		key: language.iso6393,
+		hash,
+		sql: upsertSql('languages', columns, [...values, hash], '(id)', [
+			'iso6393',
+			'iso6392_b',
+			'iso6392_t',
+			'iso6391',
+			'scope',
+			'type',
+			'reference_name',
+			'names',
+			'macrolanguage_code',
+			'macrolanguage_member_codes',
+			'comment',
+			'lookup_codes',
+			'source_hash'
+		])
+	}
+}
+
+function languageLookupCodes(language: RawLanguage): string[] {
+	return [
+		language.iso6393,
+		language.iso6392B,
+		language.iso6392T,
+		language.iso6391,
+		language.macrolanguageCode,
+		...language.macrolanguageMemberCodes
+	]
+		.filter((code): code is string => Boolean(code))
+		.map((code) => code.toLowerCase())
+		.filter((code, index, codes) => codes.indexOf(code) === index)
 }
 
 function countryStatisticsRow(country: RawCountryStatistics): SourceRow {
@@ -1511,6 +1599,7 @@ async function main() {
 		citiesFile,
 		timezonesFile,
 		currenciesFile,
+		languagesFile,
 		countryStatisticsFile,
 		airlinesFile,
 		airportsFile,
@@ -1523,6 +1612,7 @@ async function main() {
 		readDataFile<RawCity[]>('cities.json'),
 		readDataFile<RawTimezoneEntry[]>('timezones.json'),
 		readDataFile<RawCurrencyEntry[]>('currencies.json'),
+		readDataFile<RawLanguage[]>('languages.json'),
 		readDataFile<RawCountryStatistics[]>('country-indicators.json'),
 		readDataFile<RawAirline[]>('iata-airline-members.json'),
 		readDataFile<RawAirport[]>('airports.json'),
@@ -1532,7 +1622,7 @@ async function main() {
 	])
 
 	console.log(
-		`Loaded source rows: ${countriesFile.records.length} countries, ${statesFile.records.length} states, ${citiesFile.records.length} cities, ${timezonesFile.records.length} timezones, ${currenciesFile.records.length} currencies, ${countryStatisticsFile.records.length} country statistics, ${airlinesFile.records.length} airlines, ${airportsFile.records.length} airports, ${portsFile.records.length} ports, ${borderCrossingsFile.records.length} border crossings, ${countryMigrationFile.records.length} migration rows.`
+		`Loaded source rows: ${countriesFile.records.length} countries, ${statesFile.records.length} states, ${citiesFile.records.length} cities, ${timezonesFile.records.length} timezones, ${currenciesFile.records.length} currencies, ${languagesFile.records.length} languages, ${countryStatisticsFile.records.length} country statistics, ${airlinesFile.records.length} airlines, ${airportsFile.records.length} airports, ${portsFile.records.length} ports, ${borderCrossingsFile.records.length} border crossings, ${countryMigrationFile.records.length} migration rows.`
 	)
 	console.log('Reading D1 seed file markers...')
 	const seedFiles = await readSeedFileHashes(target)
@@ -1556,6 +1646,11 @@ async function main() {
 	)
 	const sortedCurrencies = currenciesFile.records.sort((a, b) =>
 		a.code.localeCompare(b.code)
+	)
+	const sortedLanguages = languagesFile.records.sort(
+		(a, b) =>
+			a.referenceName.localeCompare(b.referenceName) ||
+			a.iso6393.localeCompare(b.iso6393)
 	)
 	const sortedCountryStatistics = countryStatisticsFile.records.sort((a, b) =>
 		a.countryCode.localeCompare(b.countryCode)
@@ -1667,6 +1762,18 @@ async function main() {
 		deleteSql: (key) => `DELETE FROM currencies WHERE code = ${sqlValue(key)};`
 	})
 
+	const languages = await processRows({
+		label: 'languages',
+		file: languagesFile,
+		force,
+		target,
+		seedFiles,
+		sourceCount: sortedLanguages.length,
+		buildRows: () => sortedLanguages.map(languageRow),
+		hashQuery: 'SELECT id AS key, source_hash FROM languages',
+		deleteSql: (key) => `DELETE FROM languages WHERE id = ${sqlValue(key)};`
+	})
+
 	const statistics = await processRows({
 		label: 'country statistics',
 		file: countryStatisticsFile,
@@ -1753,6 +1860,7 @@ async function main() {
 		cities,
 		timezones,
 		currencies,
+		languages,
 		statistics,
 		airlines,
 		airports,
@@ -1766,6 +1874,7 @@ async function main() {
 		...cities.upserts,
 		...timezones.upserts,
 		...currencies.upserts,
+		...languages.upserts,
 		...statistics.upserts,
 		...airlines.upserts,
 		...airports.upserts,
@@ -1778,6 +1887,7 @@ async function main() {
 		...airports.deletes,
 		...airlines.deletes,
 		...statistics.deletes,
+		...languages.deletes,
 		...cities.deletes,
 		...states.deletes,
 		...countries.deletes,

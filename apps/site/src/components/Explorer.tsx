@@ -1,33 +1,54 @@
-import { useState, useEffect } from 'react'
-import { createGeocodedClient } from '@geocoded/client'
+import { useEffect, useMemo, useState } from 'react'
+import { createGeocodedClient, type Country } from '@geocoded/client'
+import { formatCompact } from '../lib/format'
+import { CountryDetail } from './CountryDetail'
 
-const client = createGeocodedClient({ apiUrl: import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me' })
+const client = createGeocodedClient({
+	apiUrl: import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me',
+})
 
 const SORTS = [
-	{ value: 'name-asc', label: 'NAME A-Z' },
-	{ value: 'name-desc', label: 'NAME Z-A' },
-	{ value: 'population-desc', label: 'POPULATION (HIGH)' },
-	{ value: 'population-asc', label: 'POPULATION (LOW)' },
-	{ value: 'areaSqKm-desc', label: 'AREA (LARGE)' },
-	{ value: 'areaSqKm-asc', label: 'AREA (SMALL)' },
-	{ value: 'gdp-desc', label: 'GDP (HIGH)' },
-	{ value: 'literacy-desc', label: 'LITERACY (HIGH)' },
+	{ value: 'name-asc', label: 'Name A-Z' },
+	{ value: 'name-desc', label: 'Name Z-A' },
+	{ value: 'population-desc', label: 'Population High' },
+	{ value: 'population-asc', label: 'Population Low' },
+	{ value: 'areaSqKm-desc', label: 'Area Large' },
+	{ value: 'areaSqKm-asc', label: 'Area Small' },
+	{ value: 'gdp-desc', label: 'GDP High' },
+	{ value: 'literacy-desc', label: 'Literacy High' },
 ]
 
+function sortValue(country: Country, key: string): string | number {
+	switch (key) {
+		case 'name':
+			return country.name
+		case 'population':
+			return country.population || 0
+		case 'areaSqKm':
+			return country.areaSqKm || 0
+		case 'gdp':
+			return country.gdp || 0
+		case 'literacy':
+			return country.literacy || 0
+		default:
+			return country.name
+	}
+}
+
 export function Explorer() {
-	const [countries, setCountries] = useState<any[]>([])
+	const [countries, setCountries] = useState<Country[]>([])
 	const [loading, setLoading] = useState(true)
-	
+
 	const [search, setSearch] = useState('')
 	const [sortKey, setSortKey] = useState('name-asc')
 	const [showSort, setShowSort] = useState(false)
-	const [selected, setSelected] = useState<any | null>(null)
+	const [selected, setSelected] = useState<Country | null>(null)
 
 	const [showFilters, setShowFilters] = useState(false)
 	const [selectedRegions, setSelectedRegions] = useState<string[]>([])
-	const [selectedContinent, setSelectedContinent] = useState<string>('')
-	const [drivingSide, setDrivingSide] = useState<string>('')
-	const [measurementSystem, setMeasurementSystem] = useState<string>('')
+	const [selectedContinent, setSelectedContinent] = useState('')
+	const [drivingSide, setDrivingSide] = useState('')
+	const [measurementSystem, setMeasurementSystem] = useState('')
 
 	useEffect(() => {
 		client.fetchCountries().then((res) => {
@@ -36,207 +57,321 @@ export function Explorer() {
 		})
 	}, [])
 
-	const regions = Array.from(new Set(countries.map(c => c.region).filter(Boolean))).sort()
-	const continents = Array.from(new Set(countries.map(c => c.continent).filter(Boolean))).sort()
+	const regions = useMemo(
+		() => Array.from(new Set(countries.map((c) => c.region).filter(Boolean))).sort(),
+		[countries]
+	)
+	const continents = useMemo(
+		() =>
+			Array.from(new Set(countries.map((c) => c.continent).filter(Boolean))).sort(),
+		[countries]
+	)
 
-	const toggleRegion = (r: string) => {
-		if (selectedRegions.includes(r)) setSelectedRegions(selectedRegions.filter(x => x !== r))
-		else setSelectedRegions([...selectedRegions, r])
-	}
-
-	let filtered = [...countries]
-
-	if (search) {
-		const q = search.toLowerCase()
-		filtered = filtered.filter(c =>
-			c.name.toLowerCase().includes(q) ||
-			c.iso2.toLowerCase().includes(q) ||
-			c.capital?.toLowerCase().includes(q)
+	const toggleRegion = (region: string) => {
+		setSelectedRegions((current) =>
+			current.includes(region)
+				? current.filter((item) => item !== region)
+				: [...current, region]
 		)
 	}
 
-	if (selectedRegions.length) filtered = filtered.filter((c) => selectedRegions.includes(c.region))
-	if (selectedContinent) filtered = filtered.filter((c) => c.continent === selectedContinent)
-	if (drivingSide) filtered = filtered.filter((c) => c.drivingSide === drivingSide)
-	if (measurementSystem) filtered = filtered.filter((c) => c.measurementSystem === measurementSystem)
+	const filtered = useMemo(() => {
+		let result = [...countries]
 
-	filtered.sort((a, b) => {
-		const [sortField, sortDir] = sortKey.split('-')
-		const aVal = a[sortField] ?? 0
-		const bVal = b[sortField] ?? 0
-		if (typeof aVal === 'string' && typeof bVal === 'string') {
-			return sortDir === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal)
+		if (search) {
+			const q = search.toLowerCase()
+			result = result.filter(
+				(country) =>
+					country.name.toLowerCase().includes(q) ||
+					country.iso2.toLowerCase().includes(q) ||
+					country.iso3.toLowerCase().includes(q) ||
+					country.capital?.toLowerCase().includes(q) ||
+					country.currency?.toLowerCase().includes(q) ||
+					country.region?.toLowerCase().includes(q)
+			)
 		}
-		return sortDir === 'asc' ? (aVal as number) - (bVal as number) : (bVal as number) - (aVal as number)
-	})
 
-	const activeSort = SORTS.find(s => s.value === sortKey)
+		if (selectedRegions.length) {
+			result = result.filter((country) => selectedRegions.includes(country.region))
+		}
+		if (selectedContinent) {
+			result = result.filter((country) => country.continent === selectedContinent)
+		}
+		if (drivingSide) {
+			result = result.filter((country) => country.drivingSide === drivingSide)
+		}
+		if (measurementSystem) {
+			result = result.filter(
+				(country) => country.measurementSystem === measurementSystem
+			)
+		}
+
+		result.sort((a, b) => {
+			const [field, direction] = sortKey.split('-')
+			const aVal = sortValue(a, field)
+			const bVal = sortValue(b, field)
+			if (typeof aVal === 'string' && typeof bVal === 'string') {
+				return direction === 'asc'
+					? aVal.localeCompare(bVal)
+					: bVal.localeCompare(aVal)
+			}
+			return direction === 'asc'
+				? Number(aVal) - Number(bVal)
+				: Number(bVal) - Number(aVal)
+		})
+
+		return result
+	}, [
+		countries,
+		search,
+		selectedRegions,
+		selectedContinent,
+		drivingSide,
+		measurementSystem,
+		sortKey,
+	])
+
+	const activeSort = SORTS.find((sort) => sort.value === sortKey) || SORTS[0]
+	const activeFilterCount =
+		selectedRegions.length +
+		(selectedContinent ? 1 : 0) +
+		(drivingSide ? 1 : 0) +
+		(measurementSystem ? 1 : 0)
 
 	return (
-		<div className="flex flex-col gap-12 animate-fade-in">
-			<div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+		<div className="flex flex-col gap-10 animate-fade-in">
+			<div className="flex flex-col gap-8">
 				<div>
-					<h1 class="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-4">Explorer</h1>
-					<p class="text-white/60 text-lg">Query global intelligence.</p>
+					<h1 className="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-4">
+						Explorer
+					</h1>
+					<p className="text-white/60 text-lg">
+						Browse countries, compare key fields, and open full country records.
+					</p>
 				</div>
-				<div className="flex flex-col sm:flex-row items-stretch sm:items-end gap-4 w-full md:w-auto relative z-20">
-					<button 
-						onClick={() => setShowFilters(!showFilters)}
-						className={`lux-input text-lg font-bold tracking-tighter uppercase pb-2 border-b transition-colors text-left ${showFilters ? 'border-white text-white' : 'border-white/20 hover:border-white text-white/60 hover:text-white'}`}
-					>
-						FILTERS {showFilters ? '[-]' : '[+]'}
-					</button>
-					<input
-						type="text"
-						placeholder="SEARCH ISO2 OR NAME"
-						value={search}
-						onChange={(e) => setSearch(e.target.value)}
-						className="lux-input text-lg md:text-2xl font-bold tracking-tighter uppercase w-full md:w-80 pb-2"
-					/>
-					<div className="relative">
-						<button 
-							onClick={() => setShowSort(!showSort)}
-							className="lux-input text-lg font-bold tracking-tighter uppercase pb-2 border-b border-white/20 hover:border-white transition-colors flex items-center justify-between gap-4 w-full sm:w-56 text-left"
+
+				<div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_auto] xl:items-end">
+					<label className="block min-w-0">
+						<span className="mb-3 block text-xs font-bold uppercase tracking-widest text-white/40">
+							Search
+						</span>
+						<input
+							type="text"
+							placeholder="Search countries, capitals, ISO codes..."
+							value={search}
+							onChange={(e) => setSearch(e.target.value)}
+							className="lux-input h-14 w-full min-w-0 px-0 text-xl font-bold tracking-tighter uppercase placeholder:text-white/30"
+						/>
+					</label>
+
+					<div className="flex flex-col gap-3 sm:flex-row sm:items-end xl:justify-end">
+						<button
+							onClick={() => setShowFilters(!showFilters)}
+							className={`lux-panel h-14 px-5 text-left text-sm font-bold uppercase tracking-widest transition-colors hover:bg-white/5 ${
+								showFilters ? 'border-white text-white' : 'text-white/70'
+							}`}
 						>
-							<span className="truncate">{activeSort?.label}</span>
-							<span className="text-white/40">{showSort ? '▲' : '▼'}</span>
+							Filters {activeFilterCount ? `(${activeFilterCount})` : '[+]'}
 						</button>
-						{showSort && (
-							<div className="absolute top-full left-0 right-0 mt-2 bg-black border border-white/20 flex flex-col shadow-2xl">
-								{SORTS.map(s => (
-									<button
-										key={s.value}
-										onClick={() => { setSortKey(s.value); setShowSort(false) }}
-										className={`text-left px-4 py-3 text-sm font-bold tracking-widest uppercase hover:bg-white/10 ${sortKey === s.value ? 'text-white bg-white/5' : 'text-white/50'}`}
-									>
-										{s.label}
-									</button>
-								))}
-							</div>
-						)}
+
+						<div className="relative">
+							<button
+								onClick={() => setShowSort(!showSort)}
+								className="lux-panel flex h-14 min-w-56 items-center justify-between gap-5 px-5 text-left text-sm font-bold uppercase tracking-widest text-white/80 transition-colors hover:bg-white/5"
+							>
+								<span className="truncate">{activeSort.label}</span>
+								<span className="text-white/40">{showSort ? '▲' : '▼'}</span>
+							</button>
+							{showSort ? (
+								<div className="absolute right-0 top-full z-30 mt-2 w-64 border border-white/20 bg-black shadow-2xl">
+									{SORTS.map((sort) => (
+										<button
+											key={sort.value}
+											onClick={() => {
+												setSortKey(sort.value)
+												setShowSort(false)
+											}}
+											className={`block w-full px-4 py-3 text-left text-xs font-bold uppercase tracking-widest hover:bg-white/10 ${
+												sortKey === sort.value
+													? 'bg-white/10 text-white'
+													: 'text-white/50'
+											}`}
+										>
+											{sort.label}
+										</button>
+									))}
+								</div>
+							) : null}
+						</div>
 					</div>
 				</div>
 			</div>
 
-			{showFilters && (
-				<div className="bg-white/5 border border-white/10 p-6 flex flex-col gap-6 animate-fade-in relative z-10">
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+			{showFilters ? (
+				<div className="border border-white/10 bg-white/[0.02] p-6 animate-fade-in">
+					<div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
 						<div>
-							<div className="text-xs uppercase tracking-widest text-white/40 mb-3 font-bold">Region</div>
+							<div className="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">
+								Region
+							</div>
 							<div className="flex flex-wrap gap-2">
-								{regions.map(r => (
-									<button 
-										key={r as string} 
-										onClick={() => toggleRegion(r as string)}
-										className={`px-3 py-1.5 text-xs font-bold uppercase tracking-widest border transition-colors ${selectedRegions.includes(r as string) ? 'bg-white text-black border-white' : 'border-white/20 hover:border-white text-white/60 hover:text-white'}`}
+								{regions.map((region) => (
+									<button
+										key={region}
+										onClick={() => toggleRegion(region)}
+										className={`border px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-colors ${
+											selectedRegions.includes(region)
+												? 'border-white bg-white text-black'
+												: 'border-white/20 text-white/60 hover:border-white hover:text-white'
+										}`}
 									>
-										{r as string}
+										{region}
 									</button>
 								))}
 							</div>
 						</div>
+
 						<div>
-							<div className="text-xs uppercase tracking-widest text-white/40 mb-3 font-bold">Continent</div>
+							<div className="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">
+								Continent
+							</div>
 							<div className="flex flex-wrap gap-2">
-								<button 
+								<button
 									onClick={() => setSelectedContinent('')}
-									className={`px-3 py-1.5 text-xs font-bold uppercase tracking-widest border transition-colors ${!selectedContinent ? 'bg-white text-black border-white' : 'border-white/20 hover:border-white text-white/60 hover:text-white'}`}
-								>ANY</button>
-								{continents.map(c => (
-									<button 
-										key={c as string} 
-										onClick={() => setSelectedContinent(c as string)}
-										className={`px-3 py-1.5 text-xs font-bold uppercase tracking-widest border transition-colors ${selectedContinent === c ? 'bg-white text-black border-white' : 'border-white/20 hover:border-white text-white/60 hover:text-white'}`}
+									className={`border px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-colors ${
+										!selectedContinent
+											? 'border-white bg-white text-black'
+											: 'border-white/20 text-white/60 hover:border-white hover:text-white'
+									}`}
+								>
+									Any
+								</button>
+								{continents.map((continent) => (
+									<button
+										key={continent}
+										onClick={() => setSelectedContinent(continent)}
+										className={`border px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-colors ${
+											selectedContinent === continent
+												? 'border-white bg-white text-black'
+												: 'border-white/20 text-white/60 hover:border-white hover:text-white'
+										}`}
 									>
-										{c as string}
+										{continent}
 									</button>
 								))}
 							</div>
 						</div>
+
 						<div>
-							<div className="text-xs uppercase tracking-widest text-white/40 mb-3 font-bold">Driving Side</div>
+							<div className="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">
+								Driving side
+							</div>
 							<div className="flex flex-wrap gap-2">
-								{['', 'right', 'left'].map(side => (
-									<button 
-										key={side} 
+								{['', 'right', 'left'].map((side) => (
+									<button
+										key={side}
 										onClick={() => setDrivingSide(side)}
-										className={`px-3 py-1.5 text-xs font-bold uppercase tracking-widest border transition-colors ${drivingSide === side ? 'bg-white text-black border-white' : 'border-white/20 hover:border-white text-white/60 hover:text-white'}`}
+										className={`border px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-colors ${
+											drivingSide === side
+												? 'border-white bg-white text-black'
+												: 'border-white/20 text-white/60 hover:border-white hover:text-white'
+										}`}
 									>
-										{side || 'ANY'}
+										{side || 'Any'}
 									</button>
 								))}
 							</div>
 						</div>
+
 						<div>
-							<div className="text-xs uppercase tracking-widest text-white/40 mb-3 font-bold">Measurement</div>
+							<div className="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">
+								Measurement
+							</div>
 							<div className="flex flex-wrap gap-2">
-								{['', 'metric', 'imperial'].map(sys => (
-									<button 
-										key={sys} 
-										onClick={() => setMeasurementSystem(sys)}
-										className={`px-3 py-1.5 text-xs font-bold uppercase tracking-widest border transition-colors ${measurementSystem === sys ? 'bg-white text-black border-white' : 'border-white/20 hover:border-white text-white/60 hover:text-white'}`}
+								{['', 'metric', 'imperial'].map((system) => (
+									<button
+										key={system}
+										onClick={() => setMeasurementSystem(system)}
+										className={`border px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-colors ${
+											measurementSystem === system
+												? 'border-white bg-white text-black'
+												: 'border-white/20 text-white/60 hover:border-white hover:text-white'
+										}`}
 									>
-										{sys || 'ANY'}
+										{system || 'Any'}
 									</button>
 								))}
 							</div>
 						</div>
 					</div>
 				</div>
-			)}
+			) : null}
 
-			{loading ? (
-				<div className="text-white/40 font-mono animate-pulse uppercase tracking-widest text-sm relative z-0">Initializing link...</div>
-			) : (
-				<div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-px bg-white/10 border border-white/10 relative z-0">
-					{filtered.map(c => (
+			<div className="text-sm font-mono uppercase tracking-widest text-white/35">
+				{loading ? 'Loading countries...' : `${filtered.length} countries found`}
+			</div>
+
+			{loading ? null : (
+				<div className="grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6">
+					{filtered.map((country) => (
 						<button
-							key={c.iso2}
-							onClick={() => setSelected(c)}
-							className="bg-black p-6 flex flex-col items-start text-left hover:bg-white/5 transition-colors group"
+							key={country.iso2}
+							onClick={() => setSelected(country)}
+							className="group flex min-h-[190px] flex-col bg-black p-6 text-left transition-colors hover:bg-white/[0.06]"
 						>
-							<span className="text-4xl mb-4 grayscale group-hover:grayscale-0 transition-all">{c.emoji}</span>
-							<span className="font-mono text-xs text-white/40 mb-2">{c.iso2}</span>
-							<span className="font-bold uppercase tracking-tight text-sm truncate w-full group-hover:text-white text-white/80">{c.name}</span>
+							<div className="flex items-start justify-between gap-3">
+								<span className="text-3xl leading-none drop-shadow-md transition-transform group-hover:scale-110">
+									{country.emoji}
+								</span>
+								<span className="max-w-28 truncate border border-white/10 bg-white/[0.04] px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-white/50">
+									{country.region || country.continent}
+								</span>
+							</div>
+
+							<div className="mt-8 min-w-0">
+								<div className="mb-2 font-mono text-xs text-white/35">{country.iso2}</div>
+								<h3 className="truncate text-base font-bold uppercase tracking-tight text-white/85 group-hover:text-white">
+									{country.name}
+								</h3>
+								<p className="mt-1 truncate text-sm text-white/45">
+									{country.capital || 'No capital'}
+								</p>
+							</div>
+
+							<div className="mt-auto flex items-end justify-between gap-4 border-t border-white/10 pt-4">
+								<div>
+									<div className="text-[10px] font-bold uppercase tracking-widest text-white/30">
+										Pop.
+									</div>
+									<div className="mt-1 text-sm font-semibold text-white/70">
+										{formatCompact(country.population)}
+									</div>
+								</div>
+								<div className="text-right">
+									<div className="text-[10px] font-bold uppercase tracking-widest text-white/30">
+										Currency
+									</div>
+									<div className="mt-1 font-mono text-sm font-semibold text-white/55">
+										{country.currency || 'N/A'}
+									</div>
+								</div>
+							</div>
 						</button>
 					))}
 				</div>
 			)}
 
-			{selected && (
-				<div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-					<div className="absolute inset-0 bg-black/90 backdrop-blur-sm" onClick={() => setSelected(null)}></div>
-					<div className="lux-panel relative z-10 w-full max-w-2xl p-10 flex flex-col gap-8 max-h-[90vh] overflow-y-auto">
-						<div className="flex justify-between items-start">
-							<div>
-								<div className="text-6xl mb-4">{selected.emoji}</div>
-								<h2 className="text-4xl font-bold uppercase tracking-tighter mb-2">{selected.name}</h2>
-								<div className="font-mono text-white/40 text-sm">{selected.native}</div>
-							</div>
-							<button onClick={() => setSelected(null)} className="text-white/40 hover:text-white uppercase tracking-widest text-xs font-bold">Close [X]</button>
-						</div>
-
-						<div className="grid grid-cols-2 gap-px bg-white/10">
-							<div className="bg-black p-4">
-								<div className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Capital</div>
-								<div className="font-bold">{selected.capital || 'N/A'}</div>
-							</div>
-							<div className="bg-black p-4">
-								<div className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Region</div>
-								<div className="font-bold">{selected.region}</div>
-							</div>
-							<div className="bg-black p-4">
-								<div className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Population</div>
-								<div className="font-bold">{selected.population?.toLocaleString() || 'N/A'}</div>
-							</div>
-							<div className="bg-black p-4">
-								<div className="text-[10px] text-white/40 uppercase tracking-widest mb-1">Currency</div>
-								<div className="font-bold">{selected.currency}</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			)}
+			{selected ? (
+				<CountryDetail
+					country={selected}
+					countries={countries}
+					onClose={() => setSelected(null)}
+					onNavigate={(iso2) => {
+						const nextCountry = countries.find((country) => country.iso2 === iso2)
+						if (nextCountry) setSelected(nextCountry)
+					}}
+				/>
+			) : null}
 		</div>
 	)
 }

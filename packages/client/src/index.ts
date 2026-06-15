@@ -105,6 +105,25 @@ export type Currency = {
 	countries: string[]
 }
 
+export type Language = {
+	id: string
+	iso6393: string
+	iso6392B: string | null
+	iso6392T: string | null
+	iso6391: string | null
+	scope: string
+	type: string
+	referenceName: string
+	names: {
+		printName: string
+		invertedName: string
+	}[]
+	macrolanguageCode: string | null
+	macrolanguageMemberCodes: string[]
+	comment: string | null
+	lookupCodes: string[]
+}
+
 export type PaginatedResponse<T> = {
 	data: T[]
 	meta: {
@@ -135,6 +154,7 @@ export type GeocodedClient = {
 	) => Promise<PaginatedResponse<City>>
 	fetchTimezones: () => Promise<TimezoneEntry[]>
 	fetchCurrencies: () => Promise<Currency[]>
+	fetchLanguages: () => Promise<Language[]>
 	search: (
 		query: string
 	) => Promise<
@@ -183,6 +203,8 @@ export function createGeocodedClient(
 			fetchPaginatedList<TimezoneEntry>('/timezones?limit=2000'),
 		fetchCurrencies: () =>
 			fetchPaginatedList<Currency>('/currencies?limit=2000'),
+		fetchLanguages: () =>
+			fetchPaginatedList<Language>('/v2/languages?limit=2000'),
 		search: (query) => apiFetch(`/search?q=${encodeURIComponent(query)}`)
 	}
 }
@@ -200,5 +222,7 @@ export const fetchCities = defaultClient.fetchCities
 export const fetchTimezones = defaultClient.fetchTimezones
 
 export const fetchCurrencies = defaultClient.fetchCurrencies
+
+export const fetchLanguages = defaultClient.fetchLanguages
 
 export const search = defaultClient.search

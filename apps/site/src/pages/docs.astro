@@ -123,12 +123,12 @@ const defaultDocsVersion = docsVersions[0]
 						</select>
 					</label>
 
-					<div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+					<div class="flex flex-col gap-3 sm:flex-row sm:items-stretch xl:justify-end">
 						<a
 							href={defaultDocsVersion.openApiUrl}
 							target="_blank"
 							data-openapi-download
-							class="lux-panel flex min-h-14 items-center justify-center px-6 py-3 text-center text-xs font-bold uppercase tracking-widest transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+							class="lux-panel inline-flex min-h-14 items-center justify-center px-6 py-3 text-center text-xs font-bold uppercase tracking-widest transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
 						>
 							[ Download OpenAPI JSON ]
 						</a>
@@ -136,7 +136,7 @@ const defaultDocsVersion = docsVersions[0]
 							href={defaultDocsVersion.postmanUrl}
 							target="_blank"
 							data-postman-download
-							class="lux-panel flex min-h-14 items-center justify-center px-6 py-3 text-center text-xs font-bold uppercase tracking-widest transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+							class="lux-panel inline-flex min-h-14 items-center justify-center px-6 py-3 text-center text-xs font-bold uppercase tracking-widest transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
 						>
 							[ Download Postman Collection ]
 						</a>
