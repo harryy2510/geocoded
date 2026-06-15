@@ -71,7 +71,7 @@ The private `geocoded-data` repo updates `data/*.json` through the data pipeline
 - `GET /v2/continents`, `/v2/regions`, `/v2/countries`, `/v2/states`, `/v2/cities`: v2 political/geographic collections with strict `filter[...]`, `q`, `sort`, pagination, and nested `fields`.
 - `GET /v2/timezones`, `/v2/currencies`, `/v2/airlines`, `/v2/airports`, `/v2/ports`, `/v2/border-crossings`: v2 reference and transport collections.
 - `GET /v2/statistics`: v2 country statistics resource. Select individual statistics through `fields`, not `indicator`.
-- `GET /v2/migration`: v2 country migration resource.
+- `GET /v2/migrant-stocks`: v2 country migrant stock resource (international migrant stock per country).
 
 All JSON responses use aggressive cache headers unless the route intentionally handles caller-specific data. List endpoints are always paginated and return `{ data, meta }`; when pagination params are omitted, `limit` defaults to 25 and `offset` defaults to 0. All endpoints support `?fields=` with comma-separated field names and dot notation for nested fields.
 

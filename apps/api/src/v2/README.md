@@ -24,7 +24,7 @@ V2 uses root-level collection APIs. Relationships are exposed through
 /v2/border-crossings
 
 /v2/statistics
-/v2/migration
+/v2/migrant-stocks
 ```
 
 UN/LOCODE remains an internal/source identifier. It should appear as a field

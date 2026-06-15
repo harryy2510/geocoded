@@ -357,7 +357,7 @@ export function CountryDetail({
 				limit: 4,
 				fields: 'code,name,symbol,decimals,countries',
 			}).catch(() => null),
-			fetchV2List<MigrationRecord>('/v2/migration', {
+			fetchV2List<MigrationRecord>('/v2/migrant-stocks', {
 				filters,
 				limit: 1,
 			}).catch(() => null),

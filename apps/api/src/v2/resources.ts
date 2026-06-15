@@ -554,7 +554,7 @@ export const v2BorderCrossingResource =
 	transportLocationResource('border-crossings')
 
 export const v2MigrationResource = defineV2Resource({
-	name: 'migration',
+	name: 'migrant-stocks',
 	fields: {
 		id: { type: 'string', column: 'country_code', normalize: 'uppercase' },
 		countryCode: {

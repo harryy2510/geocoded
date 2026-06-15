@@ -141,7 +141,7 @@ registerV2ListRoute(
 	listV2BorderCrossings
 )
 registerV2ListRoute('/statistics', v2StatisticsResource, listV2Statistics)
-registerV2ListRoute('/migration', v2MigrationResource, listV2Migration)
+registerV2ListRoute('/migrant-stocks', v2MigrationResource, listV2Migration)
 
 registerV2DetailRoute(
 	'/continents/:id',
@@ -222,10 +222,10 @@ registerV2DetailRoute(
 	'Statistics not found'
 )
 registerV2DetailRoute(
-	'/migration/:id',
+	'/migrant-stocks/:id',
 	v2MigrationResource,
 	getV2MigrationById,
-	'Migration not found'
+	'Migrant stocks not found'
 )
 
 function parsePage(params: URLSearchParams): V2PaginationParams | string {

@@ -597,16 +597,16 @@ export const v2OpenApiPaths = {
 		example: 'AE',
 		fieldsExample: 'countryCode,countryName,gdpPerCapitaCurrentUsd'
 	}),
-	'/v2/migration': listPath({
-		tag: 'Migration',
-		summary: 'List country migration',
+	'/v2/migrant-stocks': listPath({
+		tag: 'Migrant Stocks',
+		summary: 'List country migrant stocks',
 		schema: v2MigrationSchema,
 		parameters: [filterCountry],
 		fieldsExample: 'countryCode,totalInternationalMigrants'
 	}),
-	'/v2/migration/{id}': detailPath({
-		tag: 'Migration',
-		summary: 'Get one country migration row',
+	'/v2/migrant-stocks/{id}': detailPath({
+		tag: 'Migrant Stocks',
+		summary: 'Get one country migrant stock row',
 		schema: v2MigrationSchema,
 		example: 'AE',
 		fieldsExample: 'countryCode,totalInternationalMigrants'

@@ -74,7 +74,7 @@ export function Statistics() {
 					await Promise.all([
 						fetchCountriesWithStats(300),
 						fetchV2All<StatisticsRow>('/v2/statistics', 300),
-						fetchV2All<MigrationRow>('/v2/migration', 300, {
+						fetchV2All<MigrationRow>('/v2/migrant-stocks', 300, {
 							sort: '-totalInternationalMigrants',
 						}),
 						fetchV2All<CurrencyRow>('/v2/currencies', 300, {
