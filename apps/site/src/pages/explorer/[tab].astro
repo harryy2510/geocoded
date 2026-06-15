@@ -1,0 +1,14 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { Explorer, EXPLORER_TAB_KEYS } from '../../components/Explorer'
+
+export function getStaticPaths() {
+	return EXPLORER_TAB_KEYS.map((tab) => ({ params: { tab } }))
+}
+
+const { tab } = Astro.params
+---
+
+<Layout title="Explorer - Geocoded">
+	<Explorer client:load initialTab={tab} />
+</Layout>

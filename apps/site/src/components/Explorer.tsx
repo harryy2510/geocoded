@@ -1,377 +1,350 @@
-import { useEffect, useMemo, useState } from 'react'
-import { createGeocodedClient, type Country } from '@geocoded/client'
-import { formatCompact } from '../lib/format'
-import { CountryDetail } from './CountryDetail'
+import { type ReactNode, useEffect, useState } from 'react'
+import { fetchV2List } from './explorer/api'
+import { CountryDetail } from './explorer/CountryDetail'
+import { ResourceBrowser } from './explorer/ResourceBrowser'
+import {
+	airlinesConfig,
+	airportsConfig,
+	bordersConfig,
+	citiesConfig,
+	continentsConfig,
+	countriesConfig,
+	currenciesConfig,
+	languagesConfig,
+	portsConfig,
+	regionsConfig,
+	statesConfig,
+	timezonesConfig,
+} from './explorer/config'
+import {
+	AirlineDetail,
+	AirportDetail,
+	BorderDetail,
+	CityDetail,
+	ContinentDetail,
+	CurrencyDetail,
+	LanguageDetail,
+	PortDetail,
+	RegionDetail,
+	StateDetail,
+	TimezoneDetail,
+} from './explorer/details'
+import {
+	type AirlineRecord,
+	type AirportRecord,
+	type CityRecord,
+	type ContinentRecord,
+	type CountryRecord,
+	type CountryRef,
+	type CurrencyRecord,
+	type LanguageRecord,
+	type PortRecord,
+	type RegionRecord,
+	type StateRecord,
+	type TimezoneRecord,
+} from './explorer/records'
 
-const client = createGeocodedClient({
-	apiUrl: import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me',
-})
+export type TabKey =
+	| 'countries'
+	| 'cities'
+	| 'states'
+	| 'airports'
+	| 'airlines'
+	| 'ports'
+	| 'border-crossings'
+	| 'languages'
+	| 'timezones'
+	| 'currencies'
+	| 'continents'
+	| 'regions'
 
-const SORTS = [
-	{ value: 'name-asc', label: 'Name A-Z' },
-	{ value: 'name-desc', label: 'Name Z-A' },
-	{ value: 'population-desc', label: 'Population High' },
-	{ value: 'population-asc', label: 'Population Low' },
-	{ value: 'areaSqKm-desc', label: 'Area Large' },
-	{ value: 'areaSqKm-asc', label: 'Area Small' },
-	{ value: 'gdp-desc', label: 'GDP High' },
-	{ value: 'literacy-desc', label: 'Literacy High' },
+const TABS: { key: TabKey; label: string; icon: string }[] = [
+	{ key: 'countries', label: 'Countries', icon: '🏳' },
+	{ key: 'cities', label: 'Cities', icon: '🏙' },
+	{ key: 'states', label: 'States', icon: '🗺' },
+	{ key: 'airports', label: 'Airports', icon: '✈' },
+	{ key: 'airlines', label: 'Airlines', icon: '🛫' },
+	{ key: 'ports', label: 'Ports', icon: '⚓' },
+	{ key: 'border-crossings', label: 'Borders', icon: '🛂' },
+	{ key: 'languages', label: 'Languages', icon: '🗣' },
+	{ key: 'timezones', label: 'Timezones', icon: '🕓' },
+	{ key: 'currencies', label: 'Currencies', icon: '💱' },
+	{ key: 'continents', label: 'Continents', icon: '🌍' },
+	{ key: 'regions', label: 'Regions', icon: '🧭' },
 ]
 
-function sortValue(country: Country, key: string): string | number {
-	switch (key) {
-		case 'name':
-			return country.name
-		case 'population':
-			return country.population || 0
-		case 'areaSqKm':
-			return country.areaSqKm || 0
-		case 'gdp':
-			return country.gdp || 0
-		case 'literacy':
-			return country.literacy || 0
-		default:
-			return country.name
+// Tab keys, exported so the Astro dynamic route can statically generate one
+// page per tab (`/explorer/<tab>`).
+export const EXPLORER_TAB_KEYS = TABS.map((tab) => tab.key)
+
+const TAB_KEY_SET = new Set<string>(EXPLORER_TAB_KEYS)
+
+function isTabKey(value: string | undefined): value is TabKey {
+	return value !== undefined && TAB_KEY_SET.has(value)
+}
+
+// Lightweight country list (iso2 + name + core fields) used to populate the
+// shared country-filter dropdown across tabs. Sourced entirely from v2.
+function useCountryRefs(): CountryRef[] {
+	const [refs, setRefs] = useState<CountryRef[]>([])
+
+	useEffect(() => {
+		let cancelled = false
+		fetchV2List<CountryRef>('/v2/countries', {
+			sort: 'name',
+			limit: 300,
+			fields: 'id,iso2,iso3,name,continent,region,currency,population',
+		})
+			.then((res) => {
+				if (cancelled) return
+				setRefs(
+					[...res.data].sort((a, b) => a.name.localeCompare(b.name))
+				)
+			})
+			.catch(() => {
+				if (!cancelled) setRefs([])
+			})
+		return () => {
+			cancelled = true
+		}
+	}, [])
+
+	return refs
+}
+
+export function Explorer({ initialTab }: { initialTab?: string }) {
+	const [active, setActive] = useState<TabKey>(
+		isTabKey(initialTab) ? initialTab : 'countries'
+	)
+	const countryRefs = useCountryRefs()
+
+	// Reflect the active tab in the URL (/explorer/<tab>) without a reload, and
+	// keep state in sync with browser back/forward navigation.
+	const selectTab = (tab: TabKey) => {
+		setActive(tab)
+		if (typeof window !== 'undefined') {
+			window.history.pushState({ tab }, '', `/explorer/${tab}`)
+		}
+	}
+
+	useEffect(() => {
+		const onPopState = () => {
+			const segment = window.location.pathname.split('/').filter(Boolean)[1]
+			setActive(isTabKey(segment) ? segment : 'countries')
+		}
+		window.addEventListener('popstate', onPopState)
+		return () => window.removeEventListener('popstate', onPopState)
+	}, [])
+
+	return (
+		<div className="flex animate-fade-in flex-col gap-10">
+			<div>
+				<h1 className="mb-4 text-5xl font-bold uppercase tracking-tighter md:text-7xl">
+					Explorer
+				</h1>
+				<p className="text-lg text-white/60">
+					Browse and inspect every collection. Search, sort, filter, and open the full record
+					for any entity.
+				</p>
+			</div>
+
+			<div className="-mx-1 flex flex-wrap gap-1">
+				{TABS.map((tab) => (
+					<button
+						key={tab.key}
+						onClick={() => selectTab(tab.key)}
+						className={`flex items-center gap-2 border px-4 py-2.5 text-xs font-bold uppercase tracking-widest transition-colors ${
+							active === tab.key
+								? 'border-white bg-white text-black'
+								: 'border-white/15 text-white/55 hover:border-white/40 hover:text-white'
+						}`}
+					>
+						<span className="text-sm leading-none">{tab.icon}</span>
+						{tab.label}
+					</button>
+				))}
+			</div>
+
+			<TabView key={active} tab={active} countryRefs={countryRefs} />
+		</div>
+	)
+}
+
+function TabView({
+	tab,
+	countryRefs,
+}: {
+	tab: TabKey
+	countryRefs: CountryRef[]
+}): ReactNode {
+	switch (tab) {
+		case 'countries':
+			return <CountriesTab countryRefs={countryRefs} />
+		case 'cities':
+			return (
+				<Browser
+					config={citiesConfig}
+					countryRefs={countryRefs}
+					detail={(record: CityRecord, close) => <CityDetail city={record} onClose={close} />}
+				/>
+			)
+		case 'states':
+			return (
+				<Browser
+					config={statesConfig}
+					countryRefs={countryRefs}
+					detail={(record: StateRecord, close) => <StateDetail state={record} onClose={close} />}
+				/>
+			)
+		case 'airports':
+			return (
+				<Browser
+					config={airportsConfig}
+					countryRefs={countryRefs}
+					detail={(record: AirportRecord, close) => (
+						<AirportDetail airport={record} onClose={close} />
+					)}
+				/>
+			)
+		case 'airlines':
+			return (
+				<Browser
+					config={airlinesConfig}
+					countryRefs={countryRefs}
+					detail={(record: AirlineRecord, close) => (
+						<AirlineDetail airline={record} onClose={close} />
+					)}
+				/>
+			)
+		case 'ports':
+			return (
+				<Browser
+					config={portsConfig}
+					countryRefs={countryRefs}
+					detail={(record: PortRecord, close) => <PortDetail port={record} onClose={close} />}
+				/>
+			)
+		case 'border-crossings':
+			return (
+				<Browser
+					config={bordersConfig}
+					countryRefs={countryRefs}
+					detail={(record: PortRecord, close) => <BorderDetail border={record} onClose={close} />}
+				/>
+			)
+		case 'languages':
+			return (
+				<Browser
+					config={languagesConfig}
+					countryRefs={countryRefs}
+					detail={(record: LanguageRecord, close) => (
+						<LanguageDetail language={record} onClose={close} />
+					)}
+				/>
+			)
+		case 'timezones':
+			return (
+				<Browser
+					config={timezonesConfig}
+					countryRefs={countryRefs}
+					detail={(record: TimezoneRecord, close) => (
+						<TimezoneDetail timezone={record} onClose={close} />
+					)}
+				/>
+			)
+		case 'currencies':
+			return (
+				<Browser
+					config={currenciesConfig}
+					countryRefs={countryRefs}
+					detail={(record: CurrencyRecord, close) => (
+						<CurrencyDetail currency={record} onClose={close} />
+					)}
+				/>
+			)
+		case 'continents':
+			return (
+				<Browser
+					config={continentsConfig}
+					countryRefs={countryRefs}
+					detail={(record: ContinentRecord, close) => (
+						<ContinentDetail continent={record} onClose={close} />
+					)}
+				/>
+			)
+		case 'regions':
+			return (
+				<Browser
+					config={regionsConfig}
+					countryRefs={countryRefs}
+					detail={(record: RegionRecord, close) => (
+						<RegionDetail region={record} onClose={close} />
+					)}
+				/>
+			)
 	}
 }
 
-export function Explorer() {
-	const [countries, setCountries] = useState<Country[]>([])
-	const [loading, setLoading] = useState(true)
+// Generic browser-with-detail wrapper. Holds the selected record for one tab
+// and renders the tab's typed detail panel as an overlay drawer.
+function Browser<T>({
+	config,
+	countryRefs,
+	detail,
+}: {
+	config: Parameters<typeof ResourceBrowser<T>>[0]['config']
+	countryRefs: CountryRef[]
+	detail: (record: T, close: () => void) => ReactNode
+}): ReactNode {
+	const [selected, setSelected] = useState<T | null>(null)
+	return (
+		<>
+			<ResourceBrowser
+				key={config.key}
+				config={config}
+				countries={countryRefs}
+				onSelect={setSelected}
+			/>
+			{selected ? detail(selected, () => setSelected(null)) : null}
+		</>
+	)
+}
 
-	const [search, setSearch] = useState('')
-	const [sortKey, setSortKey] = useState('name-asc')
-	const [showSort, setShowSort] = useState(false)
-	const [selected, setSelected] = useState<Country | null>(null)
+// Countries tab: list driven by /v2/countries. Opening a card fetches the rich
+// record (with expanded statistics) and renders the v2-native CountryDetail.
+function CountriesTab({ countryRefs }: { countryRefs: CountryRef[] }): ReactNode {
+	const [selected, setSelected] = useState<CountryRecord | null>(null)
 
-	const [showFilters, setShowFilters] = useState(false)
-	const [selectedRegions, setSelectedRegions] = useState<string[]>([])
-	const [selectedContinent, setSelectedContinent] = useState('')
-	const [drivingSide, setDrivingSide] = useState('')
-	const [measurementSystem, setMeasurementSystem] = useState('')
-
-	useEffect(() => {
-		client.fetchCountries().then((res) => {
-			setCountries(res)
-			setLoading(false)
+	const open = (record: CountryRef) => {
+		// Show the thin record immediately, then enrich with statistics.
+		setSelected({ ...record })
+		fetchV2List<CountryRecord>('/v2/countries', {
+			filters: { country: record.iso2 },
+			limit: 1,
+			expand: 'statistics',
+			fields: '*,statistics.*',
 		})
-	}, [])
-
-	const regions = useMemo(
-		() => Array.from(new Set(countries.map((c) => c.region).filter(Boolean))).sort(),
-		[countries]
-	)
-	const continents = useMemo(
-		() =>
-			Array.from(new Set(countries.map((c) => c.continent).filter(Boolean))).sort(),
-		[countries]
-	)
-
-	const toggleRegion = (region: string) => {
-		setSelectedRegions((current) =>
-			current.includes(region)
-				? current.filter((item) => item !== region)
-				: [...current, region]
-		)
+			.then((res) => {
+				const full = res.data[0]
+				if (full && full.iso2 === record.iso2) {
+					setSelected({ ...record, ...full })
+				}
+			})
+			.catch(() => {
+				/* keep the thin record on failure */
+			})
 	}
 
-	const filtered = useMemo(() => {
-		let result = [...countries]
-
-		if (search) {
-			const q = search.toLowerCase()
-			result = result.filter(
-				(country) =>
-					country.name.toLowerCase().includes(q) ||
-					country.iso2.toLowerCase().includes(q) ||
-					country.iso3.toLowerCase().includes(q) ||
-					country.capital?.toLowerCase().includes(q) ||
-					country.currency?.toLowerCase().includes(q) ||
-					country.region?.toLowerCase().includes(q)
-			)
-		}
-
-		if (selectedRegions.length) {
-			result = result.filter((country) => selectedRegions.includes(country.region))
-		}
-		if (selectedContinent) {
-			result = result.filter((country) => country.continent === selectedContinent)
-		}
-		if (drivingSide) {
-			result = result.filter((country) => country.drivingSide === drivingSide)
-		}
-		if (measurementSystem) {
-			result = result.filter(
-				(country) => country.measurementSystem === measurementSystem
-			)
-		}
-
-		result.sort((a, b) => {
-			const [field, direction] = sortKey.split('-')
-			const aVal = sortValue(a, field)
-			const bVal = sortValue(b, field)
-			if (typeof aVal === 'string' && typeof bVal === 'string') {
-				return direction === 'asc'
-					? aVal.localeCompare(bVal)
-					: bVal.localeCompare(aVal)
-			}
-			return direction === 'asc'
-				? Number(aVal) - Number(bVal)
-				: Number(bVal) - Number(aVal)
-		})
-
-		return result
-	}, [
-		countries,
-		search,
-		selectedRegions,
-		selectedContinent,
-		drivingSide,
-		measurementSystem,
-		sortKey,
-	])
-
-	const activeSort = SORTS.find((sort) => sort.value === sortKey) || SORTS[0]
-	const activeFilterCount =
-		selectedRegions.length +
-		(selectedContinent ? 1 : 0) +
-		(drivingSide ? 1 : 0) +
-		(measurementSystem ? 1 : 0)
-
 	return (
-		<div className="flex flex-col gap-10 animate-fade-in">
-			<div className="flex flex-col gap-8">
-				<div>
-					<h1 className="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-4">
-						Explorer
-					</h1>
-					<p className="text-white/60 text-lg">
-						Browse countries, compare key fields, and open full country records.
-					</p>
-				</div>
-
-				<div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_auto] xl:items-end">
-					<label className="block min-w-0">
-						<span className="mb-3 block text-xs font-bold uppercase tracking-widest text-white/40">
-							Search
-						</span>
-						<input
-							type="text"
-							placeholder="Search countries, capitals, ISO codes..."
-							value={search}
-							onChange={(e) => setSearch(e.target.value)}
-							className="lux-input h-14 w-full min-w-0 px-0 text-xl font-bold tracking-tighter uppercase placeholder:text-white/30"
-						/>
-					</label>
-
-					<div className="flex flex-col gap-3 sm:flex-row sm:items-end xl:justify-end">
-						<button
-							onClick={() => setShowFilters(!showFilters)}
-							className={`lux-panel h-14 px-5 text-left text-sm font-bold uppercase tracking-widest transition-colors hover:bg-white/5 ${
-								showFilters ? 'border-white text-white' : 'text-white/70'
-							}`}
-						>
-							Filters {activeFilterCount ? `(${activeFilterCount})` : '[+]'}
-						</button>
-
-						<div className="relative">
-							<button
-								onClick={() => setShowSort(!showSort)}
-								className="lux-panel flex h-14 min-w-56 items-center justify-between gap-5 px-5 text-left text-sm font-bold uppercase tracking-widest text-white/80 transition-colors hover:bg-white/5"
-							>
-								<span className="truncate">{activeSort.label}</span>
-								<span className="text-white/40">{showSort ? '▲' : '▼'}</span>
-							</button>
-							{showSort ? (
-								<div className="absolute right-0 top-full z-30 mt-2 w-64 border border-white/20 bg-black shadow-2xl">
-									{SORTS.map((sort) => (
-										<button
-											key={sort.value}
-											onClick={() => {
-												setSortKey(sort.value)
-												setShowSort(false)
-											}}
-											className={`block w-full px-4 py-3 text-left text-xs font-bold uppercase tracking-widest hover:bg-white/10 ${
-												sortKey === sort.value
-													? 'bg-white/10 text-white'
-													: 'text-white/50'
-											}`}
-										>
-											{sort.label}
-										</button>
-									))}
-								</div>
-							) : null}
-						</div>
-					</div>
-				</div>
-			</div>
-
-			{showFilters ? (
-				<div className="border border-white/10 bg-white/[0.02] p-6 animate-fade-in">
-					<div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
-						<div>
-							<div className="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">
-								Region
-							</div>
-							<div className="flex flex-wrap gap-2">
-								{regions.map((region) => (
-									<button
-										key={region}
-										onClick={() => toggleRegion(region)}
-										className={`border px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-colors ${
-											selectedRegions.includes(region)
-												? 'border-white bg-white text-black'
-												: 'border-white/20 text-white/60 hover:border-white hover:text-white'
-										}`}
-									>
-										{region}
-									</button>
-								))}
-							</div>
-						</div>
-
-						<div>
-							<div className="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">
-								Continent
-							</div>
-							<div className="flex flex-wrap gap-2">
-								<button
-									onClick={() => setSelectedContinent('')}
-									className={`border px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-colors ${
-										!selectedContinent
-											? 'border-white bg-white text-black'
-											: 'border-white/20 text-white/60 hover:border-white hover:text-white'
-									}`}
-								>
-									Any
-								</button>
-								{continents.map((continent) => (
-									<button
-										key={continent}
-										onClick={() => setSelectedContinent(continent)}
-										className={`border px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-colors ${
-											selectedContinent === continent
-												? 'border-white bg-white text-black'
-												: 'border-white/20 text-white/60 hover:border-white hover:text-white'
-										}`}
-									>
-										{continent}
-									</button>
-								))}
-							</div>
-						</div>
-
-						<div>
-							<div className="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">
-								Driving side
-							</div>
-							<div className="flex flex-wrap gap-2">
-								{['', 'right', 'left'].map((side) => (
-									<button
-										key={side}
-										onClick={() => setDrivingSide(side)}
-										className={`border px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-colors ${
-											drivingSide === side
-												? 'border-white bg-white text-black'
-												: 'border-white/20 text-white/60 hover:border-white hover:text-white'
-										}`}
-									>
-										{side || 'Any'}
-									</button>
-								))}
-							</div>
-						</div>
-
-						<div>
-							<div className="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">
-								Measurement
-							</div>
-							<div className="flex flex-wrap gap-2">
-								{['', 'metric', 'imperial'].map((system) => (
-									<button
-										key={system}
-										onClick={() => setMeasurementSystem(system)}
-										className={`border px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-colors ${
-											measurementSystem === system
-												? 'border-white bg-white text-black'
-												: 'border-white/20 text-white/60 hover:border-white hover:text-white'
-										}`}
-									>
-										{system || 'Any'}
-									</button>
-								))}
-							</div>
-						</div>
-					</div>
-				</div>
-			) : null}
-
-			<div className="text-sm font-mono uppercase tracking-widest text-white/35">
-				{loading ? 'Loading countries...' : `${filtered.length} countries found`}
-			</div>
-
-			{loading ? null : (
-				<div className="grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6">
-					{filtered.map((country) => (
-						<button
-							key={country.iso2}
-							onClick={() => setSelected(country)}
-							className="group flex min-h-[190px] flex-col bg-black p-6 text-left transition-colors hover:bg-white/[0.06]"
-						>
-							<div className="flex items-start justify-between gap-3">
-								<span className="text-3xl leading-none drop-shadow-md transition-transform group-hover:scale-110">
-									{country.emoji}
-								</span>
-								<span className="max-w-28 truncate border border-white/10 bg-white/[0.04] px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-white/50">
-									{country.region || country.continent}
-								</span>
-							</div>
-
-							<div className="mt-8 min-w-0">
-								<div className="mb-2 font-mono text-xs text-white/35">{country.iso2}</div>
-								<h3 className="truncate text-base font-bold uppercase tracking-tight text-white/85 group-hover:text-white">
-									{country.name}
-								</h3>
-								<p className="mt-1 truncate text-sm text-white/45">
-									{country.capital || 'No capital'}
-								</p>
-							</div>
-
-							<div className="mt-auto flex items-end justify-between gap-4 border-t border-white/10 pt-4">
-								<div>
-									<div className="text-[10px] font-bold uppercase tracking-widest text-white/30">
-										Pop.
-									</div>
-									<div className="mt-1 text-sm font-semibold text-white/70">
-										{formatCompact(country.population)}
-									</div>
-								</div>
-								<div className="text-right">
-									<div className="text-[10px] font-bold uppercase tracking-widest text-white/30">
-										Currency
-									</div>
-									<div className="mt-1 font-mono text-sm font-semibold text-white/55">
-										{country.currency || 'N/A'}
-									</div>
-								</div>
-							</div>
-						</button>
-					))}
-				</div>
-			)}
-
+		<>
+			<ResourceBrowser
+				config={countriesConfig}
+				countries={countryRefs}
+				onSelect={open}
+			/>
 			{selected ? (
-				<CountryDetail
-					country={selected}
-					countries={countries}
-					onClose={() => setSelected(null)}
-					onNavigate={(iso2) => {
-						const nextCountry = countries.find((country) => country.iso2 === iso2)
-						if (nextCountry) setSelected(nextCountry)
-					}}
-				/>
+				<CountryDetail country={selected} onClose={() => setSelected(null)} />
 			) : null}
-		</div>
+		</>
 	)
 }

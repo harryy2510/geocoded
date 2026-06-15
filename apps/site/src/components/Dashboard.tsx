@@ -1,312 +1,159 @@
-import { useEffect, useMemo, useState } from 'react'
-import MapView, { Marker, NavigationControl, ScaleControl } from 'react-map-gl/maplibre'
-import 'maplibre-gl/dist/maplibre-gl.css'
-import { createGeocodedClient, type Country } from '@geocoded/client'
-import { formatArea, formatCompact, formatDensity, formatFull } from '../lib/format'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import {
+	fetchCountriesWithStats,
+	fetchV2All,
+	fetchV2List,
+	type ContinentRow,
+	type CountryRow,
+	type CurrencyRow,
+	type StatisticsRow,
+	type TimezoneRow,
+} from '../lib/v2'
+import { formatCompact, formatFull } from '../lib/format'
+import { continentColor, continentName } from './charts/nivoTheme'
+import { TopPopulationBar, PopulationTreemap } from './charts/nivo/PopulationCharts'
+import { GdpVsPopulationScatter, CurrencyUsageBar } from './charts/nivo/EconomyCharts'
+import {
+	PopulationDotMap,
+	ContinentSharePie,
+	type CityPoint,
+} from './charts/nivo/GeographyCharts'
+import { AgeStructureRadial } from './charts/nivo/DemographicsCharts'
+import { OffsetDistributionBar } from './charts/nivo/TimezoneCharts'
 
-const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
-const client = createGeocodedClient({ apiUrl })
+// ---------------------------------------------------------------------------
+// Hero stat tiles — counts per collection via meta.total (fetch each limit=1).
+// ---------------------------------------------------------------------------
 
-type V2Paginated<T> = {
-	data: T[]
-	meta: {
-		total: number
-	}
+type CollectionTile = {
+	key: string
+	label: string
+	path: string
 }
 
-type V2Metric = {
-	year?: number
-	value?: number | null
-}
-
-type V2Statistics = {
-	countryCode: string
-	countryName: string
-	populationTotal?: V2Metric
-	gdpCurrentUsd?: V2Metric
-	gdpPerCapitaCurrentUsd?: V2Metric
-	lifeExpectancy?: V2Metric
-	urbanPopulationPercent?: V2Metric
-}
-
-type V2Migration = {
-	countryCode: string
-	countryName: string
-	year?: number
-	totalInternationalMigrants?: number
-	migrantShareOfPopulationPercent?: number
-}
-
-type DashboardData = {
-	countries: Country[]
-	statistics: V2Statistics[]
-	migration: V2Migration[]
-	totals: Record<string, number>
-}
-
-type MetricLayer = 'population' | 'density' | 'gdp' | 'life' | 'migration'
-
-const collectionRequests = [
+const collectionTiles: CollectionTile[] = [
 	{ key: 'countries', label: 'Countries', path: '/v2/countries' },
 	{ key: 'states', label: 'States', path: '/v2/states' },
 	{ key: 'cities', label: 'Cities', path: '/v2/cities' },
 	{ key: 'airports', label: 'Airports', path: '/v2/airports' },
+	{ key: 'airlines', label: 'Airlines', path: '/v2/airlines' },
 	{ key: 'ports', label: 'Ports', path: '/v2/ports' },
 	{ key: 'borderCrossings', label: 'Borders', path: '/v2/border-crossings' },
-	{ key: 'airlines', label: 'Airlines', path: '/v2/airlines' },
-	{ key: 'timezones', label: 'Timezones', path: '/v2/timezones' },
-	{ key: 'currencies', label: 'Currencies', path: '/v2/currencies' },
 	{ key: 'languages', label: 'Languages', path: '/v2/languages' },
+	{ key: 'currencies', label: 'Currencies', path: '/v2/currencies' },
+	{ key: 'timezones', label: 'Timezones', path: '/v2/timezones' },
 ]
 
-const mapLayers: {
-	key: MetricLayer
-	label: string
-	description: string
-	color: string
-}[] = [
-	{
-		key: 'population',
-		label: 'Population',
-		description: 'Country scale by resident population',
-		color: '#3b82f6',
-	},
-	{
-		key: 'density',
-		label: 'Density',
-		description: 'People per square kilometer',
-		color: '#22c55e',
-	},
-	{
-		key: 'gdp',
-		label: 'GDP / Capita',
-		description: 'Current USD per person',
-		color: '#f59e0b',
-	},
-	{
-		key: 'life',
-		label: 'Life',
-		description: 'Life expectancy in years',
-		color: '#a855f7',
-	},
-	{
-		key: 'migration',
-		label: 'Migration',
-		description: 'International migrant stock',
-		color: '#06b6d4',
-	},
-]
-
-const currencyFormatter = new Intl.NumberFormat('en-US', {
-	style: 'currency',
-	currency: 'USD',
-	notation: 'compact',
-	maximumFractionDigits: 1,
-})
-
-const percentFormatter = new Intl.NumberFormat('en-US', {
-	maximumFractionDigits: 1,
-})
-
-function joinApi(path: string): string {
-	return `${apiUrl.replace(/\/$/, '')}${path}`
-}
-
-async function fetchV2List<T>(path: string): Promise<V2Paginated<T>> {
-	const response = await fetch(joinApi(path))
-	if (!response.ok) {
-		throw new Error(`API error: ${response.status}`)
-	}
-	return response.json() as Promise<V2Paginated<T>>
-}
-
-async function fetchV2Total(path: string): Promise<number> {
-	const separator = path.includes('?') ? '&' : '?'
-	const response = await fetchV2List<{ id: string }>(
-		`${path}${separator}limit=1&fields=id`
-	)
+async function fetchTotal(path: string): Promise<number> {
+	const response = await fetchV2List<{ id: string }>(path, { limit: 1, fields: 'id' })
 	return response.meta.total
 }
 
-function numeric(value: string | number | null | undefined): number {
-	if (value == null) return 0
-	const parsed = typeof value === 'number' ? value : Number(value)
-	return Number.isFinite(parsed) ? parsed : 0
+// ---------------------------------------------------------------------------
+// Flag emoji from ISO2 via regional-indicator letters (v2 countries lack emoji).
+// ---------------------------------------------------------------------------
+
+function flagEmoji(iso2: string): string {
+	if (!iso2 || iso2.length !== 2) return ''
+	const base = 0x1f1e6
+	const upper = iso2.toUpperCase()
+	const a = upper.codePointAt(0)
+	const b = upper.codePointAt(1)
+	if (a == null || b == null) return ''
+	return String.fromCodePoint(base + (a - 65), base + (b - 65))
 }
 
-function metricValue(
-	country: Country,
-	layer: MetricLayer,
-	statistics: Map<string, V2Statistics>,
-	migration: Map<string, V2Migration>
-): number {
-	const stats = statistics.get(country.iso2)
-	const movement = migration.get(country.iso2)
-	switch (layer) {
-		case 'density':
-			return country.areaSqKm ? country.population / country.areaSqKm : 0
-		case 'gdp':
-			return stats?.gdpPerCapitaCurrentUsd?.value ?? 0
-		case 'life':
-			return stats?.lifeExpectancy?.value ?? 0
-		case 'migration':
-			return movement?.totalInternationalMigrants ?? 0
-		case 'population':
-		default:
-			return country.population || 0
-	}
-}
+// ---------------------------------------------------------------------------
+// UI primitives.
+// ---------------------------------------------------------------------------
 
-function formatLayerValue(value: number, layer: MetricLayer): string {
-	if (!value) return 'N/A'
-	switch (layer) {
-		case 'density':
-			return `${formatCompact(value)}/km²`
-		case 'gdp':
-			return currencyFormatter.format(value)
-		case 'life':
-			return `${value.toFixed(1)} yrs`
-		case 'migration':
-			return formatCompact(value)
-		case 'population':
-		default:
-			return formatCompact(value)
-	}
-}
-
-function formatPercentValue(value: number | null | undefined): string {
-	if (value == null) return 'N/A'
-	return `${percentFormatter.format(value)}%`
-}
-
-function markerSize(value: number, max: number, layer: MetricLayer): number {
-	if (!value || !max) return 7
-	if (layer === 'life') {
-		return 7 + Math.min(value / 90, 1) * 16
-	}
-	const normalized = Math.log(value + 1) / Math.log(max + 1)
-	return 7 + normalized * 22
-}
-
-function sortByMetric<T>(
-	items: T[],
-	value: (item: T) => number,
-	limit = 8
-): T[] {
-	return [...items].sort((a, b) => value(b) - value(a)).slice(0, limit)
-}
-
-function StatTile({
-	label,
-	value,
-	detail,
-}: {
-	label: string
-	value: string
-	detail?: string
-}) {
+function StatTile({ label, value }: { label: string; value: string }) {
 	return (
-		<div className="border border-white/10 bg-white/[0.025] px-5 py-4">
-			<div className="text-[10px] font-bold uppercase tracking-widest text-white/35">
-				{label}
-			</div>
-			<div className="mt-4 text-3xl font-bold tracking-tighter text-white">
-				{value}
-			</div>
-			{detail ? (
-				<div className="mt-1 truncate text-xs font-medium text-white/40">{detail}</div>
-			) : null}
+		<div className="bg-black/80 p-4 sm:p-5">
+			<div className="text-[10px] font-bold uppercase tracking-widest text-white/35">{label}</div>
+			<div className="mt-3 text-2xl font-bold tracking-tighter text-white sm:text-3xl">{value}</div>
 		</div>
 	)
 }
 
-function RankList({
+function ChartPanel({
 	title,
-	items,
-	value,
+	caption,
+	children,
 }: {
 	title: string
-	items: Country[]
-	value: (country: Country) => string
+	caption: string
+	children: ReactNode
 }) {
 	return (
-		<div className="border border-white/10 bg-white/[0.02]">
-			<div className="border-b border-white/10 px-5 py-4">
-				<h3 className="text-sm font-bold uppercase tracking-tight text-white">{title}</h3>
-			</div>
-			<div className="divide-y divide-white/10">
-				{items.map((country, index) => (
-					<div
-						key={country.iso2}
-						className="grid grid-cols-[2rem_minmax(0,1fr)_auto] items-center gap-3 px-5 py-3"
-					>
-						<div className="font-mono text-xs font-bold text-white/30">
-							{String(index + 1).padStart(2, '0')}
-						</div>
-						<div className="min-w-0">
-							<div className="truncate text-sm font-semibold text-white">{country.name}</div>
-							<div className="truncate text-xs text-white/35">{country.region}</div>
-						</div>
-						<div className="text-right text-sm font-bold text-white/70">
-							{value(country)}
-						</div>
-					</div>
-				))}
-			</div>
+		<div className="bg-black/80 p-6">
+			<div className="text-[10px] font-bold uppercase tracking-widest text-white/35">{title}</div>
+			<div className="mt-1 text-sm font-medium text-white/45">{caption}</div>
+			<div className="mt-6">{children}</div>
 		</div>
 	)
 }
+
+type QuickFact = {
+	label: string
+	value: string
+	detail: string
+}
+
+function QuickFactCard({ fact }: { fact: QuickFact }) {
+	return (
+		<div className="bg-black/80 p-5">
+			<div className="text-[10px] font-bold uppercase tracking-widest text-white/35">{fact.label}</div>
+			<div className="mt-3 truncate text-lg font-bold tracking-tight text-white">{fact.value}</div>
+			<div className="mt-1 truncate text-xs font-medium text-white/40">{fact.detail}</div>
+		</div>
+	)
+}
+
+// ---------------------------------------------------------------------------
+// Dashboard — v2-only curated front door. Comparison only, no per-country picker.
+// ---------------------------------------------------------------------------
 
 export function Dashboard() {
 	const [loading, setLoading] = useState(true)
 	const [error, setError] = useState<string | null>(null)
-	const [data, setData] = useState<DashboardData>({
-		countries: [],
-		statistics: [],
-		migration: [],
-		totals: {},
-	})
-	const [activeLayer, setActiveLayer] = useState<MetricLayer>('population')
-	const [selectedIso2, setSelectedIso2] = useState<string | null>(null)
+	const [totals, setTotals] = useState<Record<string, number>>({})
+	const [countries, setCountries] = useState<CountryRow[]>([])
+	const [continents, setContinents] = useState<ContinentRow[]>([])
+	const [currencies, setCurrencies] = useState<CurrencyRow[]>([])
+	const [timezones, setTimezones] = useState<TimezoneRow[]>([])
+	const [cities, setCities] = useState<CityPoint[]>([])
 
 	useEffect(() => {
 		let cancelled = false
 
-		async function loadDashboard() {
+		async function load() {
 			try {
-				const [
-					countries,
-					statistics,
-					migration,
-					totalEntries,
-				] = await Promise.all([
-					client.fetchCountries(),
-					fetchV2List<V2Statistics>(
-						'/v2/statistics?fields=countryCode,countryName,populationTotal,gdpCurrentUsd,gdpPerCapitaCurrentUsd,lifeExpectancy,urbanPopulationPercent&limit=500'
-					),
-					fetchV2List<V2Migration>(
-						'/v2/migration?fields=countryCode,countryName,year,totalInternationalMigrants,migrantShareOfPopulationPercent&limit=500'
-					),
-					Promise.all(
-						collectionRequests.map(async (item) => [
-							item.key,
-							await fetchV2Total(item.path),
-						] as const)
-					),
-				])
+				const [totalEntries, countryRows, continentRows, currencyRows, timezoneRows, cityRows] =
+					await Promise.all([
+						Promise.all(
+							collectionTiles.map(
+								async (tile) => [tile.key, await fetchTotal(tile.path).catch(() => 0)] as const
+							)
+						),
+						fetchCountriesWithStats(300),
+						fetchV2All<ContinentRow>('/v2/continents', 50),
+						fetchV2All<CurrencyRow>('/v2/currencies', 300),
+						fetchV2All<TimezoneRow>('/v2/timezones', 500),
+						fetchV2All<CityPoint>('/v2/cities', 2000, {
+							sort: '-population',
+							fields: 'name,countryName,countryCode,latitude,longitude,population',
+						}),
+					])
 
 				if (cancelled) return
 
-				const totals = Object.fromEntries(totalEntries)
-				setData({
-					countries,
-					statistics: statistics.data,
-					migration: migration.data,
-					totals,
-				})
-				setSelectedIso2(
-					sortByMetric(countries, (country) => country.population, 1)[0]?.iso2 ?? null
-				)
+				setTotals(Object.fromEntries(totalEntries))
+				setCountries(countryRows)
+				setContinents(continentRows)
+				setCurrencies(currencyRows)
+				setTimezones(timezoneRows)
+				setCities(cityRows)
 				setError(null)
 			} catch {
 				if (!cancelled) setError('Dashboard data could not be loaded.')
@@ -315,91 +162,119 @@ export function Dashboard() {
 			}
 		}
 
-		void loadDashboard()
+		void load()
 
 		return () => {
 			cancelled = true
 		}
 	}, [])
 
-	const statisticsByCountry = useMemo(() => {
-		const records = new Map<string, V2Statistics>()
-		for (const item of data.statistics) records.set(item.countryCode, item)
-		return records
-	}, [data.statistics])
+	// Statistics rows extracted from expanded country data for stat-based charts.
+	const statistics = useMemo<StatisticsRow[]>(() => {
+		return countries
+			.map((country) => country.statistics)
+			.filter((stats): stats is StatisticsRow => stats != null)
+	}, [countries])
 
-	const migrationByCountry = useMemo(() => {
-		const records = new Map<string, V2Migration>()
-		for (const item of data.migration) records.set(item.countryCode, item)
-		return records
-	}, [data.migration])
-
-	const selectedCountry = useMemo(
-		() => data.countries.find((country) => country.iso2 === selectedIso2) || null,
-		[data.countries, selectedIso2]
+	// iso2 → continent code, so the map can color each city by its continent.
+	const continentByCountry = useMemo(
+		() => new Map(countries.map((c) => [c.iso2.toUpperCase(), c.continent])),
+		[countries]
 	)
 
-	const selectedStatistics = selectedCountry
-		? statisticsByCountry.get(selectedCountry.iso2)
-		: null
-	const selectedMigration = selectedCountry
-		? migrationByCountry.get(selectedCountry.iso2)
-		: null
+	const quickFacts = useMemo<QuickFact[]>(() => {
+		if (countries.length === 0) return []
 
-	const maxLayerValue = useMemo(
-		() =>
-			Math.max(
-				...data.countries.map((country) =>
-					metricValue(country, activeLayer, statisticsByCountry, migrationByCountry)
-				),
-				0
-			),
-		[data.countries, activeLayer, statisticsByCountry, migrationByCountry]
-	)
+		const ranked = [...countries].filter((country) => country.population > 0)
+		const mostPopulous = [...ranked].sort((a, b) => b.population - a.population)[0]
 
-	const topPopulation = useMemo(
-		() => sortByMetric(data.countries, (country) => country.population),
-		[data.countries]
-	)
-
-	const topDensity = useMemo(
-		() =>
-			sortByMetric(
-				data.countries.filter((country) => country.areaSqKm > 0 && country.population > 500_000),
-				(country) => country.population / country.areaSqKm
-			),
-		[data.countries]
-	)
-
-	const topEconomy = useMemo(
-		() =>
-			sortByMetric(
-				data.countries.filter((country) => statisticsByCountry.get(country.iso2)?.gdpPerCapitaCurrentUsd?.value),
-				(country) => statisticsByCountry.get(country.iso2)?.gdpPerCapitaCurrentUsd?.value ?? 0
-			),
-		[data.countries, statisticsByCountry]
-	)
-
-	const topMigration = useMemo(
-		() =>
-			sortByMetric(
-				data.countries.filter((country) => migrationByCountry.get(country.iso2)?.totalInternationalMigrants),
-				(country) => migrationByCountry.get(country.iso2)?.totalInternationalMigrants ?? 0
-			),
-		[data.countries, migrationByCountry]
-	)
-
-	const regionRows = useMemo(() => {
-		const rows = new Map<string, { name: string; countries: number; population: number }>()
-		for (const country of data.countries) {
-			const key = country.continent || 'Other'
-			const row = rows.get(key) || { name: key, countries: 0, population: 0 }
-			row.countries += 1
-			row.population += country.population || 0
-			rows.set(key, row)
+		// Most populous continent by aggregate country population.
+		const continentPopulation = new Map<string, number>()
+		for (const country of countries) {
+			continentPopulation.set(
+				country.continent,
+				(continentPopulation.get(country.continent) ?? 0) + (country.population || 0)
+			)
 		}
-		return [...rows.values()].sort((a, b) => b.population - a.population)
-	}, [data.countries])
+		const topContinent = [...continentPopulation.entries()].sort((a, b) => b[1] - a[1])[0]
+
+		// Most timezones for a single country (timezone countryCodes membership).
+		const timezoneCounts = new Map<string, number>()
+		for (const zone of timezones) {
+			for (const code of zone.countryCodes ?? []) {
+				timezoneCounts.set(code, (timezoneCounts.get(code) ?? 0) + 1)
+			}
+		}
+		const nameByIso2 = new Map(countries.map((country) => [country.iso2, country]))
+		const topTimezoneCountry = [...timezoneCounts.entries()].sort((a, b) => b[1] - a[1])[0]
+		const topTimezoneRow = topTimezoneCountry ? nameByIso2.get(topTimezoneCountry[0]) : undefined
+
+		// Most widely used currency by number of countries.
+		const topCurrency = [...currencies]
+			.map((currency) => ({ currency, count: currency.countries?.length ?? 0 }))
+			.sort((a, b) => b.count - a.count)[0]
+
+		// Single timezone shared by the most countries.
+		const topSharedZone = [...timezones]
+			.map((zone) => ({ zone, count: zone.countryCodes?.length ?? 0 }))
+			.sort((a, b) => b.count - a.count)[0]
+
+		// Highest GDP per capita from inline statistics.
+		const richest = [...countries]
+			.map((country) => ({
+				country,
+				value: country.statistics?.gdpPerCapitaCurrentUsd?.value ?? 0,
+			}))
+			.filter((row) => row.value > 0)
+			.sort((a, b) => b.value - a.value)[0]
+
+		const facts: QuickFact[] = []
+
+		if (mostPopulous) {
+			facts.push({
+				label: 'Most populous',
+				value: `${flagEmoji(mostPopulous.iso2)} ${mostPopulous.name}`.trim(),
+				detail: formatFull(mostPopulous.population),
+			})
+		}
+		if (topContinent) {
+			facts.push({
+				label: 'Largest by population',
+				value: continentName(topContinent[0]),
+				detail: `${formatCompact(topContinent[1])} people`,
+			})
+		}
+		if (topTimezoneRow && topTimezoneCountry) {
+			facts.push({
+				label: 'Most timezones',
+				value: `${flagEmoji(topTimezoneRow.iso2)} ${topTimezoneRow.name}`.trim(),
+				detail: `${topTimezoneCountry[1]} zones`,
+			})
+		}
+		if (topCurrency && topCurrency.count > 0) {
+			facts.push({
+				label: 'Top currency',
+				value: `${topCurrency.currency.symbol || ''} ${topCurrency.currency.code}`.trim(),
+				detail: `${topCurrency.count} countries`,
+			})
+		}
+		if (topSharedZone && topSharedZone.count > 0) {
+			facts.push({
+				label: 'Most shared zone',
+				value: topSharedZone.zone.timezone,
+				detail: `${topSharedZone.count} countries`,
+			})
+		}
+		if (richest) {
+			facts.push({
+				label: 'Richest per capita',
+				value: `${flagEmoji(richest.country.iso2)} ${richest.country.name}`.trim(),
+				detail: `$${formatCompact(richest.value)}`,
+			})
+		}
+
+		return facts
+	}, [countries, currencies, timezones])
 
 	if (loading) {
 		return (
@@ -414,286 +289,97 @@ export function Dashboard() {
 	if (error) {
 		return (
 			<div className="border border-white/10 bg-white/[0.02] p-8">
-				<div className="text-sm font-bold uppercase tracking-widest text-white/50">
-					{error}
-				</div>
+				<div className="text-sm font-bold uppercase tracking-widest text-white/50">{error}</div>
 			</div>
 		)
 	}
 
 	return (
-		<div className="animate-fade-in space-y-10">
-			<section className="grid gap-8 xl:grid-cols-[minmax(0,0.9fr)_minmax(520px,1.1fr)] xl:items-end">
-				<div>
-					<div className="mb-5 text-xs font-bold uppercase tracking-widest text-white/35">
-						Global data surface
-					</div>
-					<h1 className="max-w-4xl text-5xl font-bold uppercase tracking-tighter text-white md:text-7xl">
-						Dashboard
-					</h1>
-					<p className="mt-5 max-w-2xl text-lg leading-8 text-white/50">
-						Countries, demographics, migration, languages, transport, currencies, and timezones in one operational view.
-					</p>
+		<div className="animate-fade-in space-y-12">
+			<section>
+				<div className="mb-4 text-xs font-bold uppercase tracking-widest text-white/35">
+					Global data surface
 				</div>
+				<h1 className="text-5xl font-bold uppercase tracking-tighter text-white md:text-7xl">
+					Dashboard
+				</h1>
+				<p className="mt-5 max-w-2xl text-lg leading-8 text-white/50">
+					One curated look at the whole dataset — countries, demographics, economy, transport,
+					languages, currencies, and timezones, compared at a glance.
+				</p>
+			</section>
 
-				<div className="grid grid-cols-2 gap-px border border-white/10 bg-white/10 md:grid-cols-5">
-					{collectionRequests.slice(0, 10).map((item) => (
-						<div key={item.key} className="bg-black/80 p-4">
-							<div className="text-[10px] font-bold uppercase tracking-widest text-white/35">
-								{item.label}
-							</div>
-							<div className="mt-3 text-2xl font-bold tracking-tighter text-white">
-								{formatCompact(data.totals[item.key] || 0)}
-							</div>
-						</div>
-					))}
+			<section className="grid grid-cols-2 gap-px border border-white/10 bg-white/10 sm:grid-cols-3 lg:grid-cols-5">
+				{collectionTiles.map((tile) => (
+					<StatTile key={tile.key} label={tile.label} value={formatCompact(totals[tile.key] || 0)} />
+				))}
+			</section>
+
+			<section className="overflow-hidden border border-white/10 bg-white/[0.02]">
+				<div className="border-b border-white/10 px-6 py-5">
+					<div className="text-[10px] font-bold uppercase tracking-widest text-white/35">
+						Where people live
+					</div>
+					<div className="mt-1 text-sm font-medium text-white/45">
+						Every dot a city — sized by population, colored by continent
+					</div>
+				</div>
+				<div className="px-2 py-4 sm:px-6">
+					<PopulationDotMap cities={cities} continentByCountry={continentByCountry} />
 				</div>
 			</section>
 
-			<section className="grid gap-px border border-white/10 bg-white/10 xl:grid-cols-[minmax(0,1fr)_380px]">
-				<div className="relative min-h-[720px] overflow-hidden bg-black">
-					<MapView
-						initialViewState={{
-							longitude: 10,
-							latitude: 20,
-							zoom: 1.4,
-						}}
-						mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
-						attributionControl={false}
-						reuseMaps
-					>
-						<NavigationControl position="top-left" visualizePitch />
-						<ScaleControl position="bottom-left" />
-						{data.countries.map((country) => {
-							const longitude = numeric(country.longitude)
-							const latitude = numeric(country.latitude)
-							if (!longitude && !latitude) return null
-
-							const value = metricValue(
-								country,
-								activeLayer,
-								statisticsByCountry,
-								migrationByCountry
-							)
-							const size = markerSize(value, maxLayerValue, activeLayer)
-							const isSelected = selectedIso2 === country.iso2
-							const layer = mapLayers.find((item) => item.key === activeLayer) || mapLayers[0]
-
-							return (
-								<Marker
-									key={country.iso2}
-									longitude={longitude}
-									latitude={latitude}
-									anchor="center"
-								>
-									<button
-										type="button"
-										aria-label={`${country.name}: ${formatLayerValue(value, activeLayer)}`}
-										onClick={() => setSelectedIso2(country.iso2)}
-										className="block rounded-full border transition-transform hover:scale-125 focus:outline-none focus:ring-2 focus:ring-white"
-										style={{
-											width: size,
-											height: size,
-											backgroundColor: layer.color,
-											borderColor: isSelected ? '#ffffff' : 'rgba(255,255,255,0.55)',
-											boxShadow: isSelected
-												? `0 0 0 5px ${layer.color}33, 0 0 34px ${layer.color}`
-												: `0 0 18px ${layer.color}66`,
-											opacity: isSelected ? 1 : 0.72,
-										}}
-									/>
-								</Marker>
-							)
-						})}
-					</MapView>
-
-					<div className="pointer-events-none absolute inset-x-0 top-0 z-10 bg-gradient-to-b from-black/80 to-transparent p-5">
-						<div className="pointer-events-auto flex flex-wrap gap-2">
-							{mapLayers.map((layer) => (
-								<button
-									key={layer.key}
-									type="button"
-									onClick={() => setActiveLayer(layer.key)}
-									aria-pressed={activeLayer === layer.key}
-									className={`border px-4 py-2 text-xs font-bold uppercase tracking-widest transition-colors ${
-										activeLayer === layer.key
-											? 'border-white bg-white text-black'
-											: 'border-white/15 bg-black/50 text-white/55 hover:border-white/40 hover:text-white'
-									}`}
-								>
-									{layer.label}
-								</button>
-							))}
-						</div>
-					</div>
-
-					<div className="pointer-events-none absolute bottom-5 right-5 z-10 max-w-sm border border-white/10 bg-black/75 p-4 backdrop-blur-xl">
-						<div className="text-[10px] font-bold uppercase tracking-widest text-white/35">
-							{mapLayers.find((layer) => layer.key === activeLayer)?.label}
-						</div>
-						<div className="mt-2 text-sm font-medium leading-6 text-white/70">
-							{mapLayers.find((layer) => layer.key === activeLayer)?.description}
-						</div>
-					</div>
-				</div>
-
-				<aside className="bg-black/90 p-6">
-					{selectedCountry ? (
-						<div className="space-y-6">
-							<div className="flex items-start justify-between gap-4">
-								<div className="min-w-0">
-									<div className="mb-3 text-5xl">{selectedCountry.emoji}</div>
-									<h2 className="truncate text-4xl font-bold tracking-tighter text-white">
-										{selectedCountry.name}
-									</h2>
-									<p className="mt-2 text-sm font-medium text-white/45">
-										{selectedCountry.capital} · {selectedCountry.region}
-									</p>
-								</div>
-								<div className="rounded-full border border-white/10 px-3 py-1 font-mono text-xs font-bold text-white/50">
-									{selectedCountry.iso2}
-								</div>
-							</div>
-
-							<div className="grid grid-cols-2 gap-px bg-white/10">
-								<StatTile
-									label="Population"
-									value={formatCompact(selectedCountry.population)}
-									detail={formatFull(selectedCountry.population)}
-								/>
-								<StatTile
-									label="Density"
-									value={formatDensity(selectedCountry.population, selectedCountry.areaSqKm)}
-									detail={formatArea(selectedCountry.areaSqKm)}
-								/>
-								<StatTile
-									label="GDP / Capita"
-									value={formatLayerValue(selectedStatistics?.gdpPerCapitaCurrentUsd?.value ?? 0, 'gdp')}
-									detail="current USD"
-								/>
-								<StatTile
-									label="Life"
-									value={formatLayerValue(selectedStatistics?.lifeExpectancy?.value ?? 0, 'life')}
-									detail={`urban ${formatPercentValue(selectedStatistics?.urbanPopulationPercent?.value)}`}
-								/>
-								<StatTile
-									label="Migration"
-									value={formatCompact(selectedMigration?.totalInternationalMigrants ?? 0)}
-									detail={formatPercentValue(selectedMigration?.migrantShareOfPopulationPercent)}
-								/>
-								<StatTile
-									label="Currency"
-									value={selectedCountry.currency}
-									detail={selectedCountry.currencyName}
-								/>
-							</div>
-
-							<div className="space-y-3 border-t border-white/10 pt-6">
-								<div className="flex justify-between gap-4 text-sm">
-									<span className="text-white/35">Languages</span>
-									<span className="text-right font-semibold text-white">
-										{selectedCountry.languages.length}
-									</span>
-								</div>
-								<div className="flex justify-between gap-4 text-sm">
-									<span className="text-white/35">Timezones</span>
-									<span className="text-right font-semibold text-white">
-										{selectedCountry.timezones.length}
-									</span>
-								</div>
-								<div className="flex justify-between gap-4 text-sm">
-									<span className="text-white/35">Neighbours</span>
-									<span className="text-right font-semibold text-white">
-										{selectedCountry.neighbours.length || 'none'}
-									</span>
-								</div>
-								<div className="flex justify-between gap-4 text-sm">
-									<span className="text-white/35">Driving</span>
-									<span className="text-right font-semibold capitalize text-white">
-										{selectedCountry.drivingSide}
-									</span>
-								</div>
-							</div>
-						</div>
-					) : (
-						<div className="text-sm font-bold uppercase tracking-widest text-white/40">
-							Select a country
-						</div>
-					)}
-				</aside>
+			<section className="grid gap-px border border-white/10 bg-white/10 xl:grid-cols-2">
+				<ChartPanel title="Top population" caption="The ten most populous countries">
+					<TopPopulationBar countries={countries} />
+				</ChartPanel>
+				<ChartPanel title="GDP vs population" caption="Economic scale against population, log–log">
+					<GdpVsPopulationScatter countries={countries} />
+				</ChartPanel>
 			</section>
 
-			<section className="grid gap-px border border-white/10 bg-white/10 xl:grid-cols-4">
-				<RankList
-					title="Population"
-					items={topPopulation}
-					value={(country) => formatCompact(country.population)}
-				/>
-				<RankList
-					title="Density"
-					items={topDensity}
-					value={(country) => formatDensity(country.population, country.areaSqKm)}
-				/>
-				<RankList
-					title="GDP / Capita"
-					items={topEconomy}
-					value={(country) =>
-						formatLayerValue(
-							statisticsByCountry.get(country.iso2)?.gdpPerCapitaCurrentUsd?.value ?? 0,
-							'gdp'
-						)}
-				/>
-				<RankList
-					title="Migration"
-					items={topMigration}
-					value={(country) =>
-						formatCompact(
-							migrationByCountry.get(country.iso2)?.totalInternationalMigrants ?? 0
-						)}
-				/>
+			<section className="grid gap-px border border-white/10 bg-white/10 xl:grid-cols-2">
+				<ChartPanel title="Population treemap" caption="Relative weight of the largest countries">
+					<PopulationTreemap countries={countries} />
+				</ChartPanel>
+				<ChartPanel title="Countries by continent" caption="Share of the world's countries">
+					<ContinentSharePie continents={continents} />
+				</ChartPanel>
 			</section>
 
-			<section className="grid gap-px border border-white/10 bg-white/10 xl:grid-cols-[1fr_1.4fr]">
-				<div className="bg-black/80 p-6">
-					<div className="text-xs font-bold uppercase tracking-widest text-white/35">
-						Regional weight
+			<section className="grid gap-px border border-white/10 bg-white/10 xl:grid-cols-2">
+				<ChartPanel
+					title="Age structure"
+					caption="0–14 / 15–64 / 65+ across the largest populations"
+				>
+					<AgeStructureRadial stats={statistics} />
+				</ChartPanel>
+				<ChartPanel title="Currency reach" caption="Currencies used across the most countries">
+					<CurrencyUsageBar currencies={currencies} />
+				</ChartPanel>
+			</section>
+
+			<section className="border border-white/10 bg-white/[0.02]">
+				<div className="border-b border-white/10 px-6 py-5">
+					<div className="text-[10px] font-bold uppercase tracking-widest text-white/35">
+						World time
 					</div>
-					<div className="mt-6 space-y-4">
-						{regionRows.map((row) => {
-							const totalPopulation = regionRows.reduce(
-								(sum, item) => sum + item.population,
-								0
-							)
-							const width = totalPopulation
-								? `${Math.max((row.population / totalPopulation) * 100, 2)}%`
-								: '2%'
-							return (
-								<div key={row.name}>
-									<div className="mb-2 flex items-center justify-between gap-4 text-sm">
-										<span className="font-semibold text-white">{row.name}</span>
-										<span className="text-white/40">
-											{row.countries} countries · {formatCompact(row.population)}
-										</span>
-									</div>
-									<div className="h-2 bg-white/10">
-										<div className="h-full bg-white" style={{ width }} />
-									</div>
-								</div>
-							)
-						})}
+					<div className="mt-1 text-sm font-medium text-white/45">
+						IANA zones grouped by UTC standard offset
 					</div>
 				</div>
+				<div className="p-6">
+					<OffsetDistributionBar timezones={timezones} />
+				</div>
+			</section>
 
-				<div className="grid grid-cols-2 gap-px bg-white/10 md:grid-cols-5">
-					{collectionRequests.map((item) => (
-						<div key={item.key} className="bg-black/80 p-5">
-							<div className="text-[10px] font-bold uppercase tracking-widest text-white/35">
-								{item.label}
-							</div>
-							<div className="mt-4 text-3xl font-bold tracking-tighter text-white">
-								{formatCompact(data.totals[item.key] || 0)}
-							</div>
-						</div>
+			<section>
+				<div className="mb-4 text-xs font-bold uppercase tracking-widest text-white/35">
+					Quick facts
+				</div>
+				<div className="grid grid-cols-2 gap-px border border-white/10 bg-white/10 md:grid-cols-3 lg:grid-cols-6">
+					{quickFacts.map((fact) => (
+						<QuickFactCard key={fact.label} fact={fact} />
 					))}
 				</div>
 			</section>

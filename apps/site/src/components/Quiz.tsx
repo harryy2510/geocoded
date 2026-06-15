@@ -1,78 +1,141 @@
-import { useState, useEffect } from 'react'
-import { createGeocodedClient } from '@geocoded/client'
+import { useEffect, useRef, useState } from 'react'
+import { type CountryRow, fetchCountriesWithStats } from '../lib/v2'
+import { ModeSelect } from './quiz/ModeSelect'
+import { GameScreen } from './quiz/GameScreen'
+import { ResultsScreen } from './quiz/ResultsScreen'
+import { QUIZ_MODES, generateQuestions } from './quiz/modes'
+import {
+	type QuizModeDef,
+	type QuizModeId,
+	type QuizPhase,
+	type QuizQuestion,
+} from './quiz/types'
 
-const client = createGeocodedClient({ apiUrl: import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me' })
+const ROUNDS = 10
+
+type RoundResult = {
+	score: number
+	bestStreak: number
+	total: number
+}
+
+// Countries with their expanded statistics — the single source the quiz draws
+// every mode from.
+async function loadCountries(): Promise<CountryRow[]> {
+	return fetchCountriesWithStats(300)
+}
+
+function findMode(id: QuizModeId): QuizModeDef {
+	const mode = QUIZ_MODES.find((m) => m.id === id)
+	if (!mode) throw new Error(`Unknown quiz mode: ${id}`)
+	return mode
+}
 
 export function Quiz() {
-	const [countries, setCountries] = useState<any[]>([])
-	const [loading, setLoading] = useState(true)
-	const [question, setQuestion] = useState<any | null>(null)
-	const [options, setOptions] = useState<any[]>([])
-	const [score, setScore] = useState(0)
-	const [answered, setAnswered] = useState(false)
+	const [phase, setPhase] = useState<QuizPhase>('select')
+	const [activeMode, setActiveMode] = useState<QuizModeId | null>(null)
+	const [questions, setQuestions] = useState<QuizQuestion[]>([])
+	const [result, setResult] = useState<RoundResult | null>(null)
+	const [bestStreak, setBestStreak] = useState(0)
+	const [error, setError] = useState<string | null>(null)
+
+	// Countries are fetched once and reused across every round.
+	const countriesRef = useRef<CountryRow[] | null>(null)
 
 	useEffect(() => {
-		client.fetchCountries().then((res) => {
-			setCountries(res)
-			generateQuestion(res)
-			setLoading(false)
-		})
+		let cancelled = false
+		loadCountries()
+			.then((data) => {
+				if (!cancelled) countriesRef.current = data
+			})
+			.catch(() => {
+				if (!cancelled) setError('Could not load country data. Is the data service running?')
+			})
+		return () => {
+			cancelled = true
+		}
 	}, [])
 
-	const generateQuestion = (data: any[]) => {
-		const shuffled = [...data].sort(() => 0.5 - Math.random())
-		const correct = shuffled[0]
-		const opts = shuffled.slice(0, 4).sort(() => 0.5 - Math.random())
-		setQuestion(correct)
-		setOptions(opts)
-		setAnswered(false)
-	}
-
-	const handleAnswer = (opt: any) => {
-		if (answered) return
-		setAnswered(true)
-		if (opt.iso2 === question.iso2) {
-			setScore(s => s + 1)
-			setTimeout(() => generateQuestion(countries), 1000)
-		} else {
-			setScore(0)
-			setTimeout(() => generateQuestion(countries), 2000)
+	async function startMode(id: QuizModeId) {
+		setActiveMode(id)
+		setError(null)
+		setPhase('loading')
+		try {
+			const countries = countriesRef.current ?? (await loadCountries())
+			countriesRef.current = countries
+			const generated = await generateQuestions(id, countries, ROUNDS)
+			if (generated.length === 0) {
+				throw new Error('No questions could be generated for this mode.')
+			}
+			setQuestions(generated)
+			setPhase('playing')
+		} catch {
+			setError('Could not start this mode. Please try again.')
+			setPhase('select')
 		}
 	}
 
-	if (loading) return <div className="text-white/40 font-mono animate-pulse uppercase tracking-widest text-sm p-12 text-center w-full">Booting simulation...</div>
+	function handleFinish(round: RoundResult) {
+		setResult(round)
+		setBestStreak((prev) => Math.max(prev, round.bestStreak))
+		setPhase('results')
+	}
+
+	function backToModes() {
+		setActiveMode(null)
+		setQuestions([])
+		setResult(null)
+		setPhase('select')
+	}
+
+	function playAgain() {
+		if (activeMode) void startMode(activeMode)
+	}
+
+	if (phase === 'loading') {
+		return (
+			<div className="text-white/40 font-mono animate-pulse uppercase tracking-widest text-sm p-12 text-center w-full">
+				Building your round...
+			</div>
+		)
+	}
+
+	if (phase === 'playing' && activeMode) {
+		return (
+			<GameScreen
+				mode={findMode(activeMode)}
+				questions={questions}
+				onFinish={handleFinish}
+				onExit={backToModes}
+			/>
+		)
+	}
+
+	if (phase === 'results' && activeMode && result) {
+		return (
+			<ResultsScreen
+				mode={findMode(activeMode)}
+				score={result.score}
+				bestStreak={result.bestStreak}
+				total={result.total}
+				onPlayAgain={playAgain}
+				onBackToModes={backToModes}
+			/>
+		)
+	}
 
 	return (
-		<div className="flex flex-col gap-12 animate-fade-in max-w-3xl mx-auto w-full">
-			<div className="text-center">
-				<h1 className="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-4">Simulation</h1>
-				<p className="text-white/60 text-lg">Test geographical intelligence.</p>
-				<div className="mt-8 font-mono tracking-widest uppercase">
-					<span className="text-white/40">Current Score: </span>
-					<span className="text-white text-xl font-bold">{score}</span>
+		<div className="flex flex-col gap-6 w-full">
+			{error && (
+				<div className="max-w-5xl mx-auto w-full border border-red-500/30 bg-red-500/10 text-red-200/90 text-sm font-mono p-4 text-center">
+					{error}
 				</div>
-			</div>
-
-			<div className="lux-panel p-8 md:p-16 flex flex-col items-center">
-				<div className="text-white/40 font-mono text-[10px] uppercase tracking-widest mb-12">Identify the region origin of this signature:</div>
-				<div className="text-8xl md:text-[12rem] mb-16 leading-none">{question.emoji}</div>
-
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-					{options.map(opt => (
-						<button
-							key={opt.iso2}
-							onClick={() => handleAnswer(opt)}
-							className={`p-6 border font-bold uppercase tracking-tight text-sm md:text-base transition-all
-								${answered && opt.iso2 === question.iso2 ? 'bg-white text-black border-white' : ''}
-								${answered && opt.iso2 !== question.iso2 ? 'opacity-20 border-white/10 text-white/40' : ''}
-								${!answered ? 'border-white/20 hover:bg-white/10' : ''}
-							`}
-						>
-							{opt.name}
-						</button>
-					))}
-				</div>
-			</div>
+			)}
+			<ModeSelect
+				modes={QUIZ_MODES}
+				bestStreak={bestStreak}
+				onSelect={(id) => void startMode(id)}
+			/>
 		</div>
 	)
 }
