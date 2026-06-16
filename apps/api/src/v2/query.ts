@@ -18,10 +18,14 @@ export type V2FilterConfig = {
 	operator: V2FilterOperator
 }
 
-export type V2ExpandConfig = {
-	kind: 'object' | 'array'
-	resource: V2ResourceConfig
-}
+export type V2ExpandConfig =
+	| {
+			kind: 'object' | 'array'
+			resource: V2ResourceConfig
+	  }
+	| {
+			kind: 'passthrough'
+	  }
 
 export type V2ResourceConfig = {
 	name: string
@@ -45,7 +49,8 @@ export type V2ResourceConfig = {
 
 export type V2Projection = {
 	fields: string[]
-	expands: Record<string, V2Projection>
+	// A `null` expand is a passthrough: emit the value verbatim with no nested projection.
+	expands: Record<string, V2Projection | null>
 }
 
 type V2AppliedFilter = {
@@ -143,6 +148,11 @@ export function projectV2Fields(
 		projection.expands
 	)) {
 		if (!(expandName in value)) continue
+		if (expandProjection === null) {
+			// Passthrough expand: emit the value verbatim, no nested projection.
+			projected[expandName] = value[expandName]
+			continue
+		}
 		projected[expandName] = projectV2Fields(value[expandName], expandProjection)
 	}
 	return projected
@@ -224,6 +234,12 @@ function parseProjection(
 					error: `Query parameter "fields" includes "${token}", but "${expandName}" is not expanded`
 				}
 			}
+			if (config.expands?.[expandName]?.kind === 'passthrough') {
+				return {
+					ok: false,
+					error: `Query parameter "fields" includes "${token}", but "${expandName}" does not support nested field selection`
+				}
+			}
 			const paths = scoped.get(expandName) ?? []
 			paths.push(fieldPath)
 			scoped.set(expandName, paths)
@@ -233,10 +249,15 @@ function parseProjection(
 	const baseResult = fieldsToProjection(baseTokens, config)
 	if (!baseResult.ok) return baseResult
 
-	const expands: Record<string, V2Projection> = {}
+	const expands: Record<string, V2Projection | null> = {}
 	for (const expandName of expanded) {
 		const expandConfig = config.expands?.[expandName]
 		if (!expandConfig) continue
+
+		if (expandConfig.kind === 'passthrough') {
+			expands[expandName] = null
+			continue
+		}
 
 		const childTokens = scoped.get(expandName) ?? ['*']
 		const childResult = fieldsToProjection(childTokens, expandConfig.resource)

@@ -58,6 +58,25 @@ export const v2StatisticsResource = defineV2Resource({
 	strictUnknownParams: true
 })
 
+// Sub-resource describing one entry of a country's `timezones` expand array.
+export const v2CountryTimezoneResource = defineV2Resource({
+	name: 'country-timezone',
+	fields: {
+		zoneName: { type: 'string' },
+		gmtOffset: { type: 'number' },
+		gmtOffsetName: { type: 'string' },
+		abbreviation: { type: 'string' },
+		tzName: { type: 'string' }
+	},
+	defaultFields: [
+		'zoneName',
+		'gmtOffset',
+		'gmtOffsetName',
+		'abbreviation',
+		'tzName'
+	]
+})
+
 export const v2CountryResource = defineV2Resource({
 	name: 'countries',
 	fields: {
@@ -99,9 +118,7 @@ export const v2CountryResource = defineV2Resource({
 		timeFormat: { type: 'string', column: 'time_format' },
 		flagUrl: { type: 'string', column: 'flag_url' },
 		languages: { type: 'array', column: 'languages' },
-		neighbours: { type: 'array', column: 'neighbours', normalize: 'uppercase' },
-		timezones: { type: 'array', column: 'timezones' },
-		translations: { type: 'object', column: 'translations' }
+		neighbours: { type: 'array', column: 'neighbours', normalize: 'uppercase' }
 	},
 	defaultFields: [
 		'id',
@@ -151,7 +168,9 @@ export const v2CountryResource = defineV2Resource({
 		default: { field: 'name', direction: 'asc' }
 	},
 	expands: {
-		statistics: { resource: v2StatisticsResource, kind: 'object' }
+		statistics: { resource: v2StatisticsResource, kind: 'object' },
+		timezones: { resource: v2CountryTimezoneResource, kind: 'array' },
+		translations: { kind: 'passthrough' }
 	},
 	strictUnknownParams: true
 })

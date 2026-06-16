@@ -66,8 +66,9 @@ class FakeV2D1Database {
 			gdp: 504000000000,
 			postal_code_format: null,
 			postal_code_regex: null,
-			timezones: '[]',
-			translations: '{}',
+			timezones:
+				'[{"zoneName":"Asia/Dubai","gmtOffset":14400,"gmtOffsetName":"UTC+04:00","abbreviation":"GST","tzName":"Gulf Standard Time"}]',
+			translations: '{"en":"United Arab Emirates","fr":"Émirats arabes unis"}',
 			neighbours: '[]',
 			languages: '["ar"]',
 			flag_url: '',
@@ -621,9 +622,9 @@ describe('v2 routes', () => {
 		expect(country).not.toHaveProperty('translations')
 	})
 
-	test('exposes heavy country blobs through explicit fields', async () => {
+	test('exposes heavy country blobs through expand', async () => {
 		const response = await request(
-			'/v2/countries?filter[country]=AE&fields=id,timezones,translations'
+			'/v2/countries?filter[country]=AE&expand=timezones,translations&fields=id'
 		)
 
 		expect(response.status).toBe(200)
@@ -634,10 +635,56 @@ describe('v2 routes', () => {
 		expect(body.data).toEqual([
 			{
 				id: 'AE',
-				timezones: [],
-				translations: {}
+				timezones: [
+					{
+						zoneName: 'Asia/Dubai',
+						gmtOffset: 14400,
+						gmtOffsetName: 'UTC+04:00',
+						abbreviation: 'GST',
+						tzName: 'Gulf Standard Time'
+					}
+				],
+				translations: {
+					en: 'United Arab Emirates',
+					fr: 'Émirats arabes unis'
+				}
 			}
 		])
+	})
+
+	test('does not surface country blobs as plain fields', async () => {
+		const response = await request(
+			'/v2/countries?filter[country]=AE&fields=id,timezones,translations'
+		)
+
+		// timezones/translations are expands, not selectable fields.
+		expect(response.status).toBe(400)
+	})
+
+	test('projects nested fields on the country timezones expand', async () => {
+		const response = await request(
+			'/v2/countries?filter[country]=AE&expand=timezones&fields=id,timezones.zoneName,timezones.gmtOffset'
+		)
+
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<
+			Record<string, unknown>
+		>
+
+		expect(body.data).toEqual([
+			{
+				id: 'AE',
+				timezones: [{ zoneName: 'Asia/Dubai', gmtOffset: 14400 }]
+			}
+		])
+	})
+
+	test('rejects nested field selection on the translations passthrough', async () => {
+		const response = await request(
+			'/v2/countries?filter[country]=AE&expand=translations&fields=id,translations.en'
+		)
+
+		expect(response.status).toBe(400)
 	})
 
 	test('returns flattened statistics and uses fields for specific metrics', async () => {

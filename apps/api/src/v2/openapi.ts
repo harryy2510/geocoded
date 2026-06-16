@@ -21,6 +21,17 @@ const v2ExpandParameter = {
 	example: 'statistics'
 }
 
+const v2CountryExpandParameter = {
+	name: 'expand',
+	in: 'query' as const,
+	required: false,
+	description:
+		'Comma-separated expansion names. Available: `statistics`, `timezones`, `translations`. Expansions are explicit and flat, for example `expand=statistics,timezones`.',
+	schema: stringSchema,
+	allowReserved: true,
+	example: 'statistics,timezones,translations'
+}
+
 const v2SearchParameter = {
 	name: 'q',
 	in: 'query' as const,
@@ -461,7 +472,7 @@ export const v2OpenApiPaths = {
 			'Country list with strict `filter[...]` filters, explicit expansions, and nested field projection.',
 		schema: v2CountrySchema,
 		parameters: [
-			v2ExpandParameter,
+			v2CountryExpandParameter,
 			filterCountry,
 			filterContinent,
 			filterRegion,
@@ -476,7 +487,7 @@ export const v2OpenApiPaths = {
 		summary: 'Get one country',
 		schema: v2CountrySchema,
 		example: 'AE',
-		parameters: [v2ExpandParameter],
+		parameters: [v2CountryExpandParameter],
 		fieldsExample: 'id,name,iso2,statistics.gdpPerCapitaCurrentUsd'
 	}),
 	'/v2/states': listPath({
