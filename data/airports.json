@@ -124833,6 +124833,29 @@
 		"modificationDate": "2021-10-10"
 	},
 	{
+		"geonameId": 13645789,
+		"name": "Qaqortoq Airport",
+		"asciiName": "Qaqortoq Airport",
+		"alternateNames": [
+			"BGQO",
+			"JJU"
+		],
+		"unLocode": "GLJJU",
+		"airportLocationCode": "JJU",
+		"iataCode": "JJU",
+		"iataCodeSource": "unlocode-location-code",
+		"latitude": "60.7652",
+		"longitude": "-46.06465",
+		"countryCode": "GL",
+		"countryName": "Greenland",
+		"admin1Code": "04",
+		"admin1Name": "",
+		"admin2Code": "",
+		"elevation": 0,
+		"timezone": "America/Nuuk",
+		"modificationDate": "2026-06-16"
+	},
+	{
 		"geonameId": 8520869,
 		"name": "Sisimiut Airport",
 		"asciiName": "Sisimiut Airport",
@@ -172818,6 +172841,29 @@
 		"elevation": 8,
 		"timezone": "Asia/Yangon",
 		"modificationDate": "2016-06-01"
+	},
+	{
+		"geonameId": 13645791,
+		"name": "Anisakan Airport",
+		"asciiName": "Anisakan Airport",
+		"alternateNames": [
+			"NSA",
+			"VYAS"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "21.95667",
+		"longitude": "96.40696",
+		"countryCode": "MM",
+		"countryName": "Myanmar",
+		"admin1Code": "08",
+		"admin1Name": "",
+		"admin2Code": "MMR010D002",
+		"elevation": 0,
+		"timezone": "Asia/Yangon",
+		"modificationDate": "2026-06-16"
 	},
 	{
 		"geonameId": 8435631,
@@ -303699,7 +303745,7 @@
 		"admin2Code": "009",
 		"elevation": 82,
 		"timezone": "America/Los_Angeles",
-		"modificationDate": "2006-01-15"
+		"modificationDate": "2026-06-16"
 	},
 	{
 		"geonameId": 7702025,
@@ -438624,10 +438670,11 @@
 	},
 	{
 		"geonameId": 4710197,
-		"name": "McKinney Municipal Airport",
-		"asciiName": "McKinney Municipal Airport",
+		"name": "McKinney National Airport",
+		"asciiName": "McKinney National Airport",
 		"alternateNames": [
 			"Collin County Regional Airport at McKinney",
+			"DTX",
 			"KTKI",
 			"McKinney Municipal Airport",
 			"McKinney National Airport"
@@ -438645,7 +438692,7 @@
 		"admin2Code": "085",
 		"elevation": 171,
 		"timezone": "America/Chicago",
-		"modificationDate": "2025-02-12"
+		"modificationDate": "2026-06-16"
 	},
 	{
 		"geonameId": 4542481,
@@ -571862,7 +571909,10 @@
 		"asciiName": "William R Fairchild International Airport",
 		"alternateNames": [
 			"CLM",
-			"KCLM"
+			"Clallam County Airport",
+			"Fairchild International",
+			"KCLM",
+			"William R. Fairchild International Airport"
 		],
 		"unLocode": "USCLM",
 		"airportLocationCode": "CLM",
@@ -571877,7 +571927,7 @@
 		"admin2Code": "009",
 		"elevation": 82,
 		"timezone": "America/Los_Angeles",
-		"modificationDate": "2007-01-03"
+		"modificationDate": "2026-06-16"
 	},
 	{
 		"geonameId": 4555735,
