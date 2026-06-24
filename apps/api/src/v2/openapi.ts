@@ -405,7 +405,7 @@ const v2MigrationSchema = objectSchema({
 const filterCountry = filterParameter('country', 'AE')
 const filterState = filterParameter('state', 'AZ')
 const filterContinent = filterParameter('continent', 'AS')
-const filterRegion = filterParameter('region', 'Asia')
+const filterRegion = filterParameter('region', 'Western Asia')
 const filterTimezone = filterParameter('timezone', 'Asia/Dubai')
 const filterCurrency = filterParameter('currency', 'AED')
 const filterIata = filterParameter('iata', 'DXB')
@@ -462,7 +462,7 @@ export const v2OpenApiPaths = {
 		tag: 'Regions',
 		summary: 'Get one region',
 		schema: v2RegionSchema,
-		example: 'AS:Asia',
+		example: 'AS:Western Asia',
 		fieldsExample: 'id,name,continent,countryCount'
 	}),
 	'/v2/countries': listPath({

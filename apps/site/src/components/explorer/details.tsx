@@ -3,6 +3,7 @@ import { formatFull } from '../../lib/format'
 import { fetchV2List } from './api'
 import { dash, flagEmoji, formatCoords, formatOffset, formatToken } from './helpers'
 import { Badge, DetailDrawer, Fact, FactGrid, Section } from './ui'
+import { formatLanguageScope, formatLanguageType } from './config'
 import {
 	type AirlineRecord,
 	type AirportRecord,
@@ -233,18 +234,22 @@ export function LanguageDetail({
 		<DetailDrawer
 			icon="🗣"
 			title={language.referenceName}
-			subtitle={`${language.scope} · ${language.type}`}
+			subtitle={`${formatLanguageScope(language.scope)} · ${formatLanguageType(language.type)}`}
 			onClose={onClose}
 		>
 			<FactGrid>
 				<Fact label="ISO 639-3" value={dash(language.iso6393)} />
-				<Fact label="ISO 639-2B" value={dash(language.iso6392B)} />
-				<Fact label="ISO 639-2T" value={dash(language.iso6392T)} />
-				<Fact label="ISO 639-1" value={dash(language.iso6391)} />
-				<Fact label="Scope" value={dash(language.scope)} />
-				<Fact label="Type" value={dash(language.type)} />
-				<Fact label="Macrolanguage" value={dash(language.macrolanguageCode)} />
-				<Fact label="Members" value={language.macrolanguageMemberCodes.length || '—'} />
+				{language.iso6392B ? <Fact label="ISO 639-2B" value={language.iso6392B} /> : null}
+				{language.iso6392T ? <Fact label="ISO 639-2T" value={language.iso6392T} /> : null}
+				{language.iso6391 ? <Fact label="ISO 639-1" value={language.iso6391} /> : null}
+				<Fact label="ISO scope" value={formatLanguageScope(language.scope)} />
+				<Fact label="Status" value={formatLanguageType(language.type)} />
+				{language.macrolanguageCode ? (
+					<Fact label="Macrolanguage" value={language.macrolanguageCode} />
+				) : null}
+				{language.macrolanguageMemberCodes.length > 0 ? (
+					<Fact label="Members" value={language.macrolanguageMemberCodes.length} />
+				) : null}
 			</FactGrid>
 			{language.names.length > 0 ? (
 				<Section title={`Alternate names (${language.names.length})`}>
@@ -424,7 +429,7 @@ export function RegionDetail({ region, onClose }: { region: RegionRecord; onClos
 			onClose={onClose}
 		>
 			<FactGrid>
-				<Fact label="Name" value={dash(region.name)} />
+				<Fact label="Region group" value={dash(region.name)} />
 				<Fact label="Continent" value={resolveContinentName(region.continent)} />
 				<Fact label="Countries" value={dash(region.countryCount)} />
 				<Fact label="Record ID" value={dash(region.id)} />

@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import { SITE_API_URL } from '../lib/api-url'
 
-const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
+const apiUrl = SITE_API_URL
 const githubUrl = import.meta.env.PUBLIC_GITHUB_URL || 'https://github.com/geocoded-me/geocoded'
 
 const features = [

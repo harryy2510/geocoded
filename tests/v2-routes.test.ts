@@ -390,11 +390,11 @@ class FakeV2D1Database {
 		}
 		const regions = new Map<string, Row>()
 		for (const country of countries) {
-			const id = `${country.continent}:${country.region}`
+			const id = `${country.continent}:${country.subregion}`
 			const current = regions.get(id)
 			regions.set(id, {
 				id,
-				name: country.region,
+				name: country.subregion,
 				continent: country.continent,
 				country_count: Number(current?.country_count ?? 0) + 1
 			})
@@ -736,8 +736,8 @@ describe('v2 routes', () => {
 		})
 		expect(regions.data).toEqual([
 			{
-				id: 'AS:Asia',
-				name: 'Asia',
+				id: 'AS:Western Asia',
+				name: 'Western Asia',
 				continent: 'AS',
 				countryCount: 1
 			}
@@ -864,10 +864,10 @@ describe('v2 routes', () => {
 				}
 			},
 			{
-				path: '/v2/regions/AS%3AAsia?fields=id,name,continent,countryCount',
+				path: '/v2/regions/AS%3AWestern%20Asia?fields=id,name,continent,countryCount',
 				expected: {
-					id: 'AS:Asia',
-					name: 'Asia',
+					id: 'AS:Western Asia',
+					name: 'Western Asia',
 					continent: 'AS',
 					countryCount: 1
 				}
@@ -1100,7 +1100,7 @@ describe('v2 routes', () => {
 		expect(regionParams).toContainEqual(
 			expect.objectContaining({
 				name: 'filter[region]',
-				example: 'Asia',
+				example: 'Western Asia',
 				allowReserved: true
 			})
 		)

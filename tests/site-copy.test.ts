@@ -58,4 +58,22 @@ describe('site copy and docs affordances', () => {
 		expect(source).not.toContain('position: fixed')
 		expect(source).not.toContain('sources: [')
 	})
+
+	test('explorer uses clear labels for language and region taxonomy', async () => {
+		const [configSource, detailSource] = await Promise.all([
+			Bun.file('apps/site/src/components/explorer/config.tsx').text(),
+			Bun.file('apps/site/src/components/explorer/details.tsx').text()
+		])
+
+		expect(configSource).toContain('formatLanguageScope')
+		expect(configSource).toContain('formatLanguageType')
+		expect(configSource).toContain("label: 'Status'")
+		expect(configSource).toContain("label: 'Scope'")
+		expect(configSource).toContain('Region group')
+		expect(configSource).not.toContain('<FooterCell label="ISO 639-1"')
+		expect(configSource).not.toContain('sub={r.scope}')
+		expect(detailSource).toContain('label="Status"')
+		expect(detailSource).toContain('label="ISO scope"')
+		expect(detailSource).toContain('language.iso6391 ?')
+	})
 })

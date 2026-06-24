@@ -31,7 +31,7 @@ const CONTINENTS_TABLE =
 	"(SELECT continent AS id, continent AS name, COUNT(*) AS country_count FROM countries WHERE continent <> '' GROUP BY continent)"
 
 const REGIONS_TABLE =
-	"(SELECT continent || ':' || region AS id, region AS name, continent, COUNT(*) AS country_count FROM countries WHERE continent <> '' AND region <> '' GROUP BY continent, region)"
+	"(SELECT continent || ':' || subregion AS id, subregion AS name, continent, COUNT(*) AS country_count FROM countries WHERE continent <> '' AND subregion <> '' GROUP BY continent, subregion)"
 
 export async function listV2Countries(
 	db: D1Database,

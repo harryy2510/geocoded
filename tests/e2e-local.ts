@@ -391,10 +391,10 @@ const v2Cases: ApiCase[] = [
 	},
 	{
 		name: 'v2 returns one region',
-		path: '/v2/regions/AS%3AAsia?fields=id,name,continent,countryCount',
+		path: '/v2/regions/AS%3AWestern%20Asia?fields=id,name,continent,countryCount',
 		status: 200,
 		assert: (body) => {
-			expect(assertRecord(body).id).toBe('AS:Asia')
+			expect(assertRecord(body).id).toBe('AS:Western Asia')
 		}
 	},
 	{

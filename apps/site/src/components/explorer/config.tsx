@@ -116,9 +116,9 @@ const sortPopDesc: SortOption = { value: '-population', label: 'Population High'
 const sortPopAsc: SortOption = { value: 'population', label: 'Population Low' }
 
 const scopeOptions = [
-	{ value: 'individual', label: 'Individual' },
+	{ value: 'individual', label: 'Individual language' },
 	{ value: 'macrolanguage', label: 'Macrolanguage' },
-	{ value: 'special', label: 'Special' },
+	{ value: 'special', label: 'Special code' },
 ]
 const typeOptions = [
 	{ value: 'living', label: 'Living' },
@@ -127,6 +127,16 @@ const typeOptions = [
 	{ value: 'historical', label: 'Historical' },
 	{ value: 'constructed', label: 'Constructed' },
 ]
+
+export function formatLanguageScope(scope: string): string {
+	const option = scopeOptions.find((item) => item.value === scope)
+	return option?.label ?? formatToken(scope)
+}
+
+export function formatLanguageType(type: string): string {
+	const option = typeOptions.find((item) => item.value === type)
+	return option?.label ?? formatToken(type)
+}
 
 export const countriesConfig: ResourceConfig<CountryRef> = {
 	key: 'countries',
@@ -350,20 +360,20 @@ export const languagesConfig: ResourceConfig<LanguageRecord> = {
 	filters: [
 		{ key: 'code', label: 'ISO code', kind: 'text', placeholder: 'eng, en…' },
 		{ key: 'scope', label: 'Scope', kind: 'select', options: scopeOptions },
-		{ key: 'type', label: 'Type', kind: 'select', options: typeOptions },
+		{ key: 'type', label: 'Status', kind: 'select', options: typeOptions },
 		{ key: 'macrolanguage', label: 'Macrolanguage', kind: 'text', placeholder: 'msa' },
 	],
 	searchHint: 'Search languages, ISO codes…',
 	card: (r) => (
 		<CardShell
 			icon="🗣"
-			tag={r.type}
+			tag={formatLanguageType(r.type)}
 			code={r.iso6393}
 			name={r.referenceName}
-			sub={r.scope}
+			sub={formatLanguageScope(r.scope)}
 			footer={
 				<>
-					<FooterCell label="ISO 639-1" value={dash(r.iso6391)} mono />
+					<FooterCell label="Status" value={formatLanguageType(r.type)} />
 					<FooterCell label="Names" value={r.names?.length || '—'} align="right" />
 				</>
 			}
@@ -469,7 +479,7 @@ export const continentsConfig: ResourceConfig<ContinentRecord> = {
 
 export const regionsConfig: ResourceConfig<RegionRecord> = {
 	key: 'regions',
-	label: 'Regions',
+	label: 'Region groups',
 	path: '/v2/regions',
 	icon: '🗺',
 	rowKey: (r) => r.id,
@@ -481,16 +491,21 @@ export const regionsConfig: ResourceConfig<RegionRecord> = {
 	],
 	filters: [
 		{ key: 'continent', label: 'Continent', kind: 'text', placeholder: 'AF, EU…' },
-		{ key: 'region', label: 'Region', kind: 'text', placeholder: 'Africa' },
+		{ key: 'region', label: 'Region group', kind: 'text', placeholder: 'Western Asia' },
 	],
-	searchHint: 'Search regions, continents…',
+	searchHint: 'Search region groups, continents…',
 	card: (r) => (
 		<CardShell
 			icon="🗺"
-			tag={resolveContinentName(r.continent)}
+			tag="Region group"
 			name={r.name}
-			sub={`${resolveContinentName(r.continent)} · ${r.countryCount} countries`}
-			footer={<FooterCell label="Countries" value={r.countryCount} />}
+			sub={`${r.countryCount} countries`}
+			footer={
+				<>
+					<FooterCell label="Continent" value={resolveContinentName(r.continent)} />
+					<FooterCell label="Countries" value={r.countryCount} align="right" />
+				</>
+			}
 		/>
 	),
 }

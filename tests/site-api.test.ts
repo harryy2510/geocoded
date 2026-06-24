@@ -8,19 +8,46 @@ afterEach(() => {
 })
 
 describe('site API client', () => {
-	test('uses production API fallbacks for hydrated site requests', async () => {
-		const [v2Source, explorerApiSource, statisticsSource] = await Promise.all([
+	test('gates local API overrides to dev builds for site requests', async () => {
+		const apiUrlFile = Bun.file('apps/site/src/lib/api-url.ts')
+		const apiUrlFileExists = await apiUrlFile.exists()
+		expect(apiUrlFileExists).toBe(true)
+		if (!apiUrlFileExists) return
+
+		const [
+			apiUrlSource,
+			indexSource,
+			docsSource,
+			v2Source,
+			explorerApiSource,
+			statisticsSource
+		] = await Promise.all([
+			apiUrlFile.text(),
+			Bun.file('apps/site/src/pages/index.astro').text(),
+			Bun.file('apps/site/src/pages/docs.astro').text(),
 			Bun.file('apps/site/src/lib/v2.ts').text(),
 			Bun.file('apps/site/src/components/explorer/api.ts').text(),
 			Bun.file('apps/site/src/components/Statistics.tsx').text()
 		])
 
-		expect(v2Source).toContain(
-			"import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'"
+		expect(apiUrlSource).toContain(
+			"DEFAULT_API_URL = 'https://api.geocoded.me'"
 		)
+		expect(apiUrlSource).toContain('import.meta.env.DEV')
+		expect(apiUrlSource).toContain('import.meta.env.PUBLIC_API_URL')
+		expect(indexSource).toContain(
+			"import { SITE_API_URL } from '../lib/api-url'"
+		)
+		expect(docsSource).toContain(
+			"import { SITE_API_URL } from '../lib/api-url'"
+		)
+		expect(v2Source).toContain("import { SITE_API_URL } from './api-url'")
 		expect(explorerApiSource).toContain(
-			"import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'"
+			"import { SITE_API_URL } from '../../lib/api-url'"
 		)
+		expect(
+			[indexSource, docsSource, v2Source, explorerApiSource].join('\n')
+		).not.toContain('import.meta.env.PUBLIC_API_URL ||')
 		expect(statisticsSource).not.toContain('Make sure the local API is running')
 	})
 
