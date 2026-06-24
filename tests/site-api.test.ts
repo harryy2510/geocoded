@@ -8,6 +8,22 @@ afterEach(() => {
 })
 
 describe('site API client', () => {
+	test('uses production API fallbacks for hydrated site requests', async () => {
+		const [v2Source, explorerApiSource, statisticsSource] = await Promise.all([
+			Bun.file('apps/site/src/lib/v2.ts').text(),
+			Bun.file('apps/site/src/components/explorer/api.ts').text(),
+			Bun.file('apps/site/src/components/Statistics.tsx').text()
+		])
+
+		expect(v2Source).toContain(
+			"import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'"
+		)
+		expect(explorerApiSource).toContain(
+			"import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'"
+		)
+		expect(statisticsSource).not.toContain('Make sure the local API is running')
+	})
+
 	test('unwraps paginated country responses and requests the full country list', async () => {
 		let requestedUrl: string | null = null
 		globalThis.fetch = ((input: Parameters<typeof fetch>[0]) => {

@@ -1,4 +1,4 @@
-export const V2_API_URL = import.meta.env.PUBLIC_API_URL || 'http://localhost:8787'
+export const V2_API_URL = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
 
 export type V2Meta = {
 	total: number

@@ -1,5 +1,4 @@
-// v2 lives ONLY on the local dev API. Fall back to localhost, not prod.
-const apiUrl = import.meta.env.PUBLIC_API_URL || 'http://localhost:8787'
+const apiUrl = import.meta.env.PUBLIC_API_URL || 'https://api.geocoded.me'
 
 export type V2Meta = {
 	total: number

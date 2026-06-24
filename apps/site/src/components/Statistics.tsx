@@ -120,8 +120,7 @@ export function Statistics() {
 	if (error && countries.length === 0) {
 		return (
 			<div className="m-4 border border-amber-500/20 bg-amber-500/[0.04] p-6 text-sm text-amber-200/70">
-				Could not reach the data service. Make sure the local API is running on{' '}
-				<span className="font-mono">http://localhost:8787</span>.
+				Could not reach the data service. Check the API status and try again.
 			</div>
 		)
 	}
