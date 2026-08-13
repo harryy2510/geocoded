@@ -15,8 +15,8 @@
 			"road",
 			"borderCrossing"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0307",
 		"coordinates": null,
 		"latitude": null,
@@ -242,8 +242,8 @@
 			"road",
 			"borderCrossing"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0401",
 		"coordinates": "4903N 12228W",
 		"latitude": 49.05,
@@ -4539,12 +4539,12 @@
 		],
 		"status": "AC",
 		"statusName": "Approved by Customs Authority",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6103N 02811E",
 		"latitude": 61.05,
 		"longitude": 28.183333,
 		"remarks": null,
-		"changeIndicator": null
+		"changeIndicator": "#"
 	},
 	{
 		"unLocode": "FIMUO",
@@ -4643,12 +4643,12 @@
 		],
 		"status": "AC",
 		"statusName": "Approved by Customs Authority",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6128N 02338E",
 		"latitude": 61.466667,
 		"longitude": 23.633333,
 		"remarks": null,
-		"changeIndicator": null
+		"changeIndicator": "#"
 	},
 	{
 		"unLocode": "FIPLL",
@@ -4722,12 +4722,12 @@
 		],
 		"status": "AC",
 		"statusName": "Approved by Customs Authority",
-		"date": "1401",
+		"date": "2501",
 		"coordinates": "6108N 02130E",
 		"latitude": 61.133333,
 		"longitude": 21.5,
 		"remarks": null,
-		"changeIndicator": null
+		"changeIndicator": "#"
 	},
 	{
 		"unLocode": "FISLL",
@@ -4776,12 +4776,12 @@
 		],
 		"status": "AF",
 		"statusName": "Approved by national facilitation body",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6130N 02345E",
 		"latitude": 61.5,
 		"longitude": 23.75,
 		"remarks": null,
-		"changeIndicator": null
+		"changeIndicator": "#"
 	},
 	{
 		"unLocode": "FIUTS",
@@ -4879,12 +4879,12 @@
 		],
 		"status": "AC",
 		"statusName": "Approved by Customs Authority",
-		"date": "1401",
+		"date": "2501",
 		"coordinates": "6018N 02451E",
 		"latitude": 60.3,
 		"longitude": 24.85,
 		"remarks": null,
-		"changeIndicator": null
+		"changeIndicator": "#"
 	},
 	{
 		"unLocode": "FIVLA",
@@ -7761,8 +7761,8 @@
 		"functions": [
 			"borderCrossing"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "2101",
 		"coordinates": null,
 		"latitude": null,
@@ -7786,8 +7786,8 @@
 			"road",
 			"borderCrossing"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1307",
 		"coordinates": null,
 		"latitude": null,
@@ -7811,8 +7811,8 @@
 			"road",
 			"borderCrossing"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1307",
 		"coordinates": null,
 		"latitude": null,
@@ -7836,8 +7836,8 @@
 			"road",
 			"borderCrossing"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1307",
 		"coordinates": null,
 		"latitude": null,
@@ -10361,8 +10361,8 @@
 			"road",
 			"borderCrossing"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1425N 08926W",
 		"latitude": 14.416667,
@@ -10411,8 +10411,8 @@
 		"functions": [
 			"borderCrossing"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0507",
 		"coordinates": "0041N 03350E",
 		"latitude": 0.683333,

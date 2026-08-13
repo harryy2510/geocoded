@@ -27461,8 +27461,8 @@
 	},
 	{
 		"geonameId": 6299696,
-		"name": "Sarajevo Airport",
-		"asciiName": "Sarajevo Airport",
+		"name": "Sarajevo International Airport",
+		"asciiName": "Sarajevo International Airport",
 		"alternateNames": [
 			"LQSA",
 			"SJJ"
@@ -27471,16 +27471,16 @@
 		"airportLocationCode": "SJJ",
 		"iataCode": "SJJ",
 		"iataCodeSource": "unlocode-location-code",
-		"latitude": "43.82458",
-		"longitude": "18.33147",
+		"latitude": "43.82615",
+		"longitude": "18.3368",
 		"countryCode": "BA",
 		"countryName": "Bosnia and Herzegovina",
 		"admin1Code": "01",
 		"admin1Name": "Federation of B&H",
-		"admin2Code": "",
+		"admin2Code": "3343737",
 		"elevation": 520,
 		"timezone": "Europe/Sarajevo",
-		"modificationDate": "2023-05-29"
+		"modificationDate": "2026-08-11"
 	},
 	{
 		"geonameId": 6299697,
@@ -48779,7 +48779,7 @@
 		"admin2Code": "3521",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296161,
@@ -48829,7 +48829,7 @@
 		"admin2Code": "3529",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7668115,
@@ -48994,7 +48994,7 @@
 		"admin2Code": "3524",
 		"elevation": 183,
 		"timezone": "America/Toronto",
-		"modificationDate": "2020-07-09"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6301471,
@@ -49414,7 +49414,7 @@
 		"admin2Code": "3540",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296348,
@@ -49492,7 +49492,7 @@
 		"admin2Code": "3512",
 		"elevation": 86,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296224,
@@ -49659,7 +49659,7 @@
 		"admin2Code": "3536",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 8617228,
@@ -50076,7 +50076,7 @@
 		"admin2Code": "3556",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296244,
@@ -51227,7 +51227,7 @@
 		"admin2Code": "3557",
 		"elevation": 331,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 8533862,
@@ -52304,7 +52304,7 @@
 		"admin2Code": "3558",
 		"elevation": 348,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7910207,
@@ -52567,7 +52567,7 @@
 		"admin2Code": "3551",
 		"elevation": 193,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7668155,
@@ -52742,7 +52742,7 @@
 		"admin2Code": "3553",
 		"elevation": 347,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6295841,
@@ -53031,7 +53031,7 @@
 		"admin2Code": "3556",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296245,
@@ -53723,7 +53723,7 @@
 		"admin2Code": "3525",
 		"elevation": 237,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 9564314,
@@ -53882,7 +53882,7 @@
 		"admin2Code": "3556",
 		"elevation": 226,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7668110,
@@ -54182,7 +54182,7 @@
 		"admin2Code": "3560",
 		"elevation": 405,
 		"timezone": "America/Winnipeg",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 9072700,
@@ -54210,7 +54210,7 @@
 		"admin2Code": "3552",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296223,
@@ -54369,7 +54369,7 @@
 		"admin2Code": "3510",
 		"elevation": 92,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 12110494,
@@ -54426,7 +54426,7 @@
 		"admin2Code": "3554",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296215,
@@ -55356,7 +55356,7 @@
 		"admin2Code": "3539",
 		"elevation": 278,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296300,
@@ -55691,7 +55691,7 @@
 		"admin2Code": "3558",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 8260861,
@@ -56276,7 +56276,7 @@
 		"admin2Code": "3556",
 		"elevation": 9,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 8260867,
@@ -56358,7 +56358,7 @@
 		"admin2Code": "3544",
 		"elevation": 281,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7668162,
@@ -56460,7 +56460,7 @@
 		"admin2Code": "3558",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296166,
@@ -56778,7 +56778,7 @@
 		"admin2Code": "3548",
 		"elevation": 370,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7730448,
@@ -57101,7 +57101,7 @@
 		"admin2Code": "3518",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7730039,
@@ -57206,7 +57206,7 @@
 		"admin2Code": "3542",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7668134,
@@ -57525,7 +57525,7 @@
 		"admin2Code": "3547",
 		"elevation": 0,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6301494,
@@ -57584,7 +57584,7 @@
 		"admin2Code": "3547",
 		"elevation": 130,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296252,
@@ -58686,7 +58686,7 @@
 		"admin2Code": "3560",
 		"elevation": 385,
 		"timezone": "America/Winnipeg",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7668142,
@@ -59601,7 +59601,7 @@
 		"admin2Code": "3538",
 		"elevation": 181,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296314,
@@ -59715,7 +59715,7 @@
 		"admin2Code": "3557",
 		"elevation": 192,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6296218,
@@ -59928,7 +59928,7 @@
 		"admin2Code": "3560",
 		"elevation": 383,
 		"timezone": "America/Winnipeg",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 8298863,
@@ -60250,7 +60250,7 @@
 		"admin2Code": "3526",
 		"elevation": 97,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6301497,
@@ -61057,7 +61057,7 @@
 		"admin2Code": "3558",
 		"elevation": 199,
 		"timezone": "America/Toronto",
-		"modificationDate": "2024-02-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 8520829,
@@ -61105,7 +61105,7 @@
 		"admin2Code": "3556",
 		"elevation": 294,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 8260909,
@@ -61242,7 +61242,7 @@
 		"admin2Code": "3521",
 		"elevation": 173,
 		"timezone": "America/Toronto",
-		"modificationDate": "2025-05-25"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6301461,
@@ -61264,10 +61264,10 @@
 		"countryName": "Canada",
 		"admin1Code": "08",
 		"admin1Name": "",
-		"admin2Code": "3520",
+		"admin2Code": "3519",
 		"elevation": 198,
 		"timezone": "America/Toronto",
-		"modificationDate": "2020-10-29"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7910243,
@@ -61950,7 +61950,7 @@
 		"admin2Code": "3557",
 		"elevation": 287,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7668149,
@@ -62323,7 +62323,7 @@
 		"admin2Code": "3537",
 		"elevation": 189,
 		"timezone": "America/Toronto",
-		"modificationDate": "2018-01-20"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6301487,
@@ -127554,6 +127554,52 @@
 		"modificationDate": "2021-09-04"
 	},
 	{
+		"geonameId": 3595030,
+		"name": "La Aurora",
+		"asciiName": "La Aurora",
+		"alternateNames": [
+			"GUA",
+			"La Aurora"
+		],
+		"unLocode": "GTGUA",
+		"airportLocationCode": "GUA",
+		"iataCode": "GUA",
+		"iataCodeSource": "unlocode-location-code",
+		"latitude": "14.58333",
+		"longitude": "-90.5",
+		"countryCode": "GT",
+		"countryName": "Guatemala",
+		"admin1Code": "07",
+		"admin1Name": "Sololá",
+		"admin2Code": "101",
+		"elevation": 0,
+		"timezone": "America/Guatemala",
+		"modificationDate": "2026-08-06"
+	},
+	{
+		"geonameId": 3595031,
+		"name": "La Aurora",
+		"asciiName": "La Aurora",
+		"alternateNames": [
+			"Aurora",
+			"La Aurora"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "14.58167",
+		"longitude": "-90.52667",
+		"countryCode": "GT",
+		"countryName": "Guatemala",
+		"admin1Code": "03",
+		"admin1Name": "Sacatepéquez",
+		"admin2Code": "412",
+		"elevation": 0,
+		"timezone": "America/Guatemala",
+		"modificationDate": "2026-08-06"
+	},
+	{
 		"geonameId": 6299801,
 		"name": "La Aurora International Airport",
 		"asciiName": "La Aurora International Airport",
@@ -144615,7 +144661,9 @@
 		"name": "Navi Mumbai International Airport",
 		"asciiName": "Navi Mumbai International Airport",
 		"alternateNames": [
-			"NMI"
+			"Aeropuerto Internacional de Navi Bombay",
+			"NMI",
+			"Navi Bombay International Airport"
 		],
 		"unLocode": null,
 		"airportLocationCode": null,
@@ -144630,7 +144678,7 @@
 		"admin2Code": "520",
 		"elevation": 0,
 		"timezone": "Asia/Kolkata",
-		"modificationDate": "2024-05-15"
+		"modificationDate": "2026-07-06"
 	},
 	{
 		"geonameId": 6301069,
@@ -168700,9 +168748,12 @@
 			"Ra's Lanuf Airport",
 			"frwdgah ras lanwf",
 			"mtar ras lanwf",
+			"ras lanwf",
 			"Фурудгоҳи рас лонуф",
+			"رأس لانوف",
 			"فرودگاه راس لانوف",
 			"مطار رأس لانوف",
+			"ⵔⴰⵙ ⵍⴰⵏⵡⴼ",
 			"ラス・ラーヌーフ空港"
 		],
 		"unLocode": null,
@@ -168718,7 +168769,7 @@
 		"admin2Code": "",
 		"elevation": 0,
 		"timezone": "Africa/Tripoli",
-		"modificationDate": "2023-05-29"
+		"modificationDate": "2026-07-08"
 	},
 	{
 		"geonameId": 6297331,
@@ -186695,7 +186746,7 @@
 		"admin2Code": "",
 		"elevation": 59,
 		"timezone": "America/Managua",
-		"modificationDate": "2026-03-26"
+		"modificationDate": "2026-08-09"
 	},
 	{
 		"geonameId": 6299892,
@@ -187574,9 +187625,11 @@
 		"asciiName": "Leeuwarden Air Base",
 		"alternateNames": [
 			"EHLW",
+			"Fleanbasis Ljouwert",
 			"LWR",
 			"Leeuwarden AB",
-			"Leeuwarden Air Base"
+			"Leeuwarden Air Base",
+			"Vliegbasis Leeuwarden"
 		],
 		"unLocode": "NLLWR",
 		"airportLocationCode": "LWR",
@@ -187591,7 +187644,7 @@
 		"admin2Code": "0080",
 		"elevation": 0,
 		"timezone": "Europe/Amsterdam",
-		"modificationDate": "2013-06-09"
+		"modificationDate": "2026-07-10"
 	},
 	{
 		"geonameId": 6296688,
@@ -188376,7 +188429,11 @@
 		"asciiName": "Engeloy flyplass, Elvik",
 		"alternateNames": [
 			"ENEN",
+			"Engeloy airport  Elvik",
+			"Engeloy flyplass  Elvik",
 			"Engeloy flyplass  Gradussan",
+			"Engeløy airport  Elvik",
+			"Engeløy flyplass  Elvik",
 			"Engeløy flyplass  Grådussan"
 		],
 		"unLocode": null,
@@ -188392,7 +188449,7 @@
 		"admin2Code": "1848",
 		"elevation": 3,
 		"timezone": "Europe/Oslo",
-		"modificationDate": "2024-10-02"
+		"modificationDate": "2026-06-25"
 	},
 	{
 		"geonameId": 6296736,
@@ -190112,7 +190169,7 @@
 		"admin2Code": "5607",
 		"elevation": 3,
 		"timezone": "Europe/Oslo",
-		"modificationDate": "2024-01-27"
+		"modificationDate": "2026-06-26"
 	},
 	{
 		"geonameId": 8531954,
@@ -191915,6 +191972,7 @@
 		"name": "Alofi / Niue",
 		"asciiName": "Alofi / Niue",
 		"alternateNames": [
+			"Hannan International Airport",
 			"IUE",
 			"NIUE"
 		],
@@ -191931,7 +191989,7 @@
 		"admin2Code": "",
 		"elevation": 63,
 		"timezone": "Pacific/Niue",
-		"modificationDate": "2012-01-27"
+		"modificationDate": "2026-06-24"
 	},
 	{
 		"geonameId": 6452626,
@@ -244780,10 +244838,10 @@
 		"countryName": "Ukraine",
 		"admin1Code": "12",
 		"admin1Name": "Dnipropetrovsk",
-		"admin2Code": "703266",
+		"admin2Code": "8000",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-09-01"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269925,
@@ -244805,7 +244863,7 @@
 		"admin2Code": "1208",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7731009,
@@ -244833,7 +244891,7 @@
 		"admin2Code": "2302",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269945,
@@ -244855,7 +244913,7 @@
 		"admin2Code": "1802",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269943,
@@ -244877,7 +244935,7 @@
 		"admin2Code": "3202",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269956,
@@ -244899,7 +244957,7 @@
 		"admin2Code": "7404",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 11269913,
@@ -244922,7 +244980,7 @@
 		"admin2Code": "5106",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269949,
@@ -244944,7 +245002,7 @@
 		"admin2Code": "4604",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300959,
@@ -244976,7 +245034,7 @@
 		"admin2Code": "7108",
 		"elevation": 114,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6300964,
@@ -245033,7 +245091,7 @@
 		"admin2Code": "7306",
 		"elevation": 252,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2023-09-04"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 11269944,
@@ -245055,7 +245113,7 @@
 		"admin2Code": "6314",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300954,
@@ -245106,7 +245164,7 @@
 		"admin2Code": "1202",
 		"elevation": 146,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 11269932,
@@ -245128,7 +245186,7 @@
 		"admin2Code": "1202",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6300953,
@@ -245155,7 +245213,7 @@
 		"admin2Code": "1408",
 		"elevation": 241,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 11269937,
@@ -245177,7 +245235,7 @@
 		"admin2Code": "4602",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269914,
@@ -245200,7 +245258,7 @@
 		"admin2Code": "0106",
 		"elevation": 0,
 		"timezone": "Europe/Simferopol",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269931,
@@ -245222,7 +245280,7 @@
 		"admin2Code": "3506",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269965,
@@ -245244,7 +245302,7 @@
 		"admin2Code": "5910",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269946,
@@ -245266,7 +245324,7 @@
 		"admin2Code": "5304",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269909,
@@ -245289,7 +245347,7 @@
 		"admin2Code": "0116",
 		"elevation": 0,
 		"timezone": "Europe/Simferopol",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 7731601,
@@ -245323,7 +245381,7 @@
 		"admin2Code": "0502",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300961,
@@ -245358,7 +245416,7 @@
 		"admin2Code": "3208",
 		"elevation": 157,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269960,
@@ -245380,7 +245438,7 @@
 		"admin2Code": "7408",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6300962,
@@ -245438,7 +245496,7 @@
 		"admin2Code": "2604",
 		"elevation": 280,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269906,
@@ -245483,7 +245541,7 @@
 		"admin2Code": "6802",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2023-09-04"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269959,
@@ -245505,7 +245563,7 @@
 		"admin2Code": "7410",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7731171,
@@ -245549,7 +245607,7 @@
 		"admin2Code": "0110",
 		"elevation": 0,
 		"timezone": "Europe/Simferopol",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300958,
@@ -245622,7 +245680,7 @@
 		"admin2Code": "6312",
 		"elevation": 154,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 8030052,
@@ -245657,7 +245715,7 @@
 		"admin2Code": "6312",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 7731172,
@@ -245693,7 +245751,7 @@
 		"admin2Code": "6510",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269904,
@@ -245763,7 +245821,7 @@
 		"admin2Code": "6804",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269911,
@@ -245785,7 +245843,7 @@
 		"admin2Code": "0118",
 		"elevation": 0,
 		"timezone": "Europe/Simferopol",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269933,
@@ -245807,7 +245865,7 @@
 		"admin2Code": "2608",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269962,
@@ -245829,7 +245887,7 @@
 		"admin2Code": "5902",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 7731189,
@@ -245861,7 +245919,7 @@
 		"admin2Code": "1412",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269928,
@@ -245920,7 +245978,7 @@
 		"admin2Code": "5302",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 7731168,
@@ -245948,7 +246006,7 @@
 		"admin2Code": "3504",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269924,
@@ -245972,7 +246030,7 @@
 		"admin2Code": "1206",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6300956,
@@ -246024,7 +246082,7 @@
 		"admin2Code": "4806",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269929,
@@ -246046,7 +246104,7 @@
 		"admin2Code": "2610",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300952,
@@ -246113,7 +246171,7 @@
 		"admin2Code": "3204",
 		"elevation": 130,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300960,
@@ -246140,10 +246198,10 @@
 		"countryName": "Ukraine",
 		"admin1Code": "12",
 		"admin1Name": "Dnipropetrovsk",
-		"admin2Code": "",
+		"admin2Code": "8000",
 		"elevation": 178,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-09-25"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269936,
@@ -246165,7 +246223,7 @@
 		"admin2Code": "7108",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7668508,
@@ -246195,7 +246253,7 @@
 		"admin2Code": "4406",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269957,
@@ -246217,7 +246275,7 @@
 		"admin2Code": "0708",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 7668511,
@@ -246240,7 +246298,7 @@
 		"admin2Code": "0708",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300963,
@@ -246319,7 +246377,7 @@
 		"admin2Code": "4606",
 		"elevation": 326,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 8299661,
@@ -246344,7 +246402,7 @@
 		"admin2Code": "5114",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 7668507,
@@ -246367,7 +246425,7 @@
 		"admin2Code": "1414",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269918,
@@ -246390,7 +246448,7 @@
 		"admin2Code": "2308",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300967,
@@ -246419,7 +246477,7 @@
 		"admin2Code": "4806",
 		"elevation": 56,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2023-11-17"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 8260989,
@@ -246446,7 +246504,7 @@
 		"admin2Code": "5306",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269955,
@@ -246468,7 +246526,7 @@
 		"admin2Code": "3208",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269961,
@@ -246490,7 +246548,7 @@
 		"admin2Code": "7404",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 11269958,
@@ -246512,7 +246570,7 @@
 		"admin2Code": "7408",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 6300968,
@@ -246588,7 +246646,7 @@
 		"admin2Code": "5110",
 		"elevation": 52,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269950,
@@ -246611,7 +246669,7 @@
 		"admin2Code": "1804",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269964,
@@ -246633,7 +246691,7 @@
 		"admin2Code": "7410",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 11269935,
@@ -246655,7 +246713,7 @@
 		"admin2Code": "3506",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269947,
@@ -246677,7 +246735,7 @@
 		"admin2Code": "3202",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 7668509,
@@ -246705,7 +246763,7 @@
 		"admin2Code": "5308",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2023-09-04"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269952,
@@ -246727,7 +246785,7 @@
 		"admin2Code": "5304",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269917,
@@ -246749,7 +246807,7 @@
 		"admin2Code": "2308",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300965,
@@ -246794,7 +246852,7 @@
 		"admin2Code": "5606",
 		"elevation": 230,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269908,
@@ -246817,7 +246875,7 @@
 		"admin2Code": "0108",
 		"elevation": 0,
 		"timezone": "Europe/Simferopol",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 7730187,
@@ -246873,7 +246931,7 @@
 		"admin2Code": "2306",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 7731487,
@@ -246896,7 +246954,7 @@
 		"admin2Code": "4412",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300957,
@@ -246972,7 +247030,7 @@
 		"admin2Code": "0116",
 		"elevation": 194,
 		"timezone": "Europe/Simferopol",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269916,
@@ -246994,7 +247052,7 @@
 		"admin2Code": "6508",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269942,
@@ -247016,7 +247074,7 @@
 		"admin2Code": "6804",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 7668510,
@@ -247056,7 +247114,7 @@
 		"admin2Code": "5908",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269927,
@@ -247078,7 +247136,7 @@
 		"admin2Code": "1214",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-02"
 	},
 	{
 		"geonameId": 7668512,
@@ -247101,7 +247159,7 @@
 		"admin2Code": "6104",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300966,
@@ -247162,7 +247220,7 @@
 		"admin2Code": "2110",
 		"elevation": 116,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2023-09-02"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269923,
@@ -247206,7 +247264,7 @@
 		"admin2Code": "2308",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-12-13"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269930,
@@ -247228,7 +247286,7 @@
 		"admin2Code": "3504",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269922,
@@ -247250,7 +247308,7 @@
 		"admin2Code": "4804",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 8533069,
@@ -247285,7 +247343,7 @@
 		"admin2Code": "0108",
 		"elevation": 0,
 		"timezone": "Europe/Simferopol",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 6300955,
@@ -247322,7 +247380,7 @@
 		"admin2Code": "2306",
 		"elevation": 114,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2023-09-04"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269907,
@@ -247344,7 +247402,7 @@
 		"admin2Code": "0116",
 		"elevation": 0,
 		"timezone": "Europe/Simferopol",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 11269948,
@@ -247366,7 +247424,7 @@
 		"admin2Code": "3212",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 8299599,
@@ -247414,7 +247472,7 @@
 		"admin2Code": "1804",
 		"elevation": 0,
 		"timezone": "Europe/Kyiv",
-		"modificationDate": "2022-10-27"
+		"modificationDate": "2026-08-03"
 	},
 	{
 		"geonameId": 8533007,
@@ -416465,6 +416523,60 @@
 		"modificationDate": "2013-12-07"
 	},
 	{
+		"geonameId": 6301738,
+		"name": "Launch and Landing Facility",
+		"asciiName": "Launch and Landing Facility",
+		"alternateNames": [
+			"KTTS",
+			"KX68",
+			"TTS",
+			"Titusville  NASA Shuttle Landing Facility",
+			"X68"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "28.61667",
+		"longitude": "-80.7",
+		"countryCode": "US",
+		"countryName": "United States",
+		"admin1Code": "FL",
+		"admin1Name": "Florida",
+		"admin2Code": "",
+		"elevation": 3,
+		"timezone": "America/New_York",
+		"modificationDate": "2026-08-06"
+	},
+	{
+		"geonameId": 8484206,
+		"name": "Launch and Landing Facility",
+		"asciiName": "Launch and Landing Facility",
+		"alternateNames": [
+			"KTTS",
+			"LLF",
+			"Launch and Landing Facility",
+			"SLF",
+			"Shuttle Landing Facility",
+			"TTS",
+			"X68"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "28.59907",
+		"longitude": "-80.68399",
+		"countryCode": "US",
+		"countryName": "United States",
+		"admin1Code": "FL",
+		"admin1Name": "Florida",
+		"admin2Code": "009",
+		"elevation": 2,
+		"timezone": "America/New_York",
+		"modificationDate": "2026-08-06"
+	},
+	{
 		"geonameId": 5365470,
 		"name": "Lauppes Strip",
 		"asciiName": "Lauppes Strip",
@@ -454566,26 +454678,6 @@
 		"modificationDate": "2017-05-23"
 	},
 	{
-		"geonameId": 8484206,
-		"name": "NASA Shuttle Landing Facility",
-		"asciiName": "NASA Shuttle Landing Facility",
-		"alternateNames": [],
-		"unLocode": null,
-		"airportLocationCode": null,
-		"iataCode": null,
-		"iataCodeSource": null,
-		"latitude": "28.59907",
-		"longitude": "-80.68399",
-		"countryCode": "US",
-		"countryName": "United States",
-		"admin1Code": "FL",
-		"admin1Name": "Florida",
-		"admin2Code": "009",
-		"elevation": 2,
-		"timezone": "America/New_York",
-		"modificationDate": "2012-05-12"
-	},
-	{
 		"geonameId": 8113834,
 		"name": "Nasby Airport",
 		"asciiName": "Nasby Airport",
@@ -469809,62 +469901,6 @@
 		"modificationDate": "2011-12-11"
 	},
 	{
-		"geonameId": 6298874,
-		"name": "Palm Beach International Airport",
-		"asciiName": "Palm Beach International Airport",
-		"alternateNames": [
-			"Aeroport international de Palm Beach",
-			"Aeroporto Internacional de Palm Beach",
-			"Aeroporto Internazionale di Palm Beach",
-			"Aeroporto de Palm Beach",
-			"Aeroportul International Palm Beach",
-			"Aeroportul Internațional Palm Beach",
-			"Aeropuerto Internacional de Palm Beach",
-			"Aéroport international de Palm Beach",
-			"Flughafen Palm Beach",
-			"KPBI",
-			"Megunarodni aerodrom Palm Beach",
-			"Međunarodni aerodrom Palm Beach",
-			"PBI",
-			"Palm Beach International",
-			"Palm Beach International Airport",
-			"Palm Beach internasjonale lufthavn",
-			"Port lotniczy Palm Beach",
-			"San bay quoc te Palm Beach",
-			"Sân bay quốc tế Palm Beach",
-			"mtar balm bytsh aldwly",
-			"pam bichi gugjegonghang",
-			"pamubichi guo ji kong gang",
-			"xi zong lu tan",
-			"zong lu hai an",
-			"zong lu tan (xi)",
-			"Фурудгоҳи бин‌алмилалӣ полм бич",
-			"فرودگاه بین‌المللی پالم بیچ",
-			"مطار بالم بيتش الدولى",
-			"مطار بالم بيتش الدولي",
-			"پام بیچ انٹرنیشنل ایئرپورٹ",
-			"パームビーチ国際空港",
-			"棕榈海岸",
-			"棕櫚灘（西）",
-			"西棕櫚灘",
-			"팜 비치 국제공항"
-		],
-		"unLocode": "USPBI",
-		"airportLocationCode": "PBI",
-		"iataCode": "PBI",
-		"iataCodeSource": "unlocode-location-code",
-		"latitude": "26.68316",
-		"longitude": "-80.09559",
-		"countryCode": "US",
-		"countryName": "United States",
-		"admin1Code": "FL",
-		"admin1Name": "Florida",
-		"admin2Code": "",
-		"elevation": 5,
-		"timezone": "America/New_York",
-		"modificationDate": "2015-09-26"
-	},
-	{
 		"geonameId": 7193385,
 		"name": "Palm Beach West County Jail Helistop",
 		"asciiName": "Palm Beach West County Jail Helistop",
@@ -484756,6 +484792,64 @@
 		"elevation": 535,
 		"timezone": "America/Chicago",
 		"modificationDate": "2017-05-23"
+	},
+	{
+		"geonameId": 6298874,
+		"name": "President Donald J. Trump International Airport",
+		"asciiName": "President Donald J. Trump International Airport",
+		"alternateNames": [
+			"Aeroport international de Palm Beach",
+			"Aeroporto Internacional de Palm Beach",
+			"Aeroporto Internazionale di Palm Beach",
+			"Aeroporto de Palm Beach",
+			"Aeroportul International Palm Beach",
+			"Aeroportul Internațional Palm Beach",
+			"Aeropuerto Internacional de Palm Beach",
+			"Aéroport international de Palm Beach",
+			"DJT",
+			"Flughafen Palm Beach",
+			"KDJT",
+			"Megunarodni aerodrom Palm Beach",
+			"Međunarodni aerodrom Palm Beach",
+			"PBI",
+			"Palm Beach International",
+			"Palm Beach International Airport",
+			"Palm Beach internasjonale lufthavn",
+			"Port lotniczy Palm Beach",
+			"President Donald J. Trump International Airport",
+			"San bay quoc te Palm Beach",
+			"Sân bay quốc tế Palm Beach",
+			"mtar balm bytsh aldwly",
+			"pam bichi gugjegonghang",
+			"pamubichi guo ji kong gang",
+			"xi zong lu tan",
+			"zong lu hai an",
+			"zong lu tan (xi)",
+			"Фурудгоҳи бин‌алмилалӣ полм бич",
+			"فرودگاه بین‌المللی پالم بیچ",
+			"مطار بالم بيتش الدولى",
+			"مطار بالم بيتش الدولي",
+			"پام بیچ انٹرنیشنل ایئرپورٹ",
+			"パームビーチ国際空港",
+			"棕榈海岸",
+			"棕櫚灘（西）",
+			"西棕櫚灘",
+			"팜 비치 국제공항"
+		],
+		"unLocode": "USPBI",
+		"airportLocationCode": "PBI",
+		"iataCode": "PBI",
+		"iataCodeSource": "unlocode-location-code",
+		"latitude": "26.68316",
+		"longitude": "-80.09559",
+		"countryCode": "US",
+		"countryName": "United States",
+		"admin1Code": "FL",
+		"admin1Name": "Florida",
+		"admin2Code": "",
+		"elevation": 5,
+		"timezone": "America/New_York",
+		"modificationDate": "2026-07-22"
 	},
 	{
 		"geonameId": 5528674,

@@ -6395,7 +6395,7 @@
 		"latitude": "40",
 		"longitude": "47.41667",
 		"timezone": "Asia/Baku",
-		"capital": "Agdzhabedy",
+		"capital": "Aghjabadi",
 		"population": 136100,
 		"type": "district",
 		"native": "Ağcabǝdi",
@@ -6412,7 +6412,7 @@
 		"latitude": "40",
 		"longitude": "47",
 		"timezone": "Asia/Baku",
-		"capital": "Ağdam",
+		"capital": "Aghdam",
 		"population": 179800,
 		"type": "district",
 		"native": "Ağdam Rayonu",
@@ -6722,7 +6722,7 @@
 		"latitude": "40.41667",
 		"longitude": "46",
 		"timezone": "Asia/Baku",
-		"capital": "Yukhary-Dashkesan",
+		"capital": "Dashkasan",
 		"population": 33300,
 		"type": "district",
 		"native": "Daşkǝsǝn",
@@ -6739,7 +6739,7 @@
 		"latitude": "39.58333",
 		"longitude": "47.33333",
 		"timezone": "Asia/Baku",
-		"capital": "Fizuli",
+		"capital": "Fuzuli",
 		"population": 130800,
 		"type": "district",
 		"native": "Füzuli Rayonu",
@@ -6784,7 +6784,7 @@
 		"latitude": "40.5",
 		"longitude": "45.66667",
 		"timezone": "Asia/Baku",
-		"capital": "Kyadabek",
+		"capital": "Gadabay",
 		"population": 101062,
 		"type": "district",
 		"native": "Gədəbəy rayonu",
@@ -6908,7 +6908,7 @@
 		"latitude": "40.5",
 		"longitude": "46.33333",
 		"timezone": "Asia/Baku",
-		"capital": "Göygöl",
+		"capital": "Goygol",
 		"population": 64800,
 		"type": "district",
 		"native": "Göygöl Rayon",
@@ -6959,7 +6959,7 @@
 		"latitude": "40.83333",
 		"longitude": "48.16667",
 		"timezone": "Asia/Baku",
-		"capital": "İsmayıllı",
+		"capital": "Ismayilli",
 		"population": 87100,
 		"type": "district",
 		"native": "İsmayıllı rayonu",
@@ -7004,7 +7004,7 @@
 		"latitude": "39.33333",
 		"longitude": "47",
 		"timezone": "Asia/Baku",
-		"capital": "Jebrail",
+		"capital": "Jabrayil",
 		"population": 73100,
 		"type": "district",
 		"native": "Cəbrayıl",
@@ -7158,7 +7158,7 @@
 		"latitude": "39.66667",
 		"longitude": "47",
 		"timezone": "Asia/Baku",
-		"capital": "Novyy Karanlug",
+		"capital": "Khojavend",
 		"population": 12322,
 		"type": "district",
 		"native": "Xocavənd Rayonu",
@@ -7560,7 +7560,7 @@
 		"latitude": "41.26",
 		"longitude": "45.09",
 		"timezone": "Asia/Baku",
-		"capital": "Qazax",
+		"capital": "Gazakh",
 		"population": 96200,
 		"type": "district",
 		"native": "Qazax",
@@ -7577,7 +7577,7 @@
 		"latitude": "40.5",
 		"longitude": "49",
 		"timezone": "Asia/Baku",
-		"capital": "Qobustan",
+		"capital": "Gobustan",
 		"population": 47000,
 		"type": "district",
 		"native": "Qobustan",
@@ -7798,7 +7798,7 @@
 		"latitude": "40.91667",
 		"longitude": "46.41667",
 		"timezone": "Asia/Baku",
-		"capital": "Samux",
+		"capital": "Samukh",
 		"population": 58600,
 		"type": "district",
 		"native": "Samux",
@@ -7815,7 +7815,7 @@
 		"latitude": "40.83333",
 		"longitude": "46.08333",
 		"timezone": "Asia/Baku",
-		"capital": "Shamkhor",
+		"capital": "Shamkhir",
 		"population": 217400,
 		"type": "district",
 		"native": "Şǝmkir",
@@ -7959,7 +7959,7 @@
 		"latitude": "39.67773",
 		"longitude": "46.66398",
 		"timezone": "Asia/Baku",
-		"capital": "Şuşa",
+		"capital": "Shusha",
 		"population": 25078,
 		"type": "district",
 		"native": "Şuşa",
@@ -8030,7 +8030,7 @@
 		"latitude": "40.59466",
 		"longitude": "49.62799",
 		"timezone": "Asia/Baku",
-		"capital": "Sumqayıt",
+		"capital": "Sumgayit",
 		"population": 491068,
 		"type": "municipality",
 		"native": "Sumqayit",
@@ -8047,7 +8047,7 @@
 		"latitude": "40.33054",
 		"longitude": "46.94289",
 		"timezone": "Asia/Baku",
-		"capital": "Terter",
+		"capital": "Tartar",
 		"population": 80500,
 		"type": "district",
 		"native": "Tərtər rayonu",
@@ -8188,7 +8188,7 @@
 		"latitude": "40.75",
 		"longitude": "49.16667",
 		"timezone": "Asia/Baku",
-		"capital": "Xızı",
+		"capital": "Khizi",
 		"population": 16703,
 		"type": "district",
 		"native": "Xızı",
@@ -9469,7 +9469,7 @@
 		"longitude": "89.83333",
 		"timezone": "Asia/Dhaka",
 		"capital": "Jamālpur",
-		"population": 2499737,
+		"population": 2499738,
 		"type": "district",
 		"native": "জামালপুর জেলা",
 		"wikidataId": "Q2039306",
@@ -9813,7 +9813,7 @@
 		"longitude": "88.7",
 		"timezone": "Asia/Dhaka",
 		"capital": "Meherpur",
-		"population": 655392,
+		"population": 705356,
 		"type": "district",
 		"native": "মেহেরপুর",
 		"wikidataId": "Q1474206",
@@ -9853,7 +9853,7 @@
 		"longitude": "90.4",
 		"timezone": "Asia/Dhaka",
 		"capital": "Mymensingh",
-		"population": 5899052,
+		"population": 5899005,
 		"type": "district",
 		"native": "ময়মনসিংহ",
 		"wikidataId": "Q1429976",
@@ -9978,7 +9978,7 @@
 		"longitude": "90.86667",
 		"timezone": "Asia/Dhaka",
 		"capital": "Netrakona",
-		"population": 2324856,
+		"population": 2324853,
 		"type": "district",
 		"native": "Netrakona",
 		"wikidataId": "",
@@ -10351,7 +10351,7 @@
 		"longitude": "88.33333",
 		"timezone": "Asia/Dhaka",
 		"capital": "Thakurgaon Paurashava",
-		"population": 1533894,
+		"population": 1533276,
 		"type": "district",
 		"native": "Thakurgaon",
 		"wikidataId": "Q2367825",
@@ -15768,7 +15768,7 @@
 		"longitude": "-73.96417",
 		"timezone": "America/Nassau",
 		"capital": "Masons Bay",
-		"population": 435,
+		"population": 692,
 		"type": "district",
 		"native": "Acklins",
 		"wikidataId": "Q341919",
@@ -15785,7 +15785,7 @@
 		"longitude": "-77.83139",
 		"timezone": "America/Nassau",
 		"capital": null,
-		"population": 742,
+		"population": 1002,
 		"type": "district",
 		"native": "Berry Islands",
 		"wikidataId": "Q827173",
@@ -15830,7 +15830,7 @@
 		"longitude": "-79.28889",
 		"timezone": "America/Nassau",
 		"capital": "Alice Town",
-		"population": 1735,
+		"population": 2361,
 		"type": "district",
 		"native": "Bimini District",
 		"wikidataId": "Q863476",
@@ -15919,7 +15919,7 @@
 		"longitude": "-75.4575",
 		"timezone": "America/Nassau",
 		"capital": "Arthur’s Town",
-		"population": 1606,
+		"population": 1602,
 		"type": "district",
 		"native": "Cat Island",
 		"wikidataId": "Q1050154",
@@ -16053,7 +16053,7 @@
 		"longitude": "-76.14556",
 		"timezone": "America/Nassau",
 		"capital": "Governor’s Harbour",
-		"population": 0,
+		"population": 701,
 		"type": "district",
 		"native": "Central Eleuthera",
 		"wikidataId": "Q938518",
@@ -16097,7 +16097,7 @@
 		"longitude": "-74.21528",
 		"timezone": "America/Nassau",
 		"capital": "Colonel Hill",
-		"population": 330,
+		"population": 305,
 		"type": "district",
 		"native": "Crooked Island and Long Cay",
 		"wikidataId": "Q1140993",
@@ -16159,7 +16159,7 @@
 		"longitude": "-75.88417",
 		"timezone": "America/Nassau",
 		"capital": "George Town",
-		"population": 6928,
+		"population": 7293,
 		"type": "district",
 		"native": "Exuma",
 		"wikidataId": "Q1385577",
@@ -16293,7 +16293,7 @@
 		"longitude": "-76.63513",
 		"timezone": "America/Nassau",
 		"capital": null,
-		"population": 1751,
+		"population": 1861,
 		"type": "district",
 		"native": "Harbour Island",
 		"wikidataId": "Q2357510",
@@ -16383,7 +16383,7 @@
 		"longitude": "-73.31167",
 		"timezone": "America/Nassau",
 		"capital": "Matthew Town",
-		"population": 913,
+		"population": 856,
 		"type": "district",
 		"native": "Inagua",
 		"wikidataId": "Q1353668",
@@ -16428,7 +16428,7 @@
 		"longitude": "-75.11167",
 		"timezone": "America/Nassau",
 		"capital": "Clarence Town",
-		"population": 2979,
+		"population": 2887,
 		"type": "district",
 		"native": "Long Island",
 		"wikidataId": "Q890879",
@@ -16499,7 +16499,7 @@
 		"longitude": "-72.95389",
 		"timezone": "America/Nassau",
 		"capital": "Abraham’s Bay",
-		"population": 251,
+		"population": 208,
 		"type": "district",
 		"native": "Mayaguana",
 		"wikidataId": "Q21712462",
@@ -16533,7 +16533,7 @@
 		"longitude": "-77.28333",
 		"timezone": "America/Nassau",
 		"capital": "Nassau",
-		"population": 228334,
+		"population": 296522,
 		"type": "district",
 		"native": "New Providence",
 		"wikidataId": "Q858513",
@@ -16605,7 +16605,7 @@
 		"longitude": "-78.09611",
 		"timezone": "America/Nassau",
 		"capital": "San Andros",
-		"population": 3898,
+		"population": 4069,
 		"type": "district",
 		"native": "North Andros",
 		"wikidataId": "Q2699411",
@@ -16695,7 +16695,7 @@
 		"longitude": "-75.815",
 		"timezone": "America/Nassau",
 		"capital": "Duncan Town",
-		"population": 70,
+		"population": 44,
 		"type": "district",
 		"native": "Ragged Island",
 		"wikidataId": "Q1532634",
@@ -16740,7 +16740,7 @@
 		"longitude": "-74.85667",
 		"timezone": "America/Nassau",
 		"capital": "Port Nelson",
-		"population": 53,
+		"population": 90,
 		"type": "district",
 		"native": "Rum Cay",
 		"wikidataId": "Q21713441",
@@ -16767,7 +16767,7 @@
 		"longitude": "-74.49306",
 		"timezone": "America/Nassau",
 		"capital": "Cockburn Town",
-		"population": 1293,
+		"population": 824,
 		"type": "district",
 		"native": "San Salvador",
 		"wikidataId": "Q845540",
@@ -16839,7 +16839,7 @@
 		"longitude": "-77.64889",
 		"timezone": "America/Nassau",
 		"capital": null,
-		"population": 3592,
+		"population": 3711,
 		"type": "district",
 		"native": "South Andros",
 		"wikidataId": "Q2408672",
@@ -16929,7 +16929,7 @@
 		"longitude": "-76.77057",
 		"timezone": "America/Nassau",
 		"capital": "Spanish Wells",
-		"population": 1500,
+		"population": 1608,
 		"type": "district",
 		"native": "Spanish Wells",
 		"wikidataId": "Q1771681",
@@ -18095,7 +18095,7 @@
 		"longitude": "28",
 		"timezone": "Europe/Minsk",
 		"capital": "Minsk",
-		"population": 1411000,
+		"population": 1460289,
 		"type": "municipality",
 		"native": "Мінская Вобласць",
 		"wikidataId": "Q192959",
@@ -18140,7 +18140,7 @@
 		"longitude": "27.56667",
 		"timezone": "Europe/Minsk",
 		"capital": null,
-		"population": 1996553,
+		"population": 1995091,
 		"type": "region",
 		"native": "Мінск",
 		"wikidataId": "Q2280",
@@ -65784,11 +65784,15 @@
 		"capital": "Pordenone",
 		"population": 312533,
 		"type": "province",
-		"native": "Pordenone",
+		"native": "Provincia di Pordenone",
 		"wikidataId": "Q16247",
 		"translations": {
-			"it": "Pordenone",
-			"en": "Province of Pordenone"
+			"it": "Provincia di Pordenone",
+			"en": "Province of Pordenone",
+			"de": "Provinz Pordenone",
+			"fr": "Province de Pordenone",
+			"nl": "Provincie Pordenone",
+			"es": "Provincia de Pordenone"
 		}
 	},
 	{
@@ -65876,8 +65880,10 @@
 		"translations": {
 			"it": "Provincia di Pisa",
 			"es": "Provincia de Pisa",
-			"fr": "Pise",
-			"en": "Province of Pisa"
+			"fr": "Province de Pise",
+			"en": "Province of Pisa",
+			"de": "Provinz Pisa",
+			"nl": "Provincie Pisa"
 		}
 	},
 	{
@@ -67122,10 +67128,10 @@
 		"capital": "Pavia",
 		"population": 548722,
 		"type": "province",
-		"native": "Provincia di Pavia",
+		"native": "Pavia",
 		"wikidataId": "Q16231",
 		"translations": {
-			"it": "Provincia di Pavia",
+			"it": "Pavia",
 			"es": "Provincia de Pavía",
 			"en": "Province of Pavia",
 			"nl": "Provincie Pavia",
@@ -67146,12 +67152,15 @@
 		"capital": "Perugia",
 		"population": 656382,
 		"type": "province",
-		"native": "Perugia",
+		"native": "Provincia di Perugia",
 		"wikidataId": "Q16240",
 		"translations": {
-			"it": "Perugia",
-			"fr": "Pérouse",
-			"en": "Province of Perugia"
+			"it": "Provincia di Perugia",
+			"fr": "Province de Pérouse",
+			"en": "Province of Perugia",
+			"de": "Provinz Perugia",
+			"nl": "Provincie Perugia",
+			"es": "Provincia de Perugia"
 		}
 	},
 	{
@@ -67190,11 +67199,15 @@
 		"capital": "Pescara",
 		"population": 318909,
 		"type": "province",
-		"native": "Pescara",
+		"native": "Provincia di Pescara",
 		"wikidataId": "Q16242",
 		"translations": {
-			"it": "Pescara",
-			"en": "Province of Pescara"
+			"it": "Provincia di Pescara",
+			"en": "Province of Pescara",
+			"de": "Provinz Pescara",
+			"fr": "Province de Pescara",
+			"nl": "Provincie Pescara",
+			"es": "Provincia de Pescara"
 		}
 	},
 	{
@@ -67210,12 +67223,15 @@
 		"capital": "Piacenza",
 		"population": 287745,
 		"type": "province",
-		"native": "Piacenza",
+		"native": "Provincia di Piacenza",
 		"wikidataId": "Q16243",
 		"translations": {
-			"it": "Piacenza",
-			"fr": "Plaisance",
-			"en": "Province of Piacenza"
+			"it": "Provincia di Piacenza",
+			"fr": "Province de Plaisance",
+			"en": "Province of Piacenza",
+			"de": "Provinz Piacenza",
+			"nl": "Provincie Piacenza",
+			"es": "Provincia de Plasencia"
 		}
 	},
 	{
@@ -67235,7 +67251,11 @@
 		"wikidataId": "Q16245",
 		"translations": {
 			"it": "Pistoia",
-			"en": "Province of Pistoia"
+			"en": "Province of Pistoia",
+			"de": "Provinz Pistoia",
+			"fr": "Province de Pistoia",
+			"nl": "Provincie Pistoia",
+			"es": "Provincia de Pistoia"
 		}
 	},
 	{
@@ -67255,7 +67275,11 @@
 		"wikidataId": "Q16249",
 		"translations": {
 			"it": "Potenza",
-			"en": "Province of Potenza"
+			"en": "Province of Potenza",
+			"de": "Provinz Potenza",
+			"fr": "Province de Potenza",
+			"nl": "Provincie Potenza",
+			"es": "Provincia de Potenza"
 		}
 	},
 	{
@@ -67274,7 +67298,11 @@
 		"native": "Prato",
 		"wikidataId": "Q16250",
 		"translations": {
-			"it": "Prato"
+			"it": "Prato",
+			"de": "Provinz Prato",
+			"fr": "Province de Prato",
+			"nl": "Provincie Prat",
+			"es": "Provincia de Prato"
 		}
 	},
 	{
@@ -67290,13 +67318,14 @@
 		"capital": "Ravenna",
 		"population": 394543,
 		"type": "province",
-		"native": "Ravenna",
+		"native": "Provincia di Ravenna",
 		"wikidataId": "Q16252",
 		"translations": {
-			"it": "Ravenna",
-			"es": "Rávena",
-			"fr": "Ravenne",
-			"en": "Province of Ravenna"
+			"es": "Provincia de Rávena",
+			"fr": "Province de Ravenne",
+			"en": "Province of Ravenna",
+			"nl": "Provincie Ravenna",
+			"de": "Provinz Ravenna"
 		}
 	},
 	{
@@ -67315,7 +67344,11 @@
 		"native": "Provincia di Reggio Calabria",
 		"wikidataId": "Q16253",
 		"translations": {
-			"en": "Province of Reggio Calabria"
+			"en": "Province of Reggio Calabria",
+			"de": "Provinz Reggio Calabria",
+			"fr": "Province de Reggio de Calabre",
+			"nl": "Provincie Reggio Calabria",
+			"es": "Provincia de Reggio Calabria"
 		}
 	},
 	{
@@ -67331,13 +67364,15 @@
 		"capital": "Reggio nell'Emilia",
 		"population": 531891,
 		"type": "province",
-		"native": "Reggio Emilia",
+		"native": "Provincia di Reggio Emilia",
 		"wikidataId": "Q16254",
 		"translations": {
-			"it": "Reggio Emilia",
-			"es": "Reggio Emilia",
-			"fr": "Reggio d'Émilie",
-			"en": "Province of Reggio Emilia"
+			"it": "Provincia di Reggio Emilia",
+			"es": "Provincia de Reggio Emilia",
+			"fr": "Province de Reggio d'Émilie",
+			"en": "Province of Reggio Emilia",
+			"nl": "Provincie Reggio Emilia",
+			"de": "Provinz Reggio Emilia"
 		}
 	},
 	{
@@ -67353,11 +67388,15 @@
 		"capital": "Rieti",
 		"population": 155503,
 		"type": "province",
-		"native": "Rieti",
+		"native": "Provincia di Rieti",
 		"wikidataId": "Q16267",
 		"translations": {
-			"it": "Rieti",
-			"en": "Province of Rieti"
+			"it": "Provincia di Rieti",
+			"en": "Province of Rieti",
+			"de": "Provinz Rieti",
+			"fr": "Province de Rieti",
+			"nl": "Provincie Rieti",
+			"es": "Provincia de Rieti"
 		}
 	},
 	{
@@ -67397,11 +67436,15 @@
 		"capital": "Rovigo",
 		"population": 234937,
 		"type": "province",
-		"native": "Rovigo",
+		"native": "Provincia di Rovigo",
 		"wikidataId": "Q16270",
 		"translations": {
-			"it": "Rovigo",
-			"en": "Province of Rovigo"
+			"it": "Provincia di Rovigo",
+			"en": "Province of Rovigo",
+			"de": "Provinz Rovigo",
+			"fr": "Province de Rovigo",
+			"nl": "Provincie Rovigo",
+			"es": "Provincia de Rovigo"
 		}
 	},
 	{
@@ -67420,8 +67463,8 @@
 		"native": "Provincia di Salerno",
 		"wikidataId": "Q16271",
 		"translations": {
-			"it": "Provincia di Salerno",
 			"fr": "Province de Salerne",
+			"it": "Provincia di Salerno",
 			"en": "Province of Salerno",
 			"de": "Provinz Salerno",
 			"nl": "Provincie Salerno",
@@ -67441,11 +67484,15 @@
 		"capital": "Sassari",
 		"population": 471957,
 		"type": "province",
-		"native": "Sassari",
+		"native": "Provincia di Sassari",
 		"wikidataId": "",
 		"translations": {
-			"it": "Sassari",
-			"en": "Province of Sassari"
+			"it": "Provincia di Sassari",
+			"en": "Province of Sassari",
+			"de": "provinz Sassari",
+			"fr": "Province de Sassari",
+			"nl": "Provincie Sassari",
+			"es": "Provincia de Sácer"
 		}
 	},
 	{
@@ -67461,12 +67508,15 @@
 		"capital": "Savona",
 		"population": 276064,
 		"type": "province",
-		"native": "Savona",
+		"native": "Provincia di Savona",
 		"wikidataId": "Q16274",
 		"translations": {
-			"it": "Savona",
-			"fr": "Savone",
-			"en": "Province of Savona"
+			"fr": "Province de Savone",
+			"it": "Provincia di Savona",
+			"en": "Province of Savona",
+			"de": "Provinz Savona",
+			"nl": "Provincie Savona",
+			"es": "Provincia de Savona"
 		}
 	},
 	{
@@ -67482,12 +67532,15 @@
 		"capital": "Siena",
 		"population": 267197,
 		"type": "province",
-		"native": "Siena",
+		"native": "Provincia di Siena",
 		"wikidataId": "Q16275",
 		"translations": {
-			"it": "Siena",
 			"fr": "Sienne",
-			"en": "Province of Siena"
+			"en": "Province of Siena",
+			"it": "Provincia di Siena",
+			"de": "Provinz Siena",
+			"nl": "Provincie Siena",
+			"es": "Provincia de Siena"
 		}
 	},
 	{
@@ -67503,13 +67556,14 @@
 		"capital": "Siracusa",
 		"population": 399224,
 		"type": "province",
-		"native": "Siracusa",
+		"native": "Provincia di Siracusa",
 		"wikidataId": "Q16277",
 		"translations": {
-			"de": "Syrakus",
-			"it": "Siracusa",
-			"fr": "Syracuse",
-			"en": "Syracuse"
+			"de": "Provinz Syrakus",
+			"fr": "Province de Syracuse",
+			"en": "Province of Syracuse",
+			"nl": "Provincie Syracuse",
+			"es": "Provincia de Siracusa"
 		}
 	},
 	{
@@ -67525,11 +67579,14 @@
 		"capital": "Sondrio",
 		"population": 179165,
 		"type": "province",
-		"native": "Sondrio",
+		"native": "Provincia di Sondrio",
 		"wikidataId": "",
 		"translations": {
-			"it": "Sondrio",
-			"en": "Province of Sondrio"
+			"it": "Provincia di Sondrio",
+			"en": "Province of Sondrio",
+			"fr": "Province de Sondrio",
+			"nl": "Provincie Sondrio",
+			"es": "Provincia de Sondrio"
 		}
 	},
 	{
@@ -67545,15 +67602,16 @@
 		"capital": "Taranto",
 		"population": 576756,
 		"type": "province",
-		"native": "Taranto",
+		"native": "Provincia di Taranto",
 		"wikidataId": "Q16283",
 		"translations": {
-			"it": "Taranto",
-			"es": "Tarento",
-			"fr": "Tarente",
-			"de": "Tarent",
+			"es": "Provincia de Tarento",
+			"fr": "Province de Tarente",
+			"de": "Provinz Tarent",
+			"it": "Provincia di Taranto",
 			"en": "Province of Taranto",
-			"pt": "Província de Taranto"
+			"pt": "Província de Taranto",
+			"nl": "Provincie Taranto"
 		}
 	},
 	{
@@ -67569,11 +67627,14 @@
 		"capital": "Teramo",
 		"population": 308052,
 		"type": "province",
-		"native": "Teramo",
+		"native": "Provincia di Teramo",
 		"wikidataId": "Q16284",
 		"translations": {
-			"it": "Teramo",
-			"en": "Province of Teramo"
+			"en": "Province of Teramo",
+			"de": "Provinz Teramo",
+			"nl": "Provincie Teramo",
+			"es": "Provincia de Teramo",
+			"fr": "Province de Teramo"
 		}
 	},
 	{
@@ -67589,11 +67650,15 @@
 		"capital": "Terni",
 		"population": 225633,
 		"type": "province",
-		"native": "Terni",
+		"native": "Provincia di Terni",
 		"wikidataId": "Q16286",
 		"translations": {
-			"it": "Terni",
-			"en": "Province of Terni"
+			"it": "Provincia di Terni",
+			"en": "Province of Terni",
+			"de": "Provinz Terni",
+			"nl": "Provincie Terni",
+			"es": "Provincia de Terni",
+			"fr": "Province de Terni"
 		}
 	},
 	{
@@ -67609,12 +67674,15 @@
 		"capital": "Treviso",
 		"population": 885616,
 		"type": "province",
-		"native": "Treviso",
+		"native": "Provincia di Treviso",
 		"wikidataId": "Q16292",
 		"translations": {
-			"it": "Treviso",
-			"fr": "Trévise",
-			"en": "Province of Treviso"
+			"it": "Provincia di Treviso",
+			"fr": "Province de Trévise",
+			"en": "Province of Treviso",
+			"nl": "Provincie Treviso",
+			"de": "Provinz Treviso",
+			"es": "Provincia de Treviso"
 		}
 	},
 	{
@@ -67630,12 +67698,15 @@
 		"capital": "Varese",
 		"population": 881907,
 		"type": "province",
-		"native": "Varese",
+		"native": "Provincia di Varese",
 		"wikidataId": "Q16299",
 		"translations": {
-			"it": "Varese",
-			"fr": "Varèse",
-			"en": "Province of Varese"
+			"it": "Provincia di Varese",
+			"fr": "Province de Varese",
+			"en": "Province of Varese",
+			"de": "Provinz Varese",
+			"nl": "Provincie Varese",
+			"es": "Provincia de Varese"
 		}
 	},
 	{
@@ -67676,12 +67747,15 @@
 		"capital": "Vercelli",
 		"population": 170911,
 		"type": "province",
-		"native": "Vercelli",
+		"native": "Provincia di Vercelli",
 		"wikidataId": "Q15096",
 		"translations": {
-			"it": "Vercelli",
-			"fr": "Verceil",
-			"en": "Province of Vercelli"
+			"it": "Provincia di Vercelli",
+			"fr": "Province de Verceil",
+			"en": "Province of Vercelli",
+			"de": "Provinz Vercelli",
+			"nl": "Provincie Vercelli",
+			"es": "Provincia de Vercelli"
 		}
 	},
 	{
@@ -67722,11 +67796,15 @@
 		"capital": "Vibo Valentia",
 		"population": 160073,
 		"type": "province",
-		"native": "Vibo Valentia",
+		"native": "Provincia di Vibo Valentia",
 		"wikidataId": "",
 		"translations": {
-			"it": "Vibo Valentia",
-			"en": "Province of Vibo Valentia"
+			"it": "Provincia di Vibo Valentia",
+			"en": "Province of Vibo Valentia",
+			"nl": "Provincie Vibo Valentia",
+			"es": "Provincia de Vibo Valentia",
+			"fr": "Province de Vibo Valentia",
+			"de": "Provinz Vibo Valentia"
 		}
 	},
 	{
@@ -67742,12 +67820,15 @@
 		"capital": "Vicenza",
 		"population": 863044,
 		"type": "province",
-		"native": "Vicenza",
+		"native": "Provincia di Vicenza",
 		"wikidataId": "Q16316",
 		"translations": {
-			"it": "Vicenza",
-			"fr": "Vicence",
-			"en": "Province of Vicenza"
+			"it": "Provincia di Vicenza",
+			"fr": "Province de Vicence",
+			"en": "Province of Vicenza",
+			"de": "Provinz Vicenza",
+			"nl": "Provincie Vicenza",
+			"es": "Provincia de Vicenza"
 		}
 	},
 	{
@@ -67763,12 +67844,15 @@
 		"capital": "Viterbo",
 		"population": 317030,
 		"type": "province",
-		"native": "Viterbo",
+		"native": "Provincia di Viterbo",
 		"wikidataId": "Q16318",
 		"translations": {
-			"it": "Viterbo",
-			"fr": "Viterbe",
-			"en": "Province of Viterbo"
+			"it": "Provincia di Viterbo",
+			"fr": "Province de Viterbo",
+			"en": "Province of Viterbo",
+			"de": "Provinz Viterbo",
+			"nl": "Provincie Viterbo",
+			"es": "Provincia de Viterbo"
 		}
 	},
 	{
@@ -67845,10 +67929,10 @@
 		"capital": "Turin",
 		"population": 2259523,
 		"type": "province",
-		"native": "Torino",
+		"native": "Provincia di Torino",
 		"wikidataId": "Q16287",
 		"translations": {
-			"it": "Torino",
+			"it": "Provincia di Torino",
 			"es": "Provincia de Turín",
 			"fr": "Province de Turin",
 			"de": "Provinz Turin",
@@ -67887,7 +67971,8 @@
 			"ru": "Трапани",
 			"zh": "特拉帕尼省",
 			"ur": "صوبہ تراپانی",
-			"it": "Trapani"
+			"it": "Trapani",
+			"nl": "Provincie Trapani"
 		}
 	},
 	{
@@ -67903,11 +67988,15 @@
 		"capital": "Trieste",
 		"population": 234493,
 		"type": "province",
-		"native": "Trieste",
+		"native": "Provincia di Trieste",
 		"wikidataId": "Q16293",
 		"translations": {
-			"de": "Triest",
-			"it": "Trieste"
+			"de": "Provinz Triest",
+			"it": "Provincia di Trieste",
+			"nl": "Provincie Triëst",
+			"es": "Provincia de Trieste",
+			"fr": "Province de Trieste",
+			"en": "Province of Trieste"
 		}
 	},
 	{
@@ -67923,11 +68012,15 @@
 		"capital": "Udine",
 		"population": 528791,
 		"type": "province",
-		"native": "Udine",
+		"native": "Provincia di Udine",
 		"wikidataId": "Q160570",
 		"translations": {
-			"it": "Udine",
-			"de": "Friaul"
+			"it": "Provincia di Udine",
+			"de": "Provinz Udine",
+			"en": "Province of Udine",
+			"nl": "Provincie Udine",
+			"es": "Provincia de Udine",
+			"fr": "Province d'Udine"
 		}
 	},
 	{
@@ -67951,7 +68044,7 @@
 			"nl": "Provincie Aosta",
 			"de": "Provinz Aosta",
 			"es": "Provincia de Aosta",
-			"en": "Valle d'Aosta"
+			"en": "Province of Aosta"
 		}
 	},
 	{
@@ -83842,10 +83935,10 @@
 		"capital": "Idrī",
 		"population": 78532,
 		"type": "municipality|governarate",
-		"native": "شعبية وادي الشاطئ",
+		"native": "الشاطئ",
 		"wikidataId": "Q48232",
 		"translations": {
-			"ar": "شعبية وادي الشاطئ",
+			"ar": "الشاطئ",
 			"en": "Wadi ash Shati'",
 			"es": "Wadi ash Shati'",
 			"fr": "Wadi ash Shati'",
@@ -84472,11 +84565,11 @@
 		"latitude": "30.33717",
 		"longitude": "-9.54507",
 		"timezone": "Africa/Casablanca",
-		"capital": null,
+		"capital": "Inezgane",
 		"population": 541118,
 		"type": "province",
 		"native": "إقليم إنزكان أيت ملول",
-		"wikidataId": "",
+		"wikidataId": "Q1662264",
 		"translations": {
 			"fr": "Inezgane-Ait Melloul",
 			"ar": "إقليم إنزكان أيت ملول"
@@ -108973,7 +109066,7 @@
 		"latitude": "10.58092",
 		"longitude": "122.62621",
 		"timezone": "Asia/Manila",
-		"capital": null,
+		"capital": "Jordan",
 		"population": 192874,
 		"type": "province",
 		"native": "Lalawigan ng Guimaras",
@@ -112917,7 +113010,7 @@
 		"latitude": "32.46",
 		"longitude": "35.3",
 		"timezone": "Asia/Hebron",
-		"capital": "Jenin",
+		"capital": "جنين",
 		"population": 311231,
 		"type": "governorate",
 		"native": "محافظة جنين",
@@ -121761,12 +121854,12 @@
 		"capital": "Makkah",
 		"population": 8557766,
 		"type": "region",
-		"native": "مِـنْـطَـقَـة مَـكَّـة الـمُـكَـرَّمَـة",
+		"native": "مكة المكرّمة",
 		"wikidataId": "Q234167",
 		"translations": {
 			"en": "Mecca Region",
 			"fr": "La Mecque",
-			"ar": "مِـنْـطَـقَـة مَـكَّـة الـمُـكَـرَّمَـة",
+			"ar": "مكة المكرّمة",
 			"es": "Región de La Meca",
 			"bn": "মক্কা অঞ্চল",
 			"de": "Mekka-Region",

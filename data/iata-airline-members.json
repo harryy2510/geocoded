@@ -810,6 +810,15 @@
 		"countryCode": "TR"
 	},
 	{
+		"name": "BBN Airlines Indonesia",
+		"iataDesignator": "0B",
+		"accountingCode": "245",
+		"icaoCode": "BBL",
+		"countryName": "Indonesia",
+		"controlledDuplicate": false,
+		"countryCode": "ID"
+	},
+	{
 		"name": "Belavia Belarusian Airlines",
 		"iataDesignator": "B2",
 		"accountingCode": null,
@@ -1739,7 +1748,7 @@
 	{
 		"name": "Ibom Air",
 		"iataDesignator": "QI",
-		"accountingCode": null,
+		"accountingCode": "704",
 		"icaoCode": "IAN",
 		"countryName": "Nigeria",
 		"controlledDuplicate": false,
@@ -2358,15 +2367,6 @@
 		"countryCode": "EG"
 	},
 	{
-		"name": "New Pacific Airlines",
-		"iataDesignator": "7H",
-		"accountingCode": "808",
-		"icaoCode": "RVF",
-		"countryName": "United States",
-		"controlledDuplicate": false,
-		"countryCode": "US"
-	},
-	{
 		"name": "Nile Air",
 		"iataDesignator": "NP",
 		"accountingCode": "325",
@@ -2493,6 +2493,15 @@
 		"countryCode": "PY"
 	},
 	{
+		"name": "PAS",
+		"iataDesignator": "UF",
+		"accountingCode": "505",
+		"icaoCode": "PER",
+		"countryName": "Egypt",
+		"controlledDuplicate": false,
+		"countryCode": "EG"
+	},
+	{
 		"name": "Pegasus Airlines",
 		"iataDesignator": "PC",
 		"accountingCode": "624",
@@ -2500,15 +2509,6 @@
 		"countryName": "Türkiye",
 		"controlledDuplicate": false,
 		"countryCode": "TR"
-	},
-	{
-		"name": "Petroleum Air Services",
-		"iataDesignator": "UF",
-		"accountingCode": "505",
-		"icaoCode": "PER",
-		"countryName": "Egypt",
-		"controlledDuplicate": false,
-		"countryCode": "EG"
 	},
 	{
 		"name": "PGA-Portugalia Airlines",
@@ -2887,15 +2887,6 @@
 		"countryName": "Russian Federation",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
-	},
-	{
-		"name": "SmartLynx Airlines Malta",
-		"iataDesignator": "2N",
-		"accountingCode": null,
-		"icaoCode": "LYX",
-		"countryName": "Malta",
-		"controlledDuplicate": true,
-		"countryCode": "MT"
 	},
 	{
 		"name": "Smartwings",

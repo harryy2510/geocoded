@@ -22138,8 +22138,8 @@
 		"referenceName": "Ekai Chin",
 		"names": [
 			{
-				"printName": "Ekai Chin",
-				"invertedName": "Chin, Ekai"
+				"printName": "Laoktu Chin",
+				"invertedName": "Chin, Laoktu"
 			}
 		],
 		"macrolanguageCode": null,
@@ -72967,8 +72967,12 @@
 		"referenceName": "Eastern Magar",
 		"names": [
 			{
-				"printName": "Eastern Magar",
-				"invertedName": "Magar, Eastern"
+				"printName": "Magar",
+				"invertedName": "Magar"
+			},
+			{
+				"printName": "Magar Dhut",
+				"invertedName": "Magar Dhut"
 			}
 		],
 		"macrolanguageCode": null,
@@ -77669,7 +77673,7 @@
 		"names": [
 			{
 				"printName": "Western Magar",
-				"invertedName": "Magar, Western"
+				"invertedName": "Western Magar"
 			}
 		],
 		"macrolanguageCode": null,
@@ -77740,8 +77744,12 @@
 		"referenceName": "Mara Chin",
 		"names": [
 			{
-				"printName": "Mara Chin",
-				"invertedName": "Chin, Mara"
+				"printName": "Mara",
+				"invertedName": "Mara"
+			},
+			{
+				"printName": "Shendu",
+				"invertedName": "Shendu"
 			}
 		],
 		"macrolanguageCode": null,
@@ -105258,6 +105266,10 @@
 		"referenceName": "North Slavey",
 		"names": [
 			{
+				"printName": "Dene Kedé",
+				"invertedName": "Dene Kedé"
+			},
+			{
 				"printName": "North Slavey",
 				"invertedName": "Slavey, North"
 			}
@@ -114497,6 +114509,10 @@
 		"type": "living",
 		"referenceName": "Southern Tutchone",
 		"names": [
+			{
+				"printName": "Dän K'è",
+				"invertedName": "Dän K'è"
+			},
 			{
 				"printName": "Southern Tutchone",
 				"invertedName": "Tutchone, Southern"
@@ -135683,6 +135699,10 @@
 		"type": "living",
 		"referenceName": "South Slavey",
 		"names": [
+			{
+				"printName": "Dene Zhatié",
+				"invertedName": "Dene Zhatié"
+			},
 			{
 				"printName": "South Slavey",
 				"invertedName": "Slavey, South"

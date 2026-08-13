@@ -333,8 +333,8 @@
 		"countryName": "Afghanistan",
 		"iataCode": "OAZ",
 		"iataCodeSource": "unlocode-iata-column",
-		"name": "Camp Bastion",
-		"nameWithoutDiacritics": "Camp Bastion",
+		"name": "Shorabak",
+		"nameWithoutDiacritics": "Shorabak",
 		"alternateNames": [],
 		"subdivisionCode": "HEL",
 		"functionCode": "--34----",
@@ -342,14 +342,14 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
-		"date": "1307",
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
 		"coordinates": "3151N 06413E",
 		"latitude": 31.85,
 		"longitude": 64.216667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "CBN"
 	},
 	{
@@ -3528,8 +3528,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3438S 05837W",
 		"latitude": -34.633333,
@@ -5198,8 +5198,8 @@
 		"countryName": "Austria",
 		"iataCode": "VIE",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Wein",
-		"nameWithoutDiacritics": "Wein",
+		"name": "Wien",
+		"nameWithoutDiacritics": "Wien",
 		"alternateNames": [],
 		"subdivisionCode": "9",
 		"functionCode": "-2345---",
@@ -5216,7 +5216,7 @@
 		"latitude": 48.2,
 		"longitude": 16.366667,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "VIE"
 	},
 	{
@@ -17363,6 +17363,31 @@
 		"airportLocationCode": "RTY"
 	},
 	{
+		"unLocode": "AUSAD",
+		"countryCode": "AU",
+		"countryName": "Australia",
+		"iataCode": "SAD",
+		"iataCodeSource": "unlocode-location-code",
+		"name": "Maryborough",
+		"nameWithoutDiacritics": "Maryborough",
+		"alternateNames": [],
+		"subdivisionCode": "VIC",
+		"functionCode": "--34----",
+		"functions": [
+			"road",
+			"airport"
+		],
+		"status": "RL",
+		"statusName": "Recognised location",
+		"date": "2501",
+		"coordinates": "3703S 14344E",
+		"latitude": -37.05,
+		"longitude": 143.733333,
+		"remarks": null,
+		"changeIndicator": "¦",
+		"airportLocationCode": "SAD"
+	},
+	{
 		"unLocode": "AUSBR",
 		"countryCode": "AU",
 		"countryName": "Australia",
@@ -20334,12 +20359,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1207",
+		"date": "2501",
 		"coordinates": "6006N 01957E",
 		"latitude": 60.1,
 		"longitude": 19.95,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "MHQ"
 	},
 	{
@@ -20980,12 +21005,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1101",
+		"date": "2501",
 		"coordinates": "5050N 00420E",
 		"latitude": 50.833333,
 		"longitude": 4.333333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "BRU"
 	},
 	{
@@ -35303,14 +35328,14 @@
 			"port",
 			"airport"
 		],
-		"status": "AI",
-		"statusName": "Code adopted by international organisation",
-		"date": "1307",
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
 		"coordinates": "2454N 07612W",
 		"latitude": 24.9,
 		"longitude": -76.2,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "RSD"
 	},
 	{
@@ -37003,8 +37028,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9501",
 		"coordinates": null,
 		"latitude": null,
@@ -37103,8 +37128,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9307",
 		"coordinates": null,
 		"latitude": null,
@@ -37660,8 +37685,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9501",
 		"coordinates": null,
 		"latitude": null,
@@ -37733,8 +37758,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9501",
 		"coordinates": null,
 		"latitude": null,
@@ -37906,8 +37931,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9501",
 		"coordinates": null,
 		"latitude": null,
@@ -38102,8 +38127,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9307",
 		"coordinates": null,
 		"latitude": null,
@@ -38279,8 +38304,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9307",
 		"coordinates": null,
 		"latitude": null,
@@ -38839,8 +38864,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9307",
 		"coordinates": null,
 		"latitude": null,
@@ -39392,8 +39417,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9506",
 		"coordinates": null,
 		"latitude": null,
@@ -39544,8 +39569,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9501",
 		"coordinates": null,
 		"latitude": null,
@@ -39826,8 +39851,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9506",
 		"coordinates": null,
 		"latitude": null,
@@ -39851,8 +39876,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9501",
 		"coordinates": null,
 		"latitude": null,
@@ -40374,8 +40399,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9307",
 		"coordinates": null,
 		"latitude": null,
@@ -40622,8 +40647,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9501",
 		"coordinates": null,
 		"latitude": null,
@@ -51169,8 +51194,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0058S 01600E",
 		"latitude": -0.966667,
@@ -51793,8 +51818,8 @@
 			"airport",
 			"postalExchange"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "4655N 00636E",
 		"latitude": 46.916667,
@@ -51818,8 +51843,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1101",
 		"coordinates": null,
 		"latitude": null,
@@ -51945,8 +51970,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0528N 00312W",
 		"latitude": 5.466667,
@@ -51969,8 +51994,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -52065,8 +52090,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0639N 00412W",
 		"latitude": 6.65,
@@ -52089,8 +52114,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0916N 00300W",
 		"latitude": 9.266667,
@@ -52113,8 +52138,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0844N 00729W",
 		"latitude": 8.733333,
@@ -52137,8 +52162,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0616N 00703W",
 		"latitude": 6.266667,
@@ -52161,8 +52186,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0931N 00629W",
 		"latitude": 9.516667,
@@ -52281,8 +52306,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0715N 00809W",
 		"latitude": 7.25,
@@ -52500,8 +52525,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0801N 00609W",
 		"latitude": 8.016667,
@@ -52524,8 +52549,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0936N 00401W",
 		"latitude": 9.6,
@@ -52572,8 +52597,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -52670,8 +52695,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0816N 00740W",
 		"latitude": 8.266667,
@@ -54169,8 +54194,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0556N 01010E",
 		"latitude": 5.933333,
@@ -54193,8 +54218,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0435N 01341E",
 		"latitude": 4.583333,
@@ -54267,8 +54292,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -54291,8 +54316,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0543N 01055E",
 		"latitude": 5.716667,
@@ -54341,8 +54366,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1021N 01514E",
 		"latitude": 10.35,
@@ -54390,8 +54415,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1007N 01426E",
 		"latitude": 10.116667,
@@ -54996,6 +55021,33 @@
 		"airportLocationCode": "CNI"
 	},
 	{
+		"unLocode": "CNCNZ",
+		"countryCode": "CN",
+		"countryName": "China",
+		"iataCode": "CNZ",
+		"iataCodeSource": "unlocode-location-code",
+		"name": "Chenzhou",
+		"nameWithoutDiacritics": "Chenzhou",
+		"alternateNames": [],
+		"subdivisionCode": "HN",
+		"functionCode": "-234-6--",
+		"functions": [
+			"rail",
+			"road",
+			"airport",
+			"multimodal"
+		],
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "2547N 11301E",
+		"latitude": 25.783333,
+		"longitude": 113.016667,
+		"remarks": null,
+		"changeIndicator": "¦",
+		"airportLocationCode": "CNZ"
+	},
+	{
 		"unLocode": "CNCQI",
 		"countryCode": "CN",
 		"countryName": "China",
@@ -55210,8 +55262,8 @@
 		"countryName": "China",
 		"iataCode": "DIG",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Diqing Shangri-La",
-		"nameWithoutDiacritics": "Diqing Shangri-La",
+		"name": "Diqing  Shangri-La",
+		"nameWithoutDiacritics": "Diqing  Shangri-La",
 		"alternateNames": [],
 		"subdivisionCode": "YN",
 		"functionCode": "-234----",
@@ -55303,7 +55355,7 @@
 		"latitude": 40.15,
 		"longitude": 94.666667,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "DNH"
 	},
 	{
@@ -55636,8 +55688,8 @@
 		"countryName": "China",
 		"iataCode": "GYS",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Guangyuan",
-		"nameWithoutDiacritics": "Guangyuan",
+		"name": "Guangyuan Panlong Apt",
+		"nameWithoutDiacritics": "Guangyuan Panlong Apt",
 		"alternateNames": [],
 		"subdivisionCode": "SC",
 		"functionCode": "-234-6--",
@@ -55856,7 +55908,7 @@
 		"latitude": 27.566667,
 		"longitude": 110.016667,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "HJJ"
 	},
 	{
@@ -56261,6 +56313,34 @@
 		"airportLocationCode": "JGS"
 	},
 	{
+		"unLocode": "CNJHA",
+		"countryCode": "CN",
+		"countryName": "China",
+		"iataCode": "JHA",
+		"iataCodeSource": "unlocode-location-code",
+		"name": "Jinhua",
+		"nameWithoutDiacritics": "Jinhua",
+		"alternateNames": [],
+		"subdivisionCode": "ZJ",
+		"functionCode": "1234-6--",
+		"functions": [
+			"port",
+			"rail",
+			"road",
+			"airport",
+			"multimodal"
+		],
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "2907N 11939E",
+		"latitude": 29.116667,
+		"longitude": 119.65,
+		"remarks": null,
+		"changeIndicator": "¦",
+		"airportLocationCode": "JHA"
+	},
+	{
 		"unLocode": "CNJHG",
 		"countryCode": "CN",
 		"countryName": "China",
@@ -56397,21 +56477,22 @@
 		"nameWithoutDiacritics": "Jinan",
 		"alternateNames": [],
 		"subdivisionCode": "SD",
-		"functionCode": "-2345---",
+		"functionCode": "-23456--",
 		"functions": [
 			"rail",
 			"road",
 			"airport",
-			"postalExchange"
+			"postalExchange",
+			"multimodal"
 		],
 		"status": "AS",
 		"statusName": "Approved by national standardisation body",
-		"date": "1601",
+		"date": "2501",
 		"coordinates": "3640N 11700E",
 		"latitude": 36.666667,
 		"longitude": 117,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "JNA"
 	},
 	{
@@ -57687,7 +57768,7 @@
 		"latitude": 40.733333,
 		"longitude": 107.366667,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "RLK"
 	},
 	{
@@ -58152,8 +58233,8 @@
 		"countryName": "China",
 		"iataCode": "TGO",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Tongliao Apt",
-		"nameWithoutDiacritics": "Tongliao Apt",
+		"name": "Tongliao",
+		"nameWithoutDiacritics": "Tongliao",
 		"alternateNames": [],
 		"subdivisionCode": "NM",
 		"functionCode": "-234----",
@@ -58901,7 +58982,7 @@
 		"latitude": 37.466667,
 		"longitude": 121.383333,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "YAT"
 	},
 	{
@@ -58952,7 +59033,7 @@
 		"latitude": 38.45,
 		"longitude": 106.266667,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "YCH"
 	},
 	{
@@ -58961,8 +59042,8 @@
 		"countryName": "China",
 		"iataCode": "YCU",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Guangong Apt/Yuncheng",
-		"nameWithoutDiacritics": "Guangong Apt/Yuncheng",
+		"name": "Yuncheng",
+		"nameWithoutDiacritics": "Yuncheng",
 		"alternateNames": [],
 		"subdivisionCode": "SX",
 		"functionCode": "--34----",
@@ -59150,7 +59231,7 @@
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "YUA"
 	},
 	{
@@ -59177,7 +59258,7 @@
 		"latitude": 35.033333,
 		"longitude": 111.016667,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "YUN"
 	},
 	{
@@ -59350,8 +59431,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0832N 07714W",
 		"latitude": 8.533333,
@@ -59374,8 +59455,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0143N 07847W",
 		"latitude": 1.716667,
@@ -59398,8 +59479,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0410N 07258W",
 		"latitude": 4.166667,
@@ -59422,8 +59503,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0539N 07552W",
 		"latitude": 5.65,
@@ -59566,8 +59647,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0850N 07625W",
 		"latitude": 8.833333,
@@ -59590,8 +59671,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0701N 07126W",
 		"latitude": 7.016667,
@@ -59662,8 +59743,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -59760,8 +59841,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0435N 07258W",
 		"latitude": 4.583333,
@@ -59885,8 +59966,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0614N 07725W",
 		"latitude": 6.233333,
@@ -59982,8 +60063,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -60054,8 +60135,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0505N 07637W",
 		"latitude": 5.083333,
@@ -60102,8 +60183,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0342N 07545W",
 		"latitude": 3.7,
@@ -60248,8 +60329,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0102N 07553W",
 		"latitude": 1.033333,
@@ -60272,8 +60353,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0102N 07114W",
 		"latitude": 1.033333,
@@ -60320,8 +60401,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -60344,8 +60425,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0936N 07327W",
 		"latitude": 9.6,
@@ -60416,8 +60497,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0228N 07801W",
 		"latitude": 2.466667,
@@ -60465,8 +60546,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0902N 07358W",
 		"latitude": 9.033333,
@@ -60513,8 +60594,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -60537,8 +60618,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0520N 07222W",
 		"latitude": 5.333333,
@@ -60610,8 +60691,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0219N 07530W",
 		"latitude": 2.316667,
@@ -60634,8 +60715,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0820N 07705W",
 		"latitude": 8.333333,
@@ -60658,8 +60739,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0417N 07448W",
 		"latitude": 4.283333,
@@ -60706,8 +60787,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0234N 07754W",
 		"latitude": 2.566667,
@@ -60730,8 +60811,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0820N 07341W",
 		"latitude": 8.333333,
@@ -60754,8 +60835,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0313N 07551W",
 		"latitude": 3.216667,
@@ -60778,8 +60859,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0609N 07146W",
 		"latitude": 6.15,
@@ -60802,8 +60883,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0426N 07514W",
 		"latitude": 4.433333,
@@ -60850,8 +60931,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0049N 07738W",
 		"latitude": 0.816667,
@@ -60874,8 +60955,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0049N 07738W",
 		"latitude": 0.816667,
@@ -60898,8 +60979,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1001N 07438W",
 		"latitude": 10.016667,
@@ -60946,8 +61027,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0445N 07403W",
 		"latitude": 4.75,
@@ -61019,8 +61100,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0910N 07229W",
 		"latitude": 9.166667,
@@ -61043,8 +61124,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0319N 07354W",
 		"latitude": 3.316667,
@@ -61091,8 +61172,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0115S 06943W",
 		"latitude": -1.25,
@@ -61164,8 +61245,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0901N 07542W",
 		"latitude": 9.016667,
@@ -61188,8 +61269,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -61260,8 +61341,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0510N 07315W",
 		"latitude": 5.166667,
@@ -61284,8 +61365,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0917N 07450W",
 		"latitude": 9.283333,
@@ -61332,8 +61413,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -61356,8 +61437,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0915N 07426W",
 		"latitude": 9.25,
@@ -61380,8 +61461,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0431N 07316W",
 		"latitude": 4.516667,
@@ -61404,8 +61485,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -61428,8 +61509,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -61452,8 +61533,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -61483,7 +61564,7 @@
 		"coordinates": "0759N 07525W",
 		"latitude": 7.983333,
 		"longitude": -75.416667,
-		"remarks": "Monte L�bano",
+		"remarks": "Monte Líbano",
 		"changeIndicator": null,
 		"airportLocationCode": "MTB"
 	},
@@ -61525,8 +61606,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0108N 07003W",
 		"latitude": 1.133333,
@@ -61597,8 +61678,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -61645,8 +61726,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0828N 07645W",
 		"latitude": 8.466667,
@@ -61669,8 +61750,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -61717,8 +61798,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0537N 07213W",
 		"latitude": 5.616667,
@@ -61766,8 +61847,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0814N 07320W",
 		"latitude": 8.233333,
@@ -61790,8 +61871,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0454N 07120W",
 		"latitude": 4.9,
@@ -61814,8 +61895,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0700N 07443W",
 		"latitude": 7,
@@ -61987,8 +62068,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -62011,8 +62092,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0825N 07535W",
 		"latitude": 8.416667,
@@ -62035,8 +62116,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0946N 07446W",
 		"latitude": 9.766667,
@@ -62084,8 +62165,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0541N 07158W",
 		"latitude": 5.683333,
@@ -62183,8 +62264,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -62258,8 +62339,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0533N 07153W",
 		"latitude": 5.55,
@@ -62282,8 +62363,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -62306,8 +62387,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0618N 07012W",
 		"latitude": 6.3,
@@ -62355,8 +62436,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -62379,8 +62460,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0655N 07154W",
 		"latitude": 6.916667,
@@ -62403,8 +62484,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1036N 07516W",
 		"latitude": 10.6,
@@ -62427,8 +62508,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0234N 07239W",
 		"latitude": 2.566667,
@@ -62451,8 +62532,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -62475,8 +62556,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1046N 07301W",
 		"latitude": 10.766667,
@@ -62499,8 +62580,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0846N 07631W",
 		"latitude": 8.766667,
@@ -62523,8 +62604,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -62597,8 +62678,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -62621,8 +62702,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0543N 07256W",
 		"latitude": 5.716667,
@@ -62670,8 +62751,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -62744,8 +62825,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0838N 07507W",
 		"latitude": 8.633333,
@@ -62842,8 +62923,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0500N 07243W",
 		"latitude": 5,
@@ -62941,8 +63022,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -63015,8 +63096,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0630N 07146W",
 		"latitude": 6.5,
@@ -63039,8 +63120,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -63088,8 +63169,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -63136,8 +63217,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0405N 07613W",
 		"latitude": 4.083333,
@@ -63160,8 +63241,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0838N 07645W",
 		"latitude": 8.633333,
@@ -63184,8 +63265,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0801N 07705W",
 		"latitude": 8.016667,
@@ -63208,8 +63289,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0313N 07424W",
 		"latitude": 3.216667,
@@ -63232,8 +63313,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0619N 07611W",
 		"latitude": 6.316667,
@@ -63331,8 +63412,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0404N 07333W",
 		"latitude": 4.066667,
@@ -63355,8 +63436,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0852N 08330W",
 		"latitude": 8.866667,
@@ -63403,8 +63484,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -63525,8 +63606,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -64065,8 +64146,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2137N 08133W",
 		"latitude": 21.616667,
@@ -64266,8 +64347,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2145N 07900W",
 		"latitude": 21.75,
@@ -64363,8 +64444,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2045N 07539W",
 		"latitude": 20.75,
@@ -64438,8 +64519,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2225N 08340W",
 		"latitude": 22.416667,
@@ -64538,8 +64619,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2204N 08409W",
 		"latitude": 22.066667,
@@ -64612,8 +64693,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "2015N 07409W",
 		"latitude": 20.25,
@@ -64636,8 +64717,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2222N 07848W",
 		"latitude": 22.366667,
@@ -64736,8 +64817,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0250N 06041W",
 		"latitude": 2.833333,
@@ -64832,8 +64913,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -65142,6 +65223,31 @@
 		"remarks": null,
 		"changeIndicator": null,
 		"airportLocationCode": "BRQ"
+	},
+	{
+		"unLocode": "CZHML",
+		"countryCode": "CZ",
+		"countryName": "Czechia",
+		"iataCode": "HML",
+		"iataCodeSource": "unlocode-location-code",
+		"name": "Homole",
+		"nameWithoutDiacritics": "Homole",
+		"alternateNames": [],
+		"subdivisionCode": "31",
+		"functionCode": "--34----",
+		"functions": [
+			"road",
+			"airport"
+		],
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "4856N 01426E",
+		"latitude": 48.933333,
+		"longitude": 14.433333,
+		"remarks": null,
+		"changeIndicator": "+",
+		"airportLocationCode": "HML"
 	},
 	{
 		"unLocode": "CZHOL",
@@ -65978,7 +66084,7 @@
 		"latitude": 53.533333,
 		"longitude": 8.6,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "BRV"
 	},
 	{
@@ -67521,8 +67627,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "2307",
 		"coordinates": "5113N 01039E",
 		"latitude": 51.216667,
@@ -68271,8 +68377,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0607",
 		"coordinates": "4845N 01248E",
 		"latitude": 48.75,
@@ -68504,8 +68610,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1109N 04242E",
 		"latitude": 11.15,
@@ -68579,8 +68685,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1158N 04315E",
 		"latitude": 11.966667,
@@ -68603,8 +68709,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1146N 04254E",
 		"latitude": 11.766667,
@@ -69321,8 +69427,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2752N 00017W",
 		"latitude": 27.866667,
@@ -69370,8 +69476,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "3533N 00610E",
 		"latitude": 35.55,
@@ -69394,8 +69500,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -69418,8 +69524,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "3451N 00544E",
 		"latitude": 34.85,
@@ -69466,8 +69572,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "3137N 00213W",
 		"latitude": 31.616667,
@@ -69514,8 +69620,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2433N 00928E",
 		"latitude": 24.55,
@@ -69562,8 +69668,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -69586,8 +69692,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "3319N 00652E",
 		"latitude": 33.316667,
@@ -69660,8 +69766,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -69709,8 +69815,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2803N 00938E",
 		"latitude": 28.05,
@@ -69757,8 +69863,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2715N 00231E",
 		"latitude": 27.25,
@@ -69781,8 +69887,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -69805,8 +69911,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -69853,8 +69959,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "3155N 00524E",
 		"latitude": 31.916667,
@@ -69952,8 +70058,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -69976,8 +70082,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -70000,8 +70106,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "3528N 00121E",
 		"latitude": 35.466667,
@@ -70024,8 +70130,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2743N 00810W",
 		"latitude": 27.716667,
@@ -70076,8 +70182,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2248N 00527E",
 		"latitude": 22.8,
@@ -70100,8 +70206,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2914N 00016E",
 		"latitude": 29.233333,
@@ -70348,8 +70454,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0052N 07652W",
 		"latitude": 0.866667,
@@ -70496,8 +70602,8 @@
 			"airport",
 			"multimodal"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0029S 07658W",
 		"latitude": -0.483333,
@@ -70520,8 +70626,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0200S 07700W",
 		"latitude": -2,
@@ -70569,8 +70675,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0004N 07554W",
 		"latitude": 0.066667,
@@ -70642,8 +70748,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "2307",
 		"coordinates": "0011S 07820W",
 		"latitude": -0.183333,
@@ -70666,8 +70772,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0125S 07646W",
 		"latitude": -1.416667,
@@ -70738,8 +70844,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0048N 07742W",
 		"latitude": 0.8,
@@ -70812,8 +70918,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "4431N 07913W",
 		"latitude": 44.516667,
@@ -70836,8 +70942,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -71088,8 +71194,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2711N 03111E",
 		"latitude": 27.183333,
@@ -71237,8 +71343,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9506",
 		"coordinates": null,
 		"latitude": null,
@@ -71261,8 +71367,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2813N 03337E",
 		"latitude": 28.216667,
@@ -71456,8 +71562,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2910N 02530E",
 		"latitude": 29.166667,
@@ -71480,8 +71586,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2841N 03403E",
 		"latitude": 28.683333,
@@ -71657,8 +71763,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1307",
 		"coordinates": "1506N 03639E",
 		"latitude": 15.1,
@@ -71711,8 +71817,8 @@
 			"postalExchange",
 			"fixedTransport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "3947N 00452W",
 		"latitude": 39.783333,
@@ -72103,8 +72209,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0101",
 		"coordinates": null,
 		"latitude": null,
@@ -72599,8 +72705,8 @@
 			"postalExchange",
 			"multimodal"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "3922N 00202W",
 		"latitude": 39.366667,
@@ -72984,8 +73090,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0644N 04415E",
 		"latitude": 6.733333,
@@ -73129,8 +73235,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -73177,8 +73283,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0923N 03432E",
 		"latitude": 9.383333,
@@ -73249,8 +73355,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1151N 03800E",
 		"latitude": 11.85,
@@ -73346,8 +73452,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0516N 03943E",
 		"latitude": 5.266667,
@@ -73370,8 +73476,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -73394,8 +73500,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0554N 04337E",
 		"latitude": 5.9,
@@ -73466,8 +73572,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0715N 04043E",
 		"latitude": 7.25,
@@ -73610,8 +73716,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1202N 03902E",
 		"latitude": 12.033333,
@@ -73730,8 +73836,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0328N 03905E",
 		"latitude": 3.466667,
@@ -73866,11 +73972,11 @@
 		"countryName": "Finland",
 		"iataCode": "ENF",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Enontekiö (Enontekis)",
-		"nameWithoutDiacritics": "Enontekio (Enontekis)",
+		"name": "Enontekis (Enontekiö)",
+		"nameWithoutDiacritics": "Enontekis (Enontekio)",
 		"alternateNames": [
-			"Enontekis (Enontekio)",
-			"Enontekis (Enontekiö)"
+			"Enontekio (Enontekis)",
+			"Enontekiö (Enontekis)"
 		],
 		"subdivisionCode": "10",
 		"functionCode": "---4----",
@@ -73879,12 +73985,12 @@
 		],
 		"status": "AF",
 		"statusName": "Approved by national facilitation body",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6823N 02338E",
 		"latitude": 68.383333,
 		"longitude": 23.633333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "ENF"
 	},
 	{
@@ -73986,12 +74092,12 @@
 		],
 		"status": "AC",
 		"statusName": "Approved by Customs Authority",
-		"date": "1401",
+		"date": "2501",
 		"coordinates": "6414N 02741E",
 		"latitude": 64.233333,
 		"longitude": 27.683333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "KAJ"
 	},
 	{
@@ -74065,12 +74171,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6544N 02434E",
 		"latitude": 65.733333,
 		"longitude": 24.566667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "KEM"
 	},
 	{
@@ -74219,12 +74325,12 @@
 		],
 		"status": "AC",
 		"statusName": "Approved by Customs Authority",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6103N 02811E",
 		"latitude": 61.05,
 		"longitude": 28.183333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "LPP"
 	},
 	{
@@ -74270,12 +74376,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6006N 01957E",
 		"latitude": 60.1,
 		"longitude": 19.95,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "MHQ"
 	},
 	{
@@ -74299,12 +74405,12 @@
 		],
 		"status": "AC",
 		"statusName": "Approved by Customs Authority",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6141N 02716E",
 		"latitude": 61.683333,
 		"longitude": 27.266667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "MIK"
 	},
 	{
@@ -74329,12 +74435,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6501N 02528E",
 		"latitude": 65.016667,
 		"longitude": 25.466667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "OUL"
 	},
 	{
@@ -74357,12 +74463,12 @@
 		],
 		"status": "AC",
 		"statusName": "Approved by Customs Authority",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6128N 02338E",
 		"latitude": 61.466667,
 		"longitude": 23.633333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "PIR"
 	},
 	{
@@ -74386,12 +74492,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6129N 02148E",
 		"latitude": 61.483333,
 		"longitude": 21.8,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "POR"
 	},
 	{
@@ -74493,12 +74599,12 @@
 		],
 		"status": "AC",
 		"statusName": "Approved by Customs Authority",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6152N 02854E",
 		"latitude": 61.866667,
 		"longitude": 28.9,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "SVL"
 	},
 	{
@@ -74533,11 +74639,11 @@
 		"countryName": "Finland",
 		"iataCode": "TKU",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Åbo (Turku)",
-		"nameWithoutDiacritics": "Abo (Turku)",
+		"name": "Turku (Åbo)",
+		"nameWithoutDiacritics": "Turku (Abo)",
 		"alternateNames": [
-			"Turku (Abo)",
-			"Turku (Åbo)"
+			"Abo (Turku)",
+			"Åbo (Turku)"
 		],
 		"subdivisionCode": "19",
 		"functionCode": "1-34----",
@@ -74548,12 +74654,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6027N 02217E",
 		"latitude": 60.45,
 		"longitude": 22.283333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "TKU"
 	},
 	{
@@ -74577,12 +74683,12 @@
 		],
 		"status": "AF",
 		"statusName": "Approved by national facilitation body",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6130N 02345E",
 		"latitude": 61.5,
 		"longitude": 23.75,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "TMP"
 	},
 	{
@@ -74633,12 +74739,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1307",
+		"date": "2501",
 		"coordinates": "6306N 02136E",
 		"latitude": 63.1,
 		"longitude": 21.6,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "VAA"
 	},
 	{
@@ -74661,12 +74767,12 @@
 		],
 		"status": "AC",
 		"statusName": "Approved by Customs Authority",
-		"date": "1401",
+		"date": "2501",
 		"coordinates": "6018N 02451E",
 		"latitude": 60.3,
 		"longitude": 24.85,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "VAT"
 	},
 	{
@@ -75877,8 +75983,8 @@
 		"countryName": "France",
 		"iataCode": "CDG",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Charles-de-gaulle Apt/paris",
-		"nameWithoutDiacritics": "Charles-de-gaulle Apt/paris",
+		"name": "Charles-de-Gaulle Apt/Paris",
+		"nameWithoutDiacritics": "Charles-de-Gaulle Apt/Paris",
 		"alternateNames": [],
 		"subdivisionCode": "93",
 		"functionCode": "-2345---",
@@ -75895,7 +76001,7 @@
 		"latitude": 49.016667,
 		"longitude": 2.55,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "CDG"
 	},
 	{
@@ -77733,8 +77839,8 @@
 		"countryName": "France",
 		"iataCode": "ORY",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Orly",
-		"nameWithoutDiacritics": "Orly",
+		"name": "Orly Apt/Paris",
+		"nameWithoutDiacritics": "Orly Apt/Paris",
 		"alternateNames": [],
 		"subdivisionCode": "94",
 		"functionCode": "-234----",
@@ -78838,8 +78944,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0045S 00927E",
 		"latitude": -0.75,
@@ -78910,8 +79016,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0210S 01013E",
 		"latitude": -2.166667,
@@ -78934,8 +79040,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0040S 00927E",
 		"latitude": -0.666667,
@@ -79007,8 +79113,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0001S 01123E",
 		"latitude": -0.016667,
@@ -79031,8 +79137,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0155S 00918E",
 		"latitude": -1.916667,
@@ -79103,8 +79209,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -79202,8 +79308,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -79275,8 +79381,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0142S 01022E",
 		"latitude": -1.7,
@@ -79371,8 +79477,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0215S 01100E",
 		"latitude": -2.25,
@@ -79491,8 +79597,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0007N 01104E",
 		"latitude": 0.116667,
@@ -79661,8 +79767,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0258S 01018E",
 		"latitude": -2.966667,
@@ -79784,8 +79890,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0031N 01026E",
 		"latitude": 0.516667,
@@ -79833,8 +79939,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0231S 00945E",
 		"latitude": -2.516667,
@@ -79889,7 +79995,7 @@
 		"latitude": 51.666667,
 		"longitude": -1.283333,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "AGN"
 	},
 	{
@@ -79939,7 +80045,7 @@
 		"latitude": 51.166667,
 		"longitude": -1.766667,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "AMS"
 	},
 	{
@@ -79964,7 +80070,7 @@
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "AVR"
 	},
 	{
@@ -80197,22 +80303,23 @@
 		"countryName": "United Kingdom",
 		"iataCode": "BOL",
 		"iataCodeSource": "unlocode-iata-column",
-		"name": "Bally Kelly",
-		"nameWithoutDiacritics": "Bally Kelly",
+		"name": "Ballykelly",
+		"nameWithoutDiacritics": "Ballykelly",
 		"alternateNames": [],
 		"subdivisionCode": "CCG",
-		"functionCode": "---4----",
+		"functionCode": "--34----",
 		"functions": [
+			"road",
 			"airport"
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "2201",
+		"date": "2501",
 		"coordinates": "5504N 00701W",
 		"latitude": 55.066667,
 		"longitude": -7.016667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "BKO"
 	},
 	{
@@ -80385,12 +80492,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0001",
-		"coordinates": null,
-		"latitude": null,
-		"longitude": null,
+		"date": "2501",
+		"coordinates": "5700N 00727W",
+		"latitude": 57,
+		"longitude": -7.45,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "BRR"
 	},
 	{
@@ -80412,12 +80519,12 @@
 		],
 		"status": "AF",
 		"statusName": "Approved by national facilitation body",
-		"date": "0607",
-		"coordinates": null,
-		"latitude": null,
-		"longitude": null,
+		"date": "2501",
+		"coordinates": "5127N 00235W",
+		"latitude": 51.45,
+		"longitude": -2.583333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "BRS"
 	},
 	{
@@ -80437,12 +80544,12 @@
 		],
 		"status": "AF",
 		"statusName": "Approved by national facilitation body",
-		"date": "1101",
-		"coordinates": null,
-		"latitude": null,
-		"longitude": null,
+		"date": "2501",
+		"coordinates": "5214N 00043E",
+		"latitude": 52.233333,
+		"longitude": 0.716667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "BSE"
 	},
 	{
@@ -80469,6 +80576,31 @@
 		"remarks": null,
 		"changeIndicator": null,
 		"airportLocationCode": "BSH"
+	},
+	{
+		"unLocode": "GBBXW",
+		"countryCode": "GB",
+		"countryName": "United Kingdom",
+		"iataCode": "BXW",
+		"iataCodeSource": "unlocode-location-code",
+		"name": "Bexwell",
+		"nameWithoutDiacritics": "Bexwell",
+		"alternateNames": [],
+		"subdivisionCode": "NFK",
+		"functionCode": "---4-6--",
+		"functions": [
+			"airport",
+			"multimodal"
+		],
+		"status": "RL",
+		"statusName": "Recognised location",
+		"date": "2501",
+		"coordinates": "5236N 00024E",
+		"latitude": 52.6,
+		"longitude": 0.4,
+		"remarks": null,
+		"changeIndicator": "¦",
+		"airportLocationCode": "BXW"
 	},
 	{
 		"unLocode": "GBBZZ",
@@ -80716,7 +80848,7 @@
 		"latitude": 52.416667,
 		"longitude": -1.55,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "CVT"
 	},
 	{
@@ -82619,8 +82751,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "5110N 00102W",
 		"latitude": 51.166667,
@@ -82793,8 +82925,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0101",
 		"coordinates": null,
 		"latitude": null,
@@ -83410,8 +83542,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1228N 06128W",
 		"latitude": 12.466667,
@@ -83461,14 +83593,14 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "2407",
 		"coordinates": "4224N 04135E",
 		"latitude": 42.4,
 		"longitude": 41.583333,
 		"remarks": null,
-		"changeIndicator": "+",
+		"changeIndicator": null,
 		"airportLocationCode": "ANA"
 	},
 	{
@@ -84607,8 +84739,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "6550N 05320W",
 		"latitude": 65.833333,
@@ -84631,8 +84763,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -85239,8 +85371,8 @@
 		"countryName": "Guadeloupe",
 		"iataCode": "PTP",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Pointe-à-Pitre",
-		"nameWithoutDiacritics": "Pointe-a-Pitre",
+		"name": "Point-à-Pitre Apt",
+		"nameWithoutDiacritics": "Point-a-Pitre Apt",
 		"alternateNames": [],
 		"subdivisionCode": null,
 		"functionCode": "1-345---",
@@ -85276,8 +85408,8 @@
 			"airport",
 			"postalExchange"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9506",
 		"coordinates": null,
 		"latitude": null,
@@ -85532,12 +85664,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1101",
+		"date": "2501",
 		"coordinates": "3520N 02510E",
 		"latitude": 35.333333,
 		"longitude": 25.166667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "HER"
 	},
 	{
@@ -87746,7 +87878,7 @@
 		"latitude": 22.316667,
 		"longitude": 114.166667,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "HKG"
 	},
 	{
@@ -88905,8 +89037,8 @@
 			"port",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1307",
 		"coordinates": null,
 		"latitude": null,
@@ -89082,8 +89214,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0355S 13915E",
 		"latitude": -3.916667,
@@ -89130,8 +89262,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0123S 13352E",
 		"latitude": -1.383333,
@@ -89226,8 +89358,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1307",
 		"coordinates": "0254S 14045E",
 		"latitude": -2.9,
@@ -89250,8 +89382,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0112S 13230E",
 		"latitude": -1.2,
@@ -89643,8 +89775,8 @@
 			"port",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9506",
 		"coordinates": null,
 		"latitude": null,
@@ -90017,8 +90149,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9506",
 		"coordinates": null,
 		"latitude": null,
@@ -90066,8 +90198,8 @@
 			"port",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9506",
 		"coordinates": null,
 		"latitude": null,
@@ -92024,8 +92156,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0049N 10022E",
 		"latitude": 0.816667,
@@ -93637,8 +93769,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0115S 13845E",
 		"latitude": -1.25,
@@ -93737,8 +93869,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1007",
 		"coordinates": "5145N 00927W",
 		"latitude": 51.75,
@@ -94392,8 +94524,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1007",
 		"coordinates": "3727N 03501E",
 		"latitude": 37.45,
@@ -95207,26 +95339,27 @@
 		"countryName": "India",
 		"iataCode": "COK",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Cochin",
-		"nameWithoutDiacritics": "Cochin",
+		"name": "Kochi",
+		"nameWithoutDiacritics": "Kochi",
 		"alternateNames": [],
 		"subdivisionCode": "KL",
-		"functionCode": "1234-6--",
+		"functionCode": "123456--",
 		"functions": [
 			"port",
 			"rail",
 			"road",
 			"airport",
+			"postalExchange",
 			"multimodal"
 		],
-		"status": "AA",
-		"statusName": "Approved by competent national government agency",
-		"date": "0307",
-		"coordinates": "0958N 07614E",
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "0958N 07616E",
 		"latitude": 9.966667,
-		"longitude": 76.233333,
+		"longitude": 76.266667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "COK"
 	},
 	{
@@ -97000,14 +97133,14 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "2407",
 		"coordinates": "2327N 07525E",
 		"latitude": 23.45,
 		"longitude": 75.416667,
 		"remarks": null,
-		"changeIndicator": "+",
+		"changeIndicator": null,
 		"airportLocationCode": "NGD"
 	},
 	{
@@ -97589,8 +97722,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "2435N 08050E",
 		"latitude": 24.583333,
@@ -97796,7 +97929,7 @@
 		"latitude": 8.483333,
 		"longitude": 76.916667,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "TRV"
 	},
 	{
@@ -98016,8 +98149,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "3706N 04316E",
 		"latitude": 37.1,
@@ -98041,8 +98174,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "3632N 04421E",
 		"latitude": 36.533333,
@@ -98092,8 +98225,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "3349N 04126E",
 		"latitude": 33.816667,
@@ -98141,8 +98274,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3316N 04414E",
 		"latitude": 33.266667,
@@ -98192,8 +98325,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "3056N 04605E",
 		"latitude": 30.933333,
@@ -98217,8 +98350,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "3056N 04605E",
 		"latitude": 30.933333,
@@ -98267,8 +98400,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3720N 04607E",
 		"latitude": 37.333333,
@@ -98363,8 +98496,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3610N 05735E",
 		"latitude": 36.166667,
@@ -98583,8 +98716,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3611N 05310E",
 		"latitude": 36.183333,
@@ -98681,8 +98814,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3225N 04813E",
 		"latitude": 32.416667,
@@ -98705,8 +98838,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "2856N 05338E",
 		"latitude": 28.933333,
@@ -98729,8 +98862,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3654N 05424E",
 		"latitude": 36.9,
@@ -98753,8 +98886,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3020N 05049E",
 		"latitude": 30.333333,
@@ -98825,8 +98958,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "4628N 02449E",
 		"latitude": 46.466667,
@@ -98873,8 +99006,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3255N 05133E",
 		"latitude": 32.916667,
@@ -98923,8 +99056,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3457N 04640E",
 		"latitude": 34.95,
@@ -98947,8 +99080,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3335N 04624E",
 		"latitude": 33.583333,
@@ -99140,8 +99273,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "2722N 05311E",
 		"latitude": 27.366667,
@@ -99264,8 +99397,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "4558N 03829E",
 		"latitude": 45.966667,
@@ -99312,8 +99445,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3050N 04932E",
 		"latitude": 30.833333,
@@ -99336,8 +99469,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3939N 04754E",
 		"latitude": 39.65,
@@ -99360,8 +99493,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "2729N 05237E",
 		"latitude": 27.483333,
@@ -99410,8 +99543,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3217N 05050E",
 		"latitude": 32.283333,
@@ -99458,8 +99591,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "3208N 04916E",
 		"latitude": 32.133333,
@@ -99507,8 +99640,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3042N 05132E",
 		"latitude": 30.7,
@@ -99750,8 +99883,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "2749N 05221E",
 		"latitude": 27.816667,
@@ -100544,7 +100677,7 @@
 		"latitude": 45.733333,
 		"longitude": 7.333333,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "AOT"
 	},
 	{
@@ -100839,12 +100972,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1801",
+		"date": "2501",
 		"coordinates": "4146N 01214E",
 		"latitude": 41.766667,
 		"longitude": 12.233333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "FCO"
 	},
 	{
@@ -101678,8 +101811,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "4445N 00754E",
 		"latitude": 44.75,
@@ -101702,8 +101835,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": null,
 		"coordinates": null,
 		"latitude": null,
@@ -101758,7 +101891,7 @@
 		"latitude": 42.116667,
 		"longitude": 15.483333,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "TQR"
 	},
 	{
@@ -101827,14 +101960,14 @@
 			"road",
 			"airport"
 		],
-		"status": "RL",
-		"statusName": "Recognised location",
-		"date": "1101",
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
 		"coordinates": "4540N 01214E",
 		"latitude": 45.666667,
 		"longitude": 12.233333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "TRV"
 	},
 	{
@@ -102196,20 +102329,21 @@
 		"name": "Al 'Aqabah",
 		"nameWithoutDiacritics": "Al 'Aqabah",
 		"alternateNames": [],
-		"subdivisionCode": null,
-		"functionCode": "1--4----",
+		"subdivisionCode": "AQ",
+		"functionCode": "1-34----",
 		"functions": [
 			"port",
+			"road",
 			"airport"
 		],
-		"status": "RL",
-		"statusName": "Recognised location",
-		"date": "0212",
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
 		"coordinates": "2932N 03500E",
 		"latitude": 29.533333,
 		"longitude": 35,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "AQJ"
 	},
 	{
@@ -102275,8 +102409,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "3210N 03709E",
 		"latitude": 32.166667,
@@ -102299,8 +102433,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "3143N 03548E",
 		"latitude": 31.716667,
@@ -102859,8 +102993,8 @@
 		"countryName": "Japan",
 		"iataCode": "ISG",
 		"iataCodeSource": "unlocode-iata-column",
-		"name": "Ishigaki Apt Okinawa",
-		"nameWithoutDiacritics": "Ishigaki Apt Okinawa",
+		"name": "Ishigaki Apt   Okinawa",
+		"nameWithoutDiacritics": "Ishigaki Apt   Okinawa",
 		"alternateNames": [],
 		"subdivisionCode": "47",
 		"functionCode": "---4----",
@@ -103507,8 +103641,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -103998,8 +104132,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "4011N 14022E",
 		"latitude": 40.183333,
@@ -104291,8 +104425,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "3849N 13947E",
 		"latitude": 38.816667,
@@ -107063,8 +107197,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -107681,8 +107815,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "2942N 04726E",
 		"latitude": 29.7,
@@ -107985,8 +108119,8 @@
 			"airport",
 			"multimodal"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -108670,19 +108804,19 @@
 		"name": "Ban Houei",
 		"nameWithoutDiacritics": "Ban Houei",
 		"alternateNames": [],
-		"subdivisionCode": null,
+		"subdivisionCode": "BK",
 		"functionCode": "---4----",
 		"functions": [
 			"airport"
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0001",
-		"coordinates": null,
-		"latitude": null,
-		"longitude": null,
+		"date": "2501",
+		"coordinates": "2016N 10025E",
+		"latitude": 20.266667,
+		"longitude": 100.416667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "OUI"
 	},
 	{
@@ -109164,8 +109298,8 @@
 		"countryName": "Saint Lucia",
 		"iataCode": "UVF",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Hewanorra Intl Apt",
-		"nameWithoutDiacritics": "Hewanorra Intl Apt",
+		"name": "Hewanorra Intl  Apt",
+		"nameWithoutDiacritics": "Hewanorra Intl  Apt",
 		"alternateNames": [],
 		"subdivisionCode": "11",
 		"functionCode": "---4----",
@@ -109220,8 +109354,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "0720N 08137E",
 		"latitude": 7.333333,
@@ -109321,8 +109455,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "0751N 08039E",
 		"latitude": 7.85,
@@ -109345,8 +109479,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "0658N 08100E",
 		"latitude": 6.966667,
@@ -109469,8 +109603,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "0827N 08113E",
 		"latitude": 8.45,
@@ -109493,8 +109627,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "0712N 08025E",
 		"latitude": 7.2,
@@ -109517,8 +109651,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "0657N 07953E",
 		"latitude": 6.95,
@@ -109638,8 +109772,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "0615N 08114E",
 		"latitude": 6.25,
@@ -110566,8 +110700,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9806",
 		"coordinates": null,
 		"latitude": null,
@@ -110591,8 +110725,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1407",
 		"coordinates": "5544N 02421E",
 		"latitude": 55.733333,
@@ -110897,8 +111031,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2930N 01530E",
 		"latitude": 29.5,
@@ -111067,8 +111201,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "2554N 01353E",
 		"latitude": 25.9,
@@ -112577,8 +112711,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "1634S 04428E",
 		"latitude": -16.566667,
@@ -113526,8 +113660,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0706N 17114E",
 		"latitude": 7.1,
@@ -113550,8 +113684,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1011N 16959E",
 		"latitude": 10.183333,
@@ -113646,8 +113780,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1130N 16533E",
 		"latitude": 11.5,
@@ -114567,8 +114701,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -114737,8 +114871,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1643N 00300W",
 		"latitude": 16.716667,
@@ -115582,8 +115716,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1849N 09516E",
 		"latitude": 18.816667,
@@ -117459,8 +117593,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1430S 03515E",
 		"latitude": -14.5,
@@ -117483,8 +117617,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1406S 03431E",
 		"latitude": -14.1,
@@ -117507,8 +117641,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9601",
 		"coordinates": null,
 		"latitude": null,
@@ -120060,8 +120194,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0423N 11544E",
 		"latitude": 4.383333,
@@ -120232,8 +120366,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0520N 11610E",
 		"latitude": 5.333333,
@@ -120356,8 +120490,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0724N 11350E",
 		"latitude": 7.4,
@@ -120396,8 +120530,8 @@
 		"countryName": "Malaysia",
 		"iataCode": "LBU",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Labuan",
-		"nameWithoutDiacritics": "Labuan",
+		"name": "Labuan, Sabah",
+		"nameWithoutDiacritics": "Labuan, Sabah",
 		"alternateNames": [],
 		"subdivisionCode": "15",
 		"functionCode": "1--4----",
@@ -120480,8 +120614,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0325N 11508E",
 		"latitude": 3.416667,
@@ -120504,8 +120638,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0346N 11424E",
 		"latitude": 3.766667,
@@ -120701,8 +120835,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0437N 11809E",
 		"latitude": 4.616667,
@@ -121068,8 +121202,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0534N 11707E",
 		"latitude": 5.566667,
@@ -121411,8 +121545,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -121999,8 +122133,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2200S 03516E",
 		"latitude": -22,
@@ -122530,8 +122664,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9012",
 		"coordinates": null,
 		"latitude": null,
@@ -123777,8 +123911,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -123801,8 +123935,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -128517,8 +128651,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9709",
 		"coordinates": null,
 		"latitude": null,
@@ -128717,14 +128851,14 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "2407",
 		"coordinates": "2349N 05731E",
 		"latitude": 23.816667,
 		"longitude": 57.516667,
 		"remarks": null,
-		"changeIndicator": "+",
+		"changeIndicator": null,
 		"airportLocationCode": "MNH"
 	},
 	{
@@ -128863,8 +128997,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9506",
 		"coordinates": null,
 		"latitude": null,
@@ -130183,7 +130317,7 @@
 		"latitude": -17.65,
 		"longitude": -71.333333,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "ILQ"
 	},
 	{
@@ -130307,7 +130441,7 @@
 		"latitude": -12.05,
 		"longitude": -77.05,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "LIM"
 	},
 	{
@@ -130431,7 +130565,7 @@
 		"latitude": -12.583333,
 		"longitude": -69.2,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "PEM"
 	},
 	{
@@ -130537,8 +130671,8 @@
 		"countryName": "Peru",
 		"iataCode": "SJA",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Marcona",
-		"nameWithoutDiacritics": "Marcona",
+		"name": "San Juan",
+		"nameWithoutDiacritics": "San Juan",
 		"alternateNames": [],
 		"subdivisionCode": "ICA",
 		"functionCode": "12-4----",
@@ -130675,7 +130809,7 @@
 		"latitude": -18,
 		"longitude": -70.25,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "TCQ"
 	},
 	{
@@ -133467,8 +133601,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "1308N 04210E",
 		"latitude": 13.133333,
@@ -141643,8 +141777,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "1511N 12033E",
 		"latitude": 15.183333,
@@ -141987,8 +142121,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "1046N 12156E",
 		"latitude": 10.766667,
@@ -142037,8 +142171,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "0951N 12601E",
 		"latitude": 9.85,
@@ -142352,19 +142486,20 @@
 		"name": "Malabang",
 		"nameWithoutDiacritics": "Malabang",
 		"alternateNames": [],
-		"subdivisionCode": null,
-		"functionCode": "---4----",
+		"subdivisionCode": "LAS",
+		"functionCode": "--34----",
 		"functions": [
+			"road",
 			"airport"
 		],
-		"status": "AI",
-		"statusName": "Code adopted by international organisation",
-		"date": "9401",
-		"coordinates": null,
-		"latitude": null,
-		"longitude": null,
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "0736N 12404E",
+		"latitude": 7.6,
+		"longitude": 124.066667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "MLP"
 	},
 	{
@@ -142506,8 +142641,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "1448N 12017E",
 		"latitude": 14.8,
@@ -142705,8 +142840,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "1049N 11931E",
 		"latitude": 10.816667,
@@ -143092,20 +143227,21 @@
 		"name": "Naga/Zamboanga",
 		"nameWithoutDiacritics": "Naga/Zamboanga",
 		"alternateNames": [],
-		"subdivisionCode": null,
-		"functionCode": "1--4----",
+		"subdivisionCode": "ZSI",
+		"functionCode": "1-34----",
 		"functions": [
 			"port",
+			"road",
 			"airport"
 		],
-		"status": "AI",
-		"statusName": "Code adopted by international organisation",
-		"date": "9601",
-		"coordinates": null,
-		"latitude": null,
-		"longitude": null,
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "0748N 12242E",
+		"latitude": 7.8,
+		"longitude": 122.7,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "WNP"
 	},
 	{
@@ -144476,8 +144612,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "2751N 06510E",
 		"latitude": 27.85,
@@ -146669,8 +146805,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0401",
 		"coordinates": "2506N 05118E",
 		"latitude": 25.1,
@@ -151386,19 +151522,20 @@
 		"name": "Nejran",
 		"nameWithoutDiacritics": "Nejran",
 		"alternateNames": [],
-		"subdivisionCode": null,
-		"functionCode": "---4----",
+		"subdivisionCode": "10",
+		"functionCode": "--34----",
 		"functions": [
+			"road",
 			"airport"
 		],
-		"status": "AI",
-		"statusName": "Code adopted by international organisation",
-		"date": "9401",
-		"coordinates": null,
-		"latitude": null,
-		"longitude": null,
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "1733N 04414E",
+		"latitude": 17.55,
+		"longitude": 44.233333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "EAM"
 	},
 	{
@@ -151673,7 +151810,7 @@
 		"latitude": 27.566667,
 		"longitude": 35.55,
 		"remarks": null,
-		"changeIndicator": "+",
+		"changeIndicator": null,
 		"airportLocationCode": "NEO"
 	},
 	{
@@ -151811,8 +151948,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "2028N 04537E",
 		"latitude": 20.466667,
@@ -152321,8 +152458,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0931S 16011E",
 		"latitude": -9.516667,
@@ -155057,21 +155194,21 @@
 		"name": "Changi",
 		"nameWithoutDiacritics": "Changi",
 		"alternateNames": [],
-		"subdivisionCode": null,
+		"subdivisionCode": "04",
 		"functionCode": "1-34----",
 		"functions": [
 			"port",
 			"road",
 			"airport"
 		],
-		"status": "RL",
-		"statusName": "Recognised location",
-		"date": "0901",
-		"coordinates": "0119N 10400E",
-		"latitude": 1.316667,
-		"longitude": 104,
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "0121N 10359E",
+		"latitude": 1.35,
+		"longitude": 103.983333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "CHG"
 	},
 	{
@@ -155122,33 +155259,34 @@
 		"latitude": 1.283333,
 		"longitude": 103.85,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "SIN"
 	},
 	{
-		"unLocode": "SGTAM",
+		"unLocode": "SGSLT",
 		"countryCode": "SG",
 		"countryName": "Singapore",
-		"iataCode": "TAM",
+		"iataCode": "SLT",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Tampines",
-		"nameWithoutDiacritics": "Tampines",
+		"name": "Seletar",
+		"nameWithoutDiacritics": "Seletar",
 		"alternateNames": [],
-		"subdivisionCode": null,
-		"functionCode": "--34----",
+		"subdivisionCode": "01",
+		"functionCode": "1-34----",
 		"functions": [
+			"port",
 			"road",
 			"airport"
 		],
-		"status": "RL",
-		"statusName": "Recognised location",
-		"date": "1207",
-		"coordinates": "0120N 10356E",
-		"latitude": 1.333333,
-		"longitude": 103.933333,
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "0124N 10352E",
+		"latitude": 1.4,
+		"longitude": 103.866667,
 		"remarks": null,
-		"changeIndicator": null,
-		"airportLocationCode": "TAM"
+		"changeIndicator": "¦",
+		"airportLocationCode": "SLT"
 	},
 	{
 		"unLocode": "SGTGA",
@@ -155159,19 +155297,20 @@
 		"name": "Tengah",
 		"nameWithoutDiacritics": "Tengah",
 		"alternateNames": [],
-		"subdivisionCode": null,
-		"functionCode": "---4----",
+		"subdivisionCode": "05",
+		"functionCode": "--34----",
 		"functions": [
+			"road",
 			"airport"
 		],
-		"status": "AI",
-		"statusName": "Code adopted by international organisation",
-		"date": "0001",
-		"coordinates": null,
-		"latitude": null,
-		"longitude": null,
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "0121N 10344E",
+		"latitude": 1.35,
+		"longitude": 103.733333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "TGA"
 	},
 	{
@@ -155759,8 +155898,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -157719,8 +157858,8 @@
 			"port",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9506",
 		"coordinates": null,
 		"latitude": null,
@@ -158960,8 +159099,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1807",
 		"coordinates": "1256N 10053E",
 		"latitude": 12.933333,
@@ -162006,8 +162145,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0607",
 		"coordinates": null,
 		"latitude": null,
@@ -163176,14 +163315,15 @@
 		"name": "L'viv",
 		"nameWithoutDiacritics": "L'viv",
 		"alternateNames": [],
-		"subdivisionCode": null,
-		"functionCode": "---4----",
+		"subdivisionCode": "46",
+		"functionCode": "--34----",
 		"functions": [
+			"road",
 			"airport"
 		],
-		"status": "AI",
-		"statusName": "Code adopted by international organisation",
-		"date": "2407",
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
 		"coordinates": "4950N 02402E",
 		"latitude": 49.833333,
 		"longitude": 24.033333,
@@ -163819,8 +163959,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9601",
 		"coordinates": null,
 		"latitude": null,
@@ -164068,8 +164208,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -164335,8 +164475,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -164355,18 +164495,20 @@
 		"nameWithoutDiacritics": "Kodiak",
 		"alternateNames": [],
 		"subdivisionCode": "AK",
-		"functionCode": "---4----",
+		"functionCode": "1-34----",
 		"functions": [
+			"port",
+			"road",
 			"airport"
 		],
-		"status": "AI",
-		"statusName": "Code adopted by international organisation",
-		"date": "0001",
-		"coordinates": null,
-		"latitude": null,
-		"longitude": null,
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "5748N 15223W",
+		"latitude": 57.8,
+		"longitude": -152.383333,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "ADQ"
 	},
 	{
@@ -164384,8 +164526,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -164752,8 +164894,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -164801,8 +164943,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -165534,8 +165676,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -165585,8 +165727,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -166146,8 +166288,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -166765,8 +166907,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -166889,8 +167031,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0907",
 		"coordinates": "4233N 09952W",
 		"latitude": 42.55,
@@ -167718,8 +167860,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -167743,8 +167885,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -167966,8 +168108,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -168070,12 +168212,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0201",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": "cf US BIO, US ENC, US JOY",
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "BGM"
 	},
 	{
@@ -168142,8 +168284,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9307",
 		"coordinates": null,
 		"latitude": null,
@@ -168339,8 +168481,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -168389,8 +168531,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -168659,8 +168801,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -168806,8 +168948,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -169172,8 +169314,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -169296,8 +169438,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -170183,12 +170325,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0201",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": "cf US BAL",
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "BWI"
 	},
 	{
@@ -170427,12 +170569,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "9601",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "BYI"
 	},
 	{
@@ -170982,8 +171124,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -173357,8 +173499,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -173851,12 +173993,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "9601",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "CVO"
 	},
 	{
@@ -174504,8 +174646,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1401",
 		"coordinates": null,
 		"latitude": null,
@@ -175047,8 +175189,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -177729,8 +177871,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -177996,8 +178138,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -178151,12 +178293,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0201",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": "cf US FAV, US NBD",
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "EWB"
 	},
 	{
@@ -178274,8 +178416,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9601",
 		"coordinates": null,
 		"latitude": null,
@@ -178520,8 +178662,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -178915,12 +179057,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0001",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "FHU"
 	},
 	{
@@ -179180,8 +179322,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -180300,8 +180442,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -181032,12 +181174,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0001",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "GGG"
 	},
 	{
@@ -181103,8 +181245,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -181495,8 +181637,8 @@
 			"airport",
 			"postalExchange"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1001",
 		"coordinates": "4151N 07314W",
 		"latitude": 41.85,
@@ -181574,12 +181716,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "2101",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "GON"
 	},
 	{
@@ -181902,12 +182044,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0001",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": "cf US GBO, US HPZ",
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "GSO"
 	},
 	{
@@ -181930,12 +182072,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "9506",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "GSP"
 	},
 	{
@@ -182896,8 +183038,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -183191,12 +183333,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0001",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "HIB"
 	},
 	{
@@ -183877,8 +184019,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -184075,8 +184217,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -184321,12 +184463,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0001",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "HTS"
 	},
 	{
@@ -184566,8 +184708,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -184738,8 +184880,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -185028,8 +185170,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1301",
 		"coordinates": "3250N 11534W",
 		"latitude": 32.833333,
@@ -186352,8 +186494,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -189332,7 +189474,7 @@
 		"latitude": 34.05,
 		"longitude": -118.25,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "LAX"
 	},
 	{
@@ -189577,12 +189719,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0307",
+		"date": "2501",
 		"coordinates": "4338N 07215W",
 		"latitude": 43.633333,
 		"longitude": -72.25,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "LEB"
 	},
 	{
@@ -189652,12 +189794,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "9601",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "LEW"
 	},
 	{
@@ -189675,8 +189817,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -191828,12 +191970,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0201",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": "cf US BZO, US SGP, US ILD",
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "MBS"
 	},
 	{
@@ -192199,12 +192341,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "9307",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "MDJ"
 	},
 	{
@@ -192471,12 +192613,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0001",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "MFE"
 	},
 	{
@@ -193429,8 +193571,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -193574,8 +193716,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9806",
 		"coordinates": null,
 		"latitude": null,
@@ -193697,8 +193839,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9704",
 		"coordinates": null,
 		"latitude": null,
@@ -194188,12 +194330,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0401",
+		"date": "2501",
 		"coordinates": "4412N 07233W",
 		"latitude": 44.2,
 		"longitude": -72.55,
 		"remarks": "cf US VBR, US MPI",
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "MPV"
 	},
 	{
@@ -194484,12 +194626,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "9601",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "MRY"
 	},
 	{
@@ -194559,12 +194701,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "9601",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "MSL"
 	},
 	{
@@ -195607,8 +195749,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -196095,8 +196237,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -197515,8 +197657,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -198544,8 +198686,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -199015,12 +199157,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "9506",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "OXR"
 	},
 	{
@@ -199235,8 +199377,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -199893,8 +200035,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -199946,12 +200088,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "1101",
+		"date": "2501",
 		"coordinates": "3707N 07629W",
 		"latitude": 37.116667,
 		"longitude": -76.483333,
 		"remarks": "cf US HNV, US WLG, US NNS",
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "PHF"
 	},
 	{
@@ -201023,12 +201165,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0201",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": "cf US PRQ, US LLV",
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "POY"
 	},
 	{
@@ -201465,12 +201607,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0001",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "PSB"
 	},
 	{
@@ -201879,12 +202021,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "9506",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "PTN"
 	},
 	{
@@ -203069,8 +203211,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -203098,12 +203240,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0201",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": "cf US BZO, US RMD",
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "RDM"
 	},
 	{
@@ -203173,12 +203315,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0201",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": "cf US DUR, US RAG",
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "RDU"
 	},
 	{
@@ -203687,8 +203829,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -203859,8 +204001,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -204053,8 +204195,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -207471,12 +207613,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "9601",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "SRQ"
 	},
 	{
@@ -208040,12 +208182,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0001",
+		"date": "2501",
 		"coordinates": null,
 		"latitude": null,
 		"longitude": null,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "#",
 		"airportLocationCode": "SUN"
 	},
 	{
@@ -209556,6 +209698,31 @@
 		"airportLocationCode": "TMA"
 	},
 	{
+		"unLocode": "USTMY",
+		"countryCode": "US",
+		"countryName": "United States",
+		"iataCode": "TMY",
+		"iataCodeSource": "unlocode-location-code",
+		"name": "Saint Thomas",
+		"nameWithoutDiacritics": "Saint Thomas",
+		"alternateNames": [],
+		"subdivisionCode": "ND",
+		"functionCode": "--34----",
+		"functions": [
+			"road",
+			"airport"
+		],
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "4837N 09727W",
+		"latitude": 48.616667,
+		"longitude": -97.45,
+		"remarks": null,
+		"changeIndicator": "+",
+		"airportLocationCode": "TMY"
+	},
+	{
 		"unLocode": "USTNC",
 		"countryCode": "US",
 		"countryName": "United States",
@@ -209787,8 +209954,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -209967,12 +210134,12 @@
 		],
 		"status": "AI",
 		"statusName": "Code adopted by international organisation",
-		"date": "0212",
+		"date": "2501",
 		"coordinates": "3628N 08224W",
 		"latitude": 36.466667,
 		"longitude": -82.4,
 		"remarks": "cf US JCI, US TRI, US BSO",
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "TRI"
 	},
 	{
@@ -210359,8 +210526,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -210581,8 +210748,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -210753,8 +210920,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -212586,8 +212753,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -213457,8 +213624,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "9008",
 		"coordinates": null,
 		"latitude": null,
@@ -215175,8 +215342,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1101",
 		"coordinates": "4157N 06419E",
 		"latitude": 41.95,
@@ -215276,8 +215443,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1221N 06114W",
 		"latitude": 12.35,
@@ -216229,8 +216396,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0958N 06214W",
 		"latitude": 9.966667,
@@ -216425,8 +216592,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0746N 07109W",
 		"latitude": 7.766667,
@@ -217081,8 +217248,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1240N 10806E",
 		"latitude": 12.666667,
@@ -217090,6 +217257,32 @@
 		"remarks": null,
 		"changeIndicator": null,
 		"airportLocationCode": "BMV"
+	},
+	{
+		"unLocode": "VNC8Q",
+		"countryCode": "VN",
+		"countryName": "Vietnam",
+		"iataCode": null,
+		"iataCodeSource": null,
+		"name": "Chu Lai",
+		"nameWithoutDiacritics": "Chu Lai",
+		"alternateNames": [],
+		"subdivisionCode": "27",
+		"functionCode": "1-34----",
+		"functions": [
+			"port",
+			"road",
+			"airport"
+		],
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "1528N 10837E",
+		"latitude": 15.466667,
+		"longitude": 108.616667,
+		"remarks": null,
+		"changeIndicator": "¦",
+		"airportLocationCode": "C8Q"
 	},
 	{
 		"unLocode": "VNCAH",
@@ -217105,8 +217298,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "0910N 10509E",
 		"latitude": 9.166667,
@@ -217129,8 +217322,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "1101",
 		"coordinates": "1021N 10704E",
 		"latitude": 10.35,
@@ -217178,8 +217371,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1156N 10825E",
 		"latitude": 11.933333,
@@ -217205,14 +217398,14 @@
 			"airport",
 			"multimodal"
 		],
-		"status": "RL",
-		"statusName": "Recognised location",
-		"date": "0701",
-		"coordinates": "1524N 10842E",
-		"latitude": 15.4,
-		"longitude": 108.7,
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "1523N 10848E",
+		"latitude": 15.383333,
+		"longitude": 108.8,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "DQT"
 	},
 	{
@@ -217255,8 +217448,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1200N 10600E",
 		"latitude": 12,
@@ -217279,8 +217472,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -217313,7 +217506,7 @@
 		"latitude": 20.85,
 		"longitude": 106.683333,
 		"remarks": null,
-		"changeIndicator": "¦",
+		"changeIndicator": null,
 		"airportLocationCode": "HPH"
 	},
 	{
@@ -217355,8 +217548,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -217480,8 +217673,8 @@
 			"road",
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1400N 10801E",
 		"latitude": 14,
@@ -217648,8 +217841,8 @@
 		"countryName": "Vietnam",
 		"iataCode": "UIH",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Qui Nhon",
-		"nameWithoutDiacritics": "Qui Nhon",
+		"name": "Quy Nhon",
+		"nameWithoutDiacritics": "Quy Nhon",
 		"alternateNames": [],
 		"subdivisionCode": "31",
 		"functionCode": "1-34----",
@@ -217658,14 +217851,14 @@
 			"road",
 			"airport"
 		],
-		"status": "AI",
-		"statusName": "Code adopted by international organisation",
-		"date": "1301",
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
 		"coordinates": "1346N 10913E",
 		"latitude": 13.766667,
 		"longitude": 109.216667,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "UIH"
 	},
 	{
@@ -217708,8 +217901,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": null,
 		"latitude": null,
@@ -217783,8 +217976,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1019N 10528E",
 		"latitude": 10.316667,
@@ -219407,8 +219600,8 @@
 		"functions": [
 			"airport"
 		],
-		"status": "RQ",
-		"statusName": "Request under consideration",
+		"status": "RL",
+		"statusName": "Recognised location",
 		"date": "0901",
 		"coordinates": "1452N 04532E",
 		"latitude": 14.866667,
@@ -220846,24 +221039,25 @@
 		"countryName": "South Africa",
 		"iataCode": "PLZ",
 		"iataCodeSource": "unlocode-location-code",
-		"name": "Port Elizabeth",
-		"nameWithoutDiacritics": "Port Elizabeth",
+		"name": "Gqeberha",
+		"nameWithoutDiacritics": "Gqeberha",
 		"alternateNames": [],
-		"subdivisionCode": null,
-		"functionCode": "1--45---",
+		"subdivisionCode": "EC",
+		"functionCode": "1-345---",
 		"functions": [
 			"port",
+			"road",
 			"airport",
 			"postalExchange"
 		],
-		"status": "AF",
-		"statusName": "Approved by national facilitation body",
-		"date": "9501",
-		"coordinates": null,
-		"latitude": null,
-		"longitude": null,
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "3357S 02536E",
+		"latitude": -33.95,
+		"longitude": 25.6,
 		"remarks": null,
-		"changeIndicator": null,
+		"changeIndicator": "¦",
 		"airportLocationCode": "PLZ"
 	},
 	{
@@ -221376,6 +221570,31 @@
 		"remarks": null,
 		"changeIndicator": null,
 		"airportLocationCode": "UTW"
+	},
+	{
+		"unLocode": "ZAVGN",
+		"countryCode": "ZA",
+		"countryName": "South Africa",
+		"iataCode": "VGN",
+		"iataCodeSource": "unlocode-location-code",
+		"name": "Virginia",
+		"nameWithoutDiacritics": "Virginia",
+		"alternateNames": [],
+		"subdivisionCode": "KZN",
+		"functionCode": "--34----",
+		"functions": [
+			"road",
+			"airport"
+		],
+		"status": "AS",
+		"statusName": "Approved by national standardisation body",
+		"date": "2501",
+		"coordinates": "2946S 03103E",
+		"latitude": -29.766667,
+		"longitude": 31.05,
+		"remarks": null,
+		"changeIndicator": "+",
+		"airportLocationCode": "VGN"
 	},
 	{
 		"unLocode": "ZAVRE",
