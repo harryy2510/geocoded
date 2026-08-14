@@ -89,6 +89,27 @@ const v2ErrorResponse = {
 	}
 }
 
+const v2AmbiguousResponse = {
+	description:
+		'Multiple records match this identifier. Use a scoped path or a unique id from `matches`.',
+	content: {
+		'application/json': {
+			schema: {
+				type: 'object' as const,
+				properties: {
+					error: stringSchema,
+					hint: stringSchema,
+					matches: {
+						type: 'array' as const,
+						items: { type: 'object' as const }
+					}
+				},
+				required: ['error', 'matches']
+			}
+		}
+	}
+}
+
 const v2PaginationMeta = {
 	type: 'object' as const,
 	properties: {
@@ -485,8 +506,11 @@ export const v2OpenApiPaths = {
 	'/v2/countries/{id}': detailPath({
 		tag: 'Countries',
 		summary: 'Get one country',
+		description:
+			'Lookup by ISO 3166-1 alpha-2, alpha-3, or name. `US`, `USA`, and `United States` all work.',
 		schema: v2CountrySchema,
 		example: 'AE',
+		idDescription: 'ISO 3166-1 alpha-2, alpha-3, or country name',
 		parameters: [v2CountryExpandParameter],
 		fieldsExample: 'id,name,iso2,statistics.gdpPerCapitaCurrentUsd'
 	}),
@@ -506,9 +530,14 @@ export const v2OpenApiPaths = {
 	'/v2/states/{id}': detailPath({
 		tag: 'States',
 		summary: 'Get one state',
+		description:
+			'Lookup by name (`California`), ISO 3166-2 (`US-CA`), country-scoped id (`US:CA` or `US:California`), or state code (`CA`). Shared codes and names return `409` with `matches`. Prefer `/v2/countries/{country}/states/{state}` when the identifier is not unique.',
 		schema: v2StateSchema,
-		example: 'AE-AZ',
-		fieldsExample: 'id,name,countryCode,stateCode'
+		example: 'California',
+		idDescription:
+			'Name, ISO 3166-2, country:code, country:name, or state code',
+		fieldsExample: 'id,name,countryCode,stateCode',
+		conflict: true
 	}),
 	'/v2/cities': listPath({
 		tag: 'Cities',
@@ -526,9 +555,65 @@ export const v2OpenApiPaths = {
 	'/v2/cities/{id}': detailPath({
 		tag: 'Cities',
 		summary: 'Get one city',
+		description:
+			'Lookup by name (`Los Angeles`), GeoNames id (`5368361`), or a scoped id (`US:Los Angeles` or `US:CA:Los Angeles`). Shared names return `409` with `matches`. Prefer `/v2/countries/{country}/cities/{city}` or `/v2/countries/{country}/states/{state}/cities/{city}` when the name is not unique.',
 		schema: v2CitySchema,
-		example: '292968',
-		fieldsExample: 'id,name,countryCode,geonameId'
+		example: 'Los Angeles',
+		idDescription: 'Name, GeoNames id, country:name, or country:state:name',
+		fieldsExample: 'id,name,countryCode,geonameId',
+		conflict: true
+	}),
+	'/v2/countries/{country}/states/{state}': nestedDetailPath({
+		tag: 'States',
+		summary: 'Get one state in a country',
+		description:
+			'Country accepts ISO 3166-1 alpha-2, alpha-3, or name. State accepts name, ISO 3166-2, or state code.',
+		schema: v2StateSchema,
+		fieldsExample: 'id,name,countryCode,stateCode',
+		parameters: [
+			pathParameter(
+				'country',
+				'US',
+				'ISO 3166-1 alpha-2, alpha-3, or country name'
+			),
+			pathParameter('state', 'California', 'Name, ISO 3166-2, or state code')
+		],
+		conflict: true
+	}),
+	'/v2/countries/{country}/cities/{city}': nestedDetailPath({
+		tag: 'Cities',
+		summary: 'Get one city in a country',
+		description:
+			'Country accepts ISO 3166-1 alpha-2, alpha-3, or name. City accepts name or GeoNames id. Shared names in that country return `409` with `matches`.',
+		schema: v2CitySchema,
+		fieldsExample: 'id,name,countryCode,geonameId',
+		parameters: [
+			pathParameter(
+				'country',
+				'US',
+				'ISO 3166-1 alpha-2, alpha-3, or country name'
+			),
+			pathParameter('city', 'Los Angeles', 'City name or GeoNames id')
+		],
+		conflict: true
+	}),
+	'/v2/countries/{country}/states/{state}/cities/{city}': nestedDetailPath({
+		tag: 'Cities',
+		summary: 'Get one city in a state',
+		description:
+			'Country and state accept name or ISO codes. City accepts name or GeoNames id. Shared names in that state return `409` with `matches`.',
+		schema: v2CitySchema,
+		fieldsExample: 'id,name,countryCode,geonameId',
+		parameters: [
+			pathParameter(
+				'country',
+				'US',
+				'ISO 3166-1 alpha-2, alpha-3, or country name'
+			),
+			pathParameter('state', 'CA', 'Name, ISO 3166-2, or state code'),
+			pathParameter('city', 'Los Angeles', 'City name or GeoNames id')
+		],
+		conflict: true
 	}),
 	'/v2/timezones': listPath({
 		tag: 'Timezones',
@@ -774,27 +859,33 @@ function listPath(options: {
 	}
 }
 
-function detailPath(options: {
+function pathParameter(name: string, example: string, description?: string) {
+	return {
+		name,
+		in: 'path' as const,
+		required: true,
+		description,
+		schema: stringSchema,
+		example
+	}
+}
+
+function nestedDetailPath(options: {
 	tag: string
 	summary: string
+	description?: string
 	schema: Record<string, unknown>
-	example: string
 	fieldsExample: string
-	parameters?: Array<Record<string, unknown>>
+	parameters: Array<Record<string, unknown>>
+	conflict?: boolean
 }) {
 	return {
 		get: {
 			tags: [options.tag],
 			summary: options.summary,
+			description: options.description,
 			parameters: [
-				{
-					name: 'id',
-					in: 'path' as const,
-					required: true,
-					schema: stringSchema,
-					example: options.example
-				},
-				...(options.parameters ?? []),
+				...options.parameters,
 				fieldsParameter(options.fieldsExample)
 			],
 			responses: {
@@ -805,8 +896,34 @@ function detailPath(options: {
 					}
 				},
 				'400': v2ErrorResponse,
-				'404': v2ErrorResponse
+				'404': v2ErrorResponse,
+				...(options.conflict ? { '409': v2AmbiguousResponse } : {})
 			}
 		}
 	}
+}
+
+function detailPath(options: {
+	tag: string
+	summary: string
+	description?: string
+	schema: Record<string, unknown>
+	example: string
+	idDescription?: string
+	fieldsExample: string
+	parameters?: Array<Record<string, unknown>>
+	conflict?: boolean
+}) {
+	return nestedDetailPath({
+		tag: options.tag,
+		summary: options.summary,
+		description: options.description,
+		schema: options.schema,
+		fieldsExample: options.fieldsExample,
+		parameters: [
+			pathParameter('id', options.example, options.idDescription),
+			...(options.parameters ?? [])
+		],
+		conflict: options.conflict
+	})
 }

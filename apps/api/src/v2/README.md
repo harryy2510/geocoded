@@ -7,6 +7,8 @@ contract for the implemented v2 foundations and for future endpoint work.
 
 V2 uses root-level collection APIs. Relationships are exposed through
 `filter[...]` parameters and explicit expansions, not nested-only routes.
+Single state and city lookups also have optional country-scoped detail paths so
+names and ISO codes stay unambiguous.
 
 ```text
 /v2/continents
@@ -30,6 +32,41 @@ V2 uses root-level collection APIs. Relationships are exposed through
 UN/LOCODE remains an internal/source identifier. It should appear as a field
 where useful, but there should not be a public source-shaped `/v2/unlocodes`
 collection.
+
+## Single resource lookup
+
+People should be able to fetch one country, state, or city by the identifier they
+already know. Stable internal ids are optional, not the default path.
+
+```text
+/v2/countries/US
+/v2/countries/USA
+/v2/countries/United%20States
+
+/v2/states/California
+/v2/states/US-CA
+/v2/states/US:CA
+/v2/states/US:California
+
+/v2/cities/Los%20Angeles
+/v2/cities/5368361
+/v2/cities/US:Los%20Angeles
+/v2/cities/US:CA:Los%20Angeles
+
+/v2/countries/US/states/CA
+/v2/countries/US/states/California
+/v2/countries/United%20States/cities/Los%20Angeles
+/v2/countries/US/states/CA/cities/Los%20Angeles
+```
+
+Rules:
+
+- Path segments accept name or ISO code, case-insensitive.
+- If exactly one row matches, return it.
+- If several rows match, return `409` with `matches` instead of guessing.
+- Scope the path when a code or name is shared across countries or states.
+- GeoNames ids remain valid for cities. ISO 3166-2 and `country:code` remain
+  valid for states.
 
 ## Shared Query Parameters
 

@@ -406,6 +406,22 @@ const v2Cases: ApiCase[] = [
 		}
 	},
 	{
+		name: 'v2 returns one state by name',
+		path: '/v2/states/Abu%20Dhabi?fields=id,name,countryCode,stateCode',
+		status: 200,
+		assert: (body) => {
+			expect(assertRecord(body).id).toBe('AE:AZ')
+		}
+	},
+	{
+		name: 'v2 returns one state through a country-scoped path',
+		path: '/v2/countries/United%20Arab%20Emirates/states/AZ?fields=id,name,stateCode',
+		status: 200,
+		assert: (body) => {
+			expect(assertRecord(body).stateCode).toBe('AZ')
+		}
+	},
+	{
 		name: 'v2 returns one city',
 		path: '/v2/cities/292968?fields=id,name,countryCode,geonameId',
 		status: 200,

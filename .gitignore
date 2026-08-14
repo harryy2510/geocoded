@@ -26,3 +26,5 @@ opencode.json
 .junie/mcp/
 .junie/skills
 CLAUDE.md
+.agents/mcp_config.json
+.mcp.json

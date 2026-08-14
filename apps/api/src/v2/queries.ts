@@ -27,6 +27,13 @@ export type V2ListQuery = {
 	offset: number
 }
 
+export type V2LookupResult<T> =
+	| { status: 'ok'; row: T }
+	| { status: 'missing' }
+	| { status: 'ambiguous'; matches: T[] }
+
+const LOOKUP_MATCH_LIMIT = 25
+
 const CONTINENTS_TABLE =
 	"(SELECT continent AS id, continent AS name, COUNT(*) AS country_count FROM countries WHERE continent <> '' GROUP BY continent)"
 
@@ -136,13 +143,8 @@ export async function getV2StateById(
 	db: D1Database,
 	id: string
 ): Promise<V2State | null> {
-	return await getOneRow(
-		db,
-		'states',
-		"(country_code || ':' || iso2) = ?1 COLLATE NOCASE OR iso3166_2 = ?1 COLLATE NOCASE",
-		[id],
-		rowToV2State
-	)
+	const result = await lookupV2State(db, id)
+	return result.status === 'ok' ? result.row : null
 }
 
 export async function listV2Cities(
@@ -156,15 +158,8 @@ export async function getV2CityById(
 	db: D1Database,
 	id: string
 ): Promise<V2City | null> {
-	const geonameId = Number(id)
-	if (!Number.isInteger(geonameId)) return null
-	return await getOneRow(
-		db,
-		'cities',
-		'geoname_id = ?1',
-		[geonameId],
-		rowToV2City
-	)
+	const result = await lookupV2City(db, id)
+	return result.status === 'ok' ? result.row : null
 }
 
 export async function getV2CityByCountryStateName(
@@ -173,16 +168,155 @@ export async function getV2CityByCountryStateName(
 	stateCode: string,
 	name: string
 ): Promise<V2City | null> {
-	const row = await db
-		.prepare(
-			`SELECT * FROM cities
-			WHERE country_code = ?1 AND state_code = ?2 AND name = ?3 COLLATE NOCASE
-			ORDER BY population DESC, geoname_id
-			LIMIT 1`
+	const result = await lookupV2City(db, name, {
+		country: countryCode,
+		state: stateCode
+	})
+	if (result.status === 'ok') return result.row
+	if (result.status === 'ambiguous') return result.matches[0] ?? null
+	return null
+}
+
+function finalizeLookup<T>(rows: T[]): V2LookupResult<T> {
+	if (rows.length === 0) return { status: 'missing' }
+	if (rows.length === 1) return { status: 'ok', row: rows[0]! }
+	return { status: 'ambiguous', matches: rows }
+}
+
+async function resolveV2CountryCode(
+	db: D1Database,
+	id: string
+): Promise<string | null> {
+	const country = await getV2CountryById(db, id, [])
+	return country?.iso2 ?? null
+}
+
+export async function lookupV2State(
+	db: D1Database,
+	id: string,
+	countryScope?: string
+): Promise<V2LookupResult<V2State>> {
+	const trimmed = id.trim()
+	if (!trimmed) return { status: 'missing' }
+
+	let countryCode = countryScope?.trim() || undefined
+	let token = trimmed
+
+	if (!countryCode) {
+		const colon = trimmed.indexOf(':')
+		if (colon > 0) {
+			const right = trimmed.slice(colon + 1).trim()
+			if (right) {
+				const resolved = await resolveV2CountryCode(db, trimmed.slice(0, colon))
+				if (!resolved) return { status: 'missing' }
+				countryCode = resolved
+				token = right
+			}
+		}
+	} else {
+		const resolved = await resolveV2CountryCode(db, countryCode)
+		if (!resolved) return { status: 'missing' }
+		countryCode = resolved
+	}
+
+	if (countryCode) {
+		return finalizeLookup(
+			await listMatchingRows(
+				db,
+				'states',
+				'country_code = ? AND (iso2 = ? COLLATE NOCASE OR iso3166_2 = ? COLLATE NOCASE OR name = ? COLLATE NOCASE)',
+				[countryCode, token, token, token],
+				rowToV2State,
+				'ORDER BY population DESC, iso2'
+			)
 		)
-		.bind(countryCode.toUpperCase(), stateCode.toUpperCase(), name)
-		.first()
-	return row ? rowToV2City(row as D1Row) : null
+	}
+
+	return finalizeLookup(
+		await listMatchingRows(
+			db,
+			'states',
+			"iso2 = ? COLLATE NOCASE OR iso3166_2 = ? COLLATE NOCASE OR name = ? COLLATE NOCASE OR (country_code || ':' || iso2) = ? COLLATE NOCASE",
+			[token, token, token, token],
+			rowToV2State,
+			'ORDER BY population DESC, country_code, iso2'
+		)
+	)
+}
+
+export async function lookupV2City(
+	db: D1Database,
+	id: string,
+	scope: { country?: string; state?: string } = {}
+): Promise<V2LookupResult<V2City>> {
+	const trimmed = id.trim()
+	if (!trimmed) return { status: 'missing' }
+
+	let countryToken = scope.country?.trim() || undefined
+	let stateToken = scope.state?.trim() || undefined
+	let token = trimmed
+
+	if (!countryToken) {
+		const parts = trimmed.split(':').map((part) => part.trim())
+		if (parts.length >= 2 && parts[0] && parts.slice(1).every(Boolean)) {
+			countryToken = parts[0]
+			if (parts.length >= 3) {
+				stateToken = parts[1]
+				token = parts.slice(2).join(':')
+			} else {
+				token = parts.slice(1).join(':')
+			}
+		}
+	}
+
+	let countryCode: string | undefined
+	if (countryToken) {
+		const resolved = await resolveV2CountryCode(db, countryToken)
+		if (!resolved) return { status: 'missing' }
+		countryCode = resolved
+	}
+
+	let stateCode: string | undefined
+	if (countryCode && stateToken) {
+		const state = await lookupV2State(db, stateToken, countryCode)
+		if (state.status === 'missing') return state
+		if (state.status === 'ambiguous') return { status: 'missing' }
+		stateCode = state.row.stateCode
+	}
+
+	const geonameId = Number(token)
+	const isGeonameId = Number.isInteger(geonameId) && String(geonameId) === token
+
+	const clauses: string[] = []
+	const bindings: Array<string | number> = []
+	if (isGeonameId) {
+		clauses.push('geoname_id = ?')
+		bindings.push(geonameId)
+	} else {
+		clauses.push('name = ? COLLATE NOCASE')
+		bindings.push(token)
+	}
+	if (countryCode) {
+		clauses.push('country_code = ?')
+		bindings.push(countryCode)
+	}
+	if (stateCode) {
+		clauses.push('state_code = ?')
+		bindings.push(stateCode)
+	}
+
+	return finalizeLookup(
+		await listMatchingRows(
+			db,
+			'cities',
+			clauses.join(' AND '),
+			bindings,
+			rowToV2City,
+			isGeonameId
+				? 'ORDER BY geoname_id'
+				: 'ORDER BY population DESC, geoname_id'
+		)
+	)
 }
 
 export async function listV2Timezones(
@@ -395,6 +529,23 @@ async function getOneRow<T>(
 		.bind(...bindings)
 		.first()
 	return row ? mapRow(row as D1Row) : null
+}
+
+async function listMatchingRows<T>(
+	db: D1Database,
+	table: string,
+	whereSql: string,
+	bindings: Array<string | number>,
+	mapRow: (row: D1Row) => T,
+	orderBySql: string
+): Promise<T[]> {
+	const { results } = await db
+		.prepare(
+			`SELECT * FROM ${table} WHERE ${whereSql} ${orderBySql} LIMIT ${LOOKUP_MATCH_LIMIT}`
+		)
+		.bind(...bindings)
+		.all()
+	return ((results ?? []) as D1Row[]).map(mapRow)
 }
 
 async function expandV2Countries(

@@ -6,13 +6,17 @@ import {
 	paginatedV2,
 	type V2PaginationParams
 } from './pagination'
-import { parseV2Query, projectV2Fields, type V2ResourceConfig } from './query'
+import {
+	parseV2Query,
+	projectV2Fields,
+	type V2Projection,
+	type V2ResourceConfig
+} from './query'
 import {
 	getV2AirlineById,
 	getV2AirportById,
 	getV2BorderCrossingById,
 	getV2CityByCountryStateName,
-	getV2CityById,
 	getV2ContinentById,
 	getV2CountryById,
 	getV2CurrencyById,
@@ -21,6 +25,8 @@ import {
 	getV2PortById,
 	getV2RegionById,
 	getV2StateById,
+	lookupV2City,
+	lookupV2State,
 	getV2StatisticsById,
 	getV2TimezoneById,
 	listV2Airlines,
@@ -37,7 +43,8 @@ import {
 	listV2States,
 	listV2Statistics,
 	listV2Timezones,
-	type V2ListQuery
+	type V2ListQuery,
+	type V2LookupResult
 } from './queries'
 import {
 	v2AirlineResource,
@@ -59,6 +66,19 @@ import { type V2Location } from './types'
 import { v2OpenApiSpec } from './openapi'
 
 const v2App = new Hono<{ Bindings: Env }>()
+
+type V2RequestContext = {
+	req: {
+		url: string
+		param: (name: string) => string | undefined
+	}
+	env: { GEO_DB: D1Database }
+	json: (
+		data: unknown,
+		status?: number,
+		headers?: Record<string, string>
+	) => Response
+}
 
 const CACHE_HEADERS = {
 	'Cache-Control': 'public, max-age=31536000, s-maxage=31536000, immutable'
@@ -155,23 +175,41 @@ registerV2DetailRoute(
 	getV2RegionById,
 	'Region not found'
 )
+v2App.get('/countries/:country/states/:state/cities/:city', async (c) => {
+	return await handleScopedCityLookup(c, {
+		country: true,
+		state: true
+	})
+})
+v2App.get('/countries/:country/states/:state', async (c) => {
+	return await handleScopedStateLookup(c)
+})
+v2App.get('/countries/:country/cities/:city', async (c) => {
+	return await handleScopedCityLookup(c, {
+		country: true
+	})
+})
 registerV2DetailRoute(
 	'/countries/:id',
 	v2CountryResource,
 	getV2CountryById,
 	'Country not found'
 )
-registerV2DetailRoute(
+registerV2LookupRoute(
 	'/states/:id',
 	v2StateResource,
-	getV2StateById,
-	'State not found'
+	lookupV2State,
+	'State not found',
+	'State is ambiguous',
+	'Use a country-scoped path such as /v2/countries/US/states/CA, or a unique id such as US-CA.'
 )
-registerV2DetailRoute(
+registerV2LookupRoute(
 	'/cities/:id',
 	v2CityResource,
-	getV2CityById,
-	'City not found'
+	lookupV2City,
+	'City not found',
+	'City is ambiguous',
+	'Use a scoped path such as /v2/countries/US/cities/Paris or /v2/countries/US/states/IL/cities/Springfield, or a GeoNames id.'
 )
 registerV2DetailRoute(
 	'/timezones/:id{.+}',
@@ -285,6 +323,147 @@ function registerV2DetailRoute<T>(
 
 		return jsonV2(c, projectV2Fields(row, query.projection))
 	})
+}
+
+function registerV2LookupRoute<T>(
+	path: string,
+	resource: V2ResourceConfig,
+	lookup: (db: D1Database, id: string) => Promise<V2LookupResult<T>>,
+	notFoundError: string,
+	ambiguousError: string,
+	ambiguousHint: string
+): void {
+	v2App.get(path, async (c) => {
+		const params = new URL(c.req.url).searchParams
+		const query = parseV2Query(params, resource)
+		if (!query.ok) return c.json({ error: query.error }, 400)
+
+		const result = await lookup(
+			c.env.GEO_DB,
+			decodePathParam(c.req.param('id') ?? '')
+		)
+		return jsonLookup(
+			c,
+			result,
+			query.projection,
+			notFoundError,
+			ambiguousError,
+			ambiguousHint
+		)
+	})
+}
+
+async function handleScopedStateLookup(c: V2RequestContext): Promise<Response> {
+	const params = new URL(c.req.url).searchParams
+	const query = parseV2Query(params, v2StateResource)
+	if (!query.ok) return c.json({ error: query.error }, 400)
+
+	const country = await getV2CountryById(
+		c.env.GEO_DB,
+		decodePathParam(c.req.param('country') ?? ''),
+		[]
+	)
+	if (!country) return jsonV2(c, { error: 'Country not found' }, 404)
+
+	return jsonLookup(
+		c,
+		await lookupV2State(
+			c.env.GEO_DB,
+			decodePathParam(c.req.param('state') ?? ''),
+			country.iso2
+		),
+		query.projection,
+		'State not found',
+		'State is ambiguous',
+		'Use a unique id such as US-CA, or the state ISO code if it is unique in this country.'
+	)
+}
+
+async function handleScopedCityLookup(
+	c: V2RequestContext,
+	scope: { country?: boolean; state?: boolean }
+): Promise<Response> {
+	const params = new URL(c.req.url).searchParams
+	const query = parseV2Query(params, v2CityResource)
+	if (!query.ok) return c.json({ error: query.error }, 400)
+
+	let countryCode: string | undefined
+	if (scope.country) {
+		const country = await getV2CountryById(
+			c.env.GEO_DB,
+			decodePathParam(c.req.param('country') ?? ''),
+			[]
+		)
+		if (!country) return jsonV2(c, { error: 'Country not found' }, 404)
+		countryCode = country.iso2
+	}
+
+	let stateCode: string | undefined
+	if (scope.state) {
+		if (!countryCode) return jsonV2(c, { error: 'Country not found' }, 404)
+		const state = await lookupV2State(
+			c.env.GEO_DB,
+			decodePathParam(c.req.param('state') ?? ''),
+			countryCode
+		)
+		if (state.status === 'missing') {
+			return jsonV2(c, { error: 'State not found' }, 404)
+		}
+		if (state.status === 'ambiguous') {
+			const stateQuery = parseV2Query(params, v2StateResource)
+			if (!stateQuery.ok) return c.json({ error: stateQuery.error }, 400)
+			return jsonLookup(
+				c,
+				state,
+				stateQuery.projection,
+				'State not found',
+				'State is ambiguous',
+				'Use a unique id such as US-CA, or the state ISO code if it is unique in this country.'
+			)
+		}
+		stateCode = state.row.stateCode
+	}
+
+	return jsonLookup(
+		c,
+		await lookupV2City(
+			c.env.GEO_DB,
+			decodePathParam(c.req.param('city') ?? ''),
+			{
+				country: countryCode,
+				state: stateCode
+			}
+		),
+		query.projection,
+		'City not found',
+		'City is ambiguous',
+		'Use a scoped path such as /v2/countries/US/states/IL/cities/Springfield, or a GeoNames id.'
+	)
+}
+
+function jsonLookup<T>(
+	c: V2RequestContext,
+	result: V2LookupResult<T>,
+	projection: V2Projection,
+	notFoundError: string,
+	ambiguousError: string,
+	ambiguousHint: string
+): Response {
+	if (result.status === 'missing') {
+		return jsonV2(c, { error: notFoundError }, 404)
+	}
+	if (result.status === 'ambiguous') {
+		return jsonV2(
+			c,
+			{
+				error: ambiguousError,
+				hint: ambiguousHint,
+				matches: projectV2Fields(result.matches, projection)
+			},
+			409
+		)
+	}
+	return jsonV2(c, projectV2Fields(result.row, projection))
 }
 
 function decodePathParam(value: string): string {

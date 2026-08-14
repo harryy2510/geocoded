@@ -113,6 +113,42 @@ class FakeV2D1Database {
 			first_day_of_week: 'monday',
 			time_format: 'HH:mm',
 			literacy: 99
+		},
+		{
+			iso2: 'US',
+			iso3: 'USA',
+			name: 'United States',
+			continent: 'North America',
+			region: 'Americas',
+			currency: 'USD',
+			population: 331000000,
+			capital: 'Washington',
+			native: 'United States',
+			currency_name: 'US Dollar',
+			currency_symbol: '$',
+			tld: '.us',
+			phone_code: '1',
+			numeric_code: '840',
+			nationality: 'American',
+			subregion: 'Northern America',
+			emoji: '🇺🇸',
+			emoji_u: 'U+1F1FA U+1F1F8',
+			latitude: '38',
+			longitude: '-97',
+			area_sq_km: 9833517,
+			gdp: 25000000000000,
+			postal_code_format: null,
+			postal_code_regex: null,
+			timezones: '[]',
+			translations: '{}',
+			neighbours: '[]',
+			languages: '["en"]',
+			flag_url: '',
+			driving_side: 'right',
+			measurement_system: 'imperial',
+			first_day_of_week: 'sunday',
+			time_format: 'hh:mm a',
+			literacy: 99
 		}
 	]
 
@@ -142,6 +178,45 @@ class FakeV2D1Database {
 			longitude: '54.36667',
 			timezone: 'Asia/Dubai',
 			capital: 'Abu Dhabi'
+		},
+		{
+			country_code: 'US',
+			country_name: 'United States',
+			iso2: 'AZ',
+			iso3166_2: 'US-AZ',
+			name: 'Arizona',
+			type: 'state',
+			population: 7000000,
+			latitude: '34',
+			longitude: '-111',
+			timezone: 'America/Phoenix',
+			capital: 'Phoenix'
+		},
+		{
+			country_code: 'US',
+			country_name: 'United States',
+			iso2: 'CA',
+			iso3166_2: 'US-CA',
+			name: 'California',
+			type: 'state',
+			population: 39000000,
+			latitude: '37',
+			longitude: '-120',
+			timezone: 'America/Los_Angeles',
+			capital: 'Sacramento'
+		},
+		{
+			country_code: 'ES',
+			country_name: 'Spain',
+			iso2: 'CA',
+			iso3166_2: 'ES-CA',
+			name: 'Cádiz',
+			type: 'province',
+			population: 1200000,
+			latitude: '36',
+			longitude: '-6',
+			timezone: 'Europe/Madrid',
+			capital: 'Cádiz'
 		}
 	]
 
@@ -157,6 +232,42 @@ class FakeV2D1Database {
 			timezone: 'Asia/Dubai',
 			population: 1500000,
 			geoname_id: 292968
+		},
+		{
+			country_code: 'US',
+			country_name: 'United States',
+			state_code: 'CA',
+			state_name: 'California',
+			name: 'Los Angeles',
+			latitude: '34.05',
+			longitude: '-118.24',
+			timezone: 'America/Los_Angeles',
+			population: 3900000,
+			geoname_id: 5368361
+		},
+		{
+			country_code: 'US',
+			country_name: 'United States',
+			state_code: 'CA',
+			state_name: 'California',
+			name: 'Springfield',
+			latitude: '38.35',
+			longitude: '-122.32',
+			timezone: 'America/Los_Angeles',
+			population: 100000,
+			geoname_id: 1001
+		},
+		{
+			country_code: 'US',
+			country_name: 'United States',
+			state_code: 'AZ',
+			state_name: 'Arizona',
+			name: 'Springfield',
+			latitude: '33.5',
+			longitude: '-112',
+			timezone: 'America/Phoenix',
+			population: 50000,
+			geoname_id: 1002
 		}
 	]
 
@@ -347,10 +458,10 @@ class FakeV2D1Database {
 			return this.filterTimezones(sql, parameters)
 		}
 		if (sql.includes('FROM cities')) {
-			return this.filterByCountry(this.cities, sql, parameters)
+			return this.filterCities(sql, parameters)
 		}
 		if (sql.includes('FROM states')) {
-			return this.filterByCountry(this.states, sql, parameters)
+			return this.filterStates(sql, parameters)
 		}
 		if (sql.includes('FROM countries')) {
 			return this.filterCountries(sql, parameters)
@@ -408,6 +519,68 @@ class FakeV2D1Database {
 				)
 			})
 			.sort((a, b) => String(a.name).localeCompare(String(b.name)))
+	}
+
+	private filterStates(sql: string, parameters: unknown[]): Row[] {
+		let rows = [...this.states]
+		if (sql.includes('iso3166_2')) {
+			const tokens = parameters.filter(
+				(value): value is string => typeof value === 'string'
+			)
+			if (sql.includes('country_code = ?')) {
+				const countryCode = tokens[0]?.toUpperCase()
+				const token = (tokens[1] ?? '').toLowerCase()
+				rows = rows.filter(
+					(row) =>
+						row.country_code === countryCode &&
+						(String(row.iso2).toLowerCase() === token ||
+							String(row.iso3166_2).toLowerCase() === token ||
+							String(row.name).toLowerCase() === token)
+				)
+			} else {
+				const token = (tokens[0] ?? '').toLowerCase()
+				rows = rows.filter(
+					(row) =>
+						String(row.iso2).toLowerCase() === token ||
+						String(row.iso3166_2).toLowerCase() === token ||
+						String(row.name).toLowerCase() === token ||
+						`${String(row.country_code)}:${String(row.iso2)}`.toLowerCase() ===
+							token
+				)
+			}
+			return rows.sort(
+				(left, right) =>
+					Number(right.population ?? 0) - Number(left.population ?? 0) ||
+					String(left.country_code).localeCompare(String(right.country_code)) ||
+					String(left.iso2).localeCompare(String(right.iso2))
+			)
+		}
+		return this.filterByCountry(rows, sql, parameters)
+	}
+
+	private filterCities(sql: string, parameters: unknown[]): Row[] {
+		let rows = [...this.cities]
+		if (sql.includes('name = ?')) {
+			const tokens = parameters.filter(
+				(value): value is string => typeof value === 'string'
+			)
+			const name = (tokens[0] ?? '').toLowerCase()
+			rows = rows.filter((row) => String(row.name).toLowerCase() === name)
+			if (sql.includes('country_code = ?')) {
+				rows = rows.filter(
+					(row) => row.country_code === tokens[1]?.toUpperCase()
+				)
+			}
+			if (sql.includes('state_code = ?')) {
+				rows = rows.filter((row) => row.state_code === tokens[2]?.toUpperCase())
+			}
+			return rows.sort(
+				(left, right) =>
+					Number(right.population ?? 0) - Number(left.population ?? 0) ||
+					Number(left.geoname_id ?? 0) - Number(right.geoname_id ?? 0)
+			)
+		}
+		return this.filterByCountry(rows, sql, parameters)
 	}
 
 	private filterByCountry(
@@ -507,9 +680,19 @@ class FakeV2D1Database {
 
 	private filterCountries(sql: string, parameters: unknown[]): Row[] {
 		let rows = [...this.countries]
-		if (sql.includes('iso2 = ?')) {
-			const countryCode = String(parameters[0]).toUpperCase()
-			rows = rows.filter((country) => country.iso2 === countryCode)
+		if (
+			sql.includes('iso2 = ?') ||
+			sql.includes('iso3 = ?') ||
+			sql.includes('name = ?')
+		) {
+			const code = String(parameters[0]).toUpperCase()
+			const name = String(parameters[1] ?? parameters[0]).toLowerCase()
+			rows = rows.filter(
+				(country) =>
+					country.iso2.toUpperCase() === code ||
+					country.iso3.toUpperCase() === code ||
+					country.name.toLowerCase() === name
+			)
 		}
 		if (sql.includes('currency = ?')) {
 			const currency = parameters.find(
@@ -1001,6 +1184,105 @@ describe('v2 routes', () => {
 		})
 	})
 
+	test('looks up one country by ISO2, ISO3, and name', async () => {
+		for (const path of [
+			'/v2/countries/US?fields=id,name,iso2',
+			'/v2/countries/USA?fields=id,name,iso2',
+			'/v2/countries/United%20States?fields=id,name,iso2'
+		]) {
+			const response = await request(path)
+			expect(response.status).toBe(200)
+			const body = (await response.json()) as Record<string, unknown>
+			expect(body).toEqual({
+				id: 'US',
+				name: 'United States',
+				iso2: 'US'
+			})
+		}
+	})
+
+	test('looks up one state by name, ISO 3166-2, and scoped id', async () => {
+		for (const path of [
+			'/v2/states/California?fields=id,name,countryCode,stateCode',
+			'/v2/states/US-CA?fields=id,name,countryCode,stateCode',
+			'/v2/states/US%3ACA?fields=id,name,countryCode,stateCode',
+			'/v2/states/US%3ACalifornia?fields=id,name,countryCode,stateCode',
+			'/v2/countries/US/states/CA?fields=id,name,countryCode,stateCode',
+			'/v2/countries/United%20States/states/California?fields=id,name,countryCode,stateCode'
+		]) {
+			const response = await request(path)
+			expect(response.status).toBe(200)
+			const body = (await response.json()) as Record<string, unknown>
+			expect(body).toEqual({
+				id: 'US:CA',
+				name: 'California',
+				countryCode: 'US',
+				stateCode: 'CA'
+			})
+		}
+	})
+
+	test('returns 409 when a state code is shared across countries', async () => {
+		const response = await request(
+			'/v2/states/AZ?fields=id,name,countryCode,stateCode'
+		)
+
+		expect(response.status).toBe(409)
+		const body = (await response.json()) as {
+			error: string
+			hint: string
+			matches: Array<{ id: string; name: string }>
+		}
+		expect(body.error).toBe('State is ambiguous')
+		expect(body.hint).toContain('/v2/countries/US/states/CA')
+		expect(body.matches.map((state) => state.id)).toEqual(['US:AZ', 'AE:AZ'])
+	})
+
+	test('looks up one city by name, GeoNames id, and scoped path', async () => {
+		for (const path of [
+			'/v2/cities/Los%20Angeles?fields=id,name,countryCode,geonameId',
+			'/v2/cities/5368361?fields=id,name,countryCode,geonameId',
+			'/v2/cities/US%3ALos%20Angeles?fields=id,name,countryCode,geonameId',
+			'/v2/cities/US%3ACA%3ALos%20Angeles?fields=id,name,countryCode,geonameId',
+			'/v2/countries/US/cities/Los%20Angeles?fields=id,name,countryCode,geonameId',
+			'/v2/countries/US/states/CA/cities/Los%20Angeles?fields=id,name,countryCode,geonameId',
+			'/v2/countries/United%20States/states/California/cities/Los%20Angeles?fields=id,name,countryCode,geonameId'
+		]) {
+			const response = await request(path)
+			expect(response.status).toBe(200)
+			const body = (await response.json()) as Record<string, unknown>
+			expect(body).toEqual({
+				id: '5368361',
+				name: 'Los Angeles',
+				countryCode: 'US',
+				geonameId: 5368361
+			})
+		}
+	})
+
+	test('returns 409 when a city name is shared, then resolves when scoped', async () => {
+		const ambiguous = await request(
+			'/v2/cities/Springfield?fields=id,name,stateCode,geonameId'
+		)
+		expect(ambiguous.status).toBe(409)
+		const body = (await ambiguous.json()) as {
+			error: string
+			matches: Array<{ geonameId: number; stateCode: string }>
+		}
+		expect(body.error).toBe('City is ambiguous')
+		expect(body.matches.map((city) => city.geonameId)).toEqual([1001, 1002])
+
+		const scoped = await request(
+			'/v2/countries/US/states/CA/cities/Springfield?fields=id,geonameId'
+		)
+		expect(scoped.status).toBe(200)
+		const scopedBody = (await scoped.json()) as Record<string, unknown>
+		expect(scopedBody).toEqual({
+			id: '1001',
+			geonameId: 1001
+		})
+	})
+
 	test('rejects unsupported v2 filters', async () => {
 		const response = await request('/v2/countries?filter[unLocode]=AEJEA')
 
@@ -1049,6 +1331,9 @@ describe('v2 routes', () => {
 			'/v2/states/{id}',
 			'/v2/cities',
 			'/v2/cities/{id}',
+			'/v2/countries/{country}/states/{state}',
+			'/v2/countries/{country}/cities/{city}',
+			'/v2/countries/{country}/states/{state}/cities/{city}',
 			'/v2/timezones',
 			'/v2/timezones/{id}',
 			'/v2/currencies',

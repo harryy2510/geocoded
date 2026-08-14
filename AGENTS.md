@@ -69,6 +69,10 @@ The private `geocoded-data` repo updates `data/*.json` through the data pipeline
 - `GET /timezones` and `GET /timezones/:id`: IANA timezone list and lookup. Timezone IDs may contain slashes.
 - `GET /currencies` and `GET /currencies/:code`: ISO 4217 currency list and lookup.
 - `GET /v2/continents`, `/v2/regions`, `/v2/countries`, `/v2/states`, `/v2/cities`: v2 political/geographic collections with strict `filter[...]`, `q`, `sort`, pagination, and nested `fields`.
+- `GET /v2/countries/:id`: country by ISO2, ISO3, or name.
+- `GET /v2/states/:id`: state by name, ISO 3166-2 (`US-CA`), country-scoped id (`US:CA` or `US:California`), or state code. Shared identifiers return `409` with `matches`.
+- `GET /v2/cities/:id`: city by name, GeoNames id, `country:name`, or `country:state:name`. Shared names return `409` with `matches`.
+- `GET /v2/countries/:country/states/:state`, `/v2/countries/:country/cities/:city`, `/v2/countries/:country/states/:state/cities/:city`: scoped single-resource lookups. Country and state path segments accept name or ISO codes.
 - `GET /v2/timezones`, `/v2/currencies`, `/v2/airlines`, `/v2/airports`, `/v2/ports`, `/v2/border-crossings`: v2 reference and transport collections.
 - `GET /v2/statistics`: v2 country statistics resource. Select individual statistics through `fields`, not `indicator`.
 - `GET /v2/migrant-stocks`: v2 country migrant stock resource (international migrant stock per country).
