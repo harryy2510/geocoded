@@ -5470,7 +5470,7 @@
 		}
 	},
 	{
-		"name": "State of Salzburg",
+		"name": "Salzburg",
 		"iso2": "5",
 		"iso31662": "AT-5",
 		"countryCode": "AT",
@@ -5512,37 +5512,6 @@
 			"gu": "સાલ્ઝબર્ગ",
 			"jv": "Salzburg",
 			"pa": "ਸਾਲਜ਼ਬਰਗ"
-		}
-	},
-	{
-		"name": "State of Vienna",
-		"iso2": "9",
-		"iso31662": "AT-9",
-		"countryCode": "AT",
-		"countryName": "Austria",
-		"geonameId": 2761367,
-		"latitude": "48.2082",
-		"longitude": "16.37169",
-		"timezone": "Europe/Vienna",
-		"capital": null,
-		"population": 2014614,
-		"type": "state",
-		"native": "Bundesland Wien",
-		"wikidataId": "Q1741",
-		"translations": {
-			"en": "State of Vienna",
-			"es": "Estado de Viena",
-			"de": "Bundesland Wien",
-			"fr": "État de Vienne",
-			"pl": "Wiedeń",
-			"it": "Stato di Vienna",
-			"pt": "Viana",
-			"ru": "Вена",
-			"nl": "Deelstaat Wenen",
-			"bn": "ভিয়েনা",
-			"ja": "ウィーン",
-			"jv": "Wina",
-			"pa": "ਵਿਏਨਾ"
 		}
 	},
 	{
@@ -5679,6 +5648,37 @@
 			"pl": "Górna Austria",
 			"jv": "Austria Ndhuwur",
 			"pa": "ਊਪਰਲਾ ਆਸਟ੍ਰੀਆ"
+		}
+	},
+	{
+		"name": "Vienna",
+		"iso2": "9",
+		"iso31662": "AT-9",
+		"countryCode": "AT",
+		"countryName": "Austria",
+		"geonameId": 2761367,
+		"latitude": "48.2082",
+		"longitude": "16.37169",
+		"timezone": "Europe/Vienna",
+		"capital": null,
+		"population": 2014614,
+		"type": "state",
+		"native": "Bundesland Wien",
+		"wikidataId": "Q1741",
+		"translations": {
+			"en": "State of Vienna",
+			"es": "Estado de Viena",
+			"de": "Bundesland Wien",
+			"fr": "État de Vienne",
+			"pl": "Wiedeń",
+			"it": "Stato di Vienna",
+			"pt": "Viana",
+			"ru": "Вена",
+			"nl": "Deelstaat Wenen",
+			"bn": "ভিয়েনা",
+			"ja": "ウィーン",
+			"jv": "Wina",
+			"pa": "ਵਿਏਨਾ"
 		}
 	},
 	{

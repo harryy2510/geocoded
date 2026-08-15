@@ -22135,7 +22135,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Ekai Chin",
+		"referenceName": "Laoktu Chin",
 		"names": [
 			{
 				"printName": "Laoktu Chin",
@@ -72964,7 +72964,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Eastern Magar",
+		"referenceName": "Magar",
 		"names": [
 			{
 				"printName": "Magar",
@@ -77663,24 +77663,6 @@
 		"comment": null
 	},
 	{
-		"iso6393": "mrd",
-		"iso6392B": null,
-		"iso6392T": null,
-		"iso6391": null,
-		"scope": "individual",
-		"type": "living",
-		"referenceName": "Western Magar",
-		"names": [
-			{
-				"printName": "Western Magar",
-				"invertedName": "Western Magar"
-			}
-		],
-		"macrolanguageCode": null,
-		"macrolanguageMemberCodes": [],
-		"comment": null
-	},
-	{
 		"iso6393": "mre",
 		"iso6392B": null,
 		"iso6392T": null,
@@ -77741,7 +77723,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Mara Chin",
+		"referenceName": "Mara",
 		"names": [
 			{
 				"printName": "Mara",
@@ -106810,24 +106792,6 @@
 			{
 				"printName": "Shilluk",
 				"invertedName": "Shilluk"
-			}
-		],
-		"macrolanguageCode": null,
-		"macrolanguageMemberCodes": [],
-		"comment": null
-	},
-	{
-		"iso6393": "shl",
-		"iso6392B": null,
-		"iso6392T": null,
-		"iso6391": null,
-		"scope": "individual",
-		"type": "living",
-		"referenceName": "Shendu",
-		"names": [
-			{
-				"printName": "Shendu",
-				"invertedName": "Shendu"
 			}
 		],
 		"macrolanguageCode": null,
