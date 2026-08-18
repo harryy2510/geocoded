@@ -17056,6 +17056,7 @@
 		"name": "Jundee Airport",
 		"asciiName": "Jundee Airport",
 		"alternateNames": [
+			"QBS",
 			"YJUN"
 		],
 		"unLocode": null,
@@ -17071,7 +17072,7 @@
 		"admin2Code": "59250",
 		"elevation": 0,
 		"timezone": "Australia/Perth",
-		"modificationDate": "2013-06-05"
+		"modificationDate": "2026-08-17"
 	},
 	{
 		"geonameId": 7731150,
@@ -101862,7 +101863,7 @@
 		"admin2Code": "",
 		"elevation": -1,
 		"timezone": "Africa/Cairo",
-		"modificationDate": "2023-05-29"
+		"modificationDate": "2026-08-17"
 	},
 	{
 		"geonameId": 6297292,
@@ -101870,7 +101871,7 @@
 		"asciiName": "Alexandria Borg El Arab Airport",
 		"alternateNames": [
 			"HBE",
-			"HEBA"
+			"HEAX"
 		],
 		"unLocode": "EGHBE",
 		"airportLocationCode": "HBE",
@@ -101885,7 +101886,7 @@
 		"admin2Code": "",
 		"elevation": 53,
 		"timezone": "Africa/Cairo",
-		"modificationDate": "2023-05-29"
+		"modificationDate": "2026-08-17"
 	},
 	{
 		"geonameId": 6297290,
@@ -133334,6 +133335,29 @@
 		"modificationDate": "2022-12-31"
 	},
 	{
+		"geonameId": 13696968,
+		"name": "John Becker Airport",
+		"asciiName": "John Becker Airport",
+		"alternateNames": [
+			"KXS",
+			"WATQ"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "-8.0157",
+		"longitude": "127.20038",
+		"countryCode": "ID",
+		"countryName": "Indonesia",
+		"admin1Code": "28",
+		"admin1Name": "",
+		"admin2Code": "8108",
+		"elevation": 0,
+		"timezone": "Asia/Jayapura",
+		"modificationDate": "2026-08-17"
+	},
+	{
 		"geonameId": 6301284,
 		"name": "Juanda International Airport",
 		"asciiName": "Juanda International Airport",
@@ -136522,6 +136546,29 @@
 		"elevation": 0,
 		"timezone": "Asia/Makassar",
 		"modificationDate": "2022-12-30"
+	},
+	{
+		"geonameId": 13696970,
+		"name": "Seko Airport",
+		"asciiName": "Seko Airport",
+		"alternateNames": [
+			"WAFN",
+			"WKO"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "-2.2712",
+		"longitude": "119.8959",
+		"countryCode": "ID",
+		"countryName": "Indonesia",
+		"admin1Code": "38",
+		"admin1Name": "",
+		"admin2Code": "7322",
+		"elevation": 0,
+		"timezone": "Asia/Makassar",
+		"modificationDate": "2026-08-17"
 	},
 	{
 		"geonameId": 9035309,
@@ -587483,6 +587530,28 @@
 		"elevation": 0,
 		"timezone": "Pacific/Efate",
 		"modificationDate": "2014-03-09"
+	},
+	{
+		"geonameId": 13696971,
+		"name": "Lopeni Airport",
+		"asciiName": "Lopeni Airport",
+		"alternateNames": [
+			"LPH"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "-16.79305",
+		"longitude": "168.3705",
+		"countryCode": "VU",
+		"countryName": "Vanuatu",
+		"admin1Code": "18",
+		"admin1Name": "",
+		"admin2Code": "",
+		"elevation": 0,
+		"timezone": "Pacific/Efate",
+		"modificationDate": "2026-08-17"
 	},
 	{
 		"geonameId": 7730713,
