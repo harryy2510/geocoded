@@ -6383,7 +6383,9 @@
 		"type": "district",
 		"native": "Abşeron",
 		"wikidataId": "",
-		"translations": {}
+		"translations": {
+			"ru": "Апшеронский район"
+		}
 	},
 	{
 		"name": "Ağcabǝdi",
@@ -6558,7 +6560,9 @@
 		"type": "municipality",
 		"native": "Baki",
 		"wikidataId": "Q9248",
-		"translations": {}
+		"translations": {
+			"ru": "Баку"
+		}
 	},
 	{
 		"name": "Balakan District",
@@ -6834,7 +6838,9 @@
 		"type": "municipality",
 		"native": "Gǝncǝ",
 		"wikidataId": "Q131290",
-		"translations": {}
+		"translations": {
+			"ru": "Гянджа"
+		}
 	},
 	{
 		"name": "Goranboy District",
@@ -8035,7 +8041,9 @@
 		"type": "municipality",
 		"native": "Sumqayit",
 		"wikidataId": "",
-		"translations": {}
+		"translations": {
+			"ru": "Сумгаит"
+		}
 	},
 	{
 		"name": "Tartar District",
@@ -8281,7 +8289,8 @@
 			"ja": "イェヴラハ市",
 			"jv": "Kota Yevlax",
 			"pa": "ਯੇਵਲਾਖ ਸ਼ਹਿਰ",
-			"pt": "Cidade de Yevlax"
+			"pt": "Cidade de Yevlax",
+			"ru": "Евлах"
 		}
 	},
 	{
