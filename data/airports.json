@@ -140248,6 +140248,29 @@
 		"modificationDate": "2024-01-07"
 	},
 	{
+		"geonameId": 13697006,
+		"name": "Alluri Sitarama Raju International Airport",
+		"asciiName": "Alluri Sitarama Raju International Airport",
+		"alternateNames": [
+			"VOVI",
+			"VTZ"
+		],
+		"unLocode": "INVTZ",
+		"airportLocationCode": "VTZ",
+		"iataCode": "VTZ",
+		"iataCodeSource": "unlocode-location-code",
+		"latitude": "17.9731",
+		"longitude": "83.50568",
+		"countryCode": "IN",
+		"countryName": "India",
+		"admin1Code": "02",
+		"admin1Name": "",
+		"admin2Code": "543",
+		"elevation": 0,
+		"timezone": "Asia/Kolkata",
+		"modificationDate": "2026-08-19"
+	},
+	{
 		"geonameId": 7668586,
 		"name": "Along Airport",
 		"asciiName": "Along Airport",
@@ -146832,7 +146855,7 @@
 		"admin2Code": "544",
 		"elevation": 0,
 		"timezone": "Asia/Kolkata",
-		"modificationDate": "2025-02-07"
+		"modificationDate": "2026-08-19"
 	},
 	{
 		"geonameId": 7668638,
@@ -586125,6 +586148,29 @@
 		"elevation": 0,
 		"timezone": "Asia/Ho_Chi_Minh",
 		"modificationDate": "2025-07-29"
+	},
+	{
+		"geonameId": 13697007,
+		"name": "Gia Binh International Airport",
+		"asciiName": "Gia Binh International Airport",
+		"alternateNames": [
+			"GBN",
+			"VVGB"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "21.07389",
+		"longitude": "106.21083",
+		"countryCode": "VN",
+		"countryName": "Vietnam",
+		"admin1Code": "24",
+		"admin1Name": "Bac Ninh",
+		"admin2Code": "263",
+		"elevation": 0,
+		"timezone": "Asia/Bangkok",
+		"modificationDate": "2026-08-19"
 	},
 	{
 		"geonameId": 6301170,
