@@ -77176,7 +77176,7 @@
 		"admin2Code": "3305",
 		"elevation": 0,
 		"timezone": "Asia/Shanghai",
-		"modificationDate": "2019-12-08"
+		"modificationDate": "2026-08-20"
 	},
 	{
 		"geonameId": 11493912,
@@ -101867,15 +101867,16 @@
 	},
 	{
 		"geonameId": 6297292,
-		"name": "Alexandria Borg El Arab Airport",
-		"asciiName": "Alexandria Borg El Arab Airport",
+		"name": "Alexandria International Airport",
+		"asciiName": "Alexandria International Airport",
 		"alternateNames": [
+			"ALY",
 			"HBE",
 			"HEAX"
 		],
-		"unLocode": "EGHBE",
-		"airportLocationCode": "HBE",
-		"iataCode": "HBE",
+		"unLocode": "EGALY",
+		"airportLocationCode": "ALY",
+		"iataCode": "ALY",
 		"iataCodeSource": "unlocode-location-code",
 		"latitude": "30.91767",
 		"longitude": "29.69641",
@@ -101886,7 +101887,7 @@
 		"admin2Code": "",
 		"elevation": 53,
 		"timezone": "Africa/Cairo",
-		"modificationDate": "2026-08-17"
+		"modificationDate": "2026-08-20"
 	},
 	{
 		"geonameId": 6297290,
