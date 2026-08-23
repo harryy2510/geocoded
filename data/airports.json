@@ -127556,52 +127556,6 @@
 		"modificationDate": "2021-09-04"
 	},
 	{
-		"geonameId": 3595030,
-		"name": "La Aurora",
-		"asciiName": "La Aurora",
-		"alternateNames": [
-			"GUA",
-			"La Aurora"
-		],
-		"unLocode": "GTGUA",
-		"airportLocationCode": "GUA",
-		"iataCode": "GUA",
-		"iataCodeSource": "unlocode-location-code",
-		"latitude": "14.58333",
-		"longitude": "-90.5",
-		"countryCode": "GT",
-		"countryName": "Guatemala",
-		"admin1Code": "07",
-		"admin1Name": "Sololá",
-		"admin2Code": "101",
-		"elevation": 0,
-		"timezone": "America/Guatemala",
-		"modificationDate": "2026-08-06"
-	},
-	{
-		"geonameId": 3595031,
-		"name": "La Aurora",
-		"asciiName": "La Aurora",
-		"alternateNames": [
-			"Aurora",
-			"La Aurora"
-		],
-		"unLocode": null,
-		"airportLocationCode": null,
-		"iataCode": null,
-		"iataCodeSource": null,
-		"latitude": "14.58167",
-		"longitude": "-90.52667",
-		"countryCode": "GT",
-		"countryName": "Guatemala",
-		"admin1Code": "03",
-		"admin1Name": "Sacatepéquez",
-		"admin2Code": "412",
-		"elevation": 0,
-		"timezone": "America/Guatemala",
-		"modificationDate": "2026-08-06"
-	},
-	{
 		"geonameId": 6299801,
 		"name": "La Aurora International Airport",
 		"asciiName": "La Aurora International Airport",
@@ -416592,32 +416546,6 @@
 		"elevation": 193,
 		"timezone": "America/Phoenix",
 		"modificationDate": "2013-12-07"
-	},
-	{
-		"geonameId": 6301738,
-		"name": "Launch and Landing Facility",
-		"asciiName": "Launch and Landing Facility",
-		"alternateNames": [
-			"KTTS",
-			"KX68",
-			"TTS",
-			"Titusville  NASA Shuttle Landing Facility",
-			"X68"
-		],
-		"unLocode": null,
-		"airportLocationCode": null,
-		"iataCode": null,
-		"iataCodeSource": null,
-		"latitude": "28.61667",
-		"longitude": "-80.7",
-		"countryCode": "US",
-		"countryName": "United States",
-		"admin1Code": "FL",
-		"admin1Name": "Florida",
-		"admin2Code": "",
-		"elevation": 3,
-		"timezone": "America/New_York",
-		"modificationDate": "2026-08-06"
 	},
 	{
 		"geonameId": 8484206,

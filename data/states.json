@@ -112943,11 +112943,11 @@
 		"latitude": "31.8",
 		"longitude": "35.3",
 		"timezone": "Asia/Hebron",
-		"capital": null,
+		"capital": "Jerusalem",
 		"population": 419108,
 		"type": "governorate",
 		"native": "Al Quds",
-		"wikidataId": "",
+		"wikidataId": "Q941828",
 		"translations": {
 			"en": "Quds Governorate"
 		}
