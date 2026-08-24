@@ -2250,6 +2250,15 @@
 		"countryCode": "TW"
 	},
 	{
+		"name": "Marathon Airlines",
+		"iataDesignator": "O8",
+		"accountingCode": "500",
+		"icaoCode": "MTO",
+		"countryName": "Greece",
+		"controlledDuplicate": false,
+		"countryCode": "GR"
+	},
+	{
 		"name": "Martinair Cargo",
 		"iataDesignator": "MP",
 		"accountingCode": "129",
