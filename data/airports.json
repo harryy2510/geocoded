@@ -582409,9 +582409,18 @@
 		"name": "Navoi International Airport",
 		"asciiName": "Navoi International Airport",
 		"alternateNames": [
+			"Furudgoҳi bajnalmillalii Navoi",
 			"NVI",
+			"Nabajy ehl aralyk aehroportu",
+			"Nauai khalykˌaralykˌ əuezhajy",
+			"Navoiy xalqaro aeroporti",
+			"Nevai Uluslararasi Havalimani",
+			"Nevai Uluslararası Havalimanı",
 			"UTSA",
 			"frwdgah byn‌almlly nwayy",
+			"Набайы эл аралык аэропорту",
+			"Науаи халықаралық әуежайы",
+			"Фурудгоҳи байналмиллалии Навоӣ",
 			"فرودگاه بین‌المللی نوایی"
 		],
 		"unLocode": "UZNVI",
@@ -582427,7 +582436,7 @@
 		"admin2Code": "",
 		"elevation": 0,
 		"timezone": "Asia/Samarkand",
-		"modificationDate": "2024-08-14"
+		"modificationDate": "2026-08-24"
 	},
 	{
 		"geonameId": 6301008,
@@ -582764,10 +582773,15 @@
 		"asciiName": "Zarafshan Airport",
 		"alternateNames": [
 			"AFS",
+			"Furudgoҳi Zarafshon",
 			"Sugraly Airport",
 			"UTSN",
 			"Zarafshan Airport",
+			"Zarafshon aeroporti",
+			"Zarapshan aehroportu",
 			"frwdgah_zrafshan",
+			"Зарапшан аэропорту",
+			"Фурудгоҳи Зарафшон",
 			"فرودگاه_زرافشان"
 		],
 		"unLocode": null,
@@ -582783,7 +582797,7 @@
 		"admin2Code": "",
 		"elevation": 0,
 		"timezone": "Asia/Samarkand",
-		"modificationDate": "2023-05-29"
+		"modificationDate": "2026-08-24"
 	},
 	{
 		"geonameId": 12624951,
