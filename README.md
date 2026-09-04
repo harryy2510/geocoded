@@ -111,8 +111,11 @@ v2 uses root-level collections with `filter[...]`, `q`, `sort`, pagination,
 | `GET`  | `/v2/states/:id`                                    | One state by name, ISO 3166-2, or code  |
 | `GET`  | `/v2/cities`                                        | Cities                                  |
 | `GET`  | `/v2/cities/:id`                                    | One city by name or GeoNames id         |
+| `GET`  | `/v2/countries/:country/states`                     | States in a country                     |
 | `GET`  | `/v2/countries/:country/states/:state`              | One state scoped to a country           |
+| `GET`  | `/v2/countries/:country/cities`                     | Cities in a country                     |
 | `GET`  | `/v2/countries/:country/cities/:city`               | One city scoped to a country            |
+| `GET`  | `/v2/countries/:country/states/:state/cities`       | Cities in a state                       |
 | `GET`  | `/v2/countries/:country/states/:state/cities/:city` | One city scoped to a state              |
 | `GET`  | `/v2/timezones`                                     | IANA timezones                          |
 | `GET`  | `/v2/currencies`                                    | ISO 4217 currencies                     |
@@ -126,7 +129,9 @@ v2 uses root-level collections with `filter[...]`, `q`, `sort`, pagination,
 Single country, state, and city lookups accept a name or ISO code. If that
 identifier matches more than one row, the API returns `409` with `matches`
 instead of guessing. Scope the path when you already know the country or state:
-`/v2/countries/US/states/CA` and `/v2/countries/US/cities/Los%20Angeles`.
+`/v2/countries/US/states`, `/v2/countries/US/states/CA`, and
+`/v2/countries/US/states/CA/cities`. List routes are paginated; pass `limit`
+when you want more than the default 25 rows.
 
 All responses are JSON with `Cache-Control: public, max-age=31536000, immutable`.
 

@@ -563,6 +563,26 @@ export const v2OpenApiPaths = {
 		fieldsExample: 'id,name,countryCode,geonameId',
 		conflict: true
 	}),
+	'/v2/countries/{country}/states': listPath({
+		tag: 'States',
+		summary: 'List states in a country',
+		description:
+			'Same as `/v2/states?filter[country]=...`. Country accepts ISO 3166-1 alpha-2, alpha-3, or name. Paginated; default `limit` is 25.',
+		schema: v2StateSchema,
+		fieldsExample: 'id,name,countryCode,stateCode',
+		parameters: [
+			pathParameter(
+				'country',
+				'US',
+				'ISO 3166-1 alpha-2, alpha-3, or country name'
+			),
+			filterState,
+			filterTimezone,
+			filterMinPopulation,
+			filterMaxPopulation
+		],
+		notFound: true
+	}),
 	'/v2/countries/{country}/states/{state}': nestedDetailPath({
 		tag: 'States',
 		summary: 'Get one state in a country',
@@ -580,6 +600,26 @@ export const v2OpenApiPaths = {
 		],
 		conflict: true
 	}),
+	'/v2/countries/{country}/cities': listPath({
+		tag: 'Cities',
+		summary: 'List cities in a country',
+		description:
+			'Same as `/v2/cities?filter[country]=...`. Country accepts ISO 3166-1 alpha-2, alpha-3, or name. Paginated; default `limit` is 25.',
+		schema: v2CitySchema,
+		fieldsExample: 'id,name,countryCode,geonameId',
+		parameters: [
+			pathParameter(
+				'country',
+				'US',
+				'ISO 3166-1 alpha-2, alpha-3, or country name'
+			),
+			filterState,
+			filterTimezone,
+			filterMinPopulation,
+			filterMaxPopulation
+		],
+		notFound: true
+	}),
 	'/v2/countries/{country}/cities/{city}': nestedDetailPath({
 		tag: 'Cities',
 		summary: 'Get one city in a country',
@@ -596,6 +636,26 @@ export const v2OpenApiPaths = {
 			pathParameter('city', 'Los Angeles', 'City name or GeoNames id')
 		],
 		conflict: true
+	}),
+	'/v2/countries/{country}/states/{state}/cities': listPath({
+		tag: 'Cities',
+		summary: 'List cities in a state',
+		description:
+			'Same as `/v2/cities?filter[country]=...&filter[state]=...`. Country and state accept name or ISO codes. Paginated; default `limit` is 25.',
+		schema: v2CitySchema,
+		fieldsExample: 'id,name,countryCode,geonameId',
+		parameters: [
+			pathParameter(
+				'country',
+				'US',
+				'ISO 3166-1 alpha-2, alpha-3, or country name'
+			),
+			pathParameter('state', 'CA', 'Name, ISO 3166-2, or state code'),
+			filterTimezone,
+			filterMinPopulation,
+			filterMaxPopulation
+		],
+		notFound: true
 	}),
 	'/v2/countries/{country}/states/{state}/cities/{city}': nestedDetailPath({
 		tag: 'Cities',
@@ -831,6 +891,7 @@ function listPath(options: {
 	schema: Record<string, unknown>
 	fieldsExample: string
 	parameters?: Array<Record<string, unknown>>
+	notFound?: boolean
 }) {
 	return {
 		get: {
@@ -853,7 +914,8 @@ function listPath(options: {
 						}
 					}
 				},
-				'400': v2ErrorResponse
+				'400': v2ErrorResponse,
+				...(options.notFound ? { '404': v2ErrorResponse } : {})
 			}
 		}
 	}

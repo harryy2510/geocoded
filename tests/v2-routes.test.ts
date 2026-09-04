@@ -621,9 +621,13 @@ class FakeV2D1Database {
 			const countryCode = String(parameters[0]).toUpperCase()
 			filtered = filtered.filter((row) => row.country_code === countryCode)
 		}
-		if (sql.includes('state_code = ?')) {
-			const stateCode = String(parameters.find((value) => value === 'AZ') ?? '')
-			filtered = filtered.filter((row) => row.state_code === stateCode)
+		if (sql.includes('state_code = ?') || sql.includes('iso2 = ?')) {
+			const stateCode = String(
+				parameters[sql.includes('country_code = ?') ? 1 : 0] ?? ''
+			).toUpperCase()
+			filtered = filtered.filter(
+				(row) => row.state_code === stateCode || row.iso2 === stateCode
+			)
 		}
 		if (sql.includes('name = ?')) {
 			const name = String(
@@ -1283,6 +1287,78 @@ describe('v2 routes', () => {
 		})
 	})
 
+	test('lists states nested under a country', async () => {
+		for (const path of [
+			'/v2/countries/US/states?fields=id,name,stateCode',
+			'/v2/countries/United%20States/states?fields=id,name,stateCode'
+		]) {
+			const response = await request(path)
+			expect(response.status).toBe(200)
+			const body = (await response.json()) as PaginatedBody<{
+				id: string
+				name: string
+				stateCode: string
+			}>
+			expect(body.data.map((state) => state.stateCode).sort()).toEqual([
+				'AZ',
+				'CA'
+			])
+			expect(body.meta.total).toBe(2)
+		}
+	})
+
+	test('lists cities nested under a country and state', async () => {
+		for (const path of [
+			'/v2/countries/US/states/CA/cities?fields=name,geonameId,stateCode',
+			'/v2/countries/US/states/California/cities?fields=name,geonameId,stateCode'
+		]) {
+			const response = await request(path)
+			expect(response.status).toBe(200)
+			const body = (await response.json()) as PaginatedBody<{
+				name: string
+				geonameId: number
+				stateCode: string
+			}>
+			expect(body.data.map((city) => city.name).sort()).toEqual([
+				'Los Angeles',
+				'Springfield'
+			])
+			expect(body.data.every((city) => city.stateCode === 'CA')).toBe(true)
+			expect(body.meta.total).toBe(2)
+		}
+	})
+
+	test('lists cities nested under a country', async () => {
+		const response = await request(
+			'/v2/countries/US/cities?fields=name,stateCode'
+		)
+		expect(response.status).toBe(200)
+		const body = (await response.json()) as PaginatedBody<{
+			name: string
+			stateCode: string
+		}>
+		expect(body.data.map((city) => city.name).sort()).toEqual([
+			'Los Angeles',
+			'Springfield',
+			'Springfield'
+		])
+		expect(body.meta.total).toBe(3)
+	})
+
+	test('returns 404 when a nested list country or state misses', async () => {
+		const missingCountry = await request('/v2/countries/ZZ/states')
+		expect(missingCountry.status).toBe(404)
+		const missingCountryBody = (await missingCountry.json()) as {
+			error: string
+		}
+		expect(missingCountryBody).toEqual({ error: 'Country not found' })
+
+		const missingState = await request('/v2/countries/US/states/ZZ/cities')
+		expect(missingState.status).toBe(404)
+		const missingStateBody = (await missingState.json()) as { error: string }
+		expect(missingStateBody).toEqual({ error: 'State not found' })
+	})
+
 	test('rejects unsupported v2 filters', async () => {
 		const response = await request('/v2/countries?filter[unLocode]=AEJEA')
 
@@ -1331,8 +1407,11 @@ describe('v2 routes', () => {
 			'/v2/states/{id}',
 			'/v2/cities',
 			'/v2/cities/{id}',
+			'/v2/countries/{country}/states',
 			'/v2/countries/{country}/states/{state}',
+			'/v2/countries/{country}/cities',
 			'/v2/countries/{country}/cities/{city}',
+			'/v2/countries/{country}/states/{state}/cities',
 			'/v2/countries/{country}/states/{state}/cities/{city}',
 			'/v2/timezones',
 			'/v2/timezones/{id}',

@@ -181,13 +181,22 @@ v2App.get('/countries/:country/states/:state/cities/:city', async (c) => {
 		state: true
 	})
 })
+v2App.get('/countries/:country/states/:state/cities', async (c) => {
+	return await handleScopedCityList(c, { state: true })
+})
 v2App.get('/countries/:country/states/:state', async (c) => {
 	return await handleScopedStateLookup(c)
+})
+v2App.get('/countries/:country/states', async (c) => {
+	return await handleScopedStateList(c)
 })
 v2App.get('/countries/:country/cities/:city', async (c) => {
 	return await handleScopedCityLookup(c, {
 		country: true
 	})
+})
+v2App.get('/countries/:country/cities', async (c) => {
+	return await handleScopedCityList(c, { state: false })
 })
 registerV2DetailRoute(
 	'/countries/:id',
@@ -351,6 +360,97 @@ function registerV2LookupRoute<T>(
 			ambiguousHint
 		)
 	})
+}
+
+async function handleScopedStateList(c: V2RequestContext): Promise<Response> {
+	const params = new URL(c.req.url).searchParams
+	const page = parsePage(params)
+	if (typeof page === 'string') return c.json({ error: page }, 400)
+
+	const country = await getV2CountryById(
+		c.env.GEO_DB,
+		decodePathParam(c.req.param('country') ?? ''),
+		[]
+	)
+	if (!country) return jsonV2(c, { error: 'Country not found' }, 404)
+
+	params.set('filter[country]', country.iso2)
+	const query = parseV2Query(params, v2StateResource)
+	if (!query.ok) return c.json({ error: query.error }, 400)
+
+	const { rows, total } = await listV2States(c.env.GEO_DB, {
+		plan: query,
+		limit: page.limit,
+		offset: page.offset
+	})
+	return jsonV2(
+		c,
+		paginatedV2(
+			projectV2Fields(rows, query.projection) as unknown[],
+			total,
+			page.limit,
+			page.offset
+		)
+	)
+}
+
+async function handleScopedCityList(
+	c: V2RequestContext,
+	scope: { state: boolean }
+): Promise<Response> {
+	const params = new URL(c.req.url).searchParams
+	const page = parsePage(params)
+	if (typeof page === 'string') return c.json({ error: page }, 400)
+
+	const country = await getV2CountryById(
+		c.env.GEO_DB,
+		decodePathParam(c.req.param('country') ?? ''),
+		[]
+	)
+	if (!country) return jsonV2(c, { error: 'Country not found' }, 404)
+
+	params.set('filter[country]', country.iso2)
+	if (scope.state) {
+		const state = await lookupV2State(
+			c.env.GEO_DB,
+			decodePathParam(c.req.param('state') ?? ''),
+			country.iso2
+		)
+		if (state.status === 'missing') {
+			return jsonV2(c, { error: 'State not found' }, 404)
+		}
+		if (state.status === 'ambiguous') {
+			const stateQuery = parseV2Query(params, v2StateResource)
+			if (!stateQuery.ok) return c.json({ error: stateQuery.error }, 400)
+			return jsonLookup(
+				c,
+				state,
+				stateQuery.projection,
+				'State not found',
+				'State is ambiguous',
+				'Use a unique id such as US-CA, or the state ISO code if it is unique in this country.'
+			)
+		}
+		params.set('filter[state]', state.row.stateCode)
+	}
+
+	const query = parseV2Query(params, v2CityResource)
+	if (!query.ok) return c.json({ error: query.error }, 400)
+
+	const { rows, total } = await listV2Cities(c.env.GEO_DB, {
+		plan: query,
+		limit: page.limit,
+		offset: page.offset
+	})
+	return jsonV2(
+		c,
+		paginatedV2(
+			projectV2Fields(rows, query.projection) as unknown[],
+			total,
+			page.limit,
+			page.offset
+		)
+	)
 }
 
 async function handleScopedStateLookup(c: V2RequestContext): Promise<Response> {

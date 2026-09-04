@@ -53,8 +53,10 @@ already know. Stable internal ids are optional, not the default path.
 /v2/cities/US:Los%20Angeles
 /v2/cities/US:CA:Los%20Angeles
 
+/v2/countries/US/states
 /v2/countries/US/states/CA
 /v2/countries/US/states/California
+/v2/countries/US/states/CA/cities
 /v2/countries/United%20States/cities/Los%20Angeles
 /v2/countries/US/states/CA/cities/Los%20Angeles
 ```
@@ -64,6 +66,8 @@ Rules:
 - Path segments accept name or ISO code, case-insensitive.
 - If exactly one row matches, return it.
 - If several rows match, return `409` with `matches` instead of guessing.
+- Nested list routes (`/v2/countries/US/states`, `/v2/countries/US/states/CA/cities`)
+  are paginated aliases of `filter[country]` / `filter[state]`. Default `limit` is 25.
 - Scope the path when a code or name is shared across countries or states.
 - GeoNames ids remain valid for cities. ISO 3166-2 and `country:code` remain
   valid for states.

@@ -422,6 +422,32 @@ const v2Cases: ApiCase[] = [
 		}
 	},
 	{
+		name: 'v2 lists states nested under a country',
+		path: '/v2/countries/AE/states?fields=id,name,countryCode,stateCode',
+		status: 200,
+		assert: (body) => {
+			assertPaginated(body)
+			const page = assertRecord(body)
+			const rows = page.data as JsonRecord[]
+			expect(rows.length).toBeGreaterThan(0)
+			expect(rows.every((row) => row.countryCode === 'AE')).toBe(true)
+		}
+	},
+	{
+		name: 'v2 lists cities nested under a country and state',
+		path: '/v2/countries/AE/states/AZ/cities?fields=id,name,countryCode,stateCode',
+		status: 200,
+		assert: (body) => {
+			assertPaginated(body)
+			const page = assertRecord(body)
+			const rows = page.data as JsonRecord[]
+			expect(rows.length).toBeGreaterThan(0)
+			expect(
+				rows.every((row) => row.countryCode === 'AE' && row.stateCode === 'AZ')
+			).toBe(true)
+		}
+	},
+	{
 		name: 'v2 returns one city',
 		path: '/v2/cities/292968?fields=id,name,countryCode,geonameId',
 		status: 200,

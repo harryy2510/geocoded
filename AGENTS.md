@@ -72,7 +72,8 @@ The private `geocoded-data` repo updates `data/*.json` through the data pipeline
 - `GET /v2/countries/:id`: country by ISO2, ISO3, or name.
 - `GET /v2/states/:id`: state by name, ISO 3166-2 (`US-CA`), country-scoped id (`US:CA` or `US:California`), or state code. Shared identifiers return `409` with `matches`.
 - `GET /v2/cities/:id`: city by name, GeoNames id, `country:name`, or `country:state:name`. Shared names return `409` with `matches`.
-- `GET /v2/countries/:country/states/:state`, `/v2/countries/:country/cities/:city`, `/v2/countries/:country/states/:state/cities/:city`: scoped single-resource lookups. Country and state path segments accept name or ISO codes.
+- `GET /v2/countries/:country/states` and `GET /v2/countries/:country/states/:state`: v2 state list and lookup scoped to a country. Country and state path segments accept name or ISO codes.
+- `GET /v2/countries/:country/cities`, `GET /v2/countries/:country/states/:state/cities`, and `GET /v2/countries/:country/states/:state/cities/:city`: v2 city list and lookup scoped to a country or state.
 - `GET /v2/timezones`, `/v2/currencies`, `/v2/airlines`, `/v2/airports`, `/v2/ports`, `/v2/border-crossings`: v2 reference and transport collections.
 - `GET /v2/statistics`: v2 country statistics resource. Select individual statistics through `fields`, not `indicator`.
 - `GET /v2/migrant-stocks`: v2 country migrant stock resource (international migrant stock per country).
