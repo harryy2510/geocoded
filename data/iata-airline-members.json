@@ -49,7 +49,7 @@
 		"iataDesignator": "SU",
 		"accountingCode": "555",
 		"icaoCode": "AFL",
-		"countryName": "Russian Federation",
+		"countryName": "Russia",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
 	},
@@ -211,7 +211,7 @@
 		"iataDesignator": "9H",
 		"accountingCode": "856",
 		"icaoCode": "CGN",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -220,7 +220,7 @@
 		"iataDesignator": "CA",
 		"accountingCode": "999",
 		"icaoCode": "CCA",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -274,7 +274,7 @@
 		"iataDesignator": "GT",
 		"accountingCode": "730",
 		"icaoCode": "CGH",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -283,9 +283,9 @@
 		"iataDesignator": "LD",
 		"accountingCode": "288",
 		"icaoCode": "AHK",
-		"countryName": "Hong Kong (SAR), China",
+		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": "HK"
+		"countryCode": null
 	},
 	{
 		"name": "Air India",
@@ -310,7 +310,7 @@
 		"iataDesignator": "JS",
 		"accountingCode": "120",
 		"icaoCode": "KOR",
-		"countryName": "Korea, Democratic People's Republic of",
+		"countryName": "North Korea",
 		"controlledDuplicate": false,
 		"countryCode": "KP"
 	},
@@ -319,9 +319,9 @@
 		"iataDesignator": "NX",
 		"accountingCode": "675",
 		"icaoCode": "AMU",
-		"countryName": "Macao (SAR), China",
+		"countryName": "Macao (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": "MO"
+		"countryCode": null
 	},
 	{
 		"name": "Air Mauritius",
@@ -382,7 +382,7 @@
 		"iataDesignator": "YP",
 		"accountingCode": "350",
 		"icaoCode": "APZ",
-		"countryName": "Korea, Republic of",
+		"countryName": "South Korea",
 		"controlledDuplicate": false,
 		"countryCode": "KR"
 	},
@@ -436,7 +436,7 @@
 		"iataDesignator": "TC",
 		"accountingCode": "197",
 		"icaoCode": "ATC",
-		"countryName": "Tanzania, United Republic of",
+		"countryName": "Tanzania",
 		"controlledDuplicate": false,
 		"countryCode": "TZ"
 	},
@@ -499,7 +499,7 @@
 		"iataDesignator": "KJ",
 		"accountingCode": "994",
 		"icaoCode": "AIH",
-		"countryName": "Korea, Republic of",
+		"countryName": "South Korea",
 		"controlledDuplicate": false,
 		"countryCode": "KR"
 	},
@@ -607,7 +607,7 @@
 		"iataDesignator": "OZ",
 		"accountingCode": "988",
 		"icaoCode": "AAR",
-		"countryName": "Korea, Republic of",
+		"countryName": "South Korea",
 		"controlledDuplicate": false,
 		"countryCode": "KR"
 	},
@@ -769,9 +769,9 @@
 		"iataDesignator": "QH",
 		"accountingCode": "926",
 		"icaoCode": "BAV",
-		"countryName": "Vietnam",
+		"countryName": "Viet Nam",
 		"controlledDuplicate": false,
-		"countryCode": "VN"
+		"countryCode": null
 	},
 	{
 		"name": "Bangkok Airways",
@@ -913,7 +913,7 @@
 		"iataDesignator": "JD",
 		"accountingCode": "898",
 		"icaoCode": "CBJ",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -958,9 +958,9 @@
 		"iataDesignator": "CX",
 		"accountingCode": "160",
 		"icaoCode": "CPA",
-		"countryName": "Hong Kong (SAR), China",
+		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": "HK"
+		"countryCode": null
 	},
 	{
 		"name": "Cebu Pacific",
@@ -1021,7 +1021,7 @@
 		"iataDesignator": "EU",
 		"accountingCode": "811",
 		"icaoCode": "UEA",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1039,7 +1039,7 @@
 		"iataDesignator": "CK",
 		"accountingCode": "112",
 		"icaoCode": "CKK",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1048,7 +1048,7 @@
 		"iataDesignator": "MU",
 		"accountingCode": "781",
 		"icaoCode": "CES",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1057,7 +1057,7 @@
 		"iataDesignator": "G5",
 		"accountingCode": "987",
 		"icaoCode": "HXA",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1066,7 +1066,7 @@
 		"iataDesignator": "CF",
 		"accountingCode": "804",
 		"icaoCode": "CYZ",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1075,7 +1075,7 @@
 		"iataDesignator": "CZ",
 		"accountingCode": "784",
 		"icaoCode": "CSN",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1084,7 +1084,7 @@
 		"iataDesignator": "KN",
 		"accountingCode": "822",
 		"icaoCode": "CUA",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1246,7 +1246,7 @@
 		"iataDesignator": "ZE",
 		"accountingCode": "839",
 		"icaoCode": "ESR",
-		"countryName": "Korea, Republic of",
+		"countryName": "South Korea",
 		"controlledDuplicate": false,
 		"countryCode": "KR"
 	},
@@ -1480,7 +1480,7 @@
 		"iataDesignator": "5F",
 		"accountingCode": "130",
 		"icaoCode": "FIA",
-		"countryName": "Moldova, Republic of",
+		"countryName": "Moldova",
 		"controlledDuplicate": false,
 		"countryCode": "MD"
 	},
@@ -1516,7 +1516,7 @@
 		"iataDesignator": "FU",
 		"accountingCode": "666",
 		"icaoCode": "FZA",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1588,9 +1588,9 @@
 		"iataDesignator": "HB",
 		"accountingCode": "283",
 		"icaoCode": "HGB",
-		"countryName": "Hong Kong (SAR), China",
+		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": "HK"
+		"countryCode": null
 	},
 	{
 		"name": "Gulf Air",
@@ -1606,7 +1606,7 @@
 		"iataDesignator": "GX",
 		"accountingCode": "872",
 		"icaoCode": "CBG",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1624,7 +1624,7 @@
 		"iataDesignator": "HU",
 		"accountingCode": "880",
 		"icaoCode": "CHH",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1642,7 +1642,7 @@
 		"iataDesignator": "NS",
 		"accountingCode": "836",
 		"icaoCode": "HBH",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1696,27 +1696,27 @@
 		"iataDesignator": "RH",
 		"accountingCode": "828",
 		"icaoCode": "HKC",
-		"countryName": "Hong Kong (SAR), China",
+		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": "HK"
+		"countryCode": null
 	},
 	{
 		"name": "Hong Kong Airlines",
 		"iataDesignator": "HX",
 		"accountingCode": "851",
 		"icaoCode": "CRK",
-		"countryName": "Hong Kong (SAR), China",
+		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": "HK"
+		"countryCode": null
 	},
 	{
 		"name": "Hong Kong Express Airways",
 		"iataDesignator": "UO",
 		"accountingCode": "128",
 		"icaoCode": "HKE",
-		"countryName": "Hong Kong (SAR), China",
+		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": "HK"
+		"countryCode": null
 	},
 	{
 		"name": "IBERIA",
@@ -1768,7 +1768,7 @@
 		"iataDesignator": "EO",
 		"accountingCode": "770",
 		"icaoCode": "KAR",
-		"countryName": "Russian Federation",
+		"countryName": "Russia",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
 	},
@@ -1786,7 +1786,7 @@
 		"iataDesignator": "IR",
 		"accountingCode": "096",
 		"icaoCode": "IRA",
-		"countryName": "Iran, Islamic Republic of",
+		"countryName": "Iran",
 		"controlledDuplicate": false,
 		"countryCode": "IR"
 	},
@@ -1795,7 +1795,7 @@
 		"iataDesignator": "B9",
 		"accountingCode": "491",
 		"icaoCode": "IRB",
-		"countryName": "Iran, Islamic Republic of",
+		"countryName": "Iran",
 		"controlledDuplicate": false,
 		"countryCode": "IR"
 	},
@@ -1804,7 +1804,7 @@
 		"iataDesignator": "EP",
 		"accountingCode": "815",
 		"icaoCode": "IRC",
-		"countryName": "Iran, Islamic Republic of",
+		"countryName": "Iran",
 		"controlledDuplicate": false,
 		"countryCode": "IR"
 	},
@@ -1858,7 +1858,7 @@
 		"iataDesignator": "JG",
 		"accountingCode": "619",
 		"icaoCode": "JDL",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1867,7 +1867,7 @@
 		"iataDesignator": "7C",
 		"accountingCode": "806",
 		"icaoCode": "JJA",
-		"countryName": "Korea, Republic of",
+		"countryName": "South Korea",
 		"controlledDuplicate": false,
 		"countryCode": "KR"
 	},
@@ -1930,7 +1930,7 @@
 		"iataDesignator": "LJ",
 		"accountingCode": "718",
 		"icaoCode": "JNA",
-		"countryName": "Korea, Republic of",
+		"countryName": "South Korea",
 		"controlledDuplicate": false,
 		"countryCode": "KR"
 	},
@@ -1948,7 +1948,7 @@
 		"iataDesignator": "HO",
 		"accountingCode": "018",
 		"icaoCode": "DKH",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -1984,9 +1984,9 @@
 		"iataDesignator": "KL",
 		"accountingCode": "074",
 		"icaoCode": "KLM",
-		"countryName": "Netherlands",
+		"countryName": "Netherlands (the)",
 		"controlledDuplicate": false,
-		"countryCode": "NL"
+		"countryCode": null
 	},
 	{
 		"name": "KM Malta Airlines",
@@ -2002,7 +2002,7 @@
 		"iataDesignator": "KE",
 		"accountingCode": "180",
 		"icaoCode": "KAL",
-		"countryName": "Korea, Republic of",
+		"countryName": "South Korea",
 		"controlledDuplicate": false,
 		"countryCode": "KR"
 	},
@@ -2011,7 +2011,7 @@
 		"iataDesignator": "KY",
 		"accountingCode": "833",
 		"icaoCode": "KNA",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2047,7 +2047,7 @@
 		"iataDesignator": "QV",
 		"accountingCode": "627",
 		"icaoCode": "LAO",
-		"countryName": "Lao PDR",
+		"countryName": "Laos",
 		"controlledDuplicate": false,
 		"countryCode": "LA"
 	},
@@ -2155,7 +2155,7 @@
 		"iataDesignator": "GJ",
 		"accountingCode": "891",
 		"icaoCode": "CDC",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2173,7 +2173,7 @@
 		"iataDesignator": "8L",
 		"accountingCode": "859",
 		"icaoCode": "LKE",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2263,9 +2263,9 @@
 		"iataDesignator": "MP",
 		"accountingCode": "129",
 		"icaoCode": "MPH",
-		"countryName": "Netherlands",
+		"countryName": "Netherlands (the)",
 		"controlledDuplicate": false,
-		"countryCode": "NL"
+		"countryCode": null
 	},
 	{
 		"name": "MasAir",
@@ -2407,7 +2407,7 @@
 		"iataDesignator": "Y7",
 		"accountingCode": "476",
 		"icaoCode": "TYA",
-		"countryName": "Russian Federation",
+		"countryName": "Russia",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
 	},
@@ -2416,7 +2416,7 @@
 		"iataDesignator": "N4",
 		"accountingCode": "216",
 		"icaoCode": "NWS",
-		"countryName": "Russian Federation",
+		"countryName": "Russia",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
 	},
@@ -2443,7 +2443,7 @@
 		"iataDesignator": "BK",
 		"accountingCode": "866",
 		"icaoCode": "OKA",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2587,7 +2587,7 @@
 		"iataDesignator": "PW",
 		"accountingCode": "031",
 		"icaoCode": "PRF",
-		"countryName": "Tanzania, United Republic of",
+		"countryName": "Tanzania",
 		"controlledDuplicate": false,
 		"countryCode": "TZ"
 	},
@@ -2641,7 +2641,7 @@
 		"iataDesignator": "QW",
 		"accountingCode": "912",
 		"icaoCode": "QDA",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2668,7 +2668,7 @@
 		"iataDesignator": "FV",
 		"accountingCode": "195",
 		"icaoCode": "SDM",
-		"countryName": "Russian Federation",
+		"countryName": "Russia",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
 	},
@@ -2686,7 +2686,7 @@
 		"iataDesignator": "BI",
 		"accountingCode": "672",
 		"icaoCode": "RBA",
-		"countryName": "Brunei Darussalam",
+		"countryName": "Brunei",
 		"controlledDuplicate": false,
 		"countryCode": "BN"
 	},
@@ -2704,7 +2704,7 @@
 		"iataDesignator": "DR",
 		"accountingCode": "299",
 		"icaoCode": "RLH",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2713,7 +2713,7 @@
 		"iataDesignator": "7R",
 		"accountingCode": "362",
 		"icaoCode": "RLU",
-		"countryName": "Russian Federation",
+		"countryName": "Russia",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
 	},
@@ -2731,7 +2731,7 @@
 		"iataDesignator": "S7",
 		"accountingCode": "421",
 		"icaoCode": "SBI",
-		"countryName": "Russian Federation",
+		"countryName": "Russia",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
 	},
@@ -2803,7 +2803,7 @@
 		"iataDesignator": "O3",
 		"accountingCode": "921",
 		"icaoCode": "CSS",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2812,7 +2812,7 @@
 		"iataDesignator": "SC",
 		"accountingCode": "324",
 		"icaoCode": "CDG",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2821,7 +2821,7 @@
 		"iataDesignator": "FM",
 		"accountingCode": "774",
 		"icaoCode": "CSH",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2830,7 +2830,7 @@
 		"iataDesignator": "ZH",
 		"accountingCode": "479",
 		"icaoCode": "CSZ",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2839,7 +2839,7 @@
 		"iataDesignator": "3U",
 		"accountingCode": "876",
 		"icaoCode": "CSC",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -2893,7 +2893,7 @@
 		"iataDesignator": "5N",
 		"accountingCode": "316",
 		"icaoCode": "AUL",
-		"countryName": "Russian Federation",
+		"countryName": "Russia",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
 	},
@@ -3001,7 +3001,7 @@
 		"iataDesignator": "Y8",
 		"accountingCode": "871",
 		"icaoCode": "YZR",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -3028,7 +3028,7 @@
 		"iataDesignator": "RB",
 		"accountingCode": "070",
 		"icaoCode": "SYR",
-		"countryName": "Syrian Arab Republic",
+		"countryName": "Syria",
 		"controlledDuplicate": false,
 		"countryCode": "SY"
 	},
@@ -3109,7 +3109,7 @@
 		"iataDesignator": "GS",
 		"accountingCode": "826",
 		"icaoCode": "GCR",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -3118,7 +3118,7 @@
 		"iataDesignator": "TW",
 		"accountingCode": "722",
 		"icaoCode": "TWB",
-		"countryName": "Korea, Republic of",
+		"countryName": "South Korea",
 		"controlledDuplicate": false,
 		"countryCode": "KR"
 	},
@@ -3208,7 +3208,7 @@
 		"iataDesignator": "U6",
 		"accountingCode": "262",
 		"icaoCode": "SVR",
-		"countryName": "Russian Federation",
+		"countryName": "Russia",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
 	},
@@ -3217,7 +3217,7 @@
 		"iataDesignator": "UQ",
 		"accountingCode": "886",
 		"icaoCode": "CUH",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -3235,7 +3235,7 @@
 		"iataDesignator": "UT",
 		"accountingCode": "298",
 		"icaoCode": "UTA",
-		"countryName": "Russian Federation",
+		"countryName": "Russia",
 		"controlledDuplicate": false,
 		"countryCode": "RU"
 	},
@@ -3253,18 +3253,18 @@
 		"iataDesignator": "VJ",
 		"accountingCode": "978",
 		"icaoCode": "VJC",
-		"countryName": "Vietnam",
+		"countryName": "Viet Nam",
 		"controlledDuplicate": false,
-		"countryCode": "VN"
+		"countryCode": null
 	},
 	{
 		"name": "Vietnam Airlines",
 		"iataDesignator": "VN",
 		"accountingCode": "738",
 		"icaoCode": "HVN",
-		"countryName": "Vietnam",
+		"countryName": "Viet Nam",
 		"controlledDuplicate": false,
-		"countryCode": "VN"
+		"countryCode": null
 	},
 	{
 		"name": "Virgin Atlantic",
@@ -3325,7 +3325,7 @@
 		"iataDesignator": "PN",
 		"accountingCode": "847",
 		"icaoCode": "CHB",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -3370,7 +3370,7 @@
 		"iataDesignator": "MF",
 		"accountingCode": "731",
 		"icaoCode": "CXA",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -3379,7 +3379,7 @@
 		"iataDesignator": "TV",
 		"accountingCode": "088",
 		"icaoCode": "TBA",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	},
@@ -3388,7 +3388,7 @@
 		"iataDesignator": "YG",
 		"accountingCode": "860",
 		"icaoCode": "HYT",
-		"countryName": "China (People's Republic of)",
+		"countryName": "China",
 		"controlledDuplicate": false,
 		"countryCode": "CN"
 	}
