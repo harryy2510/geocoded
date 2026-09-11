@@ -1984,9 +1984,9 @@
 		"iataDesignator": "KL",
 		"accountingCode": "074",
 		"icaoCode": "KLM",
-		"countryName": "Netherlands (the)",
+		"countryName": "Netherlands",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "NL"
 	},
 	{
 		"name": "KM Malta Airlines",
@@ -2263,9 +2263,9 @@
 		"iataDesignator": "MP",
 		"accountingCode": "129",
 		"icaoCode": "MPH",
-		"countryName": "Netherlands (the)",
+		"countryName": "Netherlands",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "NL"
 	},
 	{
 		"name": "MasAir",
