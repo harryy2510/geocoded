@@ -381,7 +381,8 @@
 			"ja": "ドバイ",
 			"jv": "Dubai",
 			"pa": "ਦੁਬਈ",
-			"pt": "Dubai"
+			"pt": "Dubai",
+			"ru": "Дубай"
 		}
 	},
 	{
@@ -40221,7 +40222,8 @@
 			"ja": "アディスアベバ",
 			"jv": "Addis Ababa",
 			"pa": "ਅਦੀਸ ਅਬਾਬਾ",
-			"pt": "Adis Abeba"
+			"pt": "Adis Abeba",
+			"ru": "Аддис-Абеба"
 		}
 	},
 	{
@@ -82722,7 +82724,9 @@
 		"type": "municipality",
 		"native": "Preiļu novads",
 		"wikidataId": "Q97232413",
-		"translations": {}
+		"translations": {
+			"ru": "Прейльский край"
+		}
 	},
 	{
 		"name": "Rēzekne",
@@ -93432,7 +93436,7 @@
 		"population": 4390,
 		"type": "parish",
 		"native": "Saint Anthony",
-		"wikidataId": "Q133854984",
+		"wikidataId": "Q3463656",
 		"translations": {}
 	},
 	{
@@ -93449,7 +93453,7 @@
 		"population": 0,
 		"type": "parish",
 		"native": "Saint Georges",
-		"wikidataId": "Q133854985",
+		"wikidataId": "Q3463799",
 		"translations": {}
 	},
 	{
@@ -93466,7 +93470,7 @@
 		"population": 4390,
 		"type": "parish",
 		"native": "Saint Peter",
-		"wikidataId": "Q133854986",
+		"wikidataId": "Q3464018",
 		"translations": {}
 	},
 	{
@@ -93531,7 +93535,9 @@
 		"type": "local council",
 		"native": "Birkirkara",
 		"wikidataId": "Q39583",
-		"translations": {}
+		"translations": {
+			"ru": "Биркиркара"
+		}
 	},
 	{
 		"name": "Birżebbuġa",
