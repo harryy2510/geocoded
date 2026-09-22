@@ -102926,7 +102926,7 @@
 		"latitude": "60",
 		"longitude": "11.16667",
 		"timezone": "Europe/Oslo",
-		"capital": "Oslo",
+		"capital": null,
 		"population": 523272,
 		"type": "county",
 		"native": "Akershus",
