@@ -1,8 +1,8 @@
 import { SITE_API_URL } from './api-url'
 
-export const V2_API_URL = SITE_API_URL
+const V2_API_URL = SITE_API_URL
 
-export type V2Meta = {
+type V2Meta = {
 	total: number
 	limit: number
 	offset: number
@@ -43,6 +43,17 @@ export type StatisticsRow = {
 	gdpCurrentUsd?: Metric
 	gdpPerCapitaCurrentUsd?: Metric
 	lifeExpectancy?: Metric
+	dependencyRatio?: Metric
+	ageingIndex?: Metric
+	sexRatio?: Metric
+}
+
+type CountryTimezone = {
+	zoneName: string
+	gmtOffset: number
+	gmtOffsetName: string
+	abbreviation: string
+	tzName: string
 }
 
 export type CountryRow = {
@@ -54,10 +65,35 @@ export type CountryRow = {
 	region: string
 	currency: string
 	population: number
+	native?: string | null
+	localName?: string | null
+	capital?: string | null
+	subregion?: string | null
+	currencyName?: string | null
+	currencySymbol?: string | null
+	tld?: string | null
+	phoneCode?: string | null
+	numericCode?: string | null
+	nationality?: string | null
+	latitude?: string | null
+	longitude?: string | null
+	areaSqKm?: number | null
+	gdp?: number | null
+	literacy?: number | null
+	postalCodeFormat?: string | null
+	postalCodeRegex?: string | null
+	drivingSide?: string | null
+	measurementSystem?: string | null
+	firstDayOfWeek?: string | null
+	timeFormat?: string | null
+	flagUrl?: string | null
+	languages?: string[] | null
+	neighbours?: string[] | null
+	timezones?: CountryTimezone[]
 	statistics?: StatisticsRow
 }
 
-export type MigrationOrigin = {
+type MigrationOrigin = {
 	countryCode: string
 	countryName: string
 	iso3: string
@@ -81,25 +117,25 @@ export type MigrationRow = {
 	origins: MigrationOrigin[]
 }
 
-export type ContinentRow = {
+type ContinentRow = {
 	id: string
 	name: string
 	countryCount: number
 }
 
-export type RegionRow = {
+type RegionRow = {
 	id: string
 	name: string
 	continent: string
 	countryCount: number
 }
 
-export type LanguageNameRow = {
+type LanguageNameRow = {
 	printName: string
 	invertedName: string
 }
 
-export type LanguageRow = {
+type LanguageRow = {
 	id?: string
 	iso6393: string | null
 	iso6392B: string | null
@@ -151,14 +187,17 @@ export type StateRow = {
 
 export type CityRow = {
 	id?: string
+	geonameId?: number | null
 	name: string
 	countryCode: string
 	countryName: string
+	stateCode?: string | null
 	stateName: string | null
 	population: number | null
 	latitude: string | null
 	longitude: string | null
 	timezone: string | null
+	distanceKm?: number
 }
 
 export type AirportRow = {
@@ -176,7 +215,7 @@ export type AirportRow = {
 	timezone: string | null
 }
 
-export type AirlineRow = {
+type AirlineRow = {
 	id: string
 	name: string
 	iataCode: string | null
@@ -199,23 +238,174 @@ export type PortRow = {
 	subdivisionCode: string | null
 }
 
+type SearchResultType = 'country' | 'state' | 'city'
+
+export type SearchResult = {
+	type: SearchResultType
+	id: string
+	name: string
+	countryCode: string
+	countryName: string
+	stateCode: string | null
+	stateName: string | null
+	geonameId: number | string | null
+}
+
+type ReverseResult = {
+	query: { lat: number; lng: number }
+	city: CityRow & { distanceKm: number }
+	state: StateRow | null
+	country: CountryRow | null
+	timezone: string
+}
+
+export type TimezoneNow = {
+	timezone: string
+	localTime: string
+	utcOffset: string
+	utcOffsetSeconds: number
+	isDst: boolean
+	abbreviation: string
+	nextTransition: { at: string; utcOffset: string } | null
+}
+
+type DatasetInfo = {
+	id: string
+	name: string
+	records: number
+	source: string
+	license: string
+}
+
+export type DataInfo = {
+	dataVersion: string
+	updatedAt: string
+	datasets: DatasetInfo[]
+}
+
+// ---------------------------------------------------------------------------
+// Errors. Every v2 error uses the same envelope.
+// ---------------------------------------------------------------------------
+
+export type V2ErrorCode =
+	| 'invalid_request'
+	| 'not_found'
+	| 'ambiguous'
+	| 'rate_limited'
+	| 'internal_error'
+
+type V2ErrorBody = {
+	error: { code: V2ErrorCode; message: string; hint?: string }
+	matches?: unknown[]
+}
+
+export class V2ApiError extends Error {
+	readonly status: number
+	readonly code: V2ErrorCode | null
+	readonly hint: string | null
+
+	constructor(
+		status: number,
+		message: string,
+		code: V2ErrorCode | null,
+		hint: string | null
+	) {
+		super(message)
+		this.name = 'V2ApiError'
+		this.status = status
+		this.code = code
+		this.hint = hint
+	}
+}
+
+function isErrorBody(body: unknown): body is V2ErrorBody {
+	if (typeof body !== 'object' || body === null || !('error' in body)) {
+		return false
+	}
+	const { error } = body
+	return (
+		typeof error === 'object' &&
+		error !== null &&
+		'message' in error &&
+		typeof error.message === 'string'
+	)
+}
+
+export async function toV2Error(response: Response): Promise<V2ApiError> {
+	const body: unknown = await response.json().catch(() => null)
+	if (isErrorBody(body)) {
+		return new V2ApiError(
+			response.status,
+			body.error.message,
+			body.error.code,
+			body.error.hint ?? null
+		)
+	}
+	return new V2ApiError(
+		response.status,
+		`API error: ${response.status} ${response.statusText}`,
+		null,
+		null
+	)
+}
+
+// ---------------------------------------------------------------------------
+// Derived statistics. The API is gaining these fields; until it serves them,
+// compute them from the age and population fields it already returns.
+// ---------------------------------------------------------------------------
+
+export type DerivedStats = {
+	/** Children and people 65+ per 100 people aged 15 to 64. */
+	dependencyRatio: number | null
+	/** People 65+ per 100 children under 15. */
+	ageingIndex: number | null
+	/** Men per 100 women. */
+	sexRatio: number | null
+}
+
+export function derivedStats(stats?: StatisticsRow): DerivedStats {
+	const young = stats?.age0To14Percent?.value ?? null
+	const working = stats?.age15To64Percent?.value ?? null
+	const old = stats?.age65PlusPercent?.value ?? null
+	const male = stats?.populationMale?.value ?? null
+	const female = stats?.populationFemale?.value ?? null
+	return {
+		dependencyRatio:
+			stats?.dependencyRatio?.value ??
+			(young !== null && old !== null && working
+				? ((young + old) / working) * 100
+				: null),
+		ageingIndex:
+			stats?.ageingIndex?.value ??
+			(old !== null && young ? (old / young) * 100 : null),
+		sexRatio:
+			stats?.sexRatio?.value ??
+			(male !== null && female ? (male / female) * 100 : null)
+	}
+}
+
 // ---------------------------------------------------------------------------
 // URL building + fetch helpers.
 // ---------------------------------------------------------------------------
 
 function buildUrl(path: string): string {
 	const base = V2_API_URL.replace(/\/$/, '')
-	return path.startsWith('http') ? path : `${base}${path.startsWith('/') ? '' : '/'}${path}`
+	return path.startsWith('http')
+		? path
+		: `${base}${path.startsWith('/') ? '' : '/'}${path}`
 }
 
-export type V2Params = Record<string, string | number | boolean | null | undefined>
+export type V2Params = Record<
+	string,
+	string | number | boolean | null | undefined
+>
 
 /**
  * Build a v2 path with query params encoded via URLSearchParams so keys like
  * `filter[country]` and `fields` survive encoding. Pass already-encoded paths
  * untouched if no params are supplied.
  */
-export function buildV2Path(path: string, params?: V2Params): string {
+function buildV2Path(path: string, params?: V2Params): string {
 	if (!params) return path
 	const search = new URLSearchParams()
 	for (const [key, value] of Object.entries(params)) {
@@ -223,7 +413,7 @@ export function buildV2Path(path: string, params?: V2Params): string {
 		search.set(key, String(value))
 	}
 	const query = search.toString()
-	const [base, existing] = path.split('?')
+	const [base = path, existing] = path.split('?')
 	const merged = [existing, query].filter(Boolean).join('&')
 	return merged ? `${base}?${merged}` : base
 }
@@ -232,20 +422,46 @@ export function buildV2Path(path: string, params?: V2Params): string {
  * Fetch a single page from a v2 list endpoint. Returns the full envelope
  * `{ data, meta }` so callers can read `meta.total` for counts/pagination.
  */
-export async function fetchV2List<T>(path: string, params?: V2Params): Promise<V2Response<T>> {
-	const url = buildUrl(buildV2Path(path, params))
-	const response = await fetch(url)
-	if (!response.ok) {
-		throw new Error(`API error: ${response.status} ${response.statusText}`)
-	}
-	return (await response.json()) as V2Response<T>
+export async function fetchV2List<T>(
+	path: string,
+	params?: V2Params
+): Promise<V2Response<T>> {
+	return fetchV2<V2Response<T>>(path, params)
+}
+
+/** Full URL for a v2 path, for display (curl snippets) and links. */
+export function v2Url(path: string, params?: V2Params): string {
+	return buildUrl(buildV2Path(path, params))
+}
+
+/**
+ * Fetch any v2 endpoint. Non-2xx responses throw a `V2ApiError` carrying the
+ * `{ error: { code, message, hint } }` envelope.
+ */
+export async function fetchV2<T>(path: string, params?: V2Params): Promise<T> {
+	const response = await fetch(v2Url(path, params))
+	if (!response.ok) throw await toV2Error(response)
+	return (await response.json()) as T
+}
+
+/** Total row count of a list endpoint, fetched with a one-row page. */
+export async function fetchV2Count(
+	path: string,
+	params?: V2Params
+): Promise<number> {
+	const page = await fetchV2List<unknown>(path, { ...params, limit: 1 })
+	return page.meta.total
 }
 
 /**
  * Page through a v2 list endpoint via cursor until `max` rows are gathered or
  * the data is exhausted. Defaults to a 2000-row ceiling.
  */
-export async function fetchV2All<T>(path: string, max = 2000, params?: V2Params): Promise<T[]> {
+export async function fetchV2All<T>(
+	path: string,
+	max = 2000,
+	params?: V2Params
+): Promise<T[]> {
 	const rows: T[] = []
 	let cursor: string | null = null
 
@@ -253,7 +469,7 @@ export async function fetchV2All<T>(path: string, max = 2000, params?: V2Params)
 		const remaining = max - rows.length
 		const pageParams: V2Params = {
 			...params,
-			limit: Math.min(remaining, 2000),
+			limit: Math.min(remaining, 2000)
 		}
 		if (cursor) pageParams.cursor = cursor
 		const page: V2Response<T> = await fetchV2List<T>(path, pageParams)
@@ -274,10 +490,12 @@ export async function fetchV2All<T>(path: string, max = 2000, params?: V2Params)
  * country code client-side, producing the same `CountryRow[]` shape callers
  * expect — each row's `statistics` populated when a match exists.
  */
-export async function fetchCountriesWithStats(max = 300): Promise<CountryRow[]> {
+export async function fetchCountriesWithStats(
+	max = 300
+): Promise<CountryRow[]> {
 	const [countries, statistics] = await Promise.all([
 		fetchV2All<CountryRow>('/v2/countries', max),
-		fetchV2All<StatisticsRow>('/v2/statistics', max),
+		fetchV2All<StatisticsRow>('/v2/statistics', max)
 	])
 
 	const statsByCode = new Map<string, StatisticsRow>()

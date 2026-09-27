@@ -6,11 +6,6 @@ These instructions are the canonical guide for agents working in this repo. Clau
 
 - Keep project instructions in `AGENTS.md`.
 - `CLAUDE.md` should only reference `AGENTS.md`.
-- Use the global `agents` CLI to keep tool configs aligned.
-- Enabled `agents` integrations are `codex`, `claude`, `gemini`, `copilot_vscode`, `cursor`, `antigravity`, `windsurf`, `opencode`, and `junie`.
-- Commit `.agents/agents.json`, `.agents/README.md`, `.agents/skills/`, and `AGENTS.md`.
-- Do not commit `.agents/local.json`, `.agents/generated/`, or materialized tool configs such as `.codex/`.
-- After changing `.agents/` or `AGENTS.md`, run `agents sync`, then `agents sync --check`.
 
 ## Project Overview
 
@@ -27,8 +22,14 @@ Geocoded is a Bun workspace monorepo. It contains a Cloudflare Worker API servin
 - `bun run types`: regenerate `worker-configuration.d.ts`. This file is generated, do not edit it by hand.
 - `bun build:site`: build the Astro site.
 - `bun preview:site`: preview the Astro build.
-- `bun check`: run oxlint and oxfmt checks.
+- `bun run check`: the blocking gate. Runs `lint:check`, `format:check`, `test`, and `audit` without loading env files.
+- `bun run lint:check`: type-aware oxlint with type checking, warnings denied.
+- `bun run format:check`: oxfmt check.
+- `bun run test`: Bun tests under `tests/`, with `--no-env-file`.
+- `bun run audit`: knip scan for unused files, exports, and dependencies across all workspaces (`knip.json`).
 - `bun run fix`: run automatic lint and format fixes.
+- `bun run hooks:install`: install the lefthook git hooks (`lefthook.yml`). The user runs this; agents do not.
+- `bun run hooks:validate`: validate `lefthook.yml`.
 - `bun x --bun tsc --noEmit`: type-check the Worker and seed script.
 - `cd apps/api && bun --bun wrangler d1 migrations apply geo-db --local`: apply D1 migrations locally.
 
@@ -105,6 +106,13 @@ All JSON responses use aggressive cache headers unless the route intentionally h
 - Keep route changes and query changes close to the existing Hono and D1 patterns.
 - Prefer structured APIs and typed query helpers over ad hoc parsing.
 
+## Tooling And Conventions
+
+- Expected failures in API code (not found, ambiguous match, invalid input, upstream errors) use `neverthrow` `Result` / `ResultAsync` with typed `{ code, message }` errors. Throw only for programmer errors. Map a `Result` to an HTTP response at the route boundary.
+- `oxlint` (`.oxlintrc.json`) is type-aware, denies warnings and unused disable directives, and bans `any` and `@ts-ignore` / `@ts-nocheck`. `oxfmt` owns formatting. Do not add ESLint, Prettier, Husky, or a separate type-check step to `check`.
+- `knip` (`knip.json`) owns dead-code and dependency hygiene. Fix its findings instead of adding ignores.
+- Git hooks come from `lefthook.yml` and are installed with `bun run hooks:install`. Pre-commit checks formatting and lint on staged files without modifying them. Pre-push runs `bun --no-env-file run check`.
+
 ## Database And Data
 
 - Use generated database and Worker types as the source of truth.
@@ -133,8 +141,8 @@ All JSON responses use aggressive cache headers unless the route intentionally h
 
 Run the smallest meaningful verification for the change:
 
-- Instruction or config changes: `agents sync --check` and `git diff --check`.
-- Worker code changes: `bun x --bun tsc --noEmit` and `bun check`.
+- Instruction or config changes: `git diff --check`.
+- Worker code changes: `bun x --bun tsc --noEmit` and `bun run check`.
 - Site changes: `bun build:site`.
 - D1 behavior changes: apply local migrations, seed local D1 when practical, and smoke test affected endpoints through `bun dev:api`.
 

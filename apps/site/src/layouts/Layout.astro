@@ -1,21 +1,42 @@
 ---
 import '../styles/global.css'
+import { PlaceSearch } from '../components/place-search'
+import { SITE_API_URL } from '../lib/api-url'
 
-const { title = 'GEOCODED | Premium Data Layer', description = 'Premium geographic data layer.' } = Astro.props
+type NavKey = 'home' | 'explore' | 'compare' | 'insights' | 'docs'
+
+type Props = {
+	title?: string
+	description?: string
+	active?: NavKey
+}
+
+const {
+	title = 'Geocoded | Free location data API',
+	description = 'Free location data for every country, state and city. No sign-up, no API key.',
+	active = 'home'
+} = Astro.props
 
 const siteUrl = 'https://geocoded.me'
 const ogImage = `${siteUrl}/og-image.png`
+
+const links: { key: NavKey; label: string; href: string }[] = [
+	{ key: 'explore', label: 'Explore', href: '/explore' },
+	{ key: 'compare', label: 'Compare', href: '/compare' },
+	{ key: 'insights', label: 'Insights', href: '/insights' },
+	{ key: 'docs', label: 'API', href: '/docs' }
+]
 ---
 
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="48x48" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<link rel="manifest" href="/site.webmanifest" />
-		<meta name="theme-color" content="#000000" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#F3F1EA" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<meta property="og:type" content="website" />
@@ -28,40 +49,148 @@ const ogImage = `${siteUrl}/og-image.png`
 		<meta name="twitter:image" content={ogImage} />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body class="bg-black text-white antialiased min-h-screen flex flex-col">
-		<div class="noise"></div>
-
-		<nav class="sticky top-0 w-full z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
-			<div class="max-w-[1600px] mx-auto px-6 py-5 flex justify-between items-center">
-				<a href="/" class="font-bold text-xl tracking-tighter uppercase flex items-center gap-4 hover:opacity-70 transition-opacity">
-					<img src="/favicon.svg" alt="Geocoded Logo" class="w-8 h-8" />
-					GEOCODED
+	<body class="flex min-h-screen flex-col overflow-x-hidden antialiased">
+		<a
+			href="#main"
+			class="sr-only rounded-lg bg-ink px-4 py-2 text-paper focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[60]"
+			>Skip to content</a
+		>
+		<header class="sticky top-0 z-40 border-b border-rule bg-paper">
+			<div
+				class="mx-auto flex h-[60px] max-w-[1440px] items-center gap-6 px-4 md:px-8 lg:h-[72px] lg:gap-10 lg:px-12"
+			>
+				<a href="/" class="flex items-center gap-2.5" aria-label="Geocoded home">
+					<svg
+						width="28"
+						height="28"
+						viewBox="0 0 28 28"
+						fill="none"
+						stroke="#14161A"
+						stroke-width="1.5"
+						aria-hidden="true"
+						class="size-6 lg:size-7"
+					>
+						<circle cx="14" cy="14" r="12"></circle>
+						<path d="M2 14h24M14 2v24"></path>
+						<circle cx="19" cy="9" r="3" fill="#C2410C" stroke="none"></circle>
+					</svg>
+					<span class="serif text-2xl tracking-[-0.01em] lg:text-[28px]">Geocoded</span>
 				</a>
-
-				<div class="hidden md:flex gap-10 text-xs font-semibold tracking-widest uppercase">
-					<a href="/explorer" class="hover:text-white/50 transition-colors">Explorer</a>
-					<a href="/dashboard" class="hover:text-white/50 transition-colors">Dashboard</a>
-					<a href="/statistics" class="hover:text-white/50 transition-colors">Stats</a>
-					<a href="/quiz" class="hover:text-white/50 transition-colors">Quiz</a>
-					<a href="/docs" class="hover:text-white/50 transition-colors">API Docs</a>
+				<nav aria-label="Primary" class="hidden gap-7 text-[15px] font-medium lg:flex">
+					{
+						links.map((link) => (
+							<a
+								href={link.href}
+								aria-current={link.key === active ? 'page' : undefined}
+								class:list={[
+									'border-b-2 py-1.5 hover:text-signal',
+									link.key === active ? 'border-signal' : 'border-transparent'
+								]}
+							>
+								{link.label}
+							</a>
+						))
+					}
+				</nav>
+				<div class="grow"></div>
+				<div class="hidden w-80 lg:block">
+					<PlaceSearch client:idle variant="nav" placeholder="Search 240,977 places" />
 				</div>
+				<a href="/docs" class="btn btn-dark hidden h-11 px-[18px] text-sm lg:inline-flex">
+					API reference
+				</a>
+				<button
+					type="button"
+					class="-mr-2 flex size-11 items-center justify-center lg:hidden"
+					aria-label="Open menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+					data-menu-toggle
+				>
+					<svg
+						width="22"
+						height="22"
+						viewBox="0 0 22 22"
+						fill="none"
+						stroke="#14161A"
+						stroke-width="1.8"
+						aria-hidden="true"
+					>
+						<path d="M3 6h16M3 11h16M3 16h16"></path>
+					</svg>
+				</button>
 			</div>
-		</nav>
+			<div id="mobile-menu" class="hidden border-t border-rule px-4 pt-4 pb-6 lg:hidden" data-menu>
+				<PlaceSearch client:idle variant="nav" placeholder="Search places" />
+				<nav aria-label="Mobile" class="mt-4 flex flex-col text-lg font-medium">
+					<a href="/" class="border-b border-rule-soft py-3" aria-current={active === 'home' ? 'page' : undefined}
+						>Home</a
+					>
+					{
+						links.map((link) => (
+							<a
+								href={link.href}
+								aria-current={link.key === active ? 'page' : undefined}
+								class:list={[
+									'border-b border-rule-soft py-3',
+									link.key === active && 'text-signal'
+								]}
+							>
+								{link.label === 'API' ? 'API reference' : link.label}
+							</a>
+						))
+					}
+				</nav>
+			</div>
+		</header>
 
-		<main class="flex-1 w-full max-w-[1600px] mx-auto px-6 pt-32 pb-24 relative">
+		<main id="main" class="flex w-full grow flex-col">
 			<slot />
 		</main>
 
-		<footer class="border-t border-white/10 py-12 text-center text-xs tracking-widest uppercase font-medium text-white/40">
-			<div class="max-w-[1600px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-				<div>GEOCODED © 2026</div>
-				<div class="flex gap-6">
-					<a href="https://github.com/harryy2510/geocoded" class="hover:text-white transition-colors">GitHub</a>
-					<a href="/docs" class="hover:text-white transition-colors">Documentation</a>
-				</div>
+		<footer
+			class="mx-auto grid w-full max-w-[1440px] grid-cols-1 gap-10 border-t border-rule px-4 py-14 text-sm text-ink-soft sm:grid-cols-2 md:px-8 lg:grid-cols-4 lg:px-12"
+		>
+			<div class="flex flex-col gap-2.5">
+				<span class="serif text-[30px] text-ink">Geocoded</span>
+				<span class="leading-relaxed"
+					>Free location data for developers. Code under MIT, data under CC BY 4.0.</span
+				>
+			</div>
+			<div class="flex flex-col gap-2.5">
+				<span class="font-semibold text-ink">Product</span>
+				<a class="hover:text-signal" href="/explore">Explore data</a>
+				<a class="hover:text-signal" href="/compare">Compare countries</a>
+				<a class="hover:text-signal" href="/insights">World insights</a>
+			</div>
+			<div class="flex flex-col gap-2.5">
+				<span class="font-semibold text-ink">Developers</span>
+				<a class="hover:text-signal" href="/docs">API reference</a>
+				<a class="hover:text-signal" href={`${SITE_API_URL}/v2/openapi.json`}>OpenAPI spec</a>
+				<a class="hover:text-signal" href="https://github.com/harryy2510/geocoded">GitHub</a>
+			</div>
+			<div class="flex flex-col gap-2.5">
+				<span class="font-semibold text-ink">Data sources</span>
+				<span class="leading-relaxed"
+					>GeoNames, World Bank, UN DESA, UN/LOCODE, IATA, IANA, ISO, Unicode CLDR, Wikidata</span
+				>
 			</div>
 		</footer>
+
+		<script>
+			const toggle = document.querySelector<HTMLButtonElement>('[data-menu-toggle]')
+			const menu = document.querySelector<HTMLElement>('[data-menu]')
+			toggle?.addEventListener('click', () => {
+				const open = toggle.getAttribute('aria-expanded') !== 'true'
+				toggle.setAttribute('aria-expanded', String(open))
+				toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+				menu?.classList.toggle('hidden', !open)
+			})
+		</script>
 	</body>
 </html>

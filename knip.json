@@ -1,0 +1,19 @@
+{
+	"$schema": "./node_modules/knip/schema.json",
+	"bun": true,
+	"workspaces": {
+		".": {
+			"entry": ["tests/**/*.ts"],
+			"project": ["tests/**/*.ts"]
+		},
+		"apps/api": {
+			"project": ["src/**/*.{ts,tsx}", "scripts/**/*.ts"]
+		},
+		"apps/site": {
+			"project": ["src/**/*.{astro,css,ts,tsx}"]
+		},
+		"packages/client": {
+			"project": ["src/**/*.ts"]
+		}
+	}
+}

@@ -1,0 +1,18 @@
+glob_matcher: doublestar
+
+# Validation only: pre-commit jobs never modify the working tree or the index.
+pre-commit:
+  parallel: true
+  jobs:
+    - name: format
+      glob: '**/*.{css,json,jsonc,md,ts,tsx,yaml,yml}'
+      run: bun run oxfmt --check --no-error-on-unmatched-pattern {staged_files}
+    - name: lint
+      glob: '**/*.{ts,tsx}'
+      run: bun run oxlint --type-aware --type-check --no-error-on-unmatched-pattern {staged_files}
+
+# The full blocking gate (lint, format, tests, knip), without env files.
+pre-push:
+  jobs:
+    - name: check
+      run: bun --no-env-file run check

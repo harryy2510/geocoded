@@ -1160,7 +1160,9 @@ describe('v2 routes', () => {
 
 		expect(response.status).toBe(404)
 		const body = (await response.json()) as Record<string, unknown>
-		expect(body).toEqual({ error: 'Airport not found' })
+		expect(body).toEqual({
+			error: { code: 'not_found', message: 'Airport not found' }
+		})
 	})
 
 	test('returns caller location from the v2 root route', async () => {
@@ -1233,12 +1235,11 @@ describe('v2 routes', () => {
 
 		expect(response.status).toBe(409)
 		const body = (await response.json()) as {
-			error: string
-			hint: string
+			error: { message: string; hint: string }
 			matches: Array<{ id: string; name: string }>
 		}
-		expect(body.error).toBe('State is ambiguous')
-		expect(body.hint).toContain('/v2/countries/US/states/CA')
+		expect(body.error.message).toBe('State is ambiguous')
+		expect(body.error.hint).toContain('/v2/countries/US/states/CA')
 		expect(body.matches.map((state) => state.id)).toEqual(['US:AZ', 'AE:AZ'])
 	})
 
@@ -1270,10 +1271,10 @@ describe('v2 routes', () => {
 		)
 		expect(ambiguous.status).toBe(409)
 		const body = (await ambiguous.json()) as {
-			error: string
+			error: { message: string }
 			matches: Array<{ geonameId: number; stateCode: string }>
 		}
-		expect(body.error).toBe('City is ambiguous')
+		expect(body.error.message).toBe('City is ambiguous')
 		expect(body.matches.map((city) => city.geonameId)).toEqual([1001, 1002])
 
 		const scoped = await request(
@@ -1348,24 +1349,29 @@ describe('v2 routes', () => {
 	test('returns 404 when a nested list country or state misses', async () => {
 		const missingCountry = await request('/v2/countries/ZZ/states')
 		expect(missingCountry.status).toBe(404)
-		const missingCountryBody = (await missingCountry.json()) as {
-			error: string
-		}
-		expect(missingCountryBody).toEqual({ error: 'Country not found' })
+		const missingCountryBody: unknown = await missingCountry.json()
+		expect(missingCountryBody).toEqual({
+			error: { code: 'not_found', message: 'Country not found' }
+		})
 
 		const missingState = await request('/v2/countries/US/states/ZZ/cities')
 		expect(missingState.status).toBe(404)
-		const missingStateBody = (await missingState.json()) as { error: string }
-		expect(missingStateBody).toEqual({ error: 'State not found' })
+		const missingStateBody: unknown = await missingState.json()
+		expect(missingStateBody).toEqual({
+			error: { code: 'not_found', message: 'State not found' }
+		})
 	})
 
 	test('rejects unsupported v2 filters', async () => {
 		const response = await request('/v2/countries?filter[unLocode]=AEJEA')
 
 		expect(response.status).toBe(400)
-		const body = (await response.json()) as { error: string }
+		const body: unknown = await response.json()
 		expect(body).toEqual({
-			error: 'Unsupported query parameter "filter[unLocode]"'
+			error: {
+				code: 'invalid_request',
+				message: 'Unsupported query parameter "filter[unLocode]"'
+			}
 		})
 	})
 

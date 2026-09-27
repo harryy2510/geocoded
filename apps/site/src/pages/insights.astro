@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { InsightsApp } from '../components/insights/insights-app'
+---
+
+<Layout
+	title="World insights | Geocoded"
+	description="How the world's people live, age and move, from the latest World Bank and United Nations figures."
+	active="insights"
+>
+	<InsightsApp client:load />
+</Layout>

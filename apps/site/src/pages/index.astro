@@ -1,252 +1,388 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import { CodeSample } from '../components/code-sample'
+import { PlaceSearch } from '../components/place-search'
+import { WorldDots } from '../components/world-dots'
 import { SITE_API_URL } from '../lib/api-url'
 
 const apiUrl = SITE_API_URL
-const githubUrl = import.meta.env.PUBLIC_GITHUB_URL || 'https://github.com/geocoded-me/geocoded'
+const apiHost = apiUrl.replace(/^https?:\/\//, '')
 
-const features = [
+const trust = ['Free to use', 'No API key', 'Open source', 'Updated daily']
+
+const uses = [
 	{
-		title: 'Public by default',
-		description: 'No signup and no API key. Clean JSON for apps, scripts, dashboards, and internal tools.',
-		number: '01'
+		n: '01',
+		t: 'Address and sign-up forms',
+		d: 'Country, state and city pickers that stay in sync, with postal code formats and phone prefixes for validation.',
+		uses: 'Countries · States · Cities'
 	},
 	{
-		title: 'Root collections',
-		description: 'Countries, states, cities, timezones, currencies, airports, ports, and more as first-class APIs.',
-		number: '02'
+		n: '02',
+		t: 'Localisation',
+		d: 'Set the right currency, timezone, clock format and first day of the week for every visitor automatically.',
+		uses: 'IP lookup · Currencies · Timezones'
 	},
 	{
-		title: 'Query what you need',
-		description: 'Use `filter[...]`, `fields`, `expand`, pagination, search, and sorting without changing endpoints.',
-		number: '03'
+		n: '03',
+		t: 'Travel and logistics',
+		d: 'Airports with IATA codes, seaports and border crossings, each with coordinates and country.',
+		uses: 'Airports · Ports · Airlines'
 	},
 	{
-		title: 'Edge cached',
-		description: 'Cloudflare Workers and D1 keep reads fast, cacheable, and close to the caller.',
-		number: '04'
-	},
+		n: '04',
+		t: 'Research and dashboards',
+		d: 'Population, age, income, life expectancy and migration for every country, ready to chart.',
+		uses: 'Statistics · Migration'
+	}
 ]
 
-function jsonKv(k: string, v: string, last = false) {
-	return `  <span class="text-white">"${k}"</span><span class="text-white/50">: </span><span class="text-white/80">"${v}"</span>${last ? '' : ','}\n`
-}
-function jsonKvi(k: string, v: string, last = false) {
-	return `    <span class="text-white">"${k}"</span><span class="text-white/50">: </span><span class="text-white/80">"${v}"</span>${last ? '' : ','}\n`
-}
-function jsonKviRaw(k: string, v: string, last = false) {
-	return `    <span class="text-white">"${k}"</span><span class="text-white/50">: </span>${v}${last ? '' : ','}\n`
-}
-function jsonBr(v: string) {
-	return `<span class="text-white/50">${v}</span>\n`
-}
-
-const examples = [
+const ledger = [
 	{
-		title: 'Caller location',
-		curl: `curl '${apiUrl}/v2?fields=ip,country,countryInfo.name'`,
-		responseHtml:
-			jsonBr('{') +
-			jsonKv('ip', '203.0.113.42') +
-			jsonKv('country', 'AE') +
-			`  <span class="text-white">"countryInfo"</span><span class="text-white/50">: </span><span class="text-white/50">{</span>\n` +
-			jsonKvi('name', 'United Arab Emirates', true) +
-			`  <span class="text-white/50">}</span>\n` +
-			jsonBr('}'),
+		label: 'Countries',
+		count: '252',
+		desc: 'Names, ISO codes, capitals, flags, calling codes and languages.',
+		href: '/explore'
 	},
 	{
-		title: 'Filter countries',
-		curl: `curl '${apiUrl}/v2/countries?filter[country]=AE&fields=id,iso2,name,currency'`,
-		responseHtml:
-			jsonBr('{') +
-			`  <span class="text-white">"data"</span><span class="text-white/50">: </span><span class="text-white/50">[</span>\n` +
-			jsonBr('  {') +
-			jsonKvi('id', 'AE') +
-			jsonKvi('iso2', 'AE') +
-			jsonKvi('name', 'United Arab Emirates') +
-			jsonKvi('currency', 'AED', true) +
-			jsonBr('  }') +
-			`  <span class="text-white/50">],</span>\n` +
-			`  <span class="text-white">"meta"</span><span class="text-white/50">: </span><span class="text-white/80">{ "limit": 25, "offset": 0, "total": 1 }</span>\n` +
-			jsonBr('}'),
+		label: 'States and provinces',
+		count: '5,056',
+		desc: 'Every first-level region with ISO 3166-2 codes.',
+		href: '/explore?dataset=states'
 	},
 	{
-		title: 'Expand statistics',
-		curl: `curl '${apiUrl}/v2/countries?filter[country]=AE&expand=statistics&fields=*,statistics.gdpPerCapitaCurrentUsd'`,
-		responseHtml:
-			jsonBr('{') +
-			`  <span class="text-white">"data"</span><span class="text-white/50">: </span><span class="text-white/50">[</span>\n` +
-			jsonBr('  {') +
-			jsonKvi('id', 'AE') +
-			jsonKvi('name', 'United Arab Emirates') +
-			jsonKvi('currency', 'AED') +
-			`    <span class="text-white">"statistics"</span><span class="text-white/50">: </span><span class="text-white/50">{</span>\n` +
-			`      <span class="text-white">"gdpPerCapitaCurrentUsd"</span><span class="text-white/50">: </span><span class="text-white/80">{ "year": 2024, "value": 53700 }</span>\n` +
-			`    <span class="text-white/50">}</span>\n` +
-			jsonBr('  }') +
-			`  <span class="text-white/50">],</span>\n` +
-			`  <span class="text-white">"meta"</span><span class="text-white/50">: </span><span class="text-white/80">{ ... }</span>\n` +
-			jsonBr('}'),
+		label: 'Cities',
+		count: '235,669',
+		desc: 'Coordinates, population and timezone for each.',
+		href: '/explore?dataset=cities'
 	},
 	{
-		title: 'List cities',
-		curl: `curl '${apiUrl}/v2/cities?filter[country]=AE&fields=id,name,countryCode,stateCode&limit=2'`,
-		responseHtml:
-			jsonBr('{') +
-			`  <span class="text-white">"data"</span><span class="text-white/50">: </span><span class="text-white/50">[</span>\n` +
-			jsonBr('  {') +
-			jsonKvi('id', '292968') +
-			jsonKvi('name', 'Abu Dhabi') +
-			jsonKvi('countryCode', 'AE') +
-			jsonKvi('stateCode', 'AZ', true) +
-			jsonBr('  }') +
-			`  <span class="text-white/50">],</span>\n` +
-			`  <span class="text-white">"meta"</span><span class="text-white/50">: </span><span class="text-white/80">{ ... }</span>\n` +
-			jsonBr('}'),
+		label: 'Airports',
+		count: '23,574',
+		desc: 'IATA codes, elevation and location.',
+		href: '/explore?dataset=airports'
 	},
+	{
+		label: 'Ports',
+		count: '17,500',
+		desc: 'Seaports and river ports with UN/LOCODE codes.',
+		href: '/explore?dataset=ports'
+	},
+	{
+		label: 'Border crossings',
+		count: '484',
+		desc: 'Official land crossing points.',
+		href: '/explore?dataset=border-crossings'
+	},
+	{
+		label: 'Airlines',
+		count: '377',
+		desc: 'IATA member airlines with designators.',
+		href: '/docs#airlines'
+	},
+	{
+		label: 'Timezones',
+		count: '312',
+		desc: 'UTC offsets and daylight saving rules.',
+		href: '/explore?dataset=timezones'
+	},
+	{
+		label: 'Currencies',
+		count: '178',
+		desc: 'Symbols, decimals and where each is used.',
+		href: '/explore?dataset=currencies'
+	},
+	{
+		label: 'Languages',
+		count: '7,927',
+		desc: 'Every living and historic language code.',
+		href: '/docs#languages'
+	}
 ]
 
-const stats = [
-	{ label: 'Countries', value: '252', suffix: '' },
-	{ label: 'States', value: '5,084', suffix: '+' },
-	{ label: 'Cities', value: '232K', suffix: '+' },
-	{ label: 'Timezones', value: '312', suffix: '' },
+const signals = [
+	{
+		tag: 'Japan',
+		big: '30%',
+		text: 'of Japanese residents are 65 or older, the second-highest share in the world after Monaco.',
+		src: 'Source: World Bank, 2025'
+	},
+	{
+		tag: 'Qatar',
+		big: '91.6%',
+		text: 'of people living in Qatar were born in another country.',
+		src: 'Source: UN DESA, 2024'
+	},
+	{
+		tag: 'Central African Republic',
+		big: '48.7%',
+		text: 'of the population is under 15, the youngest country in the world.',
+		src: 'Source: World Bank, 2025'
+	}
 ]
+
+const faq = [
+	{
+		q: 'Is Geocoded really free?',
+		a: 'Yes. The API is free to use, with no sign-up and no API key. The source code is open under the MIT licence.'
+	},
+	{
+		q: 'Can I use it in a commercial product?',
+		a: 'Yes. The data is published under CC BY 4.0, which allows commercial use. Credit Geocoded and its sources when you redistribute the data.'
+	},
+	{
+		q: 'Where does the data come from?',
+		a: 'GeoNames, the World Bank, UN DESA, UN/LOCODE, IATA, IANA, ISO and Unicode CLDR. Every dataset lists its source and year.'
+	},
+	{
+		q: 'How current is it?',
+		a: 'Datasets are refreshed from their sources and republished daily.'
+	},
+	{
+		q: 'How fast is it?',
+		a: 'Responses are served and cached at the edge, close to your users, so repeat requests return almost instantly.'
+	}
+]
+
+const mapCities = [
+	[888, 154],
+	[715, 177],
+	[837, 169],
+	[370, 348],
+	[225, 207],
+	[587, 173],
+	[509, 250],
+	[294, 138],
+	[500, 103],
+	[797, 291],
+	[604, 89],
+	[578, 356]
+]
+
+const mapLabels = [
+	{ x: 900, y: 150, t: 'Tokyo' },
+	{ x: 238, y: 224, t: 'Mexico City' },
+	{ x: 382, y: 365, t: 'São Paulo' },
+	{ x: 306, y: 134, t: 'New York' },
+	{ x: 521, y: 266, t: 'Lagos' },
+	{ x: 727, y: 193, t: 'Delhi' }
+]
+
+const wrap = 'mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12'
 ---
 
-<Layout title="Geocoded | Free Country, State, City & Location API" description="Free, fast REST API for country, state, city, and IP geolocation data. Powered by Cloudflare Workers with global edge caching.">
-	<!-- Hero -->
-	<div class="min-h-[70vh] flex flex-col justify-center items-start border-l border-white/20 pl-10 md:pl-20 mb-32 pt-20">
-		<p class="text-lg font-bold tracking-widest text-white/40 uppercase mb-6 w-full">
-			Global Geography Data API
-		</p>
-		<h1 class="text-6xl md:text-8xl lg:text-[10rem] font-bold tracking-tighter leading-[0.85] uppercase mb-8">
-			Geocoded
-		</h1>
-		<p class="text-xl md:text-2xl font-light text-white/60 max-w-2xl leading-relaxed mb-16">
-			Open-source geography API for location, administrative, transport,
-			timezone, currency, and statistics data. No API key required.
-		</p>
-
-		<div class="flex flex-wrap gap-6">
-			<a href="/docs" class="bg-white text-black px-10 py-5 rounded-none font-bold tracking-widest uppercase text-sm hover:bg-white/80 transition-colors">
-				View API Docs
-			</a>
-			<a href={githubUrl} target="_blank" class="lux-panel px-10 py-5 rounded-none font-bold tracking-widest uppercase text-sm hover:bg-white/10 transition-colors flex items-center gap-3">
-				<svg class="size-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-				GitHub
-			</a>
+<Layout
+	title="Geocoded | Free location data for every country, state and city"
+	description="Clean, consistent data for 252 countries, 5,056 states and provinces and 235,669 cities, plus airports, ports, timezones, currencies and population statistics. No sign-up. No API key."
+>
+	<section class={`${wrap} flex flex-col gap-10 pt-9 pb-7 lg:flex-row lg:items-center lg:gap-16 lg:pt-24 lg:pb-[72px]`}>
+		<div class="flex grow flex-col gap-[18px] lg:gap-7">
+			<div class="eyebrow flex items-center gap-2.5">
+				<span class="size-2 rounded-full bg-signal"></span>Free location data API
+			</div>
+			<h1 class="serif m-0 max-w-[780px] text-5xl leading-[0.98] tracking-[-0.01em] md:text-7xl lg:text-[92px] lg:leading-[0.96] lg:tracking-[-0.02em]">
+				Location data for every country, state and <em class="text-signal">city</em>.
+			</h1>
+			<p class="m-0 max-w-[620px] text-[17px] leading-normal text-ink-soft lg:text-xl lg:leading-[1.55]">
+				Clean, consistent data for 252 countries, 5,056 states and provinces and 235,669 cities, plus airports, ports, timezones, currencies and population statistics. No sign-up. No API key. Just JSON.
+			</p>
+			<div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+				<a href="/docs" class="btn btn-primary h-[52px] px-[26px] text-base">Get started</a>
+				<a href="/explore" class="btn btn-outline h-[52px] px-6 text-base">Explore the data</a>
+			</div>
+			<ul class="m-0 mt-2 flex list-none flex-wrap gap-x-6 gap-y-2 p-0 text-sm text-ink-soft">
+				{
+					trust.map((t) => (
+						<li class="flex items-center gap-2">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#1D4E89" stroke-width="2" aria-hidden="true">
+								<path d="M3 8.5l3 3 7-7" />
+							</svg>
+							{t}
+						</li>
+					))
+				}
+			</ul>
 		</div>
-	</div>
-
-	<!-- Stats Banner -->
-	<div class="mb-24">
-		<div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/20 border border-white/20">
-			{stats.map((stat, i) => (
-				<div class="bg-black p-8 md:p-12 relative overflow-hidden group">
-					<div class="absolute inset-0 bg-white/[0.02] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-					<div class="text-sm font-bold text-white/40 tracking-widest uppercase mb-4">{stat.label}</div>
-					<div class="stat-counter text-4xl md:text-6xl font-bold tracking-tighter" data-target={stat.value} data-suffix={stat.suffix} data-delay={i * 100}>
-						{stat.value}{stat.suffix}
-					</div>
+		<div class="flex w-full shrink-0 flex-col gap-3.5 lg:w-[540px]">
+			<div class="overflow-hidden rounded-xl bg-ink text-code lg:rounded-[14px]">
+				<div class="flex items-center justify-between border-b border-code-rule px-3.5 py-3 font-mono text-xs lg:px-5 lg:py-3.5 lg:text-[13px]">
+					<span class="truncate"><span class="tok-ok">GET</span> {apiHost}/v2/</span>
+					<span class="hidden text-[#8A8F99] sm:inline">200 OK</span>
 				</div>
-			))}
-		</div>
-	</div>
-
-	<!-- Features Matrix -->
-	<section class="mb-24 pt-12 border-t border-white/20">
-		<p class="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">Why Geocoded</p>
-		<h2 class="mb-6 text-4xl md:text-6xl font-bold tracking-tighter uppercase">One surface<br/><span class="text-white/40">many datasets</span></h2>
-		<p class="mb-10 max-w-xl text-lg text-white/60 leading-relaxed">
-			Use the same query model across reference data, administrative geography, transport, and statistics.
-		</p>
-
-		<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/20 border border-white/20">
-			{features.map((f) => (
-				<div class="bg-black p-8 lg:p-10 min-h-[240px] group hover:bg-white/[0.02] transition-colors">
-					<div class="mb-8 text-xs font-bold text-white/30 uppercase tracking-widest">{f.number}</div>
-					<h3 class="text-2xl font-bold tracking-tighter uppercase mb-4">{f.title}</h3>
-					<p class="text-white/60 text-base leading-relaxed">{f.description}</p>
-				</div>
-			))}
+				<pre class="m-0 overflow-x-auto p-3.5 font-mono text-xs leading-[1.65] lg:p-5 lg:text-[13px]">{'{'}
+  <span class="tok-k">"ip"</span>: <span class="tok-s">"203.0.113.42"</span>,
+  <span class="tok-k">"city"</span>: <span class="tok-s">"Tokyo"</span>,
+  <span class="tok-k">"region"</span>: <span class="tok-s">"Tokyo"</span>, <span class="tok-k">"regionCode"</span>: <span class="tok-s">"13"</span>,
+  <span class="tok-k">"country"</span>: <span class="tok-s">"JP"</span>, <span class="tok-k">"continent"</span>: <span class="tok-s">"AS"</span>, <span class="tok-k">"isEU"</span>: <span class="tok-n">false</span>,
+  <span class="tok-k">"latitude"</span>: <span class="tok-s">"35.68536"</span>, <span class="tok-k">"longitude"</span>: <span class="tok-s">"139.75309"</span>,
+  <span class="tok-k">"timezone"</span>: <span class="tok-s">"Asia/Tokyo"</span>,
+  <span class="tok-k">"countryInfo"</span>: {'{'} <span class="tok-k">"name"</span>: <span class="tok-s">"Japan"</span>, <span class="tok-k">"currency"</span>: <span class="tok-s">"JPY"</span>, <span class="tok-k">"…"</span> {'}'},
+  <span class="tok-k">"stateInfo"</span>: {'{'} <span class="tok-k">"…"</span> {'}'}, <span class="tok-k">"cityInfo"</span>: {'{'} <span class="tok-k">"…"</span> {'}'}
+{'}'}</pre>
+			</div>
+			<p class="m-0 text-sm leading-normal text-ink-soft">
+				One request tells you where a visitor is: country, region, city, timezone and currency. Use it to prefill forms, pick a default currency or show local time.
+			</p>
 		</div>
 	</section>
 
-	<!-- Quick Start Examples -->
-	<section class="mb-32 pt-12 border-t border-white/20" id="examples">
-		<p class="mb-3 text-xs font-bold uppercase tracking-widest text-white/40">Quick Start</p>
-		<h2 class="mb-6 text-4xl md:text-6xl font-bold tracking-tighter uppercase">Simple endpoints<br/><span class="text-white/40">zero config</span></h2>
-		<p class="mb-16 max-w-lg text-lg text-white/60 leading-relaxed">
-			Every response is JSON with aggressive cache headers. Try these from your terminal right now.
-		</p>
+	<div class={wrap}>
+		<section class="flex flex-col gap-8 border-y border-rule py-10 lg:flex-row lg:items-center lg:gap-11 lg:py-14">
+			<div class="flex shrink-0 flex-col gap-[18px] lg:w-[300px]">
+				<h2 class="serif m-0 text-4xl leading-none lg:text-5xl">Coverage that goes all the way down.</h2>
+				<p class="m-0 text-base leading-[1.55] text-ink-soft">
+					From capitals to small towns. Every point on this map is a city in Geocoded, plotted from its real coordinates.
+				</p>
+				<dl class="mt-2 flex flex-col gap-2.5 text-[15px]">
+					<div class="flex justify-between border-b border-rule pb-2.5">
+						<dt>Countries and territories</dt><dd class="font-mono font-medium">252</dd>
+					</div>
+					<div class="flex justify-between border-b border-rule pb-2.5">
+						<dt>States and provinces</dt><dd class="font-mono font-medium">5,056</dd>
+					</div>
+					<div class="flex justify-between">
+						<dt>Cities and towns</dt><dd class="font-mono font-medium">235,669</dd>
+					</div>
+				</dl>
+			</div>
+			<div class="min-w-0 grow">
+				<WorldDots dot="#6B6F78" label="World map drawn from the locations of 235,669 cities">
+					<g fill="#C2410C" stroke="#F3F1EA" stroke-width="2">
+						{mapCities.map(([cx, cy]) => <circle cx={cx} cy={cy} r="7" />)}
+					</g>
+					<g
+						font-family="IBM Plex Sans, sans-serif"
+						font-size="13"
+						font-weight="600"
+						fill="#14161A"
+						stroke="#F3F1EA"
+						stroke-width="4"
+						stroke-linejoin="round"
+						paint-order="stroke"
+					>
+						{mapLabels.map((l) => <text x={l.x} y={l.y}>{l.t}</text>)}
+					</g>
+				</WorldDots>
+			</div>
+		</section>
+	</div>
 
-		<div class="flex flex-col gap-8">
-			{examples.map((ex) => (
-				<div class="lux-panel p-0 overflow-hidden flex flex-col md:flex-row">
-					<div class="p-8 md:p-10 border-b md:border-b-0 md:border-r border-white/20 md:w-1/2 flex flex-col justify-between">
-						<div>
-							<div class="flex items-center justify-between mb-8">
-								<h3 class="text-xl font-bold tracking-tighter uppercase text-white/80">{ex.title}</h3>
-								<span class="rounded-none bg-white text-black px-2 py-1 text-[10px] font-bold tracking-widest uppercase">GET</span>
-							</div>
-							<p class="mb-4 text-xs font-bold uppercase tracking-widest text-white/40">Request</p>
-							<pre class="max-w-full overflow-x-auto whitespace-pre font-mono text-sm leading-relaxed text-white">{ex.curl}</pre>
-						</div>
-					</div>
-					<div class="p-8 md:p-10 md:w-1/2 bg-black/50">
-						<p class="mb-4 text-xs font-bold uppercase tracking-widest text-white/40">Response</p>
-						<pre class="font-mono text-xs md:text-sm leading-loose overflow-x-auto" set:html={ex.responseHtml} />
-					</div>
-				</div>
-			))}
+	<section class={`${wrap} flex flex-col gap-10 pt-16 pb-10 lg:pt-24`}>
+		<div class="flex max-w-[760px] flex-col gap-3.5">
+			<span class="eyebrow">Use cases</span>
+			<h2 class="serif m-0 text-4xl leading-none lg:text-6xl">Built for the location features every product needs.</h2>
+		</div>
+		<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
+			{
+				uses.map((u) => (
+					<article class="card flex flex-col gap-3.5 rounded-[14px] p-5 lg:p-7">
+						<span class="font-mono text-[13px] text-signal">{u.n}</span>
+						<h3 class="m-0 text-lg leading-tight font-semibold lg:text-[21px]">{u.t}</h3>
+						<p class="m-0 text-[15px] leading-[1.55] text-ink-soft">{u.d}</p>
+						<div class="grow" />
+						<span class="border-t border-rule-soft pt-3.5 text-[13px]">{u.uses}</span>
+					</article>
+				))
+			}
 		</div>
 	</section>
 
-	<script>
-		// Animated counters
-		function animateCounter(el: Element) {
-			const target = el.getAttribute('data-target') || '0'
-			const suffix = el.getAttribute('data-suffix') || ''
-			const delay = parseInt(el.getAttribute('data-delay') || '0', 10)
+	<section class={`${wrap} flex flex-col gap-8 pt-12 pb-10 lg:pt-[72px]`}>
+		<div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+			<div class="flex flex-col gap-3.5">
+				<span class="eyebrow">What's included</span>
+				<h2 class="serif m-0 text-4xl leading-none lg:text-6xl">Ten datasets, one consistent API.</h2>
+			</div>
+			<a href="/docs" class="text-link text-[15px]">Browse the API reference →</a>
+		</div>
+		<div class="grid grid-cols-2 border-t-2 border-ink md:grid-cols-3 lg:grid-cols-5">
+			{
+				ledger.map((r) => (
+					<a href={r.href} class="group flex flex-col gap-2.5 border-b border-rule py-6 pr-4 lg:pr-6">
+						<span class="text-base font-semibold group-hover:text-signal">{r.label}</span>
+						<span class="serif text-4xl leading-none lg:text-5xl">{r.count}</span>
+						<span class="text-sm leading-normal text-ink-soft">{r.desc}</span>
+					</a>
+				))
+			}
+		</div>
+	</section>
 
-			// Parse the target: could be "252", "5,084", "232K"
-			const hasK = target.includes('K')
-			const numericStr = target.replace(/[,K]/g, '')
-			const targetNum = parseInt(numericStr, 10)
-			const duration = 1500
+	<section class={`${wrap} flex flex-col gap-10 py-12 lg:flex-row lg:items-center lg:gap-14 lg:py-[72px]`}>
+		<div class="flex shrink-0 flex-col gap-5 lg:w-[440px]">
+			<span class="eyebrow">For developers</span>
+			<h2 class="serif m-0 text-4xl leading-none lg:text-[56px]">Ask for exactly what you need.</h2>
+			<p class="m-0 text-[17px] leading-[1.55] text-ink-soft">
+				Filter by country or state, sort by any field and return only the fields you use. Every list comes back paginated in the same shape, so your code stays simple.
+			</p>
+			<ul class="m-0 flex list-none flex-col gap-3 p-0 text-base">
+				<li class="flex gap-3"><span class="text-signal" aria-hidden="true">—</span>Look up places by name or ISO code</li>
+				<li class="flex gap-3"><span class="text-signal" aria-hidden="true">—</span>Nested routes: country, state, city</li>
+				<li class="flex gap-3"><span class="text-signal" aria-hidden="true">—</span>Cached at the edge for fast responses worldwide</li>
+				<li class="flex gap-3"><span class="text-signal" aria-hidden="true">—</span>OpenAPI 3.1 spec and a TypeScript client</li>
+			</ul>
+		</div>
+		<CodeSample client:visible apiUrl={apiUrl} />
+	</section>
 
-			setTimeout(() => {
-				const start = performance.now()
-				function update(now: number) {
-					const elapsed = now - start
-					const progress = Math.min(elapsed / duration, 1)
-					const eased = 1 - Math.pow(1 - progress, 3)
-					const current = Math.round(targetNum * eased)
+	<div class={wrap}>
+		<section class="flex flex-col gap-8 rounded-[18px] bg-ink p-6 text-paper md:p-10 lg:flex-row lg:items-center lg:gap-14 lg:p-16">
+			<div class="flex grow flex-col gap-4">
+				<h2 class="serif m-0 text-4xl leading-none lg:text-6xl">Instant search for any place.</h2>
+				<p class="m-0 max-w-[480px] text-[17px] leading-[1.55] text-code-muted">
+					Type a name and get matching countries, states and cities in one request. Ideal for location autocomplete.
+				</p>
+			</div>
+			<div class="w-full shrink-0 lg:w-[620px]">
+				<PlaceSearch client:visible variant="hero" initialQuery="tokyo" placeholder="Try a city, state or country" />
+			</div>
+		</section>
+	</div>
 
-					if (hasK) {
-						el.textContent = `${current.toLocaleString('en-US')}K${suffix}`
-					} else {
-						el.textContent = `${current.toLocaleString('en-US')}${suffix}`
-					}
+	<section class={`${wrap} flex flex-col gap-8 pt-16 pb-10 lg:pt-24`}>
+		<div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+			<div class="flex flex-col gap-3.5">
+				<span class="eyebrow">The world in numbers</span>
+				<h2 class="serif m-0 text-4xl leading-none lg:text-6xl">More than places: the people in them.</h2>
+			</div>
+			<a href="/insights" class="text-link text-[15px]">See all insights →</a>
+		</div>
+		<div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+			{
+				signals.map((s) => (
+					<article class="card flex flex-col gap-3.5 rounded-[14px] p-6 lg:p-[30px]">
+						<span class="text-[15px] font-semibold">{s.tag}</span>
+						<span class="serif text-6xl leading-[0.9] text-signal lg:text-[84px]">{s.big}</span>
+						<p class="m-0 text-[17px] leading-normal">{s.text}</p>
+						<div class="grow" />
+						<span class="border-t border-rule-soft pt-3.5 text-[13px] text-ink-soft">{s.src}</span>
+					</article>
+				))
+			}
+		</div>
+	</section>
 
-					if (progress < 1) {
-						requestAnimationFrame(update)
-					}
-				}
-				requestAnimationFrame(update)
-			}, delay + 200)
-		}
+	<section class={`${wrap} flex flex-col gap-8 py-12 lg:flex-row lg:gap-16 lg:py-[72px]`}>
+		<div class="flex shrink-0 flex-col gap-4 lg:w-[440px]">
+			<span class="eyebrow">Questions</span>
+			<h2 class="serif m-0 text-4xl leading-none lg:text-[56px]">Frequently asked.</h2>
+		</div>
+		<div class="flex grow flex-col border-t border-ink">
+			{
+				faq.map((f) => (
+					<details class="border-b border-rule py-[22px]">
+						<summary class="text-[17px] font-semibold lg:text-[19px]">{f.q}</summary>
+						<p class="m-0 mt-3 max-w-[760px] text-base leading-relaxed text-ink-soft">{f.a}</p>
+					</details>
+				))
+			}
+		</div>
+	</section>
 
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					animateCounter(entry.target)
-					observer.unobserve(entry.target)
-				}
-			})
-		}, { threshold: 0.5 })
-
-		document.querySelectorAll('.stat-counter').forEach((el) => observer.observe(el))
-	</script>
+	<div class={`${wrap} mb-[72px]`}>
+		<section class="flex flex-col gap-6 rounded-[18px] border border-ink p-6 md:flex-row md:items-center md:gap-10 md:p-10 lg:px-16 lg:py-14">
+			<h2 class="serif m-0 grow text-4xl leading-none lg:text-[52px]">Make your first request in under a minute.</h2>
+			<a href="/docs#quick-start" class="btn btn-primary h-[52px] px-[26px] text-base">Read the quick start</a>
+		</section>
+	</div>
 </Layout>

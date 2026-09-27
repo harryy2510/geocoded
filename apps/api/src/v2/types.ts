@@ -22,6 +22,9 @@ export type V2CountryStatistics = {
 	gdpCurrentUsd: V2StatisticValue
 	gdpPerCapitaCurrentUsd: V2StatisticValue
 	lifeExpectancy: V2StatisticValue
+	dependencyRatio: V2StatisticValue
+	ageingIndex: V2StatisticValue
+	sexRatio: V2StatisticValue
 }
 
 export type V2Country = {
@@ -61,6 +64,7 @@ export type V2Country = {
 	timezones: V2CountryTimezone[]
 	translations: Record<string, string>
 	statistics?: V2CountryStatistics | null
+	localName?: string
 }
 
 export type V2CountryTimezone = {
@@ -280,4 +284,47 @@ export type V2PaginatedResponse<T> = {
 		hasMore: boolean
 		cursor: string | null
 	}
+}
+
+export type V2SearchResult = {
+	type: 'country' | 'state' | 'city'
+	id: string
+	name: string
+	countryCode: string
+	countryName: string
+	stateCode: string | null
+	stateName: string | null
+	geonameId: number | null
+}
+
+export type V2ReverseResult = {
+	query: { lat: number; lng: number }
+	city: V2City & { distanceKm: number }
+	state: V2State | null
+	country: V2Country | null
+	timezone: string
+}
+
+export type V2TimezoneNow = {
+	timezone: string
+	localTime: string
+	utcOffset: string
+	utcOffsetSeconds: number
+	isDst: boolean
+	abbreviation: string
+	nextTransition: { at: string; utcOffset: string } | null
+}
+
+export type V2DatasetMeta = {
+	id: string
+	name: string
+	records: number
+	source: string
+	license: string
+}
+
+export type V2Meta = {
+	dataVersion: string
+	updatedAt: string | null
+	datasets: V2DatasetMeta[]
 }

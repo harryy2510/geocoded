@@ -1,101 +1,139 @@
-const compactFormatter = new Intl.NumberFormat('en-US', {
-	notation: 'compact',
-	maximumFractionDigits: 1,
-})
-
 const fullFormatter = new Intl.NumberFormat('en-US')
 
-const percentFormatter = new Intl.NumberFormat('en-US', {
-	style: 'percent',
-	maximumFractionDigits: 1,
-})
+const compactFormatters = [1, 2].map(
+	(digits) =>
+		new Intl.NumberFormat('en-US', {
+			notation: 'compact',
+			maximumFractionDigits: digits
+		})
+)
 
-export function formatCompact(n: number): string {
-	if (n === 0 || n == null) return '0'
-	return compactFormatter.format(n)
+/** 123.4M, 1.46B: two decimals for billions, one below that. */
+export function formatCompact(n: number | null | undefined): string {
+	if (n === null || n === undefined) return '–'
+	return compactFormatters[Math.abs(n) >= 1e9 ? 1 : 0].format(n)
 }
 
-export function formatFull(n: number): string {
-	if (n == null) return '0'
+/** 8.07 billion, 3.4 million. */
+export function formatCompactLong(n: number): string {
+	return new Intl.NumberFormat('en-US', {
+		notation: 'compact',
+		compactDisplay: 'long',
+		maximumFractionDigits: Math.abs(n) >= 1e9 ? 2 : 1
+	}).format(n)
+}
+
+export function formatFull(n: number | null | undefined): string {
+	if (n === null || n === undefined) return '–'
 	return fullFormatter.format(n)
 }
 
-export function formatPercent(n: number): string {
-	if (n == null) return '0%'
-	return percentFormatter.format(n / 100)
+/** Fixed decimals with thousands separators: 341.5, 377,835. */
+export function formatNumber(n: number | null | undefined, digits = 1): string {
+	if (n === null || n === undefined || !Number.isFinite(n)) return '–'
+	return n.toLocaleString('en-US', {
+		minimumFractionDigits: digits,
+		maximumFractionDigits: digits
+	})
 }
 
-export function formatArea(sqKm: number): string {
-	if (sqKm >= 1_000_000) {
-		return `${(sqKm / 1_000_000).toFixed(1)}M km²`
+/** A value that is already a percentage: 30 -> "30.0%". */
+export function formatPercent(
+	n: number | null | undefined,
+	digits = 1
+): string {
+	if (n === null || n === undefined || !Number.isFinite(n)) return '–'
+	return `${formatNumber(n, digits)}%`
+}
+
+export function formatUsd(n: number | null | undefined): string {
+	if (n === null || n === undefined) return '–'
+	return `$${formatNumber(n, 0)}`
+}
+
+/** 377835 -> "377,835 km²", 17098246 -> "17.1M km²". */
+export function formatArea(sqKm: number | null | undefined): string {
+	if (!sqKm) return '–'
+	if (sqKm >= 10_000_000) return `${(sqKm / 1_000_000).toFixed(1)}M km²`
+	return `${formatNumber(sqKm, sqKm < 10 ? 1 : 0)} km²`
+}
+
+/** 32400 -> "UTC+9", 19800 -> "UTC+5:30". */
+export function formatOffset(seconds: number): string {
+	const sign = seconds < 0 ? '−' : '+'
+	const abs = Math.abs(seconds)
+	const hours = Math.floor(abs / 3600)
+	const minutes = Math.round((abs % 3600) / 60)
+	return `UTC${sign}${hours}${minutes ? `:${String(minutes).padStart(2, '0')}` : ''}`
+}
+
+/** Local wall-clock time in an IANA zone, e.g. "14:05". */
+export function formatClock(timeZone: string, date = new Date()): string {
+	try {
+		return new Intl.DateTimeFormat('en-GB', {
+			timeZone,
+			hour: '2-digit',
+			minute: '2-digit'
+		}).format(date)
+	} catch {
+		return '–'
 	}
-	if (sqKm >= 1_000) {
-		return `${(sqKm / 1_000).toFixed(0)}K km²`
+}
+
+export function formatOrdinal(n: number): string {
+	const rules = new Intl.PluralRules('en-US', { type: 'ordinal' })
+	const suffix: Partial<Record<Intl.LDMLPluralRule, string>> = {
+		one: 'st',
+		two: 'nd',
+		few: 'rd'
 	}
-	if (sqKm < 1 && sqKm > 0) {
-		return `${sqKm.toFixed(2)} km²`
+	return `${n}${suffix[rules.select(n)] ?? 'th'}`
+}
+
+export const CONTINENTS = [
+	{ code: 'AF', name: 'Africa' },
+	{ code: 'AS', name: 'Asia' },
+	{ code: 'EU', name: 'Europe' },
+	{ code: 'NA', name: 'North America' },
+	{ code: 'SA', name: 'South America' },
+	{ code: 'OC', name: 'Oceania' },
+	{ code: 'AN', name: 'Antarctica' }
+] as const
+
+export function continentName(code: string): string {
+	return CONTINENTS.find((c) => c.code === code)?.name ?? code
+}
+
+const languageNames = new Intl.DisplayNames(['en'], { type: 'language' })
+
+export function languageName(code: string): string {
+	try {
+		return languageNames.of(code) ?? code
+	} catch {
+		return code
 	}
-	return `${sqKm.toFixed(0)} km²`
 }
 
-export function formatDensity(pop: number, area: number): string {
-	if (!area) return 'N/A'
-	const density = pop / area
-	return `${density.toFixed(1)}/km²`
+const WEEKDAYS: Record<string, string> = {
+	mon: 'Monday',
+	tue: 'Tuesday',
+	wed: 'Wednesday',
+	thu: 'Thursday',
+	fri: 'Friday',
+	sat: 'Saturday',
+	sun: 'Sunday'
 }
 
-export const axisTickStyle = { fill: '#a1a1aa', fontSize: 11 }
-
-export const tooltipStyle = {
-	backgroundColor: 'rgba(17, 17, 20, 0.95)',
-	border: '1px solid rgba(255, 255, 255, 0.08)',
-	borderRadius: '10px',
-	fontSize: '12px',
-	color: '#e5e5e5',
-	backdropFilter: 'blur(12px)',
-	boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-	padding: '8px 12px',
+export function weekdayName(code: string | null | undefined): string {
+	if (!code) return '–'
+	return WEEKDAYS[code.toLowerCase()] ?? code
 }
 
-export const tooltipLabelStyle = { color: '#e5e5e5' }
-
-export const tooltipItemStyle = { color: '#d4d4d8' }
-
-const CONTINENT_CODE_TO_NAME: Record<string, string> = {
-	AF: 'Africa',
-	AN: 'Antarctica',
-	AS: 'Asia',
-	EU: 'Europe',
-	NA: 'Americas',
-	SA: 'Americas',
-	OC: 'Oceania',
+export function capitalize(value: string | null | undefined): string {
+	if (!value) return '–'
+	return value.charAt(0).toUpperCase() + value.slice(1)
 }
 
-export function resolveContinentName(code: string): string {
-	return CONTINENT_CODE_TO_NAME[code] || code
-}
-
-export const CONTINENT_COLORS: Record<string, string> = {
-	Africa: '#c87f32',
-	Americas: '#2da06a',
-	'North America': '#2da06a',
-	'South America': '#2da06a',
-	Asia: '#3b82f6',
-	Europe: '#a855f7',
-	Oceania: '#06b6d4',
-	Antarctica: '#94a3b8',
-}
-
-export const REGION_COLORS: Record<string, string> = {
-	Africa: '#c87f32',
-	Americas: '#2da06a',
-	Asia: '#3b82f6',
-	Europe: '#a855f7',
-	Oceania: '#06b6d4',
-	Polar: '#94a3b8',
-}
-
-export function getContinentColor(continent: string): string {
-	const resolved = CONTINENT_CODE_TO_NAME[continent] || continent
-	return CONTINENT_COLORS[resolved] || '#6b7280'
+export function countryHref(code: string): string {
+	return `/countries/${code.toLowerCase()}`
 }

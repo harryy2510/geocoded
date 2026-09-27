@@ -1,4 +1,4 @@
-export type Timezone = {
+type Timezone = {
 	abbreviation: string
 	gmtOffset: number
 	gmtOffsetName: string

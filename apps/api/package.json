@@ -10,6 +10,7 @@
 		"types": "bun wrangler types ../../worker-configuration.d.ts"
 	},
 	"dependencies": {
-		"hono": "^4.12.15"
+		"hono": "^4.12.15",
+		"neverthrow": "8.2.0"
 	}
 }

@@ -1,5 +1,8 @@
 import { defineV2Resource } from './query'
 
+// Location resources accept `near=lat,lng&radius=km` and add `distanceKm` to each row.
+const NEAR_PARAMS = ['near', 'radius']
+
 export const v2StatisticsResource = defineV2Resource({
 	name: 'statistics',
 	fields: {
@@ -28,7 +31,10 @@ export const v2StatisticsResource = defineV2Resource({
 		age65PlusPercent: { type: 'object' },
 		gdpCurrentUsd: { type: 'object' },
 		gdpPerCapitaCurrentUsd: { type: 'object' },
-		lifeExpectancy: { type: 'object' }
+		lifeExpectancy: { type: 'object' },
+		dependencyRatio: { type: 'object' },
+		ageingIndex: { type: 'object' },
+		sexRatio: { type: 'object' }
 	},
 	defaultFields: [
 		'id',
@@ -46,7 +52,10 @@ export const v2StatisticsResource = defineV2Resource({
 		'age65PlusPercent',
 		'gdpCurrentUsd',
 		'gdpPerCapitaCurrentUsd',
-		'lifeExpectancy'
+		'lifeExpectancy',
+		'dependencyRatio',
+		'ageingIndex',
+		'sexRatio'
 	],
 	filters: {
 		country: { field: 'countryCode', operator: 'eq' }
@@ -59,7 +68,7 @@ export const v2StatisticsResource = defineV2Resource({
 })
 
 // Sub-resource describing one entry of a country's `timezones` expand array.
-export const v2CountryTimezoneResource = defineV2Resource({
+const v2CountryTimezoneResource = defineV2Resource({
 	name: 'country-timezone',
 	fields: {
 		zoneName: { type: 'string' },
@@ -118,7 +127,9 @@ export const v2CountryResource = defineV2Resource({
 		timeFormat: { type: 'string', column: 'time_format' },
 		flagUrl: { type: 'string', column: 'flag_url' },
 		languages: { type: 'array', column: 'languages' },
-		neighbours: { type: 'array', column: 'neighbours', normalize: 'uppercase' }
+		neighbours: { type: 'array', column: 'neighbours', normalize: 'uppercase' },
+		// Filled from translations when the request passes `lang`.
+		localName: { type: 'string' }
 	},
 	defaultFields: [
 		'id',
@@ -172,6 +183,7 @@ export const v2CountryResource = defineV2Resource({
 		timezones: { resource: v2CountryTimezoneResource, kind: 'array' },
 		translations: { kind: 'passthrough' }
 	},
+	extraParams: ['lang'],
 	strictUnknownParams: true
 })
 
@@ -299,7 +311,8 @@ export const v2CityResource = defineV2Resource({
 		latitude: { type: 'string', column: 'latitude' },
 		longitude: { type: 'string', column: 'longitude' },
 		population: { type: 'number', column: 'population', sortable: true },
-		timezone: { type: 'string', column: 'timezone' }
+		timezone: { type: 'string', column: 'timezone' },
+		distanceKm: { type: 'number' }
 	},
 	defaultFields: [
 		'id',
@@ -325,6 +338,7 @@ export const v2CityResource = defineV2Resource({
 	sort: {
 		default: { field: 'name', direction: 'asc' }
 	},
+	extraParams: NEAR_PARAMS,
 	strictUnknownParams: true
 })
 
@@ -583,7 +597,8 @@ export const v2AirportResource = defineV2Resource({
 		admin2Code: { type: 'string', column: 'admin2_code' },
 		elevation: { type: 'number', column: 'elevation' },
 		timezone: { type: 'string', column: 'timezone' },
-		modificationDate: { type: 'string', column: 'modification_date' }
+		modificationDate: { type: 'string', column: 'modification_date' },
+		distanceKm: { type: 'number' }
 	},
 	defaultFields: [
 		'id',
@@ -616,6 +631,7 @@ export const v2AirportResource = defineV2Resource({
 	sort: {
 		default: { field: 'name', direction: 'asc' }
 	},
+	extraParams: NEAR_PARAMS,
 	strictUnknownParams: true
 })
 
@@ -740,7 +756,8 @@ function transportLocationResource(name: 'ports' | 'border-crossings') {
 			latitude: { type: 'number', column: 'latitude' },
 			longitude: { type: 'number', column: 'longitude' },
 			remarks: { type: 'string', column: 'remarks' },
-			changeIndicator: { type: 'string', column: 'change_indicator' }
+			changeIndicator: { type: 'string', column: 'change_indicator' },
+			distanceKm: { type: 'number' }
 		},
 		defaultFields: [
 			'id',
@@ -776,6 +793,7 @@ function transportLocationResource(name: 'ports' | 'border-crossings') {
 		sort: {
 			default: { field: 'name', direction: 'asc' }
 		},
+		extraParams: NEAR_PARAMS,
 		strictUnknownParams: true
 	})
 }

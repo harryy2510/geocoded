@@ -9,6 +9,8 @@
 		"style": "off"
 	},
 	"options": {
+		"denyWarnings": true,
+		"reportUnusedDisableDirectives": "deny",
 		"typeAware": true,
 		"typeCheck": true
 	},
@@ -44,6 +46,17 @@
 		"import/consistent-type-specifier-style": ["error", "prefer-top-level"],
 		"import/first": "error",
 		"import/no-commonjs": "error",
-		"import/no-duplicates": "error"
+		"import/no-duplicates": "error",
+		"typescript/ban-ts-comment": [
+			"error",
+			{
+				"ts-check": false,
+				"ts-expect-error": true,
+				"ts-ignore": true,
+				"ts-nocheck": true
+			}
+		],
+		"typescript/no-explicit-any": "error",
+		"typescript/no-misused-promises": "error"
 	}
 }

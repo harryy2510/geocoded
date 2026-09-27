@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { CompareApp } from '../components/compare/compare-app'
+---
+
+<Layout
+	title="Compare countries | Geocoded"
+	description="Put up to four countries side by side, from population to practical details."
+	active="compare"
+>
+	<CompareApp client:load />
+</Layout>

@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { CountryProfile } from '../../components/country/country-profile'
+import countries from '../../../../../data/countries.json'
+
+// Paths come from the checked-in dataset so the build needs no network.
+// The profile itself loads live from the API in the browser.
+export function getStaticPaths() {
+	return countries.map((country) => ({
+		params: { id: country.iso2.toLowerCase() },
+		props: { iso2: country.iso2.toUpperCase(), name: country.name }
+	}))
+}
+
+const { iso2, name } = Astro.props
+---
+
+<Layout
+	title={`${name}: population, cities and facts | Geocoded`}
+	description={`Population, age, migration, largest cities, airports, ports and practical information for ${name}.`}
+	active="explore"
+>
+	<noscript>
+		<p class="mx-auto max-w-[1440px] px-4 py-10 md:px-8 lg:px-12">
+			This profile loads live data. Turn on JavaScript to see {name}.
+		</p>
+	</noscript>
+	<CountryProfile client:load id={iso2} />
+</Layout>

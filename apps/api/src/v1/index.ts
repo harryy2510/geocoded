@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { createPostmanCollection } from '../postman'
 import { getSiteConfig } from '../site-config'
+import { DATA_CACHE_CONTROL } from '../v2/http'
 import {
 	getCityByGeonameId,
 	getCityByName,
@@ -27,8 +28,24 @@ import type { Location, PaginatedResponse, SearchResult } from './types'
 const app = new Hono<{ Bindings: Env }>()
 
 const CACHE_HEADERS = {
-	'Cache-Control': 'public, max-age=31536000, s-maxage=31536000, immutable'
+	'Cache-Control': DATA_CACHE_CONTROL
 } as const
+
+// v1 is deprecated (RFC 9745 Deprecation, RFC 8594 Sunset); v2 is the successor.
+const V1_DEPRECATED_AT = '@1790553600' // 2026-09-28T00:00:00Z
+const V1_SUNSET = 'Wed, 31 Mar 2027 23:59:59 GMT'
+
+app.use('*', async (c, next) => {
+	await next()
+	if (!c.res.headers.get('Content-Type')?.includes('application/json')) return
+	const config = getSiteConfig(c.env, c.req.url)
+	c.res.headers.set('Deprecation', V1_DEPRECATED_AT)
+	c.res.headers.set('Sunset', V1_SUNSET)
+	c.res.headers.set(
+		'Link',
+		`<${config.siteUrl}/docs>; rel="deprecation", <${config.apiUrl}/v2>; rel="successor-version"`
+	)
+})
 
 const QUIZ_RATE_LIMIT_PER_HOUR = 60
 
@@ -416,7 +433,7 @@ app.get('/search', async (c) => {
 		q,
 		page.limit,
 		page.offset,
-		type
+		type ? [type] : []
 	)
 	return jsonResponse(c, paginated(rows, total, page.limit, page.offset))
 })

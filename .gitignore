@@ -12,8 +12,6 @@ site/.astro/
 apps/*/node_modules/
 apps/*/dist/
 apps/*/.astro/
-.agents/local.json
-.agents/generated/
 .codex/
 .gemini/
 .vscode/mcp.json
@@ -26,5 +24,4 @@ opencode.json
 .junie/mcp/
 .junie/skills
 CLAUDE.md
-.agents/mcp_config.json
 .mcp.json

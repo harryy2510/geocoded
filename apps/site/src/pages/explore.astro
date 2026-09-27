@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { ExploreApp } from '../components/explore/explore-app'
+---
+
+<Layout
+	title="Explore the data | Geocoded"
+	description="Browse countries, states, cities, airports, ports, border crossings, timezones and currencies on the map or as a list."
+	active="explore"
+>
+	<ExploreApp client:load />
+</Layout>

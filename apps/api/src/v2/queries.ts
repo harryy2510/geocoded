@@ -1,3 +1,14 @@
+import { search, type SearchResultType } from '../v1/db/queries'
+import {
+	distanceBindings,
+	haversineKm,
+	nearSql,
+	roundKm,
+	type V2GeoColumns,
+	type V2NearQuery,
+	type V2Point
+} from './geo'
+import { type V2Keyset } from './pagination'
 import { type V2QueryPlan } from './query'
 import {
 	type V2Airline,
@@ -12,7 +23,10 @@ import {
 	type V2LanguageName,
 	type V2Migration,
 	type V2MigrationOrigin,
+	type V2DatasetMeta,
+	type V2Meta,
 	type V2Region,
+	type V2SearchResult,
 	type V2State,
 	type V2StatisticValue,
 	type V2Timezone,
@@ -25,7 +39,25 @@ export type V2ListQuery = {
 	plan: V2QueryPlan
 	limit: number
 	offset: number
+	after: V2Keyset | null
+	near: V2NearQuery | null
 }
+
+export type V2ListResult<T> = {
+	rows: T[]
+	total: number
+	last: V2Keyset | null
+}
+
+type WithDistance<T> = T & { distanceKm: number }
+
+// Cities and airports store coordinates as text; the 0011 migration indexes these exact expressions.
+const TEXT_GEO: V2GeoColumns = {
+	lat: 'CAST(latitude AS REAL)',
+	lng: 'CAST(longitude AS REAL)'
+}
+const REAL_GEO: V2GeoColumns = { lat: 'latitude', lng: 'longitude' }
+const NEAREST_CITY_RADII_KM = [25, 100, 400]
 
 export type V2LookupResult<T> =
 	| { status: 'ok'; row: T }
@@ -43,11 +75,11 @@ const REGIONS_TABLE =
 export async function listV2Countries(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2Country[]; total: number }> {
-	const { rows, total } = await listRows(db, 'countries', query, rowToV2Country)
+): Promise<V2ListResult<V2Country>> {
+	const result = await listRows(db, 'countries', query, rowToV2Country)
 	return {
-		rows: await expandV2Countries(db, rows, query.plan.expand),
-		total
+		...result,
+		rows: await expandV2Countries(db, result.rows, query.plan.expand)
 	}
 }
 
@@ -83,7 +115,7 @@ export async function getV2StatisticsById(
 export async function listV2Statistics(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2CountryStatistics[]; total: number }> {
+): Promise<V2ListResult<V2CountryStatistics>> {
 	return await listRows(
 		db,
 		'country_statistics',
@@ -95,7 +127,7 @@ export async function listV2Statistics(
 export async function listV2Continents(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2Continent[]; total: number }> {
+): Promise<V2ListResult<V2Continent>> {
 	return await listRows(db, CONTINENTS_TABLE, query, rowToV2Continent)
 }
 
@@ -115,7 +147,7 @@ export async function getV2ContinentById(
 export async function listV2Regions(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2Region[]; total: number }> {
+): Promise<V2ListResult<V2Region>> {
 	return await listRows(db, REGIONS_TABLE, query, rowToV2Region)
 }
 
@@ -135,7 +167,7 @@ export async function getV2RegionById(
 export async function listV2States(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2State[]; total: number }> {
+): Promise<V2ListResult<V2State>> {
 	return await listRows(db, 'states', query, rowToV2State)
 }
 
@@ -150,16 +182,8 @@ export async function getV2StateById(
 export async function listV2Cities(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2City[]; total: number }> {
-	return await listRows(db, 'cities', query, rowToV2City)
-}
-
-export async function getV2CityById(
-	db: D1Database,
-	id: string
-): Promise<V2City | null> {
-	const result = await lookupV2City(db, id)
-	return result.status === 'ok' ? result.row : null
+): Promise<V2ListResult<V2City>> {
+	return await listRows(db, 'cities', query, rowToV2City, TEXT_GEO)
 }
 
 export async function getV2CityByCountryStateName(
@@ -322,7 +346,7 @@ export async function lookupV2City(
 export async function listV2Timezones(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2Timezone[]; total: number }> {
+): Promise<V2ListResult<V2Timezone>> {
 	return await listRows(db, 'timezones', query, rowToV2Timezone)
 }
 
@@ -342,7 +366,7 @@ export async function getV2TimezoneById(
 export async function listV2Currencies(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2Currency[]; total: number }> {
+): Promise<V2ListResult<V2Currency>> {
 	return await listRows(db, 'currencies', query, rowToV2Currency)
 }
 
@@ -362,7 +386,7 @@ export async function getV2CurrencyById(
 export async function listV2Languages(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2Language[]; total: number }> {
+): Promise<V2ListResult<V2Language>> {
 	return await listRows(db, 'languages', query, rowToV2Language)
 }
 
@@ -389,7 +413,7 @@ export async function getV2LanguageById(
 export async function listV2Airlines(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2Airline[]; total: number }> {
+): Promise<V2ListResult<V2Airline>> {
 	return await listRows(db, 'airlines', query, rowToV2Airline)
 }
 
@@ -409,8 +433,8 @@ export async function getV2AirlineById(
 export async function listV2Airports(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2Airport[]; total: number }> {
-	return await listRows(db, 'airports', query, rowToV2Airport)
+): Promise<V2ListResult<V2Airport>> {
+	return await listRows(db, 'airports', query, rowToV2Airport, TEXT_GEO)
 }
 
 export async function getV2AirportById(
@@ -430,8 +454,8 @@ export async function getV2AirportById(
 export async function listV2Ports(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2TransportLocation[]; total: number }> {
-	return await listRows(db, 'ports', query, rowToV2TransportLocation)
+): Promise<V2ListResult<V2TransportLocation>> {
+	return await listRows(db, 'ports', query, rowToV2TransportLocation, REAL_GEO)
 }
 
 export async function getV2PortById(
@@ -450,8 +474,14 @@ export async function getV2PortById(
 export async function listV2BorderCrossings(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2TransportLocation[]; total: number }> {
-	return await listRows(db, 'border_crossings', query, rowToV2TransportLocation)
+): Promise<V2ListResult<V2TransportLocation>> {
+	return await listRows(
+		db,
+		'border_crossings',
+		query,
+		rowToV2TransportLocation,
+		REAL_GEO
+	)
 }
 
 export async function getV2BorderCrossingById(
@@ -470,7 +500,7 @@ export async function getV2BorderCrossingById(
 export async function listV2Migration(
 	db: D1Database,
 	query: V2ListQuery
-): Promise<{ rows: V2Migration[]; total: number }> {
+): Promise<V2ListResult<V2Migration>> {
 	return await listRows(db, 'country_migration', query, rowToV2Migration)
 }
 
@@ -487,34 +517,300 @@ export async function getV2MigrationById(
 	)
 }
 
-async function listRows<T>(
+export async function searchV2(
+	db: D1Database,
+	query: string,
+	types: readonly SearchResultType[],
+	limit: number,
+	offset: number
+): Promise<{ rows: V2SearchResult[]; total: number }> {
+	const { rows, total } = await search(db, query, limit, offset, types)
+	return {
+		rows: rows.map((row) => ({
+			type: row.type,
+			id: searchResultId(row),
+			name: row.name,
+			countryCode: row.countryCode,
+			countryName: row.countryName,
+			stateCode: row.stateCode,
+			stateName: row.stateName,
+			geonameId: row.geonameId
+		})),
+		total
+	}
+}
+
+function searchResultId(row: {
+	type: SearchResultType
+	name: string
+	countryCode: string
+	stateCode: string | null
+	geonameId: number | null
+}): string {
+	if (row.type === 'country') return row.countryCode
+	if (row.type === 'state') return `${row.countryCode}:${row.stateCode ?? ''}`
+	return row.geonameId === null
+		? `${row.countryCode}:${row.name}`
+		: String(row.geonameId)
+}
+
+export async function findNearestV2City(
+	db: D1Database,
+	point: V2Point
+): Promise<WithDistance<V2City> | null> {
+	for (const radiusKm of NEAREST_CITY_RADII_KM) {
+		const near = { ...point, radiusKm }
+		const nearQuery = nearSql(TEXT_GEO, near)
+		const row = await db
+			.prepare(
+				`SELECT * FROM cities WHERE ${nearQuery.whereSql} ORDER BY ${nearQuery.distanceSql} LIMIT 1`
+			)
+			.bind(...nearQuery.bindings, ...distanceBindings(near))
+			.first()
+		if (row) return withDistance(row as D1Row, point, rowToV2City)
+	}
+	return null
+}
+
+const DATASETS: Array<Omit<V2DatasetMeta, 'records'> & { table: string }> = [
+	{
+		id: 'countries',
+		table: 'countries',
+		name: 'Countries',
+		source: 'GeoNames, Unicode CLDR, Wikidata',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'states',
+		table: 'states',
+		name: 'States and provinces',
+		source: 'GeoNames',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'cities',
+		table: 'cities',
+		name: 'Cities',
+		source: 'GeoNames',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'airports',
+		table: 'airports',
+		name: 'Airports',
+		source: 'GeoNames, UN/LOCODE',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'ports',
+		table: 'ports',
+		name: 'Ports',
+		source: 'UN/LOCODE',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'border-crossings',
+		table: 'border_crossings',
+		name: 'Border crossings',
+		source: 'UN/LOCODE',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'airlines',
+		table: 'airlines',
+		name: 'Airlines',
+		source: 'IATA',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'timezones',
+		table: 'timezones',
+		name: 'Timezones',
+		source: 'IANA tz database',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'currencies',
+		table: 'currencies',
+		name: 'Currencies',
+		source: 'ISO 4217',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'languages',
+		table: 'languages',
+		name: 'Languages',
+		source: 'ISO 639-3',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'statistics',
+		table: 'country_statistics',
+		name: 'Country statistics',
+		source: 'World Bank World Development Indicators',
+		license: 'CC BY 4.0'
+	},
+	{
+		id: 'migrant-stocks',
+		table: 'country_migration',
+		name: 'International migrant stock',
+		source: 'UN DESA',
+		license: 'CC BY 4.0'
+	}
+]
+
+export async function getV2Meta(db: D1Database): Promise<V2Meta> {
+	const batch = await db.batch([
+		db.prepare(
+			'SELECT source_hash, applied_at FROM seed_files ORDER BY filename'
+		),
+		...DATASETS.map((dataset) =>
+			db.prepare(`SELECT COUNT(*) AS total FROM ${dataset.table}`)
+		)
+	])
+	const seeds = resultRows(batch[0])
+	const hashes = seeds.map((row) => stringValue(row.source_hash)).join(',')
+	const appliedAt = seeds
+		.map((row) => stringValue(row.applied_at))
+		.filter(Boolean)
+		.sort()
+		.at(-1)
+	return {
+		dataVersion: seeds.length > 0 ? await shortHash(hashes) : 'unknown',
+		updatedAt: appliedAt ? `${appliedAt.replace(' ', 'T')}Z` : null,
+		datasets: DATASETS.map(({ table: _table, ...dataset }, index) => ({
+			...dataset,
+			records: resultTotal(batch[index + 1], 0)
+		}))
+	}
+}
+
+async function shortHash(text: string): Promise<string> {
+	const digest = await crypto.subtle.digest(
+		'SHA-1',
+		new TextEncoder().encode(text)
+	)
+	return [...new Uint8Array(digest)]
+		.slice(0, 8)
+		.map((byte) => byte.toString(16).padStart(2, '0'))
+		.join('')
+}
+
+async function listRows<T extends object>(
 	db: D1Database,
 	table: string,
 	query: V2ListQuery,
-	mapRow: (row: D1Row) => T
-): Promise<{ rows: T[]; total: number }> {
-	const whereSql = query.plan.whereSql ? ` WHERE ${query.plan.whereSql}` : ''
-	const orderBySql = query.plan.orderBySql
-		? ` ORDER BY ${query.plan.orderBySql}`
-		: ''
-	const bindings = query.plan.bindings
+	mapRow: (row: D1Row) => T,
+	geo?: V2GeoColumns
+): Promise<V2ListResult<T>> {
+	const { plan, near } = query
+	const clauses = plan.whereSql ? [plan.whereSql] : []
+	const bindings: Array<string | number> = [...plan.bindings]
+
+	if (near && geo) {
+		const nearQuery = nearSql(geo, near)
+		clauses.push(nearQuery.whereSql)
+		bindings.push(...nearQuery.bindings)
+		const whereSql = ` WHERE ${clauses.join(' AND ')}`
+		const batch = await db.batch([
+			db
+				.prepare(
+					`SELECT * FROM ${table}${whereSql} ORDER BY ${nearQuery.distanceSql} LIMIT ? OFFSET ?`
+				)
+				.bind(
+					...bindings,
+					...distanceBindings(near),
+					query.limit,
+					query.offset
+				),
+			db
+				.prepare(`SELECT COUNT(*) AS total FROM ${table}${whereSql}`)
+				.bind(...bindings)
+		])
+		const rows = resultRows(batch[0]).map((row) =>
+			withDistance(row, near, mapRow)
+		)
+		return { rows, total: resultTotal(batch[1], rows.length), last: null }
+	}
+
+	// Keyset paging needs a real table (for rowid) and a sort column.
+	const keyset = plan.sort && !table.startsWith('(') ? plan.sort : null
+	const direction = keyset?.direction === 'desc' ? 'DESC' : 'ASC'
+	const whereSql = clauses.length > 0 ? ` WHERE ${clauses.join(' AND ')}` : ''
+	const pageClauses = [...clauses]
+	const pageBindings = [...bindings]
+	if (keyset && query.after) {
+		// DESC puts NULL sort values last; keep them reachable after the last non-null key.
+		const nullTail = direction === 'DESC' ? ` OR ${keyset.column} IS NULL` : ''
+		pageClauses.push(
+			`((${keyset.column}, rowid) ${direction === 'ASC' ? '>' : '<'} (?, ?)${nullTail})`
+		)
+		pageBindings.push(query.after.value, query.after.rowid)
+	}
+	const pageWhereSql =
+		pageClauses.length > 0 ? ` WHERE ${pageClauses.join(' AND ')}` : ''
+	const orderBySql = keyset
+		? ` ORDER BY ${keyset.column} ${direction}, rowid ${direction}`
+		: plan.orderBySql
+			? ` ORDER BY ${plan.orderBySql}`
+			: ''
+	const selectSql = keyset
+		? `SELECT *, rowid AS __rowid FROM ${table}`
+		: `SELECT * FROM ${table}`
 
 	const batch = await db.batch([
 		db
-			.prepare(
-				`SELECT * FROM ${table}${whereSql}${orderBySql} LIMIT ? OFFSET ?`
-			)
-			.bind(...bindings, query.limit, query.offset),
+			.prepare(`${selectSql}${pageWhereSql}${orderBySql} LIMIT ? OFFSET ?`)
+			.bind(
+				...pageBindings,
+				query.limit,
+				keyset && query.after ? 0 : query.offset
+			),
 		db
 			.prepare(`SELECT COUNT(*) AS total FROM ${table}${whereSql}`)
 			.bind(...bindings)
 	])
 
-	const rows = ((batch[0]?.results ?? []) as D1Row[]).map(mapRow)
-	const total = ((batch[1]?.results?.[0] ?? {}) as D1Row).total as
-		| number
-		| undefined
-	return { rows, total: total ?? rows.length }
+	const rawRows = resultRows(batch[0])
+	const lastRow = rawRows.at(-1)
+	return {
+		rows: rawRows.map(mapRow),
+		total: resultTotal(batch[1], rawRows.length),
+		last: keyset && lastRow ? keysetOf(lastRow, keyset.column) : null
+	}
+}
+
+function keysetOf(row: D1Row, column: string): V2Keyset | null {
+	const value = row[column]
+	const rowid = row.__rowid
+	if (typeof rowid !== 'number') return null
+	if (typeof value !== 'string' && typeof value !== 'number') return null
+	return { value, rowid }
+}
+
+function resultRows(result: D1Result | undefined): D1Row[] {
+	return (result?.results ?? []) as D1Row[]
+}
+
+function resultTotal(result: D1Result | undefined, fallback: number): number {
+	const total = (result?.results?.[0] as D1Row | undefined)?.total
+	return typeof total === 'number' ? total : fallback
+}
+
+function withDistance<T extends object>(
+	row: D1Row,
+	origin: V2Point,
+	mapRow: (row: D1Row) => T
+): WithDistance<T> {
+	return {
+		...mapRow(row),
+		distanceKm: roundKm(
+			haversineKm(origin, {
+				lat: Number(row.latitude),
+				lng: Number(row.longitude)
+			})
+		)
+	}
 }
 
 async function getOneRow<T>(
@@ -574,11 +870,12 @@ async function getV2StatisticsForCountries(
 	]
 	if (uniqueCodes.length === 0) return new Map()
 
+	// One JSON binding: D1 rejects statements with more than 100 bound parameters.
 	const { results } = await db
 		.prepare(
-			`SELECT * FROM country_statistics WHERE country_code IN (${uniqueCodes.map(() => '?').join(', ')})`
+			'SELECT * FROM country_statistics WHERE country_code IN (SELECT value FROM json_each(?))'
 		)
-		.bind(...uniqueCodes)
+		.bind(JSON.stringify(uniqueCodes))
 		.all()
 	return new Map(
 		(results as D1Row[]).map((row) => {
@@ -631,23 +928,68 @@ function rowToV2Country(row: D1Row): V2Country {
 
 function rowToV2CountryStatistics(row: D1Row): V2CountryStatistics {
 	const countryCode = stringValue(row.country_code)
+	const populationFemale = parseStatisticValue(row.population_female)
+	const populationMale = parseStatisticValue(row.population_male)
+	const age0To14Percent = parseStatisticValue(row.age_0_to_14_percent)
+	const age15To64Percent = parseStatisticValue(row.age_15_to_64_percent)
+	const age65PlusPercent = parseStatisticValue(row.age_65_plus_percent)
 	return {
 		id: countryCode,
 		countryCode,
 		countryName: stringValue(row.country_name),
 		iso3: stringValue(row.iso3),
 		populationTotal: parseStatisticValue(row.population_total),
-		populationFemale: parseStatisticValue(row.population_female),
-		populationMale: parseStatisticValue(row.population_male),
+		populationFemale,
+		populationMale,
 		populationDensity: parseStatisticValue(row.population_density),
 		urbanPopulationPercent: parseStatisticValue(row.urban_population_percent),
 		ruralPopulationPercent: parseStatisticValue(row.rural_population_percent),
-		age0To14Percent: parseStatisticValue(row.age_0_to_14_percent),
-		age15To64Percent: parseStatisticValue(row.age_15_to_64_percent),
-		age65PlusPercent: parseStatisticValue(row.age_65_plus_percent),
+		age0To14Percent,
+		age15To64Percent,
+		age65PlusPercent,
 		gdpCurrentUsd: parseStatisticValue(row.gdp_current_usd),
 		gdpPerCapitaCurrentUsd: parseStatisticValue(row.gdp_per_capita_current_usd),
-		lifeExpectancy: parseStatisticValue(row.life_expectancy)
+		lifeExpectancy: parseStatisticValue(row.life_expectancy),
+		dependencyRatio: derivedStatistic(
+			'GEOCODED.DEPENDENCY_RATIO',
+			'Dependents (under 15 and 65+) per 100 people aged 15 to 64',
+			[age0To14Percent, age65PlusPercent, age15To64Percent],
+			([young = 0, old = 0, working = 0]) => ((young + old) / working) * 100
+		),
+		ageingIndex: derivedStatistic(
+			'GEOCODED.AGEING_INDEX',
+			'People aged 65+ per 100 children under 15',
+			[age65PlusPercent, age0To14Percent],
+			([old = 0, young = 0]) => (old / young) * 100
+		),
+		sexRatio: derivedStatistic(
+			'GEOCODED.SEX_RATIO',
+			'Males per 100 females',
+			[populationMale, populationFemale],
+			([male = 0, female = 0]) => (male / female) * 100
+		)
+	}
+}
+
+// Computed from other indicators; null when an input is missing or a denominator is zero.
+function derivedStatistic(
+	code: string,
+	name: string,
+	inputs: V2StatisticValue[],
+	compute: (values: number[]) => number
+): V2StatisticValue {
+	const values = inputs.map((input) => input.value)
+	const years = inputs.map((input) => input.year).filter((year) => year > 0)
+	const year = years.length > 0 ? Math.min(...years) : 0
+	if (values.some((value) => value === null || value === 0)) {
+		return { code, name, year, value: null }
+	}
+	const value = compute(values.filter((item) => item !== null))
+	return {
+		code,
+		name,
+		year,
+		value: Number.isFinite(value) ? Math.round(value * 10) / 10 : null
 	}
 }
 

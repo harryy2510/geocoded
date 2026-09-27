@@ -1,10 +1,13 @@
-export type V2FieldType = 'string' | 'number' | 'boolean' | 'object' | 'array'
+import { err, ok, Result } from 'neverthrow'
+import { invalid, type V2Error } from './errors'
 
-export type V2SortDirection = 'asc' | 'desc'
+type V2FieldType = 'string' | 'number' | 'boolean' | 'object' | 'array'
 
-export type V2FilterOperator = 'eq' | 'gte' | 'lte' | 'contains'
+type V2SortDirection = 'asc' | 'desc'
 
-export type V2FieldConfig = {
+type V2FilterOperator = 'eq' | 'gte' | 'lte' | 'contains'
+
+type V2FieldConfig = {
 	type: V2FieldType
 	column?: string
 	caseInsensitive?: boolean
@@ -13,12 +16,12 @@ export type V2FieldConfig = {
 	sortable?: boolean
 }
 
-export type V2FilterConfig = {
+type V2FilterConfig = {
 	field: string
 	operator: V2FilterOperator
 }
 
-export type V2ExpandConfig =
+type V2ExpandConfig =
 	| {
 			kind: 'object' | 'array'
 			resource: V2ResourceConfig
@@ -44,6 +47,8 @@ export type V2ResourceConfig = {
 	}
 	expands?: Record<string, V2ExpandConfig>
 	reservedParams?: string[]
+	// Resource-specific params handled by the route (for example near, radius, lang).
+	extraParams?: string[]
 	strictUnknownParams?: boolean
 }
 
@@ -59,22 +64,20 @@ type V2AppliedFilter = {
 	operator: V2FilterOperator
 }
 
+type V2SortPlan = {
+	column: string
+	direction: V2SortDirection
+}
+
 export type V2QueryPlan = {
-	ok: true
 	appliedFilters: V2AppliedFilter[]
 	bindings: Array<string | number>
 	expand: string[]
 	orderBySql: string | null
 	projection: V2Projection
+	sort: V2SortPlan | null
 	whereSql: string
 }
-
-type V2QueryError = {
-	ok: false
-	error: string
-}
-
-export type V2QueryResult = V2QueryPlan | V2QueryError
 
 const DEFAULT_RESERVED_PARAMS = new Set([
 	'cursor',
@@ -93,42 +96,32 @@ export function defineV2Resource<T extends V2ResourceConfig>(config: T): T {
 export function parseV2Query(
 	params: URLSearchParams,
 	config: V2ResourceConfig
-): V2QueryResult {
+): Result<V2QueryPlan, V2Error> {
 	const unknown = findUnknownParam(params, config)
-	if (unknown)
-		return { ok: false, error: `Unsupported query parameter "${unknown}"` }
+	if (unknown) return invalid(`Unsupported query parameter "${unknown}"`)
 
-	const expandResult = parseExpand(params.get('expand'), config)
-	if (!expandResult.ok) return expandResult
-
-	const projectionResult = parseProjection(
-		params.get('fields'),
-		expandResult.expand,
-		config
+	return parseExpand(params.get('expand'), config).andThen((expand) =>
+		Result.combine([
+			parseProjection(params.get('fields'), expand, config),
+			parseFilters(params, config),
+			parseSearch(params.get('q'), config),
+			parseSort(params.get('sort'), config)
+		]).map(([projection, filters, search, sort]) => {
+			const clauses = [...filters.clauses]
+			if (search.whereSql) clauses.push(search.whereSql)
+			return {
+				appliedFilters: filters.appliedFilters,
+				bindings: [...filters.bindings, ...search.bindings],
+				expand,
+				orderBySql: sort
+					? `${sort.column} ${sort.direction.toUpperCase()}`
+					: null,
+				projection,
+				sort,
+				whereSql: clauses.join(' AND ')
+			}
+		})
 	)
-	if (!projectionResult.ok) return projectionResult
-
-	const filterResult = parseFilters(params, config)
-	if (!filterResult.ok) return filterResult
-
-	const searchResult = parseSearch(params.get('q'), config)
-	if (!searchResult.ok) return searchResult
-
-	const sortResult = parseSort(params.get('sort'), config)
-	if (!sortResult.ok) return sortResult
-
-	const clauses = [...filterResult.clauses]
-	if (searchResult.whereSql) clauses.push(searchResult.whereSql)
-
-	return {
-		ok: true,
-		appliedFilters: filterResult.appliedFilters,
-		bindings: [...filterResult.bindings, ...searchResult.bindings],
-		expand: expandResult.expand,
-		orderBySql: sortResult.orderBySql,
-		projection: projectionResult.projection,
-		whereSql: clauses.join(' AND ')
-	}
 }
 
 export function projectV2Fields(
@@ -164,7 +157,10 @@ function findUnknownParam(
 ): string | null {
 	if (!config.strictUnknownParams) return null
 
-	const allowed = new Set(config.reservedParams ?? DEFAULT_RESERVED_PARAMS)
+	const allowed = new Set([
+		...(config.reservedParams ?? DEFAULT_RESERVED_PARAMS),
+		...(config.extraParams ?? [])
+	])
 	const filterNames = new Set(Object.keys(config.filters ?? {}))
 
 	for (const name of params.keys()) {
@@ -181,9 +177,9 @@ function findUnknownParam(
 function parseExpand(
 	rawExpand: string | null,
 	config: V2ResourceConfig
-): { ok: true; expand: string[] } | V2QueryError {
+): Result<string[], V2Error> {
 	const allowedExpands = Object.keys(config.expands ?? {}).sort()
-	if (!rawExpand || rawExpand.trim() === '') return { ok: true, expand: [] }
+	if (!rawExpand || rawExpand.trim() === '') return ok([])
 
 	const expand = unique(
 		rawExpand
@@ -193,20 +189,19 @@ function parseExpand(
 	)
 	for (const name of expand) {
 		if (!allowedExpands.includes(name)) {
-			return {
-				ok: false,
-				error: `Query parameter "expand" must be one of: ${allowedExpands.join(', ')}`
-			}
+			return invalid(
+				`Query parameter "expand" must be one of: ${allowedExpands.join(', ')}`
+			)
 		}
 	}
-	return { ok: true, expand }
+	return ok(expand)
 }
 
 function parseProjection(
 	rawFields: string | null,
 	expanded: string[],
 	config: V2ResourceConfig
-): { ok: true; projection: V2Projection } | V2QueryError {
+): Result<V2Projection, V2Error> {
 	const expandedSet = new Set(expanded)
 	const scoped = new Map<string, string[]>()
 	const baseTokens: string[] = []
@@ -229,16 +224,14 @@ function parseProjection(
 			const expandName = token.slice(0, dotIndex)
 			const fieldPath = token.slice(dotIndex + 1)
 			if (!expandedSet.has(expandName)) {
-				return {
-					ok: false,
-					error: `Query parameter "fields" includes "${token}", but "${expandName}" is not expanded`
-				}
+				return invalid(
+					`Query parameter "fields" includes "${token}", but "${expandName}" is not expanded`
+				)
 			}
 			if (config.expands?.[expandName]?.kind === 'passthrough') {
-				return {
-					ok: false,
-					error: `Query parameter "fields" includes "${token}", but "${expandName}" does not support nested field selection`
-				}
+				return invalid(
+					`Query parameter "fields" includes "${token}", but "${expandName}" does not support nested field selection`
+				)
 			}
 			const paths = scoped.get(expandName) ?? []
 			paths.push(fieldPath)
@@ -247,7 +240,7 @@ function parseProjection(
 	}
 
 	const baseResult = fieldsToProjection(baseTokens, config)
-	if (!baseResult.ok) return baseResult
+	if (baseResult.isErr()) return err(baseResult.error)
 
 	const expands: Record<string, V2Projection | null> = {}
 	for (const expandName of expanded) {
@@ -261,23 +254,17 @@ function parseProjection(
 
 		const childTokens = scoped.get(expandName) ?? ['*']
 		const childResult = fieldsToProjection(childTokens, expandConfig.resource)
-		if (!childResult.ok) return childResult
-		expands[expandName] = childResult.projection
+		if (childResult.isErr()) return err(childResult.error)
+		expands[expandName] = childResult.value
 	}
 
-	return {
-		ok: true,
-		projection: {
-			fields: baseResult.projection.fields,
-			expands
-		}
-	}
+	return ok({ fields: baseResult.value.fields, expands })
 }
 
 function fieldsToProjection(
 	tokens: string[],
 	config: V2ResourceConfig
-): { ok: true; projection: V2Projection } | V2QueryError {
+): Result<V2Projection, V2Error> {
 	const fields: string[] = []
 	let hasWildcard = false
 
@@ -288,21 +275,17 @@ function fieldsToProjection(
 		}
 		const validationError = validateFieldPath(token, config)
 		if (validationError) {
-			return {
-				ok: false,
-				error: `Query parameter "fields" includes unsupported field "${token}"`
-			}
+			return invalid(
+				`Query parameter "fields" includes unsupported field "${token}"`
+			)
 		}
 		fields.push(token)
 	}
 
-	return {
-		ok: true,
-		projection: {
-			fields: unique([...(hasWildcard ? config.defaultFields : []), ...fields]),
-			expands: {}
-		}
-	}
+	return ok({
+		fields: unique([...(hasWildcard ? config.defaultFields : []), ...fields]),
+		expands: {}
+	})
 }
 
 function validateFieldPath(
@@ -324,14 +307,14 @@ function validateFieldPath(
 function parseFilters(
 	params: URLSearchParams,
 	config: V2ResourceConfig
-):
-	| {
-			ok: true
-			appliedFilters: V2AppliedFilter[]
-			bindings: Array<string | number>
-			clauses: string[]
-	  }
-	| V2QueryError {
+): Result<
+	{
+		appliedFilters: V2AppliedFilter[]
+		bindings: Array<string | number>
+		clauses: string[]
+	},
+	V2Error
+> {
 	const appliedFilters: V2AppliedFilter[] = []
 	const bindings: Array<string | number> = []
 	const clauses: string[] = []
@@ -347,68 +330,54 @@ function parseFilters(
 
 		const field = config.fields[filterConfig.field]
 		if (!field?.column) {
-			return {
-				ok: false,
-				error: `Filter "${filterName}" is not backed by a queryable field`
-			}
+			return invalid(
+				`Filter "${filterName}" is not backed by a queryable field`
+			)
 		}
 
-		const parsedValues: Array<string | number> = []
-		for (const rawValue of rawValues) {
-			const parsed = parseFilterValue(rawValue, filterName, field)
-			if (!parsed.ok) return parsed
-			parsedValues.push(parsed.value)
-		}
+		const parsedValues = Result.combine(
+			rawValues.map((rawValue) => parseFilterValue(rawValue, filterName, field))
+		)
+		if (parsedValues.isErr()) return err(parsedValues.error)
 
 		appliedFilters.push({
 			name: filterName,
 			field: filterConfig.field,
 			operator: filterConfig.operator
 		})
-		bindings.push(...filterBindings(filterConfig.operator, parsedValues))
+		bindings.push(...filterBindings(filterConfig.operator, parsedValues.value))
 		clauses.push(
-			filterClause(field.column, filterConfig.operator, parsedValues)
+			filterClause(field.column, filterConfig.operator, parsedValues.value)
 		)
 	}
 
-	return {
-		ok: true,
-		appliedFilters,
-		bindings,
-		clauses
-	}
+	return ok({ appliedFilters, bindings, clauses })
 }
 
 function parseFilterValue(
 	rawValue: string,
 	filterName: string,
 	field: V2FieldConfig
-): { ok: true; value: string | number } | V2QueryError {
+): Result<string | number, V2Error> {
 	if (field.type === 'number') {
 		const value = Number(rawValue)
 		if (!Number.isFinite(value)) {
-			return {
-				ok: false,
-				error: `Query parameter "${filterName}" must be a number`
-			}
+			return invalid(`Query parameter "${filterName}" must be a number`)
 		}
-		return { ok: true, value }
+		return ok(value)
 	}
 
 	if (field.type === 'boolean') {
 		const normalized = rawValue.toLowerCase()
-		if (['true', '1'].includes(normalized)) return { ok: true, value: 1 }
-		if (['false', '0'].includes(normalized)) return { ok: true, value: 0 }
-		return {
-			ok: false,
-			error: `Query parameter "${filterName}" must be a boolean`
-		}
+		if (['true', '1'].includes(normalized)) return ok(1)
+		if (['false', '0'].includes(normalized)) return ok(0)
+		return invalid(`Query parameter "${filterName}" must be a boolean`)
 	}
 
 	let value = rawValue
 	if (field.normalize === 'uppercase') value = value.toUpperCase()
 	if (field.normalize === 'lowercase') value = value.toLowerCase()
-	return { ok: true, value }
+	return ok(value)
 }
 
 function filterClause(
@@ -439,9 +408,9 @@ function filterBindings(
 function parseSearch(
 	rawQuery: string | null,
 	config: V2ResourceConfig
-): { ok: true; whereSql: string; bindings: string[] } | V2QueryError {
+): Result<{ whereSql: string; bindings: string[] }, V2Error> {
 	const query = rawQuery?.trim()
-	if (!query) return { ok: true, whereSql: '', bindings: [] }
+	if (!query) return ok({ whereSql: '', bindings: [] })
 
 	const searchFields = config.search?.fields ?? []
 	const clauses: string[] = []
@@ -458,23 +427,16 @@ function parseSearch(
 	}
 
 	if (clauses.length === 0) {
-		return {
-			ok: false,
-			error: `Resource "${config.name}" does not support search`
-		}
+		return invalid(`Resource "${config.name}" does not support search`)
 	}
 
-	return {
-		ok: true,
-		whereSql: `(${clauses.join(' OR ')})`,
-		bindings
-	}
+	return ok({ whereSql: `(${clauses.join(' OR ')})`, bindings })
 }
 
 function parseSort(
 	rawSort: string | null,
 	config: V2ResourceConfig
-): { ok: true; orderBySql: string | null } | V2QueryError {
+): Result<V2SortPlan | null, V2Error> {
 	const defaultSort = config.sort?.default
 	const sort = rawSort?.trim()
 	const fieldName = sort
@@ -488,28 +450,23 @@ function parseSort(
 			: 'asc'
 		: (defaultSort?.direction ?? 'asc')
 
-	if (!fieldName) return { ok: true, orderBySql: null }
+	if (!fieldName) return ok(null)
 
 	const sortableFields = allowedSortFields(config)
 	if (!sortableFields.includes(fieldName)) {
-		return {
-			ok: false,
-			error: `Query parameter "sort" must be one of: ${sortableFields.join(', ')}`
-		}
+		return invalid(
+			`Query parameter "sort" must be one of: ${sortableFields.join(', ')}`
+		)
 	}
 
 	const field = config.fields[fieldName]
 	if (!field?.column) {
-		return {
-			ok: false,
-			error: `Sort field "${fieldName}" is not backed by a queryable field`
-		}
+		return invalid(
+			`Sort field "${fieldName}" is not backed by a queryable field`
+		)
 	}
 
-	return {
-		ok: true,
-		orderBySql: `${field.column} ${direction.toUpperCase()}`
-	}
+	return ok({ column: field.column, direction })
 }
 
 function allowedSortFields(config: V2ResourceConfig): string[] {

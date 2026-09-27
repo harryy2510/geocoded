@@ -74,19 +74,45 @@ const v2PaginationParams = [
 	}
 ]
 
+const v2ErrorObjectSchema = {
+	type: 'object' as const,
+	properties: {
+		code: {
+			type: 'string' as const,
+			enum: [
+				'invalid_request',
+				'not_found',
+				'ambiguous',
+				'rate_limited',
+				'internal_error'
+			]
+		},
+		message: stringSchema,
+		hint: stringSchema
+	},
+	required: ['code', 'message']
+}
+
 const v2ErrorResponse = {
-	description: 'Error response',
+	description:
+		'Error response. `error.code` is stable and safe to branch on; `error.message` is for people.',
 	content: {
 		'application/json': {
 			schema: {
 				type: 'object' as const,
 				properties: {
-					error: stringSchema
+					error: v2ErrorObjectSchema
 				},
 				required: ['error']
 			}
 		}
 	}
+}
+
+const v2RateLimitedResponse = {
+	...v2ErrorResponse,
+	description:
+		'Too many requests: 1,000 per minute per IP. Wait for the number of seconds in `Retry-After`.'
 }
 
 const v2AmbiguousResponse = {
@@ -97,8 +123,7 @@ const v2AmbiguousResponse = {
 			schema: {
 				type: 'object' as const,
 				properties: {
-					error: stringSchema,
-					hint: stringSchema,
+					error: v2ErrorObjectSchema,
 					matches: {
 						type: 'array' as const,
 						items: { type: 'object' as const }
@@ -149,7 +174,10 @@ const v2StatisticsSchema = objectSchema({
 	age65PlusPercent: v2StatisticValueSchema,
 	gdpCurrentUsd: v2StatisticValueSchema,
 	gdpPerCapitaCurrentUsd: v2StatisticValueSchema,
-	lifeExpectancy: v2StatisticValueSchema
+	lifeExpectancy: v2StatisticValueSchema,
+	dependencyRatio: v2StatisticValueSchema,
+	ageingIndex: v2StatisticValueSchema,
+	sexRatio: v2StatisticValueSchema
 })
 
 const v2CountryTimezoneSchema = objectSchema({
@@ -197,6 +225,10 @@ const v2CountrySchema = objectSchema({
 	timezones: {
 		type: 'array' as const,
 		items: v2CountryTimezoneSchema
+	},
+	localName: {
+		type: 'string' as const,
+		description: 'Country name in the language requested with `lang`.'
 	},
 	translations: {
 		type: 'object' as const,
@@ -247,7 +279,12 @@ const v2CitySchema = objectSchema({
 	latitude: stringSchema,
 	longitude: stringSchema,
 	population: numberSchema,
-	timezone: stringSchema
+	timezone: stringSchema,
+	distanceKm: {
+		type: 'number' as const,
+		description:
+			'Distance from `near`, in kilometres. Present only with `near`.'
+	}
 })
 
 const v2TimezoneSchema = objectSchema({
@@ -335,7 +372,12 @@ const v2AirportSchema = objectSchema({
 	admin2Code: stringSchema,
 	elevation: nullableNumberSchema,
 	timezone: stringSchema,
-	modificationDate: stringSchema
+	modificationDate: stringSchema,
+	distanceKm: {
+		type: 'number' as const,
+		description:
+			'Distance from `near`, in kilometres. Present only with `near`.'
+	}
 })
 
 const v2TransportLocationSchema = objectSchema({
@@ -359,7 +401,12 @@ const v2TransportLocationSchema = objectSchema({
 	latitude: nullableNumberSchema,
 	longitude: nullableNumberSchema,
 	remarks: nullableStringSchema,
-	changeIndicator: nullableStringSchema
+	changeIndicator: nullableStringSchema,
+	distanceKm: {
+		type: 'number' as const,
+		description:
+			'Distance from `near`, in kilometres. Present only with `near`.'
+	}
 })
 
 const v2LocationSchema = objectSchema({
@@ -423,6 +470,86 @@ const v2MigrationSchema = objectSchema({
 	}
 })
 
+const v2SearchResultSchema = objectSchema({
+	type: { type: 'string' as const, enum: ['country', 'state', 'city'] },
+	id: stringSchema,
+	name: stringSchema,
+	countryCode: stringSchema,
+	countryName: stringSchema,
+	stateCode: nullableStringSchema,
+	stateName: nullableStringSchema,
+	geonameId: nullableNumberSchema
+})
+
+const v2ReverseSchema = objectSchema({
+	query: objectSchema({ lat: numberSchema, lng: numberSchema }),
+	city: v2CitySchema,
+	state: { ...v2StateSchema, nullable: true },
+	country: { ...v2CountrySchema, nullable: true },
+	timezone: stringSchema
+})
+
+const v2TimezoneNowSchema = objectSchema({
+	timezone: stringSchema,
+	localTime: { type: 'string' as const, format: 'date-time' },
+	utcOffset: stringSchema,
+	utcOffsetSeconds: numberSchema,
+	isDst: booleanSchema,
+	abbreviation: stringSchema,
+	nextTransition: {
+		...objectSchema({
+			at: { type: 'string' as const, format: 'date-time' },
+			utcOffset: stringSchema
+		}),
+		nullable: true
+	}
+})
+
+const v2MetaSchema = objectSchema({
+	dataVersion: stringSchema,
+	updatedAt: { type: 'string' as const, format: 'date-time', nullable: true },
+	datasets: {
+		type: 'array' as const,
+		items: objectSchema({
+			id: stringSchema,
+			name: stringSchema,
+			records: numberSchema,
+			source: stringSchema,
+			license: stringSchema
+		})
+	}
+})
+
+const nearParameters = [
+	{
+		name: 'near',
+		in: 'query' as const,
+		required: false,
+		description:
+			'`lat,lng`. Returns places within `radius` of this point, closest first, each with `distanceKm`. Cannot be combined with `sort`.',
+		schema: stringSchema,
+		allowReserved: true,
+		example: '35.6895,139.6917'
+	},
+	{
+		name: 'radius',
+		in: 'query' as const,
+		required: false,
+		description: 'Search radius in kilometres for `near`.',
+		schema: { type: 'number' as const, minimum: 0, maximum: 300, default: 50 }
+	}
+]
+
+const langParameter = {
+	name: 'lang',
+	in: 'query' as const,
+	required: false,
+	description:
+		'Language code such as `ja` or `pt-BR`. Adds `localName`, falling back to the base language, then the English name.',
+	schema: stringSchema,
+	example: 'ja'
+}
+
 const filterCountry = filterParameter('country', 'AE')
 const filterState = filterParameter('state', 'AZ')
 const filterContinent = filterParameter('continent', 'AS')
@@ -437,7 +564,7 @@ const filterMacrolanguage = filterParameter('macrolanguage', 'ara')
 const filterMinPopulation = filterParameter('minPopulation', 1000000, 'number')
 const filterMaxPopulation = filterParameter('maxPopulation', 50000000, 'number')
 
-export const v2OpenApiPaths = {
+const v2OpenApiPaths = {
 	'/v2': {
 		get: {
 			tags: ['Location'],
@@ -499,7 +626,8 @@ export const v2OpenApiPaths = {
 			filterRegion,
 			filterCurrency,
 			filterMinPopulation,
-			filterMaxPopulation
+			filterMaxPopulation,
+			langParameter
 		],
 		fieldsExample: 'id,name,iso2,statistics.gdpPerCapitaCurrentUsd'
 	}),
@@ -511,7 +639,7 @@ export const v2OpenApiPaths = {
 		schema: v2CountrySchema,
 		example: 'AE',
 		idDescription: 'ISO 3166-1 alpha-2, alpha-3, or country name',
-		parameters: [v2CountryExpandParameter],
+		parameters: [v2CountryExpandParameter, langParameter],
 		fieldsExample: 'id,name,iso2,statistics.gdpPerCapitaCurrentUsd'
 	}),
 	'/v2/states': listPath({
@@ -548,7 +676,8 @@ export const v2OpenApiPaths = {
 			filterState,
 			filterTimezone,
 			filterMinPopulation,
-			filterMaxPopulation
+			filterMaxPopulation,
+			...nearParameters
 		],
 		fieldsExample: 'id,name,countryCode,geonameId'
 	}),
@@ -740,7 +869,13 @@ export const v2OpenApiPaths = {
 		tag: 'Airports',
 		summary: 'List airports',
 		schema: v2AirportSchema,
-		parameters: [filterCountry, filterState, filterTimezone, filterIata],
+		parameters: [
+			filterCountry,
+			filterState,
+			filterTimezone,
+			filterIata,
+			...nearParameters
+		],
 		fieldsExample: 'id,name,iataCode,countryCode'
 	}),
 	'/v2/airports/{id}': detailPath({
@@ -754,7 +889,7 @@ export const v2OpenApiPaths = {
 		tag: 'Ports',
 		summary: 'List ports',
 		schema: v2TransportLocationSchema,
-		parameters: [filterCountry, filterState, filterIata],
+		parameters: [filterCountry, filterState, filterIata, ...nearParameters],
 		fieldsExample: 'id,name,countryCode,functions'
 	}),
 	'/v2/ports/{id}': detailPath({
@@ -768,7 +903,7 @@ export const v2OpenApiPaths = {
 		tag: 'Border Crossings',
 		summary: 'List border crossings',
 		schema: v2TransportLocationSchema,
-		parameters: [filterCountry, filterState, filterIata],
+		parameters: [filterCountry, filterState, filterIata, ...nearParameters],
 		fieldsExample: 'id,name,countryCode,functions'
 	}),
 	'/v2/border-crossings/{id}': detailPath({
@@ -801,6 +936,106 @@ export const v2OpenApiPaths = {
 		parameters: [filterCountry],
 		fieldsExample: 'countryCode,totalInternationalMigrants'
 	}),
+	'/v2/search': {
+		get: {
+			tags: ['Search'],
+			summary: 'Search places',
+			description:
+				'Prefix search across country, state and city names, ranked by relevance. Built for autocomplete.',
+			parameters: [
+				{ ...v2SearchParameter, required: true, example: 'tok' },
+				{
+					name: 'type',
+					in: 'query' as const,
+					required: false,
+					description:
+						'Comma-separated place types: `country`, `state`, `city`.',
+					schema: stringSchema,
+					allowReserved: true,
+					example: 'city,state'
+				},
+				...v2PaginationParams
+			],
+			responses: {
+				'200': {
+					description: 'Paginated search results',
+					content: {
+						'application/json': {
+							schema: v2ListResponseSchema(v2SearchResultSchema)
+						}
+					}
+				},
+				'400': v2ErrorResponse,
+				'429': v2RateLimitedResponse
+			}
+		}
+	},
+	'/v2/reverse': {
+		get: {
+			tags: ['Location'],
+			summary: 'Reverse geocode a point',
+			description:
+				'Returns the nearest city to a latitude and longitude, with its state, country and timezone. Searches up to 400 km away.',
+			parameters: [
+				{
+					name: 'lat',
+					in: 'query' as const,
+					required: true,
+					schema: numberSchema,
+					example: 35.6895
+				},
+				{
+					name: 'lng',
+					in: 'query' as const,
+					required: true,
+					schema: numberSchema,
+					example: 139.6917
+				},
+				langParameter
+			],
+			responses: {
+				'200': {
+					description: 'Nearest place',
+					content: { 'application/json': { schema: v2ReverseSchema } }
+				},
+				'400': v2ErrorResponse,
+				'404': v2ErrorResponse,
+				'429': v2RateLimitedResponse
+			}
+		}
+	},
+	'/v2/timezones/{id}/now': {
+		get: {
+			tags: ['Timezones'],
+			summary: 'Current time in a timezone',
+			description:
+				'Live local time, UTC offset, daylight saving state and the next transition. Not cached.',
+			parameters: [pathParameter('id', 'Asia/Tokyo', 'IANA timezone id')],
+			responses: {
+				'200': {
+					description: 'Current time',
+					content: { 'application/json': { schema: v2TimezoneNowSchema } }
+				},
+				'404': v2ErrorResponse,
+				'429': v2RateLimitedResponse
+			}
+		}
+	},
+	'/v2/meta': {
+		get: {
+			tags: ['Meta'],
+			summary: 'Data version and datasets',
+			description:
+				'Current data version, when it was last updated, and the source, licence and record count of every dataset.',
+			responses: {
+				'200': {
+					description: 'Dataset metadata',
+					content: { 'application/json': { schema: v2MetaSchema } }
+				},
+				'429': v2RateLimitedResponse
+			}
+		}
+	},
 	'/v2/migrant-stocks/{id}': detailPath({
 		tag: 'Migrant Stocks',
 		summary: 'Get one country migrant stock row',
@@ -915,7 +1150,8 @@ function listPath(options: {
 					}
 				},
 				'400': v2ErrorResponse,
-				...(options.notFound ? { '404': v2ErrorResponse } : {})
+				...(options.notFound ? { '404': v2ErrorResponse } : {}),
+				'429': v2RateLimitedResponse
 			}
 		}
 	}
@@ -959,7 +1195,8 @@ function nestedDetailPath(options: {
 				},
 				'400': v2ErrorResponse,
 				'404': v2ErrorResponse,
-				...(options.conflict ? { '409': v2AmbiguousResponse } : {})
+				...(options.conflict ? { '409': v2AmbiguousResponse } : {}),
+				'429': v2RateLimitedResponse
 			}
 		}
 	}

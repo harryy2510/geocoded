@@ -8,7 +8,7 @@ import {
 } from '../types'
 
 type D1Row = Record<string, unknown>
-type SearchResultType = SearchResult['type']
+export type SearchResultType = SearchResult['type']
 
 const toFtsPrefixQuery = (query: string): string => {
 	const sanitized = query.trim().replace(/"/g, '""')
@@ -112,20 +112,6 @@ export const getStateByIso2OrName = async (
 		.bind(countryCode.toUpperCase(), upper, stateId)
 		.first()
 	return row ? rowToState(row) : null
-}
-
-export const getCitiesByCountryState = async (
-	db: D1Database,
-	countryCode: string,
-	stateCode: string
-): Promise<City[]> => {
-	const { results } = await db
-		.prepare(
-			'SELECT * FROM cities WHERE country_code = ? AND state_code = ? ORDER BY name'
-		)
-		.bind(countryCode.toUpperCase(), stateCode.toUpperCase())
-		.all()
-	return results.map(rowToCity)
 }
 
 export const getCityByName = async (
@@ -370,15 +356,17 @@ export const search = async (
 	query: string,
 	limit: number,
 	offset: number,
-	type?: SearchResultType
+	types: readonly SearchResultType[] = []
 ): Promise<{ rows: SearchResult[]; total: number }> => {
 	const ftsQuery = toFtsPrefixQuery(query)
 	const filters = ['name MATCH ?']
 	const searchBindings: Array<string | number> = [ftsQuery]
-	if (type) {
+	if (types.length === 1) {
 		filters.push('type = ?')
-		searchBindings.push(type)
+	} else if (types.length > 1) {
+		filters.push(`type IN (${types.map(() => '?').join(', ')})`)
 	}
+	searchBindings.push(...types)
 	const where = filters.join(' AND ')
 
 	const batch = await db.batch([
@@ -464,19 +452,6 @@ export const getTimezoneById = async (
 	return row ? rowToTimezone(row) : null
 }
 
-export const getTimezonesByCountry = async (
-	db: D1Database,
-	countryCode: string
-): Promise<TimezoneEntry[]> => {
-	const { results } = await db
-		.prepare(
-			'SELECT * FROM timezones WHERE country_codes LIKE ? ORDER BY timezone'
-		)
-		.bind(`%"${countryCode.toUpperCase()}"%`)
-		.all()
-	return results.map(rowToTimezone)
-}
-
 // --- Currencies ---
 
 const rowToCurrency = (row: D1Row): CurrencyEntry => ({
@@ -512,15 +487,4 @@ export const getCurrencyByCode = async (
 		.bind(code.toUpperCase())
 		.first()
 	return row ? rowToCurrency(row) : null
-}
-
-export const getCurrenciesByCountry = async (
-	db: D1Database,
-	countryCode: string
-): Promise<CurrencyEntry[]> => {
-	const { results } = await db
-		.prepare('SELECT * FROM currencies WHERE countries LIKE ? ORDER BY code')
-		.bind(`%"${countryCode.toUpperCase()}"%`)
-		.all()
-	return results.map(rowToCurrency)
 }

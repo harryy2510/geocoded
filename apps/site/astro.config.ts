@@ -5,7 +5,14 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
 	integrations: [react()],
 	vite: {
-		plugins: [tailwindcss()],
+		plugins: [tailwindcss()]
 	},
 	output: 'static',
+	// Retired pages point at their replacements.
+	redirects: {
+		'/explorer': '/explore',
+		'/dashboard': '/insights',
+		'/statistics': '/insights',
+		'/quiz': '/'
+	}
 })

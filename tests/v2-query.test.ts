@@ -94,8 +94,8 @@ describe('v2 query utilities', () => {
 			countryResource
 		)
 
-		expect(parsed.ok).toBe(true)
-		if (!parsed.ok) return
+		expect(parsed.isOk()).toBe(true)
+		if (parsed.isErr()) return
 
 		const projected = projectV2Fields(
 			{
@@ -129,7 +129,7 @@ describe('v2 query utilities', () => {
 					}
 				]
 			},
-			parsed.projection
+			parsed.value.projection
 		)
 
 		expect(projected).toEqual({
@@ -163,10 +163,10 @@ describe('v2 query utilities', () => {
 			parseV2Query(
 				new URLSearchParams('fields=*,statistics.gdpPerCapitaCurrentUsd'),
 				countryResource
-			)
+			)._unsafeUnwrapErr()
 		).toEqual({
-			ok: false,
-			error:
+			code: 'invalid_request',
+			message:
 				'Query parameter "fields" includes "statistics.gdpPerCapitaCurrentUsd", but "statistics" is not expanded'
 		})
 
@@ -174,10 +174,10 @@ describe('v2 query utilities', () => {
 			parseV2Query(
 				new URLSearchParams('expand=statistics.gdpPerCapitaCurrentUsd'),
 				countryResource
-			)
+			)._unsafeUnwrapErr()
 		).toEqual({
-			ok: false,
-			error: 'Query parameter "expand" must be one of: airports, statistics'
+			code: 'invalid_request',
+			message: 'Query parameter "expand" must be one of: airports, statistics'
 		})
 	})
 
@@ -189,8 +189,7 @@ describe('v2 query utilities', () => {
 			countryResource
 		)
 
-		expect(parsed).toEqual({
-			ok: true,
+		expect(parsed._unsafeUnwrap()).toEqual({
 			appliedFilters: [
 				{ name: 'country', field: 'iso2', operator: 'eq' },
 				{ name: 'currency', field: 'currency', operator: 'eq' },
@@ -212,6 +211,7 @@ describe('v2 query utilities', () => {
 				],
 				expands: {}
 			},
+			sort: { column: 'population', direction: 'desc' },
 			whereSql:
 				"iso2 = ? AND currency = ? AND population >= ? AND (name COLLATE NOCASE LIKE ? ESCAPE '^' OR iso2 LIKE ? ESCAPE '^' OR iso3 LIKE ? ESCAPE '^')"
 		})
@@ -225,12 +225,15 @@ describe('v2 query utilities', () => {
 			'country=AE',
 			'countryCode=AE'
 		]) {
-			expect(parseV2Query(new URLSearchParams(query), countryResource)).toEqual(
-				{
-					ok: false,
-					error: `Unsupported query parameter "${query.split('=')[0]}"`
-				}
-			)
+			expect(
+				parseV2Query(
+					new URLSearchParams(query),
+					countryResource
+				)._unsafeUnwrapErr()
+			).toEqual({
+				code: 'invalid_request',
+				message: `Unsupported query parameter "${query.split('=')[0]}"`
+			})
 		}
 	})
 })

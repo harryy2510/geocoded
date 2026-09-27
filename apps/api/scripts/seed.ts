@@ -176,8 +176,11 @@ type RawAirport = {
 	countryCode: string
 	countryName: string
 	admin1Code: string
-	admin1Name: string
 	admin2Code: string
+	// ISO-aligned state from geocoded-data; older files only carry GeoNames admin1 fields.
+	stateCode?: string
+	stateName?: string
+	admin1Name?: string
 	elevation: number | null
 	timezone: string
 	modificationDate: string
@@ -1016,8 +1019,8 @@ function airportRow(airport: RawAirport): SourceRow {
 		airport.longitude,
 		airport.countryCode,
 		airport.countryName,
-		airport.admin1Code,
-		airport.admin1Name,
+		airport.stateCode ?? airport.admin1Code,
+		airport.stateName ?? airport.admin1Name ?? '',
 		airport.admin2Code,
 		airport.elevation,
 		airport.timezone,
