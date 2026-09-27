@@ -1,7 +1,7 @@
 {
 	"name": "Geocoded",
 	"short_name": "Geocoded",
-	"description": "Premium geographic data layer",
+	"description": "Location data for every country, state and city",
 	"icons": [
 		{
 			"src": "/favicon.svg",
@@ -19,7 +19,7 @@
 			"sizes": "512x512"
 		}
 	],
-	"theme_color": "#000000",
-	"background_color": "#000000",
+	"theme_color": "#F3F1EA",
+	"background_color": "#F3F1EA",
 	"display": "standalone"
 }
