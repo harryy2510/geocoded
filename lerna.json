@@ -1,0 +1,18 @@
+{
+	"$schema": "node_modules/@lerna-lite/cli/schemas/lerna-schema.json",
+	"version": "independent",
+	"npmClient": "bun",
+	"npmClientArgs": ["--no-env-file"],
+	"packages": ["packages/*"],
+	"command": {
+		"version": {
+			"allowBranch": "main",
+			"conventionalCommits": true,
+			"changelogPreset": "conventionalcommits",
+			"exact": true,
+			"syncWorkspaceLock": true,
+			"message": "chore(release): version packages [skip ci]",
+			"ignoreChanges": ["**/*.md", "**/*.test.*", "**/__tests__/**"]
+		}
+	}
+}

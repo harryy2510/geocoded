@@ -12,5 +12,8 @@
 	"dependencies": {
 		"hono": "^4.12.15",
 		"neverthrow": "8.2.0"
+	},
+	"devDependencies": {
+		"wrangler": "^4.86.0"
 	}
 }

@@ -1,0 +1,49 @@
+{
+	"name": "react-native-picker-core",
+	"version": "0.1.0",
+	"type": "module",
+	"sideEffects": false,
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"react-native": "./dist/index.js",
+			"import": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
+	},
+	"peerDependencies": {
+		"react": ">=18.0.0",
+		"react-native": ">=0.72.0"
+	},
+	"peerDependenciesMeta": {
+		"react-native": {
+			"optional": true
+		}
+	},
+	"dependencies": {
+		"downshift": "^9.3.2",
+		"picker-core": "workspace:*"
+	},
+	"license": "MIT",
+	"description": "Headless React Native picker primitive.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/harryy2510/geocoded.git",
+		"directory": "packages/react-native-picker-core"
+	},
+	"homepage": "https://github.com/harryy2510/geocoded/tree/main/packages/react-native-picker-core#readme",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsdown"
+	}
+}

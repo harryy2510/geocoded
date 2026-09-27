@@ -119,7 +119,7 @@ describe('site API client', () => {
 		const countries = await fetchCountries()
 
 		expect(String(requestedUrl)).toBe(
-			'https://api.geocoded.me/countries?limit=2000'
+			'https://api.geocoded.me/v2/countries?limit=2000'
 		)
 		expect(
 			countries.map((country) => ({ name: country.name, iso2: country.iso2 }))

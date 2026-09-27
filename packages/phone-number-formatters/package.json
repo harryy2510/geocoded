@@ -1,0 +1,40 @@
+{
+	"name": "phone-number-formatters",
+	"version": "0.1.0",
+	"type": "module",
+	"sideEffects": false,
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"react-native": "./dist/index.js",
+			"import": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
+	},
+	"dependencies": {
+		"libphonenumber-js": "^1.12.29",
+		"picker-core": "workspace:*"
+	},
+	"license": "MIT",
+	"description": "Framework-agnostic phone parsing, formatting, and validation.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/harryy2510/geocoded.git",
+		"directory": "packages/phone-number-formatters"
+	},
+	"homepage": "https://github.com/harryy2510/geocoded/tree/main/packages/phone-number-formatters#readme",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org"
+	},
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsdown"
+	}
+}

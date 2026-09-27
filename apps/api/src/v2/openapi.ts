@@ -36,6 +36,8 @@ const v2SearchParameter = {
 	name: 'q',
 	in: 'query' as const,
 	required: false,
+	description:
+		'Case-insensitive text match on the name and code fields of this resource.',
 	schema: stringSchema
 }
 
@@ -53,6 +55,7 @@ const v2PaginationParams = [
 		name: 'limit',
 		in: 'query' as const,
 		required: false,
+		description: 'Rows per page.',
 		schema: {
 			type: 'integer' as const,
 			minimum: 1,
@@ -64,12 +67,15 @@ const v2PaginationParams = [
 		name: 'offset',
 		in: 'query' as const,
 		required: false,
+		description: 'Number of rows to skip. Cannot be combined with `cursor`.',
 		schema: { type: 'integer' as const, minimum: 0, default: 0 }
 	},
 	{
 		name: 'cursor',
 		in: 'query' as const,
 		required: false,
+		description:
+			'`meta.cursor` from the previous page. Faster than `offset` for deep pages.',
 		schema: stringSchema
 	}
 ]
@@ -981,6 +987,7 @@ const v2OpenApiPaths = {
 					name: 'lat',
 					in: 'query' as const,
 					required: true,
+					description: 'Latitude in decimal degrees, -90 to 90.',
 					schema: numberSchema,
 					example: 35.6895
 				},
@@ -988,6 +995,7 @@ const v2OpenApiPaths = {
 					name: 'lng',
 					in: 'query' as const,
 					required: true,
+					description: 'Longitude in decimal degrees, -180 to 180.',
 					schema: numberSchema,
 					example: 139.6917
 				},
@@ -1096,10 +1104,15 @@ function filterParameter(
 	example: string | number,
 	type: 'string' | 'number' = 'string'
 ) {
+	const bound = /^(min|max)([A-Z].*)$/.exec(name)
+	const description = bound
+		? `Only rows with ${bound[2]?.toLowerCase()} ${bound[1] === 'min' ? 'at least' : 'at most'} this value.`
+		: `Only rows whose ${name} matches exactly. Repeat the parameter to match any of several values.`
 	return {
 		name: `filter[${name}]`,
 		in: 'query' as const,
 		required: false,
+		description,
 		schema: { type },
 		allowReserved: true,
 		example
@@ -1220,7 +1233,12 @@ function detailPath(options: {
 		schema: options.schema,
 		fieldsExample: options.fieldsExample,
 		parameters: [
-			pathParameter('id', options.example, options.idDescription),
+			pathParameter(
+				'id',
+				options.example,
+				options.idDescription ??
+					`Identifier of the record, for example \`${options.example}\`.`
+			),
 			...(options.parameters ?? [])
 		],
 		conflict: options.conflict

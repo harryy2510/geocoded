@@ -1,12 +1,24 @@
 ---
+import { v2OpenApiSpec } from '../../../api/src/v2/openapi'
 import Layout from '../layouts/Layout.astro'
 import { ApiReference } from '../components/docs/api-reference'
+import { endpointsFromOpenApi } from '../components/docs/openapi-endpoints'
+
+// Built from the API's own OpenAPI document, so every endpoint and parameter is listed.
+const endpoints = endpointsFromOpenApi(
+	v2OpenApiSpec({
+		siteName: 'Geocoded',
+		siteUrl: 'https://geocoded.me',
+		apiUrl: 'https://api.geocoded.me',
+		githubUrl: 'https://github.com/harryy2510/geocoded'
+	})
+)
 ---
 
 <Layout
 	title="API reference | Geocoded"
-	description="Every Geocoded endpoint with its parameters, plus a live panel to try requests. No sign-up and no API key."
+	description="Every Geocoded endpoint with all of its parameters and response fields, a live panel to try requests, and the OpenAPI spec and Postman collection. No sign-up and no API key."
 	active="docs"
 >
-	<ApiReference client:load />
+	<ApiReference client:load endpoints={endpoints} />
 </Layout>

@@ -3,8 +3,8 @@
 	"bun": true,
 	"workspaces": {
 		".": {
-			"entry": ["tests/**/*.ts"],
-			"project": ["tests/**/*.ts"]
+			"entry": ["tests/**/*.ts", "scripts/*.ts"],
+			"project": ["tests/**/*.ts", "scripts/*.ts"]
 		},
 		"apps/api": {
 			"project": ["src/**/*.{ts,tsx}", "scripts/**/*.ts"]
@@ -12,8 +12,16 @@
 		"apps/site": {
 			"project": ["src/**/*.{astro,css,ts,tsx}"]
 		},
-		"packages/client": {
+		"packages/*": {
+			"entry": ["src/index.ts"],
 			"project": ["src/**/*.ts"]
 		}
-	}
+	},
+	"ignoreDependencies": [
+		"@lerna-lite/publish",
+		"@lerna-lite/version",
+		"conventional-changelog-conventionalcommits",
+		"hono",
+		"wrangler"
+	]
 }

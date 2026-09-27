@@ -1,13 +1,14 @@
 import { type ReactNode, useEffect, useState } from 'react'
 import { v2Url } from '../../lib/v2'
 import { highlightJson } from '../json-view'
-import { type Endpoint, ENDPOINTS, type Param } from './endpoints'
+import { type Endpoint, type Param } from './openapi-endpoints'
 
 type Guide = {
 	id: string
 	nav: string
 	title: string
-	tryId: string
+	/** OpenAPI path whose Try it panel sits next to this guide. */
+	tryPath: string
 	body: ReactNode
 }
 
@@ -30,7 +31,7 @@ const GUIDES: Guide[] = [
 		id: 'introduction',
 		nav: 'Introduction',
 		title: 'Location data for every country, state and city',
-		tryId: 'your-location',
+		tryPath: '/v2',
 		body: (
 			<>
 				<P>
@@ -52,7 +53,7 @@ const GUIDES: Guide[] = [
 		id: 'quick-start',
 		nav: 'Quick start',
 		title: 'Make your first request',
-		tryId: 'country',
+		tryPath: '/v2/countries/{id}',
 		body: (
 			<>
 				<P>Ask for a country by its ISO code or its name:</P>
@@ -74,7 +75,7 @@ const GUIDES: Guide[] = [
 		id: 'filtering',
 		nav: 'Filtering and sorting',
 		title: 'Filter and sort lists',
-		tryId: 'countries',
+		tryPath: '/v2/countries',
 		body: (
 			<>
 				<P>
@@ -96,7 +97,7 @@ const GUIDES: Guide[] = [
 		id: 'fields',
 		nav: 'Choosing fields',
 		title: 'Return only the fields you use',
-		tryId: 'country',
+		tryPath: '/v2/countries/{id}',
 		body: (
 			<>
 				<P>
@@ -116,7 +117,7 @@ const GUIDES: Guide[] = [
 		id: 'pagination',
 		nav: 'Pagination',
 		title: 'Page through results',
-		tryId: 'cities',
+		tryPath: '/v2/cities',
 		body: (
 			<>
 				<P>
@@ -136,7 +137,7 @@ const GUIDES: Guide[] = [
 		id: 'errors',
 		nav: 'Errors',
 		title: 'Errors',
-		tryId: 'country',
+		tryPath: '/v2/countries/{id}',
 		body: (
 			<>
 				<P>
@@ -172,53 +173,58 @@ const GUIDES: Guide[] = [
 	}
 ]
 
-const ALL_IDS = new Set([
-	...GUIDES.map((g) => g.id),
-	...ENDPOINTS.map((e) => e.id)
-])
-
-function endpointById(id: string): Endpoint {
-	return ENDPOINTS.find((e) => e.id === id) ?? ENDPOINTS[0]
-}
-
-function initialValues(endpoint: Endpoint): Record<string, string> {
-	const values: Record<string, string> = {}
-	for (const p of [...endpoint.pathParams, ...endpoint.query]) {
-		if (p.example !== undefined) values[p.name] = p.example
-	}
-	return values
-}
+const OPENAPI_URL = v2Url('/v2/openapi.json')
+const POSTMAN_URL = v2Url('/v2/postman.json')
 
 function requestUrl(
 	endpoint: Endpoint,
 	values: Record<string, string>
 ): string {
 	let path = endpoint.path
-	for (const p of endpoint.pathParams) {
-		const value = (values[p.name] ?? '').trim()
-		// Timezone ids keep their slashes; everything else is one segment.
-		const encoded = value.split('/').map(encodeURIComponent).join('/')
-		path = path.replace(`{${p.name}}`, encoded || `{${p.name}}`)
-	}
 	const params: Record<string, string> = {}
-	for (const p of endpoint.query) {
-		const value = values[p.name]?.trim()
-		if (p.example !== undefined && value) params[p.name] = value
+	for (const p of endpoint.params) {
+		const value = (values[p.name] ?? '').trim()
+		if (p.in === 'path') {
+			// Timezone ids keep their slashes; everything else is one segment.
+			const encoded = value.split('/').map(encodeURIComponent).join('/')
+			path = path.replace(`{${p.name}}`, encoded || `{${p.name}}`)
+		} else if (value) {
+			params[p.name] = value
+		}
 	}
 	return v2Url(path, params)
+}
+
+function initialValues(endpoint: Endpoint): Record<string, string> {
+	const values: Record<string, string> = {}
+	for (const p of endpoint.params) {
+		// Path and required params start filled so Send works straight away.
+		if ((p.in === 'path' || p.required) && p.example !== undefined) {
+			values[p.name] = p.example
+		}
+	}
+	return values
+}
+
+function MethodBadge() {
+	return (
+		<span className="shrink-0 rounded bg-chart-blue px-2 py-0.5 font-mono text-xs font-medium text-white">
+			GET
+		</span>
+	)
 }
 
 function ParamList({ title, params }: { title: string; params: Param[] }) {
 	if (!params.length) return null
 	return (
-		<div className="flex flex-col gap-2.5">
-			<h3 className="m-0 text-lg font-semibold">{title}</h3>
+		<section className="flex flex-col gap-2.5">
+			<h2 className="m-0 text-lg font-semibold">{title}</h2>
 			{params.map((p) => (
 				<div
 					key={p.name}
 					className="flex flex-col gap-1 border-t border-rule-soft py-3"
 				>
-					<div className="flex flex-wrap items-baseline gap-2.5">
+					<div className="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
 						<span className="font-mono text-sm font-medium">{p.name}</span>
 						<span className="text-[13px] text-ink-soft">{p.type}</span>
 						{p.required && (
@@ -226,11 +232,111 @@ function ParamList({ title, params }: { title: string; params: Param[] }) {
 								required
 							</span>
 						)}
+						{p.constraints.map((c) => (
+							<span
+								key={c}
+								className="rounded bg-rule-soft px-1.5 py-0.5 text-xs text-ink-soft"
+							>
+								{c}
+							</span>
+						))}
 					</div>
-					<span className="text-sm text-ink-soft">{p.desc}</span>
+					{p.desc && (
+						<span className="text-sm leading-relaxed text-ink-soft">
+							{p.desc}
+						</span>
+					)}
+					{p.example !== undefined && (
+						<span className="text-[13px] text-ink-soft">
+							Example: <Code>{p.example}</Code>
+						</span>
+					)}
 				</div>
 			))}
-		</div>
+		</section>
+	)
+}
+
+function Responses({ endpoint }: { endpoint: Endpoint }) {
+	return (
+		<section className="flex flex-col gap-2.5">
+			<h2 className="m-0 text-lg font-semibold">Responses</h2>
+			{endpoint.responses.map((r) => (
+				<div
+					key={r.code}
+					className="flex gap-3 border-t border-rule-soft py-2.5 text-sm"
+				>
+					<span
+						className={`w-10 shrink-0 font-mono font-semibold ${r.code.startsWith('2') ? 'text-chart-teal' : 'text-signal'}`}
+					>
+						{r.code}
+					</span>
+					<span className="text-ink-soft">{r.desc}</span>
+				</div>
+			))}
+		</section>
+	)
+}
+
+function ResponseFields({ endpoint }: { endpoint: Endpoint }) {
+	if (!endpoint.fields.length) return null
+	return (
+		<section className="flex flex-col gap-2.5">
+			<h2 className="m-0 text-lg font-semibold">Response fields</h2>
+			{endpoint.paginated && (
+				<P>
+					Each item in <Code>data</Code> has these fields. <Code>meta</Code>{' '}
+					holds <Code>total</Code>, <Code>limit</Code>, <Code>offset</Code>,{' '}
+					<Code>hasMore</Code> and <Code>cursor</Code>.
+				</P>
+			)}
+			<div className="overflow-x-auto">
+				<table className="w-full border-collapse text-sm">
+					<thead>
+						<tr className="text-left text-xs tracking-[.04em] text-ink-soft uppercase">
+							<th className="py-2 pr-4 font-semibold">Field</th>
+							<th className="py-2 pr-4 font-semibold">Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						{endpoint.fields.map((f) => (
+							<tr key={f.name} className="border-t border-rule-soft align-top">
+								<td className="py-2 pr-4 font-mono">{f.name}</td>
+								<td className="py-2 pr-4 text-ink-soft">
+									{f.type}
+									{f.desc && <div className="text-[13px]">{f.desc}</div>}
+								</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+		</section>
+	)
+}
+
+function EndpointIndex({ endpoints }: { endpoints: Endpoint[] }) {
+	return (
+		<section className="flex flex-col gap-2.5">
+			<h2 className="m-0 text-lg font-semibold">
+				All {endpoints.length} endpoints
+			</h2>
+			<div className="flex flex-col">
+				{endpoints.map((e) => (
+					<a
+						key={e.id}
+						href={`#${e.id}`}
+						className="flex flex-col gap-1 border-t border-rule-soft py-2.5 hover:text-signal sm:flex-row sm:items-baseline sm:gap-3"
+					>
+						<span className="flex min-w-0 items-center gap-2 font-mono text-[13px] break-all sm:w-[330px] sm:shrink-0">
+							<MethodBadge />
+							{e.path}
+						</span>
+						<span className="text-sm text-ink-soft">{e.title}</span>
+					</a>
+				))}
+			</div>
+		</section>
 	)
 }
 
@@ -249,9 +355,6 @@ type Result =
 function TryIt({ endpoint }: { endpoint: Endpoint }) {
 	const [values, setValues] = useState(() => initialValues(endpoint))
 	const [result, setResult] = useState<Result>({ status: 'idle' })
-	const inputs = [...endpoint.pathParams, ...endpoint.query].filter(
-		(p) => p.example !== undefined
-	)
 	const url = requestUrl(endpoint, values)
 
 	async function send() {
@@ -270,7 +373,7 @@ function TryIt({ endpoint }: { endpoint: Endpoint }) {
 				status: 'done',
 				code: response.status,
 				statusText: response.statusText,
-				type: type.split(';')[0],
+				type: type.split(';')[0] ?? '',
 				body: body.length > 40_000 ? `${body.slice(0, 40_000)}\n…` : body
 			})
 		} catch (error) {
@@ -285,21 +388,9 @@ function TryIt({ endpoint }: { endpoint: Endpoint }) {
 		<div className="flex min-h-[420px] grow flex-col overflow-hidden rounded-[14px] bg-ink text-code">
 			<div className="flex items-center justify-between border-b border-code-rule px-[18px] py-3.5">
 				<h2 className="m-0 text-[15px] font-semibold">Try it</h2>
-				<div className="flex gap-2 text-[13px] text-code-muted">
-					<a
-						className="hover:text-white"
-						href={v2Url('/v2/openapi.json')}
-						id="openapi"
-					>
-						OpenAPI
-					</a>
-					<span aria-hidden="true" className="text-[#8A8F99]">
-						·
-					</span>
-					<a className="hover:text-white" href={v2Url('/v2/postman.json')}>
-						Postman
-					</a>
-				</div>
+				<span className="text-[13px] text-code-muted">
+					Empty fields are left out
+				</span>
 			</div>
 			<form
 				className="contents"
@@ -308,23 +399,27 @@ function TryIt({ endpoint }: { endpoint: Endpoint }) {
 					void send()
 				}}
 			>
-				{inputs.length > 0 && (
-					<div className="grid grid-cols-1 gap-3 border-b border-code-rule px-[18px] py-4 sm:grid-cols-2">
-						{inputs.map((p) => (
+				{endpoint.params.length > 0 && (
+					<div className="grid max-h-[360px] grid-cols-1 gap-3 overflow-y-auto border-b border-code-rule px-[18px] py-4 sm:grid-cols-2">
+						{endpoint.params.map((p) => (
 							<label
 								key={p.name}
 								className="flex flex-col gap-1.5 text-xs text-code-muted"
 							>
-								{p.name}
+								<span>
+									{p.name}
+									{p.required && <span className="text-[#F0A37A]"> *</span>}
+								</span>
 								<input
 									value={values[p.name] ?? ''}
+									placeholder={p.example}
 									onChange={(event) =>
 										setValues((prev) => ({
 											...prev,
 											[p.name]: event.target.value
 										}))
 									}
-									className="h-10 rounded-md border border-[#3A3D44] bg-[#1E2126] px-3 font-mono text-sm text-paper"
+									className="h-10 rounded-md border border-[#3A3D44] bg-[#1E2126] px-3 font-mono text-sm text-paper placeholder:text-[#6B6F78]"
 									spellCheck={false}
 									autoCapitalize="off"
 								/>
@@ -377,125 +472,179 @@ function TryIt({ endpoint }: { endpoint: Endpoint }) {
 	)
 }
 
-export function ApiReference() {
+function SpecLinks() {
+	return (
+		<div className="flex flex-wrap gap-2.5">
+			<a href={OPENAPI_URL} className="btn btn-primary h-11 px-4 text-sm">
+				OpenAPI 3.1 spec
+			</a>
+			<a
+				href={POSTMAN_URL}
+				download="geocoded-v2-postman-collection.json"
+				className="btn btn-outline h-11 px-4 text-sm"
+			>
+				Postman collection
+			</a>
+		</div>
+	)
+}
+
+export function ApiReference({ endpoints }: { endpoints: Endpoint[] }) {
 	const [active, setActive] = useState('introduction')
 
 	useEffect(() => {
+		const ids = new Set([
+			...GUIDES.map((g) => g.id),
+			...endpoints.map((e) => e.id)
+		])
 		function sync() {
 			const id = window.location.hash.slice(1)
-			if (ALL_IDS.has(id)) setActive(id)
+			if (ids.has(id)) {
+				setActive(id)
+				window.scrollTo({ top: 0 })
+			}
 		}
 		sync()
 		window.addEventListener('hashchange', sync)
 		return () => window.removeEventListener('hashchange', sync)
-	}, [])
+	}, [endpoints])
 
 	const guide = GUIDES.find((g) => g.id === active)
-	const endpoint = guide ? endpointById(guide.tryId) : endpointById(active)
+	const fallback = endpoints[0]
+	const endpoint =
+		(guide
+			? endpoints.find((e) => e.path === guide.tryPath)
+			: endpoints.find((e) => e.id === active)) ?? fallback
 
 	const groups = [
 		{
 			title: 'Get started',
 			items: GUIDES.map((g) => ({ id: g.id, label: g.nav }))
 		},
-		{
-			title: 'Endpoints',
-			items: ENDPOINTS.map((e) => ({ id: e.id, label: e.nav }))
-		}
+		...[...new Set(endpoints.map((e) => e.group))].map((group) => ({
+			title: group,
+			items: endpoints
+				.filter((e) => e.group === group)
+				.map((e) => ({ id: e.id, label: e.title }))
+		}))
 	]
 
-	function go(id: string) {
-		window.location.hash = id
-	}
+	if (!endpoint) return null
 
 	return (
-		<div className="mx-auto flex w-full max-w-[1440px] flex-col lg:flex-row">
-			<nav
-				aria-label="API sections"
-				className="hidden w-[260px] shrink-0 flex-col gap-6 border-r border-rule px-6 py-7 text-sm lg:flex"
-			>
-				{groups.map((g) => (
-					<div key={g.title} className="flex flex-col gap-0.5">
-						<span className="mb-2 text-xs font-semibold tracking-[.06em] text-ink-soft uppercase">
-							{g.title}
-						</span>
-						{g.items.map((item) => (
-							<a
-								key={item.id}
-								href={`#${item.id}`}
-								aria-current={item.id === active ? 'page' : undefined}
-								className={`-mx-2.5 rounded-md px-2.5 py-[7px] ${item.id === active ? 'bg-ink font-medium text-paper' : 'hover:text-signal'}`}
-							>
-								{item.label}
-							</a>
-						))}
+		<div className="flex flex-col">
+			<header className="border-b border-rule">
+				<div className="mx-auto flex w-full max-w-[1440px] flex-col gap-4 px-4 py-6 md:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-12">
+					<div className="flex flex-col gap-1.5">
+						<h1 className="serif m-0 text-[36px] leading-none lg:text-[44px]">
+							API reference
+						</h1>
+						<p className="m-0 text-sm text-ink-soft">
+							{endpoints.length} endpoints · base URL{' '}
+							<Code>{v2Url('/v2')}</Code> · no key needed
+						</p>
 					</div>
-				))}
-			</nav>
+					<SpecLinks />
+				</div>
+			</header>
 
-			<div className="border-b border-rule px-4 py-4 md:px-8 lg:hidden">
-				<label className="flex flex-col gap-2 text-[13px] font-semibold">
-					Section
-					<select
-						className="field"
-						value={active}
-						onChange={(event) => go(event.target.value)}
-					>
-						{groups.map((g) => (
-							<optgroup key={g.title} label={g.title}>
-								{g.items.map((item) => (
-									<option key={item.id} value={item.id}>
-										{item.label}
-									</option>
-								))}
-							</optgroup>
-						))}
-					</select>
-				</label>
-			</div>
-
-			<article className="flex min-w-0 shrink-0 flex-col gap-[26px] px-4 py-8 md:px-8 lg:w-[620px] lg:px-11 lg:py-9">
-				{guide ? (
-					<>
-						<div className="flex flex-col gap-3">
-							<span className="text-[13px] text-ink-soft">Get started</span>
-							<h1 className="serif m-0 text-[40px] leading-none lg:text-[52px]">
-								{guide.title}
-							</h1>
-						</div>
-						<div className="flex flex-col gap-4">{guide.body}</div>
-					</>
-				) : (
-					<>
-						<div className="flex flex-col gap-3">
-							<span className="text-[13px] text-ink-soft">
-								{endpoint.group}
+			<div className="mx-auto flex w-full max-w-[1440px] flex-col lg:flex-row">
+				<nav
+					aria-label="API sections"
+					className="hidden w-[260px] shrink-0 flex-col gap-5 border-r border-rule px-6 py-7 text-sm lg:flex"
+				>
+					{groups.map((g) => (
+						<div key={g.title} className="flex flex-col gap-0.5">
+							<span className="mb-1.5 text-xs font-semibold tracking-[.06em] text-ink-soft uppercase">
+								{g.title}
 							</span>
-							<h1 className="serif m-0 text-[40px] leading-none lg:text-[52px]">
-								{endpoint.title}
-							</h1>
-							<div className="flex items-center gap-2.5 rounded-lg border border-rule bg-card px-3.5 py-2.5 font-mono text-sm break-all">
-								<span className="shrink-0 rounded bg-chart-blue px-2 py-0.5 text-xs font-medium text-white">
-									GET
-								</span>
-								{endpoint.path}
-							</div>
-							<p className="m-0 text-base leading-relaxed text-ink-soft">
-								{endpoint.desc}
-							</p>
+							{g.items.map((item) => (
+								<a
+									key={item.id}
+									href={`#${item.id}`}
+									aria-current={item.id === active ? 'page' : undefined}
+									className={`-mx-2.5 rounded-md px-2.5 py-[6px] ${item.id === active ? 'bg-ink font-medium text-paper' : 'hover:text-signal'}`}
+								>
+									{item.label}
+								</a>
+							))}
 						</div>
-						<ParamList title="Path parameters" params={endpoint.pathParams} />
-						<ParamList title="Query parameters" params={endpoint.query} />
-					</>
-				)}
-			</article>
+					))}
+				</nav>
 
-			<aside
-				aria-label="Try it"
-				className="flex min-w-0 grow flex-col px-4 pb-10 md:px-8 lg:py-7 lg:pr-8 lg:pl-0"
-			>
-				<TryIt key={endpoint.id} endpoint={endpoint} />
-			</aside>
+				<div className="border-b border-rule px-4 py-4 md:px-8 lg:hidden">
+					<label className="flex flex-col gap-2 text-[13px] font-semibold">
+						Section
+						<select
+							className="field"
+							value={active}
+							onChange={(event) => {
+								window.location.hash = event.target.value
+							}}
+						>
+							{groups.map((g) => (
+								<optgroup key={g.title} label={g.title}>
+									{g.items.map((item) => (
+										<option key={item.id} value={item.id}>
+											{item.label}
+										</option>
+									))}
+								</optgroup>
+							))}
+						</select>
+					</label>
+				</div>
+
+				<article className="flex min-w-0 shrink-0 flex-col gap-[26px] px-4 py-8 md:px-8 lg:w-[620px] lg:px-11 lg:py-9">
+					{guide ? (
+						<>
+							<div className="flex flex-col gap-3">
+								<span className="text-[13px] text-ink-soft">Get started</span>
+								<h2 className="serif m-0 text-[40px] leading-none lg:text-[52px]">
+									{guide.title}
+								</h2>
+							</div>
+							<div className="flex flex-col gap-4">{guide.body}</div>
+							{guide.id === 'introduction' && (
+								<EndpointIndex endpoints={endpoints} />
+							)}
+						</>
+					) : (
+						<>
+							<div className="flex flex-col gap-3">
+								<span className="text-[13px] text-ink-soft">
+									{endpoint.group}
+								</span>
+								<h2 className="serif m-0 text-[40px] leading-none lg:text-[52px]">
+									{endpoint.title}
+								</h2>
+								<div className="flex items-center gap-2.5 rounded-lg border border-rule bg-card px-3.5 py-2.5 font-mono text-sm break-all">
+									<MethodBadge />
+									{endpoint.path}
+								</div>
+								{endpoint.desc && <P>{endpoint.desc}</P>}
+							</div>
+							<ParamList
+								title="Path parameters"
+								params={endpoint.params.filter((p) => p.in === 'path')}
+							/>
+							<ParamList
+								title="Query parameters"
+								params={endpoint.params.filter((p) => p.in === 'query')}
+							/>
+							<Responses endpoint={endpoint} />
+							<ResponseFields endpoint={endpoint} />
+						</>
+					)}
+				</article>
+
+				<aside
+					aria-label="Try it"
+					className="flex min-w-0 grow flex-col px-4 pb-10 md:px-8 lg:sticky lg:top-[72px] lg:max-h-[calc(100vh-72px)] lg:self-start lg:py-7 lg:pr-8 lg:pl-0"
+				>
+					<TryIt key={endpoint.id} endpoint={endpoint} />
+				</aside>
+			</div>
 		</div>
 	)
 }

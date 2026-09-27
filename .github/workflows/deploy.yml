@@ -1,0 +1,135 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      seed:
+        description: Seed remote D1 before deploying
+        type: boolean
+        default: false
+      migrate:
+        description: Apply remote D1 migrations before deploying
+        type: boolean
+        default: false
+
+permissions: {}
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    name: Plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      migrate: ${{ steps.plan.outputs.migrate }}
+      seed: ${{ steps.plan.outputs.seed }}
+      deploy: ${{ steps.plan.outputs.deploy }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+
+      - uses: dorny/paths-filter@v3
+        id: filter
+        if: github.event_name == 'push'
+        with:
+          base: ${{ github.event.before }}
+          filters: |
+            migrate:
+              - 'migrations/**'
+            seed:
+              - 'data/*.json'
+              - 'apps/api/scripts/seed.ts'
+            deploy:
+              - 'apps/api/src/**'
+              - 'apps/api/wrangler.jsonc'
+              - 'apps/site/**'
+              - 'migrations/**'
+              - 'package.json'
+              - 'bun.lock'
+              - 'scripts/verify-deploy.ts'
+
+      - name: Plan release
+        id: plan
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_MIGRATE: ${{ inputs.migrate }}
+          INPUT_SEED: ${{ inputs.seed }}
+          FILTER_MIGRATE: ${{ steps.filter.outputs.migrate }}
+          FILTER_SEED: ${{ steps.filter.outputs.seed }}
+          FILTER_DEPLOY: ${{ steps.filter.outputs.deploy }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "migrate=$INPUT_MIGRATE" >> "$GITHUB_OUTPUT"
+            echo "seed=$INPUT_SEED" >> "$GITHUB_OUTPUT"
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "migrate=$FILTER_MIGRATE" >> "$GITHUB_OUTPUT"
+            echo "seed=$FILTER_SEED" >> "$GITHUB_OUTPUT"
+            echo "deploy=$FILTER_DEPLOY" >> "$GITHUB_OUTPUT"
+          fi
+
+  database:
+    name: Migrate and seed D1
+    needs: plan
+    if: needs.plan.outputs.migrate == 'true' || needs.plan.outputs.seed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: production
+    permissions:
+      contents: read
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CACHE_ZONE: ${{ secrets.CACHE_ZONE }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.2
+
+      - run: bun ci
+
+      - name: Check seed safety
+        run: bun --no-env-file test tests/seed.test.ts
+
+      - name: Apply remote migrations
+        if: needs.plan.outputs.migrate == 'true'
+        working-directory: apps/api
+        run: bun --bun wrangler d1 migrations apply geo-db --remote
+
+      - name: Seed remote D1
+        if: needs.plan.outputs.seed == 'true'
+        run: bun run seed:upload
+
+  deploy:
+    name: Deploy Worker
+    needs: [plan, database]
+    if: >-
+      always() &&
+      needs.plan.outputs.deploy == 'true' &&
+      (needs.database.result == 'success' || needs.database.result == 'skipped')
+    permissions:
+      contents: read
+      pull-requests: write
+      id-token: write
+    uses: Utilities-Studio/infra/.github/workflows/cloudflare-deploy.yml@82f4aa561d9a3922ae95b00857ff26e2f3769adb
+    with:
+      working_directory: apps/api
+      install_directory: .
+      skip_build: true
+      skip_sync_env: true
+      pre_deploy_commands: cd ../.. && bun run build:site
+      post_deploy_commands: bun --no-env-file scripts/verify-deploy.ts
+    secrets:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

@@ -1,0 +1,23 @@
+name: Publish packages
+
+run-name: Publish npm packages from ${{ github.ref_name }}
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'packages/**'
+      - 'lerna.json'
+      - 'tsdown.config.mts'
+      - 'package.json'
+      - 'bun.lock'
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  publish:
+    permissions:
+      contents: write
+      id-token: write
+    uses: Utilities-Studio/infra/.github/workflows/npm-publish.yml@82f4aa561d9a3922ae95b00857ff26e2f3769adb
