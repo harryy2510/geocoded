@@ -285,7 +285,7 @@
 		"icaoCode": "AHK",
 		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "HK"
 	},
 	{
 		"name": "Air India",
@@ -321,7 +321,7 @@
 		"icaoCode": "AMU",
 		"countryName": "Macao (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "MO"
 	},
 	{
 		"name": "Air Mauritius",
@@ -771,7 +771,7 @@
 		"icaoCode": "BAV",
 		"countryName": "Viet Nam",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "VN"
 	},
 	{
 		"name": "Bangkok Airways",
@@ -960,7 +960,7 @@
 		"icaoCode": "CPA",
 		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "HK"
 	},
 	{
 		"name": "Cebu Pacific",
@@ -1590,7 +1590,7 @@
 		"icaoCode": "HGB",
 		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "HK"
 	},
 	{
 		"name": "Gulf Air",
@@ -1698,7 +1698,7 @@
 		"icaoCode": "HKC",
 		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "HK"
 	},
 	{
 		"name": "Hong Kong Airlines",
@@ -1707,7 +1707,7 @@
 		"icaoCode": "CRK",
 		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "HK"
 	},
 	{
 		"name": "Hong Kong Express Airways",
@@ -1716,7 +1716,7 @@
 		"icaoCode": "HKE",
 		"countryName": "Hong Kong (SAR)",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "HK"
 	},
 	{
 		"name": "IBERIA",
@@ -3255,7 +3255,7 @@
 		"icaoCode": "VJC",
 		"countryName": "Viet Nam",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "VN"
 	},
 	{
 		"name": "Vietnam Airlines",
@@ -3264,7 +3264,7 @@
 		"icaoCode": "HVN",
 		"countryName": "Viet Nam",
 		"controlledDuplicate": false,
-		"countryCode": null
+		"countryCode": "VN"
 	},
 	{
 		"name": "Virgin Atlantic",
