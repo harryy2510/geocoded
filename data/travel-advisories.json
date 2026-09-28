@@ -1292,9 +1292,9 @@
 		"countryName": "Grenada",
 		"us": {
 			"destination": "Grenada",
-			"level": 1,
-			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-09-28",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-01-05",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.grd.html"
 		},
 		"uk": {
@@ -3595,7 +3595,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-18T15:03:52Z",
+			"updatedAt": "2026-09-28T05:10:02Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/thailand"
 		}
 	},
