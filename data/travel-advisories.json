@@ -1,0 +1,4103 @@
+[
+	{
+		"countryCode": "AD",
+		"countryName": "Andorra",
+		"us": {
+			"destination": "Andorra",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-21",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.and.html"
+		},
+		"uk": {
+			"destination": "Andorra",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T12:46:46Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/andorra"
+		}
+	},
+	{
+		"countryCode": "AE",
+		"countryName": "United Arab Emirates",
+		"us": {
+			"destination": "United Arab Emirates",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-29",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.are.html"
+		},
+		"uk": {
+			"destination": "United Arab Emirates",
+			"alertStatus": [],
+			"updatedAt": "2026-07-24T14:52:23Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates"
+		}
+	},
+	{
+		"countryCode": "AF",
+		"countryName": "Afghanistan",
+		"us": {
+			"destination": "Afghanistan",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-02-20",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.afg.html"
+		},
+		"uk": {
+			"destination": "Afghanistan",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2026-07-30T10:36:13Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/afghanistan"
+		}
+	},
+	{
+		"countryCode": "AG",
+		"countryName": "Antigua and Barbuda",
+		"us": {
+			"destination": "Antigua and Barbuda",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-20",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.atg.html"
+		},
+		"uk": {
+			"destination": "Antigua and Barbuda",
+			"alertStatus": [],
+			"updatedAt": "2026-03-13T09:27:23Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/antigua-and-barbuda"
+		}
+	},
+	{
+		"countryCode": "AI",
+		"countryName": "Anguilla",
+		"us": {
+			"destination": "Anguilla",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-22",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.aia.html"
+		},
+		"uk": {
+			"destination": "Anguilla",
+			"alertStatus": [],
+			"updatedAt": "2025-05-15T15:32:41Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/anguilla"
+		}
+	},
+	{
+		"countryCode": "AL",
+		"countryName": "Albania",
+		"us": {
+			"destination": "Albania",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-26",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.alb.html"
+		},
+		"uk": {
+			"destination": "Albania",
+			"alertStatus": [],
+			"updatedAt": "2026-08-13T15:28:50Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/albania"
+		}
+	},
+	{
+		"countryCode": "AM",
+		"countryName": "Armenia",
+		"us": {
+			"destination": "Armenia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-09-05",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.arm.html"
+		},
+		"uk": {
+			"destination": "Armenia",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-03-01T17:29:01Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/armenia"
+		}
+	},
+	{
+		"countryCode": "AN",
+		"countryName": "Netherlands Antilles",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "AO",
+		"countryName": "Angola",
+		"us": {
+			"destination": "Angola",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-03-05",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ago.html"
+		},
+		"uk": {
+			"destination": "Angola",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-05-28T10:50:56Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/angola"
+		}
+	},
+	{
+		"countryCode": "AQ",
+		"countryName": "Antarctica",
+		"us": {
+			"destination": "Antarctica",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-09-23",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ata.html"
+		},
+		"uk": {
+			"destination": "Antarctica/British Antarctic Territory",
+			"alertStatus": [],
+			"updatedAt": "2025-04-10T15:27:54Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/antarctica-british-antarctic-territory"
+		}
+	},
+	{
+		"countryCode": "AR",
+		"countryName": "Argentina",
+		"us": {
+			"destination": "Argentina",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-10",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.arg.html"
+		},
+		"uk": {
+			"destination": "Argentina",
+			"alertStatus": [],
+			"updatedAt": "2026-05-07T16:26:11Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/argentina"
+		}
+	},
+	{
+		"countryCode": "AS",
+		"countryName": "American Samoa",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "AT",
+		"countryName": "Austria",
+		"us": {
+			"destination": "Austria",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-21",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.aut.html"
+		},
+		"uk": {
+			"destination": "Austria",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:19:06Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/austria"
+		}
+	},
+	{
+		"countryCode": "AU",
+		"countryName": "Australia",
+		"us": {
+			"destination": "Australia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.aus.html"
+		},
+		"uk": {
+			"destination": "Australia",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:06:09Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/australia"
+		}
+	},
+	{
+		"countryCode": "AW",
+		"countryName": "Aruba",
+		"us": {
+			"destination": "Aruba",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-20",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.abw.html"
+		},
+		"uk": {
+			"destination": "Aruba",
+			"alertStatus": [],
+			"updatedAt": "2026-07-07T13:03:43Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/aruba"
+		}
+	},
+	{
+		"countryCode": "AX",
+		"countryName": "Aland Islands",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "AZ",
+		"countryName": "Azerbaijan",
+		"us": {
+			"destination": "Azerbaijan",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-04-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.aze.html"
+		},
+		"uk": {
+			"destination": "Azerbaijan",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-02T10:21:51Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/azerbaijan"
+		}
+	},
+	{
+		"countryCode": "BA",
+		"countryName": "Bosnia and Herzegovina",
+		"us": {
+			"destination": "Bosnia and Herzegovina",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-27",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bih.html"
+		},
+		"uk": {
+			"destination": "Bosnia and Herzegovina",
+			"alertStatus": [],
+			"updatedAt": "2026-08-13T15:28:44Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina"
+		}
+	},
+	{
+		"countryCode": "BB",
+		"countryName": "Barbados",
+		"us": {
+			"destination": "Barbados",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-04-10",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html"
+		},
+		"uk": {
+			"destination": "Barbados",
+			"alertStatus": [],
+			"updatedAt": "2026-01-23T15:06:44Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/barbados"
+		}
+	},
+	{
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"us": {
+			"destination": "Bangladesh",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-30",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bgd.html"
+		},
+		"uk": {
+			"destination": "Bangladesh",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-04T09:49:04Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/bangladesh"
+		}
+	},
+	{
+		"countryCode": "BE",
+		"countryName": "Belgium",
+		"us": {
+			"destination": "Belgium",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-23",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bel.html"
+		},
+		"uk": {
+			"destination": "Belgium",
+			"alertStatus": [],
+			"updatedAt": "2026-09-25T11:48:06Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/belgium"
+		}
+	},
+	{
+		"countryCode": "BF",
+		"countryName": "Burkina Faso",
+		"us": {
+			"destination": "Burkina Faso",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-05-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bfa.html"
+		},
+		"uk": {
+			"destination": "Burkina Faso",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2025-12-10T13:14:03Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/burkina-faso"
+		}
+	},
+	{
+		"countryCode": "BG",
+		"countryName": "Bulgaria",
+		"us": {
+			"destination": "Bulgaria",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-10-09",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bgr.html"
+		},
+		"uk": {
+			"destination": "Bulgaria",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:18:49Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/bulgaria"
+		}
+	},
+	{
+		"countryCode": "BH",
+		"countryName": "Bahrain",
+		"us": {
+			"destination": "Bahrain",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-27",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bhr.html"
+		},
+		"uk": {
+			"destination": "Bahrain",
+			"alertStatus": [],
+			"updatedAt": "2026-08-20T10:51:52Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/bahrain"
+		}
+	},
+	{
+		"countryCode": "BI",
+		"countryName": "Burundi",
+		"us": {
+			"destination": "Burundi",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2025-04-29",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/burundi-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Burundi",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-05-21T15:02:33Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/burundi"
+		}
+	},
+	{
+		"countryCode": "BJ",
+		"countryName": "Benin",
+		"us": {
+			"destination": "Benin",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-01-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ben.html"
+		},
+		"uk": {
+			"destination": "Benin",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2025-12-15T16:50:33Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/benin"
+		}
+	},
+	{
+		"countryCode": "BL",
+		"countryName": "Saint Barthelemy",
+		"us": {
+			"destination": "Saint Barthelemy",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-20",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.blm.html"
+		},
+		"uk": {
+			"destination": "St Martin and St Barthélemy",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T12:39:06Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/st-martin-and-st-barthelemy"
+		}
+	},
+	{
+		"countryCode": "BM",
+		"countryName": "Bermuda",
+		"us": {
+			"destination": "Bermuda",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-04-10",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bmu.html"
+		},
+		"uk": {
+			"destination": "Bermuda",
+			"alertStatus": [],
+			"updatedAt": "2025-11-01T12:46:46Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/bermuda"
+		}
+	},
+	{
+		"countryCode": "BN",
+		"countryName": "Brunei",
+		"us": {
+			"destination": "Brunei",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-14",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brn.html"
+		},
+		"uk": {
+			"destination": "Brunei",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:05:48Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/brunei"
+		}
+	},
+	{
+		"countryCode": "BO",
+		"countryName": "Bolivia",
+		"us": {
+			"destination": "Bolivia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bol.html"
+		},
+		"uk": {
+			"destination": "Bolivia",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-22T15:45:15Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/bolivia"
+		}
+	},
+	{
+		"countryCode": "BQ",
+		"countryName": "Bonaire, Saint Eustatius and Saba",
+		"us": {
+			"destination": "Bonaire",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-20",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bes.html"
+		},
+		"uk": {
+			"destination": "Bonaire/St Eustatius/Saba",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:10:48Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/bonaire-st-eustatius-saba"
+		}
+	},
+	{
+		"countryCode": "BR",
+		"countryName": "Brazil",
+		"us": {
+			"destination": "Brazil",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-31",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bra.html"
+		},
+		"uk": {
+			"destination": "Brazil",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-09T09:06:01Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/brazil"
+		}
+	},
+	{
+		"countryCode": "BS",
+		"countryName": "Bahamas",
+		"us": {
+			"destination": "The Bahamas",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bhs.html"
+		},
+		"uk": {
+			"destination": "Bahamas",
+			"alertStatus": [],
+			"updatedAt": "2026-05-28T16:01:45Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/bahamas"
+		}
+	},
+	{
+		"countryCode": "BT",
+		"countryName": "Bhutan",
+		"us": {
+			"destination": "Bhutan",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-09-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.btn.html"
+		},
+		"uk": {
+			"destination": "Bhutan",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:09:24Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/bhutan"
+		}
+	},
+	{
+		"countryCode": "BV",
+		"countryName": "Bouvet Island",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "BW",
+		"countryName": "Botswana",
+		"us": {
+			"destination": "Botswana",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-06-17",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bwa.html"
+		},
+		"uk": {
+			"destination": "Botswana",
+			"alertStatus": [],
+			"updatedAt": "2026-06-01T13:04:17Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/botswana"
+		}
+	},
+	{
+		"countryCode": "BY",
+		"countryName": "Belarus",
+		"us": {
+			"destination": "Belarus",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2025-12-29",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.blr.html"
+		},
+		"uk": {
+			"destination": "Belarus",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2026-09-10T13:40:11Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/belarus"
+		}
+	},
+	{
+		"countryCode": "BZ",
+		"countryName": "Belize",
+		"us": {
+			"destination": "Belize",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-03-12",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.blz.html"
+		},
+		"uk": {
+			"destination": "Belize",
+			"alertStatus": [],
+			"updatedAt": "2026-06-12T09:40:30Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/belize"
+		}
+	},
+	{
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"us": {
+			"destination": "Canada",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-06-05",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.can.html"
+		},
+		"uk": {
+			"destination": "Canada",
+			"alertStatus": [],
+			"updatedAt": "2026-06-02T16:02:41Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/canada"
+		}
+	},
+	{
+		"countryCode": "CC",
+		"countryName": "Cocos Islands",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "CD",
+		"countryName": "Democratic Republic of the Congo",
+		"us": {
+			"destination": "Democratic Republic of the Congo",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-07-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cod.html"
+		},
+		"uk": {
+			"destination": "Democratic Republic of the Congo",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-16T15:33:42Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo"
+		}
+	},
+	{
+		"countryCode": "CF",
+		"countryName": "Central African Republic",
+		"us": {
+			"destination": "Central African Republic",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-01-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.caf.html"
+		},
+		"uk": {
+			"destination": "Central African Republic",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-05-28T11:08:37Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/central-african-republic"
+		}
+	},
+	{
+		"countryCode": "CG",
+		"countryName": "Republic of the Congo",
+		"us": {
+			"destination": "Republic of the Congo",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2024-10-02",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/republic-of-the-congo-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Congo",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-06-02T10:16:18Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/congo"
+		}
+	},
+	{
+		"countryCode": "CH",
+		"countryName": "Switzerland",
+		"us": {
+			"destination": "Switzerland",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-14",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.che.html"
+		},
+		"uk": {
+			"destination": "Switzerland",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:23:45Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/switzerland"
+		}
+	},
+	{
+		"countryCode": "CI",
+		"countryName": "Ivory Coast",
+		"us": {
+			"destination": "Côte d’Ivoire",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-02-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.civ.html"
+		},
+		"uk": {
+			"destination": "Côte d'Ivoire",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-05-29T15:11:15Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire"
+		}
+	},
+	{
+		"countryCode": "CK",
+		"countryName": "Cook Islands",
+		"us": null,
+		"uk": {
+			"destination": "Cook Islands, Tokelau and Niue",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:43:48Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/cook-islands-tokelau-and-niue"
+		}
+	},
+	{
+		"countryCode": "CL",
+		"countryName": "Chile",
+		"us": {
+			"destination": "Chile",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-19",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.chl.html"
+		},
+		"uk": {
+			"destination": "Chile",
+			"alertStatus": [],
+			"updatedAt": "2026-08-18T22:18:12Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/chile"
+		}
+	},
+	{
+		"countryCode": "CM",
+		"countryName": "Cameroon",
+		"us": {
+			"destination": "Cameroon",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-05-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cmr.html"
+		},
+		"uk": {
+			"destination": "Cameroon",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-02-09T16:16:46Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/cameroon"
+		}
+	},
+	{
+		"countryCode": "CN",
+		"countryName": "China",
+		"us": {
+			"destination": "China",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.chn.html"
+		},
+		"uk": {
+			"destination": "China",
+			"alertStatus": [],
+			"updatedAt": "2026-08-27T22:02:55Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/china"
+		}
+	},
+	{
+		"countryCode": "CO",
+		"countryName": "Colombia",
+		"us": {
+			"destination": "Colombia",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-03-31",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.col.html"
+		},
+		"uk": {
+			"destination": "Colombia",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-23T18:02:49Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/colombia"
+		}
+	},
+	{
+		"countryCode": "CR",
+		"countryName": "Costa Rica",
+		"us": {
+			"destination": "Costa Rica",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-04-02",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cri.html"
+		},
+		"uk": {
+			"destination": "Costa Rica",
+			"alertStatus": [],
+			"updatedAt": "2026-05-19T10:42:25Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/costa-rica"
+		}
+	},
+	{
+		"countryCode": "CS",
+		"countryName": "Serbia and Montenegro",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "CU",
+		"countryName": "Cuba",
+		"us": {
+			"destination": "Cuba",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-05-07",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/cuba-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Cuba",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_whole_country"
+			],
+			"updatedAt": "2026-09-25T11:36:31Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/cuba"
+		}
+	},
+	{
+		"countryCode": "CV",
+		"countryName": "Cabo Verde",
+		"us": {
+			"destination": "Cabo Verde",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-12-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cpv.html"
+		},
+		"uk": {
+			"destination": "Cape Verde",
+			"alertStatus": [],
+			"updatedAt": "2026-07-28T15:13:41Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/cape-verde"
+		}
+	},
+	{
+		"countryCode": "CW",
+		"countryName": "Curacao",
+		"us": {
+			"destination": "Curaçao",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-09-09",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cuw.html"
+		},
+		"uk": {
+			"destination": "Curaçao",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:16:00Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/curacao"
+		}
+	},
+	{
+		"countryCode": "CX",
+		"countryName": "Christmas Island",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "CY",
+		"countryName": "Cyprus",
+		"us": {
+			"destination": "Cyprus",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-06-01",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cyp.html"
+		},
+		"uk": {
+			"destination": "Cyprus",
+			"alertStatus": [],
+			"updatedAt": "2026-08-14T09:34:05Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/cyprus"
+		}
+	},
+	{
+		"countryCode": "CZ",
+		"countryName": "Czechia",
+		"us": {
+			"destination": "Czechia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-01-08",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cze.html"
+		},
+		"uk": {
+			"destination": "Czechia",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:18:36Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/czechia"
+		}
+	},
+	{
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"us": {
+			"destination": "Germany",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-05-13",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.deu.html"
+		},
+		"uk": {
+			"destination": "Germany",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:18:05Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/germany"
+		}
+	},
+	{
+		"countryCode": "DJ",
+		"countryName": "Djibouti",
+		"us": {
+			"destination": "Djibouti",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-03-06",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dji.html"
+		},
+		"uk": {
+			"destination": "Djibouti",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-07-27T14:03:02Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/djibouti"
+		}
+	},
+	{
+		"countryCode": "DK",
+		"countryName": "Denmark",
+		"us": {
+			"destination": "Kingdom of Denmark",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2024-09-17",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/denmark-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Denmark",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:18:28Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/denmark"
+		}
+	},
+	{
+		"countryCode": "DM",
+		"countryName": "Dominica",
+		"us": {
+			"destination": "Dominica",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-20",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dma.html"
+		},
+		"uk": {
+			"destination": "Dominica",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:28:48Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/dominica"
+		}
+	},
+	{
+		"countryCode": "DO",
+		"countryName": "Dominican Republic",
+		"us": {
+			"destination": "Dominican Republic",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-06-12",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dom.html"
+		},
+		"uk": {
+			"destination": "Dominican Republic",
+			"alertStatus": [],
+			"updatedAt": "2026-08-07T15:02:53Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/dominican-republic"
+		}
+	},
+	{
+		"countryCode": "DZ",
+		"countryName": "Algeria",
+		"us": {
+			"destination": "Algeria",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-25",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dza.html"
+		},
+		"uk": {
+			"destination": "Algeria",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-09-25T15:01:59Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/algeria"
+		}
+	},
+	{
+		"countryCode": "EC",
+		"countryName": "Ecuador",
+		"us": {
+			"destination": "Ecuador",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ecu.html"
+		},
+		"uk": {
+			"destination": "Ecuador",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-16T16:13:24Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/ecuador"
+		}
+	},
+	{
+		"countryCode": "EE",
+		"countryName": "Estonia",
+		"us": {
+			"destination": "Estonia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-03-31",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.est.html"
+		},
+		"uk": {
+			"destination": "Estonia",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:18:21Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/estonia"
+		}
+	},
+	{
+		"countryCode": "EG",
+		"countryName": "Egypt",
+		"us": {
+			"destination": "Egypt",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-07-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.egy.html"
+		},
+		"uk": {
+			"destination": "Egypt",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-08-04T10:10:57Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/egypt"
+		}
+	},
+	{
+		"countryCode": "EH",
+		"countryName": "Western Sahara",
+		"us": null,
+		"uk": {
+			"destination": "Western Sahara",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-06-29T13:34:01Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/western-sahara"
+		}
+	},
+	{
+		"countryCode": "ER",
+		"countryName": "Eritrea",
+		"us": {
+			"destination": "Eritrea",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2023-07-31",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.eri.html"
+		},
+		"uk": {
+			"destination": "Eritrea",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-07-27T14:03:05Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/eritrea"
+		}
+	},
+	{
+		"countryCode": "ES",
+		"countryName": "Spain",
+		"us": {
+			"destination": "Spain",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-01",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.esp.html"
+		},
+		"uk": {
+			"destination": "Spain",
+			"alertStatus": [],
+			"updatedAt": "2026-08-12T15:46:24Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/spain"
+		}
+	},
+	{
+		"countryCode": "ET",
+		"countryName": "Ethiopia",
+		"us": {
+			"destination": "Ethiopia",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-27",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.eth.html"
+		},
+		"uk": {
+			"destination": "Ethiopia",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-25T15:13:20Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/ethiopia"
+		}
+	},
+	{
+		"countryCode": "FI",
+		"countryName": "Finland",
+		"us": {
+			"destination": "Finland",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-03-13",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fin.html"
+		},
+		"uk": {
+			"destination": "Finland",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:18:13Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/finland"
+		}
+	},
+	{
+		"countryCode": "FJ",
+		"countryName": "Fiji",
+		"us": {
+			"destination": "Fiji",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2024-12-02",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/fiji-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Fiji",
+			"alertStatus": [],
+			"updatedAt": "2026-08-10T13:48:05Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/fiji"
+		}
+	},
+	{
+		"countryCode": "FK",
+		"countryName": "Falkland Islands",
+		"us": null,
+		"uk": {
+			"destination": "Falkland Islands",
+			"alertStatus": [],
+			"updatedAt": "2026-08-10T08:48:47Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/falkland-islands"
+		}
+	},
+	{
+		"countryCode": "FM",
+		"countryName": "Micronesia",
+		"us": {
+			"destination": "Federated States of Micronesia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html"
+		},
+		"uk": {
+			"destination": "Federated States of Micronesia",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:07:21Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/federated-states-of-micronesia"
+		}
+	},
+	{
+		"countryCode": "FO",
+		"countryName": "Faroe Islands",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "FR",
+		"countryName": "France",
+		"us": {
+			"destination": "France",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-05-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fra.html"
+		},
+		"uk": {
+			"destination": "France",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:17:02Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/france"
+		}
+	},
+	{
+		"countryCode": "GA",
+		"countryName": "Gabon",
+		"us": {
+			"destination": "Gabon",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-03-30",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gab.html"
+		},
+		"uk": {
+			"destination": "Gabon",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:37:09Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/gabon"
+		}
+	},
+	{
+		"countryCode": "GB",
+		"countryName": "United Kingdom",
+		"us": {
+			"destination": "United Kingdom",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-09",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gbr.html"
+		},
+		"uk": null
+	},
+	{
+		"countryCode": "GD",
+		"countryName": "Grenada",
+		"us": {
+			"destination": "Grenada",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-09-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.grd.html"
+		},
+		"uk": {
+			"destination": "Grenada",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:53:19Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/grenada"
+		}
+	},
+	{
+		"countryCode": "GE",
+		"countryName": "Georgia",
+		"us": {
+			"destination": "Georgia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-03-13",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.geo.html"
+		},
+		"uk": {
+			"destination": "Georgia",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-09-15T12:48:38Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/georgia"
+		}
+	},
+	{
+		"countryCode": "GF",
+		"countryName": "French Guiana",
+		"us": {
+			"destination": "French Guiana",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-08",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.guf.html"
+		},
+		"uk": {
+			"destination": "French Guiana",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:36:08Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/french-guiana"
+		}
+	},
+	{
+		"countryCode": "GG",
+		"countryName": "Guernsey",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "GH",
+		"countryName": "Ghana",
+		"us": {
+			"destination": "Ghana",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gha.html"
+		},
+		"uk": {
+			"destination": "Ghana",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-07-02T13:48:30Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/ghana"
+		}
+	},
+	{
+		"countryCode": "GI",
+		"countryName": "Gibraltar",
+		"us": null,
+		"uk": {
+			"destination": "Gibraltar",
+			"alertStatus": [],
+			"updatedAt": "2026-07-14T08:32:42Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/gibraltar"
+		}
+	},
+	{
+		"countryCode": "GL",
+		"countryName": "Greenland",
+		"us": {
+			"destination": "Greenland",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2024-10-29",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/greenland-travel-advisory.html"
+		},
+		"uk": null
+	},
+	{
+		"countryCode": "GM",
+		"countryName": "Gambia",
+		"us": {
+			"destination": "The Gambia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-01-16",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gmb.html"
+		},
+		"uk": {
+			"destination": "The Gambia",
+			"alertStatus": [],
+			"updatedAt": "2026-07-07T10:18:39Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/the-gambia"
+		}
+	},
+	{
+		"countryCode": "GN",
+		"countryName": "Guinea",
+		"us": {
+			"destination": "Guinea",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-02-25",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gin.html"
+		},
+		"uk": {
+			"destination": "Guinea",
+			"alertStatus": [],
+			"updatedAt": "2026-08-12T15:34:39Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/guinea"
+		}
+	},
+	{
+		"countryCode": "GP",
+		"countryName": "Guadeloupe",
+		"us": {
+			"destination": "Guadeloupe",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-20",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.glp.html"
+		},
+		"uk": {
+			"destination": "Guadeloupe",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:54:06Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/guadeloupe"
+		}
+	},
+	{
+		"countryCode": "GQ",
+		"countryName": "Equatorial Guinea",
+		"us": {
+			"destination": "Equatorial Guinea",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-10-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gnq.html"
+		},
+		"uk": {
+			"destination": "Equatorial Guinea",
+			"alertStatus": [],
+			"updatedAt": "2026-01-08T10:25:07Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/equatorial-guinea"
+		}
+	},
+	{
+		"countryCode": "GR",
+		"countryName": "Greece",
+		"us": {
+			"destination": "Greece",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-10-23",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.grc.html"
+		},
+		"uk": {
+			"destination": "Greece",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:17:58Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/greece"
+		}
+	},
+	{
+		"countryCode": "GS",
+		"countryName": "South Georgia and the South Sandwich Islands",
+		"us": null,
+		"uk": {
+			"destination": "South Georgia and the South Sandwich Islands",
+			"alertStatus": [],
+			"updatedAt": "2025-09-24T10:48:52Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/south-georgia-and-south-sandwich-islands"
+		}
+	},
+	{
+		"countryCode": "GT",
+		"countryName": "Guatemala",
+		"us": {
+			"destination": "Guatemala",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-03-12",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gtm.html"
+		},
+		"uk": {
+			"destination": "Guatemala",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-08-13T13:45:16Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/guatemala"
+		}
+	},
+	{
+		"countryCode": "GU",
+		"countryName": "Guam",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "GW",
+		"countryName": "Guinea-Bissau",
+		"us": {
+			"destination": "Guinea-Bissau",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2025-12-11",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gnb.html"
+		},
+		"uk": {
+			"destination": "Guinea-Bissau",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:55:45Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/guinea-bissau"
+		}
+	},
+	{
+		"countryCode": "GY",
+		"countryName": "Guyana",
+		"us": {
+			"destination": "Guyana",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-26",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.guy.html"
+		},
+		"uk": {
+			"destination": "Guyana",
+			"alertStatus": [],
+			"updatedAt": "2025-12-30T14:37:59Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/guyana"
+		}
+	},
+	{
+		"countryCode": "HK",
+		"countryName": "Hong Kong",
+		"us": {
+			"destination": "Hong Kong",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.hkg.html"
+		},
+		"uk": {
+			"destination": "Hong Kong",
+			"alertStatus": [],
+			"updatedAt": "2026-04-01T15:59:28Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/hong-kong"
+		}
+	},
+	{
+		"countryCode": "HM",
+		"countryName": "Heard Island and McDonald Islands",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "HN",
+		"countryName": "Honduras",
+		"us": {
+			"destination": "Honduras",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-25",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.hnd.html"
+		},
+		"uk": {
+			"destination": "Honduras",
+			"alertStatus": [],
+			"updatedAt": "2026-07-29T15:40:19Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/honduras"
+		}
+	},
+	{
+		"countryCode": "HR",
+		"countryName": "Croatia",
+		"us": {
+			"destination": "Croatia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.hrv.html"
+		},
+		"uk": {
+			"destination": "Croatia",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:18:43Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/croatia"
+		}
+	},
+	{
+		"countryCode": "HT",
+		"countryName": "Haiti",
+		"us": {
+			"destination": "Haiti",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-07-10",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.hti.html"
+		},
+		"uk": {
+			"destination": "Haiti",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2025-12-10T13:57:03Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/haiti"
+		}
+	},
+	{
+		"countryCode": "HU",
+		"countryName": "Hungary",
+		"us": {
+			"destination": "Hungary",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-04-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.hun.html"
+		},
+		"uk": {
+			"destination": "Hungary",
+			"alertStatus": [],
+			"updatedAt": "2026-09-23T15:27:57Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/hungary"
+		}
+	},
+	{
+		"countryCode": "ID",
+		"countryName": "Indonesia",
+		"us": {
+			"destination": "Indonesia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.idn.html"
+		},
+		"uk": {
+			"destination": "Indonesia",
+			"alertStatus": [],
+			"updatedAt": "2026-09-18T10:54:47Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/indonesia"
+		}
+	},
+	{
+		"countryCode": "IE",
+		"countryName": "Ireland",
+		"us": {
+			"destination": "Ireland",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-03-20",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irl.html"
+		},
+		"uk": {
+			"destination": "Ireland",
+			"alertStatus": [],
+			"updatedAt": "2026-09-04T09:53:16Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/ireland"
+		}
+	},
+	{
+		"countryCode": "IL",
+		"countryName": "Israel",
+		"us": {
+			"destination": "Israel",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-26",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/israel-west-bank-and-gaza-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Israel",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-07-22T12:45:00Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/israel"
+		}
+	},
+	{
+		"countryCode": "IM",
+		"countryName": "Isle of Man",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "IN",
+		"countryName": "India",
+		"us": {
+			"destination": "India",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-06-16",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ind.html"
+		},
+		"uk": {
+			"destination": "India",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-07-09T13:54:18Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/india"
+		}
+	},
+	{
+		"countryCode": "IO",
+		"countryName": "British Indian Ocean Territory",
+		"us": null,
+		"uk": {
+			"destination": "British Indian Ocean Territory",
+			"alertStatus": [],
+			"updatedAt": "2024-04-08T11:56:22Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/british-indian-ocean-territory"
+		}
+	},
+	{
+		"countryCode": "IQ",
+		"countryName": "Iraq",
+		"us": {
+			"destination": "Iraq",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-08-29",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irq.html"
+		},
+		"uk": {
+			"destination": "Iraq",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-07-22T12:46:56Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/iraq"
+		}
+	},
+	{
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"us": {
+			"destination": "Iran",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2025-12-05",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irn.html"
+		},
+		"uk": {
+			"destination": "Iran",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2026-08-13T15:37:44Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/iran"
+		}
+	},
+	{
+		"countryCode": "IS",
+		"countryName": "Iceland",
+		"us": {
+			"destination": "Iceland",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-05",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.isl.html"
+		},
+		"uk": {
+			"destination": "Iceland",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:17:40Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/iceland"
+		}
+	},
+	{
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"us": {
+			"destination": "Italy",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-10",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ita.html"
+		},
+		"uk": {
+			"destination": "Italy",
+			"alertStatus": [],
+			"updatedAt": "2026-09-17T11:00:32Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/italy"
+		}
+	},
+	{
+		"countryCode": "JE",
+		"countryName": "Jersey",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "JM",
+		"countryName": "Jamaica",
+		"us": {
+			"destination": "Jamaica",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-06-23",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.jam.html"
+		},
+		"uk": {
+			"destination": "Jamaica",
+			"alertStatus": [],
+			"updatedAt": "2026-05-06T11:06:25Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/jamaica"
+		}
+	},
+	{
+		"countryCode": "JO",
+		"countryName": "Jordan",
+		"us": {
+			"destination": "Jordan",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-29",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.jor.html"
+		},
+		"uk": {
+			"destination": "Jordan",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-09-10T11:30:28Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/jordan"
+		}
+	},
+	{
+		"countryCode": "JP",
+		"countryName": "Japan",
+		"us": {
+			"destination": "Japan",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-05-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.jpn.html"
+		},
+		"uk": {
+			"destination": "Japan",
+			"alertStatus": [],
+			"updatedAt": "2026-08-28T15:22:35Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/japan"
+		}
+	},
+	{
+		"countryCode": "KE",
+		"countryName": "Kenya",
+		"us": {
+			"destination": "Kenya",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ken.html"
+		},
+		"uk": {
+			"destination": "Kenya",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-04T14:12:11Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/kenya"
+		}
+	},
+	{
+		"countryCode": "KG",
+		"countryName": "Kyrgyzstan",
+		"us": {
+			"destination": "The Kyrgyz Republic",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-02-10",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kgz.html"
+		},
+		"uk": {
+			"destination": "Kyrgyzstan",
+			"alertStatus": [],
+			"updatedAt": "2026-09-14T10:23:33Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan"
+		}
+	},
+	{
+		"countryCode": "KH",
+		"countryName": "Cambodia",
+		"us": {
+			"destination": "Cambodia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.khm.html"
+		},
+		"uk": {
+			"destination": "Cambodia",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-03-19T14:03:23Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/cambodia"
+		}
+	},
+	{
+		"countryCode": "KI",
+		"countryName": "Kiribati",
+		"us": {
+			"destination": "Kiribati",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2024-12-02",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/kiribati-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Kiribati",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:02:38Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/kiribati"
+		}
+	},
+	{
+		"countryCode": "KM",
+		"countryName": "Comoros",
+		"us": {
+			"destination": "Comoros",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-01-12",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.com.html"
+		},
+		"uk": {
+			"destination": "Comoros",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:42:55Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/comoros"
+		}
+	},
+	{
+		"countryCode": "KN",
+		"countryName": "Saint Kitts and Nevis",
+		"us": {
+			"destination": "Saint Kitts and Nevis",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html"
+		},
+		"uk": {
+			"destination": "St Kitts and Nevis",
+			"alertStatus": [],
+			"updatedAt": "2026-01-05T14:54:43Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/st-kitts-and-nevis"
+		}
+	},
+	{
+		"countryCode": "KP",
+		"countryName": "North Korea",
+		"us": {
+			"destination": "North Korea",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2025-04-29",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.prk.html"
+		},
+		"uk": {
+			"destination": "North Korea",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_whole_country"
+			],
+			"updatedAt": "2025-12-10T13:22:30Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/north-korea"
+		}
+	},
+	{
+		"countryCode": "KR",
+		"countryName": "South Korea",
+		"us": {
+			"destination": "South Korea",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-05-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kor.html"
+		},
+		"uk": {
+			"destination": "South Korea",
+			"alertStatus": [],
+			"updatedAt": "2026-05-14T10:06:39Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/south-korea"
+		}
+	},
+	{
+		"countryCode": "KW",
+		"countryName": "Kuwait",
+		"us": {
+			"destination": "Kuwait",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kwt.html"
+		},
+		"uk": {
+			"destination": "Kuwait",
+			"alertStatus": [],
+			"updatedAt": "2026-08-20T08:00:55Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/kuwait"
+		}
+	},
+	{
+		"countryCode": "KY",
+		"countryName": "Cayman Islands",
+		"us": {
+			"destination": "Cayman Islands",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-21",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cym.html"
+		},
+		"uk": {
+			"destination": "Cayman Islands",
+			"alertStatus": [],
+			"updatedAt": "2025-10-29T15:42:43Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/cayman-islands"
+		}
+	},
+	{
+		"countryCode": "KZ",
+		"countryName": "Kazakhstan",
+		"us": {
+			"destination": "Kazakhstan",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kaz.html"
+		},
+		"uk": {
+			"destination": "Kazakhstan",
+			"alertStatus": [],
+			"updatedAt": "2026-03-30T10:09:15Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/kazakhstan"
+		}
+	},
+	{
+		"countryCode": "LA",
+		"countryName": "Laos",
+		"us": {
+			"destination": "Laos",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lao.html"
+		},
+		"uk": {
+			"destination": "Laos",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-08-13T11:10:25Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/laos"
+		}
+	},
+	{
+		"countryCode": "LB",
+		"countryName": "Lebanon",
+		"us": {
+			"destination": "Lebanon",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-08-21",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lbn.html"
+		},
+		"uk": {
+			"destination": "Lebanon",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-08-10T13:51:12Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/lebanon"
+		}
+	},
+	{
+		"countryCode": "LC",
+		"countryName": "Saint Lucia",
+		"us": {
+			"destination": "Saint Lucia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-10",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lca.html"
+		},
+		"uk": {
+			"destination": "St Lucia",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T12:34:04Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/st-lucia"
+		}
+	},
+	{
+		"countryCode": "LI",
+		"countryName": "Liechtenstein",
+		"us": {
+			"destination": "Liechtenstein",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lie.html"
+		},
+		"uk": {
+			"destination": "Liechtenstein",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:17:45Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/liechtenstein"
+		}
+	},
+	{
+		"countryCode": "LK",
+		"countryName": "Sri Lanka",
+		"us": {
+			"destination": "Sri Lanka",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-10-14",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lka.html"
+		},
+		"uk": {
+			"destination": "Sri Lanka",
+			"alertStatus": [],
+			"updatedAt": "2026-09-21T14:39:53Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/sri-lanka"
+		}
+	},
+	{
+		"countryCode": "LR",
+		"countryName": "Liberia",
+		"us": {
+			"destination": "Liberia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-12-11",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lbr.html"
+		},
+		"uk": {
+			"destination": "Liberia",
+			"alertStatus": [],
+			"updatedAt": "2026-05-27T13:27:30Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/liberia"
+		}
+	},
+	{
+		"countryCode": "LS",
+		"countryName": "Lesotho",
+		"us": {
+			"destination": "Lesotho",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-06-17",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lso.html"
+		},
+		"uk": {
+			"destination": "Lesotho",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:12:05Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/lesotho"
+		}
+	},
+	{
+		"countryCode": "LT",
+		"countryName": "Lithuania",
+		"us": {
+			"destination": "Lithuania",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-04-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ltu.html"
+		},
+		"uk": {
+			"destination": "Lithuania",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:19:26Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/lithuania"
+		}
+	},
+	{
+		"countryCode": "LU",
+		"countryName": "Luxembourg",
+		"us": {
+			"destination": "Luxembourg",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-04-08",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lux.html"
+		},
+		"uk": {
+			"destination": "Luxembourg",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:19:44Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/luxembourg"
+		}
+	},
+	{
+		"countryCode": "LV",
+		"countryName": "Latvia",
+		"us": {
+			"destination": "Latvia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-04-01",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lva.html"
+		},
+		"uk": {
+			"destination": "Latvia",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:17:07Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/latvia"
+		}
+	},
+	{
+		"countryCode": "LY",
+		"countryName": "Libya",
+		"us": {
+			"destination": "Libya",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-08-31",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lby.html"
+		},
+		"uk": {
+			"destination": "Libya",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-07-21T09:00:09Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/libya"
+		}
+	},
+	{
+		"countryCode": "MA",
+		"countryName": "Morocco",
+		"us": {
+			"destination": "Morocco",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mar.html"
+		},
+		"uk": {
+			"destination": "Morocco",
+			"alertStatus": [],
+			"updatedAt": "2026-08-19T11:00:36Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/morocco"
+		}
+	},
+	{
+		"countryCode": "MC",
+		"countryName": "Monaco",
+		"us": null,
+		"uk": {
+			"destination": "Monaco",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:45:13Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/monaco"
+		}
+	},
+	{
+		"countryCode": "MD",
+		"countryName": "Moldova",
+		"us": {
+			"destination": "Moldova",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mda.html"
+		},
+		"uk": {
+			"destination": "Moldova",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2025-12-10T13:44:10Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/moldova"
+		}
+	},
+	{
+		"countryCode": "ME",
+		"countryName": "Montenegro",
+		"us": {
+			"destination": "Montenegro",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-27",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mne.html"
+		},
+		"uk": {
+			"destination": "Montenegro",
+			"alertStatus": [],
+			"updatedAt": "2026-08-13T15:25:26Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/montenegro"
+		}
+	},
+	{
+		"countryCode": "MF",
+		"countryName": "Saint Martin",
+		"us": {
+			"destination": "French Saint Martin",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-14",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.maf.html"
+		},
+		"uk": {
+			"destination": "St Martin and St Barthélemy",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T12:39:06Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/st-martin-and-st-barthelemy"
+		}
+	},
+	{
+		"countryCode": "MG",
+		"countryName": "Madagascar",
+		"us": {
+			"destination": "Madagascar",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-12-05",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mdg.html"
+		},
+		"uk": {
+			"destination": "Madagascar",
+			"alertStatus": [],
+			"updatedAt": "2026-09-09T13:30:36Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/madagascar"
+		}
+	},
+	{
+		"countryCode": "MH",
+		"countryName": "Marshall Islands",
+		"us": {
+			"destination": "Marshall Islands",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-21",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mhl.html"
+		},
+		"uk": {
+			"destination": "Marshall Islands",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:02:32Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/marshall-islands"
+		}
+	},
+	{
+		"countryCode": "MK",
+		"countryName": "North Macedonia",
+		"us": {
+			"destination": "North Macedonia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-09-10",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mkd.html"
+		},
+		"uk": {
+			"destination": "North Macedonia",
+			"alertStatus": [],
+			"updatedAt": "2026-08-13T15:16:47Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/north-macedonia"
+		}
+	},
+	{
+		"countryCode": "ML",
+		"countryName": "Mali",
+		"us": {
+			"destination": "Mali",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-06-08",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mli.html"
+		},
+		"uk": {
+			"destination": "Mali",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2026-07-10T13:24:11Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/mali"
+		}
+	},
+	{
+		"countryCode": "MM",
+		"countryName": "Myanmar",
+		"us": {
+			"destination": "Burma",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-05-08",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mmr.html"
+		},
+		"uk": {
+			"destination": "Myanmar (Burma)",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-08-04T10:16:35Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/myanmar"
+		}
+	},
+	{
+		"countryCode": "MN",
+		"countryName": "Mongolia",
+		"us": {
+			"destination": "Mongolia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-29",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mng.html"
+		},
+		"uk": {
+			"destination": "Mongolia",
+			"alertStatus": [],
+			"updatedAt": "2026-08-07T12:03:24Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/mongolia"
+		}
+	},
+	{
+		"countryCode": "MO",
+		"countryName": "Macao",
+		"us": {
+			"destination": "Macau",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-09-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mac.html"
+		},
+		"uk": {
+			"destination": "Macao",
+			"alertStatus": [],
+			"updatedAt": "2025-12-11T11:32:17Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/macao"
+		}
+	},
+	{
+		"countryCode": "MP",
+		"countryName": "Northern Mariana Islands",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "MQ",
+		"countryName": "Martinique",
+		"us": {
+			"destination": "Martinique",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-20",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mtq.html"
+		},
+		"uk": {
+			"destination": "Martinique",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:37:46Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/martinique"
+		}
+	},
+	{
+		"countryCode": "MR",
+		"countryName": "Mauritania",
+		"us": {
+			"destination": "Mauritania",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mrt.html"
+		},
+		"uk": {
+			"destination": "Mauritania",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-03-24T16:23:01Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/mauritania"
+		}
+	},
+	{
+		"countryCode": "MS",
+		"countryName": "Montserrat",
+		"us": {
+			"destination": "Montserrat",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.msr.html"
+		},
+		"uk": {
+			"destination": "Montserrat",
+			"alertStatus": [],
+			"updatedAt": "2026-07-03T15:32:01Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/montserrat"
+		}
+	},
+	{
+		"countryCode": "MT",
+		"countryName": "Malta",
+		"us": {
+			"destination": "Malta",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-09",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mlt.html"
+		},
+		"uk": {
+			"destination": "Malta",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:20:07Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/malta"
+		}
+	},
+	{
+		"countryCode": "MU",
+		"countryName": "Mauritius",
+		"us": {
+			"destination": "Mauritius",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-12-08",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mus.html"
+		},
+		"uk": {
+			"destination": "Mauritius",
+			"alertStatus": [],
+			"updatedAt": "2026-09-04T15:08:37Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/mauritius"
+		}
+	},
+	{
+		"countryCode": "MV",
+		"countryName": "Maldives",
+		"us": {
+			"destination": "Maldives",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-10-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mdv.html"
+		},
+		"uk": {
+			"destination": "Maldives",
+			"alertStatus": [],
+			"updatedAt": "2026-08-12T10:35:58Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/maldives"
+		}
+	},
+	{
+		"countryCode": "MW",
+		"countryName": "Malawi",
+		"us": {
+			"destination": "Malawi",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-05-14",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mwi.html"
+		},
+		"uk": {
+			"destination": "Malawi",
+			"alertStatus": [],
+			"updatedAt": "2026-07-03T09:59:53Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/malawi"
+		}
+	},
+	{
+		"countryCode": "MX",
+		"countryName": "Mexico",
+		"us": {
+			"destination": "Mexico",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-05-29",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mex.html"
+		},
+		"uk": {
+			"destination": "Mexico",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-26T07:59:13Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/mexico"
+		}
+	},
+	{
+		"countryCode": "MY",
+		"countryName": "Malaysia",
+		"us": {
+			"destination": "Malaysia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-02-22",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mys.html"
+		},
+		"uk": {
+			"destination": "Malaysia",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-03-19T14:03:58Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/malaysia"
+		}
+	},
+	{
+		"countryCode": "MZ",
+		"countryName": "Mozambique",
+		"us": {
+			"destination": "Mozambique",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-21",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.moz.html"
+		},
+		"uk": {
+			"destination": "Mozambique",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-08-20T13:50:43Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/mozambique"
+		}
+	},
+	{
+		"countryCode": "NA",
+		"countryName": "Namibia",
+		"us": {
+			"destination": "Namibia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-05-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.nam.html"
+		},
+		"uk": {
+			"destination": "Namibia",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:15:46Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/namibia"
+		}
+	},
+	{
+		"countryCode": "NC",
+		"countryName": "New Caledonia",
+		"us": {
+			"destination": "New Caledonia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-05-21",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/new-caledonia-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "New Caledonia",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:19:36Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/new-caledonia"
+		}
+	},
+	{
+		"countryCode": "NE",
+		"countryName": "Niger",
+		"us": {
+			"destination": "Niger",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-07-09",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ner.html"
+		},
+		"uk": {
+			"destination": "Niger",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2026-08-29T14:30:01Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/niger"
+		}
+	},
+	{
+		"countryCode": "NF",
+		"countryName": "Norfolk Island",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "NG",
+		"countryName": "Nigeria",
+		"us": {
+			"destination": "Nigeria",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-06-12",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.nga.html"
+		},
+		"uk": {
+			"destination": "Nigeria",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-08-20T14:18:43Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/nigeria"
+		}
+	},
+	{
+		"countryCode": "NI",
+		"countryName": "Nicaragua",
+		"us": {
+			"destination": "Nicaragua",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-05-14",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.nic.html"
+		},
+		"uk": {
+			"destination": "Nicaragua",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:20:42Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/nicaragua"
+		}
+	},
+	{
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"us": {
+			"destination": "Netherlands",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.nld.html"
+		},
+		"uk": {
+			"destination": "Netherlands",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:20:34Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/netherlands"
+		}
+	},
+	{
+		"countryCode": "NO",
+		"countryName": "Norway",
+		"us": {
+			"destination": "Norway",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-06",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.nor.html"
+		},
+		"uk": {
+			"destination": "Norway",
+			"alertStatus": [],
+			"updatedAt": "2026-08-25T08:47:40Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/norway"
+		}
+	},
+	{
+		"countryCode": "NP",
+		"countryName": "Nepal",
+		"us": {
+			"destination": "Nepal",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.npl.html"
+		},
+		"uk": {
+			"destination": "Nepal",
+			"alertStatus": [],
+			"updatedAt": "2026-09-11T13:52:03Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/nepal"
+		}
+	},
+	{
+		"countryCode": "NR",
+		"countryName": "Nauru",
+		"us": {
+			"destination": "Nauru",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2024-12-02",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/nauru-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Nauru",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:03:07Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/nauru"
+		}
+	},
+	{
+		"countryCode": "NU",
+		"countryName": "Niue",
+		"us": null,
+		"uk": {
+			"destination": "Cook Islands, Tokelau and Niue",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:43:48Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/cook-islands-tokelau-and-niue"
+		}
+	},
+	{
+		"countryCode": "NZ",
+		"countryName": "New Zealand",
+		"us": {
+			"destination": "New Zealand",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-04-29",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.nzl.html"
+		},
+		"uk": {
+			"destination": "New Zealand",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:06:12Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/new-zealand"
+		}
+	},
+	{
+		"countryCode": "OM",
+		"countryName": "Oman",
+		"us": {
+			"destination": "Oman",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-30",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.omn.html"
+		},
+		"uk": {
+			"destination": "Oman",
+			"alertStatus": [],
+			"updatedAt": "2026-07-22T12:46:33Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/oman"
+		}
+	},
+	{
+		"countryCode": "PA",
+		"countryName": "Panama",
+		"us": {
+			"destination": "Panama",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-19",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pan.html"
+		},
+		"uk": {
+			"destination": "Panama",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:26:25Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/panama"
+		}
+	},
+	{
+		"countryCode": "PE",
+		"countryName": "Peru",
+		"us": {
+			"destination": "Peru",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.per.html"
+		},
+		"uk": {
+			"destination": "Peru",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-06-22T22:35:12Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/peru"
+		}
+	},
+	{
+		"countryCode": "PF",
+		"countryName": "French Polynesia",
+		"us": {
+			"destination": "French Polynesia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2024-12-02",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/french-polynesia-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "French Polynesia",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:36:20Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/french-polynesia"
+		}
+	},
+	{
+		"countryCode": "PG",
+		"countryName": "Papua New Guinea",
+		"us": {
+			"destination": "Papua New Guinea",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2025-04-29",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/papua-new-guinea-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Papua New Guinea",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-08-17T14:35:08Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/papua-new-guinea"
+		}
+	},
+	{
+		"countryCode": "PH",
+		"countryName": "Philippines",
+		"us": {
+			"destination": "Philippines",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-01",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.phl.html"
+		},
+		"uk": {
+			"destination": "Philippines",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-07-15T08:55:25Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/philippines"
+		}
+	},
+	{
+		"countryCode": "PK",
+		"countryName": "Pakistan",
+		"us": {
+			"destination": "Pakistan",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-06-16",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pak.html"
+		},
+		"uk": {
+			"destination": "Pakistan",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-22T10:07:03Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/pakistan"
+		}
+	},
+	{
+		"countryCode": "PL",
+		"countryName": "Poland",
+		"us": {
+			"destination": "Poland",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-06-05",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pol.html"
+		},
+		"uk": {
+			"destination": "Poland",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:21:18Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/poland"
+		}
+	},
+	{
+		"countryCode": "PM",
+		"countryName": "Saint Pierre and Miquelon",
+		"us": null,
+		"uk": {
+			"destination": "St Pierre & Miquelon",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T12:39:48Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/st-pierre-and-miquelon"
+		}
+	},
+	{
+		"countryCode": "PN",
+		"countryName": "Pitcairn",
+		"us": null,
+		"uk": {
+			"destination": "Pitcairn Island",
+			"alertStatus": [],
+			"updatedAt": "2025-03-27T16:14:53Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/pitcairn-island"
+		}
+	},
+	{
+		"countryCode": "PR",
+		"countryName": "Puerto Rico",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "PS",
+		"countryName": "Palestinian Territory",
+		"us": {
+			"destination": "Gaza",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-08-26",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/Gaza.html"
+		},
+		"uk": {
+			"destination": "Palestine",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-07-22T12:43:56Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/palestine"
+		}
+	},
+	{
+		"countryCode": "PT",
+		"countryName": "Portugal",
+		"us": {
+			"destination": "Portugal",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-12-23",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.prt.html"
+		},
+		"uk": {
+			"destination": "Portugal",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:21:44Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/portugal"
+		}
+	},
+	{
+		"countryCode": "PW",
+		"countryName": "Palau",
+		"us": {
+			"destination": "Palau",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-01-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.plw.html"
+		},
+		"uk": {
+			"destination": "Palau",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:25:21Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/palau"
+		}
+	},
+	{
+		"countryCode": "PY",
+		"countryName": "Paraguay",
+		"us": {
+			"destination": "Paraguay",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-19",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pry.html"
+		},
+		"uk": {
+			"destination": "Paraguay",
+			"alertStatus": [],
+			"updatedAt": "2026-01-21T16:11:30Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/paraguay"
+		}
+	},
+	{
+		"countryCode": "QA",
+		"countryName": "Qatar",
+		"us": {
+			"destination": "Qatar",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-08-28",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/qatar-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Qatar",
+			"alertStatus": [],
+			"updatedAt": "2026-08-19T13:38:09Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/qatar"
+		}
+	},
+	{
+		"countryCode": "RE",
+		"countryName": "Reunion",
+		"us": null,
+		"uk": {
+			"destination": "Réunion",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:30:27Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/reunion"
+		}
+	},
+	{
+		"countryCode": "RO",
+		"countryName": "Romania",
+		"us": {
+			"destination": "Romania",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-10-14",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.rou.html"
+		},
+		"uk": {
+			"destination": "Romania",
+			"alertStatus": [],
+			"updatedAt": "2026-09-18T13:15:40Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/romania"
+		}
+	},
+	{
+		"countryCode": "RS",
+		"countryName": "Serbia",
+		"us": {
+			"destination": "Serbia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-27",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.srb.html"
+		},
+		"uk": {
+			"destination": "Serbia",
+			"alertStatus": [],
+			"updatedAt": "2026-08-13T15:18:02Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/serbia"
+		}
+	},
+	{
+		"countryCode": "RU",
+		"countryName": "Russia",
+		"us": {
+			"destination": "Russia",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2025-12-29",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.rus.html"
+		},
+		"uk": {
+			"destination": "Russia",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2026-09-18T10:01:11Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/russia"
+		}
+	},
+	{
+		"countryCode": "RW",
+		"countryName": "Rwanda",
+		"us": {
+			"destination": "Rwanda",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-06-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.rwa.html"
+		},
+		"uk": {
+			"destination": "Rwanda",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-04T09:15:14Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/rwanda"
+		}
+	},
+	{
+		"countryCode": "SA",
+		"countryName": "Saudi Arabia",
+		"us": {
+			"destination": "Saudi Arabia",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-09-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sau.html"
+		},
+		"uk": {
+			"destination": "Saudi Arabia",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-20T19:23:47Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia"
+		}
+	},
+	{
+		"countryCode": "SB",
+		"countryName": "Solomon Islands",
+		"us": {
+			"destination": "Solomon Islands",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-04-29",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/solomon-island-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Solomon Islands",
+			"alertStatus": [],
+			"updatedAt": "2026-05-26T08:39:14Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/solomon-islands"
+		}
+	},
+	{
+		"countryCode": "SC",
+		"countryName": "Seychelles",
+		"us": {
+			"destination": "Seychelles",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-12-09",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.syc.html"
+		},
+		"uk": {
+			"destination": "Seychelles",
+			"alertStatus": [],
+			"updatedAt": "2026-01-21T12:01:13Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/seychelles"
+		}
+	},
+	{
+		"countryCode": "SD",
+		"countryName": "Sudan",
+		"us": {
+			"destination": "Sudan",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-05-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sdn.html"
+		},
+		"uk": {
+			"destination": "Sudan",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-05-11T15:07:13Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/sudan"
+		}
+	},
+	{
+		"countryCode": "SE",
+		"countryName": "Sweden",
+		"us": {
+			"destination": "Sweden",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-05-18",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.swe.html"
+		},
+		"uk": {
+			"destination": "Sweden",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:23:29Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/sweden"
+		}
+	},
+	{
+		"countryCode": "SG",
+		"countryName": "Singapore",
+		"us": {
+			"destination": "Singapore",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-03-09",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sgp.html"
+		},
+		"uk": {
+			"destination": "Singapore",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:08:04Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/singapore"
+		}
+	},
+	{
+		"countryCode": "SH",
+		"countryName": "Saint Helena",
+		"us": null,
+		"uk": {
+			"destination": "St Helena, Ascension and Tristan da Cunha",
+			"alertStatus": [],
+			"updatedAt": "2026-09-10T13:21:17Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/st-helena-ascension-and-tristan-da-cunha"
+		}
+	},
+	{
+		"countryCode": "SI",
+		"countryName": "Slovenia",
+		"us": {
+			"destination": "Slovenia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.svn.html"
+		},
+		"uk": {
+			"destination": "Slovenia",
+			"alertStatus": [],
+			"updatedAt": "2026-08-11T09:22:42Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/slovenia"
+		}
+	},
+	{
+		"countryCode": "SJ",
+		"countryName": "Svalbard and Jan Mayen",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"us": {
+			"destination": "Slovakia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-02-12",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.svk.html"
+		},
+		"uk": {
+			"destination": "Slovakia",
+			"alertStatus": [],
+			"updatedAt": "2026-08-28T13:01:26Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/slovakia"
+		}
+	},
+	{
+		"countryCode": "SL",
+		"countryName": "Sierra Leone",
+		"us": {
+			"destination": "Sierra Leone",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-09-15",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sle.html"
+		},
+		"uk": {
+			"destination": "Sierra Leone",
+			"alertStatus": [],
+			"updatedAt": "2026-06-19T14:34:37Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/sierra-leone"
+		}
+	},
+	{
+		"countryCode": "SM",
+		"countryName": "San Marino",
+		"us": null,
+		"uk": {
+			"destination": "San Marino",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:33:32Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/san-marino"
+		}
+	},
+	{
+		"countryCode": "SN",
+		"countryName": "Senegal",
+		"us": {
+			"destination": "Senegal",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-12-01",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sen.html"
+		},
+		"uk": {
+			"destination": "Senegal",
+			"alertStatus": [],
+			"updatedAt": "2026-05-13T15:45:46Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/senegal"
+		}
+	},
+	{
+		"countryCode": "SO",
+		"countryName": "Somalia",
+		"us": {
+			"destination": "Somalia",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-05-21",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.som.html"
+		},
+		"uk": {
+			"destination": "Somalia",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-06-04T14:57:41Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/somalia"
+		}
+	},
+	{
+		"countryCode": "SR",
+		"countryName": "Suriname",
+		"us": {
+			"destination": "Suriname",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-09-08",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sur.html"
+		},
+		"uk": {
+			"destination": "Suriname",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T12:41:46Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/suriname"
+		}
+	},
+	{
+		"countryCode": "SS",
+		"countryName": "South Sudan",
+		"us": {
+			"destination": "South Sudan",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-05-17",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ssd.html"
+		},
+		"uk": {
+			"destination": "South Sudan",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2026-08-25T09:10:08Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/south-sudan"
+		}
+	},
+	{
+		"countryCode": "ST",
+		"countryName": "Sao Tome and Principe",
+		"us": {
+			"destination": "São Tomé and Príncipe",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.stp.html"
+		},
+		"uk": {
+			"destination": "São Tomé and Principe",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:33:54Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/sao-tome-and-principe"
+		}
+	},
+	{
+		"countryCode": "SV",
+		"countryName": "El Salvador",
+		"us": {
+			"destination": "El Salvador",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-06-25",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.slv.html"
+		},
+		"uk": {
+			"destination": "El Salvador",
+			"alertStatus": [],
+			"updatedAt": "2026-06-17T13:04:09Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/el-salvador"
+		}
+	},
+	{
+		"countryCode": "SX",
+		"countryName": "Sint Maarten",
+		"us": {
+			"destination": "Sint Maarten",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-24",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sxm.html"
+		},
+		"uk": {
+			"destination": "St Maarten",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T12:38:22Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/st-maarten"
+		}
+	},
+	{
+		"countryCode": "SY",
+		"countryName": "Syria",
+		"us": {
+			"destination": "Syria",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-08-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.syr.html"
+		},
+		"uk": {
+			"destination": "Syria",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2026-09-02T13:13:57Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/syria"
+		}
+	},
+	{
+		"countryCode": "SZ",
+		"countryName": "Eswatini",
+		"us": {
+			"destination": "Eswatini",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-10",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.swz.html"
+		},
+		"uk": {
+			"destination": "Eswatini",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:32:46Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/eswatini"
+		}
+	},
+	{
+		"countryCode": "TC",
+		"countryName": "Turks and Caicos Islands",
+		"us": {
+			"destination": "Turks and Caicos Islands",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tca.html"
+		},
+		"uk": {
+			"destination": "Turks and Caicos Islands",
+			"alertStatus": [],
+			"updatedAt": "2026-03-13T16:34:25Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/turks-and-caicos-islands"
+		}
+	},
+	{
+		"countryCode": "TD",
+		"countryName": "Chad",
+		"us": {
+			"destination": "Chad",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-04-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tcd.html"
+		},
+		"uk": {
+			"destination": "Chad",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-08-06T11:06:47Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/chad"
+		}
+	},
+	{
+		"countryCode": "TF",
+		"countryName": "French Southern Territories",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "TG",
+		"countryName": "Togo",
+		"us": {
+			"destination": "Togo",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-03-09",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tgo.html"
+		},
+		"uk": {
+			"destination": "Togo",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2025-12-15T16:47:10Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/togo"
+		}
+	},
+	{
+		"countryCode": "TH",
+		"countryName": "Thailand",
+		"us": {
+			"destination": "Thailand",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tha.html"
+		},
+		"uk": {
+			"destination": "Thailand",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-18T15:03:52Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/thailand"
+		}
+	},
+	{
+		"countryCode": "TJ",
+		"countryName": "Tajikistan",
+		"us": {
+			"destination": "Tajikistan",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-09-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tjk.html"
+		},
+		"uk": {
+			"destination": "Tajikistan",
+			"alertStatus": [],
+			"updatedAt": "2026-08-19T14:15:52Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/tajikistan"
+		}
+	},
+	{
+		"countryCode": "TK",
+		"countryName": "Tokelau",
+		"us": null,
+		"uk": {
+			"destination": "Cook Islands, Tokelau and Niue",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:43:48Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/cook-islands-tokelau-and-niue"
+		}
+	},
+	{
+		"countryCode": "TL",
+		"countryName": "Timor Leste",
+		"us": {
+			"destination": "Timor-Leste",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-05-21",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tls.html"
+		},
+		"uk": {
+			"destination": "Timor-Leste",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T12:48:06Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/timor-leste"
+		}
+	},
+	{
+		"countryCode": "TM",
+		"countryName": "Turkmenistan",
+		"us": {
+			"destination": "Turkmenistan",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-08-21",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tkm.html"
+		},
+		"uk": {
+			"destination": "Turkmenistan",
+			"alertStatus": [],
+			"updatedAt": "2026-06-04T12:53:56Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/turkmenistan"
+		}
+	},
+	{
+		"countryCode": "TN",
+		"countryName": "Tunisia",
+		"us": {
+			"destination": "Tunisia",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-05-21",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tun.html"
+		},
+		"uk": {
+			"destination": "Tunisia",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-07-24T16:07:53Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/tunisia"
+		}
+	},
+	{
+		"countryCode": "TO",
+		"countryName": "Tonga",
+		"us": {
+			"destination": "Tonga",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2024-12-02",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/tonga-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Tonga",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:02:58Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/tonga"
+		}
+	},
+	{
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"us": {
+			"destination": "Turkey",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-06-09",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tur.html"
+		},
+		"uk": {
+			"destination": "Turkey",
+			"alertStatus": [
+				"avoid_all_travel_to_parts"
+			],
+			"updatedAt": "2026-09-21T13:00:49Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/turkey"
+		}
+	},
+	{
+		"countryCode": "TT",
+		"countryName": "Trinidad and Tobago",
+		"us": {
+			"destination": "Trinidad and Tobago",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-04-13",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tto.html"
+		},
+		"uk": {
+			"destination": "Trinidad and Tobago",
+			"alertStatus": [],
+			"updatedAt": "2026-09-21T15:13:58Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/trinidad-and-tobago"
+		}
+	},
+	{
+		"countryCode": "TV",
+		"countryName": "Tuvalu",
+		"us": {
+			"destination": "Tuvalu",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2024-12-02",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/tuvalu-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Tuvalu",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:07:18Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/tuvalu"
+		}
+	},
+	{
+		"countryCode": "TW",
+		"countryName": "Taiwan",
+		"us": {
+			"destination": "Taiwan",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-11-25",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.twn.html"
+		},
+		"uk": {
+			"destination": "Taiwan",
+			"alertStatus": [],
+			"updatedAt": "2026-08-28T12:31:24Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/taiwan"
+		}
+	},
+	{
+		"countryCode": "TZ",
+		"countryName": "Tanzania",
+		"us": {
+			"destination": "Tanzania",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2025-10-31",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tza.html"
+		},
+		"uk": {
+			"destination": "Tanzania",
+			"alertStatus": [
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-05-19T14:47:49Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/tanzania"
+		}
+	},
+	{
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"us": {
+			"destination": "Ukraine",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-08-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ukr.html"
+		},
+		"uk": {
+			"destination": "Ukraine",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-15T14:41:54Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/ukraine"
+		}
+	},
+	{
+		"countryCode": "UG",
+		"countryName": "Uganda",
+		"us": {
+			"destination": "Uganda",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2026-06-04",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.uga.html"
+		},
+		"uk": {
+			"destination": "Uganda",
+			"alertStatus": [],
+			"updatedAt": "2026-09-02T15:45:31Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/uganda"
+		}
+	},
+	{
+		"countryCode": "UM",
+		"countryName": "United States Minor Outlying Islands",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "US",
+		"countryName": "United States",
+		"us": null,
+		"uk": {
+			"destination": "USA",
+			"alertStatus": [],
+			"updatedAt": "2026-08-18T09:29:04Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/usa"
+		}
+	},
+	{
+		"countryCode": "UY",
+		"countryName": "Uruguay",
+		"us": {
+			"destination": "Uruguay",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-28",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ury.html"
+		},
+		"uk": {
+			"destination": "Uruguay",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:00:39Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/uruguay"
+		}
+	},
+	{
+		"countryCode": "UZ",
+		"countryName": "Uzbekistan",
+		"us": {
+			"destination": "Uzbekistan",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-01-26",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.uzb.html"
+		},
+		"uk": {
+			"destination": "Uzbekistan",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:06:30Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/uzbekistan"
+		}
+	},
+	{
+		"countryCode": "VA",
+		"countryName": "Vatican",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "VC",
+		"countryName": "Saint Vincent and the Grenadines",
+		"us": {
+			"destination": "Saint Vincent and the Grenadines",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.vct.html"
+		},
+		"uk": {
+			"destination": "St Vincent and the Grenadines",
+			"alertStatus": [],
+			"updatedAt": "2026-04-23T13:50:31Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/st-vincent-and-the-grenadines"
+		}
+	},
+	{
+		"countryCode": "VE",
+		"countryName": "Venezuela",
+		"us": {
+			"destination": "Venezuela",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
+			"updated": "2026-06-27",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ven.html"
+		},
+		"uk": {
+			"destination": "Venezuela",
+			"alertStatus": [
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
+			],
+			"updatedAt": "2026-09-02T14:49:14Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/venezuela"
+		}
+	},
+	{
+		"countryCode": "VG",
+		"countryName": "British Virgin Islands",
+		"us": {
+			"destination": "British Virgin Islands",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-05-22",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.vgb.html"
+		},
+		"uk": {
+			"destination": "British Virgin Islands",
+			"alertStatus": [],
+			"updatedAt": "2025-11-03T12:00:01Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/british-virgin-islands"
+		}
+	},
+	{
+		"countryCode": "VI",
+		"countryName": "U.S. Virgin Islands",
+		"us": null,
+		"uk": null
+	},
+	{
+		"countryCode": "VN",
+		"countryName": "Vietnam",
+		"us": {
+			"destination": "Vietnam",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-06-24",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.vnm.html"
+		},
+		"uk": {
+			"destination": "Vietnam",
+			"alertStatus": [],
+			"updatedAt": "2026-09-21T13:25:10Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/vietnam"
+		}
+	},
+	{
+		"countryCode": "VU",
+		"countryName": "Vanuatu",
+		"us": {
+			"destination": "Vanuatu",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2025-05-22",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/vanuatu-travel-advisory.html"
+		},
+		"uk": {
+			"destination": "Vanuatu",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:02:48Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/vanuatu"
+		}
+	},
+	{
+		"countryCode": "WF",
+		"countryName": "Wallis and Futuna",
+		"us": null,
+		"uk": {
+			"destination": "Wallis and Futuna",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:02:12Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/wallis-and-futuna"
+		}
+	},
+	{
+		"countryCode": "WS",
+		"countryName": "Samoa",
+		"us": {
+			"destination": "Samoa",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-07-07",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.wsm.html"
+		},
+		"uk": {
+			"destination": "Samoa",
+			"alertStatus": [],
+			"updatedAt": "2026-03-19T14:02:53Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/samoa"
+		}
+	},
+	{
+		"countryCode": "XK",
+		"countryName": "Kosovo",
+		"us": {
+			"destination": "Kosovo",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-08-25",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.xks.html"
+		},
+		"uk": {
+			"destination": "Kosovo",
+			"alertStatus": [],
+			"updatedAt": "2026-09-23T11:48:46Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/kosovo"
+		}
+	},
+	{
+		"countryCode": "YE",
+		"countryName": "Yemen",
+		"us": {
+			"destination": "Yemen",
+			"level": 4,
+			"levelLabel": "Do Not Travel",
+			"updated": "2025-12-19",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.yem.html"
+		},
+		"uk": {
+			"destination": "Yemen",
+			"alertStatus": [
+				"avoid_all_travel_to_whole_country"
+			],
+			"updatedAt": "2026-07-31T09:35:27Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/yemen"
+		}
+	},
+	{
+		"countryCode": "YT",
+		"countryName": "Mayotte",
+		"us": null,
+		"uk": {
+			"destination": "Mayotte",
+			"alertStatus": [],
+			"updatedAt": "2025-12-10T13:41:54Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/mayotte"
+		}
+	},
+	{
+		"countryCode": "ZA",
+		"countryName": "South Africa",
+		"us": {
+			"destination": "South Africa",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2025-05-27",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.zaf.html"
+		},
+		"uk": {
+			"destination": "South Africa",
+			"alertStatus": [],
+			"updatedAt": "2026-07-08T15:36:29Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/south-africa"
+		}
+	},
+	{
+		"countryCode": "ZM",
+		"countryName": "Zambia",
+		"us": {
+			"destination": "Zambia",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2023-07-31",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.zmb.html"
+		},
+		"uk": {
+			"destination": "Zambia",
+			"alertStatus": [],
+			"updatedAt": "2026-06-01T13:58:33Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/zambia"
+		}
+	},
+	{
+		"countryCode": "ZW",
+		"countryName": "Zimbabwe",
+		"us": {
+			"destination": "Zimbabwe",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2023-06-27",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.zwe.html"
+		},
+		"uk": {
+			"destination": "Zimbabwe",
+			"alertStatus": [],
+			"updatedAt": "2026-07-15T08:15:29Z",
+			"url": "https://www.gov.uk/foreign-travel-advice/zimbabwe"
+		}
+	}
+]
