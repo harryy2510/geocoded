@@ -90,7 +90,7 @@
     },
     "packages/react-country-state-city-picker": {
       "name": "react-country-state-city-picker",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "dependencies": {
         "react-country-region-picker": "workspace:*",
       },
