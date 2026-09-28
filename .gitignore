@@ -25,3 +25,6 @@ opencode.json
 .junie/skills
 CLAUDE.md
 .mcp.json
+
+# tsgo declaration output written beside package sources during the tsdown build
+packages/*/src/*.d.ts

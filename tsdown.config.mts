@@ -8,6 +8,9 @@ export default defineConfig({
 		profile: 'esm-only'
 	},
 	clean: true,
+	// ponytail: tsgo also writes .d.ts files next to sibling package sources it compiles;
+	// they are gitignored (packages/*/src/*.d.ts). Switch to generator 'oxc' once every
+	// export has explicit types (isolatedDeclarations) to stop the stray output entirely.
 	dts: true,
 	entry: ['src/index.ts'],
 	failOnWarn: true,
