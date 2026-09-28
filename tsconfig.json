@@ -13,7 +13,49 @@
 		"jsxImportSource": "hono/jsx",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
-		"noEmit": true
+		"noEmit": true,
+		"paths": {
+			"@geocoded/client": ["./packages/client/src/index.ts"],
+			"currency-code-formatters": [
+				"./packages/currency-code-formatters/src/index.ts"
+			],
+			"phone-number-formatters": [
+				"./packages/phone-number-formatters/src/index.ts"
+			],
+			"picker-core": ["./packages/picker-core/src/index.ts"],
+			"react-country-region-picker": [
+				"./packages/react-country-region-picker/src/index.ts"
+			],
+			"react-country-state-city-picker": [
+				"./packages/react-country-state-city-picker/src/index.ts"
+			],
+			"react-currency-code-picker": [
+				"./packages/react-currency-code-picker/src/index.ts"
+			],
+			"react-iana-timezone-picker": [
+				"./packages/react-iana-timezone-picker/src/index.ts"
+			],
+			"react-native-country-region-picker": [
+				"./packages/react-native-country-region-picker/src/index.ts"
+			],
+			"react-native-currency-code-picker": [
+				"./packages/react-native-currency-code-picker/src/index.ts"
+			],
+			"react-native-iana-timezone-picker": [
+				"./packages/react-native-iana-timezone-picker/src/index.ts"
+			],
+			"react-native-phone-number-field": [
+				"./packages/react-native-phone-number-field/src/index.ts"
+			],
+			"react-native-picker-core": [
+				"./packages/react-native-picker-core/src/index.ts"
+			],
+			"react-phone-number-field": [
+				"./packages/react-phone-number-field/src/index.ts"
+			],
+			"react-picker-core": ["./packages/react-picker-core/src/index.ts"],
+			"use-timezones": ["./packages/use-timezones/src/index.ts"]
+		}
 	},
 	"include": [
 		"apps/api/src/**/*.ts",
