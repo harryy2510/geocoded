@@ -1292,9 +1292,9 @@
 		"countryName": "Grenada",
 		"us": {
 			"destination": "Grenada",
-			"level": 2,
-			"levelLabel": "Exercise Increased Caution",
-			"updated": "2026-01-05",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2026-09-28",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.grd.html"
 		},
 		"uk": {
@@ -1429,7 +1429,7 @@
 			"destination": "Guadeloupe",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-09-27",
+			"updated": "2026-08-20",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.glp.html"
 		},
 		"uk": {
@@ -3845,9 +3845,9 @@
 		"countryName": "Uruguay",
 		"us": {
 			"destination": "Uruguay",
-			"level": 1,
-			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-09-27",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-28",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ury.html"
 		},
 		"uk": {
