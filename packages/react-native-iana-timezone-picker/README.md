@@ -1,11 +1,11 @@
-# react-time-zone-picker
+# react-native-iana-timezone-picker
 
-React IANA timezone picker.
+React Native IANA timezone picker.
 
 ## Install
 
 ```bash
-bun add react-time-zone-picker
+bun add react-native-iana-timezone-picker
 ```
 
 ## Source

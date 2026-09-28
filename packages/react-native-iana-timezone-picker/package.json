@@ -1,5 +1,5 @@
 {
-	"name": "react-time-zone-picker",
+	"name": "react-native-iana-timezone-picker",
 	"version": "0.1.0",
 	"type": "module",
 	"sideEffects": false,
@@ -15,20 +15,26 @@
 		}
 	},
 	"peerDependencies": {
-		"react": ">=18.0.0"
+		"react": ">=18.0.0",
+		"react-native": ">=0.72.0"
+	},
+	"peerDependenciesMeta": {
+		"react-native": {
+			"optional": true
+		}
 	},
 	"dependencies": {
-		"react-picker-core": "workspace:*",
+		"react-native-picker-core": "workspace:*",
 		"use-timezones": "workspace:*"
 	},
 	"license": "MIT",
-	"description": "React IANA timezone picker.",
+	"description": "React Native IANA timezone picker.",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/harryy2510/geocoded.git",
-		"directory": "packages/react-time-zone-picker"
+		"directory": "packages/react-native-iana-timezone-picker"
 	},
-	"homepage": "https://github.com/harryy2510/geocoded/tree/main/packages/react-time-zone-picker#readme",
+	"homepage": "https://github.com/harryy2510/geocoded/tree/main/packages/react-native-iana-timezone-picker#readme",
 	"publishConfig": {
 		"access": "public",
 		"registry": "https://registry.npmjs.org"

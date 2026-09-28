@@ -34,10 +34,10 @@ import {
 import {
 	NativeTimeZonePicker,
 	useNativeTimeZonePicker
-} from 'react-native-time-zone-picker'
+} from 'react-native-iana-timezone-picker'
 import { PhoneNumberField } from 'react-phone-number-field'
 import { PickerField } from 'react-picker-core'
-import { TimeZonePicker } from 'react-time-zone-picker'
+import { TimeZonePicker } from 'react-iana-timezone-picker'
 import { createTimeZoneDataSource } from 'use-timezones'
 
 describe('package exports', () => {

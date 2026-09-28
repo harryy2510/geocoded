@@ -18,8 +18,8 @@ or currency datasets.
 - `react-phone-number-field`: full phone-number input with country calling code selection.
 - `react-native-phone-number-field`: React Native phone-number field hook.
 - `phone-number-formatters`: framework-agnostic phone parsing, formatting, and validation helpers.
-- `react-time-zone-picker`: IANA timezone picker.
-- `react-native-time-zone-picker`: React Native timezone hook.
+- `react-iana-timezone-picker`: IANA timezone picker.
+- `react-native-iana-timezone-picker`: React Native timezone hook.
 - `use-timezones`: framework-agnostic timezone options, grouping, and data source helpers.
 
 Shared behavior across picker packages:

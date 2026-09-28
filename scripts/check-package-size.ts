@@ -17,10 +17,10 @@ const workspacePackages = [
 	'react-native-currency-code-picker',
 	'react-native-phone-number-field',
 	'react-native-picker-core',
-	'react-native-time-zone-picker',
+	'react-native-iana-timezone-picker',
 	'react-phone-number-field',
 	'react-picker-core',
-	'react-time-zone-picker',
+	'react-iana-timezone-picker',
 	'use-timezones'
 ]
 
@@ -72,13 +72,13 @@ const budgets: Budget[] = [
 		maxGzipBytes: 2500
 	},
 	{
-		name: 'react-time-zone-picker',
-		entry: 'packages/react-time-zone-picker/src/index.ts',
+		name: 'react-iana-timezone-picker',
+		entry: 'packages/react-iana-timezone-picker/src/index.ts',
 		maxGzipBytes: 1400
 	},
 	{
-		name: 'react-native-time-zone-picker',
-		entry: 'packages/react-native-time-zone-picker/src/index.ts',
+		name: 'react-native-iana-timezone-picker',
+		entry: 'packages/react-native-iana-timezone-picker/src/index.ts',
 		maxGzipBytes: 1400
 	},
 	{
