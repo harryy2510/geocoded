@@ -11,6 +11,7 @@ on:
       - 'tsdown.config.mts'
       - 'package.json'
       - 'bun.lock'
+      - '.github/workflows/publish.yml'
   workflow_dispatch:
 
 permissions: {}
