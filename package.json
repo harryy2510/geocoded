@@ -26,7 +26,7 @@
 		"audit": "knip",
 		"hooks:install": "lefthook install",
 		"hooks:validate": "lefthook validate",
-		"build:packages": "tsdown",
+		"build:packages": "tsdown && oxfmt --ignore-path=/dev/null packages/*/dist",
 		"size:check": "bun scripts/check-package-size.ts",
 		"release:version": "lerna version --yes",
 		"release:publish": "lerna publish from-package --yes"

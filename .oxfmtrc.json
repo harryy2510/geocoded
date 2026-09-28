@@ -10,7 +10,6 @@
 	"sortPackageJson": false,
 	"ignorePatterns": [
 		"node_modules/",
-		"dist/",
 		".output/",
 		".wrangler/",
 		"worker-configuration.d.ts",
