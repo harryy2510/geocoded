@@ -7,4 +7,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **picker-core:** remove generated declaration file ([5e8a354](https://github.com/harryy2510/geocoded/commit/5e8a354674b54fd03392f0610cdba03adb34b040))
+- **picker-core:** remove generated declaration file ([5e8a354](https://github.com/harryy2510/geocoded/commit/5e8a354674b54fd03392f0610cdba03adb34b040))
