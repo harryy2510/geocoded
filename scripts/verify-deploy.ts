@@ -32,33 +32,35 @@ function assertListPayload(body: unknown, label: string): void {
 }
 
 async function verify(): Promise<void> {
+	// The OpenAPI routes ignore query params, so they can be cache-busted to prove this
+	// commit's Worker is live. v2 data routes reject unknown params, so they get none.
 	const spec = await fetchJson(
-		`${API_URL}/openapi.json?deploy_check=${cacheBust}`
+		`${API_URL}/v2/openapi.json?deploy_check=${cacheBust}`
 	)
 	if (!isRecord(spec) || !isRecord(spec.paths)) {
 		throw new Error('OpenAPI spec is missing paths')
 	}
+	for (const path of ['/v2/search', '/v2/reverse', '/v2/meta']) {
+		if (!(path in spec.paths)) {
+			throw new Error(
+				`Live OpenAPI spec has no ${path}; old Worker still serving`
+			)
+		}
+	}
 
 	assertListPayload(
-		await fetchJson(
-			`${API_URL}/v2/countries?limit=1&deploy_check=${cacheBust}`
-		),
+		await fetchJson(`${API_URL}/v2/countries?limit=1`),
 		'Countries'
 	)
 	assertListPayload(
-		await fetchJson(
-			`${API_URL}/v2/timezones?limit=1&deploy_check=${cacheBust}`
-		),
+		await fetchJson(`${API_URL}/v2/timezones?limit=1`),
 		'Timezones'
 	)
-	// Endpoints added with the geo/search release; they 404 on an older Worker.
 	assertListPayload(
-		await fetchJson(
-			`${API_URL}/v2/search?q=tokyo&limit=1&deploy_check=${cacheBust}`
-		),
+		await fetchJson(`${API_URL}/v2/search?q=tokyo&limit=1`),
 		'Search'
 	)
-	await fetchOk(`${API_URL}/v2/meta?deploy_check=${cacheBust}`)
+	await fetchOk(`${API_URL}/v2/meta`)
 
 	await fetchOk(`${SITE_URL}/?deploy_check=${cacheBust}`)
 }
