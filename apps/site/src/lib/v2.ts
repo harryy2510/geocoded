@@ -43,6 +43,14 @@ export type StatisticsRow = {
 	gdpCurrentUsd?: Metric
 	gdpPerCapitaCurrentUsd?: Metric
 	lifeExpectancy?: Metric
+	gdpGrowthPercent?: Metric
+	gniPerCapitaAtlasUsd?: Metric
+	internetUsersPercent?: Metric
+	mobileSubscriptionsPer100?: Metric
+	electricityAccessPercent?: Metric
+	fertilityRate?: Metric
+	healthExpenditurePercentGdp?: Metric
+	forestAreaPercent?: Metric
 	dependencyRatio?: Metric
 	ageingIndex?: Metric
 	sexRatio?: Metric

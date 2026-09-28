@@ -1,6 +1,9 @@
 import { describe, expect, test } from 'bun:test'
 import { v2OpenApiSpec } from '../apps/api/src/v2/openapi'
-import { endpointsFromOpenApi } from '../apps/site/src/components/docs/openapi-endpoints'
+import {
+	endpointsFromOpenApi,
+	resolveDocsAnchor
+} from '../apps/site/src/components/docs/openapi-endpoints'
 
 describe('site copy and docs affordances', () => {
 	test('mentions timezone and currency coverage on the homepage', async () => {
@@ -36,6 +39,35 @@ describe('site copy and docs affordances', () => {
 		expect(cities?.params.map((param) => param.name)).toEqual(
 			expect.arrayContaining(['filter[country]', 'near', 'radius', 'cursor'])
 		)
+
+		// Every /docs#anchor linked from the site lands on a real section.
+		const guides = [
+			'introduction',
+			'quick-start',
+			'filtering',
+			'fields',
+			'pagination',
+			'errors'
+		]
+		const anchors = new Set<string>()
+		for (const path of new Bun.Glob(
+			'apps/site/src/**/*.{astro,tsx,ts}'
+		).scanSync()) {
+			const source = await Bun.file(path).text()
+			for (const match of source.matchAll(/\/docs#([a-z0-9-]+)/g))
+				anchors.add(match[1] ?? '')
+			for (const match of source.matchAll(
+				/anchor(?::|=) ?['"]([a-z0-9-]+)['"]/g
+			))
+				anchors.add(match[1] ?? '')
+		}
+		const broken = [...anchors].filter(
+			(anchor) =>
+				!guides.includes(anchor) &&
+				resolveDocsAnchor(endpoints, anchor) === null
+		)
+		expect(anchors.size).toBeGreaterThan(5)
+		expect(broken).toEqual([])
 
 		const reference = await Bun.file(
 			'apps/site/src/components/docs/api-reference.tsx'

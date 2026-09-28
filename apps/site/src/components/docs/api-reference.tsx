@@ -1,7 +1,11 @@
 import { type ReactNode, useEffect, useState } from 'react'
 import { v2Url } from '../../lib/v2'
 import { highlightJson } from '../json-view'
-import { type Endpoint, type Param } from './openapi-endpoints'
+import {
+	type Endpoint,
+	type Param,
+	resolveDocsAnchor
+} from './openapi-endpoints'
 
 type Guide = {
 	id: string
@@ -493,13 +497,11 @@ export function ApiReference({ endpoints }: { endpoints: Endpoint[] }) {
 	const [active, setActive] = useState('introduction')
 
 	useEffect(() => {
-		const ids = new Set([
-			...GUIDES.map((g) => g.id),
-			...endpoints.map((e) => e.id)
-		])
+		const guideIds = new Set(GUIDES.map((g) => g.id))
 		function sync() {
-			const id = window.location.hash.slice(1)
-			if (ids.has(id)) {
+			const hash = window.location.hash.slice(1)
+			const id = guideIds.has(hash) ? hash : resolveDocsAnchor(endpoints, hash)
+			if (id) {
 				setActive(id)
 				window.scrollTo({ top: 0 })
 			}

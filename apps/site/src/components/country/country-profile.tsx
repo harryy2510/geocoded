@@ -766,6 +766,101 @@ function MigrationSection({ data }: { data: ProfileData }) {
 	)
 }
 
+const DEVELOPMENT: Array<{
+	key: keyof StatisticsRow
+	label: string
+	format: (n: number) => string
+	note: string
+}> = [
+	{
+		key: 'gdpGrowthPercent',
+		label: 'Economic growth',
+		format: (n) => `${n > 0 ? '+' : ''}${n.toFixed(1)}%`,
+		note: 'GDP growth, annual'
+	},
+	{
+		key: 'gniPerCapitaAtlasUsd',
+		label: 'Income per person',
+		format: (n) => `$${Math.round(n).toLocaleString('en-US')}`,
+		note: 'GNI per capita, Atlas method'
+	},
+	{
+		key: 'internetUsersPercent',
+		label: 'Online',
+		format: (n) => `${n.toFixed(0)}%`,
+		note: 'of people use the internet'
+	},
+	{
+		key: 'mobileSubscriptionsPer100',
+		label: 'Mobile phones',
+		format: (n) => n.toFixed(0),
+		note: 'subscriptions per 100 people'
+	},
+	{
+		key: 'electricityAccessPercent',
+		label: 'Electricity',
+		format: (n) => `${n.toFixed(0)}%`,
+		note: 'of people have access'
+	},
+	{
+		key: 'fertilityRate',
+		label: 'Births per woman',
+		format: (n) => n.toFixed(2),
+		note: 'fertility rate'
+	},
+	{
+		key: 'healthExpenditurePercentGdp',
+		label: 'Health spending',
+		format: (n) => `${n.toFixed(1)}%`,
+		note: 'of GDP'
+	},
+	{
+		key: 'forestAreaPercent',
+		label: 'Forest',
+		format: (n) => `${n.toFixed(0)}%`,
+		note: 'of land area'
+	}
+]
+
+function Development({ data }: { data: ProfileData }) {
+	const stats = data.country.statistics
+	const cards = DEVELOPMENT.flatMap((item) => {
+		const m = metric(stats, item.key)
+		const n = value(m)
+		return m && n !== null
+			? [{ ...item, text: item.format(n), year: m.year }]
+			: []
+	})
+	if (cards.length === 0) return null
+	return (
+		<section className="mx-auto flex w-full max-w-[1440px] flex-col gap-7 border-b border-rule px-4 py-7 md:px-8 lg:px-12 lg:py-14">
+			<div className="flex flex-col gap-3">
+				<div className="eyebrow">Development</div>
+				<h2 className="serif m-0 text-[32px] leading-[1.05] lg:text-5xl lg:leading-none">
+					How people live and work.
+				</h2>
+			</div>
+			<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+				{cards.map((card) => (
+					<div
+						key={card.key}
+						className="card flex flex-col gap-2 rounded-xl p-6"
+					>
+						<span className="eyebrow">{card.label}</span>
+						<span className="serif text-5xl leading-none">{card.text}</span>
+						<span className="text-sm text-ink-soft">
+							{card.note}, {card.year}
+						</span>
+					</div>
+				))}
+			</div>
+			<span className="text-[13px] text-ink-soft">
+				Source: World Bank World Development Indicators
+			</span>
+		</section>
+	)
+}
+
 function GettingAround({ data }: { data: ProfileData }) {
 	const { country, states, cityTotal, airports, ports } = data
 	const people =
@@ -997,6 +1092,7 @@ export function CountryProfile({ id }: CountryProfileProps) {
 			<WherePeopleLive data={full} />
 			<AgeSection data={full} />
 			<MigrationSection data={full} />
+			<Development data={full} />
 			<GettingAround data={full} />
 			<Practical data={full} />
 		</>

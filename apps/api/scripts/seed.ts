@@ -132,24 +132,37 @@ type RawStatisticValue = {
 	value: number | null
 }
 
+// Indicator key in country-indicators.json -> column in country_statistics (JSON + `_value`).
+const STATISTIC_COLUMNS = [
+	['populationTotal', 'population_total'],
+	['populationFemale', 'population_female'],
+	['populationMale', 'population_male'],
+	['populationDensity', 'population_density'],
+	['urbanPopulationPercent', 'urban_population_percent'],
+	['ruralPopulationPercent', 'rural_population_percent'],
+	['age0To14Percent', 'age_0_to_14_percent'],
+	['age15To64Percent', 'age_15_to_64_percent'],
+	['age65PlusPercent', 'age_65_plus_percent'],
+	['gdpCurrentUsd', 'gdp_current_usd'],
+	['gdpPerCapitaCurrentUsd', 'gdp_per_capita_current_usd'],
+	['lifeExpectancy', 'life_expectancy'],
+	['gdpGrowthPercent', 'gdp_growth_percent'],
+	['gniPerCapitaAtlasUsd', 'gni_per_capita_atlas_usd'],
+	['internetUsersPercent', 'internet_users_percent'],
+	['mobileSubscriptionsPer100', 'mobile_subscriptions_per_100'],
+	['electricityAccessPercent', 'electricity_access_percent'],
+	['fertilityRate', 'fertility_rate'],
+	['healthExpenditurePercentGdp', 'health_expenditure_percent_gdp'],
+	['forestAreaPercent', 'forest_area_percent']
+] as const
+
+type StatisticKey = (typeof STATISTIC_COLUMNS)[number][0]
+
 type RawCountryStatistics = {
 	countryCode: string
 	countryName: string
 	iso3: string
-	indicators: {
-		populationTotal?: RawStatisticValue
-		populationFemale?: RawStatisticValue
-		populationMale?: RawStatisticValue
-		populationDensity?: RawStatisticValue
-		urbanPopulationPercent?: RawStatisticValue
-		ruralPopulationPercent?: RawStatisticValue
-		age0To14Percent?: RawStatisticValue
-		age15To64Percent?: RawStatisticValue
-		age65PlusPercent?: RawStatisticValue
-		gdpCurrentUsd?: RawStatisticValue
-		gdpPerCapitaCurrentUsd?: RawStatisticValue
-		lifeExpectancy?: RawStatisticValue
-	}
+	indicators: Partial<Record<StatisticKey, RawStatisticValue>>
 }
 
 type RawAirline = {
@@ -843,30 +856,7 @@ function countryStatisticsRow(country: RawCountryStatistics): SourceRow {
 		'country_code',
 		'country_name',
 		'iso3',
-		'population_total',
-		'population_total_value',
-		'population_female',
-		'population_female_value',
-		'population_male',
-		'population_male_value',
-		'population_density',
-		'population_density_value',
-		'urban_population_percent',
-		'urban_population_percent_value',
-		'rural_population_percent',
-		'rural_population_percent_value',
-		'age_0_to_14_percent',
-		'age_0_to_14_percent_value',
-		'age_15_to_64_percent',
-		'age_15_to_64_percent_value',
-		'age_65_plus_percent',
-		'age_65_plus_percent_value',
-		'gdp_current_usd',
-		'gdp_current_usd_value',
-		'gdp_per_capita_current_usd',
-		'gdp_per_capita_current_usd_value',
-		'life_expectancy',
-		'life_expectancy_value',
+		...STATISTIC_COLUMNS.flatMap(([, column]) => [column, `${column}_value`]),
 		'source_hash'
 	]
 	const indicators = country.indicators
@@ -874,30 +864,10 @@ function countryStatisticsRow(country: RawCountryStatistics): SourceRow {
 		country.countryCode,
 		country.countryName,
 		country.iso3,
-		statisticJson(indicators.populationTotal),
-		statisticValue(indicators.populationTotal),
-		statisticJson(indicators.populationFemale),
-		statisticValue(indicators.populationFemale),
-		statisticJson(indicators.populationMale),
-		statisticValue(indicators.populationMale),
-		statisticJson(indicators.populationDensity),
-		statisticValue(indicators.populationDensity),
-		statisticJson(indicators.urbanPopulationPercent),
-		statisticValue(indicators.urbanPopulationPercent),
-		statisticJson(indicators.ruralPopulationPercent),
-		statisticValue(indicators.ruralPopulationPercent),
-		statisticJson(indicators.age0To14Percent),
-		statisticValue(indicators.age0To14Percent),
-		statisticJson(indicators.age15To64Percent),
-		statisticValue(indicators.age15To64Percent),
-		statisticJson(indicators.age65PlusPercent),
-		statisticValue(indicators.age65PlusPercent),
-		statisticJson(indicators.gdpCurrentUsd),
-		statisticValue(indicators.gdpCurrentUsd),
-		statisticJson(indicators.gdpPerCapitaCurrentUsd),
-		statisticValue(indicators.gdpPerCapitaCurrentUsd),
-		statisticJson(indicators.lifeExpectancy),
-		statisticValue(indicators.lifeExpectancy)
+		...STATISTIC_COLUMNS.flatMap(([key]) => [
+			statisticJson(indicators[key]),
+			statisticValue(indicators[key])
+		])
 	] satisfies SqlValue[]
 	const hash = hashValues(values)
 	return {
@@ -911,30 +881,10 @@ function countryStatisticsRow(country: RawCountryStatistics): SourceRow {
 			[
 				'country_name',
 				'iso3',
-				'population_total',
-				'population_total_value',
-				'population_female',
-				'population_female_value',
-				'population_male',
-				'population_male_value',
-				'population_density',
-				'population_density_value',
-				'urban_population_percent',
-				'urban_population_percent_value',
-				'rural_population_percent',
-				'rural_population_percent_value',
-				'age_0_to_14_percent',
-				'age_0_to_14_percent_value',
-				'age_15_to_64_percent',
-				'age_15_to_64_percent_value',
-				'age_65_plus_percent',
-				'age_65_plus_percent_value',
-				'gdp_current_usd',
-				'gdp_current_usd_value',
-				'gdp_per_capita_current_usd',
-				'gdp_per_capita_current_usd_value',
-				'life_expectancy',
-				'life_expectancy_value',
+				...STATISTIC_COLUMNS.flatMap(([, column]) => [
+					column,
+					`${column}_value`
+				]),
 				'source_hash'
 			]
 		)

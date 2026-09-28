@@ -94,6 +94,22 @@ export function endpointsFromOpenApi(spec: unknown): Endpoint[] {
 	)
 }
 
+// Short anchors such as /docs#airports point at the resource's list endpoint.
+const ANCHOR_ALIASES: Record<string, string> = { migration: 'migrant-stocks' }
+
+/** Endpoint id for a docs URL hash: an exact endpoint id, or a resource name such as `airports`. */
+export function resolveDocsAnchor(
+	endpoints: Endpoint[],
+	hash: string
+): string | null {
+	if (endpoints.some((endpoint) => endpoint.id === hash)) return hash
+	const group = ANCHOR_ALIASES[hash] ?? hash
+	// Endpoints are sorted with the shortest path (the list) first in each group.
+	return (
+		endpoints.find((endpoint) => slug(endpoint.group) === group)?.id ?? null
+	)
+}
+
 function toParam(raw: unknown): Param {
 	const param = record(raw)
 	const schema = record(param.schema)

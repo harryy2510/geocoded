@@ -22,6 +22,14 @@ export type V2CountryStatistics = {
 	gdpCurrentUsd: V2StatisticValue
 	gdpPerCapitaCurrentUsd: V2StatisticValue
 	lifeExpectancy: V2StatisticValue
+	gdpGrowthPercent: V2StatisticValue
+	gniPerCapitaAtlasUsd: V2StatisticValue
+	internetUsersPercent: V2StatisticValue
+	mobileSubscriptionsPer100: V2StatisticValue
+	electricityAccessPercent: V2StatisticValue
+	fertilityRate: V2StatisticValue
+	healthExpenditurePercentGdp: V2StatisticValue
+	forestAreaPercent: V2StatisticValue
 	dependencyRatio: V2StatisticValue
 	ageingIndex: V2StatisticValue
 	sexRatio: V2StatisticValue

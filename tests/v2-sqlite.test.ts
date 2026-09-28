@@ -131,7 +131,9 @@ beforeAll(() => {
 		population_female: stat(63220000),
 		age_0_to_14_percent: stat(11.24),
 		age_15_to_64_percent: stat(58.77),
-		age_65_plus_percent: stat(29.99, 2024)
+		age_65_plus_percent: stat(29.99, 2024),
+		fertility_rate: stat(1.2, 2023),
+		internet_users_percent: stat(87)
 	})
 
 	insert('states', {
@@ -334,6 +336,21 @@ describe('v2 against SQLite', () => {
 			expect.objectContaining({ value: 266.8, year: 2024 })
 		)
 		expect(body.sexRatio?.value).toBe(95.1)
+	})
+
+	test('serves the newer World Bank indicators', async () => {
+		const body = await json<
+			Record<string, { value: number | null; year: number }>
+		>(
+			await request(
+				'/v2/statistics/JP?fields=fertilityRate,internetUsersPercent,forestAreaPercent'
+			)
+		)
+		expect(body.fertilityRate).toEqual(
+			expect.objectContaining({ value: 1.2, year: 2023 })
+		)
+		expect(body.internetUsersPercent?.value).toBe(87)
+		expect(body.forestAreaPercent?.value).toBeNull()
 	})
 
 	test('searches across several place types', async () => {

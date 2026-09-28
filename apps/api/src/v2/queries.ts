@@ -950,6 +950,20 @@ function rowToV2CountryStatistics(row: D1Row): V2CountryStatistics {
 		gdpCurrentUsd: parseStatisticValue(row.gdp_current_usd),
 		gdpPerCapitaCurrentUsd: parseStatisticValue(row.gdp_per_capita_current_usd),
 		lifeExpectancy: parseStatisticValue(row.life_expectancy),
+		gdpGrowthPercent: parseStatisticValue(row.gdp_growth_percent),
+		gniPerCapitaAtlasUsd: parseStatisticValue(row.gni_per_capita_atlas_usd),
+		internetUsersPercent: parseStatisticValue(row.internet_users_percent),
+		mobileSubscriptionsPer100: parseStatisticValue(
+			row.mobile_subscriptions_per_100
+		),
+		electricityAccessPercent: parseStatisticValue(
+			row.electricity_access_percent
+		),
+		fertilityRate: parseStatisticValue(row.fertility_rate),
+		healthExpenditurePercentGdp: parseStatisticValue(
+			row.health_expenditure_percent_gdp
+		),
+		forestAreaPercent: parseStatisticValue(row.forest_area_percent),
 		dependencyRatio: derivedStatistic(
 			'GEOCODED.DEPENDENCY_RATIO',
 			'Dependents (under 15 and 65+) per 100 people aged 15 to 64',
