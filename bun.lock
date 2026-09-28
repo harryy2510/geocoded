@@ -52,21 +52,21 @@
     },
     "packages/client": {
       "name": "@geocoded/client",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "ofetch": "^1.5.1",
       },
     },
     "packages/currency-code-formatters": {
       "name": "currency-code-formatters",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "picker-core": "workspace:*",
       },
     },
     "packages/phone-number-formatters": {
       "name": "phone-number-formatters",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "libphonenumber-js": "^1.12.29",
         "picker-core": "workspace:*",
@@ -74,11 +74,11 @@
     },
     "packages/picker-core": {
       "name": "picker-core",
-      "version": "0.1.0",
+      "version": "0.1.1",
     },
     "packages/react-country-region-picker": {
       "name": "react-country-region-picker",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "@geocoded/client": "workspace:*",
         "picker-core": "workspace:*",
@@ -90,7 +90,7 @@
     },
     "packages/react-country-state-city-picker": {
       "name": "react-country-state-city-picker",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "dependencies": {
         "react-country-region-picker": "workspace:*",
       },
@@ -100,7 +100,7 @@
     },
     "packages/react-currency-code-picker": {
       "name": "react-currency-code-picker",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "@geocoded/client": "workspace:*",
         "currency-code-formatters": "workspace:*",
@@ -113,7 +113,7 @@
     },
     "packages/react-iana-timezone-picker": {
       "name": "react-iana-timezone-picker",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "react-picker-core": "workspace:*",
         "use-timezones": "workspace:*",
@@ -124,7 +124,7 @@
     },
     "packages/react-native-country-region-picker": {
       "name": "react-native-country-region-picker",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "@geocoded/client": "workspace:*",
         "picker-core": "workspace:*",
@@ -140,7 +140,7 @@
     },
     "packages/react-native-currency-code-picker": {
       "name": "react-native-currency-code-picker",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "@geocoded/client": "workspace:*",
         "currency-code-formatters": "workspace:*",
@@ -157,7 +157,7 @@
     },
     "packages/react-native-iana-timezone-picker": {
       "name": "react-native-iana-timezone-picker",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "react-native-picker-core": "workspace:*",
         "use-timezones": "workspace:*",
@@ -172,7 +172,7 @@
     },
     "packages/react-native-phone-number-field": {
       "name": "react-native-phone-number-field",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "@geocoded/client": "workspace:*",
         "phone-number-formatters": "workspace:*",
@@ -188,7 +188,7 @@
     },
     "packages/react-native-picker-core": {
       "name": "react-native-picker-core",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "downshift": "^9.3.2",
         "picker-core": "workspace:*",
@@ -203,7 +203,7 @@
     },
     "packages/react-phone-number-field": {
       "name": "react-phone-number-field",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "@geocoded/client": "workspace:*",
         "phone-number-formatters": "workspace:*",
@@ -215,7 +215,7 @@
     },
     "packages/react-picker-core": {
       "name": "react-picker-core",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "@floating-ui/react-dom": "^2.1.8",
         "downshift": "^9.3.2",
@@ -228,7 +228,7 @@
     },
     "packages/use-timezones": {
       "name": "use-timezones",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "dependencies": {
         "@geocoded/client": "workspace:*",
         "picker-core": "workspace:*",
