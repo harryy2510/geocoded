@@ -94,7 +94,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2026-08-26",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.alb.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/albania-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Albania",
@@ -111,7 +111,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2025-09-05",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.arm.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/armenia-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Armenia",
@@ -195,7 +195,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2026-08-21",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.aut.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/austria-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Austria",
@@ -211,8 +211,8 @@
 			"destination": "Australia",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-08-18",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.aus.html"
+			"updated": "2025-05-30",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/australia-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Australia",
@@ -228,8 +228,8 @@
 			"destination": "Aruba",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-08-20",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.abw.html"
+			"updated": "2024-08-19",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/aruba-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Aruba",
@@ -272,7 +272,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2026-08-27",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bih.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bosinia-and-herzegovina-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Bosnia and Herzegovina",
@@ -528,7 +528,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-09T09:06:01Z",
+			"updatedAt": "2026-09-29T16:00:43Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/brazil"
 		}
 	},
@@ -556,8 +556,8 @@
 			"destination": "Bhutan",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-09-04",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.btn.html"
+			"updated": "2025-10-20",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bhutan-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Bhutan",
@@ -1125,7 +1125,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2023-07-31",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.eri.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/eritrea-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Eritrea",
@@ -1533,8 +1533,8 @@
 			"destination": "Guyana",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-08-26",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.guy.html"
+			"updated": "2025-05-12",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/guyana-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Guyana",
@@ -1573,8 +1573,8 @@
 			"destination": "Honduras",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-08-25",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.hnd.html"
+			"updated": "2024-12-10",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/honduras-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Honduras",
@@ -2009,7 +2009,7 @@
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
 			"updated": "2026-08-28",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kwt.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/kuwait-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Kuwait",
@@ -2043,7 +2043,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2026-08-18",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kaz.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/kazakhstan-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Kazakhstan",
@@ -2234,8 +2234,8 @@
 			"destination": "Libya",
 			"level": 4,
 			"levelLabel": "Do Not Travel",
-			"updated": "2026-08-31",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lby.html"
+			"updated": "2025-07-16",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/libya-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Libya",
@@ -2254,8 +2254,8 @@
 			"destination": "Morocco",
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
-			"updated": "2026-09-04",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mar.html"
+			"updated": "2025-04-21",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/morocco-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Morocco",
@@ -2302,7 +2302,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2026-08-27",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mne.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/montenegro-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Montenegro",
@@ -2315,11 +2315,11 @@
 		"countryCode": "MF",
 		"countryName": "Saint Martin",
 		"us": {
-			"destination": "French Saint Martin",
+			"destination": "French West Indies",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-08-14",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.maf.html"
+			"updated": "2024-08-22",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/french-west-indies-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "St Martin and St Barthélemy",
@@ -2369,8 +2369,8 @@
 			"destination": "North Macedonia",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-09-10",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mkd.html"
+			"updated": "2025-01-14",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/north-macedonia-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "North Macedonia",
@@ -2443,7 +2443,7 @@
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
 			"updated": "2026-09-04",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mac.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/macau-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Macao",
@@ -2624,8 +2624,8 @@
 			"destination": "Mozambique",
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
-			"updated": "2026-08-21",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.moz.html"
+			"updated": "2025-06-16",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mozambique-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Mozambique",
@@ -2740,8 +2740,8 @@
 			"destination": "Netherlands",
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
-			"updated": "2026-08-18",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.nld.html"
+			"updated": "2024-08-09",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/netherlands-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Netherlands",
@@ -2870,8 +2870,8 @@
 			"destination": "Peru",
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
-			"updated": "2026-09-04",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.per.html"
+			"updated": "2025-05-16",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/peru-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Peru",
@@ -2925,8 +2925,8 @@
 			"destination": "Philippines",
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
-			"updated": "2026-09-01",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.phl.html"
+			"updated": "2025-05-08",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/philippines-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Philippines",
@@ -2965,7 +2965,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2025-06-05",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pol.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/poland-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Poland",
@@ -3403,7 +3403,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2026-09-08",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sur.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/suriname-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Suriname",
@@ -3472,8 +3472,8 @@
 			"destination": "Sint Maarten",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-08-24",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sxm.html"
+			"updated": "2024-08-19",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/sint-maarten-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "St Maarten",
@@ -3588,7 +3588,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2026-07-07",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tha.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/thailand-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Thailand",
@@ -3606,8 +3606,8 @@
 			"destination": "Tajikistan",
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
-			"updated": "2026-09-04",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tjk.html"
+			"updated": "2025-05-16",
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/tajikistan-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Tajikistan",
@@ -3794,7 +3794,7 @@
 			"level": 4,
 			"levelLabel": "Do Not Travel",
 			"updated": "2026-08-28",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ukr.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/ukraine-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Ukraine",
@@ -4010,7 +4010,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2026-08-25",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.xks.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/kosovo-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Kosovo",
