@@ -64,6 +64,12 @@
 				"year": 2025,
 				"value": 71.819382542564
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 16.5624302661496
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -196,6 +202,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 82.2302882072977
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 1.79231447206064
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -354,6 +366,12 @@
 				"year": 2025,
 				"value": 55.013497080446
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.42557886023075
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -510,6 +528,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 70.1937723241533
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 12.3369971923977
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -671,6 +695,12 @@
 				"year": 2025,
 				"value": 65.7716964503975
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 17.6221063807332
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -827,6 +857,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 66.5695749965832
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 14.4428643549941
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -994,6 +1030,12 @@
 				"year": 2025,
 				"value": 53.0065921938064
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.89492414306917
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -1160,6 +1202,12 @@
 				"year": 2025,
 				"value": 66.3498539384122
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 12.634433938217
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -1317,6 +1365,12 @@
 				"year": 2025,
 				"value": 65.1140054531432
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.53818829638159
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -1443,6 +1497,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 64.7580356509971
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 21.094709934873
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -1595,6 +1655,12 @@
 				"year": 2025,
 				"value": 64.2273793315095
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 18.0930147394386
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -1745,6 +1811,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.7204281190041
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 17.7604660301903
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -1899,6 +1971,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 69.6311486958719
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 9.16837192948103
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -2057,6 +2135,12 @@
 				"year": 2025,
 				"value": 64.2915796669242
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 22.8598779877873
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -2213,6 +2297,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.8497966375761
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 17.0865126219157
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -2371,6 +2461,12 @@
 				"year": 2025,
 				"value": 65.6858333367082
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.66842350416686
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -2528,6 +2624,12 @@
 				"year": 2025,
 				"value": 63.3352703548202
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 20.9608828531757
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -2678,6 +2780,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 56.145860073156
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.68420882108847
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -2836,6 +2944,12 @@
 				"year": 2025,
 				"value": 63.3646779062722
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 22.2355986271326
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -2992,6 +3106,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 77.5636565111786
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.01595782713348
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -3150,6 +3270,12 @@
 				"year": 2025,
 				"value": 53.4706369925926
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.54810935578364
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -3306,6 +3432,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 55.5874076944893
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.15305462207379
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -3473,6 +3605,12 @@
 				"year": 2025,
 				"value": 64.0381383172358
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 22.6095779535121
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -3605,6 +3743,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 72.1355347763014
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 7.23853575950962
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -3762,6 +3906,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 64.8196359158049
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 5.74004562527309
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -3929,6 +4079,12 @@
 				"year": 2025,
 				"value": 69.1330392605638
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 11.4803394567154
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -4086,6 +4242,12 @@
 				"year": 2025,
 				"value": 70.3571051962311
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 12.094434071694
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -4236,6 +4398,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 73.0116112900827
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.62730338284496
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -4403,6 +4571,12 @@
 				"year": 2025,
 				"value": 63.9604203078542
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.08292423233554
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -4559,6 +4733,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.8266040410985
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 18.2845697904208
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -4717,6 +4897,12 @@
 				"year": 2025,
 				"value": 68.5019057797619
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 5.22800786902611
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -4873,6 +5059,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 64.7593251011302
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 20.2603673865917
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -5034,6 +5226,12 @@
 				"year": 2025,
 				"value": 50.9663259795786
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.08388348450007
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -5190,6 +5388,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 49.1193811598971
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.19798298001082
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -5348,6 +5552,12 @@
 				"year": 2025,
 				"value": 56.9955726302839
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.06138374079353
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -5505,6 +5715,12 @@
 				"year": 2025,
 				"value": 64.6844363881088
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 20.4321204316855
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -5655,6 +5871,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 56.8911439268089
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.65345754900338
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -5822,6 +6044,12 @@
 				"year": 2025,
 				"value": 68.8632522757769
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 14.5897458504493
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -5978,6 +6206,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 56.0650107463897
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.81759096595751
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -6136,6 +6370,12 @@
 				"year": 2025,
 				"value": 69.6812776464024
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 14.9114314271952
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -6293,6 +6533,12 @@
 				"year": 2025,
 				"value": 69.8069749680376
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 10.2001032818786
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -6449,6 +6695,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 68.9394521584723
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 12.7519673196907
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -6616,6 +6868,12 @@
 				"year": 2025,
 				"value": 67.9412246466841
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 17.0350080804476
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -6766,6 +7024,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 68.1510755690745
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 7.15393054195179
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -6924,6 +7188,12 @@
 				"year": 2025,
 				"value": 68.0956077784427
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 17.3006733625537
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -7065,6 +7335,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 68.9867036682001
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 14.9323292144324
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -7223,6 +7499,12 @@
 				"year": 2025,
 				"value": 63.734238443764
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 21.1800713896599
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -7373,6 +7655,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 62.4109003911736
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 23.7031981458429
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -7525,6 +7813,12 @@
 				"year": 2025,
 				"value": 66.2248173998893
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.97206050453666
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -7675,6 +7969,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 63.319051522972
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 21.1189674580971
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -7827,6 +8127,12 @@
 				"year": 2025,
 				"value": 69.1900138906811
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 13.1984242047016
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -7971,6 +8277,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.6130595868039
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.1878526489375
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -8129,6 +8441,12 @@
 				"year": 2025,
 				"value": 63.2685694495755
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.80593085174533
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -8285,6 +8603,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 67.5045937932069
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.59643215029763
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -8443,6 +8767,12 @@
 				"year": 2025,
 				"value": 62.9446033125234
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 21.8016309684638
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -8599,6 +8929,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 63.1725431918709
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 5.27119509818337
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -8766,6 +9102,12 @@
 				"year": 2025,
 				"value": 58.1513378281083
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.2581056905137
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -8916,6 +9258,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.7387870333902
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 21.64208099744
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -9074,6 +9422,12 @@
 				"year": 2025,
 				"value": 57.9245410476754
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.2957318380591
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -9231,6 +9585,12 @@
 				"year": 2025,
 				"value": 61.4679968513316
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 24.2018896456272
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -9381,6 +9741,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 66.5366238923994
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.63486057239182
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -9542,6 +9908,12 @@
 				"year": 2025,
 				"value": 62.3228626971491
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.18298250398037
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -9687,6 +10059,12 @@
 				"year": 2025,
 				"value": 62.3483299554476
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 17.7816665625028
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -9819,6 +10197,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 61.2332346265978
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 22.5418906984086
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -9970,6 +10354,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 59.6270645179888
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.13008683137499
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -10128,6 +10518,12 @@
 				"year": 2025,
 				"value": 63.3325337560216
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 19.7026932546935
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -10279,6 +10675,12 @@
 				"year": 2025,
 				"value": 68.3636890629862
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 12.6253692345071
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -10429,6 +10831,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 63.5205931902179
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 15.9913346858712
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -10605,6 +11013,12 @@
 				"year": 2025,
 				"value": 60.7826271028438
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.78769586621254
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -10762,6 +11176,12 @@
 				"year": 2025,
 				"value": 64.5778298360165
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 17.8350695309774
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -10870,6 +11290,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 67.7286548448726
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 11.5302854990178
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -11003,6 +11429,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 57.0917755013743
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.18495882311462
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -11160,6 +11592,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 55.9786047787486
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.47302636663564
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -11327,6 +11765,12 @@
 				"year": 2025,
 				"value": 59.1493584244165
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.76410096619379
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -11483,6 +11927,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 62.7486827065259
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 24.3998585549859
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -11650,6 +12100,12 @@
 				"year": 2025,
 				"value": 64.0107601281611
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.9632752647752
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -11807,6 +12263,12 @@
 				"year": 2025,
 				"value": 61.0372281410782
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 13.0950866427809
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -11945,6 +12407,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 58.4375965485894
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.23723113648942
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -12103,6 +12571,12 @@
 				"year": 2025,
 				"value": 64.0859416306015
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.98073891189565
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -12260,6 +12734,12 @@
 				"year": 2025,
 				"value": 66.0213131936448
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 23.667320346627
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -12407,6 +12887,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.1952445833463
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.54210281541647
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -12565,6 +13051,12 @@
 				"year": 2025,
 				"value": 62.687998939753
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 23.6095692486799
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -12721,6 +13213,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 64.4212244055996
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.79172202171568
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -12879,6 +13377,12 @@
 				"year": 2025,
 				"value": 64.4900842344087
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 21.1574623970403
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -13035,6 +13539,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 68.2099803183862
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 7.542769252795
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -13193,6 +13703,12 @@
 				"year": 2025,
 				"value": 65.6959754817175
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 16.2081043488942
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -13343,6 +13859,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 60.1444408877188
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 12.6916264748788
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -13501,6 +14023,12 @@
 				"year": 2025,
 				"value": 62.4850657108722
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 23.609550812247
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -13615,6 +14143,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 68.4281617563294
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 7.37657146047502
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -13782,6 +14316,12 @@
 				"year": 2025,
 				"value": 60.5238144314681
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.44918716140232
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -13938,6 +14478,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 69.397121098505
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.58114314727287
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -14096,6 +14642,12 @@
 				"year": 2025,
 				"value": 66.5050493891018
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 15.9770103398231
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -14246,6 +14798,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 63.2446962834167
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 25.0981380733118
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -14413,6 +14971,12 @@
 				"year": 2025,
 				"value": 73.1359294908229
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.57907476972342
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -14569,6 +15133,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.0502016611947
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.75359341712725
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -14727,6 +15297,12 @@
 				"year": 2025,
 				"value": 58.7675052627879
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 29.9940966737423
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -14877,6 +15453,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 60.7212559059561
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.02095116077232
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -15035,6 +15617,12 @@
 				"year": 2025,
 				"value": 62.1262174976691
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 5.96557151306138
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -15191,6 +15779,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 64.12560434355
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.37709648006975
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -15349,6 +15943,12 @@
 				"year": 2025,
 				"value": 61.2604724940197
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.37509387237753
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -15499,6 +16099,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 58.6758755051127
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.45428004270273
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -15657,6 +16263,12 @@
 				"year": 2025,
 				"value": 69.9434161311978
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 11.720639791993
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -15802,6 +16414,12 @@
 				"year": 2025,
 				"value": 68.3616500997242
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 12.7100800151323
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -15922,6 +16540,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 69.465114111118
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 20.3304188408974
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -16080,6 +16704,12 @@
 				"year": 2025,
 				"value": 78.8520272518679
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.17490130225807
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -16237,6 +16867,12 @@
 				"year": 2025,
 				"value": 74.4302412204078
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 9.51366959594428
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -16381,6 +17017,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 61.8599038863176
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 9.00270150466414
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -16539,6 +17181,12 @@
 				"year": 2025,
 				"value": 65.3522769555949
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.80805045518916
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -16695,6 +17343,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 63.9693196958571
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 10.4430002937898
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -16853,6 +17507,12 @@
 				"year": 2025,
 				"value": 72.7911340057397
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 9.963696717717
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -17004,6 +17664,12 @@
 				"year": 2025,
 				"value": 64.3976774322169
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 21.3753488835726
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -17136,6 +17802,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.8244706869233
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 12.4747139630238
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -17294,6 +17966,12 @@
 				"year": 2025,
 				"value": 57.5847038127752
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.33493509045042
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -17450,6 +18128,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 62.0174673431431
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.88046584377219
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -17608,6 +18292,12 @@
 				"year": 2025,
 				"value": 64.7728411040496
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 20.7219454695688
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -17765,6 +18455,12 @@
 				"year": 2025,
 				"value": 68.4417083606742
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 15.8123957037476
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -17915,6 +18611,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 62.6176992477714
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 22.1950582635891
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -18073,6 +18775,12 @@
 				"year": 2025,
 				"value": 67.961224926358
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 5.19156895615632
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -18229,6 +18937,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 66.3502201491149
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.45030687649506
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -18387,6 +19101,12 @@
 				"year": 2025,
 				"value": 50.2177825304504
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 36.0110586578337
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -18513,6 +19233,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 63.607990439589
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 16.8576673952236
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -18671,6 +19397,12 @@
 				"year": 2025,
 				"value": 63.8255082349631
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 18.2940089675043
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -18822,6 +19554,12 @@
 				"year": 2025,
 				"value": 59.287103305868
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 19.6547783725266
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -18930,6 +19668,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 57.5894396566864
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.47289998087395
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -19088,6 +19832,12 @@
 				"year": 2025,
 				"value": 61.2300865442919
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.87569593737942
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -19232,6 +19982,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 64.9465125805564
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 18.5237163487965
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -19390,6 +20146,12 @@
 				"year": 2025,
 				"value": 51.8430177379526
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.36307876540972
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -19546,6 +20308,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 68.3991436163161
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 7.52222015681565
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -19704,6 +20472,12 @@
 				"year": 2025,
 				"value": 63.0087145659776
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 5.43106536635296
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -19861,6 +20635,12 @@
 				"year": 2025,
 				"value": 71.1962626401129
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 15.0947982498785
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -20006,6 +20786,12 @@
 				"year": 2025,
 				"value": 67.9861278579713
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 10.7888058244623
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -20141,6 +20927,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 54.368691104313
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.24673388253332
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -20308,6 +21100,12 @@
 				"year": 2025,
 				"value": 66.5599875322009
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 20.5407907884966
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -20464,6 +21262,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 71.3483108415771
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 14.1145544022434
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -20622,6 +21426,12 @@
 				"year": 2025,
 				"value": 76.0052371638511
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.95821974187994
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -20778,6 +21588,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 57.284943484392
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.58857988227872
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -20936,6 +21752,12 @@
 				"year": 2025,
 				"value": 67.3875047462275
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.52143438004228
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -21092,6 +21914,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 70.6576531919455
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.03318142685505
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -21250,6 +22078,12 @@
 				"year": 2025,
 				"value": 53.0975927499069
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.73388102426795
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -21406,6 +22240,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 59.5563138000589
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.79304753450455
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -21564,6 +22404,12 @@
 				"year": 2025,
 				"value": 67.1328635811101
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 11.7777220967518
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -21714,6 +22560,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 51.1556359804599
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.61799886961133
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -21881,6 +22733,12 @@
 				"year": 2025,
 				"value": 56.4107403158649
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.06953631021894
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -22037,6 +22895,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.989799218038
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 5.69755099606108
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -22195,6 +23059,12 @@
 				"year": 2025,
 				"value": 64.1971668222159
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 20.8687702211484
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -22346,6 +23216,12 @@
 				"year": 2025,
 				"value": 64.9958625811412
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 19.080223244558
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -22496,6 +23372,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.3238393696021
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.62418872502616
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -22653,6 +23535,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 59.8353498815018
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.01026984324976
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -22814,6 +23702,12 @@
 				"year": 2025,
 				"value": 64.5131503861746
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 17.6093066526984
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -22964,6 +23858,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 72.9926305228083
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.6870391801832
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -23122,6 +24022,12 @@
 				"year": 2025,
 				"value": 65.8167820232329
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 9.65704983976816
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -23278,6 +24184,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 66.9193717786258
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 9.46656075708863
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -23436,6 +24348,12 @@
 				"year": 2025,
 				"value": 69.5985343316871
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 11.9487370116652
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -23574,6 +24492,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 63.2663270220055
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.58807085542753
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -23732,6 +24656,12 @@
 				"year": 2025,
 				"value": 67.1371327086275
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 5.72400622201301
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -23889,6 +24819,12 @@
 				"year": 2025,
 				"value": 59.3940359691365
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.36186248416949
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -24045,6 +24981,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 64.7857886031795
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 20.75382733073
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -24221,6 +25163,12 @@
 				"year": 2025,
 				"value": 63.487486977595
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 25.2728697076413
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -24365,6 +25313,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 58.5574375946285
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.85167300191802
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -24516,6 +25470,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 62.3433903356215
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 24.9426193763087
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -24674,6 +25634,12 @@
 				"year": 2025,
 				"value": 70.2307147912243
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 11.8329794762916
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -24824,6 +25790,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 64.9102123853615
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.71858395975233
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -24981,6 +25953,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 83.2988889044008
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 1.70081503237359
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -25148,6 +26126,12 @@
 				"year": 2025,
 				"value": 64.3063104900056
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 20.1384043774039
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -25305,6 +26289,12 @@
 				"year": 2025,
 				"value": 62.6916885968224
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 23.050411277315
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -25455,6 +26445,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.1807279594291
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 17.7917873832619
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -25613,6 +26609,12 @@
 				"year": 2025,
 				"value": 58.9563885887628
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.02416636497719
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -25769,6 +26771,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 73.322138816712
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.05678115419144
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -25927,6 +26935,12 @@
 				"year": 2025,
 				"value": 59.7737065303516
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.66871341943646
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -26084,6 +27098,12 @@
 				"year": 2025,
 				"value": 71.4886069657362
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.74539176146741
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -26234,6 +27254,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 56.3996454076943
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.38701560944597
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -26392,6 +27418,12 @@
 				"year": 2025,
 				"value": 62.3807116187636
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 20.9127967529707
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -26542,6 +27574,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 74.0997998552144
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 14.2110377720053
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -26709,6 +27747,12 @@
 				"year": 2025,
 				"value": 63.3065856994944
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 22.2111482273631
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -26875,6 +27919,12 @@
 				"year": 2025,
 				"value": 65.3936222540727
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 19.0363041680723
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -27025,6 +28075,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 59.0656312380992
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.28364812148674
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -27183,6 +28239,12 @@
 				"year": 2025,
 				"value": 65.0011169856281
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 23.1484101571226
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -27327,6 +28389,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 58.6110270161317
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.64616639269883
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -27485,6 +28553,12 @@
 				"year": 2025,
 				"value": 50.8286500268459
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.61747052453864
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -27635,6 +28709,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 66.4713604751114
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.19129483472689
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -27793,6 +28873,12 @@
 				"year": 2025,
 				"value": 58.9383948592756
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.07528935608692
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -27943,6 +29029,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 58.6000649312811
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.94457532444829
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -28101,6 +29193,12 @@
 				"year": 2025,
 				"value": 67.3065820564376
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 8.30913126582456
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -28258,6 +29356,12 @@
 				"year": 2025,
 				"value": 70.7146597454636
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 14.4798852537395
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -28384,6 +29488,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 66.720081728538
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.83918173649451
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -28542,6 +29652,12 @@
 				"year": 2025,
 				"value": 62.6582782321557
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.34585495321508
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -28699,6 +29815,12 @@
 				"year": 2025,
 				"value": 72.3463061178755
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 11.6787074880748
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -28831,6 +29953,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 51.9194327857871
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.11894758567596
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -28998,6 +30126,12 @@
 				"year": 2025,
 				"value": 56.0978678541175
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.4768505984781
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -29155,6 +30289,12 @@
 				"year": 2025,
 				"value": 69.5683912436415
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 16.017421033045
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -29311,6 +30451,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 60.0650743804879
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.06783017305471
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -29478,6 +30624,12 @@
 				"year": 2025,
 				"value": 61.6556369590083
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 5.22929748839898
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -29635,6 +30787,12 @@
 				"year": 2025,
 				"value": 63.97368499632
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.80778752954433
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -29785,6 +30943,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 66.5014815881965
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 9.9376502855836
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -29943,6 +31107,12 @@
 				"year": 2025,
 				"value": 58.2295502303792
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.85064872472094
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -30099,6 +31269,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 68.4061556592084
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 10.5709408311479
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -30257,6 +31433,12 @@
 				"year": 2025,
 				"value": 69.5822400746449
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 12.9254775320864
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -30413,6 +31595,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 59.9346818373367
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 7.04277286135693
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -30574,6 +31762,12 @@
 				"year": 2025,
 				"value": 54.6177440733061
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.04176368097549
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -30731,6 +31925,12 @@
 				"year": 2025,
 				"value": 67.3338750332491
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 18.9717382539904
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -30887,6 +32087,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 54.6603355842283
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.22850221312123
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -31054,6 +32260,12 @@
 				"year": 2025,
 				"value": 64.5137336553454
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 18.387224828496
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -31204,6 +32416,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.8210446575874
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 16.2818995428825
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -31361,6 +32579,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 62.6402164463704
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.06931428854572
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -31528,6 +32752,12 @@
 				"year": 2025,
 				"value": 66.8784932624131
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 12.2502489379482
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -31684,6 +32914,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 65.0657490913457
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 10.0182554931645
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -31842,6 +33078,12 @@
 				"year": 2025,
 				"value": 75.8091714487063
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 10.1077217356287
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -31950,6 +33192,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 60.4182389750233
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 23.1237780564189
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -32083,6 +33331,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 67.6494468271179
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 9.49453578200007
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -32240,6 +33494,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 57.6594195763928
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 4.3788357515164
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -32407,6 +33667,12 @@
 				"year": 2025,
 				"value": 55.8699810539131
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.06890356646976
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -32558,6 +33824,12 @@
 				"year": 2025,
 				"value": 69.5035914283581
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 10.5099678936758
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -32684,6 +33956,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 56.4342536792281
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.54534547337627
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
@@ -32851,6 +34129,12 @@
 				"year": 2025,
 				"value": 67.3915844500713
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 6.88503097027824
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -33008,6 +34292,12 @@
 				"year": 2025,
 				"value": 57.0289283401009
 			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 2.00005028777659
+			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",
 				"name": "Life expectancy at birth",
@@ -33164,6 +34454,12 @@
 				"name": "Population ages 15-64 percent",
 				"year": 2025,
 				"value": 56.154938455689
+			},
+			"age65PlusPercent": {
+				"code": "SP.POP.65UP.TO.ZS",
+				"name": "Population ages 65 and above percent",
+				"year": 2025,
+				"value": 3.56147602516578
 			},
 			"lifeExpectancy": {
 				"code": "SP.DYN.LE00.IN",

@@ -395,7 +395,7 @@
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
 			"updated": "2025-04-29",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/burundi-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bdi.html"
 		},
 		"uk": {
 			"destination": "Burundi",
@@ -500,11 +500,11 @@
 		"countryCode": "BQ",
 		"countryName": "Bonaire, Saint Eustatius and Saba",
 		"us": {
-			"destination": "Saba and Sint Eustatius",
+			"destination": "Bonaire",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-10-01",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.xqx.html"
+			"updated": "2026-08-20",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bes.html"
 		},
 		"uk": {
 			"destination": "Bonaire/St Eustatius/Saba",
@@ -1125,7 +1125,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2023-07-31",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/eritrea-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.eri.html"
 		},
 		"uk": {
 			"destination": "Eritrea",
@@ -1169,7 +1169,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-25T15:13:20Z",
+			"updatedAt": "2026-10-01T17:05:40Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/ethiopia"
 		}
 	},
@@ -1429,7 +1429,7 @@
 			"destination": "Guadeloupe",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-08-20",
+			"updated": "2026-10-02",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.glp.html"
 		},
 		"uk": {
@@ -2302,7 +2302,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2026-08-27",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/montenegro-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mne.html"
 		},
 		"uk": {
 			"destination": "Montenegro",
@@ -2443,7 +2443,7 @@
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
 			"updated": "2026-09-04",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/macau-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mac.html"
 		},
 		"uk": {
 			"destination": "Macao",
@@ -2594,7 +2594,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-28T19:33:06Z",
+			"updatedAt": "2026-10-01T14:16:05Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/mexico"
 		}
 	},
@@ -2780,7 +2780,7 @@
 		"uk": {
 			"destination": "Nepal",
 			"alertStatus": [],
-			"updatedAt": "2026-09-11T13:52:03Z",
+			"updatedAt": "2026-10-01T12:09:36Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/nepal"
 		}
 	},
@@ -3081,7 +3081,7 @@
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
 			"updated": "2026-08-28",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/qatar-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.qat.html"
 		},
 		"uk": {
 			"destination": "Qatar",
@@ -3782,7 +3782,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-29T09:26:37Z",
+			"updatedAt": "2026-10-01T15:28:23Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/tanzania"
 		}
 	},
@@ -3802,7 +3802,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-15T14:41:54Z",
+			"updatedAt": "2026-10-02T08:30:25Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/ukraine"
 		}
 	},
@@ -4010,7 +4010,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2026-08-25",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/kosovo-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.xks.html"
 		},
 		"uk": {
 			"destination": "Kosovo",
