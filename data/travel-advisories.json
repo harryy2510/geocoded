@@ -2217,7 +2217,7 @@
 			"destination": "Latvia",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-04-01",
+			"updated": "2026-10-04",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lva.html"
 		},
 		"uk": {
@@ -2426,7 +2426,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2026-07-29",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mng.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mongolia-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Mongolia",
@@ -2502,7 +2502,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2026-07-07",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.msr.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/montserrat-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Montserrat",
@@ -3568,7 +3568,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2026-03-09",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tgo.html"
+			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/togo-travel-advisory.html"
 		},
 		"uk": {
 			"destination": "Togo",
