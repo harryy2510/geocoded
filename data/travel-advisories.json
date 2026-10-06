@@ -690,13 +690,7 @@
 	{
 		"countryCode": "CG",
 		"countryName": "Republic of the Congo",
-		"us": {
-			"destination": "Republic of the Congo",
-			"level": 2,
-			"levelLabel": "Exercise Increased Caution",
-			"updated": "2024-10-02",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/republic-of-the-congo-travel-advisory.html"
-		},
+		"us": null,
 		"uk": {
 			"destination": "Congo",
 			"alertStatus": [
@@ -1863,9 +1857,9 @@
 		"countryName": "Kenya",
 		"us": {
 			"destination": "Kenya",
-			"level": 1,
-			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2026-10-05",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-07-28",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ken.html"
 		},
 		"uk": {
@@ -3683,13 +3677,7 @@
 	{
 		"countryCode": "TO",
 		"countryName": "Tonga",
-		"us": {
-			"destination": "Tonga",
-			"level": 1,
-			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2024-12-02",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/tonga-travel-advisory.html"
-		},
+		"us": null,
 		"uk": {
 			"destination": "Tonga",
 			"alertStatus": [],
