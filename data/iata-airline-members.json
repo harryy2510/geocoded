@@ -1242,6 +1242,15 @@
 		"countryCode": "DZ"
 	},
 	{
+		"name": "Drukair - Royal Bhutan Airlines",
+		"iataDesignator": "KB",
+		"accountingCode": "787",
+		"icaoCode": "DRK",
+		"countryName": "Bhutan",
+		"controlledDuplicate": false,
+		"countryCode": "BT"
+	},
+	{
 		"name": "Eastar Jet",
 		"iataDesignator": "ZE",
 		"accountingCode": "839",
