@@ -133,8 +133,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 34.0425531914894
+				"year": 2024,
+				"value": 38.9102564102564
 			}
 		}
 	},
@@ -296,8 +296,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 4.46775556181357
+				"year": 2024,
+				"value": 4.56547451422135
 			}
 		}
 	},
@@ -406,7 +406,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2024,
-				"value": -6.60118564073726
+				"value": -6.60118564073725
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -459,8 +459,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 1.85278199408184
+				"year": 2024,
+				"value": 1.85431519555985
 			}
 		}
 	},
@@ -569,7 +569,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.36873527521954
+				"value": 1.36873527521953
 			},
 			"internetUsersPercent": {
 				"code": "IT.NET.USER.ZS",
@@ -616,8 +616,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 18.0134090909091
+				"year": 2024,
+				"value": 17.851545998392
 			}
 		}
 	},
@@ -735,7 +735,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.14618551167388
+				"value": 2.14618551167387
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -788,8 +788,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 28.7919708029197
+				"year": 2024,
+				"value": 34.3430656934307
 			}
 		}
 	},
@@ -898,7 +898,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.30693341072904
+				"value": 3.30693341072903
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -951,8 +951,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 11.6183158247114
+				"year": 2024,
+				"value": 11.8470605757569
 			}
 		}
 	},
@@ -1123,8 +1123,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 52.0912696719339
+				"year": 2024,
+				"value": 51.152931739793
 			}
 		}
 	},
@@ -1295,8 +1295,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 10.3212951412107
+				"year": 2024,
+				"value": 17.0927361155264
 			}
 		}
 	},
@@ -1428,8 +1428,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 85.2
+				"year": 2024,
+				"value": 79.6482412060301
 			}
 		}
 	},
@@ -1585,8 +1585,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 47.2402653902084
+				"year": 2024,
+				"value": 47.2744789142026
 			}
 		}
 	},
@@ -1742,8 +1742,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 17.4213145571644
+				"year": 2024,
+				"value": 17.3650515387888
 			}
 		}
 	},
@@ -1893,8 +1893,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 2.33333333333333
+				"year": 2024,
+				"value": 2.72222222222222
 			}
 		}
 	},
@@ -2065,8 +2065,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 14.1119540229885
+				"year": 2024,
+				"value": 14.5574107683001
 			}
 		}
 	},
@@ -2174,8 +2174,8 @@
 			"inflationConsumerPricesPercent": {
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
-				"year": 2023,
-				"value": 6.1059011284828
+				"year": 2025,
+				"value": 3.97821271880433
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -2228,8 +2228,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 42.7326171875
+				"year": 2024,
+				"value": 42.2078125
 			}
 		}
 	},
@@ -2391,8 +2391,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 14.6511627906977
+				"year": 2024,
+				"value": 14.6171693735499
 			}
 		}
 	},
@@ -2554,8 +2554,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 14.4899215263887
+				"year": 2024,
+				"value": 14.399708074057
 			}
 		}
 	},
@@ -2664,7 +2664,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.46705543774613
+				"value": 2.46605755272817
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -2711,8 +2711,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 22.604446776415
+				"year": 2024,
+				"value": 21.9884292826641
 			}
 		}
 	},
@@ -2821,7 +2821,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": -0.586235316330579
+				"value": -0.586235316330578
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -2874,8 +2874,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 22.172514619883
+				"year": 2024,
+				"value": 12.269115497076
 			}
 		}
 	},
@@ -3037,8 +3037,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 36.2196020633751
+				"year": 2024,
+				"value": 36.3522476050111
 			}
 		}
 	},
@@ -3147,7 +3147,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": -0.137708855447902
+				"value": -0.137708855447901
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -3200,8 +3200,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.95
+				"year": 2024,
+				"value": 4.8625
 			}
 		}
 	},
@@ -3310,7 +3310,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 34.1339985744832
+				"value": 34.1339985744831
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -3363,7 +3363,7 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
+				"year": 2024,
 				"value": 10.8894080996885
 			}
 		}
@@ -3473,7 +3473,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.10155247902978
+				"value": 1.10155247902977
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -3526,8 +3526,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 26.4734835047889
+				"year": 2024,
+				"value": 28.1185704150408
 			}
 		}
 	},
@@ -3674,8 +3674,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 18.5185185185185
+				"year": 2024,
+				"value": 14.4444444444444
 			}
 		}
 	},
@@ -3784,7 +3784,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": -0.302994414446762
+				"value": -0.302994414446814
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -3837,7 +3837,7 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
+				"year": 2024,
 				"value": 72.1062618595825
 			}
 		}
@@ -3947,7 +3947,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 19.517120804733
+				"value": 19.5171208047329
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -4000,8 +4000,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 46.3457431920982
+				"year": 2024,
+				"value": 50.194932893704
 			}
 		}
 	},
@@ -4172,8 +4172,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 58.9818729765235
+				"year": 2024,
+				"value": 58.5468405650061
 			}
 		}
 	},
@@ -4281,8 +4281,8 @@
 			"inflationConsumerPricesPercent": {
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
-				"year": 2024,
-				"value": 0.409162489083286
+				"year": 2025,
+				"value": 1.10879778651364
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -4329,7 +4329,7 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
+				"year": 2024,
 				"value": 50.9350649350649
 			}
 		}
@@ -4492,8 +4492,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 71.60513896172
+				"year": 2024,
+				"value": 70.3518615626639
 			}
 		}
 	},
@@ -4611,7 +4611,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.6597506179431
+				"value": 2.65985038423427
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -4664,8 +4664,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 26.2908263194114
+				"year": 2024,
+				"value": 27.7560743211053
 			}
 		}
 	},
@@ -4827,8 +4827,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 43.4080686559958
+				"year": 2024,
+				"value": 44.0886114614536
 			}
 		}
 	},
@@ -4990,8 +4990,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 54.5186321788689
+				"year": 2024,
+				"value": 57.9824638316528
 			}
 		}
 	},
@@ -5147,8 +5147,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 39.4617117321106
+				"year": 2024,
+				"value": 41.9662373274773
 			}
 		}
 	},
@@ -5319,8 +5319,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 54.1898572594341
+				"year": 2024,
+				"value": 61.5213338920624
 			}
 		}
 	},
@@ -5482,8 +5482,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 35.6560403223217
+				"year": 2024,
+				"value": 72.4604160647212
 			}
 		}
 	},
@@ -5645,8 +5645,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 64.1317715959004
+				"year": 2024,
+				"value": 63.9525622254758
 			}
 		}
 	},
@@ -5802,8 +5802,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 32.3827380818297
+				"year": 2024,
+				"value": 32.0223196218238
 			}
 		}
 	},
@@ -5912,7 +5912,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.125038772593104
+				"value": 0.125038772593103
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -5965,8 +5965,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 7.85551603773585
+				"year": 2024,
+				"value": 12.1224842767296
 			}
 		}
 	},
@@ -6084,7 +6084,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 4.21293601694293
+				"value": 4.21294031801535
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -6137,8 +6137,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 25.0116461113584
+				"year": 2024,
+				"value": 24.4824758091963
 			}
 		}
 	},
@@ -6300,8 +6300,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 42.6741130925938
+				"year": 2024,
+				"value": 40.7441771910897
 			}
 		}
 	},
@@ -6410,7 +6410,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.0595646916565403
+				"value": 0.0595646916565402
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -6463,8 +6463,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 24.0319389958256
+				"year": 2024,
+				"value": 24.0239619693211
 			}
 		}
 	},
@@ -6626,8 +6626,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 52.7661596214511
+				"year": 2024,
+				"value": 53.709004055881
 			}
 		}
 	},
@@ -6789,8 +6789,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 60.3991382687035
+				"year": 2024,
+				"value": 59.060917721519
 			}
 		}
 	},
@@ -6955,8 +6955,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 31.233140655106
+				"year": 2024,
+				"value": 34.8765895953757
 			}
 		}
 	},
@@ -7065,7 +7065,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.34333897365163
+				"value": 2.34333897365162
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -7118,8 +7118,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 11.5682382133995
+				"year": 2024,
+				"value": 12.5161290322581
 			}
 		}
 	},
@@ -7228,7 +7228,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2019,
-				"value": 2.62220783425059
+				"value": 2.62220783425058
 			},
 			"internetUsersPercent": {
 				"code": "IT.NET.USER.ZS",
@@ -7257,7 +7257,7 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
+				"year": 2024,
 				"value": 0.157657657657658
 			}
 		}
@@ -7376,7 +7376,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.126528851920189
+				"value": 0.126528851920188
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -7429,8 +7429,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 18.6655844155844
+				"year": 2024,
+				"value": 18.6006493506494
 			}
 		}
 	},
@@ -7539,7 +7539,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.45996367838865
+				"value": 2.45996367838864
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -7586,8 +7586,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 34.7623883740408
+				"year": 2024,
+				"value": 38.3552496683971
 			}
 		}
 	},
@@ -7743,8 +7743,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 32.6789342643734
+				"year": 2024,
+				"value": 32.8437741464671
 			}
 		}
 	},
@@ -7853,7 +7853,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": -0.313731799533481
+				"value": -0.31373179953348
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -7900,8 +7900,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.260724762726488
+				"year": 2024,
+				"value": 0.255392579810181
 			}
 		}
 	},
@@ -8010,7 +8010,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.89367372703044
+				"value": 1.8900606245861
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -8057,8 +8057,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 15.7815
+				"year": 2024,
+				"value": 16.01475
 			}
 		}
 	},
@@ -8208,8 +8208,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 63.8266666666667
+				"year": 2024,
+				"value": 76.4181091877497
 			}
 		}
 	},
@@ -8318,7 +8318,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.8731176804813
+				"value": 3.87311768048129
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -8371,8 +8371,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 44.9887775472934
+				"year": 2024,
+				"value": 46.6998436865249
 			}
 		}
 	},
@@ -8534,8 +8534,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.830314224054683
+				"year": 2024,
+				"value": 0.710417593859951
 			}
 		}
 	},
@@ -8697,8 +8697,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 49.5450958286359
+				"year": 2024,
+				"value": 49.6878321790949
 			}
 		}
 	},
@@ -8807,7 +8807,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 4.82920753628342
+				"value": 4.82894582449954
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -8860,8 +8860,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 57.0652937046572
+				"year": 2024,
+				"value": 57.2471331617131
 			}
 		}
 	},
@@ -8970,7 +8970,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 14.0735136645934
+				"value": 14.0735136645933
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -9023,8 +9023,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.0451855944547692
+				"year": 2024,
+				"value": 0.0041187402682204
 			}
 		}
 	},
@@ -9189,8 +9189,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 8.63010013352237
+				"year": 2024,
+				"value": 11.9867549668874
 			}
 		}
 	},
@@ -9299,7 +9299,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.699932857627
+				"value": 2.67326741144651
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -9352,8 +9352,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 37.1925889548355
+				"year": 2024,
+				"value": 38.2293255576479
 			}
 		}
 	},
@@ -9462,7 +9462,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 13.2296432836809
+				"value": 13.2296432836808
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -9515,8 +9515,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 14.9308975782695
+				"year": 2024,
+				"value": 23.8393996870964
 			}
 		}
 	},
@@ -9625,7 +9625,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.337874659400574
+				"value": 0.332787049734142
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -9672,8 +9672,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 73.7235162521384
+				"year": 2024,
+				"value": 74.1546052631579
 			}
 		}
 	},
@@ -9782,7 +9782,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": -1.38326833934224
+				"value": -1.38326833934223
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -9829,8 +9829,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 63.4953475643131
+				"year": 2024,
+				"value": 61.7449408171058
 			}
 		}
 	},
@@ -9948,7 +9948,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2022,
-				"value": 5.40874375479067
+				"value": 5.40874375479066
 			},
 			"internetUsersPercent": {
 				"code": "IT.NET.USER.ZS",
@@ -9989,8 +9989,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 92.1571428571429
+				"year": 2024,
+				"value": 92.0684736091298
 			}
 		}
 	},
@@ -10128,7 +10128,7 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
+				"year": 2024,
 				"value": 0.0583941605839416
 			}
 		}
@@ -10238,7 +10238,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.943770212469976
+				"value": 0.943824761520197
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -10285,8 +10285,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 32.4764820484275
+				"year": 2024,
+				"value": 32.8520270897115
 			}
 		}
 	},
@@ -10395,7 +10395,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.76766609003481
+				"value": 1.7676660900348
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -10448,8 +10448,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 91.1823650405558
+				"year": 2024,
+				"value": 91.4426980246051
 			}
 		}
 	},
@@ -10558,7 +10558,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.88306881626
+				"value": 3.88306881625999
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -10605,8 +10605,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 13.2907130161617
+				"year": 2024,
+				"value": 13.4972926052991
 			}
 		}
 	},
@@ -10715,7 +10715,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.610311975893833
+				"value": 0.610311975893832
 			},
 			"internetUsersPercent": {
 				"code": "IT.NET.USER.ZS",
@@ -10762,8 +10762,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 52.0588235294118
+				"year": 2024,
+				"value": 51.453488372093
 			}
 		}
 	},
@@ -10872,7 +10872,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.8692132193969
+				"value": 3.86921321939689
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -10925,8 +10925,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 40.6159159591308
+				"year": 2024,
+				"value": 44.6179306375018
 			}
 		}
 	},
@@ -11106,8 +11106,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 35.1921958573042
+				"year": 2024,
+				"value": 30.8554803039559
 			}
 		}
 	},
@@ -11360,8 +11360,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.000535997076379583
+				"year": 2024,
+				"value": 0.000535998382259428
 			}
 		}
 	},
@@ -11523,8 +11523,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 22.2792391304348
+				"year": 2024,
+				"value": 21.3438735177866
 			}
 		}
 	},
@@ -11633,7 +11633,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.54630163142885
+				"value": 3.57096573355343
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -11686,8 +11686,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 24.6988442129253
+				"year": 2024,
+				"value": 20.0403304574312
 			}
 		}
 	},
@@ -11858,8 +11858,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 86.3935828877005
+				"year": 2024,
+				"value": 86.0909398784379
 			}
 		}
 	},
@@ -11968,7 +11968,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.48209745378857
+				"value": 2.48162694360829
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -12021,8 +12021,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 30.2699767261443
+				"year": 2024,
+				"value": 36.9495733126455
 			}
 		}
 	},
@@ -12140,7 +12140,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.48841591086169
+				"value": 1.48841591086168
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -12193,8 +12193,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 32.5961179544606
+				"year": 2024,
+				"value": 33.1172079134005
 			}
 		}
 	},
@@ -12338,8 +12338,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 51.8518518518518
+				"year": 2024,
+				"value": 52.2550831792976
 			}
 		}
 	},
@@ -12501,8 +12501,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 69.5124466571835
+				"year": 2024,
+				"value": 74.8161450924609
 			}
 		}
 	},
@@ -12664,8 +12664,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 87.0878369802027
+				"year": 2024,
+				"value": 87.0740740740741
 			}
 		}
 	},
@@ -12981,8 +12981,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 56.2732147645008
+				"year": 2024,
+				"value": 52.8335865582268
 			}
 		}
 	},
@@ -13091,7 +13091,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.69153459605729
+				"value": 3.69153459605728
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -13144,8 +13144,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 34.785739814153
+				"year": 2024,
+				"value": 34.7548248749107
 			}
 		}
 	},
@@ -13307,8 +13307,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 12.2630624092888
+				"year": 2024,
+				"value": 13.4506531204644
 			}
 		}
 	},
@@ -13417,7 +13417,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 4.41198445905562
+				"value": 4.41198445905566
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -13470,8 +13470,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 22.4484341442034
+				"year": 2024,
+				"value": 22.8062678062678
 			}
 		}
 	},
@@ -13580,7 +13580,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.9133344329508
+				"value": 1.91333443295079
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -13633,8 +13633,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 47.7220336902463
+				"year": 2024,
+				"value": 50.6696830671111
 			}
 		}
 	},
@@ -13743,7 +13743,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.21044788475857
+				"value": 2.21044788475856
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -13790,8 +13790,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 11.5259108724053
+				"year": 2024,
+				"value": 11.9747423428654
 			}
 		}
 	},
@@ -13900,7 +13900,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.0414132155654
+				"value": 3.04141321556539
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -13953,8 +13953,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 6.46950092421442
+				"year": 2024,
+				"value": 6.83918669131238
 			}
 		}
 	},
@@ -14074,8 +14074,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 6.07017543859649
+				"year": 2024,
+				"value": 6.41174589919058
 			}
 		}
 	},
@@ -14237,8 +14237,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 24.5390304689576
+				"year": 2024,
+				"value": 24.436043441556
 			}
 		}
 	},
@@ -14356,7 +14356,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.303454715219382
+				"value": 0.303454715219381
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -14409,8 +14409,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 1.90035242899592
+				"year": 2024,
+				"value": 1.61046230391818
 			}
 		}
 	},
@@ -14572,8 +14572,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 6.64923611710324
+				"year": 2024,
+				"value": 6.62619414483821
 			}
 		}
 	},
@@ -14729,8 +14729,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.528744421303184
+				"year": 2024,
+				"value": 0.600218189031042
 			}
 		}
 	},
@@ -14839,7 +14839,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.5316682765282
+				"value": 1.5316735709312
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -14892,8 +14892,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 32.8944947923712
+				"year": 2024,
+				"value": 31.8188489111322
 			}
 		}
 	},
@@ -15011,7 +15011,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 4.00459048079239
+				"value": 4.00459048079238
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -15064,8 +15064,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 56.190757156048
+				"year": 2024,
+				"value": 56.5484764542936
 			}
 		}
 	},
@@ -15174,7 +15174,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.76646490894206
+				"value": 1.76646490894205
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -15227,8 +15227,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 1.09804716534901
+				"year": 2024,
+				"value": 0.796224970155641
 			}
 		}
 	},
@@ -15337,7 +15337,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.17253034260248
+				"value": 3.17253034260247
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -15384,8 +15384,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 68.3957811364628
+				"year": 2024,
+				"value": 68.3407407407407
 			}
 		}
 	},
@@ -15494,7 +15494,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 4.06912878540729
+				"value": 4.0693076061457
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -15547,8 +15547,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 6.21662477880402
+				"year": 2024,
+				"value": 6.62673874122022
 			}
 		}
 	},
@@ -15710,8 +15710,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 7.14337851929093
+				"year": 2024,
+				"value": 6.54546402502607
 			}
 		}
 	},
@@ -15873,8 +15873,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 43.0619759800589
+				"year": 2024,
+				"value": 37.6268978019488
 			}
 		}
 	},
@@ -15982,8 +15982,8 @@
 			"inflationConsumerPricesPercent": {
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
-				"year": 2024,
-				"value": 2.45545072159028
+				"year": 2025,
+				"value": 6.51130441863551
 			},
 			"internetUsersPercent": {
 				"code": "IT.NET.USER.ZS",
@@ -16030,8 +16030,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 1.45679012345679
+				"year": 2024,
+				"value": 1.3193588162762
 			}
 		}
 	},
@@ -16140,7 +16140,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.24909332306433
+				"value": 3.24909332306432
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -16193,8 +16193,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 16.9801182160129
+				"year": 2024,
+				"value": 17.7942985505696
 			}
 		}
 	},
@@ -16344,8 +16344,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 42.3076923076923
+				"year": 2024,
+				"value": 42.1455938697318
 			}
 		}
 	},
@@ -16471,8 +16471,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 49.5507017689561
+				"year": 2024,
+				"value": 64.0857902167594
 			}
 		}
 	},
@@ -16634,8 +16634,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 64.108606557377
+				"year": 2024,
+				"value": 64.3739754098361
 			}
 		}
 	},
@@ -16797,8 +16797,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.350729517396184
+				"year": 2024,
+				"value": 0.353535353535354
 			}
 		}
 	},
@@ -16948,8 +16948,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 52.4720833333333
+				"year": 2024,
+				"value": 53
 			}
 		}
 	},
@@ -17058,7 +17058,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 11.3879454675914
+				"value": 11.3789456104214
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -17111,8 +17111,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 1.31214516427751
+				"year": 2024,
+				"value": 1.29888876541838
 			}
 		}
 	},
@@ -17221,7 +17221,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 7.74226936553695
+				"value": 7.74226936553694
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -17274,8 +17274,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 71.4558058925477
+				"year": 2024,
+				"value": 56.6350519930676
 			}
 		}
 	},
@@ -17437,8 +17437,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 14.1867057673509
+				"year": 2024,
+				"value": 13.8044965786901
 			}
 		}
 	},
@@ -17547,7 +17547,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.02709512086274
+				"value": 2.02709512086273
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -17594,8 +17594,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 34.0491803278688
+				"year": 2024,
+				"value": 53.7540983606557
 			}
 		}
 	},
@@ -17733,8 +17733,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 41.875
+				"year": 2024,
+				"value": 36.8125
 			}
 		}
 	},
@@ -17843,7 +17843,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": -4.76386036960983
+				"value": -4.76386036960982
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -17896,8 +17896,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 34.0048496605238
+				"year": 2024,
+				"value": 34.3619463304235
 			}
 		}
 	},
@@ -18006,7 +18006,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 8.31564329402952
+				"value": 8.31564329402951
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -18059,8 +18059,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 78.1422342192691
+				"year": 2024,
+				"value": 66.1036129568106
 			}
 		}
 	},
@@ -18169,7 +18169,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 4.27011140706666
+				"value": 4.27011140706665
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -18222,7 +18222,7 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
+				"year": 2024,
 				"value": 1.13702239789196
 			}
 		}
@@ -18332,7 +18332,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.79170510860467
+				"value": 3.79132375529774
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -18385,8 +18385,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 35.2301501597444
+				"year": 2024,
+				"value": 35.3652340629494
 			}
 		}
 	},
@@ -18495,7 +18495,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.25723817871726
+				"value": 2.25723817871725
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -18542,7 +18542,7 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
+				"year": 2024,
 				"value": 34.4538272103664
 			}
 		}
@@ -18705,8 +18705,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 54.9959826450265
+				"year": 2024,
+				"value": 55.6064599067974
 			}
 		}
 	},
@@ -18868,8 +18868,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.123327687918433
+				"year": 2024,
+				"value": 0.116882821646567
 			}
 		}
 	},
@@ -18978,7 +18978,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.701902154839545
+				"value": 0.701902154839544
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -19031,8 +19031,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 12.9371068787811
+				"year": 2024,
+				"value": 12.760542236164
 			}
 		}
 	},
@@ -19274,7 +19274,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 7.75904124001159
+				"value": 7.75904124001158
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -19327,8 +19327,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 11.7370179167932
+				"year": 2024,
+				"value": 11.2626784087458
 			}
 		}
 	},
@@ -19437,7 +19437,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.89960910704956
+				"value": 3.89921045747158
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -19484,7 +19484,7 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
+				"year": 2024,
 				"value": 61.4869888475836
 			}
 		}
@@ -19599,8 +19599,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 24.8
+				"year": 2024,
+				"value": 23.3962264150943
 			}
 		}
 	},
@@ -19762,8 +19762,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 21.2962600550017
+				"year": 2024,
+				"value": 17.2677208662771
 			}
 		}
 	},
@@ -19913,8 +19913,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 52.2222222222222
+				"year": 2024,
+				"value": 53.646408839779
 			}
 		}
 	},
@@ -20023,7 +20023,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 4.07249176848348
+				"value": 4.07249176848347
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -20076,8 +20076,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 39.7101506740682
+				"year": 2024,
+				"value": 40.8144329896907
 			}
 		}
 	},
@@ -20239,8 +20239,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 10.896663634352
+				"year": 2024,
+				"value": 8.67061687114302
 			}
 		}
 	},
@@ -20402,8 +20402,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 42.4023779245254
+				"year": 2024,
+				"value": 41.9584629291985
 			}
 		}
 	},
@@ -20512,7 +20512,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 8.60536487369695
+				"value": 8.60536487369694
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -20565,8 +20565,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 9.09172405879304
+				"year": 2024,
+				"value": 9.09741565838072
 			}
 		}
 	},
@@ -20675,7 +20675,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.333311677308542
+				"value": 0.333311677308541
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -20849,8 +20849,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 52.9565217391304
+				"year": 2024,
+				"value": 53.3041575492341
 			}
 		}
 	},
@@ -21021,8 +21021,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.287611138061512
+				"year": 2024,
+				"value": 0.986222955273115
 			}
 		}
 	},
@@ -21193,8 +21193,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 1.4375
+				"year": 2024,
+				"value": 1.49135332381406
 			}
 		}
 	},
@@ -21356,8 +21356,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 19.4742113169755
+				"year": 2024,
+				"value": 19.145
 			}
 		}
 	},
@@ -21466,7 +21466,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 4.00578494118752
+				"value": 4.00578494118751
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -21519,8 +21519,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 2.75167785234899
+				"year": 2024,
+				"value": 12.4832214765101
 			}
 		}
 	},
@@ -21682,8 +21682,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 22.4406024607552
+				"year": 2024,
+				"value": 21.9951209164192
 			}
 		}
 	},
@@ -21792,7 +21792,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.80668650726485
+				"value": 3.80957950037393
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -21845,8 +21845,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 33.5959176419147
+				"year": 2024,
+				"value": 34.1538414053859
 			}
 		}
 	},
@@ -21955,7 +21955,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.38060872293692
+				"value": 1.38060872293691
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -22008,8 +22008,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 57.7190381981434
+				"year": 2024,
+				"value": 57.6616648911886
 			}
 		}
 	},
@@ -22118,7 +22118,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 4.3684695014615
+				"value": 4.36846950146149
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -22171,8 +22171,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 45.8130349195046
+				"year": 2024,
+				"value": 41.3412472341616
 			}
 		}
 	},
@@ -22334,8 +22334,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 7.80511120018463
+				"year": 2024,
+				"value": 9.7700688700215
 			}
 		}
 	},
@@ -22491,8 +22491,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 45.8271334792123
+				"year": 2024,
+				"value": 48.0517872523686
 			}
 		}
 	},
@@ -22654,8 +22654,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.822957290597616
+				"year": 2024,
+				"value": 0.836835872740191
 			}
 		}
 	},
@@ -22826,8 +22826,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 23.2078900271199
+				"year": 2024,
+				"value": 18.9475279159393
 			}
 		}
 	},
@@ -22936,7 +22936,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.08132127098376
+				"value": 2.08132127098375
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -23099,7 +23099,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.2595766451366
+				"value": 3.20363967869003
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -23146,8 +23146,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 11.0574428274428
+				"year": 2024,
+				"value": 10.955746955747
 			}
 		}
 	},
@@ -23256,7 +23256,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.05562484410077
+				"value": 3.03967027305512
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -23303,8 +23303,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 33.5009745518434
+				"year": 2024,
+				"value": 33.2475087160623
 			}
 		}
 	},
@@ -23466,8 +23466,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 41.5907220090687
+				"year": 2024,
+				"value": 43.5972793861179
 			}
 		}
 	},
@@ -23789,8 +23789,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 37.7892841137822
+				"year": 2024,
+				"value": 38.8723557783601
 			}
 		}
 	},
@@ -23899,7 +23899,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.967741935483928
+				"value": 0.967741935483927
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -23952,8 +23952,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.00762261712439418
+				"year": 2024,
+				"value": 0.00516962843295638
 			}
 		}
 	},
@@ -24062,7 +24062,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": -0.189587880235675
+				"value": -0.187950146495633
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -24115,8 +24115,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 56.3439727689404
+				"year": 2024,
+				"value": 62.2488541385818
 			}
 		}
 	},
@@ -24225,7 +24225,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.53125450314273
+				"value": 1.53125450314272
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -24278,8 +24278,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 56.103020234375
+				"year": 2024,
+				"value": 52.702421875
 			}
 		}
 	},
@@ -24423,8 +24423,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 43.0596369922213
+				"year": 2024,
+				"value": 42.4481681340528
 			}
 		}
 	},
@@ -24586,8 +24586,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 78.9541359360509
+				"year": 2024,
+				"value": 75.150620500817
 			}
 		}
 	},
@@ -24749,8 +24749,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 24.4600731126539
+				"year": 2024,
+				"value": 24.80527886776
 			}
 		}
 	},
@@ -24859,7 +24859,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.54555214890893
+				"value": 3.54555214890892
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -24912,8 +24912,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 4.67242631797426
+				"year": 2024,
+				"value": 4.114349833956
 			}
 		}
 	},
@@ -25075,8 +25075,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 31.0804192379273
+				"year": 2024,
+				"value": 31.0021890417225
 			}
 		}
 	},
@@ -25244,8 +25244,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 56.1217587373168
+				"year": 2024,
+				"value": 49.7485907553551
 			}
 		}
 	},
@@ -25401,8 +25401,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 1.68298755186722
+				"year": 2024,
+				"value": 1.84232365145228
 			}
 		}
 	},
@@ -25564,8 +25564,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 36.154994891142
+				"year": 2024,
+				"value": 36.6460129075078
 			}
 		}
 	},
@@ -25721,8 +25721,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 90.5434782608696
+				"year": 2024,
+				"value": 90.8260869565217
 			}
 		}
 	},
@@ -25884,8 +25884,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 38.5449252640128
+				"year": 2024,
+				"value": 36.5168199562018
 			}
 		}
 	},
@@ -26047,8 +26047,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0
+				"year": 2024,
+				"value": 0.121845082680592
 			}
 		}
 	},
@@ -26219,8 +26219,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 30.1158292767733
+				"year": 2024,
+				"value": 30.2134474965229
 			}
 		}
 	},
@@ -26329,7 +26329,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.8903678606001
+				"value": 3.89036786060009
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -26376,8 +26376,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 32.3896349149721
+				"year": 2024,
+				"value": 39.2233244699373
 			}
 		}
 	},
@@ -26539,8 +26539,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 49.7843605035639
+				"year": 2024,
+				"value": 50.7905588796882
 			}
 		}
 	},
@@ -26649,7 +26649,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 5.913000168826
+				"value": 5.91300016882599
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -26702,8 +26702,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 11.3092825293879
+				"year": 2024,
+				"value": 26.0939407114964
 			}
 		}
 	},
@@ -26812,7 +26812,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.08420853585036
+				"value": 2.03559944812264
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -26865,8 +26865,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 0.454484134921779
+				"year": 2024,
+				"value": 1.29044187766608
 			}
 		}
 	},
@@ -26975,7 +26975,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.36462189317825
+				"value": 3.36462189317824
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -27028,8 +27028,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 90.0600214362272
+				"year": 2024,
+				"value": 89.8413719185423
 			}
 		}
 	},
@@ -27138,7 +27138,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.297589655467556
+				"value": 0.297589655467555
 			},
 			"internetUsersPercent": {
 				"code": "IT.NET.USER.ZS",
@@ -27185,8 +27185,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 73.2608695652174
+				"year": 2024,
+				"value": 58.5120350109409
 			}
 		}
 	},
@@ -27348,8 +27348,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 9.55196466809422
+				"year": 2024,
+				"value": 11.8600321199143
 			}
 		}
 	},
@@ -27458,7 +27458,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.679869285243995
+				"value": 0.679015259300199
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -27505,8 +27505,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 68.7013529108454
+				"year": 2024,
+				"value": 68.5884057259312
 			}
 		}
 	},
@@ -27668,8 +27668,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 20.933147632312
+				"year": 2024,
+				"value": 21.7991169977925
 			}
 		}
 	},
@@ -27787,7 +27787,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 2.37284807226549
+				"value": 2.37420873927207
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -27840,8 +27840,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 61.1748938389332
+				"year": 2024,
+				"value": 61.765129504085
 			}
 		}
 	},
@@ -28006,8 +28006,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 40.05615640599
+				"year": 2024,
+				"value": 40.3211314475874
 			}
 		}
 	},
@@ -28116,7 +28116,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 7.48750166612986
+				"value": 7.48750166612985
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -28169,8 +28169,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 34.2988362427265
+				"year": 2024,
+				"value": 34.0260459961208
 			}
 		}
 	},
@@ -28320,8 +28320,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 16.6666666666667
+				"year": 2024,
+				"value": 16.3398692810458
 			}
 		}
 	},
@@ -28430,7 +28430,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 1.45900719841385
+				"value": 1.45900719841384
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -28483,8 +28483,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 41.2827091881785
+				"year": 2024,
+				"value": 45.0052459356983
 			}
 		}
 	},
@@ -28640,8 +28640,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 9.16528517231485
+				"year": 2024,
+				"value": 7.81984250964389
 			}
 		}
 	},
@@ -28803,8 +28803,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 94.44758351333
+				"year": 2024,
+				"value": 91.5374043635688
 			}
 		}
 	},
@@ -28913,7 +28913,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2024,
-				"value": 91.4408220769046
+				"value": 91.4408220769045
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -28960,8 +28960,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 11.3256215087114
+				"year": 2024,
+				"value": 11.3279951893406
 			}
 		}
 	},
@@ -29123,8 +29123,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 52.125
+				"year": 2024,
+				"value": 57.5520833333333
 			}
 		}
 	},
@@ -29233,7 +29233,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.257570528307203
+				"value": 0.257570528307202
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -29286,8 +29286,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 27.5279922779923
+				"year": 2024,
+				"value": 33.011583011583
 			}
 		}
 	},
@@ -29419,8 +29419,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 10.8823529411765
+				"year": 2024,
+				"value": 8.82352941176471
 			}
 		}
 	},
@@ -29529,7 +29529,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2019,
-				"value": 13.4175653228571
+				"value": 13.417565322857
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -29582,8 +29582,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 2.84310842454937
+				"year": 2024,
+				"value": 2.87414910417688
 			}
 		}
 	},
@@ -29745,8 +29745,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 29.1389534883721
+				"year": 2024,
+				"value": 25.2656976744186
 			}
 		}
 	},
@@ -29884,8 +29884,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 11.0736842105263
+				"year": 2024,
+				"value": 11.0943547451568
 			}
 		}
 	},
@@ -29994,7 +29994,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": -3.9119812440659
+				"value": -3.91198124406589
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -30047,8 +30047,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 3.16103105146125
+				"year": 2024,
+				"value": 2.96952827191868
 			}
 		}
 	},
@@ -30166,7 +30166,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 0.433183451279109
+				"value": 0.433183451279108
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -30219,8 +30219,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 22.0700496414782
+				"year": 2024,
+				"value": 22.4567015995587
 			}
 		}
 	},
@@ -30329,7 +30329,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": -0.133634356480207
+				"value": -0.133634356480206
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -30382,8 +30382,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 38.6873886746658
+				"year": 2024,
+				"value": 38.7275147291981
 			}
 		}
 	},
@@ -30491,8 +30491,8 @@
 			"inflationConsumerPricesPercent": {
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
-				"year": 2016,
-				"value": 6.00458082322139
+				"year": 2025,
+				"value": 3.38875846243549
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -30545,8 +30545,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 3.07514950644859
+				"year": 2024,
+				"value": 3.05641616831184
 			}
 		}
 	},
@@ -30717,8 +30717,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 61.6610625420309
+				"year": 2024,
+				"value": 70.960322797579
 			}
 		}
 	},
@@ -30874,8 +30874,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 8.78215904496414
+				"year": 2024,
+				"value": 4.95818526163471
 			}
 		}
 	},
@@ -31037,8 +31037,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 4.55278063851699
+				"year": 2024,
+				"value": 4.43994593202884
 			}
 		}
 	},
@@ -31147,7 +31147,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 5.59276642101027
+				"value": 5.59276642101026
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -31200,8 +31200,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 12.4305555555556
+				"year": 2024,
+				"value": 12.125
 			}
 		}
 	},
@@ -31310,7 +31310,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 34.8811629820306
+				"value": 34.8811700293777
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -31363,8 +31363,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 29.4795681041539
+				"year": 2024,
+				"value": 29.4799838883619
 			}
 		}
 	},
@@ -31526,8 +31526,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 44.2358674463938
+				"year": 2024,
+				"value": 44.1634165366615
 			}
 		}
 	},
@@ -31683,8 +31683,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 33.3333333333333
+				"year": 2024,
+				"value": 39.6153846153846
 			}
 		}
 	},
@@ -31855,8 +31855,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 50.0541883043576
+				"year": 2024,
+				"value": 49.6255656108597
 			}
 		}
 	},
@@ -31965,7 +31965,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 12.7303341026903
+				"value": 12.7303341026902
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -32018,8 +32018,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 16.7552640662755
+				"year": 2024,
+				"value": 17.3489817052123
 			}
 		}
 	},
@@ -32128,7 +32128,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.58082784438067
+				"value": 3.58082784438066
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -32181,8 +32181,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 11.0419703770197
+				"year": 2024,
+				"value": 11.9477857570317
 			}
 		}
 	},
@@ -32347,8 +32347,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 33.8669264120375
+				"year": 2024,
+				"value": 33.7764090858406
 			}
 		}
 	},
@@ -32457,7 +32457,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 4.65032720433324
+				"value": 4.65032720433323
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -32510,8 +32510,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 11.9643469317792
+				"year": 2024,
+				"value": 11.4595808383234
 			}
 		}
 	},
@@ -32620,7 +32620,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 8.79638847052461
+				"value": 8.79630890491107
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -32673,8 +32673,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 8.54914331101781
+				"year": 2024,
+				"value": 8.78691477959454
 			}
 		}
 	},
@@ -32845,8 +32845,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 73.1794871794872
+				"year": 2024,
+				"value": 73.4190231362468
 			}
 		}
 	},
@@ -33008,8 +33008,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 52.2338793719177
+				"year": 2024,
+				"value": 53.4408820361657
 			}
 		}
 	},
@@ -33123,8 +33123,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 24.1333333333333
+				"year": 2024,
+				"value": 66.0264900662252
 			}
 		}
 	},
@@ -33262,8 +33262,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 58.1714285714286
+				"year": 2024,
+				"value": 58.9367816091954
 			}
 		}
 	},
@@ -33372,7 +33372,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.3099931421974
+				"value": 3.30999314219739
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -33425,8 +33425,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 47.4454820708996
+				"year": 2024,
+				"value": 47.115965657294
 			}
 		}
 	},
@@ -33588,8 +33588,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 36.2838392124692
+				"year": 2024,
+				"value": 74.6427106407417
 			}
 		}
 	},
@@ -33760,8 +33760,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 57.636690647482
+				"year": 2024,
+				"value": 57.6402877697842
 			}
 		}
 	},
@@ -33864,7 +33864,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
-				"value": 3.85953869869506
+				"value": 3.85953869869505
 			},
 			"internetUsersPercent": {
 				"code": "IT.NET.USER.ZS",
@@ -33997,7 +33997,7 @@
 				"code": "FP.CPI.TOTL.ZG",
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2014,
-				"value": 8.10472583623915
+				"value": 8.10472583623914
 			},
 			"unemploymentPercent": {
 				"code": "SL.UEM.TOTL.ZS",
@@ -34050,8 +34050,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 1.03983180862549
+				"year": 2024,
+				"value": 1.03983574762107
 			}
 		}
 	},
@@ -34222,8 +34222,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 13.965072665672
+				"year": 2024,
+				"value": 18.7899084156988
 			}
 		}
 	},
@@ -34385,8 +34385,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 59.523784150984
+				"year": 2024,
+				"value": 60.4950967863436
 			}
 		}
 	},
@@ -34548,8 +34548,8 @@
 			"forestAreaPercent": {
 				"code": "AG.LND.FRST.ZS",
 				"name": "Forest area percent of land area",
-				"year": 2023,
-				"value": 44.7366421093447
+				"year": 2024,
+				"value": 35.7218818663565
 			}
 		}
 	}

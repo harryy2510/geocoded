@@ -260,7 +260,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-02T10:21:51Z",
+			"updatedAt": "2026-10-08T13:13:24Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/azerbaijan"
 		}
 	},
@@ -313,7 +313,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-04T09:49:04Z",
+			"updatedAt": "2026-10-09T10:14:33Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/bangladesh"
 		}
 	},
@@ -383,7 +383,7 @@
 		"uk": {
 			"destination": "Bahrain",
 			"alertStatus": [],
-			"updatedAt": "2026-08-20T10:51:52Z",
+			"updatedAt": "2026-10-08T13:01:04Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/bahrain"
 		}
 	},
@@ -664,7 +664,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-16T15:33:42Z",
+			"updatedAt": "2026-10-08T12:20:38Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo"
 		}
 	},
@@ -760,7 +760,7 @@
 		"uk": {
 			"destination": "Chile",
 			"alertStatus": [],
-			"updatedAt": "2026-08-18T22:18:12Z",
+			"updatedAt": "2026-10-08T23:26:56Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/chile"
 		}
 	},
@@ -1124,9 +1124,10 @@
 		"uk": {
 			"destination": "Eritrea",
 			"alertStatus": [
-				"avoid_all_travel_to_parts"
+				"avoid_all_travel_to_parts",
+				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-07-27T14:03:05Z",
+			"updatedAt": "2026-10-09T09:14:54Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/eritrea"
 		}
 	},
@@ -1868,7 +1869,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-07T09:29:49Z",
+			"updatedAt": "2026-10-09T08:38:13Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/kenya"
 		}
 	},
@@ -2588,7 +2589,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-01T14:16:05Z",
+			"updatedAt": "2026-10-08T20:17:59Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/mexico"
 		}
 	},
@@ -3183,7 +3184,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-06T15:15:18Z",
+			"updatedAt": "2026-10-08T18:35:10Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia"
 		}
 	},
@@ -3807,7 +3808,7 @@
 		"uk": {
 			"destination": "Uganda",
 			"alertStatus": [],
-			"updatedAt": "2026-09-02T15:45:31Z",
+			"updatedAt": "2026-10-08T13:51:08Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/uganda"
 		}
 	},
