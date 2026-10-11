@@ -1468824,6 +1468824,18 @@
 		"geonameId": 143090
 	},
 	{
+		"name": "Ard",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "27.7278",
+		"longitude": "53.62702",
+		"population": 5094,
+		"timezone": "Asia/Tehran",
+		"geonameId": 143132
+	},
+	{
 		"name": "Ardabīl",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1479216,6 +1479228,18 @@
 		"geonameId": 142554
 	},
 	{
+		"name": "Havāvarjān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "25",
+		"stateName": "Yazd Province",
+		"latitude": "30.31569",
+		"longitude": "54.20535",
+		"population": 849,
+		"timezone": "Asia/Tehran",
+		"geonameId": 131535
+	},
+	{
 		"name": "Ḩavīq",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1480008,6 +1480032,18 @@
 		"geonameId": 130668
 	},
 	{
+		"name": "Jaghdān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "08",
+		"stateName": "Chaharmahal and Bakhtiari",
+		"latitude": "31.89183",
+		"longitude": "50.76315",
+		"population": 523,
+		"timezone": "Asia/Tehran",
+		"geonameId": 130324
+	},
+	{
 		"name": "Jahādābād",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1480762,6 +1480798,18 @@
 		"population": 9234,
 		"timezone": "Asia/Tehran",
 		"geonameId": 129945
+	},
+	{
+		"name": "Jūshān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "04",
+		"stateName": "Isfahan",
+		"latitude": "32.42649",
+		"longitude": "51.57655",
+		"population": 548,
+		"timezone": "Asia/Tehran",
+		"geonameId": 417714
 	},
 	{
 		"name": "Jūsheqān-e Estark",
@@ -1482185,8 +1482233,8 @@
 		"countryName": "Iran",
 		"stateCode": "02",
 		"stateName": "West Azerbaijan",
-		"latitude": "39.34",
-		"longitude": "44.4393",
+		"latitude": "39.33896",
+		"longitude": "44.39485",
 		"population": 4046,
 		"timezone": "Asia/Tehran",
 		"geonameId": 401124
@@ -1487794,6 +1487842,18 @@
 		"population": 4059,
 		"timezone": "Asia/Tehran",
 		"geonameId": 122939
+	},
+	{
+		"name": "Nāghān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "08",
+		"stateName": "Chaharmahal and Bakhtiari",
+		"latitude": "31.93561",
+		"longitude": "50.73176",
+		"population": 6125,
+		"timezone": "Asia/Tehran",
+		"geonameId": 122926
 	},
 	{
 		"name": "Nāghān-e Soflá",
@@ -1979083,7 +1979143,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.54917",
 		"longitude": "4.9125",
-		"population": 4070,
+		"population": 6070,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750861
 	},
@@ -1980394,6 +1980454,18 @@
 		"population": 1075,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749996
+	},
+	{
+		"name": "Noordbeemster",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.5799",
+		"longitude": "4.93132",
+		"population": 610,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2749994
 	},
 	{
 		"name": "Noordbroek",
@@ -1988076,6 +1988148,18 @@
 		"geonameId": 2744608
 	},
 	{
+		"name": "Westbeemster",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.575",
+		"longitude": "4.89861",
+		"population": 795,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2744808
+	},
+	{
 		"name": "Westbroek",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1989754,6 +1989838,18 @@
 		"population": 3905,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2743680
+	},
+	{
+		"name": "Zuidoostbeemster",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.51667",
+		"longitude": "4.94583",
+		"population": 4520,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2743673
 	},
 	{
 		"name": "Zuidschermer",
@@ -2408724,6 +2408820,18 @@
 		"geonameId": 319408
 	},
 	{
+		"name": "Altınkent",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "43",
+		"stateName": "Kütahya",
+		"latitude": "39.00562",
+		"longitude": "29.45802",
+		"population": 824,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 323898
+	},
+	{
 		"name": "Altınkum",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2422848,6 +2422956,18 @@
 		"geonameId": 315515
 	},
 	{
+		"name": "Erdoğmuş",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "43",
+		"stateName": "Kütahya",
+		"latitude": "38.95251",
+		"longitude": "29.40856",
+		"population": 1325,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 315504
+	},
+	{
 		"name": "Erdurağı",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2423338,6 +2423458,18 @@
 		"population": 0,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 747311
+	},
+	{
+		"name": "Eski Gediz",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "43",
+		"stateName": "Kütahya",
+		"latitude": "39.04519",
+		"longitude": "29.4349",
+		"population": 2612,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 304543
 	},
 	{
 		"name": "Eskiçine",
@@ -2424096,6 +2424228,18 @@
 		"geonameId": 314925
 	},
 	{
+		"name": "Fırdan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "43",
+		"stateName": "Kütahya",
+		"latitude": "38.93937",
+		"longitude": "29.37292",
+		"population": 1149,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 314919
+	},
+	{
 		"name": "Foça",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2424379,7 +2424523,7 @@
 		"stateName": "Kütahya",
 		"latitude": "38.99389",
 		"longitude": "29.39131",
-		"population": 22058,
+		"population": 26253,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 314716
 	},
@@ -2425368,6 +2425512,18 @@
 		"geonameId": 314228
 	},
 	{
+		"name": "Gökler",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "43",
+		"stateName": "Kütahya",
+		"latitude": "39.01194",
+		"longitude": "29.54472",
+		"population": 2000,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 314225
+	},
+	{
 		"name": "Gökoğlan",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2426019,6 +2426175,18 @@
 		"name": "Göynükören",
 		"countryCode": "TR",
 		"countryName": "Turkey",
+		"stateCode": "43",
+		"stateName": "Kütahya",
+		"latitude": "38.84893",
+		"longitude": "29.32912",
+		"population": 552,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 313885
+	},
+	{
+		"name": "Göynükören",
+		"countryCode": "TR",
+		"countryName": "Turkey",
 		"stateCode": "14",
 		"stateName": "Bolu",
 		"latitude": "40.75023",
@@ -2426458,6 +2426626,18 @@
 		"population": 3372,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 313635
+	},
+	{
+		"name": "Gümele",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "43",
+		"stateName": "Kütahya",
+		"latitude": "38.96083",
+		"longitude": "29.45389",
+		"population": 842,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 313628
 	},
 	{
 		"name": "Gümüş",
@@ -2452512,6 +2452692,18 @@
 		"geonameId": 297097
 	},
 	{
+		"name": "Yenikent",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "43",
+		"stateName": "Kütahya",
+		"latitude": "38.86995",
+		"longitude": "29.28818",
+		"population": 2266,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 296998
+	},
+	{
 		"name": "Yenikonak",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2454106,6 +2454298,18 @@
 		"population": 2196,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13697176
+	},
+	{
+		"name": "Yunuslar",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "43",
+		"stateName": "Kütahya",
+		"latitude": "39.11516",
+		"longitude": "29.4829",
+		"population": 635,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 296117
 	},
 	{
 		"name": "Yunusoğlu",
@@ -2484466,6 +2484670,18 @@
 		"population": 948,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 705773
+	},
+	{
+		"name": "Kyslychuvata",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "12",
+		"stateName": "Dnipropetrovsk",
+		"latitude": "47.85421",
+		"longitude": "34.73102",
+		"population": 1385,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 548133
 	},
 	{
 		"name": "Kyslytsya",
@@ -2820324,6 +2820540,18 @@
 		"geonameId": 1010821
 	},
 	{
+		"name": "Despatch",
+		"countryCode": "ZA",
+		"countryName": "South Africa",
+		"stateCode": "EC",
+		"stateName": "Eastern Cape",
+		"latitude": "-33.80172",
+		"longitude": "25.46284",
+		"population": 39619,
+		"timezone": "Africa/Johannesburg",
+		"geonameId": 1010717
+	},
+	{
 		"name": "Devon",
 		"countryCode": "ZA",
 		"countryName": "South Africa",
@@ -2825580,6 +2825808,18 @@
 		"geonameId": 973676
 	},
 	{
+		"name": "Motherwell",
+		"countryCode": "ZA",
+		"countryName": "South Africa",
+		"stateCode": "EC",
+		"stateName": "Eastern Cape",
+		"latitude": "-33.7943",
+		"longitude": "25.5858",
+		"population": 140351,
+		"timezone": "Africa/Johannesburg",
+		"geonameId": 11205248
+	},
+	{
 		"name": "Motlamogale",
 		"countryCode": "ZA",
 		"countryName": "South Africa",
@@ -2825926,6 +2826166,18 @@
 		"population": 2035,
 		"timezone": "Africa/Johannesburg",
 		"geonameId": 971541
+	},
+	{
+		"name": "New Brighton",
+		"countryCode": "ZA",
+		"countryName": "South Africa",
+		"stateCode": "EC",
+		"stateName": "Eastern Cape",
+		"latitude": "-33.89909",
+		"longitude": "25.60341",
+		"population": 47917,
+		"timezone": "Africa/Johannesburg",
+		"geonameId": 971441
 	},
 	{
 		"name": "New Forest A",

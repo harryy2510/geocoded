@@ -3175,7 +3175,7 @@
 			"destination": "Saudi Arabia",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-09-15",
+			"updated": "2026-10-10",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sau.html"
 		},
 		"uk": {
@@ -3184,7 +3184,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-09T15:00:16Z",
+			"updatedAt": "2026-10-10T15:52:06Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia"
 		}
 	},
@@ -4015,7 +4015,7 @@
 			"destination": "Yemen",
 			"level": 4,
 			"levelLabel": "Do Not Travel",
-			"updated": "2025-12-19",
+			"updated": "2026-10-10",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.yem.html"
 		},
 		"uk": {
