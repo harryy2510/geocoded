@@ -1458,6 +1458,15 @@
 		"countryCode": "SA"
 	},
 	{
+		"name": "FlyArystan",
+		"iataDesignator": "FS",
+		"accountingCode": "164",
+		"icaoCode": "AYN",
+		"countryName": "Kazakhstan",
+		"controlledDuplicate": false,
+		"countryCode": "KZ"
+	},
+	{
 		"name": "flydubai",
 		"iataDesignator": "FZ",
 		"accountingCode": "141",

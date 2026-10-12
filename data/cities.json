@@ -305856,6 +305856,18 @@
 		"geonameId": 2661380
 	},
 	{
+		"name": "Bruderholz",
+		"countryCode": "CH",
+		"countryName": "Switzerland",
+		"stateCode": "BS",
+		"stateName": "Basel-City",
+		"latitude": "47.5296",
+		"longitude": "7.59902",
+		"population": 9397,
+		"timezone": "Europe/Zurich",
+		"geonameId": 8469026
+	},
+	{
 		"name": "Brugg",
 		"countryCode": "CH",
 		"countryName": "Switzerland",
@@ -634270,6 +634282,18 @@
 		"population": 562,
 		"timezone": "Europe/Prague",
 		"geonameId": 3065357
+	},
+	{
+		"name": "Staré Hodějovice",
+		"countryCode": "CZ",
+		"countryName": "Czechia",
+		"stateCode": "0311",
+		"stateName": "Okres České Budějovice",
+		"latitude": "48.94602",
+		"longitude": "14.52075",
+		"population": 1370,
+		"timezone": "Europe/Prague",
+		"geonameId": 3075676
 	},
 	{
 		"name": "Staré Hradiště",
@@ -1428576,6 +1428600,18 @@
 		"geonameId": 10910263
 	},
 	{
+		"name": "Mcleodganj",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "HP",
+		"stateName": "Himachal Pradesh",
+		"latitude": "32.23963",
+		"longitude": "76.32545",
+		"population": 11000,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1264627
+	},
+	{
 		"name": "Mechcheri",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1492546,6 +1492582,18 @@
 		"population": 243700,
 		"timezone": "Asia/Tehran",
 		"geonameId": 118063
+	},
+	{
+		"name": "Şadāqeh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "02",
+		"stateName": "West Azerbaijan",
+		"latitude": "37.5573",
+		"longitude": "45.12138",
+		"population": 533,
+		"timezone": "Asia/Tehran",
+		"geonameId": 18532
 	},
 	{
 		"name": "Sādātābād",
@@ -1960675,7 +1960723,7 @@
 		"stateName": "Bayelsa State",
 		"latitude": "4.68836",
 		"longitude": "6.31525",
-		"population": 0,
+		"population": 549774,
 		"timezone": "Africa/Lagos",
 		"geonameId": 10276592
 	},
@@ -2401570,6 +2401618,18 @@
 		"population": 762,
 		"timezone": "Asia/Ashgabat",
 		"geonameId": 13713027
+	},
+	{
+		"name": "Nohur",
+		"countryCode": "TM",
+		"countryName": "Turkmenistan",
+		"stateCode": "A",
+		"stateName": "Ahal",
+		"latitude": "38.48157",
+		"longitude": "57.03319",
+		"population": 6258,
+		"timezone": "Asia/Ashgabat",
+		"geonameId": 161611
 	},
 	{
 		"name": "Nowata",
