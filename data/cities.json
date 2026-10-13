@@ -62921,8 +62921,8 @@
 		"countryName": "Austria",
 		"stateCode": "6",
 		"stateName": "Styria",
-		"latitude": "46.7",
-		"longitude": "15.26667",
+		"latitude": "46.703",
+		"longitude": "15.285",
 		"population": 171,
 		"timezone": "Europe/Vienna",
 		"geonameId": 2768748
@@ -72293,8 +72293,8 @@
 		"countryName": "Austria",
 		"stateCode": "1",
 		"stateName": "Burgenland",
-		"latitude": "47.01667",
-		"longitude": "16.3",
+		"latitude": "47.006",
+		"longitude": "16.315",
 		"population": 62,
 		"timezone": "Europe/Vienna",
 		"geonameId": 2763300
@@ -253162,6 +253162,18 @@
 		"population": 91,
 		"timezone": "America/Nassau",
 		"geonameId": 3571650
+	},
+	{
+		"name": "Rock Sound",
+		"countryCode": "BS",
+		"countryName": "Bahamas",
+		"stateCode": "SE",
+		"stateName": "South Eleuthera",
+		"latitude": "24.86618",
+		"longitude": "-76.15996",
+		"population": 961,
+		"timezone": "America/Nassau",
+		"geonameId": 13713125
 	},
 	{
 		"name": "San Andros",
@@ -1378884,6 +1378896,18 @@
 		"geonameId": 11501709
 	},
 	{
+		"name": "Adarmān",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.02143",
+		"longitude": "75.46455",
+		"population": 2331,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701879
+	},
+	{
 		"name": "Adātt",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1378930,6 +1378954,18 @@
 		"population": 1762,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10854422
+	},
+	{
+		"name": "Addi",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.23699",
+		"longitude": "75.39091",
+		"population": 1474,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701816
 	},
 	{
 		"name": "Addūru",
@@ -1379736,6 +1379772,18 @@
 		"geonameId": 1279135
 	},
 	{
+		"name": "Akbarpur Kalān",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.03879",
+		"longitude": "75.40628",
+		"population": 939,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701866
+	},
+	{
 		"name": "Akdoni Khurd",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1380466,6 +1380514,18 @@
 		"population": 24115,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1278964
+	},
+	{
+		"name": "Alowāl",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.1563",
+		"longitude": "75.49683",
+		"population": 752,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701906
 	},
 	{
 		"name": "Alūr",
@@ -1381738,6 +1381798,18 @@
 		"population": 34399,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1278602
+	},
+	{
+		"name": "Angi Kiri",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.04305",
+		"longitude": "75.46936",
+		"population": 820,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701878
 	},
 	{
 		"name": "Angul",
@@ -1384752,6 +1384824,18 @@
 		"geonameId": 10746539
 	},
 	{
+		"name": "Bāghela",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.00501",
+		"longitude": "75.52092",
+		"population": 1822,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10713267
+	},
+	{
 		"name": "Bāghpat",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1385112,6 +1385196,30 @@
 		"geonameId": 10846419
 	},
 	{
+		"name": "Bajuha Kalān",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.19943",
+		"longitude": "75.58735",
+		"population": 1480,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10713143
+	},
+	{
+		"name": "Bajuha Khurd",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.19667",
+		"longitude": "75.57594",
+		"population": 2096,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10713142
+	},
+	{
 		"name": "Bajwa",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1385242,6 +1385350,30 @@
 		"population": 2741,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 13156740
+	},
+	{
+		"name": "Bal Hukmi",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.12317",
+		"longitude": "75.43855",
+		"population": 513,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701925
+	},
+	{
+		"name": "Bal Kohna",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.1884",
+		"longitude": "75.38697",
+		"population": 751,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701837
 	},
 	{
 		"name": "Bālāchor",
@@ -1387944,6 +1388076,18 @@
 		"geonameId": 13156857
 	},
 	{
+		"name": "Bāth",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.07752",
+		"longitude": "75.50434",
+		"population": 2416,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10713279
+	},
+	{
 		"name": "Bathinda",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1388254,6 +1388398,18 @@
 		"population": 252008,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1276609
+	},
+	{
+		"name": "Behār",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "30.98744",
+		"longitude": "75.52588",
+		"population": 776,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10256300
 	},
 	{
 		"name": "Behat",
@@ -1390236,6 +1390392,18 @@
 		"geonameId": 1275899
 	},
 	{
+		"name": "Bhodipur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.13037",
+		"longitude": "75.39804",
+		"population": 529,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701856
+	},
+	{
 		"name": "Bhogpur",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1390546,6 +1390714,18 @@
 		"population": 10669,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1275859
+	},
+	{
+		"name": "Bhullar",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.10267",
+		"longitude": "75.39726",
+		"population": 901,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701874
 	},
 	{
 		"name": "Bhulwāl",
@@ -1391110,6 +1391290,18 @@
 		"population": 48465,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1275655
+	},
+	{
+		"name": "Bila Nawāb",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.14764",
+		"longitude": "75.43194",
+		"population": 716,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701912
 	},
 	{
 		"name": "Bilaigarh",
@@ -1392156,6 +1392348,18 @@
 		"geonameId": 13157139
 	},
 	{
+		"name": "Boparai",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.16851",
+		"longitude": "75.51461",
+		"population": 3507,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10713163
+	},
+	{
 		"name": "Bora",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1392694,6 +1392898,18 @@
 		"population": 15176,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1275132
+	},
+	{
+		"name": "Bulanda",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.04452",
+		"longitude": "75.42937",
+		"population": 1014,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701870
 	},
 	{
 		"name": "Bulandshahr",
@@ -1399066,6 +1399282,18 @@
 		"population": 6494,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1273033
+	},
+	{
+		"name": "Dhāliwāl",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.17079",
+		"longitude": "75.59525",
+		"population": 3121,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10713159
 	},
 	{
 		"name": "Dhamanagar",
@@ -1413588,6 +1413816,18 @@
 		"geonameId": 10713718
 	},
 	{
+		"name": "Kang Sahbu",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.21606",
+		"longitude": "75.51482",
+		"population": 2694,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10713139
+	},
+	{
 		"name": "Kangarāli-budrukh",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1418002,6 +1418242,18 @@
 		"population": 51108,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1266620
+	},
+	{
+		"name": "Khurampur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.05136",
+		"longitude": "75.47117",
+		"population": 2776,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701877
 	},
 	{
 		"name": "Khurja",
@@ -1426044,6 +1426296,18 @@
 		"geonameId": 1264032
 	},
 	{
+		"name": "Mālri",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.16612",
+		"longitude": "75.46571",
+		"population": 2469,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701915
+	},
+	{
 		"name": "Malsiān",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1428814,6 +1429078,18 @@
 		"population": 11363,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1263201
+	},
+	{
+		"name": "Mehatpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.0494",
+		"longitude": "75.47589",
+		"population": 5804,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1264411
 	},
 	{
 		"name": "Mehatpur Basdehra",
@@ -1438294,6 +1438570,18 @@
 		"population": 711,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10713278
+	},
+	{
+		"name": "Pandori Khās",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.09951",
+		"longitude": "75.44267",
+		"population": 2043,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701845
 	},
 	{
 		"name": "Pandua",
@@ -1448616,6 +1448904,18 @@
 		"geonameId": 1257409
 	},
 	{
+		"name": "Sangowāl",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.00988",
+		"longitude": "75.48595",
+		"population": 2591,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10701897
+	},
+	{
 		"name": "Sangramnagar",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1449442,6 +1449742,18 @@
 		"population": 19903,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 13157031
+	},
+	{
+		"name": "Sarih",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.14159",
+		"longitude": "75.56225",
+		"population": 3417,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10713184
 	},
 	{
 		"name": "Sarīla",
@@ -1459776,6 +1460088,18 @@
 		"geonameId": 1253952
 	},
 	{
+		"name": "Uggi",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.21484",
+		"longitude": "75.43126",
+		"population": 4117,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1253934
+	},
+	{
 		"name": "Ugrākheri",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1467156,6 +1467480,18 @@
 		"geonameId": 9568
 	},
 	{
+		"name": "‘Eşmatābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "35.848",
+		"longitude": "50.065",
+		"population": 2986,
+		"timezone": "Asia/Tehran",
+		"geonameId": 135121
+	},
+	{
 		"name": "‘Eyn-e Do",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1468368,6 +1468704,18 @@
 		"geonameId": 143615
 	},
 	{
+		"name": "Amīrābād-e Kohneh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "35.869",
+		"longitude": "50.0489",
+		"population": 651,
+		"timezone": "Asia/Tehran",
+		"geonameId": 41839
+	},
+	{
 		"name": "Amlash",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1468834,6 +1469182,30 @@
 		"population": 65404,
 		"timezone": "Asia/Tehran",
 		"geonameId": 143122
+	},
+	{
+		"name": "Ārāsanj-e Bālā",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "35.6965",
+		"longitude": "50.0899",
+		"population": 3740,
+		"timezone": "Asia/Tehran",
+		"geonameId": 143110
+	},
+	{
+		"name": "Ārāsanj-e Pā’īn",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "35.7108",
+		"longitude": "50.079",
+		"population": 1117,
+		"timezone": "Asia/Tehran",
+		"geonameId": 41845
 	},
 	{
 		"name": "Araţeh",
@@ -1471776,6 +1472148,18 @@
 		"geonameId": 140511
 	},
 	{
+		"name": "Bīāhī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "23",
+		"stateName": "Hormozgan",
+		"latitude": "25.46861",
+		"longitude": "58.99167",
+		"population": 536,
+		"timezone": "Asia/Tehran",
+		"geonameId": 140712
+	},
+	{
 		"name": "Bīāshūsh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1472340,6 +1472724,30 @@
 		"geonameId": 139862
 	},
 	{
+		"name": "Bū’īn",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "19",
+		"stateName": "Gilan Province",
+		"latitude": "37.19062",
+		"longitude": "49.34002",
+		"population": 529,
+		"timezone": "Asia/Tehran",
+		"geonameId": 139901
+	},
+	{
+		"name": "Bū’īn",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "11",
+		"stateName": "Zanjan",
+		"latitude": "36.51502",
+		"longitude": "48.90324",
+		"population": 1358,
+		"timezone": "Asia/Tehran",
+		"geonameId": 139902
+	},
+	{
 		"name": "Bū’īn Zahrā",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1472347,7 +1472755,7 @@
 		"stateName": "Qazvin Province",
 		"latitude": "35.7669",
 		"longitude": "50.0578",
-		"population": 0,
+		"population": 20823,
 		"timezone": "Asia/Tehran",
 		"geonameId": 139903
 	},
@@ -1474932,6 +1475340,18 @@
 		"geonameId": 40579
 	},
 	{
+		"name": "Dīzaj-e Parvāneh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "01",
+		"stateName": "East Azerbaijan",
+		"latitude": "37.3203",
+		"longitude": "46.131",
+		"population": 931,
+		"timezone": "Asia/Tehran",
+		"geonameId": 18084
+	},
+	{
 		"name": "Dīzajābād",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1476658,6 +1477078,18 @@
 		"population": 1901,
 		"timezone": "Asia/Tehran",
 		"geonameId": 28899
+	},
+	{
+		"name": "Fatḩābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "35.7535",
+		"longitude": "50.2229",
+		"population": 875,
+		"timezone": "Asia/Tehran",
+		"geonameId": 41848
 	},
 	{
 		"name": "Fatḩābād",
@@ -1480104,6 +1480536,18 @@
 		"geonameId": 6869240
 	},
 	{
+		"name": "Jahānābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "35.774",
+		"longitude": "50.1237",
+		"population": 1032,
+		"timezone": "Asia/Tehran",
+		"geonameId": 130565
+	},
+	{
 		"name": "Jahlīār",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1480354,6 +1480798,18 @@
 		"population": 1539,
 		"timezone": "Asia/Tehran",
 		"geonameId": 390236
+	},
+	{
+		"name": "Jārū",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "44",
+		"stateName": "Alborz Province",
+		"latitude": "35.69475",
+		"longitude": "50.53583",
+		"population": 766,
+		"timezone": "Asia/Tehran",
+		"geonameId": 130288
 	},
 	{
 		"name": "Jask",
@@ -1483308,6 +1483764,18 @@
 		"geonameId": 127166
 	},
 	{
+		"name": "Khūnān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "35.7903",
+		"longitude": "50.089",
+		"population": 2423,
+		"timezone": "Asia/Tehran",
+		"geonameId": 127162
+	},
+	{
 		"name": "Khūndāb",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1483390,6 +1483858,18 @@
 		"population": 5716,
 		"timezone": "Asia/Tehran",
 		"geonameId": 127098
+	},
+	{
+		"name": "Khūsheh Mehr-e Khūjeh Mīr",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "01",
+		"stateName": "East Azerbaijan",
+		"latitude": "37.3097",
+		"longitude": "46.14",
+		"population": 3528,
+		"timezone": "Asia/Tehran",
+		"geonameId": 127095
 	},
 	{
 		"name": "Khūy",
@@ -1487568,6 +1488048,18 @@
 		"geonameId": 36300
 	},
 	{
+		"name": "Morād Tappeh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "44",
+		"stateName": "Alborz Province",
+		"latitude": "35.7336",
+		"longitude": "50.2919",
+		"population": 918,
+		"timezone": "Asia/Tehran",
+		"geonameId": 123299
+	},
+	{
 		"name": "Morādlū",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1491120,6 +1491612,18 @@
 		"geonameId": 32766
 	},
 	{
+		"name": "Qeshlāq-e Mūrānlū",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "35.9245",
+		"longitude": "50.0719",
+		"population": 569,
+		"timezone": "Asia/Tehran",
+		"geonameId": 119404
+	},
+	{
 		"name": "Qeshlāq-e Pā’īn",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1492611,6 +1493115,18 @@
 		"name": "Şadrābād",
 		"countryCode": "IR",
 		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "35.82",
+		"longitude": "50.0686",
+		"population": 819,
+		"timezone": "Asia/Tehran",
+		"geonameId": 117954
+	},
+	{
+		"name": "Şadrābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
 		"stateCode": "25",
 		"stateName": "Yazd Province",
 		"latitude": "32.06733",
@@ -1494084,6 +1494600,18 @@
 		"geonameId": 116434
 	},
 	{
+		"name": "Şeḩḩatābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "44",
+		"stateName": "Alborz Province",
+		"latitude": "35.7306",
+		"longitude": "50.2877",
+		"population": 993,
+		"timezone": "Asia/Tehran",
+		"geonameId": 41850
+	},
+	{
 		"name": "Semerūn",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1494718,6 +1495246,18 @@
 		"population": 0,
 		"timezone": "Asia/Tehran",
 		"geonameId": 1112446
+	},
+	{
+		"name": "Shahrak-e Beheshtī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "37.16407",
+		"longitude": "54.96766",
+		"population": 1778,
+		"timezone": "Asia/Tehran",
+		"geonameId": 40078
 	},
 	{
 		"name": "Shahrak-e Dūrak",
@@ -1497288,6 +1497828,18 @@
 		"geonameId": 17598
 	},
 	{
+		"name": "Tāzeh Kand-e Khūsheh Mehr",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "01",
+		"stateName": "East Azerbaijan",
+		"latitude": "37.29436",
+		"longitude": "46.09849",
+		"population": 1358,
+		"timezone": "Asia/Tehran",
+		"geonameId": 1253
+	},
+	{
 		"name": "Tāzeh Qal‘eh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1498056,6 +1498608,18 @@
 		"geonameId": 112286
 	},
 	{
+		"name": "Valīābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "35.8057",
+		"longitude": "50.043",
+		"population": 913,
+		"timezone": "Asia/Tehran",
+		"geonameId": 112289
+	},
+	{
 		"name": "Valīn Jeq",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1498702,6 +1499266,18 @@
 		"population": 4999,
 		"timezone": "Asia/Tehran",
 		"geonameId": 111887
+	},
+	{
+		"name": "Yengī Kand",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "01",
+		"stateName": "East Azerbaijan",
+		"latitude": "37.289",
+		"longitude": "46.1538",
+		"population": 1061,
+		"timezone": "Asia/Tehran",
+		"geonameId": 17539
 	},
 	{
 		"name": "Yengī Kand-e Seyyedlar",
@@ -1957140,6 +1957716,18 @@
 		"geonameId": 2338385
 	},
 	{
+		"name": "Ijiegwu maa clan",
+		"countryCode": "NG",
+		"countryName": "Nigeria",
+		"stateCode": "CR",
+		"stateName": "Cross River State",
+		"latitude": "6.82396",
+		"longitude": "8.8699",
+		"population": 7000,
+		"timezone": "Africa/Lagos",
+		"geonameId": 2338393
+	},
+	{
 		"name": "Ijoko",
 		"countryCode": "NG",
 		"countryName": "Nigeria",
@@ -1965727,7 +1966315,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.83667",
 		"longitude": "4.75556",
-		"population": 2485,
+		"population": 2775,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746031
 	},
@@ -1966687,7 +1967275,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.86083",
 		"longitude": "4.83611",
-		"population": 8795,
+		"population": 8845,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759737
 	},
@@ -1966867,7 +1967455,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.46833",
 		"longitude": "4.74306",
-		"population": 24230,
+		"population": 25460,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759631
 	},
@@ -1967251,7 +1967839,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.785",
 		"longitude": "4.86389",
-		"population": 770,
+		"population": 925,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759397
 	},
@@ -1968648,6 +1969236,18 @@
 		"geonameId": 2758490
 	},
 	{
+		"name": "Bovenkarspel",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.69667",
+		"longitude": "5.24028",
+		"population": 10122,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2758498
+	},
+	{
 		"name": "Boxmeer",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1968787,7 +1969387,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.89",
 		"longitude": "4.80417",
-		"population": 3370,
+		"population": 3940,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758360
 	},
@@ -1969279,7 +1969879,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.74833",
 		"longitude": "4.70278",
-		"population": 560,
+		"population": 880,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758089
 	},
@@ -1969879,7 +1970479,7 @@
 		"stateName": "North Holland",
 		"latitude": "53.15667",
 		"longitude": "4.87083",
-		"population": 545,
+		"population": 540,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757710
 	},
@@ -1970083,7 +1970683,7 @@
 		"stateName": "North Holland",
 		"latitude": "53.0975",
 		"longitude": "4.76111",
-		"population": 1025,
+		"population": 1040,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757417
 	},
@@ -1970743,7 +1971343,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.75",
 		"longitude": "4.775",
-		"population": 1480,
+		"population": 1690,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756788
 	},
@@ -1972075,7 +1972675,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.70333",
 		"longitude": "5.29167",
-		"population": 17365,
+		"population": 18738,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756077
 	},
@@ -1973434,6 +1974034,18 @@
 		"population": 3305,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2755239
+	},
+	{
+		"name": "Grootebroek",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.6975",
+		"longitude": "5.21667",
+		"population": 9891,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2755211
 	},
 	{
 		"name": "Grootegast",
@@ -1975027,7 +1975639,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.9075",
 		"longitude": "4.9625",
-		"population": 4800,
+		"population": 5135,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2754050
 	},
@@ -1975632,6 +1976244,18 @@
 		"geonameId": 2753521
 	},
 	{
+		"name": "Huisduinen",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.9525",
+		"longitude": "4.72639",
+		"population": 605,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2753510
+	},
+	{
 		"name": "Huissen",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1975920,6 +1976544,18 @@
 		"geonameId": 2753300
 	},
 	{
+		"name": "J. J. Allanstraat",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.45",
+		"longitude": "4.775",
+		"population": 665,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 6544871
+	},
+	{
 		"name": "Jabeek",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1976023,7 +1976659,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.89",
 		"longitude": "4.74028",
-		"population": 15135,
+		"population": 15380,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2753184
 	},
@@ -1976647,7 +1977283,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.79417",
 		"longitude": "4.88889",
-		"population": 825,
+		"population": 1100,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2752531
 	},
@@ -1976887,7 +1977523,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.84167",
 		"longitude": "5.08194",
-		"population": 585,
+		"population": 620,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2752281
 	},
@@ -1977115,7 +1977751,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.492",
 		"longitude": "4.75849",
-		"population": 1180,
+		"population": 1195,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751955
 	},
@@ -1978135,7 +1978771,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.6975",
 		"longitude": "5.20417",
-		"population": 2120,
+		"population": 2205,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751379
 	},
@@ -1978150,6 +1978786,18 @@
 		"population": 735,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751376
+	},
+	{
+		"name": "Lutjewinkel",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.76667",
+		"longitude": "4.88472",
+		"population": 775,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2751369
 	},
 	{
 		"name": "Luttelgeest",
@@ -1979203,7 +1979851,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.80667",
 		"longitude": "4.99861",
-		"population": 3155,
+		"population": 4690,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750850
 	},
@@ -1980060,6 +1980708,18 @@
 		"geonameId": 13696847
 	},
 	{
+		"name": "Nieuwe Niedorp",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.74",
+		"longitude": "4.89861",
+		"population": 3265,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2750278
+	},
+	{
 		"name": "Nieuwe Pekela",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1980082,18 +1980742,6 @@
 		"population": 615,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750213
-	},
-	{
-		"name": "Nieuwe-Niedorp",
-		"countryCode": "NL",
-		"countryName": "The Netherlands",
-		"stateCode": "NH",
-		"stateName": "North Holland",
-		"latitude": "52.74",
-		"longitude": "4.89861",
-		"population": 2810,
-		"timezone": "Europe/Amsterdam",
-		"geonameId": 2750278
 	},
 	{
 		"name": "Nieuwegein",
@@ -1981327,7 +1981975,7 @@
 		"stateName": "North Holland",
 		"latitude": "53.085",
 		"longitude": "4.875",
-		"population": 910,
+		"population": 935,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749475
 	},
@@ -1982143,7 +1982791,7 @@
 		"stateName": "North Holland",
 		"latitude": "53.03917",
 		"longitude": "4.84722",
-		"population": 1220,
+		"population": 1170,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749009
 	},
@@ -1982167,7 +1982815,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.83417",
 		"longitude": "4.80833",
-		"population": 760,
+		"population": 690,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749003
 	},
@@ -1982479,7 +1983127,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.76667",
 		"longitude": "4.66111",
-		"population": 1640,
+		"population": 1570,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2748631
 	},
@@ -1983607,7 +1984255,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.7875",
 		"longitude": "4.79861",
-		"population": 19890,
+		"population": 20105,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747720
 	},
@@ -1983619,7 +1984267,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.8025",
 		"longitude": "4.75833",
-		"population": 1965,
+		"population": 2275,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747715
 	},
@@ -1984303,7 +1984951,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.7725",
 		"longitude": "4.74583",
-		"population": 915,
+		"population": 1955,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747244
 	},
@@ -1984315,7 +1984963,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.78083",
 		"longitude": "4.72778",
-		"population": 660,
+		"population": 735,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747242
 	},
@@ -1984327,7 +1984975,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.78667",
 		"longitude": "4.70833",
-		"population": 715,
+		"population": 635,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747239
 	},
@@ -1984531,7 +1985179,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.8425",
 		"longitude": "4.97222",
-		"population": 1350,
+		"population": 2255,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747136
 	},
@@ -1986067,7 +1986715,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.7375",
 		"longitude": "4.75",
-		"population": 3880,
+		"population": 3865,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746121
 	},
@@ -1987579,7 +1988227,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.72667",
 		"longitude": "4.83194",
-		"population": 1970,
+		"population": 2695,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745105
 	},
@@ -1987759,7 +1988407,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.7225",
 		"longitude": "4.7375",
-		"population": 6030,
+		"population": 6495,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745014
 	},
@@ -1988335,7 +1988983,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.89417",
 		"longitude": "4.92917",
-		"population": 735,
+		"population": 950,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744720
 	},
@@ -1988491,7 +1989139,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.83583",
 		"longitude": "4.86528",
-		"population": 1795,
+		"population": 2360,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744534
 	},
@@ -1988503,7 +1989151,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.85083",
 		"longitude": "5.02639",
-		"population": 3210,
+		"population": 6305,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744532
 	},
@@ -1988563,7 +1989211,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.50024",
 		"longitude": "4.89244",
-		"population": 2140,
+		"population": 1730,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744495
 	},
@@ -1988803,7 +1989451,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.75417",
 		"longitude": "4.90278",
-		"population": 3460,
+		"population": 3610,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744354
 	},
@@ -1989994,6 +1990642,18 @@
 		"population": 36188,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2743608
+	},
+	{
+		"name": "Zwaag",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.66917",
+		"longitude": "5.07639",
+		"population": 17671,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2743595
 	},
 	{
 		"name": "Zwaagdijk-Oost",
@@ -2408143,7 +2408803,7 @@
 		"stateName": "Kars Province",
 		"latitude": "40.74093",
 		"longitude": "43.61432",
-		"population": 0,
+		"population": 2039,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 752297
 	},
@@ -2409751,7 +2410411,7 @@
 		"stateName": "Kars Province",
 		"latitude": "40.84522",
 		"longitude": "43.32747",
-		"population": 5126,
+		"population": 2264,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 751864
 	},
@@ -2413219,7 +2413879,7 @@
 		"stateName": "İzmir Province",
 		"latitude": "38.015",
 		"longitude": "27.45028",
-		"population": 2174,
+		"population": 1938,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 321529
 	},
@@ -2414592,6 +2415252,18 @@
 		"geonameId": 320847
 	},
 	{
+		"name": "Boyuntaş",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.85469",
+		"longitude": "43.64673",
+		"population": 537,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 750435
+	},
+	{
 		"name": "Bozalan",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2415358,6 +2416030,18 @@
 		"population": 865,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 320330
+	},
+	{
+		"name": "Büyük Çatak",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.86433",
+		"longitude": "42.99559",
+		"population": 569,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 750230
 	},
 	{
 		"name": "Büyük Çaylı",
@@ -2416414,6 +2417098,18 @@
 		"population": 0,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 749841
+	},
+	{
+		"name": "Çamlık",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "35",
+		"stateName": "İzmir Province",
+		"latitude": "37.88619",
+		"longitude": "27.38218",
+		"population": 975,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 319607
 	},
 	{
 		"name": "Çamlık",
@@ -2420052,6 +2420748,18 @@
 		"geonameId": 748402
 	},
 	{
+		"name": "Demirkent",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.72182",
+		"longitude": "43.64162",
+		"population": 933,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 748403
+	},
+	{
 		"name": "Demirkonak",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2421391,7 +2422099,7 @@
 		"stateName": "Kars Province",
 		"latitude": "40.97986",
 		"longitude": "43.47098",
-		"population": 0,
+		"population": 696,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 747965
 	},
@@ -2423472,6 +2424180,18 @@
 		"geonameId": 13590569
 	},
 	{
+		"name": "Esenyayla",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.74063",
+		"longitude": "43.67093",
+		"population": 629,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 747327
+	},
+	{
 		"name": "Esenyurt",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2425210,6 +2425930,18 @@
 		"population": 7822,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 745260
+	},
+	{
+		"name": "Gökçealan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "35",
+		"stateName": "İzmir Province",
+		"latitude": "37.83944",
+		"longitude": "27.38861",
+		"population": 1033,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 314353
 	},
 	{
 		"name": "Gökçeali",
@@ -2428452,6 +2429184,18 @@
 		"geonameId": 312544
 	},
 	{
+		"name": "Harmanlı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.71658",
+		"longitude": "43.2072",
+		"population": 528,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 745836
+	},
+	{
 		"name": "Harmantepe",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2430262,6 +2431006,18 @@
 		"population": 1117,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 745208
+	},
+	{
+		"name": "İncesu",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.74215",
+		"longitude": "43.12978",
+		"population": 527,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 745211
 	},
 	{
 		"name": "İncesu",
@@ -2432362,6 +2433118,18 @@
 		"population": 1948,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 309815
+	},
+	{
+		"name": "Karahan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.784",
+		"longitude": "43.56652",
+		"population": 560,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 744328
 	},
 	{
 		"name": "Karahasanlı",
@@ -2436574,6 +2437342,18 @@
 		"population": 629,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 742804
+	},
+	{
+		"name": "Koçköy",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.865",
+		"longitude": "43.51638",
+		"population": 729,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 742803
 	},
 	{
 		"name": "Koçlu",
@@ -2447707,7 +2448487,7 @@
 		"stateName": "Kars Province",
 		"latitude": "40.7791",
 		"longitude": "43.12769",
-		"population": 4230,
+		"population": 1998,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 739201
 	},
@@ -2449090,6 +2449870,18 @@
 		"population": 1091,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 299065
+	},
+	{
+		"name": "Tomarlı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.85052",
+		"longitude": "43.4004",
+		"population": 525,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 738725
 	},
 	{
 		"name": "Tomarza",
@@ -2608013,8 +2608805,8 @@
 		"countryName": "United States",
 		"stateCode": "DC",
 		"stateName": "District of Columbia",
-		"latitude": "38.9015",
-		"longitude": "-77.0622",
+		"latitude": "38.899",
+		"longitude": "-77.053",
 		"population": 22146,
 		"timezone": "America/New_York",
 		"geonameId": 4138666
@@ -2633441,8 +2634233,8 @@
 		"countryName": "United States",
 		"stateCode": "NJ",
 		"stateName": "New Jersey",
-		"latitude": "40.4776",
-		"longitude": "-74.62682",
+		"latitude": "40.506",
+		"longitude": "-74.674",
 		"population": 38303,
 		"timezone": "America/New_York",
 		"geonameId": 5099079
@@ -2639813,8 +2640605,8 @@
 		"countryName": "United States",
 		"stateCode": "MD",
 		"stateName": "Maryland",
-		"latitude": "38.60012",
-		"longitude": "-77.1622",
+		"latitude": "38.59971",
+		"longitude": "-77.15643",
 		"population": 3857,
 		"timezone": "America/New_York",
 		"geonameId": 4358916
@@ -2699201,8 +2699993,8 @@
 		"countryName": "United States",
 		"stateCode": "MA",
 		"stateName": "Massachusetts",
-		"latitude": "41.45428",
-		"longitude": "-70.56197",
+		"latitude": "41.45554",
+		"longitude": "-70.56781",
 		"population": 3778,
 		"timezone": "America/New_York",
 		"geonameId": 4946056

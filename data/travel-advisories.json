@@ -1127,7 +1127,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-09T09:14:54Z",
+			"updatedAt": "2026-10-12T11:48:05Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/eritrea"
 		}
 	},
@@ -2536,7 +2536,7 @@
 		"uk": {
 			"destination": "Mauritius",
 			"alertStatus": [],
-			"updatedAt": "2026-09-04T15:08:37Z",
+			"updatedAt": "2026-10-13T09:06:03Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/mauritius"
 		}
 	},
@@ -2589,7 +2589,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-09T20:19:56Z",
+			"updatedAt": "2026-10-13T08:45:22Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/mexico"
 		}
 	},
@@ -3175,7 +3175,7 @@
 			"destination": "Saudi Arabia",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-10-10",
+			"updated": "2026-10-12",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sau.html"
 		},
 		"uk": {
@@ -3201,7 +3201,7 @@
 		"uk": {
 			"destination": "Solomon Islands",
 			"alertStatus": [],
-			"updatedAt": "2026-05-26T08:39:14Z",
+			"updatedAt": "2026-10-12T11:44:41Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/solomon-islands"
 		}
 	},
