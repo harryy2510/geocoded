@@ -160656,6 +160656,18 @@
 		"geonameId": 2790736
 	},
 	{
+		"name": "Moorsel",
+		"countryCode": "BE",
+		"countryName": "Belgium",
+		"stateCode": "VBR",
+		"stateName": "Provincie Vlaams-Brabant",
+		"latitude": "50.85114",
+		"longitude": "4.53739",
+		"population": 688,
+		"timezone": "Europe/Brussels",
+		"geonameId": 2790737
+	},
+	{
 		"name": "Moorsele",
 		"countryCode": "BE",
 		"countryName": "Belgium",
@@ -647554,6 +647566,18 @@
 		"population": 4862,
 		"timezone": "Europe/Berlin",
 		"geonameId": 3208325
+	},
+	{
+		"name": "Babelsberg Nord",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "BB",
+		"stateName": "Brandenburg",
+		"latitude": "52.39969",
+		"longitude": "13.10064",
+		"population": 11188,
+		"timezone": "Europe/Berlin",
+		"geonameId": 12123481
 	},
 	{
 		"name": "Babenhausen",
@@ -1250491,7 +1250515,7 @@
 		"stateName": "Pest County",
 		"latitude": "47.77591",
 		"longitude": "19.13612",
-		"population": 35108,
+		"population": 33475,
 		"timezone": "Europe/Budapest",
 		"geonameId": 3043293
 	},
@@ -2401990,6 +2402014,18 @@
 		"population": 13485,
 		"timezone": "Asia/Ashgabat",
 		"geonameId": 1218928
+	},
+	{
+		"name": "Hojeýpil",
+		"countryCode": "TM",
+		"countryName": "Turkmenistan",
+		"stateCode": "L",
+		"stateName": "Lebap",
+		"latitude": "37.9475",
+		"longitude": "66.64303",
+		"population": 1047,
+		"timezone": "Asia/Ashgabat",
+		"geonameId": 1218943
 	},
 	{
 		"name": "Hurmantgökje",
