@@ -288,11 +288,11 @@
 		"latitude": "23.66667",
 		"longitude": "54",
 		"timezone": "Asia/Dubai",
-		"capital": null,
+		"capital": "Abu Dhabi",
 		"population": 3789860,
 		"type": "emirate",
 		"native": "أبو ظبي",
-		"wikidataId": "",
+		"wikidataId": "Q187712",
 		"translations": {
 			"es": "Abu Dhabi",
 			"fr": "Abou Dabi",
@@ -495,7 +495,7 @@
 		"population": 44411,
 		"type": "emirate",
 		"native": "أم القيوين",
-		"wikidataId": "",
+		"wikidataId": "Q175021",
 		"translations": {
 			"fr": "Oumm al Qaïwaïn",
 			"ar": "أم القيوين",
@@ -1470,7 +1470,7 @@
 		"population": 671817,
 		"type": "province",
 		"native": "ولایت میدان وردک",
-		"wikidataId": "",
+		"wikidataId": "Q183056",
 		"translations": {
 			"en": "Maidan Wardak Province",
 			"es": "Provincia de Maidan Wardak",
@@ -2070,7 +2070,7 @@
 		"population": 8817,
 		"type": "parish",
 		"native": "Saint George Parish",
-		"wikidataId": "",
+		"wikidataId": "Q1770796",
 		"translations": {
 			"fr": "Saint-George",
 			"de": "Saint George",
@@ -2115,7 +2115,7 @@
 		"population": 56736,
 		"type": "parish",
 		"native": "Saint John Parish",
-		"wikidataId": "",
+		"wikidataId": "Q548816",
 		"translations": {
 			"es": "St. John's",
 			"fr": "Saint-John",
@@ -2150,7 +2150,7 @@
 		"population": 8141,
 		"type": "parish",
 		"native": "Saint Mary Parish",
-		"wikidataId": "",
+		"wikidataId": "Q1999872",
 		"translations": {
 			"fr": "Saint-Mary",
 			"de": "Saint Mary",
@@ -2240,7 +2240,7 @@
 		"population": 4321,
 		"type": "parish",
 		"native": "Saint Peter Parish",
-		"wikidataId": "",
+		"wikidataId": "Q1952603",
 		"translations": {
 			"fr": "Saint-Peter",
 			"de": "Saint Peter",
@@ -4396,7 +4396,7 @@
 		"population": 3978984,
 		"type": "province",
 		"native": "Provincia de Córdoba",
-		"wikidataId": "",
+		"wikidataId": "Q44759",
 		"translations": {
 			"es": "Provincia de Córdoba",
 			"en": "Cordoba Province",
@@ -6383,7 +6383,7 @@
 		"population": 432800,
 		"type": "district",
 		"native": "Abşeron",
-		"wikidataId": "",
+		"wikidataId": "Q179538",
 		"translations": {
 			"ru": "Апшеронский район"
 		}
@@ -6402,7 +6402,7 @@
 		"population": 136100,
 		"type": "district",
 		"native": "Ağcabǝdi",
-		"wikidataId": "",
+		"wikidataId": "Q330818",
 		"translations": {}
 	},
 	{
@@ -6419,7 +6419,7 @@
 		"population": 179800,
 		"type": "district",
 		"native": "Ağdam Rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q201647",
 		"translations": {}
 	},
 	{
@@ -6436,7 +6436,7 @@
 		"population": 107100,
 		"type": "district",
 		"native": "Ağdaş",
-		"wikidataId": "",
+		"wikidataId": "Q275784",
 		"translations": {}
 	},
 	{
@@ -6453,7 +6453,7 @@
 		"population": 86300,
 		"type": "district",
 		"native": "Ağstafa",
-		"wikidataId": "",
+		"wikidataId": "Q275744",
 		"translations": {}
 	},
 	{
@@ -6579,7 +6579,7 @@
 		"population": 100700,
 		"type": "district",
 		"native": "Balakən rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q330850",
 		"translations": {
 			"de": "Balakən",
 			"hi": "बालकन ज़िला",
@@ -6624,7 +6624,7 @@
 		"population": 129600,
 		"type": "district",
 		"native": "Bərdə Rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q330857",
 		"translations": {
 			"en": "Barda District",
 			"de": "Bərdə",
@@ -6669,7 +6669,7 @@
 		"population": 101600,
 		"type": "district",
 		"native": "Beyləqan",
-		"wikidataId": "",
+		"wikidataId": "Q330807",
 		"translations": {}
 	},
 	{
@@ -6686,7 +6686,7 @@
 		"population": 106500,
 		"type": "district",
 		"native": "Biləsuvar rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q330834",
 		"translations": {
 			"de": "Biləsuvar",
 			"hi": "बिलासुवार जिला",
@@ -6731,7 +6731,7 @@
 		"population": 33300,
 		"type": "district",
 		"native": "Daşkǝsǝn",
-		"wikidataId": "",
+		"wikidataId": "Q457494",
 		"translations": {}
 	},
 	{
@@ -6748,7 +6748,7 @@
 		"population": 130800,
 		"type": "district",
 		"native": "Füzuli Rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q331687",
 		"translations": {
 			"de": "Füzuli",
 			"hi": "फिज़ूली जिला",
@@ -6793,7 +6793,7 @@
 		"population": 101062,
 		"type": "district",
 		"native": "Gədəbəy rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q330749",
 		"translations": {
 			"de": "Gədəbəy",
 			"hi": "गेडेबी",
@@ -6857,7 +6857,7 @@
 		"population": 101800,
 		"type": "district",
 		"native": "Goranboy Rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q330843",
 		"translations": {
 			"de": "Goranboy",
 			"hi": "गोरान्बोय जिला",
@@ -6902,7 +6902,7 @@
 		"population": 118600,
 		"type": "district",
 		"native": "Göyçay",
-		"wikidataId": "",
+		"wikidataId": "Q477163",
 		"translations": {}
 	},
 	{
@@ -6919,7 +6919,7 @@
 		"population": 64800,
 		"type": "district",
 		"native": "Göygöl Rayon",
-		"wikidataId": "",
+		"wikidataId": "Q388087",
 		"translations": {}
 	},
 	{
@@ -6936,7 +6936,7 @@
 		"population": 75900,
 		"type": "district",
 		"native": "Hacıqabul",
-		"wikidataId": "",
+		"wikidataId": "Q476690",
 		"translations": {}
 	},
 	{
@@ -6970,7 +6970,7 @@
 		"population": 87100,
 		"type": "district",
 		"native": "İsmayıllı rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q344252",
 		"translations": {
 			"de": "İsmayıllı",
 			"hi": "इस्माइलि जिला",
@@ -7206,7 +7206,7 @@
 		"population": 118400,
 		"type": "district",
 		"native": "Kürdəmir rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q688589",
 		"translations": {
 			"de": "Kürdəmir",
 			"hi": "कुर्दमीर जिला",
@@ -7251,7 +7251,7 @@
 		"population": 75700,
 		"type": "district",
 		"native": "Laçın Rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q301832",
 		"translations": {
 			"en": "Lachin Rayon"
 		}
@@ -7287,7 +7287,7 @@
 		"population": 86100,
 		"type": "district",
 		"native": "Lerik rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q688626",
 		"translations": {
 			"ar": "مقاطعة لريك",
 			"de": "Lerik",
@@ -7349,7 +7349,7 @@
 		"population": 226700,
 		"type": "district",
 		"native": "Masallı rayonu",
-		"wikidataId": "Q512116",
+		"wikidataId": "Q476695",
 		"translations": {
 			"en": "Masally",
 			"de": "Masallı",
@@ -7475,7 +7475,7 @@
 		"population": 87300,
 		"type": "district",
 		"native": "Neftçala",
-		"wikidataId": "",
+		"wikidataId": "Q688633",
 		"translations": {}
 	},
 	{
@@ -7492,7 +7492,7 @@
 		"population": 44500,
 		"type": "district",
 		"native": "Oğuz",
-		"wikidataId": "",
+		"wikidataId": "Q643989",
 		"translations": {}
 	},
 	{
@@ -7509,7 +7509,7 @@
 		"population": 108900,
 		"type": "district",
 		"native": "Qəbələ rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q593872",
 		"translations": {
 			"de": "Qəbələ",
 			"hi": "कबाला जिला",
@@ -7554,7 +7554,7 @@
 		"population": 58200,
 		"type": "district",
 		"native": "Qax",
-		"wikidataId": "",
+		"wikidataId": "Q330796",
 		"translations": {}
 	},
 	{
@@ -7571,7 +7571,7 @@
 		"population": 96200,
 		"type": "district",
 		"native": "Qazax",
-		"wikidataId": "",
+		"wikidataId": "Q389381",
 		"translations": {}
 	},
 	{
@@ -7605,7 +7605,7 @@
 		"population": 170200,
 		"type": "district",
 		"native": "Quba",
-		"wikidataId": "",
+		"wikidataId": "Q457499",
 		"translations": {}
 	},
 	{
@@ -7622,7 +7622,7 @@
 		"population": 37100,
 		"type": "district",
 		"native": "Qubadlı",
-		"wikidataId": "",
+		"wikidataId": "Q644048",
 		"translations": {}
 	},
 	{
@@ -7639,7 +7639,7 @@
 		"population": 102300,
 		"type": "district",
 		"native": "Qusar rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q386506",
 		"translations": {
 			"de": "Qusar",
 			"hi": "कुसर जिला",
@@ -7684,7 +7684,7 @@
 		"population": 110500,
 		"type": "district",
 		"native": "Saatlı",
-		"wikidataId": "Q137413",
+		"wikidataId": "Q601105",
 		"translations": {}
 	},
 	{
@@ -7701,7 +7701,7 @@
 		"population": 180500,
 		"type": "district",
 		"native": "Sabirabad rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q382132",
 		"translations": {
 			"de": "Sabirabad",
 			"hi": "सबीराबाद जिला",
@@ -7747,7 +7747,7 @@
 		"population": 139600,
 		"type": "district",
 		"native": "Salyan rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q457485",
 		"translations": {
 			"de": "Salyan",
 			"hi": "सल्यान जिला",
@@ -7792,7 +7792,7 @@
 		"population": 106400,
 		"type": "district",
 		"native": "Şamaxı",
-		"wikidataId": "",
+		"wikidataId": "Q330839",
 		"translations": {}
 	},
 	{
@@ -7809,7 +7809,7 @@
 		"population": 58600,
 		"type": "district",
 		"native": "Samux",
-		"wikidataId": "",
+		"wikidataId": "Q498437",
 		"translations": {}
 	},
 	{
@@ -7826,7 +7826,7 @@
 		"population": 217400,
 		"type": "district",
 		"native": "Şǝmkir",
-		"wikidataId": "",
+		"wikidataId": "Q467491",
 		"translations": {}
 	},
 	{
@@ -7884,11 +7884,11 @@
 		"latitude": "41.08333",
 		"longitude": "47.16667",
 		"timezone": "Asia/Baku",
-		"capital": null,
+		"capital": "Shaki",
 		"population": 184200,
 		"type": "district",
 		"native": "Şəki",
-		"wikidataId": "",
+		"wikidataId": "Q330864",
 		"translations": {
 			"en": "Shaki",
 			"ar": "شكي",
@@ -8024,7 +8024,7 @@
 		"population": 41800,
 		"type": "district",
 		"native": "Siyǝzǝn",
-		"wikidataId": "",
+		"wikidataId": "Q820940",
 		"translations": {}
 	},
 	{
@@ -8060,7 +8060,7 @@
 		"population": 80500,
 		"type": "district",
 		"native": "Tərtər rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q477168",
 		"translations": {
 			"de": "Tərtər",
 			"hi": "टारटर जिला",
@@ -8105,7 +8105,7 @@
 		"population": 176900,
 		"type": "district",
 		"native": "Tovuz rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q388980",
 		"translations": {
 			"de": "Tovuz",
 			"hi": "तोवूज़ जिला",
@@ -8150,7 +8150,7 @@
 		"population": 85000,
 		"type": "district",
 		"native": "Ucar",
-		"wikidataId": "",
+		"wikidataId": "Q476703",
 		"translations": {}
 	},
 	{
@@ -8167,7 +8167,7 @@
 		"population": 174400,
 		"type": "district",
 		"native": "Xaçmaz",
-		"wikidataId": "",
+		"wikidataId": "Q6398826",
 		"translations": {}
 	},
 	{
@@ -8201,7 +8201,7 @@
 		"population": 16703,
 		"type": "district",
 		"native": "Xızı",
-		"wikidataId": "",
+		"wikidataId": "Q476708",
 		"translations": {}
 	},
 	{
@@ -8218,7 +8218,7 @@
 		"population": 68400,
 		"type": "district",
 		"native": "Yardımlı rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q127255",
 		"translations": {
 			"de": "Yardımlı",
 			"hi": "यार्दिमली जिला",
@@ -8259,11 +8259,11 @@
 		"latitude": "40.66667",
 		"longitude": "47",
 		"timezone": "Asia/Baku",
-		"capital": null,
+		"capital": "Yevlakh",
 		"population": 129200,
 		"type": "district",
 		"native": "Yevlax",
-		"wikidataId": "",
+		"wikidataId": "Q458524",
 		"translations": {}
 	},
 	{
@@ -8308,7 +8308,7 @@
 		"population": 42700,
 		"type": "district",
 		"native": "Zəngilan rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q249252",
 		"translations": {
 			"de": "Zəngilan",
 			"hi": "ज़न्गिलन जिला",
@@ -8353,7 +8353,7 @@
 		"population": 130100,
 		"type": "district",
 		"native": "Zaqatala rayonu",
-		"wikidataId": "",
+		"wikidataId": "Q147553",
 		"translations": {
 			"de": "Zaqatala",
 			"hi": "ज़ाकाटला जिला",
@@ -8398,7 +8398,7 @@
 		"population": 59400,
 		"type": "district",
 		"native": "Zərdab",
-		"wikidataId": "",
+		"wikidataId": "Q249293",
 		"translations": {
 			"ru": "Зардобский Район",
 			"en": "Zardab",
@@ -12268,11 +12268,11 @@
 		"latitude": "42.66667",
 		"longitude": "23.38333",
 		"timezone": "Europe/Sofia",
-		"capital": null,
+		"capital": "Sofia",
 		"population": 1480830,
 		"type": "province",
 		"native": "Област София град",
-		"wikidataId": "",
+		"wikidataId": "Q1585725",
 		"translations": {
 			"en": "Sofia-Capital",
 			"es": "Sofia-Capital",
@@ -12481,11 +12481,11 @@
 		"latitude": "26.21667",
 		"longitude": "50.58333",
 		"timezone": "Asia/Bahrain",
-		"capital": null,
+		"capital": "Manama",
 		"population": 548345,
 		"type": "governorate",
 		"native": "محافظة العاصمة",
-		"wikidataId": "",
+		"wikidataId": "Q528953",
 		"translations": {
 			"en": "Manama",
 			"de": "Manama",
@@ -13890,7 +13890,7 @@
 		"population": 7087,
 		"type": "parish",
 		"native": "Devonshire",
-		"wikidataId": "",
+		"wikidataId": "Q1207018",
 		"translations": {}
 	},
 	{
@@ -13907,7 +13907,7 @@
 		"population": 5584,
 		"type": "parish",
 		"native": "Hamilton Parish",
-		"wikidataId": "",
+		"wikidataId": "Q289876",
 		"translations": {
 			"en": "Hamilton Parish",
 			"es": "Hamilton",
@@ -13961,7 +13961,7 @@
 		"population": 5179,
 		"type": "parish",
 		"native": "Paget",
-		"wikidataId": "",
+		"wikidataId": "Q2046204",
 		"translations": {
 			"en": "Paget",
 			"es": "Paget",
@@ -14039,7 +14039,7 @@
 		"population": 7723,
 		"type": "parish",
 		"native": "Sandys",
-		"wikidataId": "",
+		"wikidataId": "Q121782",
 		"translations": {}
 	},
 	{
@@ -14056,7 +14056,7 @@
 		"population": 5852,
 		"type": "parish",
 		"native": "Smithʼs",
-		"wikidataId": "",
+		"wikidataId": "Q1735847",
 		"translations": {}
 	},
 	{
@@ -14090,7 +14090,7 @@
 		"population": 8932,
 		"type": "parish",
 		"native": "Warwick",
-		"wikidataId": "",
+		"wikidataId": "Q1468860",
 		"translations": {}
 	},
 	{
@@ -14346,11 +14346,11 @@
 		"latitude": "-15.5",
 		"longitude": "-68",
 		"timezone": "America/La_Paz",
-		"capital": null,
+		"capital": "La Paz",
 		"population": 3022566,
 		"type": "department",
 		"native": "Departamento de La Paz",
-		"wikidataId": "",
+		"wikidataId": "Q272784",
 		"translations": {
 			"es": "Departamento de La Paz",
 			"fr": "La Paz",
@@ -14512,7 +14512,7 @@
 		"population": 3122605,
 		"type": "department",
 		"native": "Departamento de Santa Cruz",
-		"wikidataId": "",
+		"wikidataId": "Q235106",
 		"translations": {
 			"es": "Departamento de Santa Cruz",
 			"fr": "Santa Cruz",
@@ -18023,7 +18023,7 @@
 		"population": 1308569,
 		"type": "region",
 		"native": "Брэсцкая Вобласць",
-		"wikidataId": "",
+		"wikidataId": "Q173822",
 		"translations": {
 			"ru": "Брестская Область",
 			"en": "Brest Oblast",
@@ -19032,7 +19032,7 @@
 		"population": 1093845,
 		"type": "province",
 		"native": "Bas-Uele",
-		"wikidataId": "",
+		"wikidataId": "Q652056",
 		"translations": {
 			"en": "Bas-Uele",
 			"de": "Bas-Uele",
@@ -19473,7 +19473,7 @@
 		"population": 1768327,
 		"type": "province",
 		"native": "Mai-Ndombe",
-		"wikidataId": "",
+		"wikidataId": "Q1163429",
 		"translations": {
 			"en": "Mai-Ndombe",
 			"de": "Mai-Ndombe",
@@ -19860,7 +19860,7 @@
 		"longitude": "20.66667",
 		"timezone": "Africa/Bangui",
 		"capital": "Ndélé",
-		"population": 39779,
+		"population": 43229,
 		"type": "prefecture",
 		"native": "Bamingui-Bangoran",
 		"wikidataId": "Q741025",
@@ -19932,7 +19932,7 @@
 		"longitude": "21.36667",
 		"timezone": "Africa/Bangui",
 		"capital": "Mobaye",
-		"population": 205805,
+		"population": 249150,
 		"type": "prefecture",
 		"native": "Basse-Kotto",
 		"wikidataId": "Q810484",
@@ -19977,7 +19977,7 @@
 		"longitude": "25.66667",
 		"timezone": "Africa/Bangui",
 		"capital": "Obo",
-		"population": 39543,
+		"population": 57602,
 		"type": "prefecture",
 		"native": "Haut-Mbomou",
 		"wikidataId": "Q848578",
@@ -20067,7 +20067,7 @@
 		"longitude": "19.2",
 		"timezone": "Africa/Bangui",
 		"capital": "Sibut",
-		"population": 101627,
+		"population": 118420,
 		"type": "prefecture",
 		"native": "Kémo",
 		"wikidataId": "Q848572",
@@ -20112,7 +20112,7 @@
 		"longitude": "16.34001",
 		"timezone": "Africa/Bangui",
 		"capital": "Paoua",
-		"population": 442151,
+		"population": 469545,
 		"type": "prefecture",
 		"native": "Lim-Pendé",
 		"wikidataId": "Q113895415",
@@ -20129,7 +20129,7 @@
 		"longitude": "17.66667",
 		"timezone": "Africa/Bangui",
 		"capital": "Mbaïki",
-		"population": 220983,
+		"population": 246875,
 		"type": "prefecture",
 		"native": "Lobaye",
 		"wikidataId": "Q821037",
@@ -20191,7 +20191,7 @@
 		"longitude": "16",
 		"timezone": "Africa/Bangui",
 		"capital": "Berbérati",
-		"population": 299555,
+		"population": 364795,
 		"type": "prefecture",
 		"native": "Mambéré-Kadéï",
 		"wikidataId": "Q848567",
@@ -20236,7 +20236,7 @@
 		"longitude": "23.33333",
 		"timezone": "Africa/Bangui",
 		"capital": "Bangassou",
-		"population": 164009,
+		"population": 267647,
 		"type": "prefecture",
 		"native": "Mbomou",
 		"wikidataId": "Q848582",
@@ -20308,7 +20308,7 @@
 		"longitude": "15.26276",
 		"timezone": "Africa/Bangui",
 		"capital": "Bouar",
-		"population": 185013,
+		"population": 233666,
 		"type": "prefecture",
 		"native": "Nana-Mambéré",
 		"wikidataId": "Q742455",
@@ -20353,7 +20353,7 @@
 		"longitude": "18",
 		"timezone": "Africa/Bangui",
 		"capital": "Bimbo",
-		"population": 323347,
+		"population": 356725,
 		"type": "prefecture",
 		"native": "Ombella-M'Poko",
 		"wikidataId": "Q378970",
@@ -20398,7 +20398,7 @@
 		"longitude": "20.75",
 		"timezone": "Africa/Bangui",
 		"capital": "Bambari",
-		"population": 226816,
+		"population": 276710,
 		"type": "prefecture",
 		"native": "Ouaka",
 		"wikidataId": "Q848560",
@@ -20443,7 +20443,7 @@
 		"longitude": "17.29882",
 		"timezone": "Africa/Bangui",
 		"capital": "Bossangoa",
-		"population": 369220,
+		"population": 329645,
 		"type": "prefecture",
 		"native": "Ouham",
 		"wikidataId": "Q726620",
@@ -20488,7 +20488,7 @@
 		"longitude": "18.2469",
 		"timezone": "Africa/Bangui",
 		"capital": "Batangafo",
-		"population": 225479,
+		"population": 239157,
 		"type": "prefecture",
 		"native": "Ouham-Fafa",
 		"wikidataId": "Q113897006",
@@ -20505,7 +20505,7 @@
 		"longitude": "16.08333",
 		"timezone": "Africa/Bangui",
 		"capital": "Bozoum",
-		"population": 333161,
+		"population": 430506,
 		"type": "prefecture",
 		"native": "Ouham-Pendé",
 		"wikidataId": "Q848591",
@@ -20550,7 +20550,7 @@
 		"longitude": "16.16667",
 		"timezone": "Africa/Bangui",
 		"capital": "Nola",
-		"population": 93537,
+		"population": 101074,
 		"type": "economic prefecture",
 		"native": "Sangha-Mbaéré",
 		"wikidataId": "Q856237",
@@ -20595,7 +20595,7 @@
 		"longitude": "22.5",
 		"timezone": "Africa/Bangui",
 		"capital": "Birao",
-		"population": 38096,
+		"population": 52255,
 		"type": "prefecture",
 		"native": "Vakaga",
 		"wikidataId": "Q848585",
@@ -20712,7 +20712,7 @@
 		"longitude": "16",
 		"timezone": "Africa/Brazzaville",
 		"capital": "Owando",
-		"population": 156044,
+		"population": 316599,
 		"type": "region",
 		"native": "Cuvette",
 		"wikidataId": "Q780884",
@@ -20757,7 +20757,7 @@
 		"longitude": "14.56667",
 		"timezone": "Africa/Brazzaville",
 		"capital": "Ewo",
-		"population": 50392,
+		"population": 119328,
 		"type": "region",
 		"native": "Cuvette-Ouest",
 		"wikidataId": "Q125711",
@@ -20982,7 +20982,7 @@
 		"longitude": "15.15",
 		"timezone": "Africa/Brazzaville",
 		"capital": "Djambala",
-		"population": 174591,
+		"population": 283421,
 		"type": "region",
 		"native": "Plateaux",
 		"wikidataId": "Q765370",
@@ -23002,7 +23002,7 @@
 		"population": 213595,
 		"type": "region",
 		"native": "Región de Arica y Parinacota",
-		"wikidataId": "",
+		"wikidataId": "Q2109",
 		"translations": {
 			"es": "Región de Arica y Parinacota",
 			"de": "Región de Arica y Parinacota",
@@ -23067,7 +23067,7 @@
 		"population": 94271,
 		"type": "region",
 		"native": "Región Aysén del General Carlos Ibáñez del Campo",
-		"wikidataId": "",
+		"wikidataId": "Q2181",
 		"translations": {
 			"es": "Región Aysén del General Carlos Ibáñez del Campo",
 			"en": "Aysén",
@@ -25879,7 +25879,7 @@
 		"population": 61280,
 		"type": "department",
 		"native": "San Andrés y Providencia",
-		"wikidataId": "",
+		"wikidataId": "Q26855",
 		"translations": {
 			"es": "San Andrés y Providencia",
 			"en": "San Andres y Providencia",
@@ -33225,11 +33225,11 @@
 		"latitude": "23.25092",
 		"longitude": "-0.61869",
 		"timezone": "Africa/Algiers",
-		"capital": null,
+		"capital": "Bordj Badji Mokhtar",
 		"population": 0,
 		"type": "province",
 		"native": "برج باجي مختار",
-		"wikidataId": "",
+		"wikidataId": "Q76592938",
 		"translations": {
 			"en": "Bordj Badji Mokhtar",
 			"ar": "برج باجي مختار",
@@ -40572,7 +40572,7 @@
 		"population": 2954136,
 		"type": "region",
 		"native": "Sidama Region",
-		"wikidataId": "",
+		"wikidataId": "Q1070673",
 		"translations": {}
 	},
 	{
@@ -41454,7 +41454,7 @@
 		"longitude": "177.66667",
 		"timezone": "Pacific/Fiji",
 		"capital": "Ba",
-		"population": 231760,
+		"population": 247685,
 		"type": "province",
 		"native": "Ba Province",
 		"wikidataId": "Q797434",
@@ -41471,7 +41471,7 @@
 		"longitude": "178.75",
 		"timezone": "Pacific/Fiji",
 		"capital": null,
-		"population": 14176,
+		"population": 15489,
 		"type": "province",
 		"native": "Bua Province",
 		"wikidataId": "Q1365265",
@@ -41490,7 +41490,7 @@
 		"longitude": "179.41667",
 		"timezone": "Pacific/Fiji",
 		"capital": null,
-		"population": 49344,
+		"population": 50447,
 		"type": "province",
 		"native": "Cakaudrove Province",
 		"wikidataId": "Q676046",
@@ -41509,7 +41509,7 @@
 		"longitude": "178.22021",
 		"timezone": "Pacific/Fiji",
 		"capital": "Ba",
-		"population": 10167,
+		"population": 10869,
 		"type": "province",
 		"native": "Kadavu",
 		"wikidataId": "Q1196481",
@@ -41529,7 +41529,7 @@
 		"longitude": "-178.79251",
 		"timezone": "Pacific/Fiji",
 		"capital": "Tubou",
-		"population": 10683,
+		"population": 9602,
 		"type": "province",
 		"native": "Lau Province",
 		"wikidataId": "Q513104",
@@ -41546,7 +41546,7 @@
 		"longitude": "178.8",
 		"timezone": "Pacific/Fiji",
 		"capital": "Levuka",
-		"population": 16461,
+		"population": 15657,
 		"type": "province",
 		"native": "Lomaiviti Province",
 		"wikidataId": "Q2144922",
@@ -41563,7 +41563,7 @@
 		"longitude": "179.25",
 		"timezone": "Pacific/Fiji",
 		"capital": null,
-		"population": 72441,
+		"population": 65983,
 		"type": "province",
 		"native": "Macuata Province",
 		"wikidataId": "Q1365304",
@@ -41582,7 +41582,7 @@
 		"longitude": "178.25",
 		"timezone": "Pacific/Fiji",
 		"capital": null,
-		"population": 160760,
+		"population": 177771,
 		"type": "province",
 		"native": "Naitasiri Province",
 		"wikidataId": "Q1365284",
@@ -41599,7 +41599,7 @@
 		"longitude": "178.13333",
 		"timezone": "Pacific/Fiji",
 		"capital": null,
-		"population": 6898,
+		"population": 7885,
 		"type": "province",
 		"native": "Namosi Province",
 		"wikidataId": "Q1365295",
@@ -41616,7 +41616,7 @@
 		"longitude": "177.66667",
 		"timezone": "Pacific/Fiji",
 		"capital": "Sigatoka",
-		"population": 58387,
+		"population": 58931,
 		"type": "province",
 		"native": "Nandronga and Navosa Province",
 		"wikidataId": "Q952528",
@@ -41633,7 +41633,7 @@
 		"longitude": "178.16667",
 		"timezone": "Pacific/Fiji",
 		"capital": "Vaileka",
-		"population": 29464,
+		"population": 30416,
 		"type": "province",
 		"native": "Ra Province",
 		"wikidataId": "Q1208350",
@@ -41650,7 +41650,7 @@
 		"longitude": "178.33333",
 		"timezone": "Pacific/Fiji",
 		"capital": null,
-		"population": 100787,
+		"population": 108016,
 		"type": "province",
 		"native": "Rewa Province",
 		"wikidataId": "Q1365257",
@@ -41684,7 +41684,7 @@
 		"longitude": "178",
 		"timezone": "Pacific/Fiji",
 		"capital": null,
-		"population": 18249,
+		"population": 20031,
 		"type": "province",
 		"native": "Serua Province",
 		"wikidataId": "Q1208362",
@@ -45625,7 +45625,7 @@
 		"longitude": "10.03333",
 		"timezone": "Africa/Libreville",
 		"capital": "Akanda",
-		"population": 638219,
+		"population": 895689,
 		"type": "province",
 		"native": "Estuaire",
 		"wikidataId": "Q281109",
@@ -45670,7 +45670,7 @@
 		"longitude": "13.9",
 		"timezone": "Africa/Libreville",
 		"capital": "Franceville",
-		"population": 143715,
+		"population": 250799,
 		"type": "province",
 		"native": "Haut-Ogooué",
 		"wikidataId": "Q654438",
@@ -45715,7 +45715,7 @@
 		"longitude": "10.58333",
 		"timezone": "Africa/Libreville",
 		"capital": "Lambaréné",
-		"population": 58307,
+		"population": 69287,
 		"type": "province",
 		"native": "Moyen-Ogooué",
 		"wikidataId": "Q590802",
@@ -45760,7 +45760,7 @@
 		"longitude": "11.16667",
 		"timezone": "Africa/Libreville",
 		"capital": "Mouila",
-		"population": 107173,
+		"population": 100838,
 		"type": "province",
 		"native": "Nguni",
 		"wikidataId": "Q823774",
@@ -45787,7 +45787,7 @@
 		"longitude": "11",
 		"timezone": "Africa/Libreville",
 		"capital": "Tchibanga",
-		"population": 54330,
+		"population": 52854,
 		"type": "province",
 		"native": "Nyanga",
 		"wikidataId": "Q846017",
@@ -45832,7 +45832,7 @@
 		"longitude": "12.83333",
 		"timezone": "Africa/Libreville",
 		"capital": "Makokou",
-		"population": 67326,
+		"population": 63293,
 		"type": "province",
 		"native": "Ogooué-Ivindo",
 		"wikidataId": "Q823822",
@@ -51940,7 +51940,7 @@
 		"population": 699704,
 		"type": "division",
 		"native": "Western",
-		"wikidataId": "",
+		"wikidataId": "Q846158",
 		"translations": {}
 	},
 	{
@@ -52817,7 +52817,7 @@
 		"population": 5433,
 		"type": "province",
 		"native": "Annobon",
-		"wikidataId": "",
+		"wikidataId": "Q3736616",
 		"translations": {
 			"en": "Annobón Province",
 			"es": "Annobon",
@@ -52844,7 +52844,7 @@
 		"population": 231629,
 		"type": "province",
 		"native": "Bioko Norte",
-		"wikidataId": "",
+		"wikidataId": "Q845834",
 		"translations": {
 			"en": "Bioko Norte Province",
 			"es": "Bioko Norte",
@@ -52868,10 +52868,10 @@
 		"longitude": "8.66667",
 		"timezone": "Africa/Malabo",
 		"capital": "Luba",
-		"population": 25972,
+		"population": 34674,
 		"type": "province",
 		"native": "Bioko Sur",
-		"wikidataId": "",
+		"wikidataId": "Q845817",
 		"translations": {
 			"en": "Bioko Sur Province",
 			"es": "Bioko Sur",
@@ -52895,10 +52895,10 @@
 		"longitude": "10.41667",
 		"timezone": "Africa/Malabo",
 		"capital": "Evinayong",
-		"population": 129620,
+		"population": 141986,
 		"type": "province",
 		"native": "Centro Sur",
-		"wikidataId": "",
+		"wikidataId": "Q845823",
 		"translations": {
 			"en": "Centro Sur Province",
 			"es": "Centro Sur",
@@ -52949,10 +52949,10 @@
 		"longitude": "11",
 		"timezone": "Africa/Malabo",
 		"capital": "Ebebiyin",
-		"population": 161807,
+		"population": 183664,
 		"type": "province",
 		"native": "Kie-Ntem",
-		"wikidataId": "",
+		"wikidataId": "Q853393",
 		"translations": {
 			"en": "Kié-Ntem Province",
 			"es": "Kie-Ntem",
@@ -52976,10 +52976,10 @@
 		"longitude": "9.75",
 		"timezone": "Africa/Malabo",
 		"capital": "Bata",
-		"population": 300000,
+		"population": 367348,
 		"type": "province",
 		"native": "Litoral",
-		"wikidataId": "",
+		"wikidataId": "Q203873",
 		"translations": {
 			"en": "Litoral Province",
 			"es": "Litoral",
@@ -53003,10 +53003,10 @@
 		"longitude": "11.1",
 		"timezone": "Africa/Malabo",
 		"capital": "Mongomo",
-		"population": 157000,
+		"population": 192017,
 		"type": "province",
 		"native": "Wele-Nzas",
-		"wikidataId": "",
+		"wikidataId": "Q853400",
 		"translations": {
 			"en": "Wele-Nzas Province",
 			"es": "Wele-Nzas",
@@ -53414,7 +53414,7 @@
 		"population": 640243,
 		"type": "region",
 		"native": "Δυτική Ελλάδα",
-		"wikidataId": "",
+		"wikidataId": "Q170291",
 		"translations": {
 			"fr": "Grèce-Occidentale",
 			"en": "West Greece",
@@ -53443,7 +53443,7 @@
 		"population": 254595,
 		"type": "region",
 		"native": "Δυτική Μακεδονία",
-		"wikidataId": "",
+		"wikidataId": "Q165408",
 		"translations": {
 			"fr": "Macédoine-Occidentale",
 			"en": "West Macedonia",
@@ -54123,7 +54123,7 @@
 		"population": 301370,
 		"type": "department",
 		"native": "Departamento de Santa Rosa",
-		"wikidataId": "",
+		"wikidataId": "Q885656",
 		"translations": {
 			"en": "Santa Rosa Department",
 			"de": "Departamento Santa Rosa",
@@ -54339,7 +54339,7 @@
 		"population": 5656,
 		"type": "village",
 		"native": "Agat",
-		"wikidataId": "",
+		"wikidataId": "Q665845",
 		"translations": {
 			"en": "Agat",
 			"es": "Agat",
@@ -54765,7 +54765,7 @@
 		"population": 194591,
 		"type": "region",
 		"native": "Bafatá",
-		"wikidataId": "",
+		"wikidataId": "Q799791",
 		"translations": {}
 	},
 	{
@@ -54888,7 +54888,7 @@
 		"population": 192903,
 		"type": "region",
 		"native": "Gabú",
-		"wikidataId": "",
+		"wikidataId": "Q872212",
 		"translations": {}
 	},
 	{
@@ -55464,7 +55464,7 @@
 		"population": 140188,
 		"type": "district",
 		"native": "離島區",
-		"wikidataId": "",
+		"wikidataId": "Q752523",
 		"translations": {
 			"zh": "離島區",
 			"ko": "리다오 구",
@@ -55861,7 +55861,7 @@
 		"population": 534192,
 		"type": "district",
 		"native": "Yuen Long",
-		"wikidataId": "Q847174",
+		"wikidataId": "Q871442",
 		"translations": {
 			"ko": "위안랑 구"
 		}
@@ -56307,7 +56307,7 @@
 		"population": 241568,
 		"type": "department",
 		"native": "Departamento de Intibucá",
-		"wikidataId": "",
+		"wikidataId": "Q262125",
 		"translations": {
 			"en": "Intibucá Department",
 			"de": "Intibucá",
@@ -57086,7 +57086,7 @@
 		"population": 159487,
 		"type": "county",
 		"native": "Varaždinska županija",
-		"wikidataId": "Q5420",
+		"wikidataId": "Q57967",
 		"translations": {
 			"ko": "바라주딘 주",
 			"en": "Varaždin County",
@@ -57144,7 +57144,7 @@
 		"population": 143113,
 		"type": "county",
 		"native": "Vukovarsko-srijemska županija",
-		"wikidataId": "",
+		"wikidataId": "Q58225",
 		"translations": {
 			"es": "Vukovar-Srijem",
 			"ko": "부코바르스리옘 주",
@@ -57784,7 +57784,7 @@
 		"population": 338025,
 		"type": "urban county",
 		"native": "Békés megye",
-		"wikidataId": "",
+		"wikidataId": "Q191616",
 		"translations": {
 			"it": "Provincia di Békés",
 			"ko": "베케시 주",
@@ -57813,7 +57813,7 @@
 		"population": 648216,
 		"type": "county",
 		"native": "Borsod-Abaúj-Zemplén megye",
-		"wikidataId": "",
+		"wikidataId": "Q188895",
 		"translations": {
 			"en": "Borsod-Abauj Zemplen county",
 			"pl": "Komitat Borsod-Abaúj-Zemplén",
@@ -57919,7 +57919,7 @@
 		"population": 461618,
 		"type": "county",
 		"native": "Győr-Moson-Sopron megye",
-		"wikidataId": "",
+		"wikidataId": "Q187753",
 		"translations": {
 			"pl": "Komitat Győr-Moson-Sopron",
 			"de": "Komitat Győr-Moson-Sopron",
@@ -58225,7 +58225,7 @@
 		"population": 558361,
 		"type": "county",
 		"native": "Szabolcs-Szatmár-Bereg megye",
-		"wikidataId": "",
+		"wikidataId": "Q190518",
 		"translations": {
 			"pl": "Komitat Szabolcs-Szatmár-Bereg",
 			"de": "Komitat Szabolcs-Szatmár-Bereg",
@@ -58794,7 +58794,7 @@
 		"population": 1180948,
 		"type": "province",
 		"native": "Propinsi Gorontalo",
-		"wikidataId": "",
+		"wikidataId": "Q5067",
 		"translations": {
 			"en": "Gorontalo",
 			"es": "Gorontalo",
@@ -58902,7 +58902,7 @@
 		"population": 9081792,
 		"type": "province",
 		"native": "Provinsi Lampung",
-		"wikidataId": "",
+		"wikidataId": "Q2110",
 		"translations": {
 			"en": "Lampung",
 			"es": "Lampung",
@@ -59304,7 +59304,7 @@
 		"population": 2659156,
 		"type": "province",
 		"native": "Provinsi Sulawesi Tenggara",
-		"wikidataId": "",
+		"wikidataId": "Q5075",
 		"translations": {
 			"en": "Southeast Sulawesi",
 			"es": "Sulawesi Suroriental",
@@ -60459,7 +60459,7 @@
 		"population": 1847,
 		"type": "parish",
 		"native": "Arbory",
-		"wikidataId": "",
+		"wikidataId": "Q2859727",
 		"translations": {}
 	},
 	{
@@ -60629,7 +60629,7 @@
 		"population": 1579,
 		"type": "parish",
 		"native": "Lonan",
-		"wikidataId": "",
+		"wikidataId": "Q3258914",
 		"translations": {}
 	},
 	{
@@ -62451,7 +62451,7 @@
 		"population": 1386335,
 		"type": "province",
 		"native": "ذي قار",
-		"wikidataId": "",
+		"wikidataId": "Q215649",
 		"translations": {
 			"en": "Dhi Qar",
 			"ar": "ذي قار",
@@ -62795,7 +62795,7 @@
 		"population": 1400000,
 		"type": "province",
 		"native": "النجف",
-		"wikidataId": "",
+		"wikidataId": "Q192882",
 		"translations": {
 			"ar": "النجف",
 			"en": "Najaf",
@@ -62963,7 +62963,7 @@
 		"population": 2712400,
 		"type": "province",
 		"native": "البرز",
-		"wikidataId": "",
+		"wikidataId": "Q392522",
 		"translations": {
 			"de": "Alborz",
 			"hi": "अल्बोर्ज़ प्रांत",
@@ -63008,7 +63008,7 @@
 		"population": 1270420,
 		"type": "province",
 		"native": "اردبیل",
-		"wikidataId": "",
+		"wikidataId": "Q134228",
 		"translations": {
 			"hi": "अर्दबील प्रांत",
 			"pt": "Província de Ardabil",
@@ -63235,7 +63235,7 @@
 		"population": 2530696,
 		"type": "province",
 		"native": "گیلان‎",
-		"wikidataId": "",
+		"wikidataId": "Q928828",
 		"translations": {
 			"de": "Gilan",
 			"hi": "गिलान प्रांत",
@@ -63326,7 +63326,7 @@
 		"population": 1738234,
 		"type": "province",
 		"native": "همدان‎",
-		"wikidataId": "",
+		"wikidataId": "Q187373",
 		"translations": {
 			"hi": "हमादान प्रांत",
 			"pt": "Hamadã",
@@ -63550,7 +63550,7 @@
 		"population": 1952434,
 		"type": "province",
 		"native": "كرمانشاه‎",
-		"wikidataId": "",
+		"wikidataId": "Q174010",
 		"translations": {
 			"hi": "करमानशाह प्रांत",
 			"pt": "Kermanshah",
@@ -63626,7 +63626,7 @@
 		"population": 713052,
 		"type": "province",
 		"native": "کهگیلویه و بویراحمد",
-		"wikidataId": "",
+		"wikidataId": "Q180068",
 		"translations": {
 			"de": "Kohgiluye und Boyer Ahmad",
 			"en": "Kohgiluyeh and Boyer-Ahmad",
@@ -63671,7 +63671,7 @@
 		"population": 1603011,
 		"type": "province",
 		"native": "کردستان‎",
-		"wikidataId": "",
+		"wikidataId": "Q134386",
 		"translations": {
 			"hi": "कुर्दिस्तान प्रांत",
 			"pt": "Curdistão",
@@ -63717,7 +63717,7 @@
 		"population": 1760649,
 		"type": "province",
 		"native": "لرستان",
-		"wikidataId": "",
+		"wikidataId": "Q1131727",
 		"translations": {
 			"es": "Lorestán",
 			"fr": "Lorestan",
@@ -63807,7 +63807,7 @@
 		"population": 3283582,
 		"type": "province",
 		"native": "مازَندَران",
-		"wikidataId": "",
+		"wikidataId": "Q308864",
 		"translations": {
 			"es": "Mazandarán",
 			"en": "Mazandaran",
@@ -63853,7 +63853,7 @@
 		"population": 863092,
 		"type": "province",
 		"native": "خراسان شمالی",
-		"wikidataId": "",
+		"wikidataId": "Q180075",
 		"translations": {
 			"en": "North Khorasan",
 			"de": "Nord-Chorasan",
@@ -63899,7 +63899,7 @@
 		"population": 1273761,
 		"type": "province",
 		"native": "قزوین‎",
-		"wikidataId": "",
+		"wikidataId": "Q1105893",
 		"translations": {
 			"de": "Qazvin",
 			"hi": "क़ज़्वीन प्रांत",
@@ -63945,7 +63945,7 @@
 		"population": 1292283,
 		"type": "province",
 		"native": "قم",
-		"wikidataId": "",
+		"wikidataId": "Q131664",
 		"translations": {
 			"hi": "क़ोम प्रांत",
 			"pt": "Qom",
@@ -64123,7 +64123,7 @@
 		"population": 768898,
 		"type": "province",
 		"native": "خراسان جنوبی",
-		"wikidataId": "",
+		"wikidataId": "Q171551",
 		"translations": {
 			"en": "South Khorasan Province",
 			"de": "Süd-Chorasan",
@@ -64165,11 +64165,11 @@
 		"latitude": "35.66667",
 		"longitude": "51.41667",
 		"timezone": "Asia/Tehran",
-		"capital": null,
+		"capital": "Tehran",
 		"population": 13267637,
 		"type": "province",
 		"native": "استان تهران",
-		"wikidataId": "",
+		"wikidataId": "Q590866",
 		"translations": {
 			"en": "Tehran Province",
 			"de": "Teheran",
@@ -64215,7 +64215,7 @@
 		"population": 3265219,
 		"type": "province",
 		"native": "آذَربايجان غَربی",
-		"wikidataId": "",
+		"wikidataId": "Q134411",
 		"translations": {
 			"en": "West Azerbaijan Province",
 			"hi": "पश्चिम अज़रबैजान प्रांत",
@@ -64261,7 +64261,7 @@
 		"population": 1138533,
 		"type": "province",
 		"native": "یزد",
-		"wikidataId": "",
+		"wikidataId": "Q170568",
 		"translations": {
 			"de": "Yazd",
 			"hi": "यज़्द प्रांत",
@@ -68091,7 +68091,7 @@
 		"population": 9221,
 		"type": "parish",
 		"native": "St Clement",
-		"wikidataId": "",
+		"wikidataId": "Q3058160",
 		"translations": {
 			"en": "St Clement",
 			"fr": "Saint-Clément",
@@ -68173,7 +68173,7 @@
 		"population": 5418,
 		"type": "parish",
 		"native": "St Lawrence",
-		"wikidataId": "",
+		"wikidataId": "Q509090",
 		"translations": {
 			"en": "St Lawrence",
 			"fr": "Saint-Laurent"
@@ -68193,7 +68193,7 @@
 		"population": 3763,
 		"type": "parish",
 		"native": "St Martîn",
-		"wikidataId": "",
+		"wikidataId": "Q593645",
 		"translations": {
 			"en": "St Martîn",
 			"fr": "Saint-Martin",
@@ -68220,7 +68220,7 @@
 		"population": 1818,
 		"type": "parish",
 		"native": "St Mary",
-		"wikidataId": "",
+		"wikidataId": "Q2212948",
 		"translations": {
 			"en": "St Mary",
 			"fr": "Sainte-Marie"
@@ -68240,7 +68240,7 @@
 		"population": 4206,
 		"type": "parish",
 		"native": "Saint Ouen",
-		"wikidataId": "",
+		"wikidataId": "Q2305318",
 		"translations": {
 			"en": "Saint Ouen",
 			"fr": "Saint-Ouen",
@@ -68268,7 +68268,7 @@
 		"population": 5003,
 		"type": "parish",
 		"native": "St Peter",
-		"wikidataId": "",
+		"wikidataId": "Q3058152",
 		"translations": {
 			"en": "St Peter",
 			"fr": "Saint-Pierre",
@@ -68296,7 +68296,7 @@
 		"population": 13580,
 		"type": "parish",
 		"native": "St Saviour",
-		"wikidataId": "",
+		"wikidataId": "Q1808243",
 		"translations": {
 			"en": "St Saviour",
 			"fr": "Saint-Sauveur"
@@ -68316,7 +68316,7 @@
 		"population": 10568,
 		"type": "parish",
 		"native": "St. Brelade",
-		"wikidataId": "",
+		"wikidataId": "Q1835699",
 		"translations": {
 			"en": "St. Brelade",
 			"es": "St. Brelade",
@@ -72423,7 +72423,7 @@
 		"population": 1545714,
 		"type": "county",
 		"native": "Meru County",
-		"wikidataId": "",
+		"wikidataId": "Q15045704",
 		"translations": {
 			"de": "Meru County",
 			"ru": "Меру",
@@ -72547,7 +72547,7 @@
 		"population": 4397073,
 		"type": "national capital area",
 		"native": "Nairobi County",
-		"wikidataId": "Q1061480",
+		"wikidataId": "Q3335223",
 		"translations": {
 			"hi": "नैरोबी काउंटी",
 			"de": "Nairobi City County",
@@ -72908,7 +72908,7 @@
 		"population": 393177,
 		"type": "county",
 		"native": "Tharaka - Nithi",
-		"wikidataId": "",
+		"wikidataId": "Q2189432",
 		"translations": {}
 	},
 	{
@@ -72925,7 +72925,7 @@
 		"population": 990341,
 		"type": "county",
 		"native": "Trans Nzoia",
-		"wikidataId": "",
+		"wikidataId": "Q1278653",
 		"translations": {}
 	},
 	{
@@ -73120,7 +73120,7 @@
 		"population": 570898,
 		"type": "region",
 		"native": "Баткен Облусу",
-		"wikidataId": "",
+		"wikidataId": "Q487631",
 		"translations": {
 			"ru": "Баткенская Область",
 			"en": "Batken",
@@ -73189,11 +73189,11 @@
 		"latitude": "42.61667",
 		"longitude": "74.6",
 		"timezone": "Asia/Bishkek",
-		"capital": null,
+		"capital": "Bishkek",
 		"population": 1068702,
 		"type": "region",
 		"native": "Чүй Облусу",
-		"wikidataId": "",
+		"wikidataId": "Q486370",
 		"translations": {
 			"ru": "Чуйская Область",
 			"de": "Gebiet Tschüi",
@@ -73283,7 +73283,7 @@
 		"population": 1311007,
 		"type": "region",
 		"native": "Жалал-Абад Облусу",
-		"wikidataId": "",
+		"wikidataId": "Q487640",
 		"translations": {
 			"ru": "Dzhalal-Abadskaya Oblast’",
 			"de": "Gebiet Dschalalabat",
@@ -73390,7 +73390,7 @@
 		"population": 1460425,
 		"type": "region",
 		"native": "Ош Облусу",
-		"wikidataId": "",
+		"wikidataId": "Q231987",
 		"translations": {
 			"ru": "Ошская Область",
 			"de": "Gebiet Osch",
@@ -73435,7 +73435,7 @@
 		"population": 273509,
 		"type": "region",
 		"native": "Талас Облусу",
-		"wikidataId": "",
+		"wikidataId": "Q109838",
 		"translations": {
 			"ru": "Таласская Область",
 			"de": "Gebiet Talas",
@@ -73660,7 +73660,7 @@
 		"population": 924175,
 		"type": "province",
 		"native": "ខេត្តកំពង់ស្ពឺ",
-		"wikidataId": "",
+		"wikidataId": "Q652867",
 		"translations": {
 			"de": "Kampong Speu",
 			"hi": "काम्पोंग स्पू प्रांत",
@@ -73705,7 +73705,7 @@
 		"population": 807254,
 		"type": "province",
 		"native": "ខេត្តកំពង់ធំ",
-		"wikidataId": "",
+		"wikidataId": "Q502148",
 		"translations": {
 			"en": "Kampong Thom",
 			"de": "Kampong Thom",
@@ -73839,7 +73839,7 @@
 		"population": 48772,
 		"type": "province",
 		"native": "Khétt Kêb",
-		"wikidataId": "",
+		"wikidataId": "Q852089",
 		"translations": {
 			"en": "Kep",
 			"es": "Provincia de Kep",
@@ -73872,7 +73872,7 @@
 		"population": 140962,
 		"type": "province",
 		"native": "ខេត្តកោះកុង",
-		"wikidataId": "",
+		"wikidataId": "Q466000",
 		"translations": {
 			"en": "Koh Kong",
 			"es": "Provincia de Koh Kong",
@@ -73904,7 +73904,7 @@
 		"population": 441078,
 		"type": "province",
 		"native": "Kratie",
-		"wikidataId": "",
+		"wikidataId": "Q785896",
 		"translations": {
 			"en": "Kratie",
 			"es": "Kratie",
@@ -73958,7 +73958,7 @@
 		"population": 267203,
 		"type": "province",
 		"native": "Ŏtâr Méanchey",
-		"wikidataId": "",
+		"wikidataId": "Q629538",
 		"translations": {}
 	},
 	{
@@ -73975,7 +73975,7 @@
 		"population": 79445,
 		"type": "municipality",
 		"native": "Khétt Pailĭn",
-		"wikidataId": "",
+		"wikidataId": "Q506646",
 		"translations": {
 			"en": "Pailin",
 			"de": "Pailin",
@@ -74118,7 +74118,7 @@
 		"population": 1331111,
 		"type": "province",
 		"native": "ខេត្តព្រៃវែង",
-		"wikidataId": "",
+		"wikidataId": "Q856788",
 		"translations": {
 			"en": "Prey Veng",
 			"de": "Prey Veng",
@@ -74163,7 +74163,7 @@
 		"population": 516071,
 		"type": "province",
 		"native": "ខេត្តពោធិ៍សាត់",
-		"wikidataId": "",
+		"wikidataId": "Q834464",
 		"translations": {
 			"en": "Pursat",
 			"es": "Provincia de Pursat",
@@ -74253,7 +74253,7 @@
 		"population": 1099825,
 		"type": "province",
 		"native": "Siem Reap",
-		"wikidataId": "",
+		"wikidataId": "Q652818",
 		"translations": {
 			"en": "Siem Reap",
 			"es": "Siem Reap",
@@ -74280,7 +74280,7 @@
 		"population": 176488,
 		"type": "province",
 		"native": "ខេត្តស្ទឹងត្រែង",
-		"wikidataId": "",
+		"wikidataId": "Q837889",
 		"translations": {
 			"en": "Stung Treng",
 			"de": "Stung Treng",
@@ -74370,7 +74370,7 @@
 		"population": 1097243,
 		"type": "province",
 		"native": "Takeo",
-		"wikidataId": "",
+		"wikidataId": "Q613345",
 		"translations": {
 			"en": "Takeo",
 			"es": "Takeo",
@@ -74397,7 +74397,7 @@
 		"population": 889970,
 		"type": "province",
 		"native": "Tboung Khmum",
-		"wikidataId": "",
+		"wikidataId": "Q15623578",
 		"translations": {
 			"en": "Tboung Khmum Province",
 			"es": "Tboung Khmum",
@@ -75000,7 +75000,7 @@
 		"population": 1299830,
 		"type": "province",
 		"native": "자강도",
-		"wikidataId": "",
+		"wikidataId": "Q272406",
 		"translations": {
 			"en": "Chagang",
 			"ko": "자강도",
@@ -75045,7 +75045,7 @@
 		"population": 1477582,
 		"type": "province",
 		"native": "강원도",
-		"wikidataId": "",
+		"wikidataId": "Q41416",
 		"translations": {
 			"ko": "강원도",
 			"en": "Kangwŏn-do",
@@ -75090,7 +75090,7 @@
 		"population": 2327362,
 		"type": "province",
 		"native": "함경북도",
-		"wikidataId": "",
+		"wikidataId": "Q109361",
 		"translations": {
 			"ko": "함경북도",
 			"en": "North Hamgyong",
@@ -75146,7 +75146,7 @@
 		"population": 2728662,
 		"type": "province",
 		"native": "P’yŏngan-bukto",
-		"wikidataId": "",
+		"wikidataId": "Q109348",
 		"translations": {
 			"ko": "P’yŏngan-bukto"
 		}
@@ -75238,7 +75238,7 @@
 		"population": 3066013,
 		"type": "province",
 		"native": "Hamgyŏng-namdo",
-		"wikidataId": "",
+		"wikidataId": "Q109368",
 		"translations": {
 			"ko": "Hamgyŏng-namdo",
 			"en": "South Hamgyong",
@@ -75266,7 +75266,7 @@
 		"population": 2310485,
 		"type": "province",
 		"native": "황해남도",
-		"wikidataId": "",
+		"wikidataId": "Q626052",
 		"translations": {
 			"ko": "황해남도",
 			"en": "South Hwanghae",
@@ -75322,7 +75322,7 @@
 		"population": 719269,
 		"type": "province",
 		"native": "량강도",
-		"wikidataId": "",
+		"wikidataId": "Q110171",
 		"translations": {
 			"ko": "량강도"
 		}
@@ -75454,7 +75454,7 @@
 		"population": 1537339,
 		"type": "province",
 		"native": "강원도",
-		"wikidataId": "",
+		"wikidataId": "Q41071",
 		"translations": {
 			"ko": "강원도",
 			"en": "Gangwon-do",
@@ -75653,7 +75653,7 @@
 		"population": 1769607,
 		"type": "province",
 		"native": "전라북도",
-		"wikidataId": "",
+		"wikidataId": "Q41157",
 		"translations": {
 			"ko": "전라북도",
 			"en": "Jeollabuk-do",
@@ -75709,7 +75709,7 @@
 		"population": 1578934,
 		"type": "province",
 		"native": "충청북도",
-		"wikidataId": "",
+		"wikidataId": "Q41066",
 		"translations": {
 			"ko": "충청북도",
 			"en": "North Chungcheong",
@@ -75737,7 +75737,7 @@
 		"population": 394630,
 		"type": "special self-governing city",
 		"native": "세종특별자치시",
-		"wikidataId": "",
+		"wikidataId": "Q20929",
 		"translations": {
 			"ko": "세종특별자치시",
 			"en": "Sejong-si",
@@ -75868,7 +75868,7 @@
 		"population": 511001,
 		"type": "province",
 		"native": "مُحَافَظَة اَلْعَاصِمَة",
-		"wikidataId": "",
+		"wikidataId": "Q1046645",
 		"translations": {
 			"ar": "مُحَافَظَة اَلْعَاصِمَة",
 			"en": "Al Asimah",
@@ -75896,7 +75896,7 @@
 		"population": 1245502,
 		"type": "province",
 		"native": "مُحَافَظَة اَلْفَرْوَانِيَّة",
-		"wikidataId": "",
+		"wikidataId": "Q1072757",
 		"translations": {
 			"ar": "مُحَافَظَة اَلْفَرْوَانِيَّة",
 			"en": "Al Farwaniyah",
@@ -75941,7 +75941,7 @@
 		"population": 307316,
 		"type": "province",
 		"native": "مُحَافَظَة الجَهْرَاء",
-		"wikidataId": "",
+		"wikidataId": "Q405701",
 		"translations": {
 			"ar": "مُحَافَظَة الجَهْرَاء",
 			"de": "Gouvernement al-Dschahra",
@@ -76006,7 +76006,7 @@
 		"population": 223716,
 		"type": "province",
 		"native": "Mubārak al Kabīr",
-		"wikidataId": "",
+		"wikidataId": "Q913370",
 		"translations": {
 			"en": "Mubārak al Kabīr",
 			"es": "Mubarak al Kabir",
@@ -76162,7 +76162,7 @@
 		"population": 797036,
 		"type": "region",
 		"native": "Ақтөбе Облысы",
-		"wikidataId": "",
+		"wikidataId": "Q485437",
 		"translations": {
 			"ru": "Актюбинская Область",
 			"en": "Aktobe",
@@ -76219,7 +76219,7 @@
 		"population": 1949837,
 		"type": "region",
 		"native": "Алматы Облысы",
-		"wikidataId": "",
+		"wikidataId": "Q186466",
 		"translations": {
 			"ru": "Алматинская Область",
 			"en": "Almaty Region",
@@ -76359,7 +76359,7 @@
 		"population": 1464269,
 		"type": "region",
 		"native": "Shyghys Qazaqstan Oblysy",
-		"wikidataId": "",
+		"wikidataId": "Q36156",
 		"translations": {
 			"ru": "Vostochno-Kazakhstanskaya Oblast’",
 			"en": "East Kazakhstan",
@@ -76460,7 +76460,7 @@
 		"population": 727990,
 		"type": "region",
 		"native": "Qyzylorda Oblysy",
-		"wikidataId": "",
+		"wikidataId": "Q485322",
 		"translations": {
 			"ru": "Kyzylordinskaya Oblast’",
 			"en": "Kyzylorda",
@@ -76516,7 +76516,7 @@
 		"population": 579403,
 		"type": "region",
 		"native": "Soltüstik Qazaqstan Oblysy",
-		"wikidataId": "",
+		"wikidataId": "Q485088",
 		"translations": {
 			"ru": "Severo-Kazakhstanskaya Oblast’",
 			"en": "North Kazakhstan",
@@ -76674,7 +76674,7 @@
 		"population": 618261,
 		"type": "region",
 		"native": "Батыс Қазақстан Облысы",
-		"wikidataId": "",
+		"wikidataId": "Q486007",
 		"translations": {
 			"ru": "Zapadno-Kazakhstanskaya Oblast’",
 			"en": "West Kazakhstan",
@@ -76758,7 +76758,7 @@
 		"population": 159900,
 		"type": "province",
 		"native": "ແຂວງ​ອັດຕະປື",
-		"wikidataId": "",
+		"wikidataId": "Q503004",
 		"translations": {
 			"ko": "앗타푸 주"
 		}
@@ -76867,7 +76867,7 @@
 		"population": 752688,
 		"type": "province",
 		"native": "ຈຳປາສັກ",
-		"wikidataId": "",
+		"wikidataId": "Q334888",
 		"translations": {
 			"ko": "참빠삭 주",
 			"de": "Provinz Champasak",
@@ -76912,7 +76912,7 @@
 		"population": 310976,
 		"type": "province",
 		"native": "ຫົວພັນ",
-		"wikidataId": "",
+		"wikidataId": "Q502997",
 		"translations": {
 			"ko": "후아판 주"
 		}
@@ -76931,7 +76931,7 @@
 		"population": 433570,
 		"type": "province",
 		"native": "ແຂວງຄຳມ່ວນ",
-		"wikidataId": "",
+		"wikidataId": "Q506641",
 		"translations": {
 			"ko": "캄무안 주",
 			"de": "Provinz Khammuan",
@@ -76976,7 +76976,7 @@
 		"population": 150100,
 		"type": "province",
 		"native": "Loungnamtha",
-		"wikidataId": "",
+		"wikidataId": "Q948691",
 		"translations": {
 			"ko": "루앙남타 주"
 		}
@@ -76995,7 +76995,7 @@
 		"population": 467157,
 		"type": "province",
 		"native": "ແຂວງຫຼວງພະບາງ",
-		"wikidataId": "",
+		"wikidataId": "Q747881",
 		"translations": {
 			"ko": "루앙프라방 주",
 			"de": "Provinz Luang Prabang",
@@ -77059,7 +77059,7 @@
 		"population": 193145,
 		"type": "province",
 		"native": "Phôngsali",
-		"wikidataId": "",
+		"wikidataId": "Q334868",
 		"translations": {
 			"ko": "퐁살리 주"
 		}
@@ -77078,7 +77078,7 @@
 		"population": 442200,
 		"type": "province",
 		"native": "ແຂວງສາລະວັນ",
-		"wikidataId": "",
+		"wikidataId": "Q302656",
 		"translations": {
 			"ko": "살라완 주",
 			"de": "Provinz Salavan",
@@ -77123,7 +77123,7 @@
 		"population": 1037553,
 		"type": "province",
 		"native": "ແຂວງສະຫວັນນະເຂດ",
-		"wikidataId": "",
+		"wikidataId": "Q465940",
 		"translations": {
 			"ko": "사완나켓 주",
 			"de": "Provinz Savannakhet",
@@ -77247,7 +77247,7 @@
 		"population": 107926,
 		"type": "province",
 		"native": "Xaisomboun",
-		"wikidataId": "",
+		"wikidataId": "Q20202028",
 		"translations": {
 			"en": "Xaisomboun",
 			"es": "Xaisomboun",
@@ -77274,7 +77274,7 @@
 		"population": 129398,
 		"type": "province",
 		"native": "Xékong",
-		"wikidataId": "",
+		"wikidataId": "Q585707",
 		"translations": {
 			"ko": "세콩 주"
 		}
@@ -77312,7 +77312,7 @@
 		"population": 267172,
 		"type": "province",
 		"native": "Xiangkhoang",
-		"wikidataId": "",
+		"wikidataId": "Q465947",
 		"translations": {
 			"ko": "씨앙쿠앙 주"
 		}
@@ -77833,7 +77833,7 @@
 		"population": 7935,
 		"type": "quarter",
 		"native": "Soufrière",
-		"wikidataId": "",
+		"wikidataId": "Q1472841",
 		"translations": {}
 	},
 	{
@@ -77850,7 +77850,7 @@
 		"population": 15132,
 		"type": "quarter",
 		"native": "Vieux-Fort",
-		"wikidataId": "",
+		"wikidataId": "Q1472864",
 		"translations": {}
 	},
 	{
@@ -81613,11 +81613,11 @@
 		"latitude": "49.63678",
 		"longitude": "5.97031",
 		"timezone": "Europe/Luxembourg",
-		"capital": null,
+		"capital": "Capellen",
 		"population": 54352,
 		"type": "canton",
 		"native": "Kanton Kapellen",
-		"wikidataId": "",
+		"wikidataId": "Q397678",
 		"translations": {
 			"de": "Kanton Capellen",
 			"en": "Capellen",
@@ -81640,11 +81640,11 @@
 		"latitude": "50.07852",
 		"longitude": "6.02236",
 		"timezone": "Europe/Luxembourg",
-		"capital": null,
+		"capital": "Clervaux",
 		"population": 21214,
 		"type": "canton",
 		"native": "Klierf",
-		"wikidataId": "",
+		"wikidataId": "Q691793",
 		"translations": {
 			"de": "Clerf",
 			"fr": "Clervaux",
@@ -81671,7 +81671,7 @@
 		"population": 35764,
 		"type": "district",
 		"native": "Dikrech",
-		"wikidataId": "",
+		"wikidataId": "Q691842",
 		"translations": {
 			"de": "Kanton Diekirch",
 			"en": "Diekirch",
@@ -81694,11 +81694,11 @@
 		"latitude": "49.78872",
 		"longitude": "6.39024",
 		"timezone": "Europe/Luxembourg",
-		"capital": null,
+		"capital": "Echternach",
 		"population": 20283,
 		"type": "canton",
 		"native": "Iechternach",
-		"wikidataId": "",
+		"wikidataId": "Q720221",
 		"translations": {
 			"fr": "Canton d'Echternach",
 			"de": "Kanton Echternach",
@@ -81721,11 +81721,11 @@
 		"latitude": "49.5",
 		"longitude": "6.03333",
 		"timezone": "Europe/Luxembourg",
-		"capital": null,
+		"capital": "Esch-sur-Alzette",
 		"population": 192739,
 		"type": "canton",
 		"native": "Esch-sur-Alzette",
-		"wikidataId": "",
+		"wikidataId": "Q188283",
 		"translations": {
 			"en": "Esch-sur-Alzette",
 			"es": "Esch-sur-Alzette",
@@ -81775,11 +81775,11 @@
 		"latitude": "49.61427",
 		"longitude": "6.17289",
 		"timezone": "Europe/Luxembourg",
-		"capital": null,
+		"capital": "Luxembourg",
 		"population": 204358,
 		"type": "district",
 		"native": "Lëtzebuerg",
-		"wikidataId": "",
+		"wikidataId": "Q691741",
 		"translations": {
 			"de": "Luxemburg",
 			"fr": "Luxembourg Campagne",
@@ -81806,7 +81806,7 @@
 		"population": 36262,
 		"type": "canton",
 		"native": "Miersch",
-		"wikidataId": "",
+		"wikidataId": "Q753917",
 		"translations": {
 			"de": "Kanton Mersch",
 			"en": "Mersch",
@@ -81833,7 +81833,7 @@
 		"population": 21138,
 		"type": "canton",
 		"native": "Kanton Redange",
-		"wikidataId": "",
+		"wikidataId": "Q835980",
 		"translations": {
 			"de": "Redingen",
 			"en": "Redange",
@@ -81856,11 +81856,11 @@
 		"latitude": "49.54323",
 		"longitude": "6.31779",
 		"timezone": "Europe/Luxembourg",
-		"capital": null,
+		"capital": "Remich",
 		"population": 24391,
 		"type": "canton",
 		"native": "Réimech",
-		"wikidataId": "",
+		"wikidataId": "Q691781",
 		"translations": {
 			"de": "Kanton Remich",
 			"en": "Remich",
@@ -81883,11 +81883,11 @@
 		"latitude": "49.93256",
 		"longitude": "6.16618",
 		"timezone": "Europe/Luxembourg",
-		"capital": null,
+		"capital": "Vianden",
 		"population": 5680,
 		"type": "canton",
 		"native": "Veianen",
-		"wikidataId": "",
+		"wikidataId": "Q845600",
 		"translations": {
 			"de": "Kanton Vianden",
 			"en": "Vianden",
@@ -82124,7 +82124,7 @@
 		"population": 41161,
 		"type": "municipality",
 		"native": "Cēsu novads",
-		"wikidataId": "",
+		"wikidataId": "Q97230394",
 		"translations": {
 			"en": "Cēsis Municipality",
 			"de": "Bezirk Cēsis",
@@ -83293,7 +83293,7 @@
 		"population": 159536,
 		"type": "municipality|governarate",
 		"native": "شعبية البطنان",
-		"wikidataId": "",
+		"wikidataId": "Q25931",
 		"translations": {
 			"ar": "شعبية البطنان",
 			"en": "Al Butnan",
@@ -83541,7 +83541,7 @@
 		"population": 287662,
 		"type": "municipality|governarate",
 		"native": "شعبية النقاط الخمس",
-		"wikidataId": "",
+		"wikidataId": "Q26161",
 		"translations": {
 			"ar": "شعبية النقاط الخمس",
 			"en": "An Nuqat al Khams",
@@ -85798,7 +85798,7 @@
 		"population": 73151,
 		"type": "district",
 		"native": "Călăraşi",
-		"wikidataId": "",
+		"wikidataId": "Q2128868",
 		"translations": {}
 	},
 	{
@@ -85860,7 +85860,7 @@
 		"population": 90369,
 		"type": "district",
 		"native": "Căuşeni",
-		"wikidataId": "",
+		"wikidataId": "Q2128869",
 		"translations": {}
 	},
 	{
@@ -86509,7 +86509,7 @@
 		"population": 82500,
 		"type": "district",
 		"native": "Районул Единец",
-		"wikidataId": "",
+		"wikidataId": "Q878290",
 		"translations": {
 			"pl": "Rejon Edineţ",
 			"fr": "Raion de Edineţ",
@@ -86539,7 +86539,7 @@
 		"population": 55353,
 		"type": "district",
 		"native": "Районул Окниця",
-		"wikidataId": "",
+		"wikidataId": "Q266444",
 		"translations": {
 			"pl": "Rejon Ocniţa",
 			"fr": "Raion de Ocniţa",
@@ -86794,7 +86794,7 @@
 		"population": 70036,
 		"type": "district",
 		"native": "Stefan-Voda",
-		"wikidataId": "",
+		"wikidataId": "Q2129061",
 		"translations": {
 			"ru": "Суворовский Район",
 			"en": "Stefan-Voda",
@@ -87025,7 +87025,7 @@
 		"population": 5071,
 		"type": "municipality",
 		"native": "Општина Андријевица",
-		"wikidataId": "Q242059",
+		"wikidataId": "Q2384773",
 		"translations": {}
 	},
 	{
@@ -87059,7 +87059,7 @@
 		"population": 33970,
 		"type": "municipality",
 		"native": "Општина Беране",
-		"wikidataId": "Q208200",
+		"wikidataId": "Q4853794",
 		"translations": {}
 	},
 	{
@@ -87110,7 +87110,7 @@
 		"population": 59857,
 		"type": "municipality",
 		"native": "Општина Будва",
-		"wikidataId": "Q174237",
+		"wikidataId": "Q3739214",
 		"translations": {}
 	},
 	{
@@ -87127,7 +87127,7 @@
 		"population": 18482,
 		"type": "municipality",
 		"native": "Општина Цетиње",
-		"wikidataId": "Q173338",
+		"wikidataId": "Q3305075",
 		"translations": {}
 	},
 	{
@@ -87144,7 +87144,7 @@
 		"population": 5208,
 		"type": "municipality",
 		"native": "Оптшина Даниловград",
-		"wikidataId": "Q275630",
+		"wikidataId": "Q3741507",
 		"translations": {}
 	},
 	{
@@ -87305,7 +87305,7 @@
 		"population": 56970,
 		"type": "municipality",
 		"native": "Општина Никшић",
-		"wikidataId": "Q200733",
+		"wikidataId": "Q4865016",
 		"translations": {}
 	},
 	{
@@ -87356,7 +87356,7 @@
 		"population": 2947,
 		"type": "municipality",
 		"native": "Општина Шавник",
-		"wikidataId": "Q837219",
+		"wikidataId": "Q13365880",
 		"translations": {}
 	},
 	{
@@ -87422,7 +87422,7 @@
 		"population": 19489,
 		"type": "municipality",
 		"native": "Општина Пљевља",
-		"wikidataId": "Q211343",
+		"wikidataId": "Q3299950",
 		"translations": {}
 	},
 	{
@@ -87435,11 +87435,11 @@
 		"latitude": "42.5",
 		"longitude": "19.33333",
 		"timezone": "Europe/Podgorica",
-		"capital": null,
+		"capital": "Podgorica",
 		"population": 185937,
 		"type": "municipality",
 		"native": "Подгорица",
-		"wikidataId": "",
+		"wikidataId": "Q3305250",
 		"translations": {}
 	},
 	{
@@ -87536,7 +87536,7 @@
 		"population": 19921,
 		"type": "municipality",
 		"native": "Општина Улцињ",
-		"wikidataId": "Q189969",
+		"wikidataId": "Q3305169",
 		"translations": {}
 	},
 	{
@@ -87655,7 +87655,7 @@
 		"population": 809313,
 		"type": "autonomous province",
 		"native": "Anosy",
-		"wikidataId": "",
+		"wikidataId": "Q16045730",
 		"translations": {}
 	},
 	{
@@ -88596,7 +88596,7 @@
 		"population": 91983,
 		"type": "statistical region",
 		"native": "Општина Битола",
-		"wikidataId": "Q157246",
+		"wikidataId": "Q159380",
 		"translations": {
 			"en": "Bitola",
 			"tr": "Manastır",
@@ -88804,7 +88804,7 @@
 		"population": 6906,
 		"type": "statistical region",
 		"native": "Opština Češinovo-Obleševo",
-		"wikidataId": "",
+		"wikidataId": "Q281898",
 		"translations": {
 			"en": "Češinovo-Obleševo",
 			"es": "Municipalidad de Češinovo-Obleševo",
@@ -88908,7 +88908,7 @@
 		"population": 20863,
 		"type": "statistical region",
 		"native": "Општина Дебар",
-		"wikidataId": "",
+		"wikidataId": "Q1344996",
 		"translations": {
 			"en": "Debar",
 			"es": "Debar",
@@ -89819,7 +89819,7 @@
 		"population": 6171,
 		"type": "statistical region",
 		"native": "Општина Могила",
-		"wikidataId": "",
+		"wikidataId": "Q1839369",
 		"translations": {
 			"en": "Mogila",
 			"es": "Mogila",
@@ -89873,7 +89873,7 @@
 		"population": 3120,
 		"type": "statistical region",
 		"native": "Општина Новаци",
-		"wikidataId": "",
+		"wikidataId": "Q2088022",
 		"translations": {
 			"en": "Novaci",
 			"es": "Novaci",
@@ -90053,7 +90053,7 @@
 		"population": 75132,
 		"type": "statistical region",
 		"native": "Општина Прилеп",
-		"wikidataId": "",
+		"wikidataId": "Q6312454",
 		"translations": {
 			"en": "Prilep",
 			"es": "Prilep",
@@ -90286,7 +90286,7 @@
 		"population": 3950,
 		"type": "statistical region",
 		"native": "Општина Старо Нагоричане",
-		"wikidataId": "",
+		"wikidataId": "Q2128903",
 		"translations": {
 			"en": "Staro Nagorichane",
 			"es": "Staro Nagorichane",
@@ -90313,7 +90313,7 @@
 		"population": 65801,
 		"type": "statistical region",
 		"native": "Општина Струга",
-		"wikidataId": "",
+		"wikidataId": "Q749618",
 		"translations": {
 			"en": "Struga",
 			"es": "Struga",
@@ -90340,7 +90340,7 @@
 		"population": 57175,
 		"type": "statistical region",
 		"native": "Општина Струмица",
-		"wikidataId": "",
+		"wikidataId": "Q2308287",
 		"translations": {
 			"en": "Strumica",
 			"es": "Strumica",
@@ -90367,7 +90367,7 @@
 		"population": 21721,
 		"type": "statistical region",
 		"native": "Општина Студеничани",
-		"wikidataId": "",
+		"wikidataId": "Q2088034",
 		"translations": {
 			"en": "Studenichani",
 			"es": "Studenichani",
@@ -90484,7 +90484,7 @@
 		"population": 91760,
 		"type": "statistical region",
 		"native": "Општина Тетово",
-		"wikidataId": "",
+		"wikidataId": "Q3245456",
 		"translations": {
 			"en": "Tetovo",
 			"es": "Tetovo",
@@ -90628,7 +90628,7 @@
 		"population": 19391,
 		"type": "statistical region",
 		"native": "Општина Виница",
-		"wikidataId": "",
+		"wikidataId": "Q2479526",
 		"translations": {
 			"en": "Vinica",
 			"es": "Vinica",
@@ -91583,7 +91583,7 @@
 		"population": 1160000,
 		"type": "region",
 		"native": "Nay Pyi Taw",
-		"wikidataId": "",
+		"wikidataId": "Q4796",
 		"translations": {
 			"fr": "Naypyidaw",
 			"en": "Nay Pyi Taw",
@@ -92671,11 +92671,11 @@
 		"latitude": "18.11",
 		"longitude": "145.771",
 		"timezone": "Pacific/Saipan",
-		"capital": null,
+		"capital": "Pagan",
 		"population": 85,
 		"type": "municipality",
 		"native": "Northern Islands",
-		"wikidataId": "",
+		"wikidataId": "Q1608103",
 		"translations": {
 			"en": "Northern Islands",
 			"es": "Islas del Norte",
@@ -93245,7 +93245,7 @@
 		"population": 627415,
 		"type": "district",
 		"native": "ولاية انواكشوط الجنوبية",
-		"wikidataId": "",
+		"wikidataId": "Q20669653",
 		"translations": {
 			"ar": "ولاية انواكشوط الجنوبية",
 			"en": "Nouakchott South",
@@ -94781,7 +94781,7 @@
 		"population": 289,
 		"type": "dependency",
 		"native": "Agalega Islands",
-		"wikidataId": "",
+		"wikidataId": "Q196042",
 		"translations": {
 			"fr": "îles Agaléga",
 			"de": "Agalega-Insel",
@@ -94808,7 +94808,7 @@
 		"population": 70046,
 		"type": "district",
 		"native": "Black River",
-		"wikidataId": "",
+		"wikidataId": "Q873740",
 		"translations": {}
 	},
 	{
@@ -95114,7 +95114,7 @@
 		"population": 12116,
 		"type": "atoll",
 		"native": "Gaafu Alif Atoll",
-		"wikidataId": "",
+		"wikidataId": "Q1116203",
 		"translations": {
 			"en": "Gaafu Alif Atoll",
 			"es": "Atolón Gaafu Alif",
@@ -99586,7 +99586,7 @@
 		"population": 18353,
 		"type": "province",
 		"native": "Îles Loyauté",
-		"wikidataId": "Q913470",
+		"wikidataId": "Q18655787",
 		"translations": {
 			"en": "Loyalty Islands",
 			"fr": "Îles Loyauté",
@@ -104732,7 +104732,7 @@
 		"population": 179700,
 		"type": "regional council",
 		"native": "Hawke's Bay Region",
-		"wikidataId": "",
+		"wikidataId": "Q251825",
 		"translations": {
 			"fr": "Hawke's Bay",
 			"de": "Hawke’s Bay",
@@ -104777,7 +104777,7 @@
 		"population": 260700,
 		"type": "regional council",
 		"native": "Manawatu-Wanganui",
-		"wikidataId": "",
+		"wikidataId": "Q139907",
 		"translations": {
 			"fr": "Manawatu-Wanganui",
 			"en": "Manawatu-Wanganui",
@@ -104927,7 +104927,7 @@
 		"population": 253900,
 		"type": "regional council",
 		"native": "Otago",
-		"wikidataId": "",
+		"wikidataId": "Q692912",
 		"translations": {
 			"en": "Otago",
 			"ja": "オタゴ地方",
@@ -105017,7 +105017,7 @@
 		"population": 130300,
 		"type": "regional council",
 		"native": "Taranaki Region",
-		"wikidataId": "",
+		"wikidataId": "Q140207",
 		"translations": {
 			"fr": "Taranaki",
 			"de": "Taranaki",
@@ -105062,7 +105062,7 @@
 		"population": 59900,
 		"type": "unitary authority",
 		"native": "Tasman District",
-		"wikidataId": "",
+		"wikidataId": "Q666142",
 		"translations": {
 			"fr": "Tasman",
 			"de": "Tasman",
@@ -105107,7 +105107,7 @@
 		"population": 532100,
 		"type": "regional council",
 		"native": "Waikato Region",
-		"wikidataId": "",
+		"wikidataId": "Q139918",
 		"translations": {
 			"fr": "Waikato",
 			"de": "Waikato",
@@ -105851,7 +105851,7 @@
 		"population": 12358,
 		"type": "indigenous territory",
 		"native": "Embera",
-		"wikidataId": "",
+		"wikidataId": "Q1141041",
 		"translations": {
 			"ru": "Эмбера-Воунаан",
 			"zh": "恩贝拉-沃内安特区",
@@ -106034,7 +106034,7 @@
 		"population": 212084,
 		"type": "indigenous territory",
 		"native": "Comarca Ngäbe-Buglé",
-		"wikidataId": "",
+		"wikidataId": "Q1129783",
 		"translations": {
 			"de": "Ngöbe-Buglé",
 			"hi": "गोब-ब्यूगल कोमारका",
@@ -106213,7 +106213,7 @@
 		"population": 1039415,
 		"type": "department",
 		"native": "Ancash",
-		"wikidataId": "",
+		"wikidataId": "Q205089",
 		"translations": {
 			"es": "Ancash",
 			"en": "Ancash",
@@ -106590,7 +106590,7 @@
 		"population": 850765,
 		"type": "department",
 		"native": "Departamento de Ica",
-		"wikidataId": "",
+		"wikidataId": "Q208186",
 		"translations": {
 			"en": "Ica",
 			"fr": "Ica",
@@ -107405,7 +107405,7 @@
 		"longitude": "155",
 		"timezone": "Pacific/Bougainville",
 		"capital": "Buka",
-		"population": 132886,
+		"population": 367093,
 		"type": "province",
 		"native": "Bougainville",
 		"wikidataId": "Q18826",
@@ -107422,7 +107422,7 @@
 		"longitude": "148",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Port Moresby",
-		"population": 183983,
+		"population": 269756,
 		"type": "province",
 		"native": "Central Province",
 		"wikidataId": "Q874942",
@@ -107467,7 +107467,7 @@
 		"longitude": "144.83333",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Kundiawa",
-		"population": 291848,
+		"population": 376473,
 		"type": "province",
 		"native": "Chimbu Province",
 		"wikidataId": "Q599448",
@@ -107557,7 +107557,7 @@
 		"longitude": "143.75",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Wewak",
-		"population": 450530,
+		"population": 631791,
 		"type": "province",
 		"native": "East Sepik Province",
 		"wikidataId": "Q690880",
@@ -107647,7 +107647,7 @@
 		"longitude": "143.5",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Wabag",
-		"population": 432045,
+		"population": 571060,
 		"type": "province",
 		"native": "Enga Province",
 		"wikidataId": "Q862584",
@@ -107772,7 +107772,7 @@
 		"longitude": "144.67278",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Kurumul",
-		"population": 185641,
+		"population": 343987,
 		"type": "province",
 		"native": "Jiwaka Province",
 		"wikidataId": "Q1400625",
@@ -107807,7 +107807,7 @@
 		"longitude": "145.5",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Madang",
-		"population": 493906,
+		"population": 797807,
 		"type": "province",
 		"native": "Madang Province",
 		"wikidataId": "Q326254",
@@ -107852,7 +107852,7 @@
 		"longitude": "147",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Lorengau",
-		"population": 60485,
+		"population": 69560,
 		"type": "province",
 		"native": "Manus Province",
 		"wikidataId": "Q874935",
@@ -107897,7 +107897,7 @@
 		"longitude": "150.31494",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Alotau",
-		"population": 276512,
+		"population": 412158,
 		"type": "province",
 		"native": "Milne Bay Province",
 		"wikidataId": "Q874962",
@@ -107942,7 +107942,7 @@
 		"longitude": "146.9672",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Lae",
-		"population": 674810,
+		"population": 997545,
 		"type": "province",
 		"native": "Morobe Province",
 		"wikidataId": "Q853664",
@@ -107987,7 +107987,7 @@
 		"longitude": "147.16667",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Port Moresby",
-		"population": 307643,
+		"population": 756754,
 		"type": "province",
 		"native": "National Capital",
 		"wikidataId": "Q1378310",
@@ -108014,7 +108014,7 @@
 		"longitude": "151.5",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Kavieng",
-		"population": 194067,
+		"population": 237780,
 		"type": "province",
 		"native": "New Ireland Province",
 		"wikidataId": "Q838690",
@@ -108104,7 +108104,7 @@
 		"longitude": "142",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Vanimo",
-		"population": 185741,
+		"population": 362721,
 		"type": "province",
 		"native": "Sandaun Province",
 		"wikidataId": "Q753689",
@@ -108149,7 +108149,7 @@
 		"longitude": "143.58333",
 		"timezone": "Pacific/Port_Moresby",
 		"capital": "Mendi",
-		"population": 510245,
+		"population": 972306,
 		"type": "province",
 		"native": "Southern Highlands Province",
 		"wikidataId": "Q849801",
@@ -115102,7 +115102,7 @@
 		"population": 206181,
 		"type": "department",
 		"native": "Concepción",
-		"wikidataId": "",
+		"wikidataId": "Q741009",
 		"translations": {}
 	},
 	{
@@ -115442,7 +115442,7 @@
 		"population": 33690,
 		"type": "municipality",
 		"native": "بلدية الخور",
-		"wikidataId": "",
+		"wikidataId": "Q1156471",
 		"translations": {
 			"ar": "بلدية الخور",
 			"fr": "Al Khawr",
@@ -115780,7 +115780,7 @@
 		"population": 569932,
 		"type": "county",
 		"native": "Județul Argeș",
-		"wikidataId": "",
+		"wikidataId": "Q179567",
 		"translations": {
 			"en": "Arges",
 			"de": "Kreis Argeș",
@@ -115954,7 +115954,7 @@
 		"population": 392821,
 		"type": "county",
 		"native": "Județul Botoșani",
-		"wikidataId": "",
+		"wikidataId": "Q178861",
 		"translations": {
 			"en": "Botoșani County",
 			"de": "Kreis Botoșani",
@@ -116044,7 +116044,7 @@
 		"population": 546615,
 		"type": "county",
 		"native": "Județul Brașov",
-		"wikidataId": "",
+		"wikidataId": "Q182614",
 		"translations": {
 			"en": "Brașov County",
 			"de": "Kreis Brașov",
@@ -116161,7 +116161,7 @@
 		"population": 283458,
 		"type": "county",
 		"native": "Județul Călărași",
-		"wikidataId": "",
+		"wikidataId": "Q188948",
 		"translations": {
 			"en": "Călărași County",
 			"de": "Kreis Călărași",
@@ -116206,7 +116206,7 @@
 		"population": 246588,
 		"type": "county",
 		"native": "Județul Caraș-Severin",
-		"wikidataId": "",
+		"wikidataId": "Q187925",
 		"translations": {
 			"en": "Caraș-Severin County",
 			"de": "Kreis Caraș-Severin",
@@ -116296,7 +116296,7 @@
 		"population": 655997,
 		"type": "county",
 		"native": "Constanţa",
-		"wikidataId": "",
+		"wikidataId": "Q188505",
 		"translations": {
 			"en": "Constanța County",
 			"de": "Kreis Constanța",
@@ -116385,7 +116385,7 @@
 		"population": 479404,
 		"type": "county",
 		"native": "Dâmbovița",
-		"wikidataId": "",
+		"wikidataId": "Q188797",
 		"translations": {
 			"en": "Dâmbovița County",
 			"de": "Kreis Dâmbovița",
@@ -116475,7 +116475,7 @@
 		"population": 496892,
 		"type": "county",
 		"native": "Județul Galați",
-		"wikidataId": "",
+		"wikidataId": "Q188796",
 		"translations": {
 			"en": "Galați County",
 			"de": "Kreis Galați",
@@ -116682,7 +116682,7 @@
 		"population": 250816,
 		"type": "county",
 		"native": "Județul Ialomița",
-		"wikidataId": "",
+		"wikidataId": "Q193044",
 		"translations": {
 			"en": "Ialomița County",
 			"de": "Kreis Ialomița",
@@ -116727,7 +116727,7 @@
 		"population": 760774,
 		"type": "county",
 		"native": "Județul Iași",
-		"wikidataId": "",
+		"wikidataId": "Q182888",
 		"translations": {
 			"en": "Iași County",
 			"de": "Kreis Iași",
@@ -116856,7 +116856,7 @@
 		"population": 234339,
 		"type": "county",
 		"native": "Județul Mehedinți",
-		"wikidataId": "",
+		"wikidataId": "Q191717",
 		"translations": {
 			"en": "Mehedinți County",
 			"de": "Kreis Mehedinți",
@@ -116901,7 +116901,7 @@
 		"population": 518193,
 		"type": "county",
 		"native": "Județul Mureș",
-		"wikidataId": "",
+		"wikidataId": "Q190711",
 		"translations": {
 			"de": "Kreis Mieresch",
 			"en": "Mureș County",
@@ -116946,7 +116946,7 @@
 		"population": 454203,
 		"type": "county",
 		"native": "Județul Neamț",
-		"wikidataId": "",
+		"wikidataId": "Q188661",
 		"translations": {
 			"en": "Neamț County",
 			"de": "Kreis Neamț",
@@ -117306,7 +117306,7 @@
 		"population": 650533,
 		"type": "county",
 		"native": "Timiș",
-		"wikidataId": "",
+		"wikidataId": "Q185586",
 		"translations": {
 			"de": "Kreis Temesch",
 			"en": "Timiș County",
@@ -121638,7 +121638,7 @@
 		"population": 2188461,
 		"type": "region",
 		"native": "عسير",
-		"wikidataId": "",
+		"wikidataId": "Q779855",
 		"translations": {
 			"ar": "عسير",
 			"en": "'Asir Region",
@@ -121684,7 +121684,7 @@
 		"population": 476172,
 		"type": "region",
 		"native": "منطقة الباحة",
-		"wikidataId": "",
+		"wikidataId": "Q852774",
 		"translations": {
 			"ar": "منطقة الباحة",
 			"en": "Al Bahah Region",
@@ -121740,7 +121740,7 @@
 		"population": 1016756,
 		"type": "region",
 		"native": "القصيم",
-		"wikidataId": "",
+		"wikidataId": "Q1105411",
 		"translations": {
 			"en": "Al-Qassim Region",
 			"ar": "القصيم",
@@ -121842,7 +121842,7 @@
 		"population": 1567547,
 		"type": "region",
 		"native": "جازان",
-		"wikidataId": "",
+		"wikidataId": "Q269973",
 		"translations": {
 			"ar": "جازان",
 			"en": "Jazan Region",
@@ -121898,7 +121898,7 @@
 		"population": 2132679,
 		"type": "region",
 		"native": "منطقة المدينة المنورة",
-		"wikidataId": "",
+		"wikidataId": "Q236027",
 		"translations": {
 			"en": "Medina Region",
 			"ar": "منطقة المدينة المنورة",
@@ -122042,7 +122042,7 @@
 		"population": 910030,
 		"type": "region",
 		"native": "منطقة تبوك",
-		"wikidataId": "",
+		"wikidataId": "Q1315953",
 		"translations": {
 			"ar": "منطقة تبوك",
 			"en": "Tabuk Region",
@@ -125635,7 +125635,7 @@
 		"population": 2257,
 		"type": "commune|municipality",
 		"native": "Občina Grad",
-		"wikidataId": "Q1065374",
+		"wikidataId": "Q1019067",
 		"translations": {
 			"en": "Municipality of Grad",
 			"ja": "グラード",
@@ -125766,11 +125766,11 @@
 		"latitude": "46.05918",
 		"longitude": "14.50916",
 		"timezone": "Europe/Ljubljana",
-		"capital": null,
+		"capital": "Ljubljana",
 		"population": 280140,
 		"type": "statistical region",
 		"native": "Mestna občina Ljubljana",
-		"wikidataId": "",
+		"wikidataId": "Q3434113",
 		"translations": {
 			"en": "Ljubljana",
 			"fr": "Ljubljana",
@@ -125805,7 +125805,7 @@
 		"population": 11805,
 		"type": "commune|municipality",
 		"native": "Občina Ljutomer",
-		"wikidataId": "Q13377820",
+		"wikidataId": "Q15892",
 		"translations": {
 			"en": "Municipality of Ljutomer",
 			"ja": "リュトメル",
@@ -126034,7 +126034,7 @@
 		"population": 3637,
 		"type": "commune|municipality",
 		"native": "Občina Apače",
-		"wikidataId": "",
+		"wikidataId": "Q3278915",
 		"translations": {
 			"en": "Municipality of Apače"
 		}
@@ -126053,7 +126053,7 @@
 		"population": 8333,
 		"type": "commune|municipality",
 		"native": "Občina Beltinci",
-		"wikidataId": "Q855820",
+		"wikidataId": "Q778542",
 		"translations": {
 			"en": "Municipality of Beltinci"
 		}
@@ -126091,7 +126091,7 @@
 		"population": 1436,
 		"type": "commune|municipality",
 		"native": "Občina Bistrica ob Sotli",
-		"wikidataId": "Q46690",
+		"wikidataId": "Q13377731",
 		"translations": {
 			"en": "Municipality of Bistrica ob Sotli"
 		}
@@ -126110,7 +126110,7 @@
 		"population": 8122,
 		"type": "commune|municipality",
 		"native": "Občina Bled",
-		"wikidataId": "Q202852",
+		"wikidataId": "Q647572",
 		"translations": {
 			"fr": "Bled",
 			"en": "Municipality of Bled",
@@ -126136,7 +126136,7 @@
 		"population": 1576,
 		"type": "commune|municipality",
 		"native": "Občina Bloke",
-		"wikidataId": "",
+		"wikidataId": "Q164123",
 		"translations": {
 			"en": "Municipality of Bloke"
 		}
@@ -126155,7 +126155,7 @@
 		"population": 5257,
 		"type": "commune|municipality",
 		"native": "Občina Bohinj",
-		"wikidataId": "Q833595",
+		"wikidataId": "Q3661628",
 		"translations": {
 			"de": "Gemeinde Bohinj",
 			"en": "Municipality of Bohinj",
@@ -126227,7 +126227,7 @@
 		"population": 3256,
 		"type": "commune|municipality",
 		"native": "Občina Bovec",
-		"wikidataId": "Q15855",
+		"wikidataId": "Q3259688",
 		"translations": {
 			"en": "Municipality of Bovec"
 		}
@@ -126246,7 +126246,7 @@
 		"population": 5291,
 		"type": "commune|municipality",
 		"native": "Občina Braslovče",
-		"wikidataId": "Q517367",
+		"wikidataId": "Q1034410",
 		"translations": {
 			"en": "Municipality of Braslovče"
 		}
@@ -126322,7 +126322,7 @@
 		"population": 1889,
 		"type": "commune|municipality",
 		"native": "Občina Cankova",
-		"wikidataId": "Q120718",
+		"wikidataId": "Q13377751",
 		"translations": {
 			"en": "Municipality of Cankova"
 		}
@@ -126390,7 +126390,7 @@
 		"population": 4777,
 		"type": "commune|municipality",
 		"native": "Občina Cerkno",
-		"wikidataId": "Q143742",
+		"wikidataId": "Q13220435",
 		"translations": {
 			"it": "Circhina",
 			"ja": "ツェルクノ",
@@ -126422,7 +126422,7 @@
 		"population": 2035,
 		"type": "commune|municipality",
 		"native": "Občina Cerkvenjak",
-		"wikidataId": "Q511695",
+		"wikidataId": "Q1252438",
 		"translations": {
 			"en": "Municipality of Cerkvenjak"
 		}
@@ -126460,7 +126460,7 @@
 		"population": 4137,
 		"type": "commune|municipality",
 		"native": "Občina Črenšovci",
-		"wikidataId": "Q13378345",
+		"wikidataId": "Q341658",
 		"translations": {
 			"en": "Municipality of Črenšovci"
 		}
@@ -126479,7 +126479,7 @@
 		"population": 3545,
 		"type": "commune|municipality",
 		"native": "Občina Črna na Koroškem",
-		"wikidataId": "Q2573748",
+		"wikidataId": "Q279072",
 		"translations": {
 			"de": "Črna na Koroškem",
 			"hi": "क्रना ना कोरोस्केम नगरपालिका",
@@ -126524,7 +126524,7 @@
 		"population": 14717,
 		"type": "commune|municipality",
 		"native": "Občina Črnomelj",
-		"wikidataId": "Q15861",
+		"wikidataId": "Q3482211",
 		"translations": {
 			"hi": "क्र्नोमलजे नगर पालिका",
 			"de": "Gemeinde Črnomelj",
@@ -126569,7 +126569,7 @@
 		"population": 3873,
 		"type": "commune|municipality",
 		"native": "Občina Divača",
-		"wikidataId": "Q1230519",
+		"wikidataId": "Q557216",
 		"translations": {
 			"en": "Municipality of Divača"
 		}
@@ -126588,7 +126588,7 @@
 		"population": 977,
 		"type": "commune|municipality",
 		"native": "Občina Dobje",
-		"wikidataId": "Q2332502",
+		"wikidataId": "Q1008179",
 		"translations": {
 			"en": "Municipality of Dobje"
 		}
@@ -126645,7 +126645,7 @@
 		"population": 1335,
 		"type": "commune|municipality",
 		"native": "Občina Dobrovnik",
-		"wikidataId": "Q907388",
+		"wikidataId": "Q13365892",
 		"translations": {
 			"en": "Municipality of Dobrovnik"
 		}
@@ -126728,7 +126728,7 @@
 		"population": 9038,
 		"type": "commune|municipality",
 		"native": "Občina Dravograd",
-		"wikidataId": "Q15867",
+		"wikidataId": "Q3503123",
 		"translations": {
 			"en": "Municipality of Dravograd"
 		}
@@ -126811,7 +126811,7 @@
 		"population": 4036,
 		"type": "commune|municipality",
 		"native": "Občina Gorišnica",
-		"wikidataId": "Q8009692",
+		"wikidataId": "Q632998",
 		"translations": {
 			"en": "Municipality of Gorišnica"
 		}
@@ -126830,7 +126830,7 @@
 		"population": 8586,
 		"type": "commune|municipality",
 		"native": "Občina Gornja Radgona",
-		"wikidataId": "Q15868",
+		"wikidataId": "Q570397",
 		"translations": {
 			"en": "Municipality of Gornja Radgona"
 		}
@@ -126849,7 +126849,7 @@
 		"population": 2665,
 		"type": "commune|municipality",
 		"native": "Občina Gornji Grad",
-		"wikidataId": "Q2262884",
+		"wikidataId": "Q726548",
 		"translations": {
 			"en": "Municipality of Gornji Grad"
 		}
@@ -126868,7 +126868,7 @@
 		"population": 2170,
 		"type": "commune|municipality",
 		"native": "Občina Gornji Petrovci",
-		"wikidataId": "Q851946",
+		"wikidataId": "Q3435689",
 		"translations": {
 			"en": "Municipality of Gornji Petrovci"
 		}
@@ -126887,7 +126887,7 @@
 		"population": 19204,
 		"type": "commune|municipality",
 		"native": "Občina Grosuplje",
-		"wikidataId": "Q15870",
+		"wikidataId": "Q13377778",
 		"translations": {
 			"en": "Municipality of Grosuplje"
 		}
@@ -126944,7 +126944,7 @@
 		"population": 2872,
 		"type": "commune|municipality",
 		"native": "Občina Horjul",
-		"wikidataId": "Q5903623",
+		"wikidataId": "Q1005185",
 		"translations": {
 			"en": "Municipality of Horjul"
 		}
@@ -127027,7 +127027,7 @@
 		"population": 11871,
 		"type": "commune|municipality",
 		"native": "Občina Idrija",
-		"wikidataId": "Q15875",
+		"wikidataId": "Q3441842",
 		"translations": {
 			"it": "Idria",
 			"ja": "イドリヤ",
@@ -127060,7 +127060,7 @@
 		"population": 6781,
 		"type": "commune|municipality",
 		"native": "Občina Ig",
-		"wikidataId": "",
+		"wikidataId": "Q917397",
 		"translations": {
 			"de": "Gemeinde Ig",
 			"hi": "आइग नगरपालिका",
@@ -127192,7 +127192,7 @@
 		"population": 21645,
 		"type": "commune|municipality",
 		"native": "Občina Jesenice",
-		"wikidataId": "",
+		"wikidataId": "Q15881",
 		"translations": {
 			"en": "Municipality of Jesenice"
 		}
@@ -127211,7 +127211,7 @@
 		"population": 664,
 		"type": "commune|municipality",
 		"native": "Občina Jezersko",
-		"wikidataId": "",
+		"wikidataId": "Q1688771",
 		"translations": {
 			"en": "Municipality of Jezersko"
 		}
@@ -127249,7 +127249,7 @@
 		"population": 29073,
 		"type": "commune|municipality",
 		"native": "Občina Kamnik",
-		"wikidataId": "Q15883",
+		"wikidataId": "Q3503153",
 		"translations": {
 			"en": "Municipality of Kamnik"
 		}
@@ -127304,7 +127304,7 @@
 		"population": 6645,
 		"type": "commune|municipality",
 		"native": "Občina Kidričevo",
-		"wikidataId": "Q3503676",
+		"wikidataId": "Q776770",
 		"translations": {
 			"en": "Municipality of Kidričevo"
 		}
@@ -127482,7 +127482,7 @@
 		"population": 5302,
 		"type": "commune|municipality",
 		"native": "Občina Kranjska Gora",
-		"wikidataId": "Q2139428",
+		"wikidataId": "Q507051",
 		"translations": {
 			"de": "Kronau",
 			"en": "Municipality of Kranjska Gora",
@@ -127509,7 +127509,7 @@
 		"population": 3729,
 		"type": "commune|municipality",
 		"native": "Občina Križevci",
-		"wikidataId": "",
+		"wikidataId": "Q999563",
 		"translations": {
 			"en": "Municipality of Križevci"
 		}
@@ -127566,7 +127566,7 @@
 		"population": 13550,
 		"type": "commune|municipality",
 		"native": "Občina Laško",
-		"wikidataId": "Q1292940",
+		"wikidataId": "Q15887",
 		"translations": {
 			"de": "Gemeinde Laško",
 			"hi": "लास्को नगर पालिका",
@@ -127681,7 +127681,7 @@
 		"population": 2675,
 		"type": "commune|municipality",
 		"native": "Občina Ljubno",
-		"wikidataId": "",
+		"wikidataId": "Q773659",
 		"translations": {
 			"en": "Municipality of Ljubno"
 		}
@@ -127783,7 +127783,7 @@
 		"population": 1543,
 		"type": "commune|municipality",
 		"native": "Občina Luče",
-		"wikidataId": "Q3897892",
+		"wikidataId": "Q669648",
 		"translations": {
 			"en": "Municipality of Luče"
 		}
@@ -127840,7 +127840,7 @@
 		"population": 3985,
 		"type": "commune|municipality",
 		"native": "Občina Markovci",
-		"wikidataId": "Q8009642",
+		"wikidataId": "Q1008095",
 		"translations": {
 			"en": "Municipality of Markovci"
 		}
@@ -127859,7 +127859,7 @@
 		"population": 15542,
 		"type": "commune|municipality",
 		"native": "Občina Medvode",
-		"wikidataId": "Q2094435",
+		"wikidataId": "Q15894",
 		"translations": {
 			"en": "Municipality of Medvode"
 		}
@@ -127878,7 +127878,7 @@
 		"population": 7374,
 		"type": "commune|municipality",
 		"native": "Občina Mengeš",
-		"wikidataId": "Q3499878",
+		"wikidataId": "Q15895",
 		"translations": {
 			"en": "Municipality of Mengeš"
 		}
@@ -127924,7 +127924,7 @@
 		"population": 3665,
 		"type": "commune|municipality",
 		"native": "Občina Mežica",
-		"wikidataId": "Q15898",
+		"wikidataId": "Q678147",
 		"translations": {
 			"en": "Municipality of Mežica"
 		}
@@ -127943,7 +127943,7 @@
 		"population": 6268,
 		"type": "commune|municipality",
 		"native": "Občina Miklavž na Dravskem polju",
-		"wikidataId": "",
+		"wikidataId": "Q1005165",
 		"translations": {
 			"en": "Municipality of Miklavž na Dravskem Polju"
 		}
@@ -127981,7 +127981,7 @@
 		"population": 1371,
 		"type": "municipality",
 		"native": "Občina Mirna",
-		"wikidataId": "",
+		"wikidataId": "Q1515842",
 		"translations": {
 			"en": "Municipality of Mirna"
 		}
@@ -128000,7 +128000,7 @@
 		"population": 2807,
 		"type": "commune|municipality",
 		"native": "Občina Mirna Peč",
-		"wikidataId": "Q3444661",
+		"wikidataId": "Q1016805",
 		"translations": {
 			"de": "Gemeinde Mirna Peč",
 			"hi": "मीरना पेक नगरपालिका",
@@ -128112,7 +128112,7 @@
 		"population": 5033,
 		"type": "commune|municipality",
 		"native": "Občina Moravče",
-		"wikidataId": "Q644115",
+		"wikidataId": "Q1012761",
 		"translations": {
 			"en": "Municipality of Moravče"
 		}
@@ -128176,7 +128176,7 @@
 		"population": 4095,
 		"type": "commune|municipality",
 		"native": "Občina Mozirje",
-		"wikidataId": "Q2354085",
+		"wikidataId": "Q670975",
 		"translations": {
 			"en": "Municipality of Mozirje"
 		}
@@ -128233,7 +128233,7 @@
 		"population": 2601,
 		"type": "commune|municipality",
 		"native": "Občina Nazarje",
-		"wikidataId": "Q971156",
+		"wikidataId": "Q954987",
 		"translations": {
 			"en": "Municipality of Nazarje"
 		}
@@ -128316,7 +128316,7 @@
 		"population": 12639,
 		"type": "commune|municipality",
 		"native": "Občina Ormož",
-		"wikidataId": "Q1944509",
+		"wikidataId": "Q15900",
 		"translations": {
 			"en": "Municipality of Ormož"
 		}
@@ -128335,7 +128335,7 @@
 		"population": 402,
 		"type": "municipality",
 		"native": "Občina Osilnica",
-		"wikidataId": "Q3503224",
+		"wikidataId": "Q778147",
 		"translations": {
 			"en": "Municipality of Osilnica"
 		}
@@ -128420,7 +128420,7 @@
 		"population": 2552,
 		"type": "commune|municipality",
 		"native": "Občina Podvelka",
-		"wikidataId": "Q6612742",
+		"wikidataId": "Q1016800",
 		"translations": {
 			"ja": "ポドヴェルカ",
 			"uk": "Подвелка",
@@ -128470,7 +128470,7 @@
 		"population": 2351,
 		"type": "commune|municipality",
 		"native": "Občina Polzela",
-		"wikidataId": "Q2327227",
+		"wikidataId": "Q938443",
 		"translations": {
 			"en": "Municipality of Polzela"
 		}
@@ -128489,7 +128489,7 @@
 		"population": 15709,
 		"type": "commune|municipality",
 		"native": "Občina Postojna",
-		"wikidataId": "Q15901",
+		"wikidataId": "Q2242799",
 		"translations": {
 			"it": "Postumia",
 			"ja": "ポストイナ",
@@ -128543,7 +128543,7 @@
 		"population": 6844,
 		"type": "commune|municipality",
 		"native": "Občina Prevalje",
-		"wikidataId": "Q15905",
+		"wikidataId": "Q650009",
 		"translations": {
 			"ja": "プレヴァリェ",
 			"uk": "Превалє",
@@ -128574,7 +128574,7 @@
 		"population": 6095,
 		"type": "commune|municipality",
 		"native": "Občina Puconci",
-		"wikidataId": "Q942421",
+		"wikidataId": "Q921092",
 		"translations": {
 			"en": "Municipality of Puconci"
 		}
@@ -128593,7 +128593,7 @@
 		"population": 6820,
 		"type": "commune|municipality",
 		"native": "Občina Rače-Fram",
-		"wikidataId": "",
+		"wikidataId": "Q731093",
 		"translations": {
 			"en": "Municipality of Rače–Fram"
 		}
@@ -128612,7 +128612,7 @@
 		"population": 4445,
 		"type": "commune|municipality",
 		"native": "Občina Radeče",
-		"wikidataId": "Q15908",
+		"wikidataId": "Q13377986",
 		"translations": {
 			"de": "Gemeinde Radeče",
 			"ru": "Радече",
@@ -128646,7 +128646,7 @@
 		"population": 5304,
 		"type": "commune|municipality",
 		"native": "Občina Radenci",
-		"wikidataId": "Q3434276",
+		"wikidataId": "Q338743",
 		"translations": {
 			"ja": "ラデンツィ",
 			"uk": "Раденці",
@@ -128716,7 +128716,7 @@
 		"population": 1353,
 		"type": "commune|municipality",
 		"native": "Občina Razkrižje",
-		"wikidataId": "Q908023",
+		"wikidataId": "Q3435117",
 		"translations": {
 			"en": "Municipality of Razkrižje"
 		}
@@ -128782,7 +128782,7 @@
 		"population": 9333,
 		"type": "commune|municipality",
 		"native": "Občina Ribnica",
-		"wikidataId": "Q2596325",
+		"wikidataId": "Q15912",
 		"translations": {
 			"en": "Municipality of Ribnica"
 		}
@@ -128820,7 +128820,7 @@
 		"population": 11004,
 		"type": "commune|municipality",
 		"native": "Občina Rogaška Slatina",
-		"wikidataId": "Q3502521",
+		"wikidataId": "Q15913",
 		"translations": {
 			"en": "Municipality of Rogaška Slatina"
 		}
@@ -128858,7 +128858,7 @@
 		"population": 3143,
 		"type": "commune|municipality",
 		"native": "Občina Rogatec",
-		"wikidataId": "Q2468912",
+		"wikidataId": "Q1027245",
 		"translations": {
 			"en": "Municipality of Rogatec"
 		}
@@ -128877,7 +128877,7 @@
 		"population": 7330,
 		"type": "commune|municipality",
 		"native": "Občina Ruše",
-		"wikidataId": "Q15914",
+		"wikidataId": "Q3346841",
 		"translations": {
 			"hi": "रुसे नगरपालिका",
 			"de": "Gemeinde Ruše",
@@ -128979,7 +128979,7 @@
 		"population": 6351,
 		"type": "commune|municipality",
 		"native": "Občina Šempeter - Vrtojba",
-		"wikidataId": "",
+		"wikidataId": "Q391428",
 		"translations": {
 			"en": "Municipality of Šempeter–Vrtojba"
 		}
@@ -129036,7 +129036,7 @@
 		"population": 6779,
 		"type": "commune|municipality",
 		"native": "Občina Šentjernej",
-		"wikidataId": "Q1809670",
+		"wikidataId": "Q1016812",
 		"translations": {
 			"en": "Municipality of Šentjernej"
 		}
@@ -129127,7 +129127,7 @@
 		"population": 12894,
 		"type": "commune|municipality",
 		"native": "Občina Sežana",
-		"wikidataId": "",
+		"wikidataId": "Q554854",
 		"translations": {
 			"en": "Municipality of Sežana"
 		}
@@ -129146,7 +129146,7 @@
 		"population": 3212,
 		"type": "commune|municipality",
 		"native": "Občina Škocjan",
-		"wikidataId": "Q414897",
+		"wikidataId": "Q391800",
 		"translations": {
 			"en": "Municipality of Škocjan"
 		}
@@ -129250,7 +129250,7 @@
 		"population": 10154,
 		"type": "commune|municipality",
 		"native": "Občina Šmarje pri Jelšah",
-		"wikidataId": "Q4489175",
+		"wikidataId": "Q392173",
 		"translations": {
 			"en": "Municipality of Šmarje pri Jelšah"
 		}
@@ -129326,7 +129326,7 @@
 		"population": 2154,
 		"type": "commune|municipality",
 		"native": "Občina Sodražica",
-		"wikidataId": "Q2135530",
+		"wikidataId": "Q1008079",
 		"translations": {
 			"en": "Municipality of Sodražica"
 		}
@@ -129345,7 +129345,7 @@
 		"population": 517,
 		"type": "commune|municipality",
 		"native": "Občina Solčava",
-		"wikidataId": "Q13378177",
+		"wikidataId": "Q1313614",
 		"translations": {
 			"de": "Solčava",
 			"ru": "Солчава",
@@ -129456,7 +129456,7 @@
 		"population": 3847,
 		"type": "municipality",
 		"native": "Občina Straža",
-		"wikidataId": "Q6962554",
+		"wikidataId": "Q1784972",
 		"translations": {
 			"en": "Municipality of Straža"
 		}
@@ -129475,7 +129475,7 @@
 		"population": 2338,
 		"type": "commune|municipality",
 		"native": "Občina Sveta Ana",
-		"wikidataId": "Q16878193",
+		"wikidataId": "Q990063",
 		"translations": {
 			"de": "Sveta Ana",
 			"hi": "स्वेता ऐना नगरपालिका",
@@ -129520,7 +129520,7 @@
 		"population": 2110,
 		"type": "municipality",
 		"native": "Občina Sveta Trojica v Slovenskih goricah",
-		"wikidataId": "Q12803710",
+		"wikidataId": "Q1016820",
 		"translations": {
 			"en": "Municipality of Sveta Trojica v Slovenskih Goricah"
 		}
@@ -129539,7 +129539,7 @@
 		"population": 1221,
 		"type": "commune|municipality",
 		"native": "Občina Sveti Andraž v Slovenskih goricah",
-		"wikidataId": "",
+		"wikidataId": "Q925149",
 		"translations": {
 			"en": "Municipality of Sveti Andraž v Slovenskih Goricah"
 		}
@@ -129558,7 +129558,7 @@
 		"population": 2894,
 		"type": "commune|municipality",
 		"native": "Občina Sveti Jurij ob Ščavnici",
-		"wikidataId": "Q395562",
+		"wikidataId": "Q920353",
 		"translations": {
 			"en": "Municipality of Sveti Jurij ob Ščavnici"
 		}
@@ -129615,7 +129615,7 @@
 		"population": 1590,
 		"type": "commune|municipality",
 		"native": "Občina Tabor",
-		"wikidataId": "Q2672913",
+		"wikidataId": "Q999530",
 		"translations": {
 			"uk": "Табор",
 			"en": "Municipality of Tabor"
@@ -129635,7 +129635,7 @@
 		"population": 4134,
 		"type": "municipality",
 		"native": "Občina Tišina",
-		"wikidataId": "Q871557",
+		"wikidataId": "Q1276793",
 		"translations": {
 			"en": "Municipality of Tišina"
 		}
@@ -129673,7 +129673,7 @@
 		"population": 17194,
 		"type": "statistical region",
 		"native": "Občina Trbovlje",
-		"wikidataId": "Q8011202",
+		"wikidataId": "Q15925",
 		"translations": {
 			"en": "Municipality of Trbovlje"
 		}
@@ -129711,7 +129711,7 @@
 		"population": 15207,
 		"type": "commune|municipality",
 		"native": "Občina Tržič",
-		"wikidataId": "Q2638131",
+		"wikidataId": "Q15927",
 		"translations": {
 			"en": "Municipality of Tržič"
 		}
@@ -129749,7 +129749,7 @@
 		"population": 3380,
 		"type": "commune|municipality",
 		"native": "Občina Turnišče",
-		"wikidataId": "Q279490",
+		"wikidataId": "Q201074",
 		"translations": {
 			"en": "Municipality of Turnišče"
 		}
@@ -129787,7 +129787,7 @@
 		"population": 4155,
 		"type": "commune|municipality",
 		"native": "Občina Velike Lašče",
-		"wikidataId": "Q639899",
+		"wikidataId": "Q13378281",
 		"translations": {
 			"en": "Municipality of Velike Lašče"
 		}
@@ -129806,7 +129806,7 @@
 		"population": 1287,
 		"type": "commune|municipality",
 		"native": "Občina Veržej",
-		"wikidataId": "Q3443700",
+		"wikidataId": "Q1008086",
 		"translations": {
 			"en": "Municipality of Veržej"
 		}
@@ -129825,7 +129825,7 @@
 		"population": 5618,
 		"type": "commune|municipality",
 		"native": "Občina Videm",
-		"wikidataId": "Q82910",
+		"wikidataId": "Q1002863",
 		"translations": {
 			"en": "Municipality of Videm"
 		}
@@ -129962,7 +129962,7 @@
 		"population": 2649,
 		"type": "commune|municipality",
 		"native": "Občina Vuzenica",
-		"wikidataId": "Q2671086",
+		"wikidataId": "Q370390",
 		"translations": {
 			"en": "Municipality of Vuzenica"
 		}
@@ -130014,7 +130014,7 @@
 		"population": 21483,
 		"type": "statistical region",
 		"native": "Občina Žalec",
-		"wikidataId": "Q631387",
+		"wikidataId": "Q15931",
 		"translations": {
 			"en": "Municipality of Žalec"
 		}
@@ -130033,7 +130033,7 @@
 		"population": 1622,
 		"type": "commune|municipality",
 		"native": "Občina Zavrč",
-		"wikidataId": "Q8005216",
+		"wikidataId": "Q167001",
 		"translations": {
 			"en": "Municipality of Zavrč"
 		}
@@ -130052,7 +130052,7 @@
 		"population": 6770,
 		"type": "commune|municipality",
 		"native": "Občina Železniki",
-		"wikidataId": "Q3440936",
+		"wikidataId": "Q15932",
 		"translations": {
 			"de": "Železniki",
 			"hi": "ज़ेलेज़निकी नगर पालिका",
@@ -130116,7 +130116,7 @@
 		"population": 4902,
 		"type": "commune|municipality",
 		"native": "Občina Žiri",
-		"wikidataId": "Q15933",
+		"wikidataId": "Q394087",
 		"translations": {
 			"en": "Municipality of Žiri"
 		}
@@ -130154,7 +130154,7 @@
 		"population": 6447,
 		"type": "commune|municipality",
 		"native": "Občina Zreče",
-		"wikidataId": "Q3501344",
+		"wikidataId": "Q227163",
 		"translations": {
 			"de": "Gemeinde Zreče",
 			"hi": "ज़ेडरेस नगरपालिका",
@@ -130533,7 +130533,7 @@
 		"population": 48592,
 		"type": "commune|municipality",
 		"native": "Mestna občina Celje",
-		"wikidataId": "",
+		"wikidataId": "Q3441823",
 		"translations": {
 			"en": "Urban Municipality of Celje"
 		}
@@ -130552,7 +130552,7 @@
 		"population": 52700,
 		"type": "commune|municipality",
 		"native": "Mestna občina Koper",
-		"wikidataId": "Q1015",
+		"wikidataId": "Q556203",
 		"translations": {
 			"it": "Comune Città di Capodistria",
 			"ja": "コペル",
@@ -130587,7 +130587,7 @@
 		"population": 55029,
 		"type": "commune|municipality",
 		"native": "Mestna občina Kranj",
-		"wikidataId": "Q1021",
+		"wikidataId": "Q3441893",
 		"translations": {
 			"en": "Urban Municipality of Kranj"
 		}
@@ -130606,7 +130606,7 @@
 		"population": 25867,
 		"type": "statistical region",
 		"native": "Mestna občina Krško",
-		"wikidataId": "",
+		"wikidataId": "Q3484655",
 		"translations": {
 			"en": "Urban Municipality of Krško"
 		}
@@ -130625,7 +130625,7 @@
 		"population": 111730,
 		"type": "commune|municipality",
 		"native": "Mestna občina Maribor",
-		"wikidataId": "Q1010",
+		"wikidataId": "Q3435104",
 		"translations": {
 			"ar": "بلدية ماريبور ستي",
 			"mr": "मेरिबोर सिटी म्युन्सिपाल्टी",
@@ -130670,7 +130670,7 @@
 		"population": 19346,
 		"type": "statistical region",
 		"native": "Mestna občina Murska Sobota",
-		"wikidataId": "Q15899",
+		"wikidataId": "Q9273677",
 		"translations": {
 			"en": "Urban Municipality of Murska Sobota"
 		}
@@ -130708,7 +130708,7 @@
 		"population": 36296,
 		"type": "commune|municipality",
 		"native": "Mestna občina Novo mesto",
-		"wikidataId": "",
+		"wikidataId": "Q398116",
 		"translations": {
 			"en": "Urban Municipality of Novo Mesto"
 		}
@@ -130760,7 +130760,7 @@
 		"population": 16811,
 		"type": "statistical region",
 		"native": "Mestna Občina Slovenj Gradec",
-		"wikidataId": "Q15918",
+		"wikidataId": "Q3441817",
 		"translations": {
 			"en": "Urban Municipality of Slovenj Gradec"
 		}
@@ -130779,7 +130779,7 @@
 		"population": 32836,
 		"type": "commune|municipality",
 		"native": "Mestna občina Velenje",
-		"wikidataId": "Q15928",
+		"wikidataId": "Q3441849",
 		"translations": {
 			"en": "Urban Municipality of Velenje"
 		}
@@ -132591,7 +132591,7 @@
 		"population": 1200000,
 		"type": "region",
 		"native": "Shabeelle Hoose",
-		"wikidataId": "",
+		"wikidataId": "Q877028",
 		"translations": {
 			"en": "Lower Shabeelle",
 			"ar": "شبيلي السفلى",
@@ -132645,7 +132645,7 @@
 		"population": 516000,
 		"type": "region",
 		"native": "Shabeelle Dhexe",
-		"wikidataId": "",
+		"wikidataId": "Q678435",
 		"translations": {
 			"en": "Middle Shabele",
 			"fr": "Shabeellaha Dhexe",
@@ -132752,7 +132752,7 @@
 		"population": 327428,
 		"type": "region",
 		"native": "Gobolka Sool",
-		"wikidataId": "",
+		"wikidataId": "Q848864",
 		"translations": {
 			"en": "Sool",
 			"ar": "سول‎",
@@ -135233,10 +135233,10 @@
 		"longitude": "16.91667",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Moussoro",
-		"population": 260865,
+		"population": 407256,
 		"type": "prefecture",
 		"native": "Région du Barh el Gazel",
-		"wikidataId": "",
+		"wikidataId": "Q1050621",
 		"translations": {
 			"fr": "Région du Barh el Gazel",
 			"en": "Barh el Gazel Region",
@@ -135259,7 +135259,7 @@
 		"longitude": "19",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Ati",
-		"population": 391742,
+		"population": 527031,
 		"type": "prefecture",
 		"native": "Région du Batha",
 		"wikidataId": "Q180414",
@@ -135304,7 +135304,7 @@
 		"longitude": "18.5",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Faya-Largeau",
-		"population": 107251,
+		"population": 154865,
 		"type": "préfecture",
 		"native": "Région du Borkou",
 		"wikidataId": "Q1139666",
@@ -135394,7 +135394,7 @@
 		"longitude": "23.16667",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Amdjarass",
-		"population": 113000,
+		"population": 175321,
 		"type": "province",
 		"native": "Ennedi-Est",
 		"wikidataId": "Q16632169",
@@ -135427,7 +135427,7 @@
 		"longitude": "21.4",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Fada",
-		"population": 60000,
+		"population": 109753,
 		"type": "province",
 		"native": "Ennedi-Ouest",
 		"wikidataId": "Q16632172",
@@ -135460,7 +135460,7 @@
 		"longitude": "18.5",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Mongo",
-		"population": 415909,
+		"population": 538359,
 		"type": "prefecture",
 		"native": "Région du Guéra",
 		"wikidataId": "Q175706",
@@ -135505,7 +135505,7 @@
 		"longitude": "16.16667",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Massakory",
-		"population": 562957,
+		"population": 566858,
 		"type": "prefecture",
 		"native": "Région du Hadjer-Lamis",
 		"wikidataId": "Q1042437",
@@ -135550,7 +135550,7 @@
 		"longitude": "15",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Mao",
-		"population": 380157,
+		"population": 505839,
 		"type": "prefecture",
 		"native": "Région du Kanem",
 		"wikidataId": "Q849841",
@@ -135595,7 +135595,7 @@
 		"longitude": "14.5",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Bol",
-		"population": 343496,
+		"population": 451369,
 		"type": "prefecture",
 		"native": "Région du Lac",
 		"wikidataId": "Q867869",
@@ -135640,7 +135640,7 @@
 		"longitude": "15.87236",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Moundou",
-		"population": 618580,
+		"population": 1053958,
 		"type": "prefecture",
 		"native": "Région du Logone Occidental",
 		"wikidataId": "Q305257",
@@ -135685,7 +135685,7 @@
 		"longitude": "16.42",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Doba",
-		"population": 598990,
+		"population": 779339,
 		"type": "prefecture",
 		"native": "Région du Logone Oriental",
 		"wikidataId": "Q167514",
@@ -135730,7 +135730,7 @@
 		"longitude": "17.91567",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Koumra",
-		"population": 637086,
+		"population": 1002346,
 		"type": "prefecture",
 		"native": "Région du Mandoul",
 		"wikidataId": "Q597410",
@@ -135940,7 +135940,7 @@
 		"population": 738647,
 		"type": "prefecture",
 		"native": "Région du Ouaddaï",
-		"wikidataId": "",
+		"wikidataId": "Q841338",
 		"translations": {
 			"fr": "Région du Ouaddaï",
 			"en": "Ouadaï Region",
@@ -136027,7 +136027,7 @@
 		"longitude": "21.5",
 		"timezone": "Africa/Ndjamena",
 		"capital": "Goz Beida",
-		"population": 289776,
+		"population": 387461,
 		"type": "prefecture",
 		"native": "Région du Sila",
 		"wikidataId": "Q1149611",
@@ -136210,7 +136210,7 @@
 		"population": 30,
 		"type": "district",
 		"native": "Archipel Crozet",
-		"wikidataId": "",
+		"wikidataId": "Q201698",
 		"translations": {
 			"fr": "Archipel Crozet"
 		}
@@ -136229,7 +136229,7 @@
 		"population": 0,
 		"type": "district",
 		"native": "Îles Éparses or Îles éparses de l'océan indien",
-		"wikidataId": "",
+		"wikidataId": "Q190571",
 		"translations": {
 			"fr": "Îles Éparses or Îles éparses de l'océan indien"
 		}
@@ -139919,7 +139919,7 @@
 		"population": 226900,
 		"type": "region",
 		"native": "Вилояти Мухтори Кӯҳистони Бадахшон",
-		"wikidataId": "",
+		"wikidataId": "Q207319",
 		"translations": {
 			"en": "Gorno-Badakhshan",
 			"fr": "Haut-Badakhshan",
@@ -139946,7 +139946,7 @@
 		"population": 3348300,
 		"type": "region",
 		"native": "Вилояти Хатлон",
-		"wikidataId": "",
+		"wikidataId": "Q633511",
 		"translations": {
 			"fr": "Khatlon",
 			"de": "Chatlon",
@@ -139987,11 +139987,11 @@
 		"latitude": "38.86537",
 		"longitude": "70.18066",
 		"timezone": "Asia/Dushanbe",
-		"capital": null,
+		"capital": "Dushanbe",
 		"population": 2165900,
 		"type": "district",
 		"native": "Ноҳияҳои тобеи ҷумҳурӣ",
-		"wikidataId": "",
+		"wikidataId": "Q633490",
 		"translations": {
 			"en": "Region of Republican Subordination",
 			"ru": "Районы республиканского подчинения",
@@ -140019,7 +140019,7 @@
 		"population": 2707300,
 		"type": "region",
 		"native": "Вилояти Суғд",
-		"wikidataId": "",
+		"wikidataId": "Q241582",
 		"translations": {
 			"ru": "Согдийская область",
 			"fr": "Sughd",
@@ -140124,7 +140124,7 @@
 		"population": 48837,
 		"type": "district|regencies",
 		"native": "Distritu Aileu",
-		"wikidataId": "",
+		"wikidataId": "Q405100",
 		"translations": {
 			"en": "Aileu",
 			"pt": "Distrito Aileu",
@@ -140169,7 +140169,7 @@
 		"population": 63136,
 		"type": "district|regencies",
 		"native": "Distritu Ainaro",
-		"wikidataId": "",
+		"wikidataId": "Q405926",
 		"translations": {
 			"en": "Ainaro",
 			"pt": "Distrito Ainaro",
@@ -140214,7 +140214,7 @@
 		"population": 123203,
 		"type": "district|regencies",
 		"native": "Distritu Baucau",
-		"wikidataId": "",
+		"wikidataId": "Q811132",
 		"translations": {
 			"en": "Baucau",
 			"pt": "Distrito Baucau",
@@ -140259,7 +140259,7 @@
 		"population": 97762,
 		"type": "district|regencies",
 		"native": "Bobonaru",
-		"wikidataId": "",
+		"wikidataId": "Q860913",
 		"translations": {
 			"es": "Bobonaro",
 			"pl": "Dystrykt Bobonaro",
@@ -140304,7 +140304,7 @@
 		"population": 65301,
 		"type": "district|regencies",
 		"native": "Distritu Cova Lima",
-		"wikidataId": "",
+		"wikidataId": "Q165575",
 		"translations": {
 			"en": "Cova Lima",
 			"pt": "Distrito Cova Lima",
@@ -140332,11 +140332,11 @@
 		"latitude": "-8.55",
 		"longitude": "125.66667",
 		"timezone": "Asia/Dili",
-		"capital": null,
+		"capital": "Dili",
 		"population": 268005,
 		"type": "district|regencies",
 		"native": "Distritu Díli",
-		"wikidataId": "",
+		"wikidataId": "Q860901",
 		"translations": {
 			"pt": "Distrito Díli",
 			"fr": "Dili",
@@ -140426,7 +140426,7 @@
 		"population": 65240,
 		"type": "district|regencies",
 		"native": "Distritu Lautém",
-		"wikidataId": "",
+		"wikidataId": "Q686554",
 		"translations": {
 			"en": "Lautém",
 			"pt": "Distrito Lautém",
@@ -140471,7 +140471,7 @@
 		"population": 11885,
 		"type": "district|regencies",
 		"native": "Distritu Liquiçá",
-		"wikidataId": "",
+		"wikidataId": "Q860897",
 		"translations": {
 			"en": "Liquiçá",
 			"pt": "Distrito Liquiçá",
@@ -140561,7 +140561,7 @@
 		"population": 53691,
 		"type": "district|regencies",
 		"native": "Manufahi",
-		"wikidataId": "",
+		"wikidataId": "Q629934",
 		"translations": {
 			"es": "Manufahi",
 			"pl": "Dystrykt Manufahi",
@@ -140606,7 +140606,7 @@
 		"population": 80685,
 		"type": "district|regencies",
 		"native": "Distritu Oecussi-Ambeno",
-		"wikidataId": "",
+		"wikidataId": "Q860639",
 		"translations": {
 			"pt": "Distrito Oecussi-Ambeno",
 			"en": "Oecusse",
@@ -140633,7 +140633,7 @@
 		"population": 15297,
 		"type": "district|regencies",
 		"native": "Distritu Viqueque",
-		"wikidataId": "",
+		"wikidataId": "Q610726",
 		"translations": {
 			"en": "Viqueque",
 			"pt": "Distrito Viqueque",
@@ -140678,7 +140678,7 @@
 		"population": 886845,
 		"type": "province",
 		"native": "Ahal welaýaty",
-		"wikidataId": "",
+		"wikidataId": "Q399899",
 		"translations": {
 			"en": "Ahal",
 			"de": "Ahal welaýaty",
@@ -140741,7 +140741,7 @@
 		"population": 529895,
 		"type": "province",
 		"native": "Balkan welaýaty",
-		"wikidataId": "",
+		"wikidataId": "Q486073",
 		"translations": {
 			"en": "Balkan",
 			"de": "Balkan welaýaty",
@@ -140777,7 +140777,7 @@
 		"population": 1550354,
 		"type": "province",
 		"native": "Dasoguz",
-		"wikidataId": "",
+		"wikidataId": "Q487393",
 		"translations": {
 			"fr": "Daşoguz",
 			"en": "Dasoguz",
@@ -140804,7 +140804,7 @@
 		"population": 1447298,
 		"type": "province",
 		"native": "Lebap welaýaty",
-		"wikidataId": "",
+		"wikidataId": "Q487389",
 		"translations": {
 			"de": "Lebap welaýaty",
 			"en": "Lebap",
@@ -141339,7 +141339,7 @@
 		"population": 410812,
 		"type": "governorate",
 		"native": "المهدية",
-		"wikidataId": "",
+		"wikidataId": "Q328164",
 		"translations": {
 			"fr": "Mahdia",
 			"ar": "المهدية",
@@ -143280,7 +143280,7 @@
 		"population": 591497,
 		"type": "province",
 		"native": "Elazığ",
-		"wikidataId": "",
+		"wikidataId": "Q483091",
 		"translations": {
 			"tr": "Elazığ",
 			"en": "Elazığ",
@@ -145712,7 +145712,7 @@
 		"population": 178410,
 		"type": "region",
 		"native": "Couva-Tabaquite-Talparo",
-		"wikidataId": "",
+		"wikidataId": "Q2679127",
 		"translations": {
 			"fr": "Couva-Tabaquite-Talparo",
 			"de": "Couva-Tabaquite-Talparo",
@@ -145757,7 +145757,7 @@
 		"population": 150000,
 		"type": "region",
 		"native": "Diego Martin Regional Corporation",
-		"wikidataId": "",
+		"wikidataId": "Q2679107",
 		"translations": {
 			"fr": "Diego Martin",
 			"de": "Diego Martin",
@@ -145802,7 +145802,7 @@
 		"population": 35650,
 		"type": "region",
 		"native": "Mayaro",
-		"wikidataId": "",
+		"wikidataId": "Q2487249",
 		"translations": {
 			"fr": "Rio Claro-Mayaro",
 			"en": "Mayaro",
@@ -145829,7 +145829,7 @@
 		"population": 89392,
 		"type": "region",
 		"native": "Penal/Debe",
-		"wikidataId": "",
+		"wikidataId": "Q2056273",
 		"translations": {
 			"fr": "Penal-Debe",
 			"en": "Penal/Debe",
@@ -145910,7 +145910,7 @@
 		"population": 102375,
 		"type": "region",
 		"native": "Princes Town",
-		"wikidataId": "",
+		"wikidataId": "Q2228167",
 		"translations": {
 			"fr": "Princes Town",
 			"de": "Princes Town",
@@ -145981,7 +145981,7 @@
 		"population": 157258,
 		"type": "region",
 		"native": "San Juan/Laventille",
-		"wikidataId": "",
+		"wikidataId": "Q979608",
 		"translations": {
 			"fr": "San Juan-Laventille",
 			"en": "San Juan/Laventille",
@@ -146008,7 +146008,7 @@
 		"population": 75766,
 		"type": "region",
 		"native": "Sangre Grande Regional Corporation",
-		"wikidataId": "",
+		"wikidataId": "Q290292",
 		"translations": {
 			"fr": "Sangre Grande",
 			"de": "Sangre Grande",
@@ -146053,7 +146053,7 @@
 		"population": 86949,
 		"type": "region",
 		"native": "Siparia Regional Corporation",
-		"wikidataId": "",
+		"wikidataId": "Q2679119",
 		"translations": {
 			"fr": "Siparia",
 			"de": "Siparia",
@@ -146125,7 +146125,7 @@
 		"population": 215119,
 		"type": "region",
 		"native": "Tunapuna/Piarco",
-		"wikidataId": "",
+		"wikidataId": "Q1899163",
 		"translations": {
 			"fr": "Tunapuna-Piarco",
 			"en": "Tunapuna/Piarco",
@@ -147642,7 +147642,7 @@
 		"population": 211732,
 		"type": "region",
 		"native": "Kaskazini Pemba",
-		"wikidataId": "",
+		"wikidataId": "Q498073",
 		"translations": {
 			"en": "Pemba North",
 			"es": "Pemba Norte",
@@ -147669,7 +147669,7 @@
 		"population": 195116,
 		"type": "region",
 		"native": "Kusini Pemba",
-		"wikidataId": "",
+		"wikidataId": "Q498067",
 		"translations": {
 			"en": "Pemba South",
 			"es": "Pemba Sur",
@@ -157975,7 +157975,7 @@
 		"population": 1893300,
 		"type": "region",
 		"native": "Xorazm viloyati",
-		"wikidataId": "",
+		"wikidataId": "Q487561",
 		"translations": {
 			"de": "Provinz Xorazm",
 			"hi": "ख़ोरज़्म प्रान्त",
@@ -158066,7 +158066,7 @@
 		"population": 9200,
 		"type": "parish",
 		"native": "Grenadines Parish",
-		"wikidataId": "",
+		"wikidataId": "Q2545297",
 		"translations": {
 			"fr": "Grenadines",
 			"de": "Grenadines",
@@ -159167,7 +159167,7 @@
 		"population": 615500,
 		"type": "province",
 		"native": "Điện Biên Province",
-		"wikidataId": "",
+		"wikidataId": "Q36955",
 		"translations": {
 			"en": "Điện Biên Province",
 			"es": "Provincia de GJien Bien",
@@ -160164,7 +160164,7 @@
 		"population": 23265,
 		"type": "district",
 		"native": "A'ana",
-		"wikidataId": "",
+		"wikidataId": "Q1154121",
 		"translations": {
 			"fr": "A'ana",
 			"hi": "ऐना",
@@ -160299,7 +160299,7 @@
 		"population": 13566,
 		"type": "district",
 		"native": "Fa'asaleleaga",
-		"wikidataId": "",
+		"wikidataId": "Q1154134",
 		"translations": {
 			"fr": "Fa'asaleleaga",
 			"hi": "फा'असालेलीगा",
@@ -160344,7 +160344,7 @@
 		"population": 7840,
 		"type": "district",
 		"native": "Gaga'emauga",
-		"wikidataId": "",
+		"wikidataId": "Q1193143",
 		"translations": {
 			"fr": "Gaga'emauga",
 			"hi": "गागा'एमाउगा",
@@ -160389,7 +160389,7 @@
 		"population": 4878,
 		"type": "district",
 		"native": "Gaga'ifomauga",
-		"wikidataId": "",
+		"wikidataId": "Q1193134",
 		"translations": {
 			"fr": "Gaga'ifomauga",
 			"hi": "गागा'इफ़ोमौगा",
@@ -160479,7 +160479,7 @@
 		"population": 5261,
 		"type": "district",
 		"native": "Satupa'itea",
-		"wikidataId": "",
+		"wikidataId": "Q651573",
 		"translations": {
 			"fr": "Satupa'itea",
 			"hi": "सैटूपेटी",
@@ -160568,7 +160568,7 @@
 		"population": 1621,
 		"type": "district",
 		"native": "Va'a-o-Fonoti",
-		"wikidataId": "",
+		"wikidataId": "Q1154109",
 		"translations": {
 			"fr": "Va'a-o-Fonoti",
 			"hi": "वा'-ओ-फोनोटी",
@@ -160766,7 +160766,7 @@
 		"population": 174235,
 		"type": "district",
 		"native": "Pec",
-		"wikidataId": "",
+		"wikidataId": "Q609247",
 		"translations": {
 			"en": "Pec",
 			"fr": "Pejë/Peć",
@@ -160892,7 +160892,7 @@
 		"population": 569000,
 		"type": "governorate",
 		"native": "محافظة الضالع",
-		"wikidataId": "",
+		"wikidataId": "Q328187",
 		"translations": {
 			"en": "Aḑ Ḑāli‘",
 			"fr": "Ad Dali'",
@@ -160937,7 +160937,7 @@
 		"population": 731000,
 		"type": "governorate",
 		"native": "محافظة عدن",
-		"wikidataId": "",
+		"wikidataId": "Q275729",
 		"translations": {
 			"ar": "محافظة عدن",
 			"en": "Aden",
@@ -160964,7 +160964,7 @@
 		"population": 695000,
 		"type": "governorate",
 		"native": "محافظة البيضاء",
-		"wikidataId": "",
+		"wikidataId": "Q221212",
 		"translations": {
 			"ar": "محافظة البيضاء",
 			"fr": "Al Bayda'",
@@ -161392,7 +161392,7 @@
 		"population": 288000,
 		"type": "governorate",
 		"native": "محافظة مأرب",
-		"wikidataId": "",
+		"wikidataId": "Q498465",
 		"translations": {
 			"en": "Ma’rib",
 			"fr": "Ma'rib",
@@ -161573,7 +161573,7 @@
 		"population": 838000,
 		"type": "governorate",
 		"native": "محافظة صعدة",
-		"wikidataId": "",
+		"wikidataId": "Q275732",
 		"translations": {
 			"ar": "محافظة صعدة",
 			"en": "Şa‘dah",
@@ -161614,11 +161614,11 @@
 		"latitude": "15.26069",
 		"longitude": "44.42489",
 		"timezone": "Asia/Aden",
-		"capital": null,
+		"capital": "Sanaa",
 		"population": 1109000,
 		"type": "governorate",
 		"native": "محافظة صنعاء",
-		"wikidataId": "",
+		"wikidataId": "Q388291",
 		"translations": {
 			"ar": "محافظة صنعاء",
 			"fr": "Muhafadat Sanaa",
@@ -161697,11 +161697,11 @@
 		"latitude": "12.50228",
 		"longitude": "53.82065",
 		"timezone": "Asia/Aden",
-		"capital": null,
+		"capital": "Hadibu",
 		"population": 44000,
 		"type": "governorate",
 		"native": "سقطرى",
-		"wikidataId": "",
+		"wikidataId": "Q15728745",
 		"translations": {
 			"en": "Soqatra Governorate",
 			"fr": "Socotra",
@@ -161737,7 +161737,7 @@
 		"population": 2613947,
 		"type": "governorate",
 		"native": "محافظة تعز",
-		"wikidataId": "",
+		"wikidataId": "Q388330",
 		"translations": {
 			"en": "Ta‘izz",
 			"ar": "محافظة تعز",
@@ -162768,7 +162768,7 @@
 		"population": 1278357,
 		"type": "province",
 		"native": "North-Western",
-		"wikidataId": "",
+		"wikidataId": "Q846320",
 		"translations": {}
 	},
 	{
