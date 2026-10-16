@@ -75447,10 +75447,10 @@
 		"dmeLongitude": null,
 		"dmeElevationFt": null,
 		"slavedVariationDeg": null,
-		"magneticVariationDeg": -3.321,
+		"magneticVariationDeg": -3.3,
 		"usageType": "LO",
 		"power": "LOW",
-		"associatedAirport": null
+		"associatedAirport": "EGCV"
 	},
 	{
 		"id": 93765,

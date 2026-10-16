@@ -99,7 +99,7 @@
 		"uk": {
 			"destination": "Albania",
 			"alertStatus": [],
-			"updatedAt": "2026-08-13T15:28:50Z",
+			"updatedAt": "2026-10-15T15:44:54Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/albania"
 		}
 	},
@@ -816,7 +816,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-06T12:48:58Z",
+			"updatedAt": "2026-10-15T10:21:54Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/colombia"
 		}
 	},
@@ -851,7 +851,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2025-05-07",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/cuba-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cub.html"
 		},
 		"uk": {
 			"destination": "Cuba",
@@ -2536,7 +2536,7 @@
 		"uk": {
 			"destination": "Mauritius",
 			"alertStatus": [],
-			"updatedAt": "2026-10-14T19:09:22Z",
+			"updatedAt": "2026-10-15T14:40:02Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/mauritius"
 		}
 	},
@@ -2902,7 +2902,7 @@
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
 			"updated": "2025-04-29",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/papua-new-guinea-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.png.html"
 		},
 		"uk": {
 			"destination": "Papua New Guinea",
@@ -3184,7 +3184,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-13T16:09:24Z",
+			"updatedAt": "2026-10-15T18:01:21Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia"
 		}
 	},
@@ -3196,7 +3196,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2025-04-29",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/solomon-island-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.slb.html"
 		},
 		"uk": {
 			"destination": "Solomon Islands",
@@ -3367,7 +3367,7 @@
 		"uk": {
 			"destination": "Senegal",
 			"alertStatus": [],
-			"updatedAt": "2026-05-13T15:45:46Z",
+			"updatedAt": "2026-10-15T09:00:14Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/senegal"
 		}
 	},
@@ -3678,7 +3678,13 @@
 	{
 		"countryCode": "TO",
 		"countryName": "Tonga",
-		"us": null,
+		"us": {
+			"destination": "Tonga",
+			"level": 1,
+			"levelLabel": "Exercise Normal Precautions",
+			"updated": "2024-12-02",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ton.html"
+		},
 		"uk": {
 			"destination": "Tonga",
 			"alertStatus": [],
@@ -3701,7 +3707,7 @@
 			"alertStatus": [
 				"avoid_all_travel_to_parts"
 			],
-			"updatedAt": "2026-09-21T13:00:49Z",
+			"updatedAt": "2026-10-15T09:34:15Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/turkey"
 		}
 	},
@@ -3954,7 +3960,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2025-05-22",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/vanuatu-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.vut.html"
 		},
 		"uk": {
 			"destination": "Vanuatu",
