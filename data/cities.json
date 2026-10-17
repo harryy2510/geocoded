@@ -255231,8 +255231,8 @@
 		"name": "Toteng",
 		"countryCode": "BW",
 		"countryName": "Botswana",
-		"stateCode": "",
-		"stateName": "",
+		"stateCode": "NW",
+		"stateName": "North-West",
 		"latitude": "-20.38333",
 		"longitude": "22.95",
 		"population": 556,
@@ -810814,6 +810814,18 @@
 		"population": 52593,
 		"timezone": "Africa/Cairo",
 		"geonameId": 347236
+	},
+	{
+		"name": "Tūnis",
+		"countryCode": "EG",
+		"countryName": "Egypt",
+		"stateCode": "SHG",
+		"stateName": "Sohag",
+		"latitude": "26.61238",
+		"longitude": "31.68748",
+		"population": 19495,
+		"timezone": "Africa/Cairo",
+		"geonameId": 347196
 	},
 	{
 		"name": "Yūsuf aṣ-Ṣiddīq",
@@ -2366328,6 +2366340,18 @@
 		"geonameId": 3060437
 	},
 	{
+		"name": "Dolné Vestenice",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.70344",
+		"longitude": "18.39708",
+		"population": 2346,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3060430
+	},
+	{
 		"name": "Dolný Kubín",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2403624,6 +2403648,18 @@
 		"geonameId": 161402
 	},
 	{
+		"name": "Ýasga",
+		"countryCode": "TM",
+		"countryName": "Turkmenistan",
+		"stateCode": "B",
+		"stateName": "Balkan",
+		"latitude": "39.70768",
+		"longitude": "55.5576",
+		"population": 1460,
+		"timezone": "Asia/Ashgabat",
+		"geonameId": 161398
+	},
+	{
 		"name": "Ýaşlyk",
 		"countryCode": "TM",
 		"countryName": "Turkmenistan",
@@ -2414160,18 +2414196,6 @@
 		"geonameId": 321964
 	},
 	{
-		"name": "Başgedikler",
-		"countryCode": "TR",
-		"countryName": "Turkey",
-		"stateCode": "36",
-		"stateName": "Kars Province",
-		"latitude": "40.64069",
-		"longitude": "43.52179",
-		"population": 0,
-		"timezone": "Europe/Istanbul",
-		"geonameId": 751029
-	},
-	{
 		"name": "Başhan",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2417763,6 +2417787,18 @@
 		"name": "Çakmak",
 		"countryCode": "TR",
 		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.64501",
+		"longitude": "43.04915",
+		"population": 655,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 750028
+	},
+	{
+		"name": "Çakmak",
+		"countryCode": "TR",
+		"countryName": "Turkey",
 		"stateCode": "21",
 		"stateName": "Diyarbakır Province",
 		"latitude": "38.15397",
@@ -2419560,6 +2419596,18 @@
 		"geonameId": 749274
 	},
 	{
+		"name": "Çerme",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.44677",
+		"longitude": "42.99323",
+		"population": 797,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 749268
+	},
+	{
 		"name": "Çermik",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2420194,6 +2420242,18 @@
 		"population": 1965,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 318526
+	},
+	{
+		"name": "Çığırgan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.64283",
+		"longitude": "42.85609",
+		"population": 549,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 749136
 	},
 	{
 		"name": "Çığlı",
@@ -2420907,6 +2420967,18 @@
 		"name": "Cumhuriyet",
 		"countryCode": "TR",
 		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.54955",
+		"longitude": "43.04249",
+		"population": 733,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 737457
+	},
+	{
+		"name": "Cumhuriyet",
+		"countryCode": "TR",
+		"countryName": "Turkey",
 		"stateCode": "55",
 		"stateName": "Samsun",
 		"latitude": "41.2035",
@@ -2421346,6 +2421418,18 @@
 		"population": 2856,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 748688
+	},
+	{
+		"name": "Damar",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "08",
+		"stateName": "Artvin",
+		"latitude": "41.25178",
+		"longitude": "41.57478",
+		"population": 1311,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 748687
 	},
 	{
 		"name": "Dambaslar",
@@ -2422224,6 +2422308,18 @@
 		"geonameId": 748321
 	},
 	{
+		"name": "Derecik",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.59938",
+		"longitude": "43.21998",
+		"population": 989,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 748322
+	},
+	{
 		"name": "Derekarabağ",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2422630,6 +2422726,18 @@
 		"population": 808,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 316711
+	},
+	{
+		"name": "Dikme",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.50297",
+		"longitude": "42.97817",
+		"population": 672,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 748130
 	},
 	{
 		"name": "Dikmen",
@@ -2425642,6 +2425750,18 @@
 		"population": 995,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 10201625
+	},
+	{
+		"name": "Eşmeyazı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.57137",
+		"longitude": "43.44718",
+		"population": 522,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 747242
 	},
 	{
 		"name": "Espiye",
@@ -2430060,6 +2430180,18 @@
 		"geonameId": 13697185
 	},
 	{
+		"name": "Halefoğlu",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.64995",
+		"longitude": "43.29187",
+		"population": 2310,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 746003
+	},
+	{
 		"name": "Halfeti",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2430250,6 +2430382,18 @@
 		"population": 1096,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 745922
+	},
+	{
+		"name": "Hamzagerek",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.65364",
+		"longitude": "43.57966",
+		"population": 512,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 745915
 	},
 	{
 		"name": "Hamzalı",
@@ -2440188,6 +2440332,18 @@
 		"geonameId": 742273
 	},
 	{
+		"name": "Kümbetli",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.5412",
+		"longitude": "43.00298",
+		"population": 1293,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 742268
+	},
+	{
 		"name": "Kumburgaz",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2440450,6 +2440606,18 @@
 		"population": 953,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 742191
+	},
+	{
+		"name": "Küre",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "08",
+		"stateName": "Artvin",
+		"latitude": "41.28353",
+		"longitude": "41.56264",
+		"population": 3794,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13713217
 	},
 	{
 		"name": "Kürecik",
@@ -2442607,7 +2442775,7 @@
 		"stateName": "Artvin",
 		"latitude": "41.28049",
 		"longitude": "41.56438",
-		"population": 3549,
+		"population": 5105,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 746712
 	},
@@ -2443486,6 +2443654,18 @@
 		"population": 625,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 7510426
+	},
+	{
+		"name": "Olçulu",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.56462",
+		"longitude": "43.24697",
+		"population": 1331,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 741165
 	},
 	{
 		"name": "Olgun",
@@ -2449572,6 +2449752,18 @@
 		"geonameId": 739354
 	},
 	{
+		"name": "Subatan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.60317",
+		"longitude": "43.43303",
+		"population": 574,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 739342
+	},
+	{
 		"name": "Suboğazı",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2453866,6 +2454058,18 @@
 		"population": 0,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 297831
+	},
+	{
+		"name": "Yalınkaya",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "36",
+		"stateName": "Kars Province",
+		"latitude": "40.61742",
+		"longitude": "43.25952",
+		"population": 596,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 738041
 	},
 	{
 		"name": "Yalıntaş",
@@ -2458553,8 +2458757,8 @@
 		"countryName": "Taiwan",
 		"stateCode": "TNN",
 		"stateName": "Tainan",
-		"latitude": "22.99083",
-		"longitude": "120.21333",
+		"latitude": "22.99259",
+		"longitude": "120.20507",
 		"population": 1856642,
 		"timezone": "Asia/Taipei",
 		"geonameId": 1668355
@@ -2486074,18 +2486278,6 @@
 		"population": 1574,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 704052
-	},
-	{
-		"name": "Kryva Luka",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "14",
-		"stateName": "Donetsk",
-		"latitude": "48.87382",
-		"longitude": "37.90327",
-		"population": 0,
-		"timezone": "Europe/Kyiv",
-		"geonameId": 704046
 	},
 	{
 		"name": "Kryva Ruda",

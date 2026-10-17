@@ -1164,7 +1164,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-07T15:46:25Z",
+			"updatedAt": "2026-10-16T16:03:39Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/ethiopia"
 		}
 	},
@@ -1858,8 +1858,8 @@
 		"countryName": "Kenya",
 		"us": {
 			"destination": "Kenya",
-			"level": 2,
-			"levelLabel": "Exercise Increased Caution",
+			"level": 3,
+			"levelLabel": "Reconsider Travel",
 			"updated": "2026-07-28",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ken.html"
 		},
@@ -1869,7 +1869,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-13T11:59:44Z",
+			"updatedAt": "2026-10-16T12:02:22Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/kenya"
 		}
 	},
@@ -2536,7 +2536,7 @@
 		"uk": {
 			"destination": "Mauritius",
 			"alertStatus": [],
-			"updatedAt": "2026-10-15T14:40:02Z",
+			"updatedAt": "2026-10-16T12:27:02Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/mauritius"
 		}
 	},
@@ -2589,7 +2589,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-13T08:45:22Z",
+			"updatedAt": "2026-10-16T15:29:42Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/mexico"
 		}
 	},
@@ -2707,7 +2707,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-28T14:46:12Z",
+			"updatedAt": "2026-10-16T14:52:35Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/nigeria"
 		}
 	},
@@ -3184,7 +3184,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-15T18:01:21Z",
+			"updatedAt": "2026-10-16T21:40:31Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia"
 		}
 	},
@@ -3767,9 +3767,9 @@
 		"countryName": "Tanzania",
 		"us": {
 			"destination": "Tanzania",
-			"level": 3,
-			"levelLabel": "Reconsider Travel",
-			"updated": "2025-10-31",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
+			"updated": "2026-10-16",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tza.html"
 		},
 		"uk": {
