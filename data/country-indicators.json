@@ -25356,12 +25356,6 @@
 				"year": 2025,
 				"value": 9.80840118100493
 			},
-			"unemploymentPercent": {
-				"code": "SL.UEM.TOTL.ZS",
-				"name": "Unemployment percent of total labor force (modeled ILO estimate)",
-				"year": 2022,
-				"value": 24.42
-			},
 			"internetUsersPercent": {
 				"code": "IT.NET.USER.ZS",
 				"name": "Individuals using the Internet percent of population",
@@ -27296,12 +27290,6 @@
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2022,
 				"value": 138.80846024176
-			},
-			"unemploymentPercent": {
-				"code": "SL.UEM.TOTL.ZS",
-				"name": "Unemployment percent of total labor force (modeled ILO estimate)",
-				"year": 2022,
-				"value": 7.53
 			},
 			"internetUsersPercent": {
 				"code": "IT.NET.USER.ZS",
@@ -31966,12 +31954,6 @@
 				"name": "Inflation, consumer prices annual percent",
 				"year": 2025,
 				"value": 12.7303341026902
-			},
-			"unemploymentPercent": {
-				"code": "SL.UEM.TOTL.ZS",
-				"name": "Unemployment percent of total labor force (modeled ILO estimate)",
-				"year": 2021,
-				"value": 9.834
 			},
 			"internetUsersPercent": {
 				"code": "IT.NET.USER.ZS",

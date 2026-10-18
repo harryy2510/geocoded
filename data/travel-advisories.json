@@ -330,7 +330,7 @@
 		"uk": {
 			"destination": "Belgium",
 			"alertStatus": [],
-			"updatedAt": "2026-10-13T14:33:30Z",
+			"updatedAt": "2026-10-17T19:49:24Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/belgium"
 		}
 	},
@@ -1858,8 +1858,8 @@
 		"countryName": "Kenya",
 		"us": {
 			"destination": "Kenya",
-			"level": 3,
-			"levelLabel": "Reconsider Travel",
+			"level": 2,
+			"levelLabel": "Exercise Increased Caution",
 			"updated": "2026-07-28",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ken.html"
 		},
@@ -3184,7 +3184,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-16T21:40:31Z",
+			"updatedAt": "2026-10-17T16:25:35Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia"
 		}
 	},

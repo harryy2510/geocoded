@@ -142812,6 +142812,18 @@
 		"geonameId": 3373419
 	},
 	{
+		"name": "Acharbania",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2022",
+		"stateName": "Cox's Bazar",
+		"latitude": "20.82268",
+		"longitude": "92.3119",
+		"population": 1659,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7476411
+	},
+	{
 		"name": "Ajmiriganj",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -142822,6 +142834,30 @@
 		"population": 13487,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185287
+	},
+	{
+		"name": "Arpāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4050",
+		"stateName": "Kushtia",
+		"latitude": "23.76186",
+		"longitude": "89.02078",
+		"population": 1825,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1212479
+	},
+	{
+		"name": "Āsānnagar",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4050",
+		"stateName": "Kushtia",
+		"latitude": "23.74437",
+		"longitude": "89.03825",
+		"population": 2774,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1212445
 	},
 	{
 		"name": "Ashuganj City",
@@ -142884,6 +142920,18 @@
 		"geonameId": 1185281
 	},
 	{
+		"name": "Bāhārchara",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2022",
+		"stateName": "Cox's Bazar",
+		"latitude": "20.83625",
+		"longitude": "92.28488",
+		"population": 819,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7476384
+	},
+	{
 		"name": "Bājitpur",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -142894,6 +142942,18 @@
 		"population": 34560,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185276
+	},
+	{
+		"name": "Bamangrām",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4050",
+		"stateName": "Kushtia",
+		"latitude": "23.76871",
+		"longitude": "89.02413",
+		"population": 721,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1211189
 	},
 	{
 		"name": "Bāndarban",
@@ -143112,6 +143172,18 @@
 		"geonameId": 1207047
 	},
 	{
+		"name": "Char Para",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4050",
+		"stateName": "Kushtia",
+		"latitude": "23.76591",
+		"longitude": "89.10634",
+		"population": 1471,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7485692
+	},
+	{
 		"name": "Charāmaddi",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143194,6 +143266,42 @@
 		"population": 253788,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1336134
+	},
+	{
+		"name": "Dailpāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2022",
+		"stateName": "Cox's Bazar",
+		"latitude": "20.81373",
+		"longitude": "92.31014",
+		"population": 1493,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7476446
+	},
+	{
+		"name": "Dakshin Māgura",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4050",
+		"stateName": "Kushtia",
+		"latitude": "23.77842",
+		"longitude": "89.00764",
+		"population": 1522,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1205399
+	},
+	{
+		"name": "Dakshinpāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2022",
+		"stateName": "Cox's Bazar",
+		"latitude": "20.75729",
+		"longitude": "92.33341",
+		"population": 4128,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1205540
 	},
 	{
 		"name": "Demra",
@@ -143362,6 +143470,18 @@
 		"population": 2674697,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1200109
+	},
+	{
+		"name": "Godārbīl",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2022",
+		"stateName": "Cox's Bazar",
+		"latitude": "20.85865",
+		"longitude": "92.28368",
+		"population": 5819,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7475871
 	},
 	{
 		"name": "Gopālganj",
@@ -143664,6 +143784,18 @@
 		"geonameId": 1185183
 	},
 	{
+		"name": "Lakshmipur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4050",
+		"stateName": "Kushtia",
+		"latitude": "23.75961",
+		"longitude": "89.12023",
+		"population": 4457,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 8355758
+	},
+	{
 		"name": "Lakshmīpur",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143736,6 +143868,18 @@
 		"geonameId": 9283213
 	},
 	{
+		"name": "Mahishkhālipāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2022",
+		"stateName": "Cox's Bazar",
+		"latitude": "20.86022",
+		"longitude": "92.27381",
+		"population": 7063,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7475865
+	},
+	{
 		"name": "Maijdi",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143770,6 +143914,18 @@
 		"population": 71698,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1348441
+	},
+	{
+		"name": "Mathapanichara",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2022",
+		"stateName": "Cox's Bazar",
+		"latitude": "20.88393",
+		"longitude": "92.25705",
+		"population": 4624,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7476154
 	},
 	{
 		"name": "Mathba",
@@ -144036,6 +144192,18 @@
 		"geonameId": 1185117
 	},
 	{
+		"name": "Nātna",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4050",
+		"stateName": "Kushtia",
+		"latitude": "23.75483",
+		"longitude": "89.01517",
+		"population": 600,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1193079
+	},
+	{
 		"name": "Natona",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144060,6 +144228,18 @@
 		"geonameId": 7483813
 	},
 	{
+		"name": "Natun Pallānpāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2022",
+		"stateName": "Cox's Bazar",
+		"latitude": "20.86521",
+		"longitude": "92.29194",
+		"population": 7142,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7475837
+	},
+	{
 		"name": "Nawāb Char",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144082,6 +144262,18 @@
 		"population": 142361,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1337240
+	},
+	{
+		"name": "Nāzirpāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2022",
+		"stateName": "Cox's Bazar",
+		"latitude": "20.84869",
+		"longitude": "92.30405",
+		"population": 3900,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7476228
 	},
 	{
 		"name": "Netrakona",
@@ -144540,6 +144732,18 @@
 		"geonameId": 11745960
 	},
 	{
+		"name": "Shāhānpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4050",
+		"stateName": "Kushtia",
+		"latitude": "23.75272",
+		"longitude": "89.10804",
+		"population": 1106,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1188215
+	},
+	{
 		"name": "Shāhbāzpur Town",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144715,7 +144919,7 @@
 		"stateName": "Cox's Bazar",
 		"latitude": "20.85829",
 		"longitude": "92.29773",
-		"population": 40557,
+		"population": 30140,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185095
 	},
@@ -144727,7 +144931,7 @@
 		"stateName": "Thakurgaon",
 		"latitude": "26.03097",
 		"longitude": "88.46989",
-		"population": 71096,
+		"population": 100442,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185092
 	},
@@ -297048,18 +297252,6 @@
 		"geonameId": 13561800
 	},
 	{
-		"name": "University",
-		"countryCode": "CA",
-		"countryName": "Canada",
-		"stateCode": "ON",
-		"stateName": "Ontario",
-		"latitude": "43.66251",
-		"longitude": "-79.40118",
-		"population": 7607,
-		"timezone": "America/Toronto",
-		"geonameId": 12156837
-	},
-	{
 		"name": "University Downs",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -297118,6 +297310,18 @@
 		"population": 1943,
 		"timezone": "America/Regina",
 		"geonameId": 13589226
+	},
+	{
+		"name": "University of Toronto",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "ON",
+		"stateName": "Ontario",
+		"latitude": "43.66251",
+		"longitude": "-79.40118",
+		"population": 7607,
+		"timezone": "America/Toronto",
+		"geonameId": 12156837
 	},
 	{
 		"name": "Uplands",
@@ -1409916,6 +1410120,18 @@
 		"geonameId": 11185501
 	},
 	{
+		"name": "Jāmjuri",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "JH",
+		"stateName": "Jharkhand",
+		"latitude": "24.67534",
+		"longitude": "87.57706",
+		"population": 529,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11016277
+	},
+	{
 		"name": "Jamkhandi",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1455238,6 +1455454,18 @@
 		"population": 25338,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1255434
+	},
+	{
+		"name": "Sundarpahari",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "JH",
+		"stateName": "Jharkhand",
+		"latitude": "24.75609",
+		"longitude": "87.36267",
+		"population": 873,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1255433
 	},
 	{
 		"name": "Sunderbani",
@@ -2411071,7 +2411299,7 @@
 		"stateName": "Artvin",
 		"latitude": "41.11955",
 		"longitude": "42.06882",
-		"population": 5318,
+		"population": 5432,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 751950
 	},
@@ -2411542,18 +2411770,6 @@
 		"population": 8832,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13192127
-	},
-	{
-		"name": "Aşağı Irmaklar",
-		"countryCode": "TR",
-		"countryName": "Turkey",
-		"stateCode": "08",
-		"stateName": "Artvin",
-		"latitude": "41.18027",
-		"longitude": "42.18146",
-		"population": 0,
-		"timezone": "Europe/Istanbul",
-		"geonameId": 751737
 	},
 	{
 		"name": "Aşağı Karafakılı",
@@ -2421046,6 +2421262,18 @@
 		"population": 5378,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13713187
+	},
+	{
+		"name": "Cumhuriyet",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "08",
+		"stateName": "Artvin",
+		"latitude": "41.48141",
+		"longitude": "41.53027",
+		"population": 3711,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715437
 	},
 	{
 		"name": "Cumhuriyet Mahallesi",
@@ -2453374,6 +2453602,18 @@
 		"population": 770,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 10181796
+	},
+	{
+		"name": "Uzunyalı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "08",
+		"stateName": "Artvin",
+		"latitude": "41.49122",
+		"longitude": "41.53598",
+		"population": 2203,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715435
 	},
 	{
 		"name": "Vakfıkebir",
@@ -2490526,6 +2490766,18 @@
 		"population": 338968,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 702320
+	},
+	{
+		"name": "Maksymilyanivka",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "14",
+		"stateName": "Donetsk",
+		"latitude": "47.975",
+		"longitude": "37.39315",
+		"population": 2171,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 702285
 	},
 	{
 		"name": "Maksymivka",
@@ -2809690,6 +2809942,18 @@
 		"population": 17264,
 		"timezone": "Asia/Ho_Chi_Minh",
 		"geonameId": 1572249
+	},
+	{
+		"name": "Nha Bích",
+		"countryCode": "VN",
+		"countryName": "Vietnam",
+		"stateCode": "75",
+		"stateName": "Dong Nai",
+		"latitude": "11.49117",
+		"longitude": "106.69074",
+		"population": 23938,
+		"timezone": "Asia/Ho_Chi_Minh",
+		"geonameId": 1567523
 	},
 	{
 		"name": "Nhã Nam",
