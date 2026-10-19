@@ -142920,6 +142920,18 @@
 		"geonameId": 1185281
 	},
 	{
+		"name": "Bahālnagar",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.24921",
+		"longitude": "89.19675",
+		"population": 573,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1211791
+	},
+	{
 		"name": "Bāhārchara",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143100,6 +143112,18 @@
 		"geonameId": 6414184
 	},
 	{
+		"name": "Bijaynagar",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.21626",
+		"longitude": "89.18076",
+		"population": 3120,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1208731
+	},
+	{
 		"name": "Bogra",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143268,6 +143292,18 @@
 		"geonameId": 1336134
 	},
 	{
+		"name": "Dahārpāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.24299",
+		"longitude": "89.18393",
+		"population": 2738,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1205599
+	},
+	{
 		"name": "Dailpāra",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143278,6 +143314,18 @@
 		"population": 1493,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 7476446
+	},
+	{
+		"name": "Dākātia",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.20445",
+		"longitude": "89.19627",
+		"population": 3535,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1205566
 	},
 	{
 		"name": "Dakshin Māgura",
@@ -143302,6 +143350,18 @@
 		"population": 4128,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1205540
+	},
+	{
+		"name": "Daulatdihi",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.233",
+		"longitude": "89.17303",
+		"population": 3986,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1204868
 	},
 	{
 		"name": "Demra",
@@ -143338,6 +143398,18 @@
 		"population": 54210,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 7683974
+	},
+	{
+		"name": "Dihi Kanejpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.21618",
+		"longitude": "89.19864",
+		"population": 1066,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1203914
 	},
 	{
 		"name": "Dinajpur",
@@ -143472,6 +143544,18 @@
 		"geonameId": 1200109
 	},
 	{
+		"name": "Ghona",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.22697",
+		"longitude": "89.18135",
+		"population": 1282,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1202570
+	},
+	{
 		"name": "Godārbīl",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143544,6 +143628,18 @@
 		"geonameId": 1201753
 	},
 	{
+		"name": "Hashimpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.21784",
+		"longitude": "89.23471",
+		"population": 3175,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1201285
+	},
+	{
 		"name": "Hatalia",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143566,6 +143662,18 @@
 		"population": 498179,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1462674
+	},
+	{
+		"name": "Ichhāli",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.22915",
+		"longitude": "89.24107",
+		"population": 1912,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1200863
 	},
 	{
 		"name": "Indurkani",
@@ -143604,6 +143712,18 @@
 		"geonameId": 1200474
 	},
 	{
+		"name": "Jalkar",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.21401",
+		"longitude": "89.26903",
+		"population": 874,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7479685
+	},
+	{
 		"name": "Jamālpur",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143626,6 +143746,18 @@
 		"population": 243987,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1336140
+	},
+	{
+		"name": "Jessore Cantonment",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.18369",
+		"longitude": "89.17639",
+		"population": 18872,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 13715450
 	},
 	{
 		"name": "Jhingergācha",
@@ -143676,6 +143808,18 @@
 		"geonameId": 1185272
 	},
 	{
+		"name": "Kaliakair",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.06956",
+		"longitude": "90.22212",
+		"population": 245121,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 9171969
+	},
+	{
 		"name": "Kālīganj",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143698,6 +143842,30 @@
 		"population": 203697,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 8299875
+	},
+	{
+		"name": "Kashimpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.23237",
+		"longitude": "89.20247",
+		"population": 5054,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1198268
+	},
+	{
+		"name": "Kāyetkhāli",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.20995",
+		"longitude": "89.24656",
+		"population": 1023,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1198030
 	},
 	{
 		"name": "Kesabpur",
@@ -143736,6 +143904,18 @@
 		"geonameId": 11609980
 	},
 	{
+		"name": "Khojārhāt",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.22788",
+		"longitude": "89.19695",
+		"population": 2099,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1197342
+	},
+	{
 		"name": "Khulna",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143748,6 +143928,18 @@
 		"geonameId": 1336135
 	},
 	{
+		"name": "Kifājtnagar",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.23922",
+		"longitude": "89.20617",
+		"population": 684,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1197205
+	},
+	{
 		"name": "Kishorganj",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143758,6 +143950,30 @@
 		"population": 90690,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1337249
+	},
+	{
+		"name": "Kismat Ināyetpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.24285",
+		"longitude": "89.20728",
+		"population": 809,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1197159
+	},
+	{
+		"name": "Kismat Rājāpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.25224",
+		"longitude": "89.24675",
+		"population": 1993,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1197137
 	},
 	{
 		"name": "Kushtia",
@@ -143916,6 +144132,18 @@
 		"geonameId": 1348441
 	},
 	{
+		"name": "Manoharpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.23481",
+		"longitude": "89.24109",
+		"population": 1218,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7478839
+	},
+	{
 		"name": "Mathapanichara",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143974,6 +144202,18 @@
 		"population": 39424,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185171
+	},
+	{
+		"name": "Mirāpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.23051",
+		"longitude": "89.18554",
+		"population": 727,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1194398
 	},
 	{
 		"name": "Mirpur Model Thana",
@@ -144516,6 +144756,18 @@
 		"geonameId": 7483743
 	},
 	{
+		"name": "Rahelāpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.22638",
+		"longitude": "89.21991",
+		"population": 1427,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1190458
+	},
+	{
 		"name": "Rāipur",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144550,6 +144802,18 @@
 		"population": 55241,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185127
+	},
+	{
+		"name": "Rāmkrishnapur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.22187",
+		"longitude": "89.25685",
+		"population": 1756,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1190038
 	},
 	{
 		"name": "Ramna Maidan",
@@ -144636,6 +144900,18 @@
 		"geonameId": 1189056
 	},
 	{
+		"name": "Salta",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.24871",
+		"longitude": "89.20706",
+		"population": 583,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1188932
+	},
+	{
 		"name": "Samonta Bazar",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144658,6 +144934,18 @@
 		"population": 52152,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185120
+	},
+	{
+		"name": "Sāntala",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.20701",
+		"longitude": "89.17694",
+		"population": 2487,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1188741
 	},
 	{
 		"name": "Sarankhola",
@@ -144804,6 +145092,18 @@
 		"geonameId": 1185108
 	},
 	{
+		"name": "Shyāmnagar",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.2443",
+		"longitude": "89.19362",
+		"population": 1709,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1186765
+	},
+	{
 		"name": "Singair",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144934,6 +145234,18 @@
 		"population": 100442,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185092
+	},
+	{
+		"name": "Tola Nurpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "4041",
+		"stateName": "Jessore",
+		"latitude": "23.20128",
+		"longitude": "89.18382",
+		"population": 5783,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1185999
 	},
 	{
 		"name": "Tungi",
@@ -641436,14 +641748,14 @@
 		"geonameId": 3061657
 	},
 	{
-		"name": "Ždírec nad Doubravkou",
+		"name": "Ždírec nad Doubravou",
 		"countryCode": "CZ",
 		"countryName": "Czechia",
 		"stateCode": "0631",
 		"stateName": "Okres Havlíčkův Brod",
 		"latitude": "49.69662",
 		"longitude": "15.81283",
-		"population": 3083,
+		"population": 3064,
 		"timezone": "Europe/Prague",
 		"geonameId": 3061648
 	},
@@ -648394,6 +648706,18 @@
 		"population": 13075,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2953458
+	},
+	{
+		"name": "Bad Friedrichshall",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "BW",
+		"stateName": "Baden-Wurttemberg",
+		"latitude": "49.23065",
+		"longitude": "9.21723",
+		"population": 19853,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2815174
 	},
 	{
 		"name": "Bad Füssing",
@@ -812779,7 +813103,7 @@
 		"stateName": "Murcia",
 		"latitude": "37.4063",
 		"longitude": "-1.58289",
-		"population": 34533,
+		"population": 34142,
 		"timezone": "Europe/Madrid",
 		"geonameId": 2522333
 	},
@@ -890112,6 +890436,18 @@
 		"geonameId": 3107259
 	},
 	{
+		"name": "Urbanización Calabardina",
+		"countryCode": "ES",
+		"countryName": "Spain",
+		"stateCode": "MU",
+		"stateName": "Murcia",
+		"latitude": "37.43511",
+		"longitude": "-1.5046",
+		"population": 957,
+		"timezone": "Europe/Madrid",
+		"geonameId": 2520583
+	},
+	{
 		"name": "Urbanizacion Casas Viejas",
 		"countryCode": "ES",
 		"countryName": "Spain",
@@ -890122,6 +890458,30 @@
 		"population": 0,
 		"timezone": "Europe/Madrid",
 		"geonameId": 13192192
+	},
+	{
+		"name": "Urbanización Collados Zieschang",
+		"countryCode": "ES",
+		"countryName": "Spain",
+		"stateCode": "MU",
+		"stateName": "Murcia",
+		"latitude": "37.42725",
+		"longitude": "-1.54647",
+		"population": 789,
+		"timezone": "Europe/Madrid",
+		"geonameId": 13715440
+	},
+	{
+		"name": "Urbanización Todosol",
+		"countryCode": "ES",
+		"countryName": "Spain",
+		"stateCode": "MU",
+		"stateName": "Murcia",
+		"latitude": "37.42746",
+		"longitude": "-1.53674",
+		"population": 1259,
+		"timezone": "Europe/Madrid",
+		"geonameId": 13715442
 	},
 	{
 		"name": "Urda",
@@ -1382076,6 +1382436,18 @@
 		"geonameId": 1278602
 	},
 	{
+		"name": "Angār",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.80545",
+		"longitude": "85.90724",
+		"population": 6955,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880228
+	},
+	{
 		"name": "Angi Kiri",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1385412,6 +1385784,18 @@
 		"geonameId": 1277770
 	},
 	{
+		"name": "Baikunthpur Barhanda",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.68273",
+		"longitude": "85.76762",
+		"population": 3976,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880545
+	},
+	{
 		"name": "Bail-Hongal",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1385458,6 +1385842,18 @@
 		"population": 7673,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1277716
+	},
+	{
+		"name": "Bajopur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.87418",
+		"longitude": "85.74395",
+		"population": 989,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11030651
 	},
 	{
 		"name": "Bajpe",
@@ -1385770,6 +1386166,18 @@
 		"population": 22847,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1277634
+	},
+	{
+		"name": "Balari urf Jagdishpur Deal",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.81229",
+		"longitude": "85.80753",
+		"population": 9957,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880123
 	},
 	{
 		"name": "Bālasamudram",
@@ -1388784,6 +1389192,18 @@
 		"geonameId": 10837461
 	},
 	{
+		"name": "Bela Megh",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.71114",
+		"longitude": "85.77416",
+		"population": 6540,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880535
+	},
+	{
 		"name": "Belagachhia",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1389562,6 +1389982,30 @@
 		"population": 12353,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 13353667
+	},
+	{
+		"name": "Bhagwānpur Desua",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.81242",
+		"longitude": "85.83818",
+		"population": 10950,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880230
+	},
+	{
+		"name": "Bhagwānpur Kamla",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.77104",
+		"longitude": "85.78342",
+		"population": 5895,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880154
 	},
 	{
 		"name": "Bhagwantnagar",
@@ -1392168,6 +1392612,18 @@
 		"geonameId": 1275460
 	},
 	{
+		"name": "Bishunpur Hakīmābād",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.84533",
+		"longitude": "85.84316",
+		"population": 9653,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880268
+	},
+	{
 		"name": "Bishunpur Urf Mahārājganj",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1393668,6 +1394124,30 @@
 		"geonameId": 10836001
 	},
 	{
+		"name": "Chaita",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.76709",
+		"longitude": "85.87916",
+		"population": 17613,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880198
+	},
+	{
+		"name": "Chak Abdul Ghani",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.85595",
+		"longitude": "85.73668",
+		"population": 2586,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11030630
+	},
+	{
 		"name": "Chak Dhotrān",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1393678,6 +1394158,18 @@
 		"population": 573,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10713637
+	},
+	{
+		"name": "Chak Nur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.87356",
+		"longitude": "85.76024",
+		"population": 5238,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880082
 	},
 	{
 		"name": "Chākāi",
@@ -1394026,6 +1394518,18 @@
 		"population": 15932,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1274807
+	},
+	{
+		"name": "Chand Chaur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.72759",
+		"longitude": "85.78646",
+		"population": 33457,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880526
 	},
 	{
 		"name": "Chānda",
@@ -1409784,6 +1410288,18 @@
 		"geonameId": 1269447
 	},
 	{
+		"name": "Jalālgarh",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.95721",
+		"longitude": "87.53024",
+		"population": 7585,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1269442
+	},
+	{
 		"name": "Jalālī",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1411330,6 +1411846,30 @@
 		"population": 7343,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 11875582
+	},
+	{
+		"name": "Jitwārpur Chauth",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.84986",
+		"longitude": "85.80742",
+		"population": 9267,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880105
+	},
+	{
+		"name": "Jitwārpur Nizāmat",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.8489",
+		"longitude": "85.80057",
+		"population": 10568,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880104
 	},
 	{
 		"name": "Jīwanpur",
@@ -1416958,6 +1417498,18 @@
 		"population": 6788,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 13157068
+	},
+	{
+		"name": "Kewas Nizamat",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.82625",
+		"longitude": "85.86098",
+		"population": 6599,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715447
 	},
 	{
 		"name": "Khāchrod",
@@ -1423284,6 +1423836,18 @@
 		"geonameId": 1265240
 	},
 	{
+		"name": "Lakhmipur Maheshpatti Deal",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.79695",
+		"longitude": "85.79896",
+		"population": 12015,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715448
+	},
+	{
 		"name": "Lakhnā",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1429464,6 +1430028,18 @@
 		"geonameId": 1263185
 	},
 	{
+		"name": "Mehsāri",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.73335",
+		"longitude": "85.84961",
+		"population": 11588,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880736
+	},
+	{
 		"name": "Mehsi",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1431886,6 +1432462,18 @@
 		"population": 12744,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1262429
+	},
+	{
+		"name": "Muriāro",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.82054",
+		"longitude": "85.90291",
+		"population": 5457,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880236
 	},
 	{
 		"name": "Muringur Vadakummuri",
@@ -1436244,6 +1436832,18 @@
 		"geonameId": 1261242
 	},
 	{
+		"name": "Nocchād",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "KL",
+		"stateName": "Kerala",
+		"latitude": "11.52734",
+		"longitude": "75.75493",
+		"population": 26857,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10929452
+	},
+	{
 		"name": "Nohan",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1439998,6 +1440598,18 @@
 		"population": 1815,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 13645582
+	},
+	{
+		"name": "Pataili",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.78717",
+		"longitude": "85.83162",
+		"population": 12285,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880152
 	},
 	{
 		"name": "Pataliputra Housing Colony",
@@ -1455526,6 +1456138,18 @@
 		"population": 65437,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1255396
+	},
+	{
+		"name": "Supaul",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.82532",
+		"longitude": "85.85136",
+		"population": 6407,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10880231
 	},
 	{
 		"name": "Sūrajgarh",
@@ -1977204,6 +1977828,18 @@
 		"geonameId": 2753521
 	},
 	{
+		"name": "Huis ter Heide",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "UT",
+		"stateName": "Utrecht",
+		"latitude": "52.1125",
+		"longitude": "5.25556",
+		"population": 1285,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2753488
+	},
+	{
 		"name": "Huisduinen",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -2272312,7 +2272948,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.923",
 		"longitude": "30.3",
 		"population": 157897,
@@ -2273056,7 +2273692,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.05168",
 		"longitude": "29.97935",
 		"population": 4000,
@@ -2273068,7 +2273704,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.73083",
 		"longitude": "30.33222",
 		"population": 1159,
@@ -2274952,7 +2275588,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.87167",
 		"longitude": "30.26583",
 		"population": 44667,
@@ -2276548,7 +2277184,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.15118",
 		"longitude": "30.00151",
 		"population": 2080,
@@ -2279848,7 +2280484,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.93111",
 		"longitude": "30.36072",
 		"population": 214625,
@@ -2281396,7 +2282032,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.84167",
 		"longitude": "30.25583",
 		"population": 72822,
@@ -2285140,7 +2285776,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.77234",
 		"longitude": "30.13455",
 		"population": 22503,
@@ -2285560,7 +2286196,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.04017",
 		"longitude": "29.9895",
 		"population": 3800,
@@ -2285728,7 +2286364,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.017",
 		"longitude": "30.417",
 		"population": 71128,
@@ -2288368,7 +2289004,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.99675",
 		"longitude": "30.3899",
 		"population": 504641,
@@ -2292592,7 +2293228,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.02427",
 		"longitude": "30.28491",
 		"population": 39945,
@@ -2292628,7 +2293264,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.75069",
 		"longitude": "30.58856",
 		"population": 138979,
@@ -2292736,7 +2293372,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.1866",
 		"longitude": "29.80865",
 		"population": 1230,
@@ -2292760,7 +2293396,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.00448",
 		"longitude": "30.27523",
 		"population": 84052,
@@ -2294512,7 +2295148,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.97305",
 		"longitude": "30.47607",
 		"population": 337091,
@@ -2294896,7 +2295532,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.73833",
 		"longitude": "30.08944",
 		"population": 44323,
@@ -2295520,7 +2296156,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.992",
 		"longitude": "29.77616",
 		"population": 43005,
@@ -2296192,7 +2296828,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.859",
 		"longitude": "30.388",
 		"population": 54198,
@@ -2296600,7 +2297236,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.99333",
 		"longitude": "30.36389",
 		"population": 2000,
@@ -2297368,7 +2298004,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.99521",
 		"longitude": "30.14717",
 		"population": 10000,
@@ -2298256,7 +2298892,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.10369",
 		"longitude": "30.20683",
 		"population": 3665,
@@ -2298496,7 +2299132,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.01686",
 		"longitude": "30.02008",
 		"population": 4759,
@@ -2298760,7 +2299396,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.90612",
 		"longitude": "29.77253",
 		"population": 42505,
@@ -2301208,7 +2301844,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.80083",
 		"longitude": "30.54778",
 		"population": 26361,
@@ -2302132,7 +2302768,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.19803",
 		"longitude": "29.51597",
 		"population": 1587,
@@ -2305108,7 +2305744,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.98748",
 		"longitude": "30.28682",
 		"population": 20000,
@@ -2307496,7 +2308132,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.84389",
 		"longitude": "30.45111",
 		"population": 45664,
@@ -2307868,7 +2308504,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.00928",
 		"longitude": "30.11559",
 		"population": 3903,
@@ -2308972,7 +2309608,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.03947",
 		"longitude": "30.31128",
 		"population": 95000,
@@ -2309320,7 +2309956,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.0812",
 		"longitude": "30.27626",
 		"population": 11962,
@@ -2309620,7 +2310256,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.68333",
 		"longitude": "30.43472",
 		"population": 16087,
@@ -2310400,7 +2311036,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.12295",
 		"longitude": "30.16404",
 		"population": 8130,
@@ -2310460,7 +2311096,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.88333",
 		"longitude": "29.9",
 		"population": 73199,
@@ -2310484,7 +2311120,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.80222",
 		"longitude": "30.50694",
 		"population": 1308,
@@ -2310496,7 +2311132,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.89565",
 		"longitude": "29.80145",
 		"population": 61973,
@@ -2310508,7 +2311144,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.96567",
 		"longitude": "30.31154",
 		"population": 130455,
@@ -2312020,7 +2312656,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.78667",
 		"longitude": "30.61528",
 		"population": 9001,
@@ -2313424,7 +2314060,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.71417",
 		"longitude": "30.39642",
 		"population": 92889,
@@ -2314048,7 +2314684,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.07919",
 		"longitude": "29.97206",
 		"population": 1230,
@@ -2314180,7 +2314816,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.17217",
 		"longitude": "29.86908",
 		"population": 2478,
@@ -2315428,7 +2316064,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.93863",
 		"longitude": "30.31413",
 		"population": 5351935,
@@ -2315740,7 +2316376,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.77611",
 		"longitude": "30.66139",
 		"population": 1371,
@@ -2316868,7 +2317504,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.09801",
 		"longitude": "29.96378",
 		"population": 37248,
@@ -2318620,7 +2319256,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.80917",
 		"longitude": "30.38167",
 		"population": 15503,
@@ -2318656,7 +2319292,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.047",
 		"longitude": "30.3",
 		"population": 6000,
@@ -2319388,7 +2320024,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.18",
 		"longitude": "29.47583",
 		"population": 610,
@@ -2319856,7 +2320492,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.15612",
 		"longitude": "29.94753",
 		"population": 1370,
@@ -2320180,7 +2320816,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.83528",
 		"longitude": "30.14667",
 		"population": 48271,
@@ -2320192,7 +2320828,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.01667",
 		"longitude": "30.35",
 		"population": 66227,
@@ -2320972,7 +2321608,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.98834",
 		"longitude": "30.24296",
 		"population": 35000,
@@ -2321812,7 +2322448,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.85189",
 		"longitude": "30.03611",
 		"population": 12800,
@@ -2323504,7 +2324140,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.06687",
 		"longitude": "29.97435",
 		"population": 7000,
@@ -2326000,7 +2326636,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.70777",
 		"longitude": "30.44543",
 		"population": 1523,
@@ -2327032,7 +2327668,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.83889",
 		"longitude": "30.17528",
 		"population": 55037,
@@ -2327248,7 +2327884,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.20187",
 		"longitude": "29.62566",
 		"population": 618,
@@ -2327584,7 +2328220,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.81194",
 		"longitude": "30.58139",
 		"population": 1354,
@@ -2328520,7 +2329156,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "59.94091",
 		"longitude": "30.25377",
 		"population": 203058,
@@ -2334628,7 +2335264,7 @@
 		"countryCode": "RU",
 		"countryName": "Russia",
 		"stateCode": "SPE",
-		"stateName": "St.-Petersburg",
+		"stateName": "St. Petersburg",
 		"latitude": "60.19968",
 		"longitude": "29.70183",
 		"population": 14958,
@@ -2463528,6 +2464164,18 @@
 		"geonameId": 713745
 	},
 	{
+		"name": "Aktachy",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "43",
+		"stateName": "Crimea",
+		"latitude": "44.75895",
+		"longitude": "33.7446",
+		"population": 958,
+		"timezone": "Europe/Simferopol",
+		"geonameId": 709064
+	},
+	{
 		"name": "Aktove",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2475118,18 +2475766,6 @@
 		"population": 1468,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 709063
-	},
-	{
-		"name": "Furmanovka",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "43",
-		"stateName": "Crimea",
-		"latitude": "44.75895",
-		"longitude": "33.7446",
-		"population": 958,
-		"timezone": "Europe/Simferopol",
-		"geonameId": 709064
 	},
 	{
 		"name": "Fursy",
