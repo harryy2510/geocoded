@@ -2570,7 +2570,7 @@
 		"uk": {
 			"destination": "Malawi",
 			"alertStatus": [],
-			"updatedAt": "2026-07-03T09:59:53Z",
+			"updatedAt": "2026-10-20T14:35:09Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/malawi"
 		}
 	},
@@ -2589,7 +2589,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-16T15:29:42Z",
+			"updatedAt": "2026-10-20T13:20:31Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/mexico"
 		}
 	},
@@ -3218,7 +3218,7 @@
 		"uk": {
 			"destination": "Seychelles",
 			"alertStatus": [],
-			"updatedAt": "2026-01-21T12:01:13Z",
+			"updatedAt": "2026-10-20T13:59:57Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/seychelles"
 		}
 	},
@@ -3777,7 +3777,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-09T13:57:22Z",
+			"updatedAt": "2026-10-20T14:04:46Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/tanzania"
 		}
 	},

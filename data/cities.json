@@ -752160,18 +752160,6 @@
 		"geonameId": 2841636
 	},
 	{
-		"name": "Sankt Georgen im Schwarzwald",
-		"countryCode": "DE",
-		"countryName": "Germany",
-		"stateCode": "BW",
-		"stateName": "Baden-Wurttemberg",
-		"latitude": "48.12716",
-		"longitude": "8.33513",
-		"population": 13636,
-		"timezone": "Europe/Berlin",
-		"geonameId": 2841619
-	},
-	{
 		"name": "Sankt Goar",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -761482,6 +761470,18 @@
 		"population": 11349,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2841631
+	},
+	{
+		"name": "St. Georgen im Schwarzwald",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "BW",
+		"stateName": "Baden-Wurttemberg",
+		"latitude": "48.12716",
+		"longitude": "8.33513",
+		"population": 13636,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2841619
 	},
 	{
 		"name": "St. Pauli",
@@ -1403247,6 +1403247,18 @@
 		"name": "Fatehābād",
 		"countryCode": "IN",
 		"countryName": "India",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.38106",
+		"longitude": "75.09959",
+		"population": 8860,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1271933
+	},
+	{
+		"name": "Fatehābād",
+		"countryCode": "IN",
+		"countryName": "India",
 		"stateCode": "HR",
 		"stateName": "Haryana",
 		"latitude": "29.51525",
@@ -1414402,6 +1414414,18 @@
 		"population": 851406,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 12501153
+	},
+	{
+		"name": "Kanchad",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "MH",
+		"stateName": "Maharashtra",
+		"latitude": "19.67742",
+		"longitude": "73.0221",
+		"population": 1371,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1268162
 	},
 	{
 		"name": "Kanchanpur",
@@ -1455156,6 +1455180,18 @@
 		"geonameId": 13494622
 	},
 	{
+		"name": "Sopāra",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "MH",
+		"stateName": "Maharashtra",
+		"latitude": "19.41578",
+		"longitude": "72.80076",
+		"population": 184664,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1255716
+	},
+	{
 		"name": "Sopur",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1468032,6 +1468068,18 @@
 		"geonameId": 134846
 	},
 	{
+		"name": "‘Abbāsābād-e Sardār",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "15",
+		"stateName": "Kerman",
+		"latitude": "28.68295",
+		"longitude": "59.07866",
+		"population": 5125,
+		"timezone": "Asia/Tehran",
+		"geonameId": 145372
+	},
+	{
 		"name": "‘Abd ol Mow’men",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1468078,6 +1468126,18 @@
 		"population": 582,
 		"timezone": "Asia/Tehran",
 		"geonameId": 32834
+	},
+	{
+		"name": "‘Abdolābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "30",
+		"stateName": "Razavi Khorasan",
+		"latitude": "35.06807",
+		"longitude": "58.79614",
+		"population": 5618,
+		"timezone": "Asia/Tehran",
+		"geonameId": 145204
 	},
 	{
 		"name": "‘Abdollāhābād",
@@ -1468366,6 +1468426,18 @@
 		"population": 907,
 		"timezone": "Asia/Tehran",
 		"geonameId": 142812
+	},
+	{
+		"name": "‘Aţāābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "36.98069",
+		"longitude": "54.62096",
+		"population": 5333,
+		"timezone": "Asia/Tehran",
+		"geonameId": 39206
 	},
 	{
 		"name": "‘Az̄āb",
@@ -1469244,6 +1469316,18 @@
 		"geonameId": 144443
 	},
 	{
+		"name": "Ajab Shir Military Garrison",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "01",
+		"stateName": "East Azerbaijan",
+		"latitude": "37.49129",
+		"longitude": "45.92604",
+		"population": 5423,
+		"timezone": "Asia/Tehran",
+		"geonameId": 13715519
+	},
+	{
 		"name": "Ājī Būzāyeh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1469314,6 +1469398,18 @@
 		"population": 5817,
 		"timezone": "Asia/Tehran",
 		"geonameId": 144410
+	},
+	{
+		"name": "Akbarābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "29.24607",
+		"longitude": "52.78084",
+		"population": 5817,
+		"timezone": "Asia/Tehran",
+		"geonameId": 6652945
 	},
 	{
 		"name": "Akhand",
@@ -1469686,6 +1469782,18 @@
 		"population": 665,
 		"timezone": "Asia/Tehran",
 		"geonameId": 143544
+	},
+	{
+		"name": "Amīrābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.68183",
+		"longitude": "50.79536",
+		"population": 5221,
+		"timezone": "Asia/Tehran",
+		"geonameId": 41995
 	},
 	{
 		"name": "Amīrābād",
@@ -1471563,6 +1471671,18 @@
 		"name": "Bahārestān",
 		"countryCode": "IR",
 		"countryName": "Iran",
+		"stateCode": "06",
+		"stateName": "Bushehr",
+		"latitude": "27.83163",
+		"longitude": "52.35359",
+		"population": 5989,
+		"timezone": "Asia/Tehran",
+		"geonameId": 135968
+	},
+	{
+		"name": "Bahārestān",
+		"countryCode": "IR",
+		"countryName": "Iran",
 		"stateCode": "04",
 		"stateName": "Isfahan",
 		"latitude": "32.48814",
@@ -1473288,6 +1473408,18 @@
 		"geonameId": 140586
 	},
 	{
+		"name": "Bīdokht",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "30",
+		"stateName": "Razavi Khorasan",
+		"latitude": "34.3471",
+		"longitude": "58.75722",
+		"population": 5501,
+		"timezone": "Asia/Tehran",
+		"geonameId": 140570
+	},
+	{
 		"name": "Bīhūd",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1473322,6 +1473454,18 @@
 		"population": 722,
 		"timezone": "Asia/Tehran",
 		"geonameId": 37977
+	},
+	{
+		"name": "Bīland",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "30",
+		"stateName": "Razavi Khorasan",
+		"latitude": "34.3918",
+		"longitude": "58.70066",
+		"population": 5004,
+		"timezone": "Asia/Tehran",
+		"geonameId": 140490
 	},
 	{
 		"name": "Bīleh Savār",
@@ -1473910,6 +1474054,18 @@
 		"population": 9924,
 		"timezone": "Asia/Tehran",
 		"geonameId": 139780
+	},
+	{
+		"name": "Chāh Akramī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "25",
+		"stateName": "Yazd Province",
+		"latitude": "31.86449",
+		"longitude": "54.40287",
+		"population": 10311,
+		"timezone": "Asia/Tehran",
+		"geonameId": 13715548
 	},
 	{
 		"name": "Chāh Kabkān",
@@ -1474606,6 +1474762,18 @@
 		"population": 1395,
 		"timezone": "Asia/Tehran",
 		"geonameId": 138443
+	},
+	{
+		"name": "Cheshmeh Kabūd",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "05",
+		"stateName": "Ilam Province",
+		"latitude": "33.5732",
+		"longitude": "46.4051",
+		"population": 941,
+		"timezone": "Asia/Tehran",
+		"geonameId": 138568
 	},
 	{
 		"name": "Cheshmeh Qaşşābān",
@@ -1475868,6 +1476036,18 @@
 		"geonameId": 32810
 	},
 	{
+		"name": "Deh-e Moḩsen",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "20",
+		"stateName": "Lorestan Province",
+		"latitude": "33.4299",
+		"longitude": "48.3298",
+		"population": 5216,
+		"timezone": "Asia/Tehran",
+		"geonameId": 136682
+	},
+	{
 		"name": "Deh-e Namak",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1476840,6 +1477020,18 @@
 		"geonameId": 403541
 	},
 	{
+		"name": "Dowzeyn",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "37.12614",
+		"longitude": "55.57906",
+		"population": 5737,
+		"timezone": "Asia/Tehran",
+		"geonameId": 135695
+	},
+	{
 		"name": "Dūdej",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1477467,6 +1477659,18 @@
 		"name": "Eslāmābād",
 		"countryCode": "IR",
 		"countryName": "Iran",
+		"stateCode": "10",
+		"stateName": "Khuzestan",
+		"latitude": "32.30304",
+		"longitude": "48.51573",
+		"population": 5298,
+		"timezone": "Asia/Tehran",
+		"geonameId": 36607
+	},
+	{
+		"name": "Eslāmābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
 		"stateCode": "26",
 		"stateName": "Tehran",
 		"latitude": "35.626",
@@ -1477510,6 +1477714,18 @@
 		"population": 899,
 		"timezone": "Asia/Tehran",
 		"geonameId": 8452431
+	},
+	{
+		"name": "Eslāmābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "03",
+		"stateName": "Ardabil Province",
+		"latitude": "39.58335",
+		"longitude": "47.71484",
+		"population": 3068,
+		"timezone": "Asia/Tehran",
+		"geonameId": 13715518
 	},
 	{
 		"name": "Eslāmābād-e Gharb",
@@ -1479408,6 +1479624,18 @@
 		"geonameId": 400762
 	},
 	{
+		"name": "Gīmān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "13",
+		"stateName": "Sistan and Baluchestan",
+		"latitude": "27.84921",
+		"longitude": "60.16927",
+		"population": 752,
+		"timezone": "Asia/Tehran",
+		"geonameId": 1160526
+	},
+	{
 		"name": "Gīvī",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1479636,7 +1479864,7 @@
 		"geonameId": 133029
 	},
 	{
-		"name": "Golzār-e Bālā",
+		"name": "Golzār",
 		"countryCode": "IR",
 		"countryName": "Iran",
 		"stateCode": "26",
@@ -1479766,6 +1479994,18 @@
 		"population": 244937,
 		"timezone": "Asia/Tehran",
 		"geonameId": 132892
+	},
+	{
+		"name": "Gorjī Maḩalleh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "21",
+		"stateName": "Māzandarān",
+		"latitude": "36.6781",
+		"longitude": "53.4448",
+		"population": 6129,
+		"timezone": "Asia/Tehran",
+		"geonameId": 132857
 	},
 	{
 		"name": "Gorjī Sarā",
@@ -1482132,6 +1482372,18 @@
 		"geonameId": 6746969
 	},
 	{
+		"name": "Jāydasht",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "28.80496",
+		"longitude": "52.63404",
+		"population": 5524,
+		"timezone": "Asia/Tehran",
+		"geonameId": 130676
+	},
+	{
 		"name": "Jazan",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1482828,6 +1483080,18 @@
 		"geonameId": 129569
 	},
 	{
+		"name": "Kāl Zarkesh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "30",
+		"stateName": "Razavi Khorasan",
+		"latitude": "36.40032",
+		"longitude": "59.50411",
+		"population": 6134,
+		"timezone": "Asia/Tehran",
+		"geonameId": 13715521
+	},
+	{
 		"name": "Kalā Chāy",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1483090,6 +1483354,18 @@
 		"population": 891,
 		"timezone": "Asia/Tehran",
 		"geonameId": 129044
+	},
+	{
+		"name": "Kamāngar Kolā",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "21",
+		"stateName": "Māzandarān",
+		"latitude": "36.49793",
+		"longitude": "52.38169",
+		"population": 1615,
+		"timezone": "Asia/Tehran",
+		"geonameId": 8778
 	},
 	{
 		"name": "Kamard",
@@ -1483368,6 +1483644,18 @@
 		"geonameId": 41506
 	},
 	{
+		"name": "Kargān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "23",
+		"stateName": "Hormozgan",
+		"latitude": "26.92316",
+		"longitude": "56.9493",
+		"population": 5282,
+		"timezone": "Asia/Tehran",
+		"geonameId": 128664
+	},
+	{
 		"name": "Karīān",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1483510,6 +1483798,18 @@
 		"population": 1109,
 		"timezone": "Asia/Tehran",
 		"geonameId": 381511
+	},
+	{
+		"name": "Karūnī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "29.5362",
+		"longitude": "52.5012",
+		"population": 5689,
+		"timezone": "Asia/Tehran",
+		"geonameId": 6680620
 	},
 	{
 		"name": "Kārūyeh",
@@ -1484532,6 +1484832,18 @@
 		"geonameId": 127653
 	},
 	{
+		"name": "Khavīrak",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "25",
+		"stateName": "Yazd Province",
+		"latitude": "31.80011",
+		"longitude": "54.50815",
+		"population": 985,
+		"timezone": "Asia/Tehran",
+		"geonameId": 127650
+	},
+	{
 		"name": "Khazīneh Anbār-e Jadīd",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1485156,6 +1485468,18 @@
 		"geonameId": 127098
 	},
 	{
+		"name": "Khūsh Rūdpey",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "21",
+		"stateName": "Māzandarān",
+		"latitude": "36.36953",
+		"longitude": "52.5654",
+		"population": 5742,
+		"timezone": "Asia/Tehran",
+		"geonameId": 11515
+	},
+	{
 		"name": "Khūsheh Mehr-e Khūjeh Mīr",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1485468,6 +1485792,18 @@
 		"geonameId": 37854
 	},
 	{
+		"name": "Kolāhī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "23",
+		"stateName": "Hormozgan",
+		"latitude": "27.0607",
+		"longitude": "56.8727",
+		"population": 5686,
+		"timezone": "Asia/Tehran",
+		"geonameId": 126838
+	},
+	{
 		"name": "Kolāksar",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1485694,6 +1486030,18 @@
 		"population": 760,
 		"timezone": "Asia/Tehran",
 		"geonameId": 126635
+	},
+	{
+		"name": "Korand",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "37.9592",
+		"longitude": "55.51709",
+		"population": 5616,
+		"timezone": "Asia/Tehran",
+		"geonameId": 126615
 	},
 	{
 		"name": "Korang",
@@ -1486186,6 +1486534,18 @@
 		"population": 3595,
 		"timezone": "Asia/Tehran",
 		"geonameId": 126227
+	},
+	{
+		"name": "Kūrūnī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "29.53297",
+		"longitude": "52.50487",
+		"population": 5689,
+		"timezone": "Asia/Tehran",
+		"geonameId": 44026
 	},
 	{
 		"name": "Kūshk",
@@ -1486872,6 +1487232,18 @@
 		"geonameId": 125675
 	},
 	{
+		"name": "Līqvān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "01",
+		"stateName": "East Azerbaijan",
+		"latitude": "37.8345",
+		"longitude": "46.43",
+		"population": 5122,
+		"timezone": "Asia/Tehran",
+		"geonameId": 125671
+	},
+	{
 		"name": "Līsār",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1487398,6 +1487770,18 @@
 		"population": 654,
 		"timezone": "Asia/Tehran",
 		"geonameId": 125242
+	},
+	{
+		"name": "Majīdābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "03",
+		"stateName": "Ardabil Province",
+		"latitude": "39.6352",
+		"longitude": "47.9533",
+		"population": 577,
+		"timezone": "Asia/Tehran",
+		"geonameId": 388963
 	},
 	{
 		"name": "Majlesī",
@@ -1488024,6 +1488408,18 @@
 		"geonameId": 28750
 	},
 	{
+		"name": "Marzan Kalāteh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "36.87594",
+		"longitude": "54.5974",
+		"population": 1384,
+		"timezone": "Asia/Tehran",
+		"geonameId": 39156
+	},
+	{
 		"name": "Marzanābād",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1488600,6 +1488996,18 @@
 		"geonameId": 17832
 	},
 	{
+		"name": "Meymanatābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.499",
+		"longitude": "51.162",
+		"population": 5821,
+		"timezone": "Asia/Tehran",
+		"geonameId": 406491
+	},
+	{
 		"name": "Meymand",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1488828,6 +1489236,18 @@
 		"geonameId": 45041
 	},
 	{
+		"name": "Mīr Maḩalleh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "36.90674",
+		"longitude": "54.60834",
+		"population": 787,
+		"timezone": "Asia/Tehran",
+		"geonameId": 39583
+	},
+	{
 		"name": "Mīrābād",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1488924,6 +1489344,18 @@
 		"geonameId": 124094
 	},
 	{
+		"name": "Mo‘ezzābād-e Jāberī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "29.4822",
+		"longitude": "53.3682",
+		"population": 5785,
+		"timezone": "Asia/Tehran",
+		"geonameId": 123718
+	},
+	{
 		"name": "Mobārak Shahr",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1489006,6 +1489438,18 @@
 		"population": 1631,
 		"timezone": "Asia/Tehran",
 		"geonameId": 39770
+	},
+	{
+		"name": "Moghānjūq",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "02",
+		"stateName": "West Azerbaijan",
+		"latitude": "38.2335",
+		"longitude": "44.7681",
+		"population": 5209,
+		"timezone": "Asia/Tehran",
+		"geonameId": 123706
 	},
 	{
 		"name": "Moghūyeh",
@@ -1489155,6 +1489599,18 @@
 		"name": "Moḩammadābād",
 		"countryCode": "IR",
 		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "36.89612",
+		"longitude": "54.43163",
+		"population": 5192,
+		"timezone": "Asia/Tehran",
+		"geonameId": 7329764
+	},
+	{
+		"name": "Moḩammadābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
 		"stateCode": "30",
 		"stateName": "Razavi Khorasan",
 		"latitude": "35.108",
@@ -1489162,6 +1489618,18 @@
 		"population": 4548,
 		"timezone": "Asia/Tehran",
 		"geonameId": 13680008
+	},
+	{
+		"name": "Moḩammadābād-e A‘lā",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.43128",
+		"longitude": "51.55405",
+		"population": 5306,
+		"timezone": "Asia/Tehran",
+		"geonameId": 32778
 	},
 	{
 		"name": "Mohammadān",
@@ -1489174,6 +1489642,18 @@
 		"population": 10302,
 		"timezone": "Asia/Tehran",
 		"geonameId": 1160245
+	},
+	{
+		"name": "Moḩammadī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "13",
+		"stateName": "Sistan and Baluchestan",
+		"latitude": "27.3167",
+		"longitude": "62.3796",
+		"population": 5606,
+		"timezone": "Asia/Tehran",
+		"geonameId": 1114091
 	},
 	{
 		"name": "Moḩammadīyeh",
@@ -1490741,6 +1491221,18 @@
 		"countryName": "Iran",
 		"stateCode": "13",
 		"stateName": "Sistan and Baluchestan",
+		"latitude": "29.85895",
+		"longitude": "59.98055",
+		"population": 5238,
+		"timezone": "Asia/Tehran",
+		"geonameId": 122095
+	},
+	{
+		"name": "Noşratābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "13",
+		"stateName": "Sistan and Baluchestan",
 		"latitude": "29.9",
 		"longitude": "59.98333",
 		"population": 4182,
@@ -1491190,6 +1491682,18 @@
 		"population": 2126,
 		"timezone": "Asia/Tehran",
 		"geonameId": 121856
+	},
+	{
+		"name": "Ordaklū",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "01",
+		"stateName": "East Azerbaijan",
+		"latitude": "38.4254",
+		"longitude": "45.8077",
+		"population": 5985,
+		"timezone": "Asia/Tehran",
+		"geonameId": 121816
 	},
 	{
 		"name": "Orūmīyeh",
@@ -1491672,6 +1492176,18 @@
 		"geonameId": 400756
 	},
 	{
+		"name": "Parandak",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.4951",
+		"longitude": "51.0426",
+		"population": 5038,
+		"timezone": "Asia/Tehran",
+		"geonameId": 6666853
+	},
+	{
 		"name": "Pardanjān",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1492150,6 +1492666,18 @@
 		"population": 8294,
 		"timezone": "Asia/Tehran",
 		"geonameId": 120936
+	},
+	{
+		"name": "Pol-e Sharqī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "23",
+		"stateName": "Hormozgan",
+		"latitude": "27.009",
+		"longitude": "55.7394",
+		"population": 5943,
+		"timezone": "Asia/Tehran",
+		"geonameId": 120934
 	},
 	{
 		"name": "Poldasht",
@@ -1492947,18 +1493475,6 @@
 		"name": "Qeshlāq",
 		"countryCode": "IR",
 		"countryName": "Iran",
-		"stateCode": "26",
-		"stateName": "Tehran",
-		"latitude": "35.6425",
-		"longitude": "50.9777",
-		"population": 5110,
-		"timezone": "Asia/Tehran",
-		"geonameId": 41979
-	},
-	{
-		"name": "Qeshlāq",
-		"countryCode": "IR",
-		"countryName": "Iran",
 		"stateCode": "14",
 		"stateName": "Fars",
 		"latitude": "30.563",
@@ -1493014,6 +1493530,18 @@
 		"population": 7909,
 		"timezone": "Asia/Tehran",
 		"geonameId": 32766
+	},
+	{
+		"name": "Qeshlāq-e Malārd",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.6425",
+		"longitude": "50.9777",
+		"population": 5110,
+		"timezone": "Asia/Tehran",
+		"geonameId": 41979
 	},
 	{
 		"name": "Qeshlāq-e Mūrānlū",
@@ -1493074,6 +1493602,18 @@
 		"population": 511,
 		"timezone": "Asia/Tehran",
 		"geonameId": 404447
+	},
+	{
+		"name": "Qezel Kand",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "30",
+		"stateName": "Razavi Khorasan",
+		"latitude": "36.75881",
+		"longitude": "58.92957",
+		"population": 898,
+		"timezone": "Asia/Tehran",
+		"geonameId": 119316
 	},
 	{
 		"name": "Qīāmdasht",
@@ -1493352,6 +1493892,18 @@
 		"geonameId": 119101
 	},
 	{
+		"name": "Qūlonjī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "02",
+		"stateName": "West Azerbaijan",
+		"latitude": "37.934",
+		"longitude": "44.9911",
+		"population": 5192,
+		"timezone": "Asia/Tehran",
+		"geonameId": 21177
+	},
+	{
 		"name": "Qūrchī Bāshī",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1493518,6 +1494070,18 @@
 		"population": 3365,
 		"timezone": "Asia/Tehran",
 		"geonameId": 118967
+	},
+	{
+		"name": "Raḩmatābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "15",
+		"stateName": "Kerman",
+		"latitude": "28.64462",
+		"longitude": "59.06018",
+		"population": 5055,
+		"timezone": "Asia/Tehran",
+		"geonameId": 118929
 	},
 	{
 		"name": "Rahnamā Maḩalleh",
@@ -1493892,6 +1494456,18 @@
 		"geonameId": 118653
 	},
 	{
+		"name": "Raẕīābād-e Bālā",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.6843",
+		"longitude": "51.0715",
+		"population": 5111,
+		"timezone": "Asia/Tehran",
+		"geonameId": 406447
+	},
+	{
 		"name": "Rāzīāneh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1494046,6 +1494622,18 @@
 		"population": 822,
 		"timezone": "Asia/Tehran",
 		"geonameId": 118534
+	},
+	{
+		"name": "Reẕvān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "23",
+		"stateName": "Hormozgan",
+		"latitude": "27.5738",
+		"longitude": "56.0755",
+		"population": 5066,
+		"timezone": "Asia/Tehran",
+		"geonameId": 118538
 	},
 	{
 		"name": "Reẕvānshahr",
@@ -1494300,6 +1494888,18 @@
 		"geonameId": 120351
 	},
 	{
+		"name": "Rūdbāl",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "28.7194",
+		"longitude": "52.62127",
+		"population": 1222,
+		"timezone": "Asia/Tehran",
+		"geonameId": 118250
+	},
+	{
 		"name": "Rūdbār",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1494322,6 +1494922,18 @@
 		"population": 0,
 		"timezone": "Asia/Tehran",
 		"geonameId": 6928551
+	},
+	{
+		"name": "Rūdbār Dasht",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "21",
+		"stateName": "Māzandarān",
+		"latitude": "36.42005",
+		"longitude": "52.36128",
+		"population": 586,
+		"timezone": "Asia/Tehran",
+		"geonameId": 8634
 	},
 	{
 		"name": "Rūdboneh",
@@ -1494360,6 +1494972,18 @@
 		"geonameId": 118191
 	},
 	{
+		"name": "Rūḩābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "15",
+		"stateName": "Kerman",
+		"latitude": "30.80638",
+		"longitude": "56.52093",
+		"population": 5708,
+		"timezone": "Asia/Tehran",
+		"geonameId": 7626066
+	},
+	{
 		"name": "Rūnīz",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1494382,6 +1495006,18 @@
 		"population": 1880,
 		"timezone": "Asia/Tehran",
 		"geonameId": 118152
+	},
+	{
+		"name": "Rūshnāvand",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "30",
+		"stateName": "Razavi Khorasan",
+		"latitude": "34.46655",
+		"longitude": "58.91165",
+		"population": 3272,
+		"timezone": "Asia/Tehran",
+		"geonameId": 118279
 	},
 	{
 		"name": "Rūyān",
@@ -1495068,6 +1495704,18 @@
 		"geonameId": 117422
 	},
 	{
+		"name": "Sāq",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "30",
+		"stateName": "Razavi Khorasan",
+		"latitude": "35.09746",
+		"longitude": "59.89814",
+		"population": 5851,
+		"timezone": "Asia/Tehran",
+		"geonameId": 117414
+	},
+	{
 		"name": "Saqqez",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1495354,6 +1496002,18 @@
 		"population": 46499,
 		"timezone": "Asia/Tehran",
 		"geonameId": 1159716
+	},
+	{
+		"name": "Sarāvān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "19",
+		"stateName": "Gilan Province",
+		"latitude": "37.06099",
+		"longitude": "49.65647",
+		"population": 5542,
+		"timezone": "Asia/Tehran",
+		"geonameId": 28611
 	},
 	{
 		"name": "Sarāvān",
@@ -1495810,6 +1496470,18 @@
 		"population": 18187,
 		"timezone": "Asia/Tehran",
 		"geonameId": 116725
+	},
+	{
+		"name": "Sarzeh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "23",
+		"stateName": "Hormozgan",
+		"latitude": "27.5649",
+		"longitude": "56.1195",
+		"population": 1165,
+		"timezone": "Asia/Tehran",
+		"geonameId": 116709
 	},
 	{
 		"name": "Sarzeh",
@@ -1496280,6 +1496952,18 @@
 		"geonameId": 116201
 	},
 	{
+		"name": "Seyyedābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "30",
+		"stateName": "Razavi Khorasan",
+		"latitude": "36.74818",
+		"longitude": "58.95588",
+		"population": 5312,
+		"timezone": "Asia/Tehran",
+		"geonameId": 116243
+	},
+	{
 		"name": "Seyyedān",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1496698,6 +1497382,18 @@
 		"population": 1778,
 		"timezone": "Asia/Tehran",
 		"geonameId": 40078
+	},
+	{
+		"name": "Shahrak-e Dastgheyb",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "28.7122",
+		"longitude": "52.70102",
+		"population": 957,
+		"timezone": "Asia/Tehran",
+		"geonameId": 48819
 	},
 	{
 		"name": "Shahrak-e Dūrak",
@@ -1497766,6 +1498462,18 @@
 		"population": 3114,
 		"timezone": "Asia/Tehran",
 		"geonameId": 418480
+	},
+	{
+		"name": "Shotor Khār",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.4613",
+		"longitude": "51.11396",
+		"population": 5360,
+		"timezone": "Asia/Tehran",
+		"geonameId": 32600
 	},
 	{
 		"name": "Shotor Khosb",
@@ -1499664,6 +1500372,18 @@
 		"geonameId": 112656
 	},
 	{
+		"name": "Toqor Tappeh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "36.86054",
+		"longitude": "54.64681",
+		"population": 1009,
+		"timezone": "Asia/Tehran",
+		"geonameId": 39608
+	},
+	{
 		"name": "Torbat-e Ḩeydarīyeh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1499686,6 +1500406,18 @@
 		"population": 58928,
 		"timezone": "Asia/Tehran",
 		"geonameId": 1159362
+	},
+	{
+		"name": "Tork Kolā",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "21",
+		"stateName": "Māzandarān",
+		"latitude": "36.42932",
+		"longitude": "52.35615",
+		"population": 1312,
+		"timezone": "Asia/Tehran",
+		"geonameId": 7787
 	},
 	{
 		"name": "Torkābād",
@@ -1499856,6 +1500588,18 @@
 		"geonameId": 13645663
 	},
 	{
+		"name": "Tūprāq Kandī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "03",
+		"stateName": "Ardabil Province",
+		"latitude": "39.55194",
+		"longitude": "47.66194",
+		"population": 653,
+		"timezone": "Asia/Tehran",
+		"geonameId": 17036
+	},
+	{
 		"name": "Tūrān",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1499866,6 +1500610,18 @@
 		"population": 2339,
 		"timezone": "Asia/Tehran",
 		"geonameId": 112475
+	},
+	{
+		"name": "Tūrang Tappeh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "36.93692",
+		"longitude": "54.58839",
+		"population": 569,
+		"timezone": "Asia/Tehran",
+		"geonameId": 39271
 	},
 	{
 		"name": "Tūrchī",
@@ -1500094,6 +1500850,18 @@
 		"population": 5972,
 		"timezone": "Asia/Tehran",
 		"geonameId": 141833
+	},
+	{
+		"name": "Vāleshābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "36.86227",
+		"longitude": "54.62596",
+		"population": 1199,
+		"timezone": "Asia/Tehran",
+		"geonameId": 39607
 	},
 	{
 		"name": "Valī‘aşr",
@@ -1501198,6 +1501966,18 @@
 		"population": 1400,
 		"timezone": "Asia/Tehran",
 		"geonameId": 111299
+	},
+	{
+		"name": "Zarkesh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "30",
+		"stateName": "Razavi Khorasan",
+		"latitude": "36.40799",
+		"longitude": "59.50386",
+		"population": 5780,
+		"timezone": "Asia/Tehran",
+		"geonameId": 111289
 	},
 	{
 		"name": "Zarkī",
@@ -1805047,7 +1805827,7 @@
 		"stateName": "Chiapas",
 		"latitude": "16.18278",
 		"longitude": "-92.28361",
-		"population": 527,
+		"population": 636,
 		"timezone": "America/Mexico_City",
 		"geonameId": 8862916
 	},
@@ -1809847,7 +1810627,7 @@
 		"stateName": "Chiapas",
 		"latitude": "16.0692",
 		"longitude": "-92.28621",
-		"population": 1015,
+		"population": 1154,
 		"timezone": "America/Mexico_City",
 		"geonameId": 3524367
 	},
@@ -1854912,6 +1855692,18 @@
 		"geonameId": 3816583
 	},
 	{
+		"name": "Nueva Libertad",
+		"countryCode": "MX",
+		"countryName": "Mexico",
+		"stateCode": "CHP",
+		"stateName": "Chiapas",
+		"latitude": "16.2675",
+		"longitude": "-92.27972",
+		"population": 566,
+		"timezone": "America/Mexico_City",
+		"geonameId": 8864158
+	},
+	{
 		"name": "Nueva Libertad (El Colorado)",
 		"countryCode": "MX",
 		"countryName": "Mexico",
@@ -1857079,7 +1857871,7 @@
 		"stateName": "Chiapas",
 		"latitude": "16.22482",
 		"longitude": "-92.25201",
-		"population": 1173,
+		"population": 1322,
 		"timezone": "America/Mexico_City",
 		"geonameId": 3816535
 	},
@@ -1902823,7 +1903615,7 @@
 		"stateName": "Chiapas",
 		"latitude": "16.17861",
 		"longitude": "-92.29333",
-		"population": 2604,
+		"population": 2971,
 		"timezone": "America/Mexico_City",
 		"geonameId": 8858515
 	},
@@ -1930123,7 +1930915,7 @@
 		"stateName": "Chiapas",
 		"latitude": "16.17935",
 		"longitude": "-92.18544",
-		"population": 5112,
+		"population": 6441,
 		"timezone": "America/Merida",
 		"geonameId": 3514972
 	},
@@ -2326860,6 +2327652,18 @@
 		"geonameId": 1488741
 	},
 	{
+		"name": "Tyungyulyu",
+		"countryCode": "RU",
+		"countryName": "Russia",
+		"stateCode": "SA",
+		"stateName": "Sakha",
+		"latitude": "62.19083",
+		"longitude": "130.71287",
+		"population": 2163,
+		"timezone": "Asia/Yakutsk",
+		"geonameId": 2014669
+	},
+	{
 		"name": "Ubinskoye",
 		"countryCode": "RU",
 		"countryName": "Russia",
@@ -2402652,6 +2403456,18 @@
 		"geonameId": 162199
 	},
 	{
+		"name": "Arapgala",
+		"countryCode": "TM",
+		"countryName": "Turkmenistan",
+		"stateCode": "A",
+		"stateName": "Ahal",
+		"latitude": "37.34566",
+		"longitude": "59.52993",
+		"population": 4125,
+		"timezone": "Asia/Ashgabat",
+		"geonameId": 162197
+	},
+	{
 		"name": "Arçabil",
 		"countryCode": "TM",
 		"countryName": "Turkmenistan",
@@ -2403694,6 +2404510,18 @@
 		"population": 1047,
 		"timezone": "Asia/Ashgabat",
 		"geonameId": 1218943
+	},
+	{
+		"name": "Hudaýberdi",
+		"countryCode": "TM",
+		"countryName": "Turkmenistan",
+		"stateCode": "B",
+		"stateName": "Balkan",
+		"latitude": "39.94198",
+		"longitude": "54.78217",
+		"population": 575,
+		"timezone": "Asia/Ashgabat",
+		"geonameId": 161773
 	},
 	{
 		"name": "Hurmantgökje",
@@ -2408640,6 +2409468,18 @@
 		"geonameId": 13715512
 	},
 	{
+		"name": "14 Nisan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.22887",
+		"longitude": "42.84382",
+		"population": 2701,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715531
+	},
+	{
 		"name": "15 Temmuz Şehitler",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2408724,6 +2409564,18 @@
 		"geonameId": 325528
 	},
 	{
+		"name": "Abdigör",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.53924",
+		"longitude": "44.08032",
+		"population": 1187,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715564
+	},
+	{
 		"name": "Abdioğlu",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2408746,6 +2409598,18 @@
 		"population": 2593,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 8028661
+	},
+	{
+		"name": "Abdulvehap Küfrevi",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.23492",
+		"longitude": "42.8925",
+		"population": 1578,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715537
 	},
 	{
 		"name": "Acarlar",
@@ -2409180,6 +2410044,30 @@
 		"geonameId": 325103
 	},
 	{
+		"name": "Ahmed-i Hani",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.21945",
+		"longitude": "42.82482",
+		"population": 1927,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715535
+	},
+	{
+		"name": "Ahmedihani",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.5489",
+		"longitude": "44.08373",
+		"population": 13175,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715552
+	},
+	{
 		"name": "Ahmet Efendi",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2409418,6 +2410306,18 @@
 		"population": 709,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 6611644
+	},
+	{
+		"name": "Akbulut",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.17901",
+		"longitude": "43.06762",
+		"population": 532,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715542
 	},
 	{
 		"name": "Akça",
@@ -2409934,6 +2410834,18 @@
 		"population": 1119,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 439098
+	},
+	{
+		"name": "Akdilek",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.15825",
+		"longitude": "42.96434",
+		"population": 634,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 324737
 	},
 	{
 		"name": "Akdizgin",
@@ -2410992,6 +2411904,18 @@
 		"geonameId": 324172
 	},
 	{
+		"name": "Alatay",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.26259",
+		"longitude": "42.95947",
+		"population": 742,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 6970678
+	},
+	{
 		"name": "Alatepe",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2411338,6 +2412262,18 @@
 		"population": 2130,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13713197
+	},
+	{
+		"name": "Alpaslan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.22958",
+		"longitude": "42.85975",
+		"population": 4528,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715524
 	},
 	{
 		"name": "Alpköy",
@@ -2412864,6 +2413800,18 @@
 		"geonameId": 320295
 	},
 	{
+		"name": "Atabakan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.55824",
+		"longitude": "43.96909",
+		"population": 531,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 6972351
+	},
+	{
 		"name": "Atabey",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2413042,6 +2413990,18 @@
 		"population": 4392,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13715508
+	},
+	{
+		"name": "Atatürk",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.234",
+		"longitude": "42.85863",
+		"population": 7349,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715522
 	},
 	{
 		"name": "Atatürk Mahallesi",
@@ -2413906,6 +2414866,18 @@
 		"population": 2856,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 322559
+	},
+	{
+		"name": "Badişan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.21896",
+		"longitude": "42.84295",
+		"population": 1493,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715539
 	},
 	{
 		"name": "Bafra",
@@ -2414986,6 +2415958,30 @@
 		"population": 107631,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 751077
+	},
+	{
+		"name": "Bardaklı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.68809",
+		"longitude": "44.06756",
+		"population": 1247,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 322010
+	},
+	{
+		"name": "Barış",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.54399",
+		"longitude": "44.06399",
+		"population": 3611,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715562
 	},
 	{
 		"name": "Barıştepe",
@@ -2417484,6 +2418480,18 @@
 		"geonameId": 320590
 	},
 	{
+		"name": "Bozoğlak",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.2409",
+		"longitude": "42.98003",
+		"population": 1188,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 320591
+	},
+	{
 		"name": "Bozok",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2417722,6 +2418730,18 @@
 		"population": 557,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 750574
+	},
+	{
+		"name": "Budak",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.09739",
+		"longitude": "42.79929",
+		"population": 507,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 320513
 	},
 	{
 		"name": "Budakdüzü",
@@ -2418082,6 +2419102,18 @@
 		"population": 865,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 320330
+	},
+	{
+		"name": "Büyük Ağrı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.55505",
+		"longitude": "44.06267",
+		"population": 5441,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715559
 	},
 	{
 		"name": "Büyük Çatak",
@@ -2418612,6 +2419644,18 @@
 		"geonameId": 750062
 	},
 	{
+		"name": "Çakırbey",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.27639",
+		"longitude": "42.94658",
+		"population": 1132,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 319929
+	},
+	{
 		"name": "Çakırbeyli",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2419030,6 +2420074,18 @@
 		"population": 1321,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13715491
+	},
+	{
+		"name": "Cami",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.23495",
+		"longitude": "42.86506",
+		"population": 1384,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715540
 	},
 	{
 		"name": "Çamiçi",
@@ -2419452,6 +2420508,18 @@
 		"geonameId": 304278
 	},
 	{
+		"name": "Çaputlu",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.01949",
+		"longitude": "42.89599",
+		"population": 622,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 6970656
+	},
+	{
 		"name": "Çardak",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2419870,6 +2420938,18 @@
 		"population": 34215,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 319104
+	},
+	{
+		"name": "Çay",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.2299",
+		"longitude": "42.86658",
+		"population": 3706,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715526
 	},
 	{
 		"name": "Çayağzı",
@@ -2420652,6 +2421732,18 @@
 		"geonameId": 10182514
 	},
 	{
+		"name": "Çetenli",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.43997",
+		"longitude": "44.0267",
+		"population": 677,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 318745
+	},
+	{
 		"name": "Çetinkaya",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2420952,6 +2422044,18 @@
 		"geonameId": 10631605
 	},
 	{
+		"name": "Çiftepınar",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.54724",
+		"longitude": "44.08178",
+		"population": 9609,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715553
+	},
+	{
 		"name": "Çiftlik",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2420986,6 +2422090,18 @@
 		"population": 0,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 746956
+	},
+	{
+		"name": "Çiftlikköy",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.57499",
+		"longitude": "44.21883",
+		"population": 1434,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 318577
 	},
 	{
 		"name": "Çiftlikköy",
@@ -2421807,6 +2422923,18 @@
 		"name": "Çukurbağ",
 		"countryCode": "TR",
 		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.11384",
+		"longitude": "43.01628",
+		"population": 1229,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 317956
+	},
+	{
+		"name": "Çukurbağ",
+		"countryCode": "TR",
+		"countryName": "Turkey",
 		"stateCode": "07",
 		"stateName": "Antalya",
 		"latitude": "36.56245",
@@ -2422078,6 +2423206,18 @@
 		"population": 643,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13715499
+	},
+	{
+		"name": "Cumhuriyet",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.24077",
+		"longitude": "42.86042",
+		"population": 3682,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715527
 	},
 	{
 		"name": "Cumhuriyet Mahallesi",
@@ -2422378,6 +2423518,18 @@
 		"population": 19292,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 447273
+	},
+	{
+		"name": "Dalbahçe",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.66776",
+		"longitude": "43.84459",
+		"population": 691,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 317714
 	},
 	{
 		"name": "Dallıağaç",
@@ -2422752,18 +2423904,6 @@
 		"geonameId": 10189963
 	},
 	{
-		"name": "Dedeli",
-		"countryCode": "TR",
-		"countryName": "Turkey",
-		"stateCode": "04",
-		"stateName": "Ağrı",
-		"latitude": "39.17435",
-		"longitude": "43.05524",
-		"population": 0,
-		"timezone": "Europe/Istanbul",
-		"geonameId": 317455
-	},
-	{
 		"name": "Dedemli",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2422846,6 +2423986,18 @@
 		"population": 1370,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 8068985
+	},
+	{
+		"name": "Değirmendüzü",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.21025",
+		"longitude": "42.96462",
+		"population": 2986,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 317390
 	},
 	{
 		"name": "Değirmenönü",
@@ -2424331,7 +2425483,7 @@
 		"stateName": "Ağrı",
 		"latitude": "39.13248",
 		"longitude": "42.73249",
-		"population": 0,
+		"population": 4935,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 316438
 	},
@@ -2424451,7 +2425603,7 @@
 		"stateName": "Ağrı",
 		"latitude": "39.54694",
 		"longitude": "44.08417",
-		"population": 70171,
+		"population": 81136,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 316411
 	},
@@ -2426208,6 +2427360,18 @@
 		"geonameId": 315468
 	},
 	{
+		"name": "Ergeçli",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.03349",
+		"longitude": "42.8226",
+		"population": 1096,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 315417
+	},
+	{
 		"name": "Ergenekon",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2426712,6 +2427876,18 @@
 		"geonameId": 315248
 	},
 	{
+		"name": "Eskikonak",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.20935",
+		"longitude": "42.87051",
+		"population": 928,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 6970674
+	},
+	{
 		"name": "Eskil",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2426830,6 +2428006,18 @@
 		"population": 522,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 747242
+	},
+	{
+		"name": "Esnemez",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.4648",
+		"longitude": "43.90723",
+		"population": 1247,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 6973642
 	},
 	{
 		"name": "Espiye",
@@ -2427876,6 +2429064,18 @@
 		"geonameId": 314648
 	},
 	{
+		"name": "Gençali",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.0641",
+		"longitude": "42.87265",
+		"population": 677,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 314642
+	},
+	{
 		"name": "Gencek",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2428774,6 +2429974,18 @@
 		"population": 0,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 314214
+	},
+	{
+		"name": "Gökoğlu",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.26811",
+		"longitude": "42.82098",
+		"population": 565,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 314213
 	},
 	{
 		"name": "Gökpınar",
@@ -2429751,6 +2430963,18 @@
 		"name": "Güllüce",
 		"countryCode": "TR",
 		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.71667",
+		"longitude": "43.76667",
+		"population": 515,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 313694
+	},
+	{
+		"name": "Güllüce",
+		"countryCode": "TR",
+		"countryName": "Turkey",
 		"stateCode": "16",
 		"stateName": "Bursa Province",
 		"latitude": "40.03243",
@@ -2430360,6 +2431584,18 @@
 		"geonameId": 313431
 	},
 	{
+		"name": "Güngören",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.58832",
+		"longitude": "44.33226",
+		"population": 800,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 6972357
+	},
+	{
 		"name": "Güngören Merter",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2430466,6 +2431702,18 @@
 		"population": 605,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 318204
+	},
+	{
+		"name": "Gürbulak",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.4167",
+		"longitude": "44.35419",
+		"population": 1925,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 313381
 	},
 	{
 		"name": "Gürbüz",
@@ -2431884,6 +2433132,18 @@
 		"geonameId": 312479
 	},
 	{
+		"name": "Hasankeyf",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.56016",
+		"longitude": "44.08817",
+		"population": 6603,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715556
+	},
+	{
 		"name": "Hasantepe",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2432710,6 +2433970,18 @@
 		"population": 1530,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13715494
+	},
+	{
+		"name": "Hürriyet",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.55663",
+		"longitude": "44.07095",
+		"population": 5042,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715560
 	},
 	{
 		"name": "Hüsametli",
@@ -2433780,6 +2435052,18 @@
 		"geonameId": 13713167
 	},
 	{
+		"name": "İnönu",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.2328",
+		"longitude": "42.86394",
+		"population": 1512,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715538
+	},
+	{
 		"name": "İnönü",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2433946,6 +2435230,18 @@
 		"population": 1351,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 8623130
+	},
+	{
+		"name": "İshakpaşa",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.55357",
+		"longitude": "44.07115",
+		"population": 7005,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715554
 	},
 	{
 		"name": "Işıklar",
@@ -2435326,6 +2436622,18 @@
 		"population": 125403,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 744562
+	},
+	{
+		"name": "Karabulak",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.66889",
+		"longitude": "44.05194",
+		"population": 1615,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 310214
 	},
 	{
 		"name": "Karabulduk",
@@ -2438004,6 +2439312,18 @@
 		"geonameId": 743615
 	},
 	{
+		"name": "Kazanbey",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.07036",
+		"longitude": "42.89384",
+		"population": 2029,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 6970652
+	},
+	{
 		"name": "Kazancı",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2439996,6 +2441316,18 @@
 		"geonameId": 742855
 	},
 	{
+		"name": "Koçaklar",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.23168",
+		"longitude": "42.70247",
+		"population": 632,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 306944
+	},
+	{
 		"name": "Koçaklı",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2440200,6 +2441532,18 @@
 		"geonameId": 742804
 	},
 	{
+		"name": "Koçkıran",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.53984",
+		"longitude": "44.06498",
+		"population": 4681,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715561
+	},
+	{
 		"name": "Koçköy",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2440390,6 +2441734,18 @@
 		"population": 332277,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 306641
+	},
+	{
+		"name": "Konakbeyi",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.14691",
+		"longitude": "42.86247",
+		"population": 685,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 306638
 	},
 	{
 		"name": "Konaklı",
@@ -2443419,6 +2444775,18 @@
 		"name": "Merkez",
 		"countryCode": "TR",
 		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.17435",
+		"longitude": "43.05524",
+		"population": 732,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 317455
+	},
+	{
+		"name": "Merkez",
+		"countryCode": "TR",
+		"countryName": "Turkey",
 		"stateCode": "17",
 		"stateName": "Canakkale",
 		"latitude": "40.12954",
@@ -2445576,6 +2446944,30 @@
 		"geonameId": 740986
 	},
 	{
+		"name": "Ortadamla",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.20274",
+		"longitude": "43.04203",
+		"population": 901,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 6970683
+	},
+	{
+		"name": "Ortadirek",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.50325",
+		"longitude": "43.98788",
+		"population": 864,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 303336
+	},
+	{
 		"name": "Ortakapı",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2446464,6 +2447856,18 @@
 		"geonameId": 302997
 	},
 	{
+		"name": "Özdemir",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.06041",
+		"longitude": "42.7723",
+		"population": 932,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 302991
+	},
+	{
 		"name": "Özdere",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2446831,7 +2448235,7 @@
 		"stateName": "Ağrı",
 		"latitude": "39.22493",
 		"longitude": "42.85693",
-		"population": 87451,
+		"population": 57933,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 302819
 	},
@@ -2447748,6 +2449152,18 @@
 		"geonameId": 740430
 	},
 	{
+		"name": "Sağdıç",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.52423",
+		"longitude": "44.06831",
+		"population": 1098,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 302249
+	},
+	{
 		"name": "Sağınlı",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2448324,6 +2449740,30 @@
 		"geonameId": 740261
 	},
 	{
+		"name": "Sanayi",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.23796",
+		"longitude": "42.83105",
+		"population": 2274,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715532
+	},
+	{
+		"name": "Sanayi",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.5526",
+		"longitude": "44.05651",
+		"population": 5632,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715558
+	},
+	{
 		"name": "Sancak",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2448804,6 +2450244,18 @@
 		"geonameId": 739070
 	},
 	{
+		"name": "Sarıgül",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.53718",
+		"longitude": "44.09974",
+		"population": 3121,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 6972904
+	},
+	{
 		"name": "Sarıgün",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2449025,11 +2450477,11 @@
 		"countryName": "Turkey",
 		"stateCode": "04",
 		"stateName": "Ağrı",
-		"latitude": "39.01887",
-		"longitude": "42.92092",
-		"population": 0,
+		"latitude": "39.2172",
+		"longitude": "42.85035",
+		"population": 1634,
 		"timezone": "Europe/Istanbul",
-		"geonameId": 301586
+		"geonameId": 13715536
 	},
 	{
 		"name": "Sarıtepe",
@@ -2449584,6 +2451036,18 @@
 		"geonameId": 301279
 	},
 	{
+		"name": "Selahaddini Eyyubi",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.23279",
+		"longitude": "42.86843",
+		"population": 3244,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715529
+	},
+	{
 		"name": "Selalmaz",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2450026,6 +2451490,18 @@
 		"population": 0,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 739777
+	},
+	{
+		"name": "Serhad",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.25325",
+		"longitude": "42.86161",
+		"population": 2049,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715534
 	},
 	{
 		"name": "Serhatta",
@@ -2451084,6 +2452560,18 @@
 		"geonameId": 300364
 	},
 	{
+		"name": "Somkaya",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.39689",
+		"longitude": "43.99765",
+		"population": 627,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 300361
+	},
+	{
 		"name": "Sorgun",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2451531,6 +2453019,18 @@
 		"name": "Suluca",
 		"countryCode": "TR",
 		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.30409",
+		"longitude": "42.75436",
+		"population": 742,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 300167
+	},
+	{
+		"name": "Suluca",
+		"countryCode": "TR",
+		"countryName": "Turkey",
 		"stateCode": "01",
 		"stateName": "Adana",
 		"latitude": "36.97812",
@@ -2451547,7 +2453047,7 @@
 		"stateName": "Ağrı",
 		"latitude": "39.69386",
 		"longitude": "43.81472",
-		"population": 0,
+		"population": 573,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 300164
 	},
@@ -2451622,6 +2453122,18 @@
 		"population": 532,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 739231
+	},
+	{
+		"name": "Süphan Dağı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.21152",
+		"longitude": "42.8443",
+		"population": 2091,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715533
 	},
 	{
 		"name": "Sur",
@@ -2451790,6 +2453302,18 @@
 		"population": 892,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 300025
+	},
+	{
+		"name": "Sütlü Pınar",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.24265",
+		"longitude": "42.86639",
+		"population": 3372,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715528
 	},
 	{
 		"name": "Sütlüce",
@@ -2452234,6 +2453758,18 @@
 		"population": 523,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 299748
+	},
+	{
+		"name": "Taşkın",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.0447",
+		"longitude": "42.83857",
+		"population": 513,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 299740
 	},
 	{
 		"name": "Taşköprü",
@@ -2452690,6 +2454226,18 @@
 		"population": 8270,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 299413
+	},
+	{
+		"name": "Telçeker",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.46631",
+		"longitude": "44.2458",
+		"population": 1326,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 299396
 	},
 	{
 		"name": "Temelli",
@@ -2453616,6 +2455164,18 @@
 		"geonameId": 298816
 	},
 	{
+		"name": "Turgut Özal",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.2211",
+		"longitude": "42.83584",
+		"population": 969,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715541
+	},
+	{
 		"name": "Turgut Özal Mahallesi",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2453818,6 +2455378,18 @@
 		"population": 7560,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 298728
+	},
+	{
+		"name": "Tutak",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.72236",
+		"longitude": "43.77255",
+		"population": 731,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 298726
 	},
 	{
 		"name": "Tutak",
@@ -2454468,6 +2456040,18 @@
 		"geonameId": 298378
 	},
 	{
+		"name": "Uluyol",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.54752",
+		"longitude": "44.07688",
+		"population": 6264,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715557
+	},
+	{
 		"name": "Umraniye",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2454574,6 +2456158,18 @@
 		"population": 16642,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 298326
+	},
+	{
+		"name": "Ürküt",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.10743",
+		"longitude": "42.94814",
+		"population": 554,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 298318
 	},
 	{
 		"name": "Urla",
@@ -2454900,6 +2456496,18 @@
 		"geonameId": 13715435
 	},
 	{
+		"name": "Uzunyazı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.45598",
+		"longitude": "44.34252",
+		"population": 637,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 298141
+	},
+	{
 		"name": "Vakfıkebir",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2454994,6 +2456602,18 @@
 		"population": 18691,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 298088
+	},
+	{
+		"name": "Vatan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.54747",
+		"longitude": "44.06684",
+		"population": 3124,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715563
 	},
 	{
 		"name": "Velihimmetli",
@@ -2455510,6 +2457130,18 @@
 		"population": 537,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 10048800
+	},
+	{
+		"name": "Yalçınkaya",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.17726",
+		"longitude": "42.84801",
+		"population": 1434,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 307181
 	},
 	{
 		"name": "Yalı",
@@ -2456748,6 +2458380,30 @@
 		"geonameId": 13715490
 	},
 	{
+		"name": "Yeni",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.23574",
+		"longitude": "42.86046",
+		"population": 4316,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715525
+	},
+	{
+		"name": "Yeni",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.56139",
+		"longitude": "44.07571",
+		"population": 6641,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715555
+	},
+	{
 		"name": "Yeni Mahallesi",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2457468,6 +2459124,18 @@
 		"geonameId": 13715502
 	},
 	{
+		"name": "Yeşil Çimen",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.24358",
+		"longitude": "42.88321",
+		"population": 2898,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715530
+	},
+	{
 		"name": "Yeşilalan",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2457958,6 +2459626,18 @@
 		"population": 1399,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 296776
+	},
+	{
+		"name": "Yılanlı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.5272",
+		"longitude": "43.99553",
+		"population": 2182,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 296736
 	},
 	{
 		"name": "Yıldırım",
@@ -2458548,6 +2460228,18 @@
 		"geonameId": 296489
 	},
 	{
+		"name": "Yukarıdamla",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.21467",
+		"longitude": "43.06073",
+		"population": 854,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 6970684
+	},
+	{
 		"name": "Yukarıdere",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2458572,6 +2460264,18 @@
 		"geonameId": 296433
 	},
 	{
+		"name": "Yukarıgöçmez",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.30306",
+		"longitude": "42.90635",
+		"population": 1625,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 296412
+	},
+	{
 		"name": "Yukarıgözlüce",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2458582,6 +2460286,18 @@
 		"population": 505,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 296406
+	},
+	{
+		"name": "Yukarıkülecik",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.37342",
+		"longitude": "42.88241",
+		"population": 505,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 296292
 	},
 	{
 		"name": "Yukarınarlı",
@@ -2458745,11 +2460461,23 @@
 		"countryName": "Turkey",
 		"stateCode": "76",
 		"stateName": "Iğdır",
-		"latitude": "39.92604",
-		"longitude": "44.00596",
+		"latitude": "39.88439",
+		"longitude": "43.99164",
 		"population": 2196,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13697176
+	},
+	{
+		"name": "Yunusemre",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.24478",
+		"longitude": "42.88052",
+		"population": 5226,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715523
 	},
 	{
 		"name": "Yunuslar",
@@ -2459122,6 +2460850,18 @@
 		"population": 55680,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 737054
+	},
+	{
+		"name": "Zirekli",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.04288",
+		"longitude": "42.97334",
+		"population": 1252,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 295868
 	},
 	{
 		"name": "Ziyaret",

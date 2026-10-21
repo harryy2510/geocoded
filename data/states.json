@@ -17,7 +17,9 @@
 		"translations": {
 			"en": "Andorra la Vella",
 			"es": "Andorra la Vella",
-			"fr": "Andorre-la-Vieille"
+			"fr": "Andorre-la-Vieille",
+			"ru": "Андорра-ла-Велья",
+			"uk": "Андорра-ла-Велья"
 		}
 	},
 	{
@@ -5679,7 +5681,8 @@
 			"bn": "ভিয়েনা",
 			"ja": "ウィーン",
 			"jv": "Wina",
-			"pa": "ਵਿਏਨਾ"
+			"pa": "ਵਿਏਨਾ",
+			"uk": "Відень"
 		}
 	},
 	{
@@ -5883,7 +5886,8 @@
 			"de": "Queensland",
 			"ja": "クイーンズランド州",
 			"jv": "Queensland",
-			"pa": "ਕਵੀਨਜ਼ਲੈਂਡ"
+			"pa": "ਕਵੀਨਜ਼ਲੈਂਡ",
+			"uk": "Квінсленд"
 		}
 	},
 	{
@@ -5911,7 +5915,8 @@
 			"bn": "দক্ষিণ অস্ট্রেলিয়া",
 			"ja": "南オーストラリア州",
 			"jv": "Australia Kidul",
-			"pa": "ਦੱਖਣੀ ਆਸਟ੍ਰੇਲੀਆ"
+			"pa": "ਦੱਖਣੀ ਆਸਟ੍ਰੇਲੀਆ",
+			"uk": "Південна Австралія"
 		}
 	},
 	{
@@ -8473,7 +8478,7 @@
 		"native": "Federacija Bosne i Hercegovine",
 		"wikidataId": "Q11198",
 		"translations": {
-			"es": "Federacion de Bosnia-Herzegovina",
+			"es": "Federación de Bosnia y Herzegovina",
 			"en": "Federation of Bosnia and Herzegovina",
 			"fr": "Fédération de Bosnie-et-Herzégovine",
 			"de": "Föderation Bosnien und Herzegowina",
@@ -8483,7 +8488,8 @@
 			"ja": "ボスニア・ヘルツェゴビナ連邦",
 			"jv": "Federasi Bosnia lan Herzegovina",
 			"pa": "ਬੋਸਨੀਆ ਅਤੇ ਹਰਜ਼ੇਗੋਵਿਨਾ ਫੈਡਰੇਸ਼ਨ",
-			"pt": "Federação da Bósnia e Herzegovina"
+			"pt": "Federação da Bósnia e Herzegovina",
+			"uk": "Федерація Боснії і Герцеговини"
 		}
 	},
 	{
@@ -8511,7 +8517,9 @@
 			"ja": "スルプスカ共和国",
 			"jv": "Republik Srpska",
 			"pa": "ਸਰਪਸਕਾ ਗਣਰਾਜ",
-			"pt": "República Srpska"
+			"pt": "República Srpska",
+			"ru": "Республика Сербская",
+			"uk": "Республіка Сербська"
 		}
 	},
 	{
@@ -14333,7 +14341,9 @@
 			"ja": "コチャバンバ県",
 			"jv": "Cochabamba",
 			"pa": "ਕੋਚਾਬਾਮਬਾ",
-			"pt": "Cochabamba"
+			"pt": "Cochabamba",
+			"ru": "Кочабамба",
+			"uk": "Кочабамба"
 		}
 	},
 	{
@@ -14450,7 +14460,9 @@
 			"ja": "パンド県",
 			"jv": "Pando",
 			"pa": "ਪਾਂਡੋ",
-			"pt": "Pando"
+			"pt": "Pando",
+			"ru": "Пандо",
+			"uk": "Пандо"
 		}
 	},
 	{
@@ -14613,7 +14625,9 @@
 			"ja": "ボネール",
 			"jv": "Bonaire",
 			"pa": "ਬੋਨੇਅਰ",
-			"pt": "Bonaire"
+			"pt": "Bonaire",
+			"ru": "Бонайре",
+			"uk": "Бонайре"
 		}
 	},
 	{
@@ -14701,7 +14715,9 @@
 			"de": "Acre",
 			"ja": "アクレ州",
 			"jv": "Acre",
-			"pa": "ਐਕਰ"
+			"pa": "ਐਕਰ",
+			"ru": "Акри",
+			"uk": "Акрі"
 		}
 	},
 	{
@@ -14773,7 +14789,9 @@
 			"de": "Amapá",
 			"ja": "アマパ州",
 			"jv": "Amapa",
-			"pa": "ਅਮਾਪਾ"
+			"pa": "ਅਮਾਪਾ",
+			"ru": "Амапа",
+			"uk": "Амапа"
 		}
 	},
 	{
@@ -14837,7 +14855,9 @@
 			"de": "Bahia",
 			"ja": "バイーア州",
 			"jv": "Bahiya",
-			"pa": "ਬਾਹੀਆ"
+			"pa": "ਬਾਹੀਆ",
+			"ru": "Баия",
+			"uk": "Баїя"
 		}
 	},
 	{
@@ -14864,7 +14884,9 @@
 			"ja": "セアラ州",
 			"jv": "Seara",
 			"pa": "ਸੇਆਰਾ",
-			"pt": "Ceará"
+			"pt": "Ceará",
+			"ru": "Сеара",
+			"uk": "Сеара"
 		}
 	},
 	{
@@ -15240,7 +15262,9 @@
 			"de": "Paraiba",
 			"ja": "パライバ州",
 			"jv": "Paraiba",
-			"pa": "ਪਰਾਈਬਾ"
+			"pa": "ਪਰਾਈਬਾ",
+			"ru": "Параиба",
+			"uk": "Параїба"
 		}
 	},
 	{
@@ -15492,7 +15516,9 @@
 			"ja": "リオグランデドスール州",
 			"jv": "Rio Grande do Sul",
 			"pa": "ਰਿਓ ਗ੍ਰਾਂਡੇ ਦੌ ਸੁਲ",
-			"pt": "Rio Grande do Sul"
+			"pt": "Rio Grande do Sul",
+			"ru": "Риу-Гранди-ду-Сул",
+			"uk": "Ріу-Гранді-ду-Сул"
 		}
 	},
 	{
@@ -18703,7 +18729,9 @@
 			"bn": "নিউফাউন্ডল্যান্ড এবং ল্যাব্রেডর",
 			"ja": "ニューファンドランド・ラブラドール州",
 			"jv": "Newfoundland and Labrador",
-			"pa": "ਨਿਊਫਾਉਂਡਲੈਂਡ ਅਤੇ ਲਾਬਰਾਡੋਰ"
+			"pa": "ਨਿਊਫਾਉਂਡਲੈਂਡ ਅਤੇ ਲਾਬਰਾਡੋਰ",
+			"ru": "Ньюфаундленд и Лабрадор",
+			"uk": "Ньюфаундленд і Лабрадор"
 		}
 	},
 	{
@@ -18730,7 +18758,9 @@
 			"de": "Nordwest-Territorien",
 			"ja": "ノースウェスト準州",
 			"jv": "Northwest Territories",
-			"pa": "ਉੱਤਰ-ਪੱਛਮ ਖੇਤਰ"
+			"pa": "ਉੱਤਰ-ਪੱਛਮ ਖੇਤਰ",
+			"ru": "Северо-Западные территории",
+			"uk": "Північно-Західні території"
 		}
 	},
 	{
@@ -18906,6 +18936,7 @@
 		"native": "Quebec",
 		"wikidataId": "Q176",
 		"translations": {
+			"fr": "Québec",
 			"pt": "Quebeque",
 			"en": "Quebec",
 			"es": "Quebec",
@@ -18913,7 +18944,9 @@
 			"de": "Québec",
 			"ja": "ケベック州",
 			"jv": "Quebec",
-			"pa": "ਕਿਊਬੇਕ"
+			"pa": "ਕਿਊਬੇਕ",
+			"ru": "Квебек",
+			"uk": "Квебек"
 		}
 	},
 	{
@@ -21832,7 +21865,9 @@
 			"ja": "ザンクト・ガレン",
 			"jv": "Saint Gallen",
 			"pa": "ਸੇਂਟ ਗੈਲਨ",
-			"pt": "São Galo"
+			"pt": "São Galo",
+			"ru": "Санкт-Галлен",
+			"uk": "Санкт-Галлен"
 		}
 	},
 	{
@@ -22932,7 +22967,12 @@
 		"type": "district",
 		"native": "Rarotonga",
 		"wikidataId": "Q471793",
-		"translations": {}
+		"translations": {
+			"es": "Rarotonga",
+			"fr": "Rarotonga",
+			"ru": "Раротонга",
+			"uk": "Раротонга"
+		}
 	},
 	{
 		"name": "Antofagasta",
@@ -23104,7 +23144,9 @@
 			"ja": "ビオビオ",
 			"jv": "Biobio",
 			"pa": "ਬਾਇਓਬਾਇਓ",
-			"pt": "Biobio"
+			"pt": "Biobio",
+			"ru": "Био-Био",
+			"uk": "Біобіо"
 		}
 	},
 	{
@@ -30749,7 +30791,9 @@
 			"ja": "チューリンゲン州",
 			"jv": "Thuringia",
 			"pa": "ਥੁਰਿੰਗਿਆ",
-			"pt": "Turingia"
+			"pt": "Turingia",
+			"ru": "Тюрингия",
+			"uk": "Тюрингія"
 		}
 	},
 	{
@@ -56748,7 +56792,9 @@
 			"ja": "ドゥブロヴニク＝ネレトヴァ県",
 			"jv": "Dubrovnik-Neretva",
 			"pa": "ਡੁਬ੍ਰੋਵਨਿਕ-ਨੇਰੇਤਵਾ",
-			"pt": "Dubrovnik-Neretva"
+			"pt": "Dubrovnik-Neretva",
+			"ru": "Дубровницко-Неретванская жупания",
+			"uk": "Дубровницько-Неретванська жупанія"
 		}
 	},
 	{
@@ -57069,7 +57115,9 @@
 			"ja": "スプリット＝ダルマチア県",
 			"jv": "Split-Dalmatia",
 			"pa": "ਸਪਲਿਟ-ਡਾਲਮੇਸ਼ੀਆ",
-			"pt": "Split-Dalmatia"
+			"pt": "Split-Dalmatia",
+			"ru": "Сплитско-Далматинская жупания",
+			"uk": "Сплітсько-Далматинська жупанія"
 		}
 	},
 	{
@@ -61176,7 +61224,9 @@
 			"bn": "দিল্লী",
 			"ja": "デリー",
 			"jv": "Delhi",
-			"pt": "Delhi"
+			"pt": "Delhi",
+			"ru": "Дели",
+			"uk": "Делі"
 		}
 	},
 	{
@@ -61377,7 +61427,9 @@
 			"ja": "ジャンムー・カシミール州",
 			"jv": "Jammu lan Kashmir",
 			"pa": "ਜੰਮੂ ਅਤੇ ਕਸ਼ਮੀਰ",
-			"pt": "Jammu e Caxemira"
+			"pt": "Jammu e Caxemira",
+			"ru": "Джамму и Кашмир",
+			"uk": "Джамму і Кашмір"
 		}
 	},
 	{
@@ -61841,7 +61893,10 @@
 			"ja": "オディシャ州",
 			"jv": "Odisha",
 			"pa": "ਓਡੀਸ਼ਾ",
-			"pt": "Odisha"
+			"pt": "Odisha",
+			"fr": "Odisha",
+			"ru": "Одиша",
+			"uk": "Одіша"
 		}
 	},
 	{
@@ -62204,7 +62259,9 @@
 			"ja": "ウッタラーカンド州",
 			"jv": "Uttarakhand",
 			"pa": "ਉੱਤਰਾਖੰਡ",
-			"pt": "Uttarakhand"
+			"pt": "Uttarakhand",
+			"ru": "Уттаракханд",
+			"uk": "Уттаракханд"
 		}
 	},
 	{
@@ -85888,7 +85945,8 @@
 			"ja": "キシナウ市",
 			"jv": "Munisipium Chisinau",
 			"pa": "ਕਿਸ਼ਿਨਾਊ ਪੌਰ ਨਿਗਮ",
-			"pt": "Município de Chisináu"
+			"pt": "Município de Chisináu",
+			"uk": "Кишинів"
 		}
 	},
 	{
@@ -98047,7 +98105,9 @@
 			"ja": "クアラルンプール",
 			"jv": "Kuala Lumpur",
 			"pa": "ਕੁਆਲਾ ਲੁੰਪੁਰ",
-			"pt": "Kuala Lumpur"
+			"pt": "Kuala Lumpur",
+			"ru": "Куала-Лумпур",
+			"uk": "Куала-Лумпур"
 		}
 	},
 	{
@@ -98074,7 +98134,9 @@
 			"ja": "ラブアン",
 			"jv": "Labuan",
 			"pa": "ਲਾਬੁਆਨ",
-			"pt": "Labuan"
+			"pt": "Labuan",
+			"ru": "Лабуан",
+			"uk": "Лабуан"
 		}
 	},
 	{
@@ -98092,7 +98154,12 @@
 		"type": "state",
 		"native": "Melaka",
 		"wikidataId": "Q185221",
-		"translations": {}
+		"translations": {
+			"es": "Malaca",
+			"fr": "Malacca",
+			"ru": "Малакка",
+			"uk": "Малакка"
+		}
 	},
 	{
 		"name": "Negeri Sembilan",
@@ -98350,7 +98417,8 @@
 			"bn": "পুত্রজয়া",
 			"jv": "Putrajaya",
 			"pa": "ਪੁਤਰਜਯਾ",
-			"pt": "Putrajaya"
+			"pt": "Putrajaya",
+			"uk": "Путраджая"
 		}
 	},
 	{
@@ -104787,7 +104855,9 @@
 			"ja": "マナワツ・ワンガヌイ",
 			"jv": "Manawatu-Wanganui",
 			"pa": "ਮਨਾਵਾਤੂ-ਵਾਂਗਾਨੂਈ",
-			"pt": "Manawatu-Wanganui"
+			"pt": "Manawatu-Wanganui",
+			"ru": "Манавату-Уангануи",
+			"uk": "Манавату-Вангануї"
 		}
 	},
 	{
@@ -104865,7 +104935,8 @@
 			"bn": "নেলসন অঞ্চল",
 			"jv": "Wilayah Nelson",
 			"pa": "ਨੈਲਸਨ ਖੇਤਰ",
-			"pt": "Região de Nelson"
+			"pt": "Região de Nelson",
+			"uk": "Нельсон"
 		}
 	},
 	{
@@ -118042,11 +118113,11 @@
 		"capital": "Barnaul",
 		"population": 2350080,
 		"type": "territory",
-		"native": "Алтайский Край",
+		"native": "Алтайский край",
 		"wikidataId": "Q5942",
 		"translations": {
 			"en": "Altai Krai",
-			"ru": "Алтайский Край",
+			"ru": "Алтайский край",
 			"fr": "Kraï d'Altaï",
 			"de": "Region Altai",
 			"hi": "अल्ताई क्राय",
@@ -118087,10 +118158,10 @@
 		"capital": "Blagoveshchensk",
 		"population": 798424,
 		"type": "region",
-		"native": "Амурская Область",
+		"native": "Амурская область",
 		"wikidataId": "Q6886",
 		"translations": {
-			"ru": "Амурская Область",
+			"ru": "Амурская область",
 			"es": "Amur",
 			"fr": "Oblast de l'Amour",
 			"de": "Oblast Amur",
@@ -118132,11 +118203,11 @@
 		"capital": "Arkhangel’sk",
 		"population": 1155028,
 		"type": "region",
-		"native": "Архангельская Область",
+		"native": "Архангельская область",
 		"wikidataId": "Q1875",
 		"translations": {
 			"en": "Arkhangelskaya oblast",
-			"ru": "Архангельская Область",
+			"ru": "Архангельская область",
 			"fr": "Oblast d'Arkhangelsk",
 			"de": "Oblast Archangelsk",
 			"hi": "अर्खांगेल्स्क ओब्लास्ट",
@@ -118177,10 +118248,10 @@
 		"capital": "Astrakhan",
 		"population": 960142,
 		"type": "region",
-		"native": "Астраханская Область",
+		"native": "Астраханская область",
 		"wikidataId": "Q3941",
 		"translations": {
-			"ru": "Астраханская Область",
+			"ru": "Астраханская область",
 			"fr": "Oblast d'Astrakhan",
 			"de": "Oblast Astrachan",
 			"en": "Astrakhan Oblast",
@@ -118268,10 +118339,10 @@
 		"capital": "Belgorod",
 		"population": 1549876,
 		"type": "region",
-		"native": "Белгородская Область",
+		"native": "Белгородская область",
 		"wikidataId": "Q3329",
 		"translations": {
-			"ru": "Белгородская Область",
+			"ru": "Белгородская область",
 			"fr": "Oblast de Belgorod",
 			"de": "Oblast Belgorod",
 			"en": "Belgorod Oblast",
@@ -118313,10 +118384,10 @@
 		"capital": "Bryansk",
 		"population": 1210982,
 		"type": "region",
-		"native": "Брянская Область",
+		"native": "Брянская область",
 		"wikidataId": "Q2810",
 		"translations": {
-			"ru": "Брянская Область",
+			"ru": "Брянская область",
 			"fr": "Oblast de Briansk",
 			"de": "Oblast Brjansk",
 			"en": "Bryansk Oblast",
@@ -118370,7 +118441,8 @@
 			"ja": "ブリヤート共和国",
 			"jv": "Buryatiya Republic",
 			"pa": "ਬੁਰਿਆਤਿਆ ਗਣਰਾਜ",
-			"pt": "República da Buriácia"
+			"pt": "República da Buriácia",
+			"uk": "Бурятія"
 		}
 	},
 	{
@@ -118625,7 +118697,8 @@
 			"ja": "イングーシ共和国",
 			"jv": "Republik Ingushetiya",
 			"pa": "ਇਨਗੁਸ਼ੇਟੀਆ ਗਣਰਾਜ",
-			"pt": "República da Inguíchia"
+			"pt": "República da Inguíchia",
+			"uk": "Інгушетія"
 		}
 	},
 	{
@@ -118641,10 +118714,10 @@
 		"capital": "Irkutsk",
 		"population": 2404195,
 		"type": "region",
-		"native": "Иркутская Область",
+		"native": "Иркутская область",
 		"wikidataId": "Q6585",
 		"translations": {
-			"ru": "Иркутская Область",
+			"ru": "Иркутская область",
 			"fr": "Oblast d'Irkoutsk",
 			"de": "Oblast Irkutsk",
 			"en": "Irkutsk Oblast",
@@ -118653,7 +118726,8 @@
 			"ja": "イルクーツク州",
 			"jv": "Oblast Irkutsk",
 			"pa": "ਇਰਕੁਟਸਕ ਓਬਲਾਸਟ",
-			"pt": "Oblast de Irkutsk"
+			"pt": "Oblast de Irkutsk",
+			"uk": "Іркутська область"
 		}
 	},
 	{
@@ -118669,11 +118743,11 @@
 		"capital": "Ivanovo",
 		"population": 1014646,
 		"type": "region",
-		"native": "Ивановская Область",
+		"native": "Ивановская область",
 		"wikidataId": "Q2654",
 		"translations": {
 			"en": "Ivanovo Oblast",
-			"ru": "Ивановская Область",
+			"ru": "Ивановская область",
 			"fr": "Oblast d'Ivanovo",
 			"de": "Oblast Iwanowo",
 			"hi": "इवानोवो ओब्लास्ट",
@@ -118805,11 +118879,11 @@
 		"capital": "Kaliningrad",
 		"population": 1029966,
 		"type": "region",
-		"native": "Калининградская Область",
+		"native": "Калининградская область",
 		"wikidataId": "Q1749",
 		"translations": {
 			"en": "Kaliningrad Oblast",
-			"ru": "Калининградская Область",
+			"ru": "Калининградская область",
 			"fr": "Oblast de Kaliningrad",
 			"de": "Oblast Kaliningrad",
 			"hi": "कलिनिनग्रैड ओब्लास्ट",
@@ -118896,11 +118970,11 @@
 		"capital": "Kaluga",
 		"population": 1012156,
 		"type": "region",
-		"native": "Калужская Область",
+		"native": "Калужская область",
 		"wikidataId": "Q2842",
 		"translations": {
 			"en": "Kaluga Oblast",
-			"ru": "Калужская Область",
+			"ru": "Калужская область",
 			"fr": "Oblast de Kalouga",
 			"de": "Oblast Kaluga",
 			"hi": "कलुगा ओब्लास्ट",
@@ -119060,12 +119134,12 @@
 		"capital": "Khabarovsk",
 		"population": 1394490,
 		"type": "territory",
-		"native": "Хабаровский Край",
+		"native": "Хабаровский край",
 		"wikidataId": "Q7788",
 		"translations": {
 			"en": "Khabarovsk Krai",
 			"es": "Krai de Khabarovsk",
-			"ru": "Хабаровский Край",
+			"ru": "Хабаровский край",
 			"fr": "Kraï de Khabarovsk",
 			"de": "Region Chabarowsk",
 			"hi": "ख़ाबारोव्स्क क्राय",
@@ -119178,11 +119252,11 @@
 		"capital": "Kirov",
 		"population": 1283238,
 		"type": "region",
-		"native": "Кировская Область",
+		"native": "Кировская область",
 		"wikidataId": "Q5387",
 		"translations": {
 			"en": "Kirov Oblast",
-			"ru": "Кировская Область",
+			"ru": "Кировская область",
 			"fr": "Oblast de Kirov",
 			"de": "Oblast Kirow",
 			"hi": "किरोव ओब्लास्ट",
@@ -119268,10 +119342,10 @@
 		"capital": "Kostroma",
 		"population": 643324,
 		"type": "region",
-		"native": "Костромская Область",
+		"native": "Костромская область",
 		"wikidataId": "Q2596",
 		"translations": {
-			"ru": "Костромская Область",
+			"ru": "Костромская область",
 			"fr": "Oblast de Kostroma",
 			"de": "Oblast Kostroma",
 			"en": "Kostroma Oblast",
@@ -119358,11 +119432,11 @@
 		"capital": "Krasnoyarsk",
 		"population": 2876497,
 		"type": "territory",
-		"native": "Красноярский Край",
+		"native": "Красноярский край",
 		"wikidataId": "Q6563",
 		"translations": {
 			"es": "Krai de Krasnojarsk",
-			"ru": "Красноярский Край",
+			"ru": "Красноярский край",
 			"fr": "Kraï de Krasnoïarsk",
 			"de": "Region Krasnojarsk",
 			"en": "Krasnoyarsk Krai",
@@ -119386,10 +119460,10 @@
 		"capital": "Kurgan",
 		"population": 845537,
 		"type": "region",
-		"native": "Курганская Область",
+		"native": "Курганская область",
 		"wikidataId": "Q5741",
 		"translations": {
-			"ru": "Курганская Область",
+			"ru": "Курганская область",
 			"fr": "Oblast de Kourgan",
 			"de": "Oblast Kurgan",
 			"en": "Kurgan Oblast",
@@ -119431,11 +119505,11 @@
 		"capital": "Kursk",
 		"population": 1115237,
 		"type": "region",
-		"native": "Курская Область",
+		"native": "Курская область",
 		"wikidataId": "Q3178",
 		"translations": {
 			"en": "Kursk Oblast",
-			"ru": "Курская Область",
+			"ru": "Курская область",
 			"fr": "Oblast de Koursk",
 			"de": "Oblast Kursk",
 			"hi": "कुर्सक ओब्लास्ट",
@@ -119549,10 +119623,10 @@
 		"capital": "Lipetsk",
 		"population": 1150201,
 		"type": "region",
-		"native": "Липецкая Область",
+		"native": "Липецкая область",
 		"wikidataId": "Q3510",
 		"translations": {
-			"ru": "Липецкая Область",
+			"ru": "Липецкая область",
 			"fr": "Oblast de Lipetsk",
 			"de": "Oblast Lipezk",
 			"en": "Lipetsk Oblast",
@@ -119594,10 +119668,10 @@
 		"capital": "Magadan",
 		"population": 144091,
 		"type": "region",
-		"native": "Магаданская Область",
+		"native": "Магаданская область",
 		"wikidataId": "Q7971",
 		"translations": {
-			"ru": "Магаданская Область",
+			"ru": "Магаданская область",
 			"fr": "Oblast de Magadan",
 			"de": "Oblast Magadan",
 			"en": "Magadan Oblast",
@@ -119804,7 +119878,7 @@
 		"capital": "Murmansk",
 		"population": 753557,
 		"type": "region",
-		"native": "Мурманская Область",
+		"native": "Мурманская область",
 		"wikidataId": "Q1759",
 		"translations": {
 			"pl": "Obwód murmański",
@@ -119816,7 +119890,7 @@
 			"nl": "Oblast Moermansk",
 			"pt": "Oblast de Murmansk",
 			"zh": "摩爾曼斯克州",
-			"ru": "Мурманская Область",
+			"ru": "Мурманская область",
 			"fr": "Oblast de Mourmansk",
 			"hi": "मूरमान्स्क ओब्लास्त",
 			"ar": "أوبلاست مورمانسك",
@@ -119894,10 +119968,10 @@
 		"capital": "Nizhniy Novgorod",
 		"population": 3234752,
 		"type": "region",
-		"native": "Нижегородская Область",
+		"native": "Нижегородская область",
 		"wikidataId": "Q2246",
 		"translations": {
-			"ru": "Нижегородская Область",
+			"ru": "Нижегородская область",
 			"fr": "Oblast de Nijni Novgorod",
 			"de": "Oblast Nischni Nowgorod",
 			"en": "Nizhny Novgorod Oblast",
@@ -119984,10 +120058,10 @@
 		"capital": "Velikiy Novgorod",
 		"population": 606476,
 		"type": "region",
-		"native": "Новгородская Область",
+		"native": "Новгородская область",
 		"wikidataId": "Q2240",
 		"translations": {
-			"ru": "Новгородская Область",
+			"ru": "Новгородская область",
 			"fr": "Oblast de Novgorod",
 			"de": "Oblast Nowgorod",
 			"en": "Novgorod Oblast",
@@ -120029,10 +120103,10 @@
 		"capital": "Novosibirsk",
 		"population": 2788849,
 		"type": "region",
-		"native": "Новосибирская Область",
+		"native": "Новосибирская область",
 		"wikidataId": "Q5851",
 		"translations": {
-			"ru": "Новосибирская Область",
+			"ru": "Новосибирская область",
 			"fr": "Oblast de Novossibirsk",
 			"de": "Oblast Nowosibirsk",
 			"en": "Novosibirsk Oblast",
@@ -120074,11 +120148,11 @@
 		"capital": "Omsk",
 		"population": 1960081,
 		"type": "region",
-		"native": "Омская Область",
+		"native": "Омская область",
 		"wikidataId": "Q5835",
 		"translations": {
 			"en": "Omsk Oblast",
-			"ru": "Омская Область",
+			"ru": "Омская область",
 			"fr": "Oblast d'Omsk",
 			"de": "Oblast Omsk",
 			"hi": "ओम्स्क ओब्लास्ट",
@@ -120119,10 +120193,10 @@
 		"capital": "Orenburg",
 		"population": 1977720,
 		"type": "region",
-		"native": "Оренбургская Область",
+		"native": "Оренбургская область",
 		"wikidataId": "Q5338",
 		"translations": {
-			"ru": "Оренбургская Область",
+			"ru": "Оренбургская область",
 			"fr": "Oblast d'Orenbourg",
 			"de": "Oblast Orenburg",
 			"en": "Orenburg Oblast",
@@ -120131,7 +120205,8 @@
 			"ja": "オレンブルク州",
 			"jv": "Oblast Orenburg",
 			"pa": "ਓਰਮਬੁਰਗ ਓਬਲਾਸਟ",
-			"pt": "Oblast de Orenburgo"
+			"pt": "Oblast de Orenburgo",
+			"uk": "Оренбурзька область"
 		}
 	},
 	{
@@ -120147,10 +120222,10 @@
 		"capital": "Orël",
 		"population": 747247,
 		"type": "region",
-		"native": "Орловская Область",
+		"native": "Орловская область",
 		"wikidataId": "Q3129",
 		"translations": {
-			"ru": "Орловская Область",
+			"ru": "Орловская область",
 			"fr": "Oblast d'Orel",
 			"de": "Oblast Orjol",
 			"en": "Oryol oblast",
@@ -120192,11 +120267,11 @@
 		"capital": "Penza",
 		"population": 1331655,
 		"type": "region",
-		"native": "Пензенская Область",
+		"native": "Пензенская область",
 		"wikidataId": "Q5545",
 		"translations": {
 			"en": "Penza Oblast",
-			"ru": "Пензенская Область",
+			"ru": "Пензенская область",
 			"fr": "Oblast de Penza",
 			"de": "Oblast Pensa",
 			"hi": "पेन्ज़ा ओब्लास्ट",
@@ -120276,11 +120351,11 @@
 		"capital": "Vladivostok",
 		"population": 1913037,
 		"type": "territory",
-		"native": "Приморский Край",
+		"native": "Приморский край",
 		"wikidataId": "Q4341",
 		"translations": {
 			"es": "Krai De Primorsky",
-			"ru": "Приморский Край",
+			"ru": "Приморский край",
 			"fr": "Kraï de Primorie",
 			"de": "Region Primorje",
 			"en": "Primorskiy (Maritime) Kray",
@@ -120321,10 +120396,10 @@
 		"capital": "Pskov",
 		"population": 636546,
 		"type": "region",
-		"native": "Псковская Область",
+		"native": "Псковская область",
 		"wikidataId": "Q2218",
 		"translations": {
-			"ru": "Псковская Область",
+			"ru": "Псковская область",
 			"fr": "Oblast de Pskov",
 			"de": "Oblast Pskow",
 			"en": "Pskov Oblast",
@@ -120411,12 +120486,12 @@
 		"capital": "Rostov-on-Don",
 		"population": 4220452,
 		"type": "region",
-		"native": "Ростовская Область",
+		"native": "Ростовская область",
 		"wikidataId": "Q3573",
 		"translations": {
 			"en": "Rostov Oblast",
 			"fr": "Oblast de Rostov",
-			"ru": "Ростовская Область",
+			"ru": "Ростовская область",
 			"de": "Oblast Rostow",
 			"hi": "रोस्तोव ओब्लास्ट",
 			"pt": "Oblast de Rostov",
@@ -120456,10 +120531,10 @@
 		"capital": "Ryazan’",
 		"population": 1121474,
 		"type": "region",
-		"native": "Рязанская Область",
+		"native": "Рязанская область",
 		"wikidataId": "Q2753",
 		"translations": {
-			"ru": "Рязанская Область",
+			"ru": "Рязанская область",
 			"fr": "Oblast de Riazan",
 			"de": "Oblast Rjasan",
 			"en": "Ryazan Oblast",
@@ -120513,7 +120588,8 @@
 			"ja": "サハ共和国",
 			"jv": "Sakha",
 			"pa": "ਸਾਖਾ",
-			"pt": "Sakha"
+			"pt": "Sakha",
+			"uk": "Саха (Якутія)"
 		}
 	},
 	{
@@ -120574,10 +120650,10 @@
 		"capital": "Samara",
 		"population": 3193514,
 		"type": "region",
-		"native": "Самарская Область",
+		"native": "Самарская область",
 		"wikidataId": "Q1727",
 		"translations": {
-			"ru": "Самарская Область",
+			"ru": "Самарская область",
 			"fr": "Oblast de Samara",
 			"de": "Oblast Samara",
 			"en": "Samara Oblast",
@@ -120619,11 +120695,11 @@
 		"capital": "Saratov",
 		"population": 2462950,
 		"type": "region",
-		"native": "Саратовская Область",
+		"native": "Саратовская область",
 		"wikidataId": "Q5334",
 		"translations": {
 			"en": "Saratov Oblast",
-			"ru": "Саратовская Область",
+			"ru": "Саратовская область",
 			"fr": "Oblast de Saratov",
 			"de": "Oblast Saratow",
 			"hi": "साराटोव ओब्लास्ट",
@@ -120664,11 +120740,11 @@
 		"capital": "Smolensk",
 		"population": 949348,
 		"type": "region",
-		"native": "Смоленская Область",
+		"native": "Смоленская область",
 		"wikidataId": "Q2347",
 		"translations": {
 			"en": "Smolensk Oblast",
-			"ru": "Смоленская Область",
+			"ru": "Смоленская область",
 			"fr": "Oblast de Smolensk",
 			"de": "Oblast Smolensk",
 			"hi": "स्मोलेंस्क ओब्लास्ट",
@@ -120783,11 +120859,11 @@
 		"capital": "Yekaterinburg",
 		"population": 4325256,
 		"type": "region",
-		"native": "Свердловская Область",
+		"native": "Свердловская область",
 		"wikidataId": "Q5462",
 		"translations": {
 			"en": "Sverdlovsk Oblast",
-			"ru": "Свердловская Область",
+			"ru": "Свердловская область",
 			"es": "Sverdlovsk",
 			"fr": "Oblast de Sverdlovsk",
 			"de": "Oblast Swerdlowsk",
@@ -120828,11 +120904,11 @@
 		"capital": "Tambov",
 		"population": 1033552,
 		"type": "region",
-		"native": "Тамбовская Область",
+		"native": "Тамбовская область",
 		"wikidataId": "Q3550",
 		"translations": {
 			"en": "Tambov Oblast",
-			"ru": "Тамбовская Область",
+			"ru": "Тамбовская область",
 			"fr": "Oblast de Tambov",
 			"de": "Oblast Tambow",
 			"hi": "तांबोव ओब्लास्ट",
@@ -120886,7 +120962,8 @@
 			"bn": "তাতারস্তান প্রজাতন্ত্র",
 			"ja": "タタールスタン共和国",
 			"jv": "Republik Tatarstan",
-			"pa": "ਤਾਤਾਰਸਤਾਨ ਗਣਰਾਜ"
+			"pa": "ਤਾਤਾਰਸਤਾਨ ਗਣਰਾਜ",
+			"uk": "Татарстан"
 		}
 	},
 	{
@@ -120902,19 +120979,20 @@
 		"capital": "Tomsk",
 		"population": 1078280,
 		"type": "region",
-		"native": "Томская Область",
+		"native": "Томская область",
 		"wikidataId": "Q5884",
 		"translations": {
 			"fr": "Oblast de Tomsk",
 			"de": "Oblast Tomsk",
-			"ru": "Томская Область",
+			"ru": "Томская область",
 			"en": "Tomsk Oblast",
 			"es": "Óblast de Tomsk",
 			"bn": "টমস্ক ওবলাস্ট",
 			"ja": "トムスク州",
 			"jv": "Oblast Tomsk",
 			"pa": "ਟੌਮਸਕ ਓਬਲਾਸਟ",
-			"pt": "Oblast de Tomsk"
+			"pt": "Oblast de Tomsk",
+			"uk": "Томська область"
 		}
 	},
 	{
@@ -120930,11 +121008,11 @@
 		"capital": "Tula",
 		"population": 1491855,
 		"type": "region",
-		"native": "Тульская Область",
+		"native": "Тульская область",
 		"wikidataId": "Q2792",
 		"translations": {
 			"en": "Tula Oblast",
-			"ru": "Тульская Область",
+			"ru": "Тульская область",
 			"fr": "Oblast de Toula",
 			"de": "Oblast Tula",
 			"hi": "टूला ओब्लास्ट",
@@ -120975,10 +121053,10 @@
 		"capital": "Tver",
 		"population": 1283873,
 		"type": "region",
-		"native": "Тверская Область",
+		"native": "Тверская область",
 		"wikidataId": "Q2292",
 		"translations": {
-			"ru": "Тверская Область",
+			"ru": "Тверская область",
 			"fr": "Oblast de Tver",
 			"de": "Oblast Twer",
 			"en": "Tver Oblast",
@@ -121093,7 +121171,7 @@
 		"capital": "Ulyanovsk",
 		"population": 1246618,
 		"type": "region",
-		"native": "Ульяновская Область",
+		"native": "Ульяновская область",
 		"wikidataId": "Q5627",
 		"translations": {
 			"de": "Oblast Uljanowsk",
@@ -121113,7 +121191,7 @@
 			"pl": "Obwód uljanowski",
 			"pt": "Oblast de Ulianovsk",
 			"zh": "乌里扬诺夫斯克州",
-			"ru": "Ульяновская Область",
+			"ru": "Ульяновская область",
 			"bn": "উলিয়ানভস্ক ওব্লাস্ট",
 			"jv": "Oblast Ulyanovsk",
 			"pa": "ਉਲਿਆਨੋਵਸਕ ਓਬਲਾਸਟ"
@@ -121177,10 +121255,10 @@
 		"capital": "Volgograd",
 		"population": 2521276,
 		"type": "region",
-		"native": "Волгоградская Область",
+		"native": "Волгоградская область",
 		"wikidataId": "Q3819",
 		"translations": {
-			"ru": "Волгоградская Область",
+			"ru": "Волгоградская область",
 			"fr": "Oblast de Volgograd",
 			"de": "Oblast Wolgograd",
 			"en": "Volgograd Oblast",
@@ -121222,13 +121300,13 @@
 		"capital": "Vologda",
 		"population": 1176689,
 		"type": "region",
-		"native": "Вологодская Область",
+		"native": "Вологодская область",
 		"wikidataId": "Q2015",
 		"translations": {
 			"en": "Vologda Oblast",
 			"fr": "Oblast de Vologda",
 			"de": "Oblast Wologda",
-			"ru": "Вологодская Область",
+			"ru": "Вологодская область",
 			"hi": "वोलोडा ओब्लास्ट",
 			"pt": "Oblast de Vologda",
 			"it": "oblast' di Vologda",
@@ -121267,11 +121345,11 @@
 		"capital": "Voronezh",
 		"population": 2333768,
 		"type": "region",
-		"native": "Воронежская Область",
+		"native": "Воронежская область",
 		"wikidataId": "Q3447",
 		"translations": {
 			"en": "Voronezh Oblast",
-			"ru": "Воронежская Область",
+			"ru": "Воронежская область",
 			"fr": "Oblast de Voronej",
 			"de": "Oblast Woronesch",
 			"hi": "वोरोनेज़ ओब्लास्ट",
@@ -121357,12 +121435,12 @@
 		"capital": "Yaroslavl",
 		"population": 1265684,
 		"type": "region",
-		"native": "Ярославская Область",
+		"native": "Ярославская область",
 		"wikidataId": "Q2448",
 		"translations": {
 			"fr": "Oblast d'Iaroslavl",
 			"de": "Oblast Jaroslawl",
-			"ru": "Ярославская Область",
+			"ru": "Ярославская область",
 			"en": "Yaroslavl Oblast",
 			"hi": "यरोस्लावी ओब्लास्ट",
 			"pt": "Oblast de Iaroslavl",
@@ -121402,10 +121480,10 @@
 		"capital": "Chita",
 		"population": 1072806,
 		"type": "region",
-		"native": "Забайкальский Край",
+		"native": "Забайкальский край",
 		"wikidataId": "Q6838",
 		"translations": {
-			"ru": "Забайкальский Край",
+			"ru": "Забайкальский край",
 			"en": "Zabaykalskiy (Transbaikal) Kray",
 			"es": "Zabaikalie",
 			"fr": "Kraï de Transbaïkalie",
@@ -121414,7 +121492,8 @@
 			"ja": "ザバイカルスキー（トランスバイカル）地方",
 			"jv": "Zabaykalskiy (Transbaikal) Kray",
 			"pa": "ਜਾਬਾਈਕਾਲਸਕੀ (ਟ੍ਰਾਂਸਬਾਈਕਾਲ) ਕ੍ਰਾਈ",
-			"pt": "Zabaykalskiy (Transbaikal) Kray"
+			"pt": "Zabaykalskiy (Transbaikal) Kray",
+			"uk": "Забайкальський край"
 		}
 	},
 	{
@@ -125388,7 +125467,9 @@
 			"ja": "セントヘレナ",
 			"jv": "Saint Helena",
 			"pa": "ਸੇਂਟ ਹੇਲੇਨਾ",
-			"pt": "Santa Helena"
+			"pt": "Santa Helena",
+			"ru": "Остров Святой Елены",
+			"uk": "Острів Святої Єлени"
 		}
 	},
 	{
@@ -132359,7 +132440,9 @@
 			"ja": "アウダル",
 			"jv": "Awdal",
 			"pa": "ਅਵਦਾਲ",
-			"pt": "Awdal"
+			"pt": "Awdal",
+			"ru": "Авдал",
+			"uk": "Авдал"
 		}
 	},
 	{
@@ -132735,7 +132818,9 @@
 			"ja": "サナーグ",
 			"jv": "Sanaag",
 			"pa": "ਸਾਨਾਗ",
-			"pt": "Sanaag"
+			"pt": "Sanaag",
+			"ru": "Санааг",
+			"uk": "Санааг"
 		}
 	},
 	{
@@ -132763,7 +132848,9 @@
 			"ja": "ソール",
 			"jv": "Sool",
 			"pa": "ਸੂਲ",
-			"pt": "Sool"
+			"pt": "Sool",
+			"ru": "Соол",
+			"uk": "Соол"
 		}
 	},
 	{
@@ -132790,7 +132877,9 @@
 			"ja": "トグディール",
 			"jv": "Togdheer",
 			"pa": "ਤੋਗਧੀਰ",
-			"pt": "Togdheer"
+			"pt": "Togdheer",
+			"ru": "Тогдер",
+			"uk": "Тогдер"
 		}
 	},
 	{
@@ -132816,7 +132905,10 @@
 			"ja": "ウォクーイ・ガルベード",
 			"jv": "Woqooyi Galbeed",
 			"pa": "ਵੋਕੂਈ ਗਲਬੀਡ",
-			"pt": "Woqooyi Galbeed"
+			"pt": "Woqooyi Galbeed",
+			"es": "Woqooyi Galbeed",
+			"ru": "Вокуйи-Галбид",
+			"uk": "Вокуйі-Галбід"
 		}
 	},
 	{
@@ -149263,7 +149355,7 @@
 		"longitude": "33.75",
 		"timezone": "Africa/Kampala",
 		"capital": "Abim",
-		"population": 0,
+		"population": 56500,
 		"type": "county",
 		"native": "Abim District",
 		"wikidataId": "Q1375780",
@@ -149307,7 +149399,7 @@
 		"longitude": "31.75",
 		"timezone": "Africa/Kampala",
 		"capital": "Adjumani",
-		"population": 0,
+		"population": 375800,
 		"type": "district",
 		"native": "Adjumani District",
 		"wikidataId": "Q1229734",
@@ -149436,7 +149528,7 @@
 		"longitude": "32.83333",
 		"timezone": "Africa/Kampala",
 		"capital": "Amolatar",
-		"population": 0,
+		"population": 127400,
 		"type": "county",
 		"native": "Amolatar District",
 		"wikidataId": "Q1318822",
@@ -149522,7 +149614,7 @@
 		"longitude": "33.66667",
 		"timezone": "Africa/Kampala",
 		"capital": "Amuria",
-		"population": 0,
+		"population": 183348,
 		"type": "district",
 		"native": "Amuria District",
 		"wikidataId": "Q1375762",
@@ -149712,7 +149804,7 @@
 		"longitude": "34.4",
 		"timezone": "Africa/Kampala",
 		"capital": "Bududa",
-		"population": 0,
+		"population": 210173,
 		"type": "district",
 		"native": "Bududa District",
 		"wikidataId": "Q1365449",
@@ -149873,7 +149965,7 @@
 		"longitude": "34.13333",
 		"timezone": "Africa/Kampala",
 		"capital": "Bukedea",
-		"population": 0,
+		"population": 186400,
 		"type": "district",
 		"native": "Bukedea District",
 		"wikidataId": "Q1375812",
@@ -149994,7 +150086,7 @@
 		"longitude": "31.39353",
 		"timezone": "Africa/Kampala",
 		"capital": "Buliisa",
-		"population": 150000,
+		"population": 149300,
 		"type": "county",
 		"native": "Buliisa District",
 		"wikidataId": "Q1229793",
@@ -150261,7 +150353,7 @@
 		"longitude": "33.20071",
 		"timezone": "Africa/Kampala",
 		"capital": "Kitamilo",
-		"population": 30000,
+		"population": 89890,
 		"type": "district",
 		"native": "Buvuma District",
 		"wikidataId": "Q3321608",
@@ -150348,7 +150440,7 @@
 		"longitude": "33.06137",
 		"timezone": "Africa/Kampala",
 		"capital": "Dokolo",
-		"population": 0,
+		"population": 183400,
 		"type": "county",
 		"native": "Dokolo District",
 		"wikidataId": "Q1318872",
@@ -150538,7 +150630,7 @@
 		"longitude": "33.5333",
 		"timezone": "Africa/Kampala",
 		"capital": "Iganga",
-		"population": 0,
+		"population": 499600,
 		"type": "district",
 		"native": "Iganga District",
 		"wikidataId": "Q1229869",
@@ -150598,7 +150690,7 @@
 		"longitude": "33.315",
 		"timezone": "Africa/Kampala",
 		"capital": "Jinja",
-		"population": 0,
+		"population": 501300,
 		"type": "district",
 		"native": "Jinja District",
 		"wikidataId": "Q983748",
@@ -150684,7 +150776,7 @@
 		"longitude": "29.9823",
 		"timezone": "Africa/Kampala",
 		"capital": "Kabale",
-		"population": 0,
+		"population": 248700,
 		"type": "district",
 		"native": "Kabale District",
 		"wikidataId": "Q3526470",
@@ -150847,7 +150939,7 @@
 		"longitude": "32.38108",
 		"timezone": "Africa/Kampala",
 		"capital": "Kalangala",
-		"population": 0,
+		"population": 66300,
 		"type": "district",
 		"native": "Kalangala District",
 		"wikidataId": "Q867219",
@@ -150891,7 +150983,7 @@
 		"longitude": "33.48763",
 		"timezone": "Africa/Kampala",
 		"capital": "Kaliro",
-		"population": 0,
+		"population": 216500,
 		"type": "county",
 		"native": "Kaliro District",
 		"wikidataId": "Q1375859",
@@ -151022,7 +151114,7 @@
 		"longitude": "33.11667",
 		"timezone": "Africa/Kampala",
 		"capital": "Kamuli",
-		"population": 0,
+		"population": 500800,
 		"type": "district",
 		"native": "Kamuli District",
 		"wikidataId": "Q164474",
@@ -151151,7 +151243,7 @@
 		"longitude": "34.42",
 		"timezone": "Africa/Kampala",
 		"capital": "Kapchorwa",
-		"population": 0,
+		"population": 104580,
 		"type": "district",
 		"native": "Kapchorwa District",
 		"wikidataId": "Q1229921",
@@ -151194,7 +151286,7 @@
 		"longitude": "30.00777",
 		"timezone": "Africa/Kampala",
 		"capital": "Kasese",
-		"population": 0,
+		"population": 747800,
 		"type": "district",
 		"native": "Kasese District",
 		"wikidataId": "Q1229919",
@@ -151236,7 +151328,7 @@
 		"longitude": "34.04753",
 		"timezone": "Africa/Kampala",
 		"capital": "Katakwi",
-		"population": 0,
+		"population": 176800,
 		"type": "county",
 		"native": "Katakwi District",
 		"wikidataId": "Q1229930",
@@ -151340,7 +151432,7 @@
 		"longitude": "31.93283",
 		"timezone": "Africa/Kampala",
 		"capital": "Kiboga",
-		"population": 0,
+		"population": 165100,
 		"type": "district",
 		"native": "Kiboga District",
 		"wikidataId": "Q892064",
@@ -151427,7 +151519,7 @@
 		"longitude": "30.91667",
 		"timezone": "Africa/Kampala",
 		"capital": "Kiruhura",
-		"population": 0,
+		"population": 300800,
 		"type": "district",
 		"native": "Kiruhura District",
 		"wikidataId": "Q1318865",
@@ -151528,7 +151620,7 @@
 		"longitude": "33.336",
 		"timezone": "Africa/Kampala",
 		"capital": "Kitgum",
-		"population": 0,
+		"population": 204012,
 		"type": "district",
 		"native": "Kitgum District",
 		"wikidataId": "Q500162",
@@ -151571,7 +151663,7 @@
 		"longitude": "31",
 		"timezone": "Africa/Kampala",
 		"capital": "Koboko",
-		"population": 0,
+		"population": 236900,
 		"type": "county",
 		"native": "Koboko District",
 		"wikidataId": "Q1318857",
@@ -151674,7 +151766,7 @@
 		"longitude": "33.95",
 		"timezone": "Africa/Kampala",
 		"capital": "Kumi",
-		"population": 0,
+		"population": 255500,
 		"type": "district",
 		"native": "Kumi District",
 		"wikidataId": "Q1151062",
@@ -151907,7 +151999,7 @@
 		"longitude": "32.75057",
 		"timezone": "Africa/Kampala",
 		"capital": "Lamwo",
-		"population": 0,
+		"population": 171300,
 		"type": "district",
 		"native": "Lamwo District",
 		"wikidataId": "Q3539277",
@@ -151950,7 +152042,7 @@
 		"longitude": "32.953",
 		"timezone": "Africa/Kampala",
 		"capital": "Lira",
-		"population": 0,
+		"population": 403100,
 		"type": "district",
 		"native": "Lira District",
 		"wikidataId": "Q206519",
@@ -152038,7 +152130,7 @@
 		"longitude": "32.614",
 		"timezone": "Africa/Kampala",
 		"capital": "Luwero",
-		"population": 0,
+		"population": 458158,
 		"type": "county",
 		"native": "Luwero District",
 		"wikidataId": "Q1364817",
@@ -152126,7 +152218,7 @@
 		"longitude": "31.19294",
 		"timezone": "Africa/Kampala",
 		"capital": "Lyantonde",
-		"population": 0,
+		"population": 80200,
 		"type": "district",
 		"native": "Lyantonde District",
 		"wikidataId": "Q1375878",
@@ -152170,7 +152262,7 @@
 		"longitude": "34.33333",
 		"timezone": "Africa/Kampala",
 		"capital": "Manafwa",
-		"population": 0,
+		"population": 367500,
 		"type": "district",
 		"native": "Manafwa District",
 		"wikidataId": "Q1375789",
@@ -152274,7 +152366,7 @@
 		"longitude": "31.743",
 		"timezone": "Africa/Kampala",
 		"capital": "Masindi",
-		"population": 0,
+		"population": 352400,
 		"type": "district",
 		"native": "Masindi District",
 		"wikidataId": "Q1032238",
@@ -152412,7 +152504,7 @@
 		"longitude": "32.06697",
 		"timezone": "Africa/Kampala",
 		"capital": "Mityana",
-		"population": 0,
+		"population": 316,
 		"type": "county",
 		"native": "Mityana District",
 		"wikidataId": "Q1230005",
@@ -152456,7 +152548,7 @@
 		"longitude": "34.64395",
 		"timezone": "Africa/Kampala",
 		"capital": "Moroto",
-		"population": 0,
+		"population": 103432,
 		"type": "district",
 		"native": "Moroto District",
 		"wikidataId": "Q1375850",
@@ -152499,7 +152591,7 @@
 		"longitude": "31.72",
 		"timezone": "Africa/Kampala",
 		"capital": "Moyo",
-		"population": 0,
+		"population": 194734,
 		"type": "district",
 		"native": "Moyo District",
 		"wikidataId": "Q2183668",
@@ -152542,7 +152634,7 @@
 		"longitude": "32.19902",
 		"timezone": "Africa/Kampala",
 		"capital": "Mpigi",
-		"population": 0,
+		"population": 215500,
 		"type": "district",
 		"native": "Mpigi District",
 		"wikidataId": "Q1362109",
@@ -152586,7 +152678,7 @@
 		"longitude": "31.5",
 		"timezone": "Africa/Kampala",
 		"capital": "Mubende",
-		"population": 660000,
+		"population": 610600,
 		"type": "district",
 		"native": "Mubende District",
 		"wikidataId": "Q891962",
@@ -152630,7 +152722,7 @@
 		"longitude": "32.775",
 		"timezone": "Africa/Kampala",
 		"capital": "Mukono",
-		"population": 0,
+		"population": 596804,
 		"type": "district",
 		"native": "Mukono District",
 		"wikidataId": "Q1151066",
@@ -152717,7 +152809,7 @@
 		"longitude": "32.18968",
 		"timezone": "Africa/Kampala",
 		"capital": "Nakaseke",
-		"population": 0,
+		"population": 191100,
 		"type": "district",
 		"native": "Nakaseke District",
 		"wikidataId": "Q432438",
@@ -152759,7 +152851,7 @@
 		"longitude": "32.41608",
 		"timezone": "Africa/Kampala",
 		"capital": "Nakasongola",
-		"population": 0,
+		"population": 156500,
 		"type": "district",
 		"native": "Nakasongola District",
 		"wikidataId": "Q976859",
@@ -152905,7 +152997,7 @@
 		"longitude": "34.16834",
 		"timezone": "Africa/Kampala",
 		"capital": "Napak",
-		"population": 0,
+		"population": 197700,
 		"type": "district",
 		"native": "Napak District",
 		"wikidataId": "Q3539495",
@@ -152948,7 +153040,7 @@
 		"longitude": "31.26293",
 		"timezone": "Africa/Kampala",
 		"capital": "Nebbi",
-		"population": 0,
+		"population": 346200,
 		"type": "district",
 		"native": "Nebbi District",
 		"wikidataId": "Q1375825",
@@ -153077,7 +153169,7 @@
 		"longitude": "30.30483",
 		"timezone": "Africa/Kampala",
 		"capital": "Ntungamo",
-		"population": 0,
+		"population": 480100,
 		"type": "district",
 		"native": "Ntungamo District",
 		"wikidataId": "Q204642",
@@ -153313,7 +153405,7 @@
 		"longitude": "33.69594",
 		"timezone": "Africa/Kampala",
 		"capital": "Pallisa",
-		"population": 0,
+		"population": 362600,
 		"type": "district",
 		"native": "Pallisa District",
 		"wikidataId": "Q1375843",
@@ -153356,7 +153448,7 @@
 		"longitude": "31.41309",
 		"timezone": "Africa/Kampala",
 		"capital": "Rakai",
-		"population": 0,
+		"population": 518008,
 		"type": "district",
 		"native": "Rakai District",
 		"wikidataId": "Q976873",
@@ -153476,7 +153568,7 @@
 		"longitude": "29.87781",
 		"timezone": "Africa/Kampala",
 		"capital": "Rukungiri",
-		"population": 0,
+		"population": 321300,
 		"type": "district",
 		"native": "Rukungiri District",
 		"wikidataId": "Q289419",
@@ -153519,7 +153611,7 @@
 		"longitude": "31.35513",
 		"timezone": "Africa/Kampala",
 		"capital": "Sembabule",
-		"population": 0,
+		"population": 219600,
 		"type": "district",
 		"native": "Sembabule District",
 		"wikidataId": "Q976883",
@@ -153691,7 +153783,7 @@
 		"longitude": "33.59432",
 		"timezone": "Africa/Kampala",
 		"capital": "Soroti",
-		"population": 0,
+		"population": 322000,
 		"type": "district",
 		"native": "Soroti District",
 		"wikidataId": "Q1091337",
@@ -153734,7 +153826,7 @@
 		"longitude": "34.08333",
 		"timezone": "Africa/Kampala",
 		"capital": "Tororo",
-		"population": 0,
+		"population": 487900,
 		"type": "district",
 		"native": "Tororo District",
 		"wikidataId": "Q1186541",
@@ -158318,7 +158410,10 @@
 			"de": "Anzoátegui",
 			"ja": "アンソアテギ州",
 			"jv": "Anzoategui",
-			"pa": "ਅਨਜੋਆਤੇਗੁਈ"
+			"pa": "ਅਨਜੋਆਤੇਗੁਈ",
+			"es": "Anzoátegui",
+			"ru": "Ансоатеги",
+			"uk": "Ансоатегі"
 		}
 	},
 	{
@@ -158453,7 +158548,9 @@
 			"de": "Carabobo",
 			"ja": "カラボボ州",
 			"jv": "Carabobo",
-			"pa": "ਕਾਰਾਬੋਬੋ"
+			"pa": "ਕਾਰਾਬੋਬੋ",
+			"ru": "Карабобо",
+			"uk": "Карабобо"
 		}
 	},
 	{
@@ -158643,7 +158740,9 @@
 			"de": "Lara",
 			"ja": "ラーラ州",
 			"jv": "Lara",
-			"pa": "ਲਾਰਾ"
+			"pa": "ਲਾਰਾ",
+			"ru": "Лара",
+			"uk": "Лара"
 		}
 	},
 	{
@@ -158697,7 +158796,9 @@
 			"de": "Miranda",
 			"ja": "ミランダ州",
 			"jv": "Miranda",
-			"pa": "ਮਿਰਾਂਡਾ"
+			"pa": "ਮਿਰਾਂਡਾ",
+			"ru": "Миранда",
+			"uk": "Міранда"
 		}
 	},
 	{
@@ -158724,7 +158825,9 @@
 			"de": "Monagas",
 			"ja": "モナガス州",
 			"jv": "Monagas",
-			"pa": "ਮੋਨਾਗਾਸ"
+			"pa": "ਮੋਨਾਗਾਸ",
+			"ru": "Монагас",
+			"uk": "Монагас"
 		}
 	},
 	{
@@ -158832,7 +158935,9 @@
 			"de": "Tachira",
 			"ja": "タチラ州",
 			"jv": "Tachira",
-			"pa": "ਤਾਚੀਰਾ"
+			"pa": "ਤਾਚੀਰਾ",
+			"ru": "Тачира",
+			"uk": "Тачира"
 		}
 	},
 	{
@@ -158938,7 +159043,9 @@
 			"de": "Zulia",
 			"ja": "ズーリア州",
 			"jv": "Zulia",
-			"pa": "ਜ਼ੁਲੀਆ"
+			"pa": "ਜ਼ੁਲੀਆ",
+			"ru": "Сулия",
+			"uk": "Сулія"
 		}
 	},
 	{
