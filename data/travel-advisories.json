@@ -313,7 +313,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-09T10:14:33Z",
+			"updatedAt": "2026-10-22T08:30:24Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/bangladesh"
 		}
 	},
@@ -1164,7 +1164,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-16T16:03:39Z",
+			"updatedAt": "2026-10-21T14:37:51Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/ethiopia"
 		}
 	},
@@ -1243,7 +1243,7 @@
 			"destination": "France",
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
-			"updated": "2025-05-28",
+			"updated": "2026-10-21",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fra.html"
 		},
 		"uk": {
@@ -1790,7 +1790,7 @@
 		"uk": {
 			"destination": "Italy",
 			"alertStatus": [],
-			"updatedAt": "2026-10-02T12:49:28Z",
+			"updatedAt": "2026-10-21T10:01:07Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/italy"
 		}
 	},
@@ -1951,7 +1951,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2026-07-07",
-			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kn.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kna.html"
 		},
 		"uk": {
 			"destination": "St Kitts and Nevis",
@@ -2707,7 +2707,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-16T14:52:35Z",
+			"updatedAt": "2026-10-21T17:00:06Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/nigeria"
 		}
 	},
@@ -3184,7 +3184,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-17T16:25:35Z",
+			"updatedAt": "2026-10-21T11:35:47Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia"
 		}
 	},
@@ -3652,7 +3652,7 @@
 		"uk": {
 			"destination": "Turkmenistan",
 			"alertStatus": [],
-			"updatedAt": "2026-06-04T12:53:56Z",
+			"updatedAt": "2026-10-21T14:50:49Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/turkmenistan"
 		}
 	},

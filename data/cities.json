@@ -144048,6 +144048,18 @@
 		"geonameId": 1185181
 	},
 	{
+		"name": "Lāma",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2003",
+		"stateName": "Bandarban",
+		"latitude": "21.77439",
+		"longitude": "92.21907",
+		"population": 22648,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 6415294
+	},
+	{
 		"name": "Madaripur",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -493999,7 +494011,7 @@
 		"stateName": "Guangdong",
 		"latitude": "22.03697",
 		"longitude": "112.20886",
-		"population": 0,
+		"population": 29615,
 		"timezone": "Asia/Shanghai",
 		"geonameId": 1893316
 	},
@@ -1250856,6 +1250868,18 @@
 		"geonameId": 714488
 	},
 	{
+		"name": "Ugod",
+		"countryCode": "HU",
+		"countryName": "Hungary",
+		"stateCode": "VE",
+		"stateName": "Veszprém",
+		"latitude": "47.32059",
+		"longitude": "17.59991",
+		"population": 1660,
+		"timezone": "Europe/Budapest",
+		"geonameId": 3043617
+	},
+	{
 		"name": "Újcsanálos",
 		"countryCode": "HU",
 		"countryName": "Hungary",
@@ -1287778,6 +1287802,30 @@
 		"population": 0,
 		"timezone": "Asia/Jakarta",
 		"geonameId": 1642775
+	},
+	{
+		"name": "Japan",
+		"countryCode": "ID",
+		"countryName": "Indonesia",
+		"stateCode": "JT",
+		"stateName": "Central Java",
+		"latitude": "-6.6726",
+		"longitude": "110.9152",
+		"population": 3782,
+		"timezone": "Asia/Jakarta",
+		"geonameId": 6752592
+	},
+	{
+		"name": "Japan",
+		"countryCode": "ID",
+		"countryName": "Indonesia",
+		"stateCode": "JI",
+		"stateName": "East Java",
+		"latitude": "-7.49926",
+		"longitude": "112.41968",
+		"population": 9197,
+		"timezone": "Asia/Jakarta",
+		"geonameId": 13715595
 	},
 	{
 		"name": "Japeledok",
@@ -1381800,6 +1381848,18 @@
 		"geonameId": 1278796
 	},
 	{
+		"name": "Amha",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.05181",
+		"longitude": "86.69062",
+		"population": 10396,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725330
+	},
+	{
 		"name": "Amingaon",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1382278,6 +1382338,18 @@
 		"population": 39585,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1278681
+	},
+	{
+		"name": "Anantabati",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.63688",
+		"longitude": "88.14578",
+		"population": 9171,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715585
 	},
 	{
 		"name": "Anantapur",
@@ -1385040,6 +1385112,30 @@
 		"geonameId": 13494558
 	},
 	{
+		"name": "Bādalpār",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "MP",
+		"stateName": "Madhya Pradesh",
+		"latitude": "21.94091",
+		"longitude": "79.35527",
+		"population": 922,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10470608
+	},
+	{
+		"name": "Bādalpār",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "MP",
+		"stateName": "Madhya Pradesh",
+		"latitude": "21.91765",
+		"longitude": "79.43629",
+		"population": 2413,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10470620
+	},
+	{
 		"name": "Badamba",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1385134,6 +1385230,18 @@
 		"population": 6825,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10256415
+	},
+	{
+		"name": "Badebalia",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.64444",
+		"longitude": "88.12016",
+		"population": 1998,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715580
 	},
 	{
 		"name": "Bādepalli",
@@ -1385808,6 +1385916,18 @@
 		"geonameId": 1277765
 	},
 	{
+		"name": "Bainia",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.13714",
+		"longitude": "86.58728",
+		"population": 2798,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725216
+	},
+	{
 		"name": "Bairāgnia",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1385818,6 +1385938,18 @@
 		"population": 42895,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1277748
+	},
+	{
+		"name": "Bairo",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.01443",
+		"longitude": "86.51001",
+		"population": 12258,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725296
 	},
 	{
 		"name": "Baisi",
@@ -1385926,6 +1386058,18 @@
 		"population": 18122,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10263054
+	},
+	{
+		"name": "Bakaur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.06297",
+		"longitude": "86.50533",
+		"population": 3707,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725273
 	},
 	{
 		"name": "Bakewar",
@@ -1386250,6 +1386394,18 @@
 		"population": 10536,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1277614
+	},
+	{
+		"name": "Balha",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.04535",
+		"longitude": "86.54458",
+		"population": 5228,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725288
 	},
 	{
 		"name": "Bāli",
@@ -1386670,6 +1386826,18 @@
 		"population": 7628,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 13156863
+	},
+	{
+		"name": "Bamunpara",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.66347",
+		"longitude": "88.08036",
+		"population": 5346,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715567
 	},
 	{
 		"name": "Bānapur",
@@ -1387138,6 +1387306,18 @@
 		"population": 56273,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1348747
+	},
+	{
+		"name": "Bankul",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.66881",
+		"longitude": "88.11598",
+		"population": 6779,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1348726
 	},
 	{
 		"name": "Bānkura",
@@ -1388376,6 +1388556,18 @@
 		"geonameId": 13156831
 	},
 	{
+		"name": "Baruāri",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.03048",
+		"longitude": "86.59648",
+		"population": 11160,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1276837
+	},
+	{
 		"name": "Baruipur",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1388650,6 +1388842,18 @@
 		"population": 27563,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10524017
+	},
+	{
+		"name": "Baspiti",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.09391",
+		"longitude": "86.52887",
+		"population": 10686,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725247
 	},
 	{
 		"name": "Bastar",
@@ -1389190,6 +1389394,18 @@
 		"population": 26707,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10837461
+	},
+	{
+		"name": "Bela",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.05133",
+		"longitude": "86.64435",
+		"population": 2487,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725324
 	},
 	{
 		"name": "Bela Megh",
@@ -1392312,6 +1392528,18 @@
 		"geonameId": 1275589
 	},
 	{
+		"name": "Bina",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.07922",
+		"longitude": "86.6326",
+		"population": 15633,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725221
+	},
+	{
 		"name": "Bīna",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1394100,6 +1394328,18 @@
 		"geonameId": 1274927
 	},
 	{
+		"name": "Chain Singh Patti",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.14991",
+		"longitude": "86.62112",
+		"population": 8045,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725210
+	},
+	{
 		"name": "Chainpal",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1394170,6 +1394410,18 @@
 		"population": 5238,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10880082
+	},
+	{
+		"name": "Chak Sadat",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.67422",
+		"longitude": "88.07086",
+		"population": 2940,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715581
 	},
 	{
 		"name": "Chākāi",
@@ -1394890,6 +1395142,18 @@
 		"population": 112635,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1274767
+	},
+	{
+		"name": "Chandul",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.66894",
+		"longitude": "88.10665",
+		"population": 1512,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715570
 	},
 	{
 		"name": "Chandūr",
@@ -1400592,6 +1400856,18 @@
 		"geonameId": 1272816
 	},
 	{
+		"name": "Dhasa",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.64223",
+		"longitude": "88.0869",
+		"population": 3140,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715576
+	},
+	{
 		"name": "Dhatau",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1402414,6 +1402690,18 @@
 		"population": 7975,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1272093
+	},
+	{
+		"name": "Ekma",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.05407",
+		"longitude": "86.61206",
+		"population": 10072,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725311
 	},
 	{
 		"name": "Elamanchili",
@@ -1405272,6 +1405560,18 @@
 		"geonameId": 1271151
 	},
 	{
+		"name": "Goalpota",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.67944",
+		"longitude": "88.10512",
+		"population": 1676,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715574
+	},
+	{
 		"name": "Gobārdānga",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1405303,7 +1405603,7 @@
 		"stateName": "West Bengal",
 		"latitude": "22.59306",
 		"longitude": "88.09139",
-		"population": 11781,
+		"population": 11665,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1348791
 	},
@@ -1405366,6 +1405666,18 @@
 		"population": 2556,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10371472
+	},
+	{
+		"name": "Godaria",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.67088",
+		"longitude": "88.12843",
+		"population": 1735,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715577
 	},
 	{
 		"name": "Godda",
@@ -1406904,6 +1407216,18 @@
 		"geonameId": 1270552
 	},
 	{
+		"name": "Hafezpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.65999",
+		"longitude": "88.10437",
+		"population": 1713,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715569
+	},
+	{
 		"name": "Hāflong",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1407420,6 +1407744,18 @@
 		"geonameId": 1270375
 	},
 	{
+		"name": "Hardi",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.07849",
+		"longitude": "86.68094",
+		"population": 20287,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725334
+	},
+	{
 		"name": "Hardoī",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1407550,6 +1407886,18 @@
 		"population": 1500,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 12129177
+	},
+	{
+		"name": "Harinārāyanpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.60028",
+		"longitude": "88.1125",
+		"population": 1466,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1348731
 	},
 	{
 		"name": "Haringhāta",
@@ -1408932,6 +1409280,30 @@
 		"geonameId": 13157097
 	},
 	{
+		"name": "Ichhanagari",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.68726",
+		"longitude": "88.0996",
+		"population": 4474,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715572
+	},
+	{
+		"name": "Ichhapur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.63159",
+		"longitude": "88.11694",
+		"population": 2954,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715568
+	},
+	{
 		"name": "Ichhāwar",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1409556,6 +1409928,18 @@
 		"geonameId": 1269666
 	},
 	{
+		"name": "Islāmpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.57417",
+		"longitude": "88.05806",
+		"population": 7813,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1348792
+	},
+	{
 		"name": "Ismāilābād",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1409590,6 +1409974,18 @@
 		"population": 9749,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 13353426
+	},
+	{
+		"name": "Itahāri",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.07195",
+		"longitude": "86.67391",
+		"population": 3687,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725333
 	},
 	{
 		"name": "Itāmāti",
@@ -1409782,6 +1410178,18 @@
 		"population": 7310,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1269592
+	},
+	{
+		"name": "Jagatballabhpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.68",
+		"longitude": "88.11111",
+		"population": 7113,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1269587
 	},
 	{
 		"name": "Jagatsinghapur",
@@ -1411452,6 +1411860,18 @@
 		"geonameId": 13156945
 	},
 	{
+		"name": "Jhahura",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.04902",
+		"longitude": "86.6688",
+		"population": 3435,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725317
+	},
+	{
 		"name": "Jhajha",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1411642,6 +1412062,18 @@
 		"population": 4550,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 13353381
+	},
+	{
+		"name": "Jhingra",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.69858",
+		"longitude": "88.10762",
+		"population": 1606,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1348713
 	},
 	{
 		"name": "Jhīnjhak",
@@ -1414056,6 +1414488,18 @@
 		"geonameId": 13156889
 	},
 	{
+		"name": "Kamalapur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.67417",
+		"longitude": "88.14366",
+		"population": 3348,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715573
+	},
+	{
 		"name": "Kamalāpuram",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1415688,6 +1416132,18 @@
 		"geonameId": 1255646
 	},
 	{
+		"name": "Karanpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.08454",
+		"longitude": "86.56359",
+		"population": 4861,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725245
+	},
+	{
 		"name": "Karārī",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1415830,6 +1416286,18 @@
 		"population": 18191,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1267745
+	},
+	{
+		"name": "Karīho",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.12119",
+		"longitude": "86.6494",
+		"population": 12306,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725202
 	},
 	{
 		"name": "Karikād",
@@ -1418580,6 +1419048,18 @@
 		"geonameId": 1266829
 	},
 	{
+		"name": "Khawāsa",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "MP",
+		"stateName": "Madhya Pradesh",
+		"latitude": "21.70467",
+		"longitude": "79.43767",
+		"population": 3238,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1266824
+	},
+	{
 		"name": "Khawhai",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1420018,6 +1420498,18 @@
 		"population": 99039,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1266366
+	},
+	{
+		"name": "Kohka",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "MP",
+		"stateName": "Madhya Pradesh",
+		"latitude": "21.71365",
+		"longitude": "79.3625",
+		"population": 794,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10470718
 	},
 	{
 		"name": "Koipādi",
@@ -1424386,6 +1424878,18 @@
 		"population": 5933,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10980659
+	},
+	{
+		"name": "Laukāha",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.03355",
+		"longitude": "86.6471",
+		"population": 10689,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725318
 	},
 	{
 		"name": "Laungowāl",
@@ -1433592,6 +1434096,18 @@
 		"geonameId": 1262131
 	},
 	{
+		"name": "Naikuli",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.66815",
+		"longitude": "88.09962",
+		"population": 1564,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715583
+	},
+	{
 		"name": "Nailā",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1434862,6 +1435378,18 @@
 		"population": 4734,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1261806
+	},
+	{
+		"name": "Narendrapur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.64782",
+		"longitude": "88.07226",
+		"population": 7416,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715584
 	},
 	{
 		"name": "Nargund",
@@ -1436542,6 +1437070,18 @@
 		"population": 8391,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10436050
+	},
+	{
+		"name": "Nimabalia",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.6456",
+		"longitude": "88.10574",
+		"population": 2654,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715578
 	},
 	{
 		"name": "Nimach",
@@ -1442796,6 +1443336,18 @@
 		"geonameId": 1259602
 	},
 	{
+		"name": "Pīparwāni",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "MP",
+		"stateName": "Madhya Pradesh",
+		"latitude": "21.66041",
+		"longitude": "79.57014",
+		"population": 2746,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1259595
+	},
+	{
 		"name": "Pipāvāv Bandar",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1446084,6 +1446636,18 @@
 		"geonameId": 1258740
 	},
 	{
+		"name": "Ramanathbati",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.65196",
+		"longitude": "88.10517",
+		"population": 1686,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715582
+	},
+	{
 		"name": "Ramanattukara",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1446478,6 +1447042,18 @@
 		"population": 25074,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1274021
+	},
+	{
+		"name": "Rampur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.6385",
+		"longitude": "88.12391",
+		"population": 1642,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715579
 	},
 	{
 		"name": "Rāmpur",
@@ -1448470,6 +1449046,18 @@
 		"population": 14818,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1257879
+	},
+	{
+		"name": "Sadipara",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.6759",
+		"longitude": "88.13114",
+		"population": 644,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715571
 	},
 	{
 		"name": "Sādpalli",
@@ -1455768,6 +1456356,18 @@
 		"geonameId": 13157108
 	},
 	{
+		"name": "Sukhpur Solhani",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.064",
+		"longitude": "86.54362",
+		"population": 10281,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1255540
+	},
+	{
 		"name": "Sukma",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1457844,6 +1458444,30 @@
 		"geonameId": 12523317
 	},
 	{
+		"name": "Telihati",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "22.6969",
+		"longitude": "88.11438",
+		"population": 2186,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13715575
+	},
+	{
+		"name": "Telīya",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "MP",
+		"stateName": "Madhya Pradesh",
+		"latitude": "21.68367",
+		"longitude": "79.37503",
+		"population": 805,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10470724
+	},
+	{
 		"name": "Telkap",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1457878,6 +1458502,18 @@
 		"population": 14274,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 13353431
+	},
+	{
+		"name": "Telwa",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "26.0877",
+		"longitude": "86.51703",
+		"population": 10269,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11725250
 	},
 	{
 		"name": "Temanūr",
@@ -1460734,6 +1461370,18 @@
 		"population": 32134,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1254043
+	},
+	{
+		"name": "Turiya",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "MP",
+		"stateName": "Madhya Pradesh",
+		"latitude": "21.7358",
+		"longitude": "79.3675",
+		"population": 1999,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10470704
 	},
 	{
 		"name": "Turuvekere",
@@ -1473636,18 +1474284,6 @@
 		"geonameId": 140889
 	},
 	{
-		"name": "Bonārdān",
-		"countryCode": "IR",
-		"countryName": "Iran",
-		"stateCode": "23",
-		"stateName": "Hormozgan",
-		"latitude": "26.615",
-		"longitude": "57.0918",
-		"population": 599,
-		"timezone": "Asia/Tehran",
-		"geonameId": 140300
-	},
-	{
 		"name": "Boncheleh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1473658,6 +1474294,18 @@
 		"population": 570,
 		"timezone": "Asia/Tehran",
 		"geonameId": 819
+	},
+	{
+		"name": "Bondārān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "23",
+		"stateName": "Hormozgan",
+		"latitude": "26.61472",
+		"longitude": "57.09127",
+		"population": 599,
+		"timezone": "Asia/Tehran",
+		"geonameId": 140300
 	},
 	{
 		"name": "Bondārūz",
@@ -1476689,8 +1477337,8 @@
 		"countryName": "Iran",
 		"stateCode": "15",
 		"stateName": "Kerman",
-		"latitude": "28.5744",
-		"longitude": "57.7922",
+		"latitude": "28.57394",
+		"longitude": "57.792",
 		"population": 3217,
 		"timezone": "Asia/Tehran",
 		"geonameId": 136053
@@ -1479185,8 +1479833,8 @@
 		"countryName": "Iran",
 		"stateCode": "23",
 		"stateName": "Hormozgan",
-		"latitude": "26.5892",
-		"longitude": "57.093",
+		"latitude": "26.58824",
+		"longitude": "57.09361",
 		"population": 4008,
 		"timezone": "Asia/Tehran",
 		"geonameId": 133930
@@ -1485989,8 +1486637,8 @@
 		"countryName": "Iran",
 		"stateCode": "23",
 		"stateName": "Hormozgan",
-		"latitude": "26.7379",
-		"longitude": "57.1019",
+		"latitude": "26.74058",
+		"longitude": "57.10534",
 		"population": 876,
 		"timezone": "Asia/Tehran",
 		"geonameId": 128272
@@ -1489097,8 +1489745,8 @@
 		"countryName": "Iran",
 		"stateCode": "15",
 		"stateName": "Kerman",
-		"latitude": "28.5627",
-		"longitude": "57.8244",
+		"latitude": "28.56285",
+		"longitude": "57.82499",
 		"population": 968,
 		"timezone": "Asia/Tehran",
 		"geonameId": 46168
@@ -1493016,6 +1493664,18 @@
 		"geonameId": 120474
 	},
 	{
+		"name": "Qal‘eh-ye Shīān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "17",
+		"stateName": "Kermanshah Province",
+		"latitude": "34.0656",
+		"longitude": "46.69834",
+		"population": 1923,
+		"timezone": "Asia/Tehran",
+		"geonameId": 24466
+	},
+	{
 		"name": "Qalāt",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1494274,6 +1494934,18 @@
 		"population": 594590,
 		"timezone": "Asia/Tehran",
 		"geonameId": 118743
+	},
+	{
+		"name": "Rasht Kolā",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "21",
+		"stateName": "Māzandarān",
+		"latitude": "36.4768",
+		"longitude": "52.40924",
+		"population": 2669,
+		"timezone": "Asia/Tehran",
+		"geonameId": 118756
 	},
 	{
 		"name": "Rashtābād",
@@ -2106017,8 +2106689,8 @@
 		"countryName": "Pakistan",
 		"stateCode": "SD",
 		"stateName": "Sindh",
-		"latitude": "28.04558",
-		"longitude": "68.07152",
+		"latitude": "28.04548",
+		"longitude": "68.07094",
 		"population": 1400,
 		"timezone": "Asia/Karachi",
 		"geonameId": 13607780
@@ -2108530,18 +2109202,6 @@
 		"population": 30429,
 		"timezone": "Asia/Karachi",
 		"geonameId": 1170584
-	},
-	{
-		"name": "Mehar Ali Brohi",
-		"countryCode": "PK",
-		"countryName": "Pakistan",
-		"stateCode": "SD",
-		"stateName": "Sindh",
-		"latitude": "28.05585",
-		"longitude": "67.97037",
-		"population": 1500,
-		"timezone": "Asia/Karachi",
-		"geonameId": 13607858
 	},
 	{
 		"name": "Mehmand Chak",
@@ -2286305,8 +2286965,8 @@
 		"countryName": "Russia",
 		"stateCode": "ROS",
 		"stateName": "Rostov",
-		"latitude": "48.52716",
-		"longitude": "40.33144",
+		"latitude": "48.52713",
+		"longitude": "40.33135",
 		"population": 11225,
 		"timezone": "Europe/Moscow",
 		"geonameId": 561146
@@ -2301941,8 +2302601,8 @@
 		"countryName": "Russia",
 		"stateCode": "ROS",
 		"stateName": "Rostov",
-		"latitude": "48.40372",
-		"longitude": "40.26064",
+		"latitude": "48.40457",
+		"longitude": "40.25934",
 		"population": 8948,
 		"timezone": "Europe/Moscow",
 		"geonameId": 464130
@@ -2310154,18 +2310814,6 @@
 		"population": 3683,
 		"timezone": "Europe/Moscow",
 		"geonameId": 514042
-	},
-	{
-		"name": "Osyno",
-		"countryCode": "RU",
-		"countryName": "Russia",
-		"stateCode": "PSK",
-		"stateName": "Pskov Oblast",
-		"latitude": "56.15053",
-		"longitude": "28.6758",
-		"population": 0,
-		"timezone": "Europe/Moscow",
-		"geonameId": 513998
 	},
 	{
 		"name": "Otkaznoye",
@@ -2409612,6 +2410260,18 @@
 		"geonameId": 13715537
 	},
 	{
+		"name": "Abide",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.71953",
+		"longitude": "43.04616",
+		"population": 14958,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715599
+	},
+	{
 		"name": "Acarlar",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2412276,6 +2412936,18 @@
 		"geonameId": 13715524
 	},
 	{
+		"name": "Alpaslan",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.71148",
+		"longitude": "43.05237",
+		"population": 3603,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715610
+	},
+	{
 		"name": "Alpköy",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2413606,6 +2414278,18 @@
 		"population": 966,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 306273
+	},
+	{
+		"name": "Aşağıküpkıran",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.70383",
+		"longitude": "43.0561",
+		"population": 1740,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 323268
 	},
 	{
 		"name": "Aşağımülk",
@@ -2415310,6 +2415994,18 @@
 		"population": 1693,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13713200
+	},
+	{
+		"name": "Bahçelievler",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.72626",
+		"longitude": "43.05062",
+		"population": 2373,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715613
 	},
 	{
 		"name": "Bahçelievler Mahallesi",
@@ -2423220,6 +2423916,18 @@
 		"geonameId": 13715527
 	},
 	{
+		"name": "Cumhuriyet",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.71743",
+		"longitude": "43.05842",
+		"population": 4455,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715607
+	},
+	{
 		"name": "Cumhuriyet Mahallesi",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2428428,6 +2429136,18 @@
 		"geonameId": 13715507
 	},
 	{
+		"name": "Fatih",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.73071",
+		"longitude": "43.04975",
+		"population": 8887,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715601
+	},
+	{
 		"name": "Fatsa",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2428548,6 +2429268,18 @@
 		"geonameId": 10641832
 	},
 	{
+		"name": "Fevzi Çakmak",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.71395",
+		"longitude": "43.04218",
+		"population": 2215,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715614
+	},
+	{
 		"name": "Fevziçakmak",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2428632,6 +2429364,18 @@
 		"geonameId": 314925
 	},
 	{
+		"name": "Fırat",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.71514",
+		"longitude": "43.03404",
+		"population": 29007,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715598
+	},
+	{
 		"name": "Fırdan",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2428702,6 +2429446,18 @@
 		"population": 1283,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 314822
+	},
+	{
+		"name": "Gazi",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.72528",
+		"longitude": "43.04426",
+		"population": 5801,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715605
 	},
 	{
 		"name": "Gaziantep",
@@ -2433982,6 +2434738,18 @@
 		"population": 5042,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13715560
+	},
+	{
+		"name": "Hürriyet",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.72363",
+		"longitude": "43.05733",
+		"population": 4262,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715608
 	},
 	{
 		"name": "Hüsametli",
@@ -2439384,6 +2440152,18 @@
 		"geonameId": 743598
 	},
 	{
+		"name": "Kazım Karabekir",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.72809",
+		"longitude": "43.0563",
+		"population": 7000,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715603
+	},
+	{
 		"name": "Kazım Karabekir Mahallesi",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2443464,6 +2444244,18 @@
 		"geonameId": 305460
 	},
 	{
+		"name": "Kurtuluş",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.71037",
+		"longitude": "43.04663",
+		"population": 2567,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715612
+	},
+	{
 		"name": "Kürtün",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2444052,6 +2444844,18 @@
 		"geonameId": 7669145
 	},
 	{
+		"name": "Leylek Pınar",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.72073",
+		"longitude": "43.05871",
+		"population": 3620,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715609
+	},
+	{
 		"name": "Lice",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2444626,6 +2445430,18 @@
 		"population": 1889,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 303085
+	},
+	{
+		"name": "Mehmet Akif Ersoy",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.7136",
+		"longitude": "43.07253",
+		"population": 7637,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715602
 	},
 	{
 		"name": "Mehmet Akif Ersoy Mahallesi",
@@ -2445418,6 +2446234,18 @@
 		"population": 1437,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13715513
+	},
+	{
+		"name": "Murat",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.71177",
+		"longitude": "43.05806",
+		"population": 3214,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715611
 	},
 	{
 		"name": "Muratbey",
@@ -2452284,6 +2453112,18 @@
 		"geonameId": 739554
 	},
 	{
+		"name": "Sıtkıye",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.71657",
+		"longitude": "43.04712",
+		"population": 5903,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715604
+	},
+	{
 		"name": "Sofular",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2457780,6 +2458620,18 @@
 		"geonameId": 297542
 	},
 	{
+		"name": "Yavuz",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.72148",
+		"longitude": "43.04985",
+		"population": 5752,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715606
+	},
+	{
 		"name": "Yavuzeli",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2460646,6 +2461498,18 @@
 		"population": 1936,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 737108
+	},
+	{
+		"name": "Yüzüncü Yıl",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.70278",
+		"longitude": "43.03899",
+		"population": 11489,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13715600
 	},
 	{
 		"name": "Zafer",
@@ -2533495,7 +2534359,7 @@
 		"stateName": "Luwero District",
 		"latitude": "0.57387",
 		"longitude": "32.51545",
-		"population": 29600,
+		"population": 26370,
 		"timezone": "Africa/Kampala",
 		"geonameId": 234717
 	},
@@ -2533543,7 +2534407,7 @@
 		"stateName": "Jinja District",
 		"latitude": "0.48213",
 		"longitude": "33.24065",
-		"population": 45600,
+		"population": 33100,
 		"timezone": "Africa/Kampala",
 		"geonameId": 234578
 	},
@@ -2533843,7 +2534707,7 @@
 		"stateName": "Jinja District",
 		"latitude": "0.64996",
 		"longitude": "33.17128",
-		"population": 24200,
+		"population": 30377,
 		"timezone": "Africa/Kampala",
 		"geonameId": 233886
 	},
@@ -2533987,7 +2534851,7 @@
 		"stateName": "Kasese District",
 		"latitude": "0.34889",
 		"longitude": "30.16222",
-		"population": 15000,
+		"population": 14700,
 		"timezone": "Africa/Kampala",
 		"geonameId": 233315
 	},
@@ -2534047,7 +2534911,7 @@
 		"stateName": "Bushenyi District",
 		"latitude": "-0.54306",
 		"longitude": "30.13694",
-		"population": 43700,
+		"population": 41063,
 		"timezone": "Africa/Kampala",
 		"geonameId": 448001
 	},
@@ -2534131,7 +2534995,7 @@
 		"stateName": "Wakiso District",
 		"latitude": "0.21548",
 		"longitude": "32.53453",
-		"population": 135600,
+		"population": 155058,
 		"timezone": "Africa/Kampala",
 		"geonameId": 232713
 	},
@@ -2534143,7 +2535007,7 @@
 		"stateName": "Jinja District",
 		"latitude": "0.50833",
 		"longitude": "33.28778",
-		"population": 35800,
+		"population": 42854,
 		"timezone": "Africa/Kampala",
 		"geonameId": 232661
 	},
@@ -2534203,7 +2535067,7 @@
 		"stateName": "Kyotera District",
 		"latitude": "-0.53639",
 		"longitude": "31.62139",
-		"population": 15200,
+		"population": 31439,
 		"timezone": "Africa/Kampala",
 		"geonameId": 232522
 	},
@@ -2534347,7 +2535211,7 @@
 		"stateName": "Wakiso District",
 		"latitude": "0.43803",
 		"longitude": "32.60246",
-		"population": 207800,
+		"population": 277685,
 		"timezone": "Africa/Kampala",
 		"geonameId": 232110
 	},
@@ -2534551,7 +2535415,7 @@
 		"stateName": "Kanungu District",
 		"latitude": "-0.75",
 		"longitude": "29.7",
-		"population": 21800,
+		"population": 20349,
 		"timezone": "Africa/Kampala",
 		"geonameId": 231383
 	},
@@ -2534923,7 +2535787,7 @@
 		"stateName": "Buikwe District",
 		"latitude": "0.36788",
 		"longitude": "32.9376",
-		"population": 128400,
+		"population": 129795,
 		"timezone": "Africa/Kampala",
 		"geonameId": 229911
 	},
@@ -2534935,7 +2535799,7 @@
 		"stateName": "Kalungu District",
 		"latitude": "-0.11306",
 		"longitude": "31.85389",
-		"population": 25600,
+		"population": 32825,
 		"timezone": "Africa/Kampala",
 		"geonameId": 229872
 	},
@@ -2535451,7 +2536315,7 @@
 		"stateName": "Buikwe District",
 		"latitude": "0.44166",
 		"longitude": "33.17917",
-		"population": 178800,
+		"population": 201484,
 		"timezone": "Africa/Kampala",
 		"geonameId": 227812
 	},
@@ -2535643,7 +2536507,7 @@
 		"stateName": "Zombo District",
 		"latitude": "2.41669",
 		"longitude": "30.98551",
-		"population": 37500,
+		"population": 42733,
 		"timezone": "Africa/Kampala",
 		"geonameId": 226853
 	},

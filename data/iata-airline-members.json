@@ -3213,6 +3213,15 @@
 		"countryCode": "NG"
 	},
 	{
+		"name": "Universal Air",
+		"iataDesignator": "VO",
+		"accountingCode": "676",
+		"icaoCode": "UVL",
+		"countryName": "Malta",
+		"controlledDuplicate": false,
+		"countryCode": "MT"
+	},
+	{
 		"name": "UPS Airlines",
 		"iataDesignator": "5X",
 		"accountingCode": "406",
