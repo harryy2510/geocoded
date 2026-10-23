@@ -976,11 +976,11 @@
 		"countryCode": "DK",
 		"countryName": "Denmark",
 		"us": {
-			"destination": "Kingdom of Denmark",
+			"destination": "Denmark",
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2024-09-17",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/denmark-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dnk.html"
 		},
 		"uk": {
 			"destination": "Denmark",
@@ -1193,7 +1193,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2024-12-02",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/fiji-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fji.html"
 		},
 		"uk": {
 			"destination": "Fiji",
@@ -1249,7 +1249,7 @@
 		"uk": {
 			"destination": "France",
 			"alertStatus": [],
-			"updatedAt": "2026-10-19T17:40:21Z",
+			"updatedAt": "2026-10-22T16:57:33Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/france"
 		}
 	},
@@ -1379,7 +1379,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2024-10-29",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/greenland-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.grl.html"
 		},
 		"uk": null
 	},
@@ -1430,7 +1430,7 @@
 		"uk": {
 			"destination": "Guadeloupe",
 			"alertStatus": [],
-			"updatedAt": "2025-12-10T13:54:06Z",
+			"updatedAt": "2026-10-22T17:02:17Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/guadeloupe"
 		}
 	},
@@ -1673,7 +1673,7 @@
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
 			"updated": "2026-08-26",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/israel-west-bank-and-gaza-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.isr.html"
 		},
 		"uk": {
 			"destination": "Israel",
@@ -1917,7 +1917,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2024-12-02",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/kiribati-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kir.html"
 		},
 		"uk": {
 			"destination": "Kiribati",
@@ -2657,7 +2657,7 @@
 			"level": 2,
 			"levelLabel": "Exercise Increased Caution",
 			"updated": "2026-05-21",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/new-caledonia-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ncl.html"
 		},
 		"uk": {
 			"destination": "New Caledonia",
@@ -2782,13 +2782,7 @@
 	{
 		"countryCode": "NR",
 		"countryName": "Nauru",
-		"us": {
-			"destination": "Nauru",
-			"level": 1,
-			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2024-12-02",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/nauru-travel-advisory.html"
-		},
+		"us": null,
 		"uk": {
 			"destination": "Nauru",
 			"alertStatus": [],
@@ -2884,8 +2878,8 @@
 			"destination": "French Polynesia",
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
-			"updated": "2024-12-02",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/french-polynesia-travel-advisory.html"
+			"updated": "2026-12-02",
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pyf.html"
 		},
 		"uk": {
 			"destination": "French Polynesia",
@@ -3005,7 +2999,7 @@
 			"level": 4,
 			"levelLabel": "Do Not Travel",
 			"updated": "2026-08-26",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/Gaza.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.xgz.html"
 		},
 		"uk": {
 			"destination": "Palestine",
@@ -3092,7 +3086,7 @@
 		"uk": {
 			"destination": "Réunion",
 			"alertStatus": [],
-			"updatedAt": "2025-12-10T13:30:27Z",
+			"updatedAt": "2026-10-22T17:05:28Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/reunion"
 		}
 	},
@@ -3126,7 +3120,7 @@
 		"uk": {
 			"destination": "Serbia",
 			"alertStatus": [],
-			"updatedAt": "2026-08-13T15:18:02Z",
+			"updatedAt": "2026-10-22T09:20:25Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/serbia"
 		}
 	},
@@ -3736,7 +3730,7 @@
 			"level": 1,
 			"levelLabel": "Exercise Normal Precautions",
 			"updated": "2024-12-02",
-			"url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/tuvalu-travel-advisory.html"
+			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tuv.html"
 		},
 		"uk": {
 			"destination": "Tuvalu",
