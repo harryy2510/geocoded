@@ -18457,7 +18457,7 @@
 		}
 	},
 	{
-		"name": "Southern District",
+		"name": "Stann Creek",
 		"iso2": "SC",
 		"iso31662": "BZ-SC",
 		"countryCode": "BZ",
@@ -18469,10 +18469,10 @@
 		"capital": "Dangriga",
 		"population": 41032,
 		"type": "district",
-		"native": "Southern District",
+		"native": "Stann Creek",
 		"wikidataId": "Q502652",
 		"translations": {
-			"en": "Southern District",
+			"en": "Stann Creek",
 			"fr": "Stann Creek",
 			"de": "Stann Creek District",
 			"hi": "स्टेन क्रीक जिला",

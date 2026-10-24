@@ -103423,7 +103423,7 @@
 		"stateName": "New South Wales",
 		"latitude": "-33.43972",
 		"longitude": "151.29453",
-		"population": 6305,
+		"population": 6510,
 		"timezone": "Australia/Sydney",
 		"geonameId": 8348614
 	},
@@ -206976,7 +206976,7 @@
 		"geonameId": 3398923
 	},
 	{
-		"name": "Glória d'Oeste",
+		"name": "Glória d’Oeste",
 		"countryCode": "BR",
 		"countryName": "Brazil",
 		"stateCode": "MT",
@@ -214896,6 +214896,18 @@
 		"geonameId": 7615262
 	},
 	{
+		"name": "Jardim Presidente Dutra",
+		"countryCode": "BR",
+		"countryName": "Brazil",
+		"stateCode": "SP",
+		"stateName": "São Paulo",
+		"latitude": "-23.43111",
+		"longitude": "-46.42639",
+		"population": 465467,
+		"timezone": "America/Sao_Paulo",
+		"geonameId": 6317370
+	},
+	{
 		"name": "Jardim Sao Luis",
 		"countryCode": "BR",
 		"countryName": "Brazil",
@@ -218712,7 +218724,7 @@
 		"geonameId": 6317499
 	},
 	{
-		"name": "Machadinho d'Oeste",
+		"name": "Machadinho d’Oeste",
 		"countryCode": "BR",
 		"countryName": "Brazil",
 		"stateCode": "RO",
@@ -228888,7 +228900,7 @@
 		"geonameId": 6317900
 	},
 	{
-		"name": "Pau d'Arco do Piauí",
+		"name": "Pau d’Arco do Piauí",
 		"countryCode": "BR",
 		"countryName": "Brazil",
 		"stateCode": "PI",
@@ -230664,7 +230676,7 @@
 		"geonameId": 3392075
 	},
 	{
-		"name": "Pingo-d'Água",
+		"name": "Pingo-d’Água",
 		"countryCode": "BR",
 		"countryName": "Brazil",
 		"stateCode": "MG",
@@ -259972,7 +259984,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.56667",
 		"longitude": "-88.53333",
 		"population": 1582,
@@ -260020,7 +260032,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.9697",
 		"longitude": "-88.23313",
 		"population": 9927,
@@ -260176,7 +260188,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.65322",
 		"longitude": "-88.50783",
 		"population": 659,
@@ -260236,7 +260248,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "17.00265",
 		"longitude": "-88.31251",
 		"population": 1244,
@@ -260248,7 +260260,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.86308",
 		"longitude": "-88.28437",
 		"population": 1767,
@@ -260260,7 +260272,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.5344",
 		"longitude": "-88.41878",
 		"population": 4878,
@@ -260416,7 +260428,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.79843",
 		"longitude": "-88.38235",
 		"population": 731,
@@ -260428,7 +260440,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.66018",
 		"longitude": "-88.52542",
 		"population": 998,
@@ -260512,7 +260524,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.51419",
 		"longitude": "-88.36647",
 		"population": 4300,
@@ -260524,7 +260536,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.99514",
 		"longitude": "-88.37424",
 		"population": 2122,
@@ -260584,7 +260596,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.61645",
 		"longitude": "-88.55911",
 		"population": 2323,
@@ -260788,7 +260800,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.56232",
 		"longitude": "-88.51528",
 		"population": 1039,
@@ -260908,7 +260920,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.65281",
 		"longitude": "-88.47416",
 		"population": 2195,
@@ -260968,7 +260980,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.6975",
 		"longitude": "-88.42548",
 		"population": 3008,
@@ -261016,7 +261028,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.6662",
 		"longitude": "-88.45437",
 		"population": 1958,
@@ -261028,7 +261040,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.97145",
 		"longitude": "-88.2738",
 		"population": 926,
@@ -261052,7 +261064,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.56943",
 		"longitude": "-88.36493",
 		"population": 1895,
@@ -261088,7 +261100,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.88333",
 		"longitude": "-88.33333",
 		"population": 2627,
@@ -261148,7 +261160,7 @@
 		"countryCode": "BZ",
 		"countryName": "Belize",
 		"stateCode": "SC",
-		"stateName": "Southern District",
+		"stateName": "Stann Creek",
 		"latitude": "16.99913",
 		"longitude": "-88.42445",
 		"population": 694,
@@ -262126,6 +262138,18 @@
 		"population": 30526,
 		"timezone": "America/Toronto",
 		"geonameId": 12156871
+	},
+	{
+		"name": "Annjennete Park",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.61298",
+		"longitude": "-52.72675",
+		"population": 700,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731643
 	},
 	{
 		"name": "Anten Mills",
@@ -285970,6 +285994,18 @@
 		"population": 876,
 		"timezone": "America/Halifax",
 		"geonameId": 6093437
+	},
+	{
+		"name": "O'Leary's",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.56237",
+		"longitude": "-52.77263",
+		"population": 4000,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731644
 	},
 	{
 		"name": "Oak Bay",
@@ -413182,6 +413218,18 @@
 		"population": 0,
 		"timezone": "Asia/Shanghai",
 		"geonameId": 8523299
+	},
+	{
+		"name": "Chuanhui",
+		"countryCode": "CN",
+		"countryName": "China",
+		"stateCode": "HA",
+		"stateName": "Henan",
+		"latitude": "33.62611",
+		"longitude": "114.64917",
+		"population": 0,
+		"timezone": "",
+		"geonameId": 13724417
 	},
 	{
 		"name": "Chuanliao",
@@ -1520851,7 +1520899,7 @@
 		"stateName": "Provincia di Varese",
 		"latitude": "45.61128",
 		"longitude": "8.84914",
-		"population": 83405,
+		"population": 82538,
 		"timezone": "Europe/Rome",
 		"geonameId": 3181355
 	},
@@ -1691340,6 +1691388,18 @@
 		"geonameId": 11523293
 	},
 	{
+		"name": "Sejong",
+		"countryCode": "KR",
+		"countryName": "South Korea",
+		"stateCode": "50",
+		"stateName": "Sejong-si",
+		"latitude": "36.48039",
+		"longitude": "127.28821",
+		"population": 0,
+		"timezone": "Asia/Seoul",
+		"geonameId": 13715696
+	},
+	{
 		"name": "Seodong",
 		"countryCode": "KR",
 		"countryName": "South Korea",
@@ -1783661,8 +1783721,8 @@
 		"countryName": "Mexico",
 		"stateCode": "MEX",
 		"stateName": "México",
-		"latitude": "19.63765",
-		"longitude": "-99.27178",
+		"latitude": "19.63745",
+		"longitude": "-99.27145",
 		"population": 1335,
 		"timezone": "America/Mexico_City",
 		"geonameId": 11537044
@@ -1841765,8 +1841825,8 @@
 		"countryName": "Mexico",
 		"stateCode": "MEX",
 		"stateName": "México",
-		"latitude": "19.70232",
-		"longitude": "-99.11237",
+		"latitude": "19.70341",
+		"longitude": "-99.11195",
 		"population": 3288,
 		"timezone": "America/Mexico_City",
 		"geonameId": 11537089
@@ -1847237,8 +1847297,8 @@
 		"countryName": "Mexico",
 		"stateCode": "MEX",
 		"stateName": "México",
-		"latitude": "19.52416",
-		"longitude": "-99.58565",
+		"latitude": "19.52397",
+		"longitude": "-99.58591",
 		"population": 896,
 		"timezone": "America/Mexico_City",
 		"geonameId": 11544560
@@ -1879697,8 +1879757,8 @@
 		"countryName": "Mexico",
 		"stateCode": "MEX",
 		"stateName": "México",
-		"latitude": "20.08865",
-		"longitude": "-99.73459",
+		"latitude": "20.08836",
+		"longitude": "-99.73437",
 		"population": 919,
 		"timezone": "America/Mexico_City",
 		"geonameId": 11634542
@@ -1886513,8 +1886573,8 @@
 		"countryName": "Mexico",
 		"stateCode": "MEX",
 		"stateName": "México",
-		"latitude": "19.76731",
-		"longitude": "-99.62955",
+		"latitude": "19.77464",
+		"longitude": "-99.63965",
 		"population": 565,
 		"timezone": "America/Mexico_City",
 		"geonameId": 11534828
@@ -1896545,8 +1896605,8 @@
 		"countryName": "Mexico",
 		"stateCode": "MEX",
 		"stateName": "México",
-		"latitude": "20.07156",
-		"longitude": "-99.69393",
+		"latitude": "20.07414",
+		"longitude": "-99.69822",
 		"population": 1852,
 		"timezone": "America/Mexico_City",
 		"geonameId": 11634544
@@ -1984980,6 +1985040,18 @@
 		"geonameId": 2749552
 	},
 	{
+		"name": "Oost-Souburg",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "ZE",
+		"stateName": "Zeeland",
+		"latitude": "51.46333",
+		"longitude": "3.60417",
+		"population": 10370,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2749341
+	},
+	{
 		"name": "Oost-Vlieland",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1990510,6 +1990582,18 @@
 		"population": 2175,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745753
+	},
+	{
+		"name": "Veere",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "ZE",
+		"stateName": "Zeeland",
+		"latitude": "51.54833",
+		"longitude": "3.66667",
+		"population": 1640,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2745739
 	},
 	{
 		"name": "Veessen",
@@ -2374260,6 +2374344,18 @@
 		"geonameId": 11054693
 	},
 	{
+		"name": "Sebedražie",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.72947",
+		"longitude": "18.62257",
+		"population": 1663,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3057723
+	},
+	{
 		"name": "Sečovce",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2434764,6 +2434860,18 @@
 		"geonameId": 311903
 	},
 	{
+		"name": "Hoşhaber",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "76",
+		"stateName": "Iğdır",
+		"latitude": "39.90856",
+		"longitude": "43.96645",
+		"population": 2732,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 311891
+	},
+	{
 		"name": "Hotamış",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2445552,6 +2445660,18 @@
 		"geonameId": 13697181
 	},
 	{
+		"name": "Melekli",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "76",
+		"stateName": "Iğdır",
+		"latitude": "39.94486",
+		"longitude": "44.09283",
+		"population": 3452,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13697219
+	},
+	{
 		"name": "Melikgazi",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2454365,11 +2454485,11 @@
 		"countryName": "Turkey",
 		"stateCode": "04",
 		"stateName": "Ağrı",
-		"latitude": "39.85586",
-		"longitude": "42.42834",
-		"population": 0,
+		"latitude": "39.86319",
+		"longitude": "42.43817",
+		"population": 1534,
 		"timezone": "Europe/Istanbul",
-		"geonameId": 299958
+		"geonameId": 8694518
 	},
 	{
 		"name": "Tahılalan",
@@ -2458908,6 +2459028,18 @@
 		"geonameId": 297461
 	},
 	{
+		"name": "Yayladüzü",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.82297",
+		"longitude": "42.30397",
+		"population": 2061,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 297459
+	},
+	{
 		"name": "Yaylageriş",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2460958,6 +2461090,18 @@
 		"population": 0,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 296555
+	},
+	{
+		"name": "Yücekapı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "04",
+		"stateName": "Ağrı",
+		"latitude": "39.75295",
+		"longitude": "42.7386",
+		"population": 2019,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 296552
 	},
 	{
 		"name": "Yukarı",

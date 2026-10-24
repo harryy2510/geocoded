@@ -23,7 +23,7 @@
 			"destination": "United Arab Emirates",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-08-29",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.are.html"
 		},
 		"uk": {
@@ -260,7 +260,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-08T13:13:24Z",
+			"updatedAt": "2026-10-23T12:44:51Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/azerbaijan"
 		}
 	},
@@ -377,7 +377,7 @@
 			"destination": "Bahrain",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-08-27",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bhr.html"
 		},
 		"uk": {
@@ -1672,7 +1672,7 @@
 			"destination": "Israel",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-08-26",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.isr.html"
 		},
 		"uk": {
@@ -1728,7 +1728,7 @@
 			"destination": "Iraq",
 			"level": 4,
 			"levelLabel": "Do Not Travel",
-			"updated": "2026-08-29",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irq.html"
 		},
 		"uk": {
@@ -1748,7 +1748,7 @@
 			"destination": "Iran",
 			"level": 4,
 			"levelLabel": "Do Not Travel",
-			"updated": "2025-12-05",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irn.html"
 		},
 		"uk": {
@@ -1824,7 +1824,7 @@
 			"destination": "Jordan",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-08-29",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.jor.html"
 		},
 		"uk": {
@@ -1832,7 +1832,7 @@
 			"alertStatus": [
 				"avoid_all_travel_to_parts"
 			],
-			"updatedAt": "2026-09-10T11:30:28Z",
+			"updatedAt": "2026-10-23T13:49:26Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/jordan"
 		}
 	},
@@ -2003,7 +2003,7 @@
 			"destination": "Kuwait",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-08-28",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kwt.html"
 		},
 		"uk": {
@@ -2073,7 +2073,7 @@
 			"destination": "Lebanon",
 			"level": 4,
 			"levelLabel": "Do Not Travel",
-			"updated": "2026-08-21",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.lbn.html"
 		},
 		"uk": {
@@ -2466,7 +2466,7 @@
 		"uk": {
 			"destination": "Martinique",
 			"alertStatus": [],
-			"updatedAt": "2025-12-10T13:37:46Z",
+			"updatedAt": "2026-10-23T15:16:42Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/martinique"
 		}
 	},
@@ -2681,7 +2681,7 @@
 			"alertStatus": [
 				"avoid_all_travel_to_whole_country"
 			],
-			"updatedAt": "2026-08-29T14:30:01Z",
+			"updatedAt": "2026-10-23T15:14:29Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/niger"
 		}
 	},
@@ -2825,7 +2825,7 @@
 			"destination": "Oman",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-08-30",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.omn.html"
 		},
 		"uk": {
@@ -3069,7 +3069,7 @@
 			"destination": "Qatar",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-08-28",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.qat.html"
 		},
 		"uk": {
@@ -3169,7 +3169,7 @@
 			"destination": "Saudi Arabia",
 			"level": 3,
 			"levelLabel": "Reconsider Travel",
-			"updated": "2026-10-12",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sau.html"
 		},
 		"uk": {
@@ -3212,7 +3212,7 @@
 		"uk": {
 			"destination": "Seychelles",
 			"alertStatus": [],
-			"updatedAt": "2026-10-20T13:59:57Z",
+			"updatedAt": "2026-10-23T15:17:13Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/seychelles"
 		}
 	},
@@ -3478,7 +3478,7 @@
 			"destination": "Syria",
 			"level": 4,
 			"levelLabel": "Do Not Travel",
-			"updated": "2026-08-07",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.syr.html"
 		},
 		"uk": {
@@ -4015,7 +4015,7 @@
 			"destination": "Yemen",
 			"level": 4,
 			"levelLabel": "Do Not Travel",
-			"updated": "2026-10-10",
+			"updated": "2026-10-23",
 			"url": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.yem.html"
 		},
 		"uk": {
