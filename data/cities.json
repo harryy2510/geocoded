@@ -142968,6 +142968,18 @@
 		"geonameId": 1211189
 	},
 	{
+		"name": "Bānār Hāola",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.1104",
+		"longitude": "90.56487",
+		"population": 7675,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1211115
+	},
+	{
 		"name": "Bāndarban",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -142992,6 +143004,18 @@
 		"geonameId": 1185274
 	},
 	{
+		"name": "Barajona",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.0869",
+		"longitude": "90.57612",
+		"population": 1636,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1210426
+	},
+	{
 		"name": "Barishal",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143002,6 +143026,18 @@
 		"population": 202242,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1336137
+	},
+	{
+		"name": "Bārun",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.07957",
+		"longitude": "90.56077",
+		"population": 5045,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1210038
 	},
 	{
 		"name": "Bera",
@@ -143124,14 +143160,14 @@
 		"geonameId": 1208731
 	},
 	{
-		"name": "Bogra",
+		"name": "Bogura",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
 		"stateCode": "5010",
 		"stateName": "Bogra",
 		"latitude": "24.85098",
 		"longitude": "89.37108",
-		"population": 210000,
+		"population": 421858,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1337233
 	},
@@ -143143,7 +143179,7 @@
 		"stateName": "Brahmanbaria",
 		"latitude": "23.97464",
 		"longitude": "91.11228",
-		"population": 264326,
+		"population": 279485,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1336142
 	},
@@ -143218,6 +143254,18 @@
 		"population": 18122,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1207144
+	},
+	{
+		"name": "Chārbaria",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.1",
+		"longitude": "90.58333",
+		"population": 595,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1207073
 	},
 	{
 		"name": "Chattogram",
@@ -143350,6 +143398,18 @@
 		"population": 4128,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1205540
+	},
+	{
+		"name": "Dasyu Nārāyanpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.1349",
+		"longitude": "90.54448",
+		"population": 2524,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1203605
 	},
 	{
 		"name": "Daulatdihi",
@@ -143616,6 +143676,18 @@
 		"geonameId": 1185209
 	},
 	{
+		"name": "Habirbāri",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3061",
+		"stateName": "Mymensingh",
+		"latitude": "24.31667",
+		"longitude": "90.4",
+		"population": 64720,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1201792
+	},
+	{
 		"name": "Hājīganj",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143736,6 +143808,18 @@
 		"geonameId": 1185106
 	},
 	{
+		"name": "Jāmirdia",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3061",
+		"stateName": "Mymensingh",
+		"latitude": "24.29429",
+		"longitude": "90.39535",
+		"population": 78893,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1200303
+	},
+	{
 		"name": "Jessore",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143784,6 +143868,18 @@
 		"geonameId": 1185206
 	},
 	{
+		"name": "Junia",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.11092",
+		"longitude": "90.57209",
+		"population": 2182,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1199691
+	},
+	{
 		"name": "Kafrul",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143830,6 +143926,30 @@
 		"population": 45631,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185199
+	},
+	{
+		"name": "Kapasia",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.11404",
+		"longitude": "90.56148",
+		"population": 4137,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 8430421
+	},
+	{
+		"name": "Kardania",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.09012",
+		"longitude": "90.5674",
+		"population": 1966,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1198689
 	},
 	{
 		"name": "Karnaphuli",
@@ -143914,6 +144034,18 @@
 		"population": 2099,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1197342
+	},
+	{
+		"name": "Khudādia",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.09872",
+		"longitude": "90.56803",
+		"population": 4111,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1197352
 	},
 	{
 		"name": "Khulna",
@@ -144511,7 +144643,7 @@
 		"stateName": "Chapai Nababganj",
 		"latitude": "24.59025",
 		"longitude": "88.27444",
-		"population": 142361,
+		"population": 201030,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1337240
 	},
@@ -144574,6 +144706,18 @@
 		"population": 186781,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1336143
+	},
+	{
+		"name": "Pābur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.0885",
+		"longitude": "90.54217",
+		"population": 4684,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1191658
 	},
 	{
 		"name": "Paharpur",
@@ -144888,6 +145032,30 @@
 		"geonameId": 1189638
 	},
 	{
+		"name": "Rāutkona",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.108",
+		"longitude": "90.54857",
+		"population": 2592,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1189640
+	},
+	{
+		"name": "Rāynanda",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.10465",
+		"longitude": "90.57936",
+		"population": 1273,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1189607
+	},
+	{
 		"name": "Saidpur",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144960,6 +145128,18 @@
 		"geonameId": 1188741
 	},
 	{
+		"name": "Sāphāisri",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.1146",
+		"longitude": "90.57447",
+		"population": 3472,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1188692
+	},
+	{
 		"name": "Sarankhola",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -145015,7 +145195,7 @@
 		"stateName": "Dhaka",
 		"latitude": "23.84858",
 		"longitude": "90.25002",
-		"population": 286008,
+		"population": 379115,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1349452
 	},
@@ -145186,6 +145366,18 @@
 		"population": 74570,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185105
+	},
+	{
+		"name": "Surjya Narayanpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3033",
+		"stateName": "Gazipur",
+		"latitude": "24.11801",
+		"longitude": "90.5208",
+		"population": 4537,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1186869
 	},
 	{
 		"name": "Sylhet",
@@ -253481,11 +253673,23 @@
 		"countryName": "Bahamas",
 		"stateCode": "BP",
 		"stateName": "Black Point",
-		"latitude": "24.1",
-		"longitude": "-76.38333",
+		"latitude": "24.09045",
+		"longitude": "-76.39134",
 		"population": 414,
 		"timezone": "America/Nassau",
 		"geonameId": 3572796
+	},
+	{
+		"name": "Bullocks Harbour",
+		"countryCode": "BS",
+		"countryName": "Bahamas",
+		"stateCode": "BY",
+		"stateName": "Berry Islands",
+		"latitude": "25.75205",
+		"longitude": "-77.86895",
+		"population": 342,
+		"timezone": "America/Nassau",
+		"geonameId": 3572716
 	},
 	{
 		"name": "Clarence Town",
@@ -253555,9 +253759,21 @@
 		"stateName": "Harbour Island",
 		"latitude": "25.50216",
 		"longitude": "-76.63633",
-		"population": 1523,
+		"population": 1726,
 		"timezone": "America/Nassau",
 		"geonameId": 3572462
+	},
+	{
+		"name": "Eight Mile Rock",
+		"countryCode": "BS",
+		"countryName": "Bahamas",
+		"stateCode": "WG",
+		"stateName": "West Grand Bahama",
+		"latitude": "26.51667",
+		"longitude": "-78.78333",
+		"population": 9640,
+		"timezone": "America/Nassau",
+		"geonameId": 3572443
 	},
 	{
 		"name": "Freeport",
@@ -253608,6 +253824,18 @@
 		"geonameId": 3572313
 	},
 	{
+		"name": "Grand Cay",
+		"countryCode": "BS",
+		"countryName": "Bahamas",
+		"stateCode": "42",
+		"stateName": "Grand Cay",
+		"latitude": "27.21983",
+		"longitude": "-78.32771",
+		"population": 383,
+		"timezone": "America/Nassau",
+		"geonameId": 11694815
+	},
+	{
 		"name": "Hard Bargain",
 		"countryCode": "BS",
 		"countryName": "Bahamas",
@@ -253632,6 +253860,30 @@
 		"geonameId": 3572189
 	},
 	{
+		"name": "Hope Town",
+		"countryCode": "BS",
+		"countryName": "Bahamas",
+		"stateCode": "43",
+		"stateName": "Hope Town",
+		"latitude": "26.53855",
+		"longitude": "-76.95745",
+		"population": 458,
+		"timezone": "America/Nassau",
+		"geonameId": 3572165
+	},
+	{
+		"name": "Kemps Bay",
+		"countryCode": "BS",
+		"countryName": "Bahamas",
+		"stateCode": "SA",
+		"stateName": "South Andros",
+		"latitude": "24.027",
+		"longitude": "-77.53343",
+		"population": 273,
+		"timezone": "America/Nassau",
+		"geonameId": 3572110
+	},
+	{
 		"name": "Killarney",
 		"countryCode": "BS",
 		"countryName": "Bahamas",
@@ -253654,6 +253906,18 @@
 		"population": 46525,
 		"timezone": "America/Nassau",
 		"geonameId": 3571971
+	},
+	{
+		"name": "Mangrove Cay",
+		"countryCode": "BS",
+		"countryName": "Bahamas",
+		"stateCode": "MC",
+		"stateName": "Mangrove Cay",
+		"latitude": "24.26035",
+		"longitude": "-77.66287",
+		"population": 0,
+		"timezone": "America/Nassau",
+		"geonameId": 3571944
 	},
 	{
 		"name": "Marsh Harbour",
@@ -253740,6 +254004,18 @@
 		"geonameId": 3571523
 	},
 	{
+		"name": "Sandy Point",
+		"countryCode": "BS",
+		"countryName": "Bahamas",
+		"stateCode": "SO",
+		"stateName": "South Abaco",
+		"latitude": "26.02052",
+		"longitude": "-77.39",
+		"population": 547,
+		"timezone": "America/Nassau",
+		"geonameId": 3571500
+	},
+	{
 		"name": "Spanish Wells",
 		"countryCode": "BS",
 		"countryName": "Bahamas",
@@ -253762,6 +254038,18 @@
 		"population": 1187,
 		"timezone": "America/Nassau",
 		"geonameId": 7535668
+	},
+	{
+		"name": "Upper Bogue",
+		"countryCode": "BS",
+		"countryName": "Bahamas",
+		"stateCode": "NE",
+		"stateName": "North Eleuthera",
+		"latitude": "25.45",
+		"longitude": "-76.66667",
+		"population": 190,
+		"timezone": "America/Nassau",
+		"geonameId": 3571275
 	},
 	{
 		"name": "West End",
@@ -262824,6 +263112,18 @@
 		"geonameId": 6690232
 	},
 	{
+		"name": "Baird",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.56373",
+		"longitude": "-52.75231",
+		"population": 820,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731646
+	},
+	{
 		"name": "Baker Lake",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -264946,6 +265246,18 @@
 		"population": 586,
 		"timezone": "America/Halifax",
 		"geonameId": 5907123
+	},
+	{
+		"name": "Bradford",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "ON",
+		"stateName": "Ontario",
+		"latitude": "44.11681",
+		"longitude": "-79.56632",
+		"population": 38128,
+		"timezone": "America/Toronto",
+		"geonameId": 5907166
 	},
 	{
 		"name": "Bradner",
@@ -267480,6 +267792,18 @@
 		"geonameId": 5919137
 	},
 	{
+		"name": "Central St. John's",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.57302",
+		"longitude": "-52.71924",
+		"population": 21827,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731650
+	},
+	{
 		"name": "Central York",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -267610,6 +267934,18 @@
 		"population": 1025,
 		"timezone": "America/Toronto",
 		"geonameId": 5919483
+	},
+	{
+		"name": "Chamberlains",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.51447",
+		"longitude": "-52.92513",
+		"population": 1721,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731671
 	},
 	{
 		"name": "Chambery",
@@ -269340,6 +269676,18 @@
 		"geonameId": 5928065
 	},
 	{
+		"name": "Cornwall Heights",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.54511",
+		"longitude": "-52.73338",
+		"population": 1252,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731668
+	},
+	{
 		"name": "Coronation Park",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -269808,6 +270156,18 @@
 		"geonameId": 5932783
 	},
 	{
+		"name": "Crosbie",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.55867",
+		"longitude": "-52.7446",
+		"population": 679,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731662
+	},
+	{
 		"name": "Cross Lake 19A",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -270226,6 +270586,18 @@
 		"population": 6411,
 		"timezone": "America/Edmonton",
 		"geonameId": 7626874
+	},
+	{
+		"name": "Cumberland",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.5649",
+		"longitude": "-52.76095",
+		"population": 542,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731647
 	},
 	{
 		"name": "Current River",
@@ -271800,6 +272172,18 @@
 		"geonameId": 13589266
 	},
 	{
+		"name": "East End",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.59214",
+		"longitude": "-52.68922",
+		"population": 26448,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731675
+	},
+	{
 		"name": "East End-Danforth",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -272110,6 +272494,18 @@
 		"population": 3060,
 		"timezone": "America/Edmonton",
 		"geonameId": 7626790
+	},
+	{
+		"name": "Ecclesiastical District",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.56791",
+		"longitude": "-52.7115",
+		"population": 1043,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731654
 	},
 	{
 		"name": "Eckville",
@@ -273898,6 +274294,18 @@
 		"population": 597,
 		"timezone": "America/Vancouver",
 		"geonameId": 12076680
+	},
+	{
+		"name": "Foxtrap",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.50891",
+		"longitude": "-52.983",
+		"population": 3087,
+		"timezone": "America/St_Johns",
+		"geonameId": 5957169
 	},
 	{
 		"name": "Franklin",
@@ -278472,6 +278880,18 @@
 		"geonameId": 5990326
 	},
 	{
+		"name": "Kelligrews",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.49989",
+		"longitude": "-53.01476",
+		"population": 4615,
+		"timezone": "America/St_Johns",
+		"geonameId": 5990415
+	},
+	{
 		"name": "Kelowna",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -278638,6 +279058,18 @@
 		"population": 17945,
 		"timezone": "America/Toronto",
 		"geonameId": 12156886
+	},
+	{
+		"name": "Kents Pond",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.59061",
+		"longitude": "-52.72449",
+		"population": 540,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731657
 	},
 	{
 		"name": "Kentville",
@@ -281340,6 +281772,18 @@
 		"geonameId": 7871302
 	},
 	{
+		"name": "Long Pond",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.51309",
+		"longitude": "-52.96549",
+		"population": 3000,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731673
+	},
+	{
 		"name": "Longlac",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -281494,6 +281938,18 @@
 		"population": 502,
 		"timezone": "America/St_Johns",
 		"geonameId": 6060890
+	},
+	{
+		"name": "Lower Cowan Heights",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.52686",
+		"longitude": "-52.77138",
+		"population": 1040,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731666
 	},
 	{
 		"name": "Lower Doon",
@@ -282142,6 +282598,18 @@
 		"population": 7716,
 		"timezone": "America/Halifax",
 		"geonameId": 13561904
+	},
+	{
+		"name": "Manuels",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.52152",
+		"longitude": "-52.94255",
+		"population": 4140,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731672
 	},
 	{
 		"name": "Maple Bay",
@@ -283090,6 +283558,18 @@
 		"population": 7859,
 		"timezone": "America/Glace_Bay",
 		"geonameId": 13561918
+	},
+	{
+		"name": "Memorial University of Newfoundland",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.5735",
+		"longitude": "-52.73355",
+		"population": 1700,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731648
 	},
 	{
 		"name": "Memramcook",
@@ -285120,6 +285600,18 @@
 		"geonameId": 6087790
 	},
 	{
+		"name": "Newton",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.65932",
+		"longitude": "-52.71989",
+		"population": 1099,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731664
+	},
+	{
 		"name": "Newtonbrook East",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -285142,6 +285634,18 @@
 		"population": 23831,
 		"timezone": "America/Toronto",
 		"geonameId": 12156842
+	},
+	{
+		"name": "Newtown",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.50612",
+		"longitude": "-52.80372",
+		"population": 3963,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731669
 	},
 	{
 		"name": "Niagara",
@@ -286236,6 +286740,18 @@
 		"geonameId": 12156856
 	},
 	{
+		"name": "Old Pennywell Road",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.55738",
+		"longitude": "-52.74965",
+		"population": 827,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731663
+	},
+	{
 		"name": "Old Perlican",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -286246,6 +286762,18 @@
 		"population": 608,
 		"timezone": "America/St_Johns",
 		"geonameId": 6093319
+	},
+	{
+		"name": "Old West End",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.54879",
+		"longitude": "-52.72651",
+		"population": 1180,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731667
 	},
 	{
 		"name": "Olds",
@@ -290112,6 +290640,18 @@
 		"geonameId": 7870895
 	},
 	{
+		"name": "Ropewalk Lane",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.55674",
+		"longitude": "-52.73588",
+		"population": 1163,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731658
+	},
+	{
 		"name": "Rose Hill",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -292944,6 +293484,18 @@
 		"geonameId": 6139678
 	},
 	{
+		"name": "Sand Pits",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.56659",
+		"longitude": "-52.73134",
+		"population": 1273,
+		"timezone": "America/St_Johns",
+		"geonameId": 6140443
+	},
+	{
 		"name": "Sandstone Valley",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293573,8 +294125,8 @@
 		"countryName": "Canada",
 		"stateCode": "NL",
 		"stateName": "Newfoundland and Labrador",
-		"latitude": "47.54989",
-		"longitude": "-52.71474",
+		"latitude": "47.54628",
+		"longitude": "-52.71104",
 		"population": 1643,
 		"timezone": "America/St_Johns",
 		"geonameId": 6145579
@@ -293638,6 +294190,18 @@
 		"population": 800,
 		"timezone": "America/Halifax",
 		"geonameId": 6145815
+	},
+	{
+		"name": "Sheffield Estates",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.53363",
+		"longitude": "-52.74299",
+		"population": 1045,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731660
 	},
 	{
 		"name": "Shelbourne",
@@ -295848,6 +296412,18 @@
 		"geonameId": 11791204
 	},
 	{
+		"name": "Summerville",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.56597",
+		"longitude": "-52.74269",
+		"population": 1351,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731649
+	},
+	{
 		"name": "Sun Peaks",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -297096,6 +297672,18 @@
 		"geonameId": 6354950
 	},
 	{
+		"name": "Topsail",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.53925",
+		"longitude": "-52.93277",
+		"population": 1478,
+		"timezone": "America/St_Johns",
+		"geonameId": 6167794
+	},
+	{
 		"name": "Torbay",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -297706,6 +298294,18 @@
 		"population": 1186,
 		"timezone": "America/Vancouver",
 		"geonameId": 13512386
+	},
+	{
+		"name": "Upper Gullies",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.48394",
+		"longitude": "-53.04502",
+		"population": 3519,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731674
 	},
 	{
 		"name": "Upper Hammonds Plains",
@@ -298889,8 +299489,8 @@
 		"countryName": "Canada",
 		"stateCode": "NL",
 		"stateName": "Newfoundland and Labrador",
-		"latitude": "47.53101",
-		"longitude": "-52.74537",
+		"latitude": "47.53762",
+		"longitude": "-52.73077",
 		"population": 4681,
 		"timezone": "America/St_Johns",
 		"geonameId": 13580460
@@ -299086,6 +299686,18 @@
 		"population": 1470,
 		"timezone": "America/Edmonton",
 		"geonameId": 11791215
+	},
+	{
+		"name": "Wedgewood Park",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.60679",
+		"longitude": "-52.71201",
+		"population": 2749,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731656
 	},
 	{
 		"name": "Weedon Centre",
@@ -299292,6 +299904,18 @@
 		"geonameId": 13589272
 	},
 	{
+		"name": "West End",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.53454",
+		"longitude": "-52.76612",
+		"population": 24755,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731665
+	},
+	{
 		"name": "West Hill",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -299494,6 +300118,18 @@
 		"population": 3225,
 		"timezone": "America/Edmonton",
 		"geonameId": 6178927
+	},
+	{
+		"name": "Westgate",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.54486",
+		"longitude": "-52.79945",
+		"population": 2019,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731670
 	},
 	{
 		"name": "Westlake",
@@ -299928,6 +300564,18 @@
 		"geonameId": 6180266
 	},
 	{
+		"name": "White Hills",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.59176",
+		"longitude": "-52.69306",
+		"population": 6848,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731651
+	},
+	{
 		"name": "White Lake",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -300058,6 +300706,18 @@
 		"population": 1996,
 		"timezone": "America/Toronto",
 		"geonameId": 8556287
+	},
+	{
+		"name": "Wigmore",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.56213",
+		"longitude": "-52.76064",
+		"population": 749,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731645
 	},
 	{
 		"name": "Wîhkwêntôwin",
@@ -413228,7 +413888,7 @@
 		"latitude": "33.62611",
 		"longitude": "114.64917",
 		"population": 0,
-		"timezone": "",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13724417
 	},
 	{
@@ -510264,18 +510924,6 @@
 		"geonameId": 1797144
 	},
 	{
-		"name": "Rikaze",
-		"countryCode": "CN",
-		"countryName": "China",
-		"stateCode": "XZ",
-		"stateName": "Tibet",
-		"latitude": "29.25",
-		"longitude": "88.88333",
-		"population": 80000,
-		"timezone": "Asia/Shanghai",
-		"geonameId": 1279715
-	},
-	{
 		"name": "Rinang",
 		"countryCode": "CN",
 		"countryName": "China",
@@ -553174,6 +553822,18 @@
 		"population": 16550,
 		"timezone": "Asia/Shanghai",
 		"geonameId": 7373329
+	},
+	{
+		"name": "Xigazê",
+		"countryCode": "CN",
+		"countryName": "China",
+		"stateCode": "XZ",
+		"stateName": "Tibet",
+		"latitude": "29.25",
+		"longitude": "88.88333",
+		"population": 80000,
+		"timezone": "Asia/Shanghai",
+		"geonameId": 1279715
 	},
 	{
 		"name": "Xigebi",
@@ -952054,6 +952714,18 @@
 		"population": 18735,
 		"timezone": "Europe/Paris",
 		"geonameId": 3025715
+	},
+	{
+		"name": "Chazay-d'Azergues",
+		"countryCode": "FR",
+		"countryName": "France",
+		"stateCode": "69",
+		"stateName": "Rhône",
+		"latitude": "45.87583",
+		"longitude": "4.71306",
+		"population": 4410,
+		"timezone": "Europe/Paris",
+		"geonameId": 3025692
 	},
 	{
 		"name": "Chazé-Henry",
@@ -1469712,6 +1470384,18 @@
 		"geonameId": 22932
 	},
 	{
+		"name": "Ābsard",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "28.97474",
+		"longitude": "52.93338",
+		"population": 1210,
+		"timezone": "Asia/Tehran",
+		"geonameId": 144920
+	},
+	{
 		"name": "Ābshīneh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1969519,7 +1970203,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.69",
 		"longitude": "4.70417",
-		"population": 570,
+		"population": 520,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2760149
 	},
@@ -1969663,7 +1970347,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.73167",
 		"longitude": "5.01806",
-		"population": 2110,
+		"population": 2070,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2760078
 	},
@@ -1969843,7 +1970527,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.56083",
 		"longitude": "4.73333",
-		"population": 5010,
+		"population": 5340,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759931
 	},
@@ -1970371,7 +1971055,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.74667",
 		"longitude": "5.22222",
-		"population": 7005,
+		"population": 7410,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759774
 	},
@@ -1970695,7 +1971379,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.6175",
 		"longitude": "4.95139",
-		"population": 2945,
+		"population": 3415,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759601
 	},
@@ -1970887,7 +1971571,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.55945",
 		"longitude": "4.65717",
-		"population": 2585,
+		"population": 3985,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759483
 	},
@@ -1970923,7 +1971607,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.73582",
 		"longitude": "5.1801",
-		"population": 1470,
+		"population": 1435,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759444
 	},
@@ -1971223,7 +1971907,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.58833",
 		"longitude": "4.97778",
-		"population": 525,
+		"population": 540,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759280
 	},
@@ -1971382,6 +1972066,18 @@
 		"population": 15160,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759197
+	},
+	{
+		"name": "Benningbroek",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.70167",
+		"longitude": "5.02639",
+		"population": 790,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2759191
 	},
 	{
 		"name": "Bentelo",
@@ -1971595,7 +1972291,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.64083",
 		"longitude": "5.00139",
-		"population": 1905,
+		"population": 2945,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759070
 	},
@@ -1972699,7 +1973395,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.67417",
 		"longitude": "4.80556",
-		"population": 5695,
+		"population": 6165,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758245
 	},
@@ -1972738,6 +1973434,18 @@
 		"population": 1960,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758275
+	},
+	{
+		"name": "Broekhorn",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.6725",
+		"longitude": "4.82083",
+		"population": 1995,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2758271
 	},
 	{
 		"name": "Broekhoven",
@@ -1973167,7 +1973875,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.65",
 		"longitude": "4.81667",
-		"population": 3750,
+		"population": 3805,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758058
 	},
@@ -1973287,7 +1973995,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.54833",
 		"longitude": "4.66944",
-		"population": 35256,
+		"population": 23790,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757991
 	},
@@ -1973743,7 +1974451,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.62583",
 		"longitude": "4.94722",
-		"population": 3510,
+		"population": 3870,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757623
 	},
@@ -1973995,7 +1974703,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.7075",
 		"longitude": "4.85139",
-		"population": 1335,
+		"population": 3695,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757189
 	},
@@ -1974031,7 +1974739,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.55667",
 		"longitude": "4.84583",
-		"population": 3980,
+		"population": 4245,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757095
 	},
@@ -1974091,7 +1974799,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.72667",
 		"longitude": "4.99444",
-		"population": 865,
+		"population": 840,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756950
 	},
@@ -1974804,6 +1975512,18 @@
 		"geonameId": 2756657
 	},
 	{
+		"name": "Draai",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.66333",
+		"longitude": "4.86667",
+		"population": 5005,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2756648
+	},
+	{
 		"name": "Drachten",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1975066,6 +1975786,18 @@
 		"population": 6270,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756539
+	},
+	{
+		"name": "Duin en Bosch",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.55877",
+		"longitude": "4.64773",
+		"population": 1210,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2756524
 	},
 	{
 		"name": "Duindorp",
@@ -1975507,7 +1976239,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.62333",
 		"longitude": "4.65278",
-		"population": 3630,
+		"population": 3360,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756302
 	},
@@ -1975531,7 +1976263,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.59583",
 		"longitude": "4.65556",
-		"population": 2575,
+		"population": 2700,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756299
 	},
@@ -1977175,7 +1977907,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.7225",
 		"longitude": "4.66806",
-		"population": 1540,
+		"population": 1520,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2755266
 	},
@@ -1977271,7 +1978003,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.5825",
 		"longitude": "4.85",
-		"population": 715,
+		"population": 700,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2755106
 	},
@@ -1977835,7 +1978567,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.70833",
 		"longitude": "5.1",
-		"population": 720,
+		"population": 750,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2754755
 	},
@@ -1978435,7 +1979167,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.66083",
 		"longitude": "5.18333",
-		"population": 1035,
+		"population": 1595,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2754434
 	},
@@ -1978531,7 +1979263,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.65833",
 		"longitude": "4.88472",
-		"population": 1345,
+		"population": 1745,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2754375
 	},
@@ -1979256,6 +1979988,18 @@
 		"geonameId": 7870365
 	},
 	{
+		"name": "Hoogkarspel",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.695",
+		"longitude": "5.18056",
+		"population": 8705,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2753691
+	},
+	{
 		"name": "Hoogkerk",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1979311,7 +1980055,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.71583",
 		"longitude": "4.93889",
-		"population": 3645,
+		"population": 3700,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2753663
 	},
@@ -1980871,7 +1981615,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.52833",
 		"longitude": "4.98056",
-		"population": 760,
+		"population": 835,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2752140
 	},
@@ -1982647,7 +1983391,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.77167",
 		"longitude": "5.10556",
-		"population": 41500,
+		"population": 8655,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751073
 	},
@@ -1983007,7 +1983751,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.53233",
 		"longitude": "5.01835",
-		"population": 685,
+		"population": 715,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750881
 	},
@@ -1983115,7 +1983859,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.71667",
 		"longitude": "5.075",
-		"population": 2280,
+		"population": 2500,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750829
 	},
@@ -1983634,6 +1984378,18 @@
 		"population": 765,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750407
+	},
+	{
+		"name": "Nibbixwoud",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.69167",
+		"longitude": "5.05972",
+		"population": 2575,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2750398
 	},
 	{
 		"name": "Niebert",
@@ -1984308,6 +1985064,18 @@
 		"geonameId": 2749992
 	},
 	{
+		"name": "Nollen",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.64762",
+		"longitude": "4.78063",
+		"population": 1540,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2750016
+	},
+	{
 		"name": "Noorbeek",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1984351,7 +1985119,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.69833",
 		"longitude": "4.81111",
-		"population": 5665,
+		"population": 6085,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749835
 	},
@@ -1984603,7 +1985371,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.67583",
 		"longitude": "4.90694",
-		"population": 5690,
+		"population": 6095,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749745
 	},
@@ -1984963,7 +1985731,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.74333",
 		"longitude": "5.1375",
-		"population": 1630,
+		"population": 1885,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749599
 	},
@@ -1985167,7 +1985935,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.66917",
 		"longitude": "5.11806",
-		"population": 1555,
+		"population": 1595,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749496
 	},
@@ -1985383,7 +1986151,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.5725",
 		"longitude": "4.99583",
-		"population": 1260,
+		"population": 3775,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749366
 	},
@@ -1985455,7 +1986223,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.72583",
 		"longitude": "5.08611",
-		"population": 875,
+		"population": 855,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749321
 	},
@@ -1985611,7 +1986379,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.70667",
 		"longitude": "4.94444",
-		"population": 11183,
+		"population": 2405,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749286
 	},
@@ -1985635,7 +1986403,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.75915",
 		"longitude": "5.07534",
-		"population": 1840,
+		"population": 2035,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749281
 	},
@@ -1985743,7 +1986511,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.63667",
 		"longitude": "4.83472",
-		"population": 620,
+		"population": 630,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749207
 	},
@@ -1986067,9 +1986835,21 @@
 		"stateName": "North Holland",
 		"latitude": "52.71583",
 		"longitude": "4.80556",
-		"population": 3170,
+		"population": 3845,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2748943
+	},
+	{
+		"name": "Oudorp",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.63333",
+		"longitude": "4.77361",
+		"population": 13995,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2748917
 	},
 	{
 		"name": "Overasselt",
@@ -1987596,6 +1988376,18 @@
 		"geonameId": 2747669
 	},
 	{
+		"name": "Scharwoude",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.62167",
+		"longitude": "5.01389",
+		"population": 540,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2747668
+	},
+	{
 		"name": "Scheemda",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1987627,7 +1988419,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.635",
 		"longitude": "5.12083",
-		"population": 900,
+		"population": 875,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747638
 	},
@@ -1987651,7 +1988443,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.60083",
 		"longitude": "4.89167",
-		"population": 1290,
+		"population": 1275,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747617
 	},
@@ -1987915,7 +1988707,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.70167",
 		"longitude": "4.69722",
-		"population": 4745,
+		"population": 6195,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747492
 	},
@@ -1988038,6 +1988830,18 @@
 		"population": 830,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747339
+	},
+	{
+		"name": "Sijbekarspel",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.7075",
+		"longitude": "5.00278",
+		"population": 925,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2747332
 	},
 	{
 		"name": "Silvolde",
@@ -1988239,7 +1989043,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.66",
 		"longitude": "4.78333",
-		"population": 6050,
+		"population": 5870,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747225
 	},
@@ -1988640,6 +1989444,18 @@
 		"geonameId": 2746981
 	},
 	{
+		"name": "Spanbroek",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.69833",
+		"longitude": "4.96111",
+		"population": 5005,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2746980
+	},
+	{
 		"name": "Spangen",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1988731,7 +1989547,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.65083",
 		"longitude": "4.94306",
-		"population": 1585,
+		"population": 1600,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746943
 	},
@@ -1989247,7 +1990063,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.61333",
 		"longitude": "4.82083",
-		"population": 1920,
+		"population": 2090,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746661
 	},
@@ -1989454,6 +1990270,18 @@
 		"population": 6685,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746371
+	},
+	{
+		"name": "t Kruis",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.65083",
+		"longitude": "4.84444",
+		"population": 715,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2746255
 	},
 	{
 		"name": "t Loo",
@@ -1990039,7 +1990867,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.74083",
 		"longitude": "5.05278",
-		"population": 1115,
+		"population": 1045,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746048
 	},
@@ -1990306,6 +1991134,18 @@
 		"population": 3560,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745926
+	},
+	{
+		"name": "Ursem",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.62667",
+		"longitude": "4.89306",
+		"population": 3010,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2745924
 	},
 	{
 		"name": "Usquert",
@@ -1990771,7 +1991611,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.6625",
 		"longitude": "5.20278",
-		"population": 4310,
+		"population": 4290,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745645
 	},
@@ -1991599,7 +1992439,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.565",
 		"longitude": "5.02639",
-		"population": 800,
+		"population": 775,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745025
 	},
@@ -1992036,6 +1992876,18 @@
 		"geonameId": 2744824
 	},
 	{
+		"name": "Wervershoof",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.73",
+		"longitude": "5.15833",
+		"population": 6345,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2744820
+	},
+	{
 		"name": "Wessem",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1992055,7 +1992907,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.55417",
 		"longitude": "4.79583",
-		"population": 670,
+		"population": 765,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744650
 	},
@@ -1992439,7 +1993291,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.635",
 		"longitude": "5.15694",
-		"population": 1005,
+		"population": 1525,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744498
 	},
@@ -1992874,6 +1993726,30 @@
 		"population": 670,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744246
+	},
+	{
+		"name": "Wogmeer",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.65333",
+		"longitude": "4.91389",
+		"population": 515,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2744239
+	},
+	{
+		"name": "Wognum",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.68333",
+		"longitude": "5.02222",
+		"population": 6315,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2744237
 	},
 	{
 		"name": "Woldendorp",
@@ -1993675,7 +1994551,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.68667",
 		"longitude": "4.80833",
-		"population": 6165,
+		"population": 6880,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2743658
 	},
@@ -1993740,6 +1994616,18 @@
 		"geonameId": 13696911
 	},
 	{
+		"name": "Zuidermeer",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.66417",
+		"longitude": "4.98333",
+		"population": 555,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2743746
+	},
+	{
 		"name": "Zuidhorn",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1993795,7 +1994683,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.585",
 		"longitude": "4.77917",
-		"population": 625,
+		"population": 670,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2743657
 	},
@@ -1993903,7 +1994791,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.7075",
 		"longitude": "5.14028",
-		"population": 1240,
+		"population": 1380,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2743593
 	},
@@ -1993915,7 +1994803,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.675",
 		"longitude": "5.05417",
-		"population": 585,
+		"population": 600,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2743592
 	},
@@ -2105244,6 +2106132,18 @@
 		"geonameId": 1184008
 	},
 	{
+		"name": "Bagh",
+		"countryCode": "PK",
+		"countryName": "Pakistan",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.18936",
+		"longitude": "72.34742",
+		"population": 16560,
+		"timezone": "Asia/Karachi",
+		"geonameId": 1183994
+	},
+	{
 		"name": "Bāgh",
 		"countryCode": "PK",
 		"countryName": "Pakistan",
@@ -2107176,6 +2108076,18 @@
 		"geonameId": 1179061
 	},
 	{
+		"name": "Gandakha",
+		"countryCode": "PK",
+		"countryName": "Pakistan",
+		"stateCode": "BA",
+		"stateName": "Balochistan",
+		"latitude": "28.01057",
+		"longitude": "67.84976",
+		"population": 81190,
+		"timezone": "Asia/Karachi",
+		"geonameId": 1179038
+	},
+	{
 		"name": "Gandava",
 		"countryCode": "PK",
 		"countryName": "Pakistan",
@@ -2108760,6 +2109672,18 @@
 		"geonameId": 1173272
 	},
 	{
+		"name": "Kot Khaira",
+		"countryCode": "PK",
+		"countryName": "Pakistan",
+		"stateCode": "PB",
+		"stateName": "Punjab",
+		"latitude": "31.18764",
+		"longitude": "72.24796",
+		"population": 16327,
+		"timezone": "Asia/Karachi",
+		"geonameId": 1173176
+	},
+	{
 		"name": "Kot Malik Barkhurdar",
 		"countryCode": "PK",
 		"countryName": "Pakistan",
@@ -2109382,18 +2110306,6 @@
 		"population": 5000,
 		"timezone": "Asia/Karachi",
 		"geonameId": 6940901
-	},
-	{
-		"name": "Mehrabpur",
-		"countryCode": "PK",
-		"countryName": "Pakistan",
-		"stateCode": "BA",
-		"stateName": "Balochistan",
-		"latitude": "28.10773",
-		"longitude": "68.02554",
-		"population": 35263,
-		"timezone": "Asia/Karachi",
-		"geonameId": 1170564
 	},
 	{
 		"name": "Mian Channun",
@@ -2287764,6 +2288676,18 @@
 		"geonameId": 559542
 	},
 	{
+		"name": "Gorodok",
+		"countryCode": "RU",
+		"countryName": "Russia",
+		"stateCode": "KYA",
+		"stateName": "Krasnoyarsk Krai",
+		"latitude": "53.92583",
+		"longitude": "91.79444",
+		"population": 2127,
+		"timezone": "Asia/Krasnoyarsk",
+		"geonameId": 1506230
+	},
+	{
 		"name": "Gorodoviki",
 		"countryCode": "RU",
 		"countryName": "Russia",
@@ -2454240,6 +2455164,18 @@
 		"geonameId": 739215
 	},
 	{
+		"name": "Sursuru",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "23",
+		"stateName": "Elazığ",
+		"latitude": "38.66175",
+		"longitude": "39.19621",
+		"population": 28211,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13731653
+	},
+	{
 		"name": "Suruç",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2468724,18 +2469660,6 @@
 		"geonameId": 705214
 	},
 	{
-		"name": "Avtozavodskyi",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "53",
-		"stateName": "Poltava",
-		"latitude": "49.09753",
-		"longitude": "33.43206",
-		"population": 157382,
-		"timezone": "Europe/Kyiv",
-		"geonameId": 12167218
-	},
-	{
 		"name": "Aydar",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2475778,6 +2476702,18 @@
 		"population": 6079,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 710342
+	},
+	{
+		"name": "Chyhyri",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "18",
+		"stateName": "Zhytomyr Oblast",
+		"latitude": "50.99452",
+		"longitude": "28.61011",
+		"population": 961,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 710474
 	},
 	{
 		"name": "Chyhyryn",
@@ -2490679,7 +2491615,7 @@
 		"stateName": "Poltava",
 		"latitude": "49.02894",
 		"longitude": "33.43847",
-		"population": 75578,
+		"population": 34419,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 703853
 	},
@@ -2497414,6 +2498350,18 @@
 		"population": 593,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 700869
+	},
+	{
+		"name": "Moldavanka",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "51",
+		"stateName": "Odesa",
+		"latitude": "46.47523",
+		"longitude": "30.71596",
+		"population": 82000,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 13731714
 	},
 	{
 		"name": "Moldove",
@@ -2520612,18 +2521560,6 @@
 		"geonameId": 692052
 	},
 	{
-		"name": "Svitiaz",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "07",
-		"stateName": "Volyn",
-		"latitude": "51.48211",
-		"longitude": "23.85904",
-		"population": 1845,
-		"timezone": "Europe/Kyiv",
-		"geonameId": 692039
-	},
-	{
 		"name": "Svitle",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2520718,6 +2521654,18 @@
 		"population": 43130,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 692087
+	},
+	{
+		"name": "Svityaz",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "07",
+		"stateName": "Volyn",
+		"latitude": "51.48211",
+		"longitude": "23.85904",
+		"population": 1845,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 692039
 	},
 	{
 		"name": "Svyato-Pokrovske",

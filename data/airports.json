@@ -106737,8 +106737,8 @@
 			"Madrid Barajas Uluslararası Havalimanı",
 			"Madrid-Barajas Lufthavn",
 			"Madrid-Barajas flygplats",
-			"Madrid-Barajasi repueloter Ez a lap egy ellenorzoett valtozataEllenorzoett lapreszletek megjelenitese/elrejtese",
-			"Madrid-Barajasi repülőtér Ez a lap egy ellenőrzött változataEllenőrzött laprészletek megjelenítése/elrejtése",
+			"Madrid-Barajasi repueloter",
+			"Madrid-Barajasi repülőtér",
 			"Madrid-Barajasin lentoasema",
 			"Madridi Barajase lennujaam",
 			"Madrid–Barajas Airport",
@@ -106787,7 +106787,7 @@
 		"stateName": "Provincia de Madrid",
 		"elevation": 609,
 		"timezone": "Europe/Madrid",
-		"modificationDate": "2023-01-27"
+		"modificationDate": "2026-10-25"
 	},
 	{
 		"geonameId": 6424307,
@@ -388600,9 +388600,9 @@
 			"Bandar Udara Internasional Hartsfield–Jackson Atlanta",
 			"Hartsfield-Jackson Atlanta International Airport",
 			"Hartsfield-Jackson International Airport",
+			"Hartsfield-Jackson nemzetkoezi repueloter",
 			"Hartsfield–Jackson Atlanta International Airport",
-			"Hartsfield–Jackson nemzetkoezi repueloter Ez a lap egy ellenorzoett valtozataEllenorzoett lapreszletek megjelenitese/elrejtese",
-			"Hartsfield–Jackson nemzetközi repülőtér Ez a lap egy ellenőrzött változataEllenőrzött laprészletek megjelenítése/elrejtése",
+			"Hartsfield–Jackson nemzetközi repülőtér",
 			"KATL",
 			"Medzinarodne letisko Hartsfield-Jackson Atlanta",
 			"Medzinárodné letisko Hartsfield-Jackson Atlanta",
@@ -388647,7 +388647,7 @@
 		"stateName": "Georgia",
 		"elevation": 304,
 		"timezone": "America/New_York",
-		"modificationDate": "2014-11-29"
+		"modificationDate": "2026-10-25"
 	},
 	{
 		"geonameId": 4581253,
