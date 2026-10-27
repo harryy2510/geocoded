@@ -1641,6 +1641,17 @@
 				"literacyPercent": null
 			},
 			{
+				"cldrCode": "hrx",
+				"languageCode": "hrx",
+				"scriptCode": null,
+				"iso6393": "hrx",
+				"name": null,
+				"populationPercent": 0.59,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
 				"cldrCode": "it",
 				"languageCode": "it",
 				"scriptCode": null,
@@ -3043,17 +3054,6 @@
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
-			},
-			{
-				"cldrCode": "bqv",
-				"languageCode": "bqv",
-				"scriptCode": null,
-				"iso6393": "bqv",
-				"name": null,
-				"populationPercent": 0.17,
-				"officialStatus": null,
-				"writingPercent": null,
-				"literacyPercent": 10
 			}
 		]
 	},
@@ -6481,6 +6481,17 @@
 				"literacyPercent": null
 			},
 			{
+				"cldrCode": "sus",
+				"languageCode": "sus",
+				"scriptCode": null,
+				"iso6393": "sus",
+				"name": "Susu",
+				"populationPercent": 24,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
 				"cldrCode": "man",
 				"languageCode": "man",
 				"scriptCode": null,
@@ -6501,17 +6512,6 @@
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": 25
-			},
-			{
-				"cldrCode": "sus",
-				"languageCode": "sus",
-				"scriptCode": null,
-				"iso6393": "sus",
-				"name": "Susu",
-				"populationPercent": 11,
-				"officialStatus": null,
-				"writingPercent": null,
-				"literacyPercent": null
 			},
 			{
 				"cldrCode": "nqo",
@@ -7698,7 +7698,7 @@
 				"languageCode": "rej",
 				"scriptCode": null,
 				"iso6393": "rej",
-				"name": null,
+				"name": "Rejang",
 				"populationPercent": 0.46,
 				"officialStatus": null,
 				"writingPercent": null,
@@ -8808,6 +8808,17 @@
 				"literacyPercent": null
 			},
 			{
+				"cldrCode": "wsg",
+				"languageCode": "wsg",
+				"scriptCode": null,
+				"iso6393": "wsg",
+				"name": null,
+				"populationPercent": 0.021,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
 				"cldrCode": "ria",
 				"languageCode": "ria",
 				"scriptCode": null,
@@ -8869,6 +8880,17 @@
 				"iso6393": "lep",
 				"name": null,
 				"populationPercent": 0.0035,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "mrh",
+				"languageCode": "mrh",
+				"scriptCode": null,
+				"iso6393": "mrh",
+				"name": null,
+				"populationPercent": 0.0034,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -9561,7 +9583,7 @@
 				"languageCode": "lld",
 				"scriptCode": null,
 				"iso6393": "lld",
-				"name": null,
+				"name": "Ladin",
 				"populationPercent": 0.048,
 				"officialStatus": null,
 				"writingPercent": null,
@@ -9711,6 +9733,17 @@
 				"iso6393": "eng",
 				"name": "English",
 				"populationPercent": 45,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "ady",
+				"languageCode": "ady",
+				"scriptCode": null,
+				"iso6393": "ady",
+				"name": "Adyghe",
+				"populationPercent": 1,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -11652,6 +11685,17 @@
 				"literacyPercent": null
 			},
 			{
+				"cldrCode": "mrh",
+				"languageCode": "mrh",
+				"scriptCode": null,
+				"iso6393": "mrh",
+				"name": null,
+				"populationPercent": 0.036,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
 				"cldrCode": "hnj",
 				"languageCode": "hnj",
 				"scriptCode": null,
@@ -13445,17 +13489,6 @@
 				"literacyPercent": null
 			},
 			{
-				"cldrCode": "mrd",
-				"languageCode": "mrd",
-				"scriptCode": null,
-				"iso6393": null,
-				"name": null,
-				"populationPercent": 0.83,
-				"officialStatus": null,
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
 				"cldrCode": "bfy",
 				"languageCode": "bfy",
 				"scriptCode": null,
@@ -14244,7 +14277,7 @@
 				"scriptCode": null,
 				"iso6393": "brh",
 				"name": "Brahui",
-				"populationPercent": 1.3,
+				"populationPercent": 1.2,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -14756,7 +14789,7 @@
 				"scriptCode": null,
 				"iso6393": "grn",
 				"name": "Guarani",
-				"populationPercent": 80,
+				"populationPercent": 69,
 				"officialStatus": "official",
 				"writingPercent": null,
 				"literacyPercent": null
@@ -14767,7 +14800,7 @@
 				"scriptCode": null,
 				"iso6393": "spa",
 				"name": "Spanish",
-				"populationPercent": 3.2,
+				"populationPercent": 67,
 				"officialStatus": "official",
 				"writingPercent": null,
 				"literacyPercent": null
@@ -14779,6 +14812,160 @@
 				"iso6393": "deu",
 				"name": "German",
 				"populationPercent": 2.9,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "cag",
+				"languageCode": "cag",
+				"scriptCode": null,
+				"iso6393": "cag",
+				"name": null,
+				"populationPercent": 0.23,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "gun",
+				"languageCode": "gun",
+				"scriptCode": null,
+				"iso6393": "gun",
+				"name": null,
+				"populationPercent": 0.16,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "enl",
+				"languageCode": "enl",
+				"scriptCode": null,
+				"iso6393": "enl",
+				"name": null,
+				"populationPercent": 0.13,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "pta",
+				"languageCode": "pta",
+				"scriptCode": null,
+				"iso6393": "pta",
+				"name": null,
+				"populationPercent": 0.13,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "enx",
+				"languageCode": "enx",
+				"scriptCode": null,
+				"iso6393": "enx",
+				"name": null,
+				"populationPercent": 0.075,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "ayo",
+				"languageCode": "ayo",
+				"scriptCode": null,
+				"iso6393": "ayo",
+				"name": null,
+				"populationPercent": 0.036,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "ceg",
+				"languageCode": "ceg",
+				"scriptCode": null,
+				"iso6393": "ceg",
+				"name": null,
+				"populationPercent": 0.03,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "mca",
+				"languageCode": "mca",
+				"scriptCode": null,
+				"iso6393": "mca",
+				"name": null,
+				"populationPercent": 0.027,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "tmf",
+				"languageCode": "tmf",
+				"scriptCode": null,
+				"iso6393": "tmf",
+				"name": null,
+				"populationPercent": 0.027,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "spn",
+				"languageCode": "spn",
+				"scriptCode": null,
+				"iso6393": "spn",
+				"name": null,
+				"populationPercent": 0.025,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "guq",
+				"languageCode": "guq",
+				"scriptCode": null,
+				"iso6393": "guq",
+				"name": null,
+				"populationPercent": 0.024,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "aqt",
+				"languageCode": "aqt",
+				"scriptCode": null,
+				"iso6393": "aqt",
+				"name": null,
+				"populationPercent": 0.017,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "nhd",
+				"languageCode": "nhd",
+				"scriptCode": null,
+				"iso6393": "nhd",
+				"name": null,
+				"populationPercent": 0.016,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "gva",
+				"languageCode": "gva",
+				"scriptCode": null,
+				"iso6393": "gva",
+				"name": null,
+				"populationPercent": 0.0003,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15109,8 +15296,19 @@
 				"scriptCode": null,
 				"iso6393": "rus",
 				"name": "Russian",
-				"populationPercent": 94,
+				"populationPercent": 99,
 				"officialStatus": "official",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "en",
+				"languageCode": "en",
+				"scriptCode": null,
+				"iso6393": "eng",
+				"name": "English",
+				"populationPercent": 3.8,
+				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
 			},
@@ -15120,18 +15318,7 @@
 				"scriptCode": null,
 				"iso6393": "tat",
 				"name": "Tatar",
-				"populationPercent": 1.4,
-				"officialStatus": "official_regional",
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "ba",
-				"languageCode": "ba",
-				"scriptCode": null,
-				"iso6393": "bak",
-				"name": "Bashkir",
-				"populationPercent": 1.3,
+				"populationPercent": 2.4,
 				"officialStatus": "official_regional",
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15148,6 +15335,17 @@
 				"literacyPercent": null
 			},
 			{
+				"cldrCode": "ce",
+				"languageCode": "ce",
+				"scriptCode": null,
+				"iso6393": "che",
+				"name": "Chechen",
+				"populationPercent": 1.1,
+				"officialStatus": "official_regional",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
 				"cldrCode": "hy",
 				"languageCode": "hy",
 				"scriptCode": null,
@@ -15159,13 +15357,24 @@
 				"literacyPercent": 50
 			},
 			{
-				"cldrCode": "ce",
-				"languageCode": "ce",
+				"cldrCode": "ba",
+				"languageCode": "ba",
 				"scriptCode": null,
-				"iso6393": "che",
-				"name": "Chechen",
-				"populationPercent": 0.66,
+				"iso6393": "bak",
+				"name": "Bashkir",
+				"populationPercent": 0.8,
 				"officialStatus": "official_regional",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "de",
+				"languageCode": "de",
+				"scriptCode": null,
+				"iso6393": "deu",
+				"name": "German",
+				"populationPercent": 0.79,
+				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
 			},
@@ -15175,52 +15384,19 @@
 				"scriptCode": null,
 				"iso6393": "ava",
 				"name": "Avaric",
-				"populationPercent": 0.39,
+				"populationPercent": 0.48,
 				"officialStatus": "official_regional",
 				"writingPercent": null,
 				"literacyPercent": null
 			},
 			{
-				"cldrCode": "udm",
-				"languageCode": "udm",
+				"cldrCode": "uk",
+				"languageCode": "uk",
 				"scriptCode": null,
-				"iso6393": "udm",
-				"name": "Udmurt",
-				"populationPercent": 0.38,
-				"officialStatus": "official_regional",
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "chm",
-				"languageCode": "chm",
-				"scriptCode": null,
-				"iso6393": "chm",
-				"name": "Mari",
-				"populationPercent": 0.37,
+				"iso6393": "ukr",
+				"name": "Ukrainian",
+				"populationPercent": 0.46,
 				"officialStatus": null,
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "os",
-				"languageCode": "os",
-				"scriptCode": null,
-				"iso6393": "oss",
-				"name": "Ossetic",
-				"populationPercent": 0.32,
-				"officialStatus": null,
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "sah",
-				"languageCode": "sah",
-				"scriptCode": null,
-				"iso6393": "sah",
-				"name": "Yakut",
-				"populationPercent": 0.32,
-				"officialStatus": "official_regional",
 				"writingPercent": null,
 				"literacyPercent": null
 			},
@@ -15230,7 +15406,7 @@
 				"scriptCode": null,
 				"iso6393": "kbd",
 				"name": "Kabardian",
-				"populationPercent": 0.31,
+				"populationPercent": 0.34,
 				"officialStatus": "official_regional",
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15247,13 +15423,57 @@
 				"literacyPercent": null
 			},
 			{
+				"cldrCode": "kum",
+				"languageCode": "kum",
+				"scriptCode": null,
+				"iso6393": "kum",
+				"name": "Kumyk",
+				"populationPercent": 0.3,
+				"officialStatus": "official_regional",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "sah",
+				"languageCode": "sah",
+				"scriptCode": null,
+				"iso6393": "sah",
+				"name": "Yakut",
+				"populationPercent": 0.28,
+				"officialStatus": "official_regional",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
 				"cldrCode": "dar",
 				"languageCode": "dar",
 				"scriptCode": null,
 				"iso6393": "dar",
 				"name": "Dargwa",
+				"populationPercent": 0.27,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "os",
+				"languageCode": "os",
+				"scriptCode": null,
+				"iso6393": "oss",
+				"name": "Ossetic",
 				"populationPercent": 0.26,
 				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "inh",
+				"languageCode": "inh",
+				"scriptCode": null,
+				"iso6393": "inh",
+				"name": "Ingush",
+				"populationPercent": 0.25,
+				"officialStatus": "official_regional",
 				"writingPercent": null,
 				"literacyPercent": null
 			},
@@ -15263,7 +15483,29 @@
 				"scriptCode": null,
 				"iso6393": "bua",
 				"name": "Buriat",
+				"populationPercent": 0.23,
+				"officialStatus": "official_regional",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "az_Cyrl",
+				"languageCode": "az",
+				"scriptCode": "Cyrl",
+				"iso6393": "aze",
+				"name": "Azerbaijani",
 				"populationPercent": 0.22,
+				"officialStatus": "official_regional",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "lez",
+				"languageCode": "lez",
+				"scriptCode": null,
+				"iso6393": "lez",
+				"name": "Lezghian",
+				"populationPercent": 0.21,
 				"officialStatus": "official_regional",
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15280,12 +15522,89 @@
 				"literacyPercent": null
 			},
 			{
-				"cldrCode": "kum",
-				"languageCode": "kum",
+				"cldrCode": "kk",
+				"languageCode": "kk",
 				"scriptCode": null,
-				"iso6393": "kum",
-				"name": "Kumyk",
+				"iso6393": "kaz",
+				"name": "Kazakh",
 				"populationPercent": 0.2,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "krc",
+				"languageCode": "krc",
+				"scriptCode": null,
+				"iso6393": "krc",
+				"name": "Karachay-Balkar",
+				"populationPercent": 0.2,
+				"officialStatus": "official_regional",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "chm",
+				"languageCode": "chm",
+				"scriptCode": null,
+				"iso6393": "chm",
+				"name": "Mari",
+				"populationPercent": 0.19,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "tyv",
+				"languageCode": "tyv",
+				"scriptCode": null,
+				"iso6393": "tyv",
+				"name": "Tuvinian",
+				"populationPercent": 0.19,
+				"officialStatus": "official_regional",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "udm",
+				"languageCode": "udm",
+				"scriptCode": null,
+				"iso6393": "udm",
+				"name": "Udmurt",
+				"populationPercent": 0.19,
+				"officialStatus": "official_regional",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "uz",
+				"languageCode": "uz",
+				"scriptCode": null,
+				"iso6393": "uzb",
+				"name": "Uzbek",
+				"populationPercent": 0.17,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "tg",
+				"languageCode": "tg",
+				"scriptCode": null,
+				"iso6393": "tgk",
+				"name": "Tajik",
+				"populationPercent": 0.16,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "ady",
+				"languageCode": "ady",
+				"scriptCode": null,
+				"iso6393": "ady",
+				"name": "Adyghe",
+				"populationPercent": 0.081,
 				"officialStatus": "official_regional",
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15296,84 +15615,18 @@
 				"scriptCode": null,
 				"iso6393": "kom",
 				"name": "Komi",
-				"populationPercent": 0.18,
+				"populationPercent": 0.081,
 				"officialStatus": "official_regional",
 				"writingPercent": null,
 				"literacyPercent": null
 			},
 			{
-				"cldrCode": "lez",
-				"languageCode": "lez",
+				"cldrCode": "xal",
+				"languageCode": "xal",
 				"scriptCode": null,
-				"iso6393": "lez",
-				"name": "Lezghian",
-				"populationPercent": 0.18,
-				"officialStatus": "official_regional",
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "krc",
-				"languageCode": "krc",
-				"scriptCode": null,
-				"iso6393": "krc",
-				"name": "Karachay-Balkar",
-				"populationPercent": 0.17,
-				"officialStatus": "official_regional",
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "inh",
-				"languageCode": "inh",
-				"scriptCode": null,
-				"iso6393": "inh",
-				"name": "Ingush",
-				"populationPercent": 0.16,
-				"officialStatus": "official_regional",
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "tyv",
-				"languageCode": "tyv",
-				"scriptCode": null,
-				"iso6393": "tyv",
-				"name": "Tuvinian",
-				"populationPercent": 0.13,
-				"officialStatus": "official_regional",
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "az_Cyrl",
-				"languageCode": "az",
-				"scriptCode": "Cyrl",
-				"iso6393": "aze",
-				"name": "Azerbaijani",
-				"populationPercent": 0.093,
-				"officialStatus": "official_regional",
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "ady",
-				"languageCode": "ady",
-				"scriptCode": null,
-				"iso6393": "ady",
-				"name": "Adyghe",
-				"populationPercent": 0.088,
-				"officialStatus": "official_regional",
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "krl",
-				"languageCode": "krl",
-				"scriptCode": null,
-				"iso6393": "krl",
-				"name": "Karelian",
-				"populationPercent": 0.082,
+				"iso6393": "xal",
+				"name": "Kalmyk",
+				"populationPercent": 0.08,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15384,19 +15637,41 @@
 				"scriptCode": null,
 				"iso6393": "lbe",
 				"name": null,
-				"populationPercent": 0.078,
+				"populationPercent": 0.065,
 				"officialStatus": "official_regional",
 				"writingPercent": null,
 				"literacyPercent": null
 			},
 			{
-				"cldrCode": "koi",
-				"languageCode": "koi",
+				"cldrCode": "ka",
+				"languageCode": "ka",
 				"scriptCode": null,
-				"iso6393": "koi",
-				"name": "Komi-Permyak",
+				"iso6393": "kat",
+				"name": "Georgian",
+				"populationPercent": 0.06,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "alt",
+				"languageCode": "alt",
+				"scriptCode": null,
+				"iso6393": "alt",
+				"name": "Southern Altai",
+				"populationPercent": 0.047,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "be",
+				"languageCode": "be",
+				"scriptCode": null,
+				"iso6393": "bel",
+				"name": "Belarusian",
 				"populationPercent": 0.045,
-				"officialStatus": "official_regional",
+				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
 			},
@@ -15412,6 +15687,17 @@
 				"literacyPercent": null
 			},
 			{
+				"cldrCode": "koi",
+				"languageCode": "koi",
+				"scriptCode": null,
+				"iso6393": "koi",
+				"name": "Komi-Permyak",
+				"populationPercent": 0.031,
+				"officialStatus": "official_regional",
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
 				"cldrCode": "abq",
 				"languageCode": "abq",
 				"scriptCode": null,
@@ -15423,23 +15709,23 @@
 				"literacyPercent": null
 			},
 			{
-				"cldrCode": "mrj",
-				"languageCode": "mrj",
+				"cldrCode": "xdq",
+				"languageCode": "xdq",
 				"scriptCode": null,
-				"iso6393": "mrj",
-				"name": "Western Mari",
-				"populationPercent": 0.021,
+				"iso6393": "xdq",
+				"name": null,
+				"populationPercent": 0.015,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
 			},
 			{
-				"cldrCode": "alt",
-				"languageCode": "alt",
+				"cldrCode": "mrj",
+				"languageCode": "mrj",
 				"scriptCode": null,
-				"iso6393": "alt",
-				"name": "Southern Altai",
-				"populationPercent": 0.014,
+				"iso6393": "mrj",
+				"name": "Western Mari",
+				"populationPercent": 0.011,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15450,7 +15736,18 @@
 				"scriptCode": null,
 				"iso6393": "fin",
 				"name": "Finnish",
-				"populationPercent": 0.012,
+				"populationPercent": 0.01,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "krl",
+				"languageCode": "krl",
+				"scriptCode": null,
+				"iso6393": "krl",
+				"name": "Karelian",
+				"populationPercent": 0.01,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15461,18 +15758,7 @@
 				"scriptCode": null,
 				"iso6393": "srp",
 				"name": "Serbian",
-				"populationPercent": 0.0041,
-				"officialStatus": null,
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "vep",
-				"languageCode": "vep",
-				"scriptCode": null,
-				"iso6393": "vep",
-				"name": "Veps",
-				"populationPercent": 0.0026,
+				"populationPercent": 0.0042,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15483,29 +15769,18 @@
 				"scriptCode": null,
 				"iso6393": "mon",
 				"name": "Mongolian",
-				"populationPercent": 0.0015,
+				"populationPercent": 0.0033,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
 			},
 			{
-				"cldrCode": "kaa",
-				"languageCode": "kaa",
+				"cldrCode": "vep",
+				"languageCode": "vep",
 				"scriptCode": null,
-				"iso6393": "kaa",
-				"name": "Kara-Kalpak",
-				"populationPercent": 0.0006,
-				"officialStatus": null,
-				"writingPercent": null,
-				"literacyPercent": null
-			},
-			{
-				"cldrCode": "izh",
-				"languageCode": "izh",
-				"scriptCode": null,
-				"iso6393": "izh",
-				"name": "Ingrian",
-				"populationPercent": 0.0001,
+				"iso6393": "vep",
+				"name": "Veps",
+				"populationPercent": 0.0016,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15516,6 +15791,28 @@
 				"scriptCode": null,
 				"iso6393": "chu",
 				"name": "Church Slavic",
+				"populationPercent": 0.001,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "kaa",
+				"languageCode": "kaa",
+				"scriptCode": null,
+				"iso6393": "kaa",
+				"name": "Kara-Kalpak",
+				"populationPercent": 0.0003,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "izh",
+				"languageCode": "izh",
+				"scriptCode": null,
+				"iso6393": "izh",
+				"name": "Ingrian",
 				"populationPercent": 0,
 				"officialStatus": null,
 				"writingPercent": null,
@@ -15931,10 +16228,10 @@
 				"scriptCode": null,
 				"iso6393": "eng",
 				"name": "English",
-				"populationPercent": 93,
+				"populationPercent": 80,
 				"officialStatus": "official",
 				"writingPercent": null,
-				"literacyPercent": null
+				"literacyPercent": 100
 			},
 			{
 				"cldrCode": "zh",
@@ -15942,10 +16239,10 @@
 				"scriptCode": null,
 				"iso6393": "zho",
 				"name": "Chinese",
-				"populationPercent": 77,
+				"populationPercent": 62,
 				"officialStatus": "official",
 				"writingPercent": null,
-				"literacyPercent": null
+				"literacyPercent": 100
 			},
 			{
 				"cldrCode": "ms",
@@ -15953,8 +16250,19 @@
 				"scriptCode": null,
 				"iso6393": "msa",
 				"name": "Malay",
-				"populationPercent": 14,
+				"populationPercent": 19,
 				"officialStatus": "official",
+				"writingPercent": null,
+				"literacyPercent": 100
+			},
+			{
+				"cldrCode": "nan",
+				"languageCode": "nan",
+				"scriptCode": null,
+				"iso6393": "nan",
+				"name": "Min Nan Chinese",
+				"populationPercent": 5.8,
+				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
 			},
@@ -15964,8 +16272,129 @@
 				"scriptCode": null,
 				"iso6393": "tam",
 				"name": "Tamil",
-				"populationPercent": 2.1,
+				"populationPercent": 4.9,
 				"officialStatus": "official",
+				"writingPercent": null,
+				"literacyPercent": 88
+			},
+			{
+				"cldrCode": "hak",
+				"languageCode": "hak",
+				"scriptCode": null,
+				"iso6393": "hak",
+				"name": "Hakka Chinese",
+				"populationPercent": 4.3,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "fil",
+				"languageCode": "fil",
+				"scriptCode": null,
+				"iso6393": "fil",
+				"name": "Filipino",
+				"populationPercent": 2.6,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "yue",
+				"languageCode": "yue",
+				"scriptCode": null,
+				"iso6393": "yue",
+				"name": "Cantonese",
+				"populationPercent": 2.1,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "id",
+				"languageCode": "id",
+				"scriptCode": null,
+				"iso6393": "ind",
+				"name": "Indonesian",
+				"populationPercent": 2,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "jv",
+				"languageCode": "jv",
+				"scriptCode": null,
+				"iso6393": "jav",
+				"name": "Javanese",
+				"populationPercent": 1.5,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "bn",
+				"languageCode": "bn",
+				"scriptCode": null,
+				"iso6393": "ben",
+				"name": "Bangla",
+				"populationPercent": 1.3,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "cdo",
+				"languageCode": "cdo",
+				"scriptCode": null,
+				"iso6393": "cdo",
+				"name": null,
+				"populationPercent": 0.9,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "th",
+				"languageCode": "th",
+				"scriptCode": null,
+				"iso6393": "tha",
+				"name": "Thai",
+				"populationPercent": 0.7,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "ja",
+				"languageCode": "ja",
+				"scriptCode": null,
+				"iso6393": "jpn",
+				"name": "Japanese",
+				"populationPercent": 0.6,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "cpx",
+				"languageCode": "cpx",
+				"scriptCode": null,
+				"iso6393": "cpx",
+				"name": null,
+				"populationPercent": 0.4,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "mad",
+				"languageCode": "mad",
+				"scriptCode": null,
+				"iso6393": "mad",
+				"name": "Madurese",
+				"populationPercent": 0.4,
+				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
 			},
@@ -15975,7 +16404,7 @@
 				"scriptCode": null,
 				"iso6393": "mal",
 				"name": "Malayalam",
-				"populationPercent": 0.17,
+				"populationPercent": 0.4,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -15986,7 +16415,18 @@
 				"scriptCode": null,
 				"iso6393": "pan",
 				"name": "Punjabi",
-				"populationPercent": 0.16,
+				"populationPercent": 0.4,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
+			},
+			{
+				"cldrCode": "mnp",
+				"languageCode": "mnp",
+				"scriptCode": null,
+				"iso6393": "mnp",
+				"name": null,
+				"populationPercent": 0.3,
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": null
@@ -16266,6 +16706,17 @@
 				"officialStatus": null,
 				"writingPercent": null,
 				"literacyPercent": 6
+			},
+			{
+				"cldrCode": "sus",
+				"languageCode": "sus",
+				"scriptCode": null,
+				"iso6393": "sus",
+				"name": "Susu",
+				"populationPercent": 3,
+				"officialStatus": null,
+				"writingPercent": null,
+				"literacyPercent": null
 			},
 			{
 				"cldrCode": "ff",

@@ -248,7 +248,7 @@
 	{
 		"code": "CHF",
 		"name": "Swiss Franc",
-		"symbol": "CHF",
+		"symbol": "Fr.",
 		"decimals": 2,
 		"countries": [
 			"CH",

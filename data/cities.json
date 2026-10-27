@@ -142824,6 +142824,18 @@
 		"geonameId": 7476411
 	},
 	{
+		"name": "Ādampur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.64973",
+		"longitude": "91.13566",
+		"population": 612,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1213265
+	},
+	{
 		"name": "Ajmiriganj",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -142956,6 +142968,18 @@
 		"geonameId": 1185276
 	},
 	{
+		"name": "Ballabhpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.66957",
+		"longitude": "91.14314",
+		"population": 1050,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1211255
+	},
+	{
 		"name": "Bamangrām",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143050,6 +143074,18 @@
 		"population": 39604,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1209562
+	},
+	{
+		"name": "Beri Daulatpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.67361",
+		"longitude": "91.18972",
+		"population": 514,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 13731765
 	},
 	{
 		"name": "Bhairab Bāzār",
@@ -143215,7 +143251,7 @@
 		"stateName": "Chandpur",
 		"latitude": "23.22714",
 		"longitude": "90.65433",
-		"population": 203000,
+		"population": 212203,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1207337
 	},
@@ -143928,6 +143964,18 @@
 		"geonameId": 1185199
 	},
 	{
+		"name": "Kalyanpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.68395",
+		"longitude": "91.21365",
+		"population": 1950,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 13731760
+	},
+	{
 		"name": "Kapasia",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144108,6 +144156,30 @@
 		"geonameId": 1197137
 	},
 	{
+		"name": "Kotrabad",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2013",
+		"stateName": "Chandpur",
+		"latitude": "23.19363",
+		"longitude": "90.65267",
+		"population": 2216,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1196961
+	},
+	{
+		"name": "Krishnapur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.69149",
+		"longitude": "91.22335",
+		"population": 3155,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1196868
+	},
+	{
 		"name": "Kushtia",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144120,6 +144192,18 @@
 		"geonameId": 1185191
 	},
 	{
+		"name": "Kutubpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.68127",
+		"longitude": "91.20628",
+		"population": 2107,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 13731759
+	},
+	{
 		"name": "Lākshām",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144130,6 +144214,18 @@
 		"population": 82290,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185183
+	},
+	{
+		"name": "Lakshmipur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2013",
+		"stateName": "Chandpur",
+		"latitude": "23.17581",
+		"longitude": "90.65326",
+		"population": 7334,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1196287
 	},
 	{
 		"name": "Lakshmipur",
@@ -144432,6 +144528,30 @@
 		"geonameId": 1185164
 	},
 	{
+		"name": "Muradpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.64741",
+		"longitude": "91.19983",
+		"population": 951,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 13731764
+	},
+	{
+		"name": "Muslimpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.67542",
+		"longitude": "91.20154",
+		"population": 1409,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 13731761
+	},
+	{
 		"name": "Mymensingh",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144658,6 +144778,18 @@
 		"population": 3900,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 7476228
+	},
+	{
+		"name": "Nazirpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.66143",
+		"longitude": "91.2163",
+		"population": 1029,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 13731763
 	},
 	{
 		"name": "Netrakona",
@@ -144946,6 +145078,18 @@
 		"population": 763580,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185128
+	},
+	{
+		"name": "Rāmdāsdi",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "2013",
+		"stateName": "Chandpur",
+		"latitude": "23.19833",
+		"longitude": "90.64914",
+		"population": 10895,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1190121
 	},
 	{
 		"name": "Rāmganj",
@@ -145296,6 +145440,18 @@
 		"geonameId": 1186765
 	},
 	{
+		"name": "Shyampur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.66473",
+		"longitude": "91.20227",
+		"population": 894,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1186744
+	},
+	{
 		"name": "Singair",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -145522,6 +145678,18 @@
 		"population": 1000,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185384
+	},
+	{
+		"name": "Zaherpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "3072",
+		"stateName": "Netrakona",
+		"latitude": "24.68214",
+		"longitude": "91.17969",
+		"population": 1186,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 13731762
 	},
 	{
 		"name": "'s Herenelderen",
@@ -649013,18 +649181,6 @@
 		"countryName": "Germany",
 		"stateCode": "NI",
 		"stateName": "Lower Saxony",
-		"latitude": "52.29943",
-		"longitude": "7.15973",
-		"population": 0,
-		"timezone": "Europe/Berlin",
-		"geonameId": 2950958
-	},
-	{
-		"name": "Bad Bentheim",
-		"countryCode": "DE",
-		"countryName": "Germany",
-		"stateCode": "NI",
-		"stateName": "Lower Saxony",
 		"latitude": "52.30066",
 		"longitude": "7.15763",
 		"population": 15508,
@@ -661162,6 +661318,18 @@
 		"population": 2224,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2943829
+	},
+	{
+		"name": "Brombach",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "BW",
+		"stateName": "Baden-Wurttemberg",
+		"latitude": "47.63307",
+		"longitude": "7.69511",
+		"population": 7033,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2943818
 	},
 	{
 		"name": "Brome",
@@ -692746,6 +692914,18 @@
 		"population": 4148,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2909129
+	},
+	{
+		"name": "Hauingen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "BW",
+		"stateName": "Baden-Wurttemberg",
+		"latitude": "47.64423",
+		"longitude": "7.69532",
+		"population": 3244,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2909105
 	},
 	{
 		"name": "Haundorf",
@@ -752508,6 +752688,18 @@
 		"geonameId": 2842167
 	},
 	{
+		"name": "Salzert",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "BW",
+		"stateName": "Baden-Wurttemberg",
+		"latitude": "47.60423",
+		"longitude": "7.68165",
+		"population": 2469,
+		"timezone": "Europe/Berlin",
+		"geonameId": 13731722
+	},
+	{
 		"name": "Salzfurtkapelle",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -769690,6 +769882,18 @@
 		"population": 1494,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2820823
+	},
+	{
+		"name": "Tüllingen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "BW",
+		"stateName": "Baden-Wurttemberg",
+		"latitude": "47.60211",
+		"longitude": "7.64425",
+		"population": 1430,
+		"timezone": "Europe/Berlin",
+		"geonameId": 3205431
 	},
 	{
 		"name": "Tümlauer Koog",
@@ -1470564,6 +1470768,18 @@
 		"geonameId": 18210
 	},
 	{
+		"name": "Āghān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "28.65611",
+		"longitude": "53.13946",
+		"population": 555,
+		"timezone": "Asia/Tehran",
+		"geonameId": 144649
+	},
+	{
 		"name": "Āghcheh Masjed",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1513464,6 +1513680,18 @@
 		"geonameId": 3182333
 	},
 	{
+		"name": "Barriera di Chieri",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "TO",
+		"stateName": "Torino",
+		"latitude": "45.0638",
+		"longitude": "7.72838",
+		"population": 2439,
+		"timezone": "Europe/Rome",
+		"geonameId": 13731757
+	},
+	{
 		"name": "Barriera di Lanzo",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1513486,6 +1513714,18 @@
 		"population": 50354,
 		"timezone": "Europe/Rome",
 		"geonameId": 11288655
+	},
+	{
+		"name": "Barriera di Orbassano",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "TO",
+		"stateName": "Torino",
+		"latitude": "45.04908",
+		"longitude": "7.63455",
+		"population": 25003,
+		"timezone": "Europe/Rome",
+		"geonameId": 13731755
 	},
 	{
 		"name": "Barritteri",
@@ -1541182,6 +1541422,18 @@
 		"population": 2082,
 		"timezone": "Europe/Rome",
 		"geonameId": 8948969
+	},
+	{
+		"name": "Città Giardino",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "TO",
+		"stateName": "Torino",
+		"latitude": "45.0484",
+		"longitude": "7.62331",
+		"population": 18793,
+		"timezone": "Europe/Rome",
+		"geonameId": 12023019
 	},
 	{
 		"name": "Città Sant'Angelo",
@@ -1602048,6 +1602300,18 @@
 		"geonameId": 8949551
 	},
 	{
+		"name": "Quartieri Spagnoli",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "NA",
+		"stateName": "Napoli",
+		"latitude": "40.8409",
+		"longitude": "14.24645",
+		"population": 14000,
+		"timezone": "Europe/Rome",
+		"geonameId": 11838560
+	},
+	{
 		"name": "Quarto",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1643674,6 +1643938,18 @@
 		"population": 1319,
 		"timezone": "Europe/Rome",
 		"geonameId": 8949225
+	},
+	{
+		"name": "Villaggio Snia",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "TO",
+		"stateName": "Torino",
+		"latitude": "45.12004",
+		"longitude": "7.70959",
+		"population": 3733,
+		"timezone": "Europe/Rome",
+		"geonameId": 13731753
 	},
 	{
 		"name": "Villaggio Taunus",
@@ -1920353,18 +1920629,6 @@
 		"countryName": "Mexico",
 		"stateCode": "MEX",
 		"stateName": "México",
-		"latitude": "19.71197",
-		"longitude": "-98.96854",
-		"population": 15244,
-		"timezone": "America/Mexico_City",
-		"geonameId": 3517524
-	},
-	{
-		"name": "Tecámac de Felipe Villanueva",
-		"countryCode": "MX",
-		"countryName": "Mexico",
-		"stateCode": "MEX",
-		"stateName": "México",
 		"latitude": "19.71306",
 		"longitude": "-98.96833",
 		"population": 15911,
@@ -2106420,18 +2106684,6 @@
 		"geonameId": 1168643
 	},
 	{
-		"name": "Bhagwal",
-		"countryCode": "PK",
-		"countryName": "Pakistan",
-		"stateCode": "PB",
-		"stateName": "Punjab",
-		"latitude": "32.82111",
-		"longitude": "73.95528",
-		"population": 10669,
-		"timezone": "Asia/Karachi",
-		"geonameId": 1182851
-	},
-	{
 		"name": "Bhakkar",
 		"countryCode": "PK",
 		"countryName": "Pakistan",
@@ -2158594,6 +2158846,18 @@
 		"population": 861,
 		"timezone": "Europe/Warsaw",
 		"geonameId": 753266
+	},
+	{
+		"name": "Zimna Wódka",
+		"countryCode": "PL",
+		"countryName": "Poland",
+		"stateCode": "OP",
+		"stateName": "Opole Voivodeship",
+		"latitude": "50.43739",
+		"longitude": "18.31627",
+		"population": 720,
+		"timezone": "Europe/Warsaw",
+		"geonameId": 3080129
 	},
 	{
 		"name": "Zławieś Wielka",
@@ -2368956,6 +2369220,18 @@
 		"geonameId": 3060917
 	},
 	{
+		"name": "Brusno",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.77214",
+		"longitude": "18.72464",
+		"population": 2105,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3060918
+	},
+	{
 		"name": "Budmerice",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2369362,6 +2369638,18 @@
 		"population": 917,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 724955
+	},
+	{
+		"name": "Chrenovec-Brusno",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.77869",
+		"longitude": "18.72674",
+		"population": 1420,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3060702
 	},
 	{
 		"name": "Chtelnica",
@@ -2370816,6 +2371104,18 @@
 		"geonameId": 724661
 	},
 	{
+		"name": "Hradec",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.76266",
+		"longitude": "18.68465",
+		"population": 749,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3059893
+	},
+	{
 		"name": "Hradište pod Vrátnom",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2371162,6 +2371462,18 @@
 		"population": 1867,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 3074571
+	},
+	{
+		"name": "Jalovec",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.77093",
+		"longitude": "18.74241",
+		"population": 586,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3059737
 	},
 	{
 		"name": "Janíky",
@@ -2371606,6 +2371918,18 @@
 		"population": 504,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 13697036
+	},
+	{
+		"name": "Kocurany",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.77166",
+		"longitude": "18.54394",
+		"population": 531,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3059457
 	},
 	{
 		"name": "Kolárovice",
@@ -2372580,6 +2372904,18 @@
 		"geonameId": 724286
 	},
 	{
+		"name": "Lipník",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.78008",
+		"longitude": "18.71104",
+		"population": 599,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3059074
+	},
+	{
 		"name": "Lipovec",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2372902,6 +2373238,18 @@
 		"population": 1710,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 3058909
+	},
+	{
+		"name": "Malá Čausa",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.79984",
+		"longitude": "18.70212",
+		"population": 708,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3058901
 	},
 	{
 		"name": "Malá Maňa",
@@ -2374942,6 +2375290,18 @@
 		"population": 3398,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 723775
+	},
+	{
+		"name": "Ráztočno",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.76941",
+		"longitude": "18.75913",
+		"population": 1273,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3057884
 	},
 	{
 		"name": "Reca",
@@ -2377056,6 +2377416,18 @@
 		"geonameId": 3056943
 	},
 	{
+		"name": "Veľká Čausa",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.7777",
+		"longitude": "18.69603",
+		"population": 555,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3056934
+	},
+	{
 		"name": "Veľká Dolina",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2377090,6 +2377462,18 @@
 		"population": 3917,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 723279
+	},
+	{
+		"name": "Veľká Lehôtka",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.75496",
+		"longitude": "18.66697",
+		"population": 883,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3056916
 	},
 	{
 		"name": "Veľká Lomnica",
@@ -2450662,6 +2451046,18 @@
 		"population": 2491,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 740581
+	},
+	{
+		"name": "Pınarbaşı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "13",
+		"stateName": "Bitlis",
+		"latitude": "38.49058",
+		"longitude": "42.27667",
+		"population": 3111,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13731769
 	},
 	{
 		"name": "Pınarcık",
