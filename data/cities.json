@@ -142848,6 +142848,18 @@
 		"geonameId": 1185287
 	},
 	{
+		"name": "Alampur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "5527",
+		"stateName": "Dinajpur",
+		"latitude": "25.75544",
+		"longitude": "88.48814",
+		"population": 924,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7487911
+	},
+	{
 		"name": "Arpāra",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -142882,6 +142894,18 @@
 		"population": 210356,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1212405
+	},
+	{
+		"name": "Ātgāon",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "5527",
+		"stateName": "Dinajpur",
+		"latitude": "25.77171",
+		"longitude": "88.50297",
+		"population": 4654,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1212324
 	},
 	{
 		"name": "Ayla Patakata",
@@ -142956,6 +142980,18 @@
 		"geonameId": 7476384
 	},
 	{
+		"name": "Bajania",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "5527",
+		"stateName": "Dinajpur",
+		"latitude": "25.78079",
+		"longitude": "88.48052",
+		"population": 899,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7487903
+	},
+	{
 		"name": "Bājitpur",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143016,6 +143052,18 @@
 		"geonameId": 1185270
 	},
 	{
+		"name": "Bandhugaon",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "5527",
+		"stateName": "Dinajpur",
+		"latitude": "25.73193",
+		"longitude": "88.48968",
+		"population": 666,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1211056
+	},
+	{
 		"name": "Baniachang",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143026,6 +143074,30 @@
 		"population": 37807,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185274
+	},
+	{
+		"name": "Bara Bālihāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "5527",
+		"stateName": "Dinajpur",
+		"latitude": "25.75503",
+		"longitude": "88.46368",
+		"population": 590,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7487912
+	},
+	{
+		"name": "Baragaon",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "5527",
+		"stateName": "Dinajpur",
+		"latitude": "25.73998",
+		"longitude": "88.46807",
+		"population": 1229,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7487966
 	},
 	{
 		"name": "Barajona",
@@ -143050,6 +143122,18 @@
 		"population": 202242,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1336137
+	},
+	{
+		"name": "Barua",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "5527",
+		"stateName": "Dinajpur",
+		"latitude": "25.73873",
+		"longitude": "88.48433",
+		"population": 696,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7487969
 	},
 	{
 		"name": "Bārun",
@@ -143194,6 +143278,18 @@
 		"population": 3120,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1208731
+	},
+	{
+		"name": "Biral",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "5527",
+		"stateName": "Dinajpur",
+		"latitude": "25.63212",
+		"longitude": "88.54776",
+		"population": 13848,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7488270
 	},
 	{
 		"name": "Bogura",
@@ -143352,6 +143448,18 @@
 		"geonameId": 1185247
 	},
 	{
+		"name": "Chota Bālihāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "5527",
+		"stateName": "Dinajpur",
+		"latitude": "25.76308",
+		"longitude": "88.45983",
+		"population": 749,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7487907
+	},
+	{
 		"name": "Comilla",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143410,6 +143518,18 @@
 		"population": 3535,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1205566
+	},
+	{
+		"name": "Dakkhingaon",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "5527",
+		"stateName": "Dinajpur",
+		"latitude": "25.72794",
+		"longitude": "88.49268",
+		"population": 712,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 7487976
 	},
 	{
 		"name": "Dakshin Māgura",
@@ -262932,6 +263052,18 @@
 		"geonameId": 5887798
 	},
 	{
+		"name": "Assiniboine South",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.85897",
+		"longitude": "-97.26739",
+		"population": 35750,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731807
+	},
+	{
 		"name": "Athabasca",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -263904,6 +264036,18 @@
 		"geonameId": 5896522
 	},
 	{
+		"name": "Beaumont",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.8449",
+		"longitude": "-97.1604",
+		"population": 2360,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731797
+	},
+	{
 		"name": "Beauport",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -264526,6 +264670,18 @@
 		"population": 2428,
 		"timezone": "America/Toronto",
 		"geonameId": 6945992
+	},
+	{
+		"name": "Betsworth",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.85384",
+		"longitude": "-97.30287",
+		"population": 3970,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731808
 	},
 	{
 		"name": "Beverly Heights",
@@ -266014,6 +266170,18 @@
 		"population": 23886,
 		"timezone": "America/Toronto",
 		"geonameId": 5909294
+	},
+	{
+		"name": "Brockville",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.84622",
+		"longitude": "-97.1903",
+		"population": 1525,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731798
 	},
 	{
 		"name": "Bromont",
@@ -270252,6 +270420,18 @@
 		"geonameId": 5932231
 	},
 	{
+		"name": "Crescent Park",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.83778",
+		"longitude": "-97.14211",
+		"population": 2580,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731800
+	},
+	{
 		"name": "Crestmont",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -272700,6 +272880,18 @@
 		"geonameId": 12156839
 	},
 	{
+		"name": "Edgeland",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.86714",
+		"longitude": "-97.20952",
+		"population": 1300,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731809
+	},
+	{
 		"name": "Edgemont",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -272940,6 +273132,18 @@
 		"geonameId": 5947954
 	},
 	{
+		"name": "Elmhurst",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.85239",
+		"longitude": "-97.25873",
+		"population": 4360,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731810
+	},
+	{
 		"name": "Elmira",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -273178,6 +273382,18 @@
 		"population": 748,
 		"timezone": "America/Vancouver",
 		"geonameId": 12076666
+	},
+	{
+		"name": "Eric Coy",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.85252",
+		"longitude": "-97.27631",
+		"population": 2220,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731811
 	},
 	{
 		"name": "Erin",
@@ -274188,14 +274404,14 @@
 		"geonameId": 5955826
 	},
 	{
-		"name": "Fort Garry South",
+		"name": "Fort Garry",
 		"countryCode": "CA",
 		"countryName": "Canada",
 		"stateCode": "MB",
 		"stateName": "Manitoba",
-		"latitude": "49.79225",
-		"longitude": "-97.16359",
-		"population": 65420,
+		"latitude": "49.81341",
+		"longitude": "-97.17605",
+		"population": 99715,
 		"timezone": "America/Winnipeg",
 		"geonameId": 13665232
 	},
@@ -281700,6 +281916,18 @@
 		"geonameId": 7873814
 	},
 	{
+		"name": "Linden Ridge",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.82181",
+		"longitude": "-97.18877",
+		"population": 1580,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731801
+	},
+	{
 		"name": "Lindsay",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -283008,6 +283236,18 @@
 		"geonameId": 6066612
 	},
 	{
+		"name": "Marlton",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.86248",
+		"longitude": "-97.27157",
+		"population": 705,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731812
+	},
+	{
 		"name": "Marmora",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -283258,6 +283498,18 @@
 		"population": 748,
 		"timezone": "America/Toronto",
 		"geonameId": 6068242
+	},
+	{
+		"name": "Maybank",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.83537",
+		"longitude": "-97.15654",
+		"population": 2535,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731802
 	},
 	{
 		"name": "Mayerthorpe",
@@ -286932,6 +287184,18 @@
 		"geonameId": 6093319
 	},
 	{
+		"name": "Old Tuxedo",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.87142",
+		"longitude": "-97.21323",
+		"population": 4042,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731813
+	},
+	{
 		"name": "Old West End",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -287784,6 +288048,18 @@
 		"geonameId": 6100086
 	},
 	{
+		"name": "Peachytown",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "NL",
+		"stateName": "Newfoundland and Labrador",
+		"latitude": "47.50738",
+		"longitude": "-52.99448",
+		"population": 1684,
+		"timezone": "America/St_Johns",
+		"geonameId": 13731778
+	},
+	{
 		"name": "Pearlgate",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -287854,6 +288130,18 @@
 		"population": 508,
 		"timezone": "America/Edmonton",
 		"geonameId": 7626876
+	},
+	{
+		"name": "Pembina Strip",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.82394",
+		"longitude": "-97.15154",
+		"population": 3760,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731803
 	},
 	{
 		"name": "Pembroke",
@@ -288466,6 +288754,18 @@
 		"population": 1330,
 		"timezone": "America/Edmonton",
 		"geonameId": 6108765
+	},
+	{
+		"name": "Point Road",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.84815",
+		"longitude": "-97.14835",
+		"population": 1890,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731804
 	},
 	{
 		"name": "Pointe-à-la-Croix",
@@ -290268,6 +290568,18 @@
 		"geonameId": 6122180
 	},
 	{
+		"name": "Ridgedale",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.86561",
+		"longitude": "-97.27642",
+		"population": 700,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731814
+	},
+	{
 		"name": "Ridgetown",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -290278,6 +290590,18 @@
 		"population": 3002,
 		"timezone": "America/Toronto",
 		"geonameId": 6122230
+	},
+	{
+		"name": "Ridgewood South",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.84539",
+		"longitude": "-97.30283",
+		"population": 1690,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731815
 	},
 	{
 		"name": "Rigaud",
@@ -290398,6 +290722,18 @@
 		"population": 2325,
 		"timezone": "America/Vancouver",
 		"geonameId": 6122741
+	},
+	{
+		"name": "River West Park",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.86666",
+		"longitude": "-97.31834",
+		"population": 1390,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731816
 	},
 	{
 		"name": "Riverbend",
@@ -290638,6 +290974,18 @@
 		"population": 1614,
 		"timezone": "America/Winnipeg",
 		"geonameId": 6125862
+	},
+	{
+		"name": "Roblin Park",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.85363",
+		"longitude": "-97.29026",
+		"population": 1000,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731817
 	},
 	{
 		"name": "Rock Forest",
@@ -295332,6 +295680,30 @@
 		"geonameId": 11791192
 	},
 	{
+		"name": "South Tuxedo",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.85188",
+		"longitude": "-97.22024",
+		"population": 3350,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731818
+	},
+	{
+		"name": "Southboine",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.86235",
+		"longitude": "-97.30037",
+		"population": 1385,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731819
+	},
+	{
 		"name": "Southdale",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -298164,6 +298536,30 @@
 		"geonameId": 6170682
 	},
 	{
+		"name": "Tuxedo",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.86021",
+		"longitude": "-97.21897",
+		"population": 2060,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731820
+	},
+	{
+		"name": "Tuxedo Industrial",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.84098",
+		"longitude": "-97.21375",
+		"population": 1975,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731821
+	},
+	{
 		"name": "Tuxedo Park",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -298896,6 +299292,18 @@
 		"geonameId": 13589213
 	},
 	{
+		"name": "Varsity View",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.86339",
+		"longitude": "-97.25787",
+		"population": 2535,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731822
+	},
+	{
 		"name": "Vaudreuil-Dorion",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -299038,6 +299446,18 @@
 		"population": 40116,
 		"timezone": "America/Vancouver",
 		"geonameId": 6173864
+	},
+	{
+		"name": "Vialoux",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.86988",
+		"longitude": "-97.25626",
+		"population": 880,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731823
 	},
 	{
 		"name": "Vickers Park",
@@ -300264,6 +300684,18 @@
 		"geonameId": 6178457
 	},
 	{
+		"name": "Westdale",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.85411",
+		"longitude": "-97.31566",
+		"population": 4570,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731824
+	},
+	{
 		"name": "Westfort",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -300864,6 +301296,18 @@
 		"geonameId": 6181367
 	},
 	{
+		"name": "Whyte Ridge",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.81121",
+		"longitude": "-97.20756",
+		"population": 7295,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731805
+	},
+	{
 		"name": "Wiarton",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -300936,6 +301380,18 @@
 		"geonameId": 6181935
 	},
 	{
+		"name": "Wildwood",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.84687",
+		"longitude": "-97.13184",
+		"population": 1020,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731806
+	},
+	{
 		"name": "Wildwood Lake",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -300946,6 +301402,18 @@
 		"population": 1523,
 		"timezone": "America/Halifax",
 		"geonameId": 6181940
+	},
+	{
+		"name": "Wilkes South",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "MB",
+		"stateName": "Manitoba",
+		"latitude": "49.82817",
+		"longitude": "-97.27983",
+		"population": 815,
+		"timezone": "America/Winnipeg",
+		"geonameId": 13731825
 	},
 	{
 		"name": "Wilkie",
@@ -1399920,6 +1400388,18 @@
 		"geonameId": 6989964
 	},
 	{
+		"name": "Dāra",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "JK",
+		"stateName": "Jammu and Kashmir",
+		"latitude": "34.1795",
+		"longitude": "74.90772",
+		"population": 3177,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1429710
+	},
+	{
 		"name": "Dārapur",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1404348,6 +1404828,18 @@
 		"geonameId": 10805222
 	},
 	{
+		"name": "Faqir Gujri",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "JK",
+		"stateName": "Jammu and Kashmir",
+		"latitude": "34.19456",
+		"longitude": "74.91537",
+		"population": 1900,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1429733
+	},
+	{
 		"name": "Farah",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1404970,6 +1405462,18 @@
 		"population": 63177,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1271819
+	},
+	{
+		"name": "Gagarzoo",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "JK",
+		"stateName": "Jammu and Kashmir",
+		"latitude": "34.1084",
+		"longitude": "74.77034",
+		"population": 1187,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1429810
 	},
 	{
 		"name": "Gagret",
@@ -1425742,6 +1426246,18 @@
 		"population": 17360,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1265041
+	},
+	{
+		"name": "Lasjan",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "JK",
+		"stateName": "Jammu and Kashmir",
+		"latitude": "34.0425",
+		"longitude": "74.86976",
+		"population": 5281,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13731792
 	},
 	{
 		"name": "Lassodyāmeri",
@@ -1451268,6 +1451784,18 @@
 		"geonameId": 10261694
 	},
 	{
+		"name": "Sangam",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "JK",
+		"stateName": "Jammu and Kashmir",
+		"latitude": "34.13696",
+		"longitude": "74.77058",
+		"population": 1819,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1429801
+	},
+	{
 		"name": "Sangamner",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1458226,6 +1458754,18 @@
 		"population": 11363,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1255221
+	},
+	{
+		"name": "Takan Wari Pora",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "JK",
+		"stateName": "Jammu and Kashmir",
+		"latitude": "34.15871",
+		"longitude": "74.71075",
+		"population": 1880,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1430737
 	},
 	{
 		"name": "Takhar",
@@ -1471188,6 +1471728,18 @@
 		"geonameId": 144263
 	},
 	{
+		"name": "Āldāshīn",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "03",
+		"stateName": "Ardabil Province",
+		"latitude": "38.17806",
+		"longitude": "48.01556",
+		"population": 780,
+		"timezone": "Asia/Tehran",
+		"geonameId": 38032
+	},
+	{
 		"name": "Alek",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1471354,6 +1471906,18 @@
 		"population": 1475,
 		"timezone": "Asia/Tehran",
 		"geonameId": 33113
+	},
+	{
+		"name": "Alvārsī",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "03",
+		"stateName": "Ardabil Province",
+		"latitude": "38.1567",
+		"longitude": "47.9448",
+		"population": 808,
+		"timezone": "Asia/Tehran",
+		"geonameId": 143738
 	},
 	{
 		"name": "Ām Ālṭamīr",
@@ -1484112,6 +1484676,18 @@
 		"geonameId": 130069
 	},
 	{
+		"name": "Jenāqerd",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "03",
+		"stateName": "Ardabil Province",
+		"latitude": "38.29725",
+		"longitude": "48.12352",
+		"population": 2348,
+		"timezone": "Asia/Tehran",
+		"geonameId": 130175
+	},
+	{
 		"name": "Jereh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1487820,6 +1488396,18 @@
 		"geonameId": 17878
 	},
 	{
+		"name": "Kordeh Deh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "03",
+		"stateName": "Ardabil Province",
+		"latitude": "38.16741",
+		"longitude": "48.04928",
+		"population": 1077,
+		"timezone": "Asia/Tehran",
+		"geonameId": 37822
+	},
+	{
 		"name": "Kordī Kolā",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1488178,6 +1488766,18 @@
 		"population": 6457,
 		"timezone": "Asia/Tehran",
 		"geonameId": 126267
+	},
+	{
+		"name": "Kūrā’īm",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "03",
+		"stateName": "Ardabil Province",
+		"latitude": "37.95509",
+		"longitude": "48.23586",
+		"population": 831,
+		"timezone": "Asia/Tehran",
+		"geonameId": 37562
 	},
 	{
 		"name": "Kūrāneh",
@@ -1490623,7 +1491223,7 @@
 		"stateName": "Ardabil Province",
 		"latitude": "38.399",
 		"longitude": "47.682",
-		"population": 74109,
+		"population": 90987,
 		"timezone": "Asia/Tehran",
 		"geonameId": 124210
 	},
@@ -1494850,6 +1495450,18 @@
 		"population": 2731,
 		"timezone": "Asia/Tehran",
 		"geonameId": 39189
+	},
+	{
+		"name": "Qarah Tappeh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "03",
+		"stateName": "Ardabil Province",
+		"latitude": "38.29301",
+		"longitude": "48.06336",
+		"population": 833,
+		"timezone": "Asia/Tehran",
+		"geonameId": 37740
 	},
 	{
 		"name": "Qarah Ẕīā’ od Dīn",
@@ -1502782,6 +1503394,18 @@
 		"population": 778,
 		"timezone": "Asia/Tehran",
 		"geonameId": 112182
+	},
+	{
+		"name": "Vargeh Sarān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "03",
+		"stateName": "Ardabil Province",
+		"latitude": "38.1751",
+		"longitude": "47.9908",
+		"population": 714,
+		"timezone": "Asia/Tehran",
+		"geonameId": 35697
 	},
 	{
 		"name": "Varī-ye Kalak",
@@ -1902161,18 +1902785,6 @@
 		"countryName": "Mexico",
 		"stateCode": "MEX",
 		"stateName": "México",
-		"latitude": "19.26464",
-		"longitude": "-99.48645",
-		"population": 8798,
-		"timezone": "America/Mexico_City",
-		"geonameId": 3530756
-	},
-	{
-		"name": "San Pedro Cholula",
-		"countryCode": "MX",
-		"countryName": "Mexico",
-		"stateCode": "MEX",
-		"stateName": "México",
 		"latitude": "19.26444",
 		"longitude": "-99.48639",
 		"population": 8941,
@@ -1923178,18 +1923790,6 @@
 		"population": 16240,
 		"timezone": "America/Merida",
 		"geonameId": 3515938
-	},
-	{
-		"name": "Teotihuacán de Arista",
-		"countryCode": "MX",
-		"countryName": "Mexico",
-		"stateCode": "MEX",
-		"stateName": "México",
-		"latitude": "19.68584",
-		"longitude": "-98.86838",
-		"population": 0,
-		"timezone": "America/Mexico_City",
-		"geonameId": 3518618
 	},
 	{
 		"name": "Teotihuacán de Arista",
@@ -2469108,6 +2469708,18 @@
 		"geonameId": 713751
 	},
 	{
+		"name": "Albat",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "43",
+		"stateName": "Crimea",
+		"latitude": "44.629",
+		"longitude": "33.86895",
+		"population": 2520,
+		"timezone": "Europe/Simferopol",
+		"geonameId": 703498
+	},
+	{
 		"name": "Alchevsk",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2469732,7 +2470344,7 @@
 		"geonameId": 713203
 	},
 	{
-		"name": "Aromatnoye",
+		"name": "Aromatne",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
 		"stateCode": "43",
@@ -2469744,7 +2470356,7 @@
 		"geonameId": 713202
 	},
 	{
-		"name": "Aromatnoye",
+		"name": "Aromatne",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
 		"stateCode": "43",
@@ -2492268,18 +2492880,6 @@
 		"geonameId": 703772
 	},
 	{
-		"name": "Kuibyshevo",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "43",
-		"stateName": "Crimea",
-		"latitude": "44.629",
-		"longitude": "33.86895",
-		"population": 2520,
-		"timezone": "Europe/Simferopol",
-		"geonameId": 703498
-	},
-	{
 		"name": "Kukhari",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2507484,6 +2508084,18 @@
 		"geonameId": 697945
 	},
 	{
+		"name": "Pasichna",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "26",
+		"stateName": "Ivano-Frankivsk",
+		"latitude": "48.94337",
+		"longitude": "24.70013",
+		"population": 33008,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 697947
+	},
+	{
 		"name": "Pasika",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2514288,18 +2514900,6 @@
 		"geonameId": 695274
 	},
 	{
-		"name": "Ruch’i",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "43",
-		"stateName": "Crimea",
-		"latitude": "45.78564",
-		"longitude": "33.66093",
-		"population": 1047,
-		"timezone": "Europe/Simferopol",
-		"geonameId": 695265
-	},
-	{
 		"name": "Ruchky",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2514310,6 +2514910,18 @@
 		"population": 549,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 695264
+	},
+	{
+		"name": "Ruchyi",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "43",
+		"stateName": "Crimea",
+		"latitude": "45.78564",
+		"longitude": "33.66093",
+		"population": 1047,
+		"timezone": "Europe/Simferopol",
+		"geonameId": 695265
 	},
 	{
 		"name": "Rudenkivka",

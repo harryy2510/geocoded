@@ -4655,20 +4655,6 @@
 				"isDst": true
 			},
 			{
-				"at": "2026-11-01T05:00:00.000Z",
-				"offsetBefore": -14400,
-				"offsetAfter": -18000,
-				"abbreviation": "CST",
-				"isDst": false
-			},
-			{
-				"at": "2027-03-14T05:00:00.000Z",
-				"offsetBefore": -18000,
-				"offsetAfter": -14400,
-				"abbreviation": "CDT",
-				"isDst": true
-			},
-			{
 				"at": "2027-11-07T05:00:00.000Z",
 				"offsetBefore": -14400,
 				"offsetAfter": -18000,
