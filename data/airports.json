@@ -170306,9 +170306,11 @@
 		"alternateNames": [
 			"Aeroport d'Atyrau",
 			"Atyrau Airport",
+			"Atyrau Əuezhajy",
 			"Aéroport d'Atyrau",
 			"GUW",
-			"UATG"
+			"UATG",
+			"Атырау Әуежайы"
 		],
 		"unLocode": "KZGUW",
 		"airportLocationCode": "GUW",
@@ -170324,7 +170326,7 @@
 		"stateName": "Atyrau Oblisi",
 		"elevation": 0,
 		"timezone": "Asia/Atyrau",
-		"modificationDate": "2014-01-05"
+		"modificationDate": "2026-10-28"
 	},
 	{
 		"geonameId": 11258471,

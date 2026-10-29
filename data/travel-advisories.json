@@ -528,7 +528,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-09-29T16:00:43Z",
+			"updatedAt": "2026-10-28T10:42:46Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/brazil"
 		}
 	},
@@ -1144,7 +1144,7 @@
 		"uk": {
 			"destination": "Spain",
 			"alertStatus": [],
-			"updatedAt": "2026-08-12T15:46:24Z",
+			"updatedAt": "2026-10-28T13:02:06Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/spain"
 		}
 	},
@@ -1790,7 +1790,7 @@
 		"uk": {
 			"destination": "Italy",
 			"alertStatus": [],
-			"updatedAt": "2026-10-21T10:01:07Z",
+			"updatedAt": "2026-10-28T16:15:33Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/italy"
 		}
 	},
@@ -1869,7 +1869,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-16T12:02:22Z",
+			"updatedAt": "2026-10-28T11:16:05Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/kenya"
 		}
 	},
@@ -2707,7 +2707,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-21T17:00:06Z",
+			"updatedAt": "2026-10-28T13:48:23Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/nigeria"
 		}
 	},

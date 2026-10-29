@@ -691488,18 +691488,6 @@
 		"geonameId": 2911463
 	},
 	{
-		"name": "Hallungen",
-		"countryCode": "DE",
-		"countryName": "Germany",
-		"stateCode": "TH",
-		"stateName": "Thuringia",
-		"latitude": "51.13333",
-		"longitude": "10.33333",
-		"population": 242,
-		"timezone": "Europe/Berlin",
-		"geonameId": 2911461
-	},
-	{
 		"name": "Halsbach",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -764763,6 +764751,18 @@
 		"name": "Stetten",
 		"countryCode": "DE",
 		"countryName": "Germany",
+		"stateCode": "BW",
+		"stateName": "Baden-Wurttemberg",
+		"latitude": "47.60197",
+		"longitude": "7.6649",
+		"population": 11000,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2827219
+	},
+	{
+		"name": "Stetten",
+		"countryCode": "DE",
+		"countryName": "Germany",
 		"stateCode": "RP",
 		"stateName": "Rheinland-Pfalz",
 		"latitude": "49.66944",
@@ -766135,7 +766135,7 @@
 		"stateName": "Schleswig-Holstein",
 		"latitude": "54.38333",
 		"longitude": "9.23333",
-		"population": 0,
+		"population": 23,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2825130
 	},
@@ -1391148,6 +1391148,18 @@
 		"geonameId": 10941117
 	},
 	{
+		"name": "Benoor",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.65919",
+		"longitude": "81.429",
+		"population": 2134,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1275543
+	},
+	{
 		"name": "Beohāri",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1392226,6 +1392238,18 @@
 		"population": 4865,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1276062
+	},
+	{
+		"name": "Bhatpal",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.66599",
+		"longitude": "81.46044",
+		"population": 1249,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13731827
 	},
 	{
 		"name": "Bhātpāra",
@@ -1398060,6 +1398084,18 @@
 		"geonameId": 1274285
 	},
 	{
+		"name": "Chhotedongar",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.45199",
+		"longitude": "81.3266",
+		"population": 3817,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1274290
+	},
+	{
 		"name": "Chhoti Sādri",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1399654,6 +1399690,18 @@
 		"population": 45494,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1273833
+	},
+	{
+		"name": "Cooper's Camp",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "23.16614",
+		"longitude": "88.58949",
+		"population": 23119,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13731844
 	},
 	{
 		"name": "Corlim",
@@ -1407730,6 +1407778,18 @@
 		"population": 16462,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10713768
+	},
+	{
+		"name": "Gore",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "JH",
+		"stateName": "Jharkhand",
+		"latitude": "23.41503",
+		"longitude": "85.08295",
+		"population": 1376,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11625217
 	},
 	{
 		"name": "Goregaon",
@@ -1428072,6 +1428132,18 @@
 		"geonameId": 1348775
 	},
 	{
+		"name": "Mahimagawadi",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.51107",
+		"longitude": "81.36258",
+		"population": 2288,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 8440738
+	},
+	{
 		"name": "Mahindāle",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1428994,6 +1429066,18 @@
 		"population": 16649,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1264085
+	},
+	{
+		"name": "Malingnar",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.69221",
+		"longitude": "81.37472",
+		"population": 533,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13731835
 	},
 	{
 		"name": "Māliya",
@@ -1431298,6 +1431382,18 @@
 		"population": 8591,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1263384
+	},
+	{
+		"name": "Matawand Bagbeda",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.66745",
+		"longitude": "81.3892",
+		"population": 655,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13731840
 	},
 	{
 		"name": "Mathadahatti",
@@ -1436592,18 +1436688,6 @@
 		"geonameId": 1261871
 	},
 	{
-		"name": "Nārāinpur",
-		"countryCode": "IN",
-		"countryName": "India",
-		"stateCode": "CG",
-		"stateName": "Chhattisgarh",
-		"latitude": "19.71794",
-		"longitude": "81.24437",
-		"population": 22106,
-		"timezone": "Asia/Kolkata",
-		"geonameId": 1261870
-	},
-	{
 		"name": "Narakal",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1436842,6 +1436926,18 @@
 		"population": 41752,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1261823
+	},
+	{
+		"name": "Narayanpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.71794",
+		"longitude": "81.24437",
+		"population": 22106,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1261870
 	},
 	{
 		"name": "Naregal",
@@ -1450824,6 +1450920,18 @@
 		"geonameId": 1257794
 	},
 	{
+		"name": "Sahispur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "WB",
+		"stateName": "West Bengal",
+		"latitude": "23.06512",
+		"longitude": "88.61086",
+		"population": 2222,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 9035970
+	},
+	{
 		"name": "Sahnidih",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1453870,6 +1453978,18 @@
 		"population": 102343,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1256826
+	},
+	{
+		"name": "Seoni",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.70243",
+		"longitude": "81.39458",
+		"population": 509,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13731839
 	},
 	{
 		"name": "Seoni Chhapāra",
@@ -1457158,6 +1457278,18 @@
 		"population": 11285,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1255791
+	},
+	{
+		"name": "Sonapal",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.65752",
+		"longitude": "81.40629",
+		"population": 645,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13731829
 	},
 	{
 		"name": "Sonari",
@@ -1461288,6 +1461420,18 @@
 		"geonameId": 10468814
 	},
 	{
+		"name": "Timnar",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.69029",
+		"longitude": "81.34827",
+		"population": 840,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13731841
+	},
+	{
 		"name": "Timurni",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1463170,6 +1463314,18 @@
 		"population": 4644,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 11184322
+	},
+	{
+		"name": "Udidgaon",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "CG",
+		"stateName": "Chhattisgarh",
+		"latitude": "19.70211",
+		"longitude": "81.43787",
+		"population": 636,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 13731838
 	},
 	{
 		"name": "Udiyāvara",
@@ -1478590,6 +1478746,18 @@
 		"population": 1819,
 		"timezone": "Asia/Tehran",
 		"geonameId": 6711214
+	},
+	{
+		"name": "Delīābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "20",
+		"stateName": "Lorestan Province",
+		"latitude": "33.7205",
+		"longitude": "48.79397",
+		"population": 585,
+		"timezone": "Asia/Tehran",
+		"geonameId": 138080
 	},
 	{
 		"name": "Delījān",
@@ -1971060,6 +1971228,18 @@
 		"geonameId": 2746031
 	},
 	{
+		"name": "`s-Graveland",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.238",
+		"longitude": "5.122",
+		"population": 1390,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2747377
+	},
+	{
 		"name": "Aagtdorp",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1971127,7 +1971307,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.25917",
 		"longitude": "4.75972",
-		"population": 22991,
+		"population": 13730,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2760134
 	},
@@ -1971139,7 +1971319,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.27417",
 		"longitude": "4.75",
-		"population": 505,
+		"population": 525,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2760132
 	},
@@ -1971223,7 +1971403,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.235",
 		"longitude": "4.59167",
-		"population": 855,
+		"population": 1015,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2760073
 	},
@@ -1971358,6 +1971538,18 @@
 		"population": 2030,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759961
+	},
+	{
+		"name": "Aerdenhout",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.36167",
+		"longitude": "4.59722",
+		"population": 4815,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2759951
 	},
 	{
 		"name": "Aerdt",
@@ -1971984,6 +1972176,18 @@
 		"geonameId": 13696833
 	},
 	{
+		"name": "Ankeveen",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.265",
+		"longitude": "5.09861",
+		"population": 1505,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2759751
+	},
+	{
 		"name": "Ankeveense Rade",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1971991,7 +1972195,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.25891",
 		"longitude": "5.1016",
-		"population": 1110,
+		"population": 1075,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759749
 	},
@@ -1972363,7 +1972567,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.33723",
 		"longitude": "4.78523",
-		"population": 15080,
+		"population": 15625,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759524
 	},
@@ -1972807,7 +1973011,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.28667",
 		"longitude": "4.59583",
-		"population": 880,
+		"population": 990,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759266
 	},
@@ -1972915,7 +1973119,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.32083",
 		"longitude": "4.59861",
-		"population": 5140,
+		"population": 5410,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759199
 	},
@@ -1972975,7 +1973179,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.365",
 		"longitude": "4.57222",
-		"population": 1025,
+		"population": 1010,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759175
 	},
@@ -1973611,7 +1973815,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.4025",
 		"longitude": "4.62222",
-		"population": 3925,
+		"population": 6705,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758804
 	},
@@ -1974000,6 +1974204,18 @@
 		"geonameId": 2758498
 	},
 	{
+		"name": "Bovenkerk",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.2925",
+		"longitude": "4.83333",
+		"population": 3210,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2758495
+	},
+	{
 		"name": "Boxmeer",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1974247,7 +1974463,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.43417",
 		"longitude": "4.99583",
-		"population": 2655,
+		"population": 3150,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758258
 	},
@@ -1974967,7 +1975183,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.50902",
 		"longitude": "4.65843",
-		"population": 2595,
+		"population": 2405,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757922
 	},
@@ -1975051,7 +1975267,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.33583",
 		"longitude": "4.63472",
-		"population": 695,
+		"population": 2455,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757875
 	},
@@ -1975471,7 +1975687,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.23917",
 		"longitude": "4.79306",
-		"population": 4435,
+		"population": 3770,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757379
 	},
@@ -1975507,7 +1975723,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.51901",
 		"longitude": "4.68171",
-		"population": 1140,
+		"population": 1235,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757313
 	},
@@ -1976491,7 +1976707,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.44667",
 		"longitude": "4.6375",
-		"population": 1080,
+		"population": 1210,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756598
 	},
@@ -1976539,7 +1976755,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.30583",
 		"longitude": "5.01667",
-		"population": 1500,
+		"population": 1680,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756584
 	},
@@ -1976707,7 +1976923,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.32941",
 		"longitude": "4.93964",
-		"population": 4720,
+		"population": 5665,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756504
 	},
@@ -1979143,7 +1979359,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.3825",
 		"longitude": "4.75417",
-		"population": 2350,
+		"population": 2610,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2754943
 	},
@@ -1979527,7 +1979743,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.5075",
 		"longitude": "4.63194",
-		"population": 800,
+		"population": 845,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2754695
 	},
@@ -1980991,7 +1981207,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.25",
 		"longitude": "5.07778",
-		"population": 750,
+		"population": 765,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2753579
 	},
@@ -1981339,7 +1981555,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.46333",
 		"longitude": "4.95",
-		"population": 1750,
+		"population": 1835,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2753334
 	},
@@ -1981642,6 +1981858,18 @@
 		"population": 20010,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2753010
+	},
+	{
+		"name": "Katwoude",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.46833",
+		"longitude": "5.04583",
+		"population": 515,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2753006
 	},
 	{
 		"name": "Kedichem",
@@ -1982263,7 +1982491,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.23917",
 		"longitude": "5.10694",
-		"population": 6250,
+		"population": 6570,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2752409
 	},
@@ -1982443,7 +1982671,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.23417",
 		"longitude": "4.75139",
-		"population": 9250,
+		"population": 9235,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2752178
 	},
@@ -1983235,7 +1983463,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.56917",
 		"longitude": "4.69444",
-		"population": 7300,
+		"population": 7790,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751592
 	},
@@ -1983319,7 +1983547,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.25667",
 		"longitude": "4.57222",
-		"population": 3360,
+		"population": 3355,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751544
 	},
@@ -1983487,7 +1983715,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.207",
 		"longitude": "5.071",
-		"population": 8600,
+		"population": 9410,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 8714374
 	},
@@ -1985232,6 +1985460,18 @@
 		"geonameId": 2750420
 	},
 	{
+		"name": "Nes aan de Amstel",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.26",
+		"longitude": "4.87222",
+		"population": 995,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2750415
+	},
+	{
 		"name": "Netersel",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1985479,9 +1985719,21 @@
 		"stateName": "North Holland",
 		"latitude": "52.26417",
 		"longitude": "4.63056",
-		"population": 31415,
+		"population": 31790,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750121
+	},
+	{
+		"name": "Nieuw-Vennep - Getsewoud",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.26696",
+		"longitude": "4.61165",
+		"population": 16455,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 12547269
 	},
 	{
 		"name": "Nieuw-Vossemeer",
@@ -1985578,6 +1985830,18 @@
 		"population": 615,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750213
+	},
+	{
+		"name": "Nieuwebrug",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.37333",
+		"longitude": "4.675",
+		"population": 530,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2750345
 	},
 	{
 		"name": "Nieuwegein",
@@ -1985962,6 +1986226,18 @@
 		"population": 116777,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 7648384
+	},
+	{
+		"name": "Noord-Bakkum",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.56583",
+		"longitude": "4.65417",
+		"population": 535,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2749997
 	},
 	{
 		"name": "Noord-Hofland",
@@ -1986751,7 +1987027,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.27917",
 		"longitude": "4.79583",
-		"population": 7780,
+		"population": 10495,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749525
 	},
@@ -1987332,6 +1987608,18 @@
 		"geonameId": 2749248
 	},
 	{
+		"name": "Osdorp",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.35694",
+		"longitude": "4.80077",
+		"population": 34290,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2749242
+	},
+	{
 		"name": "Ospel",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1987627,7 +1987915,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.29504",
 		"longitude": "4.90746",
-		"population": 7955,
+		"population": 8860,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749017
 	},
@@ -1987783,7 +1988071,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.39167",
 		"longitude": "4.61389",
-		"population": 3685,
+		"population": 4465,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2748813
 	},
@@ -1988635,7 +1988923,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.25833",
 		"longitude": "4.71389",
-		"population": 4103,
+		"population": 4400,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2748086
 	},
@@ -1989072,6 +1989360,30 @@
 		"geonameId": 6640199
 	},
 	{
+		"name": "Santpoort-Noord",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.43357",
+		"longitude": "4.64224",
+		"population": 7260,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2747760
+	},
+	{
+		"name": "Santpoort-Zuid",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.42083",
+		"longitude": "4.63056",
+		"population": 3390,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2747759
+	},
+	{
 		"name": "Sappemeer",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1989274,6 +1989586,18 @@
 		"population": 760,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 13696912
+	},
+	{
+		"name": "Schellingwoude",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.38419",
+		"longitude": "4.96385",
+		"population": 695,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2747640
 	},
 	{
 		"name": "Schellinkhout",
@@ -1990092,6 +1990416,18 @@
 		"geonameId": 2747131
 	},
 	{
+		"name": "Sloten",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.34167",
+		"longitude": "4.79722",
+		"population": 745,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2747132
+	},
+	{
 		"name": "Sluis",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1990279,9 +1990615,21 @@
 		"stateName": "North Holland",
 		"latitude": "52.4125",
 		"longitude": "4.68333",
-		"population": 3550,
+		"population": 3560,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746986
+	},
+	{
+		"name": "Spaarndam gem. Haarlem",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.41535",
+		"longitude": "4.67464",
+		"population": 585,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 11395749
 	},
 	{
 		"name": "Spainkbos",
@@ -1991863,7 +1992211,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.52917",
 		"longitude": "4.70972",
-		"population": 11794,
+		"population": 13489,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745978
 	},
@@ -1991875,7 +1992223,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.2375",
 		"longitude": "4.82639",
-		"population": 26846,
+		"population": 28434,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745973
 	},
@@ -1992396,6 +1992744,18 @@
 		"geonameId": 2745677
 	},
 	{
+		"name": "Velsen-Noord",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.47167",
+		"longitude": "4.64722",
+		"population": 15340,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2745674
+	},
+	{
 		"name": "Velsen-Zuid",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1992403,7 +1992763,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.46",
 		"longitude": "4.65",
-		"population": 67758,
+		"population": 3885,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745673
 	},
@@ -1992571,7 +1992931,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.35083",
 		"longitude": "4.67778",
-		"population": 1895,
+		"population": 4385,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745528
 	},
@@ -1992787,7 +1993147,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.31917",
 		"longitude": "4.57778",
-		"population": 1955,
+		"population": 2160,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745360
 	},
@@ -1993462,6 +1993822,18 @@
 		"population": 1110,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 9036086
+	},
+	{
+		"name": "Watergang",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.4375",
+		"longitude": "4.95139",
+		"population": 560,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2744977
 	},
 	{
 		"name": "Waterloopleinbuurt",
@@ -1994191,7 +1994563,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.4936",
 		"longitude": "4.59409",
-		"population": 2095,
+		"population": 2155,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744484
 	},
@@ -1994995,7 +1995367,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.37125",
 		"longitude": "4.53306",
-		"population": 16868,
+		"population": 16325,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744042
 	},
@@ -1995679,7 +1996051,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.3125",
 		"longitude": "4.61667",
-		"population": 1455,
+		"population": 2295,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2743588
 	},
@@ -1995691,7 +1996063,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.38",
 		"longitude": "4.74583",
-		"population": 7935,
+		"population": 8095,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2743574
 	},
@@ -2369868,6 +2370240,18 @@
 		"geonameId": 725028
 	},
 	{
+		"name": "Bystričany",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.65967",
+		"longitude": "18.51533",
+		"population": 1724,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3060861
+	},
+	{
 		"name": "Bytča",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2370106,6 +2370490,18 @@
 		"population": 1099,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 3060786
+	},
+	{
+		"name": "Čereňany",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.64477",
+		"longitude": "18.48735",
+		"population": 1757,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3060783
 	},
 	{
 		"name": "Cerová",
@@ -2372242,6 +2372638,18 @@
 		"population": 2057,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 3059600
+	},
+	{
+		"name": "Kamenec pod Vtáčnikom",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TC",
+		"stateName": "Trenčín Region",
+		"latitude": "48.67334",
+		"longitude": "18.55072",
+		"population": 1751,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3060408
 	},
 	{
 		"name": "Kamenica nad Cirochou",
