@@ -1487616,6 +1487616,18 @@
 		"geonameId": 127279
 	},
 	{
+		"name": "Khoshk-e Sarā",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "21",
+		"stateName": "Māzandarān",
+		"latitude": "36.63225",
+		"longitude": "51.45663",
+		"population": 4157,
+		"timezone": "Asia/Tehran",
+		"geonameId": 7934
+	},
+	{
 		"name": "Khoshkrūd",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1488658,18 +1488670,6 @@
 		"population": 703,
 		"timezone": "Asia/Tehran",
 		"geonameId": 7722
-	},
-	{
-		"name": "Koshkesarā",
-		"countryCode": "IR",
-		"countryName": "Iran",
-		"stateCode": "21",
-		"stateName": "Māzandarān",
-		"latitude": "36.63225",
-		"longitude": "51.45663",
-		"population": 4157,
-		"timezone": "Asia/Tehran",
-		"geonameId": 7934
 	},
 	{
 		"name": "Koshksarāy",
@@ -1495620,7 +1495620,7 @@
 		"geonameId": 39189
 	},
 	{
-		"name": "Qarah Tappeh",
+		"name": "Qarah Tappeh-ye Sabalān",
 		"countryCode": "IR",
 		"countryName": "Iran",
 		"stateCode": "03",
@@ -2377248,6 +2377248,18 @@
 		"geonameId": 723514
 	},
 	{
+		"name": "Stakčín",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "PV",
+		"stateName": "Prešov Region",
+		"latitude": "49.00167",
+		"longitude": "22.22963",
+		"population": 2330,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 723510
+	},
+	{
 		"name": "Stará Bystrica",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2407865,8 +2407877,8 @@
 		"countryName": "Turkmenistan",
 		"stateCode": "L",
 		"stateName": "Lebap",
-		"latitude": "37.81244",
-		"longitude": "66.04656",
+		"latitude": "37.80725",
+		"longitude": "66.05688",
 		"population": 44508,
 		"timezone": "Asia/Ashgabat",
 		"geonameId": 1219392
@@ -2407906,6 +2407918,18 @@
 		"population": 167027,
 		"timezone": "Asia/Ashgabat",
 		"geonameId": 1218667
+	},
+	{
+		"name": "Mehinli",
+		"countryCode": "TM",
+		"countryName": "Turkmenistan",
+		"stateCode": "A",
+		"stateName": "Ahal",
+		"latitude": "37.46612",
+		"longitude": "59.41618",
+		"population": 5089,
+		"timezone": "Asia/Ashgabat",
+		"geonameId": 161647
 	},
 	{
 		"name": "Mekan",

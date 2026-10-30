@@ -515,6 +515,10 @@
 			{
 				"printName": "Abaga",
 				"invertedName": "Abaga"
+			},
+			{
+				"printName": "Wagama",
+				"invertedName": "Wagama"
 			}
 		],
 		"macrolanguageCode": null,
@@ -7231,6 +7235,10 @@
 			{
 				"printName": "Atemble",
 				"invertedName": "Atemble"
+			},
+			{
+				"printName": "Mand",
+				"invertedName": "Mand"
 			}
 		],
 		"macrolanguageCode": null,
@@ -26252,6 +26260,10 @@
 		"referenceName": "San Blas Kuna",
 		"names": [
 			{
+				"printName": "San Blas Guna",
+				"invertedName": "Guna, San Blas"
+			},
+			{
 				"printName": "San Blas Kuna",
 				"invertedName": "Kuna, San Blas"
 			}
@@ -28166,6 +28178,10 @@
 			{
 				"printName": "Degenan",
 				"invertedName": "Degenan"
+			},
+			{
+				"printName": "Degenang",
+				"invertedName": "Degenang"
 			}
 		],
 		"macrolanguageCode": null,
@@ -47392,6 +47408,10 @@
 		"referenceName": "Inuktitut",
 		"names": [
 			{
+				"printName": "Canadian Inuktut",
+				"invertedName": "Inuktut, Canadian"
+			},
+			{
 				"printName": "Inuktitut",
 				"invertedName": "Inuktitut"
 			}
@@ -58621,6 +58641,10 @@
 		"referenceName": "Korak",
 		"names": [
 			{
+				"printName": "Amako",
+				"invertedName": "Amako"
+			},
+			{
 				"printName": "Korak",
 				"invertedName": "Korak"
 			}
@@ -67637,6 +67661,10 @@
 			{
 				"printName": "Langam",
 				"invertedName": "Langam"
+			},
+			{
+				"printName": "Pondi",
+				"invertedName": "Pondi"
 			}
 		],
 		"macrolanguageCode": null,
@@ -73043,8 +73071,12 @@
 		"referenceName": "Mongol",
 		"names": [
 			{
-				"printName": "Mongol",
-				"invertedName": "Mongol"
+				"printName": "Mongol (Papua New Guinea)",
+				"invertedName": "Mongol (Papua New Guinea)"
+			},
+			{
+				"printName": "Mwakai",
+				"invertedName": "Mwakai"
 			}
 		],
 		"macrolanguageCode": null,
@@ -81742,6 +81774,14 @@
 			{
 				"printName": "Min Nan Chinese",
 				"invertedName": "Chinese, Min Nan"
+			},
+			{
+				"printName": "Taigi",
+				"invertedName": "Taigi"
+			},
+			{
+				"printName": "Taiwanese",
+				"invertedName": "Taiwanese"
 			}
 		],
 		"macrolanguageCode": "zho",
@@ -98070,6 +98110,10 @@
 		"referenceName": "Papi",
 		"names": [
 			{
+				"printName": "Baiyamo",
+				"invertedName": "Baiyamo"
+			},
+			{
 				"printName": "Papi",
 				"invertedName": "Papi"
 			}
@@ -98106,8 +98150,8 @@
 		"referenceName": "Uma",
 		"names": [
 			{
-				"printName": "Uma",
-				"invertedName": "Uma"
+				"printName": "Uma (Indonesia)",
+				"invertedName": "Uma (Indonesia)"
 			}
 		],
 		"macrolanguageCode": null,
@@ -98123,6 +98167,10 @@
 		"type": "living",
 		"referenceName": "Pipil",
 		"names": [
+			{
+				"printName": "Central American Nawat",
+				"invertedName": "Central American Nawat"
+			},
 			{
 				"printName": "Nicarao",
 				"invertedName": "Nicarao"
@@ -103065,6 +103113,10 @@
 			{
 				"printName": "Ronji",
 				"invertedName": "Ronji"
+			},
+			{
+				"printName": "Uma (Papua New Guinea)",
+				"invertedName": "Uma (Papua New Guinea)"
 			}
 		],
 		"macrolanguageCode": null,
@@ -105975,6 +106027,10 @@
 		"type": "living",
 		"referenceName": "Suarmin",
 		"names": [
+			{
+				"printName": "Asaba",
+				"invertedName": "Asaba"
+			},
 			{
 				"printName": "Suarmin",
 				"invertedName": "Suarmin"
@@ -111152,6 +111208,10 @@
 			{
 				"printName": "Sausi",
 				"invertedName": "Sausi"
+			},
+			{
+				"printName": "Wia",
+				"invertedName": "Wia"
 			}
 		],
 		"macrolanguageCode": null,
@@ -124043,8 +124103,8 @@
 		"referenceName": "Ulwa",
 		"names": [
 			{
-				"printName": "Ulwa",
-				"invertedName": "Ulwa"
+				"printName": "Ulwa (Nicaragua)",
+				"invertedName": "Ulwa (Nicaragua)"
 			}
 		],
 		"macrolanguageCode": null,
@@ -124698,6 +124758,10 @@
 		"type": "living",
 		"referenceName": "Urigina",
 		"names": [
+			{
+				"printName": "Kobuka",
+				"invertedName": "Kobuka"
+			},
 			{
 				"printName": "Urigina",
 				"invertedName": "Urigina"
@@ -138126,6 +138190,10 @@
 			{
 				"printName": "Yapunda",
 				"invertedName": "Yapunda"
+			},
+			{
+				"printName": "Yeri",
+				"invertedName": "Yeri"
 			}
 		],
 		"macrolanguageCode": null,
@@ -138213,6 +138281,10 @@
 		"type": "living",
 		"referenceName": "Yagomi",
 		"names": [
+			{
+				"printName": "Tanda",
+				"invertedName": "Tanda"
+			},
 			{
 				"printName": "Yagomi",
 				"invertedName": "Yagomi"
@@ -138999,6 +139071,10 @@
 		"referenceName": "Yaul",
 		"names": [
 			{
+				"printName": "Ulwa (Papua New Guinea)",
+				"invertedName": "Ulwa (Papua New Guinea)"
+			},
+			{
 				"printName": "Yaul",
 				"invertedName": "Yaul"
 			}
@@ -139035,8 +139111,20 @@
 		"referenceName": "Yele",
 		"names": [
 			{
+				"printName": "Rossel",
+				"invertedName": "Rossel"
+			},
+			{
 				"printName": "Yele",
 				"invertedName": "Yele"
+			},
+			{
+				"printName": "Yeletnye",
+				"invertedName": "Yeletnye"
+			},
+			{
+				"printName": "Yeli Dnye",
+				"invertedName": "Yeli Dnye"
 			}
 		],
 		"macrolanguageCode": null,
