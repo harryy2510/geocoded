@@ -2359,7 +2359,7 @@
 		"stateName": "Takhar",
 		"latitude": "37.1539",
 		"longitude": "69.4435",
-		"population": 0,
+		"population": 41659,
 		"timezone": "Asia/Kabul",
 		"geonameId": 1143814
 	},
@@ -1177656,6 +1177656,18 @@
 		"geonameId": 2302002
 	},
 	{
+		"name": "Dixcove",
+		"countryCode": "GH",
+		"countryName": "Ghana",
+		"stateCode": "WP",
+		"stateName": "Western",
+		"latitude": "4.79505",
+		"longitude": "-1.94691",
+		"population": 7000,
+		"timezone": "Africa/Accra",
+		"geonameId": 2301715
+	},
+	{
 		"name": "Domaa-Ahenkro",
 		"countryCode": "GH",
 		"countryName": "Ghana",
@@ -1470756,6 +1470768,18 @@
 		"geonameId": 142813
 	},
 	{
+		"name": "‘Āsheqlū",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "01",
+		"stateName": "East Azerbaijan",
+		"latitude": "38.9867",
+		"longitude": "46.6999",
+		"population": 534,
+		"timezone": "Asia/Tehran",
+		"geonameId": 142793
+	},
+	{
 		"name": "‘Askarī",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1476211,7 +1476235,7 @@
 		"stateName": "South Khorasan Province",
 		"latitude": "33.86845",
 		"longitude": "57.42885",
-		"population": 15318,
+		"population": 16426,
 		"timezone": "Asia/Tehran",
 		"geonameId": 9480732
 	},
@@ -1478880,6 +1478904,18 @@
 		"geonameId": 136256
 	},
 	{
+		"name": "Dezhkord",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "30.72077",
+		"longitude": "51.95906",
+		"population": 3924,
+		"timezone": "Asia/Tehran",
+		"geonameId": 136254
+	},
+	{
 		"name": "Dībāj",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1480351,7 +1480387,7 @@
 		"stateName": "Isfahan",
 		"latitude": "32.5553",
 		"longitude": "51.50973",
-		"population": 49843,
+		"population": 37704,
 		"timezone": "Asia/Tehran",
 		"geonameId": 418851
 	},
@@ -1484196,7 +1484232,7 @@
 		"geonameId": 7637486
 	},
 	{
-		"name": "Īz̄eh",
+		"name": "Īẕeh",
 		"countryCode": "IR",
 		"countryName": "Iran",
 		"stateCode": "10",
@@ -1489315,7 +1489351,7 @@
 		"stateName": "Gilan Province",
 		"latitude": "37.19548",
 		"longitude": "50.15263",
-		"population": 68148,
+		"population": 79445,
 		"timezone": "Asia/Tehran",
 		"geonameId": 125897
 	},
@@ -1489498,6 +1489534,18 @@
 		"population": 18146,
 		"timezone": "Asia/Tehran",
 		"geonameId": 490
+	},
+	{
+		"name": "Lavāsān-e Bozorg",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.82423",
+		"longitude": "51.78116",
+		"population": 937,
+		"timezone": "Asia/Tehran",
+		"geonameId": 125775
 	},
 	{
 		"name": "Lāy Bīd",
@@ -1502887,7 +1502935,7 @@
 		"stateName": "Razavi Khorasan",
 		"latitude": "35.244",
 		"longitude": "60.6225",
-		"population": 58928,
+		"population": 100449,
 		"timezone": "Asia/Tehran",
 		"geonameId": 1159362
 	},
@@ -1973575,7 +1973623,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.28585",
 		"longitude": "5.26534",
-		"population": 4560,
+		"population": 3875,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758941
 	},
@@ -1973695,7 +1973743,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.2725",
 		"longitude": "5.24167",
-		"population": 5060,
+		"population": 12940,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758868
 	},
@@ -1974823,7 +1974871,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.44717",
 		"longitude": "5.79906",
-		"population": 710,
+		"population": 760,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758096
 	},
@@ -1975222,6 +1975270,18 @@
 		"population": 2765,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757899
+	},
+	{
+		"name": "Crailo",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.26917",
+		"longitude": "5.20417",
+		"population": 540,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2757893
 	},
 	{
 		"name": "Cranendonck",
@@ -1977859,7 +1977919,7 @@
 		"stateName": "North Brabant",
 		"latitude": "51.57056",
 		"longitude": "4.63726",
-		"population": 1000,
+		"population": 43869,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2755996
 	},
@@ -1980823,7 +1980883,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.4394",
 		"longitude": "5.63805",
-		"population": 1160,
+		"population": 1305,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2753887
 	},
@@ -1982899,7 +1982959,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.25667",
 		"longitude": "5.22778",
-		"population": 11508,
+		"population": 11547,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751874
 	},
@@ -1984915,7 +1984975,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.18184",
 		"longitude": "5.44845",
-		"population": 535,
+		"population": 640,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750837
 	},
@@ -1984927,7 +1984987,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.38215",
 		"longitude": "5.28528",
-		"population": 915,
+		"population": 1255,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750835
 	},
@@ -1985179,7 +1985239,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.33",
 		"longitude": "5.06944",
-		"population": 6223,
+		"population": 7325,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750569
 	},
@@ -1985191,7 +1985251,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.32583",
 		"longitude": "5.12083",
-		"population": 1605,
+		"population": 1730,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750567
 	},
@@ -1985275,7 +1985335,7 @@
 		"stateName": "North Holland",
 		"latitude": "52.29583",
 		"longitude": "5.1625",
-		"population": 17115,
+		"population": 18520,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750521
 	},
@@ -1985443,7 +1985503,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.44502",
 		"longitude": "5.774",
-		"population": 1140,
+		"population": 1270,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750417
 	},
@@ -1986967,7 +1987027,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.29703",
 		"longitude": "5.07431",
-		"population": 1025,
+		"population": 1202,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749334
 	},
@@ -1989703,7 +1989763,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.48025",
 		"longitude": "6.15209",
-		"population": 936,
+		"population": 972,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747591
 	},
@@ -1992502,6 +1992562,18 @@
 		"population": 31071,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745860
+	},
+	{
+		"name": "Valkeveen",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.30083",
+		"longitude": "5.19722",
+		"population": 550,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2745858
 	},
 	{
 		"name": "Valthe",
@@ -2479356,18 +2479428,6 @@
 		"geonameId": 709966
 	},
 	{
-		"name": "Dneprovka",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "43",
-		"stateName": "Crimea",
-		"latitude": "45.71373",
-		"longitude": "34.36256",
-		"population": 2068,
-		"timezone": "Europe/Simferopol",
-		"geonameId": 688732
-	},
-	{
 		"name": "Dnipro",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2479402,6 +2479462,18 @@
 		"population": 17736,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 709960
+	},
+	{
+		"name": "Dniprovka",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "43",
+		"stateName": "Crimea",
+		"latitude": "45.71373",
+		"longitude": "34.36256",
+		"population": 2068,
+		"timezone": "Europe/Simferopol",
+		"geonameId": 688732
 	},
 	{
 		"name": "Dniprovka",
@@ -2495952,18 +2496024,6 @@
 		"geonameId": 702705
 	},
 	{
-		"name": "Luganskoye",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "43",
-		"stateName": "Crimea",
-		"latitude": "45.8019",
-		"longitude": "34.23786",
-		"population": 1129,
-		"timezone": "Europe/Simferopol",
-		"geonameId": 7021048
-	},
-	{
 		"name": "Lugovoye",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2496022,6 +2496082,18 @@
 		"population": 2604,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 702684
+	},
+	{
+		"name": "Luhanske",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "43",
+		"stateName": "Crimea",
+		"latitude": "45.8019",
+		"longitude": "34.23786",
+		"population": 1129,
+		"timezone": "Europe/Simferopol",
+		"geonameId": 7021048
 	},
 	{
 		"name": "Luhy",
@@ -2519907,18 +2519979,6 @@
 		"name": "Sofiivka",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
-		"stateCode": "43",
-		"stateName": "Crimea",
-		"latitude": "45.09456",
-		"longitude": "34.00133",
-		"population": 3481,
-		"timezone": "Europe/Simferopol",
-		"geonameId": 693342
-	},
-	{
-		"name": "Sofiivka",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
 		"stateCode": "48",
 		"stateName": "Mykolaiv",
 		"latitude": "48.0814",
@@ -2519986,6 +2520046,18 @@
 		"population": 1289,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 693330
+	},
+	{
+		"name": "Sofiyivka",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "43",
+		"stateName": "Crimea",
+		"latitude": "45.09456",
+		"longitude": "34.00133",
+		"population": 3481,
+		"timezone": "Europe/Simferopol",
+		"geonameId": 693342
 	},
 	{
 		"name": "Sofiyivka",
@@ -2520084,18 +2520156,6 @@
 		"geonameId": 693292
 	},
 	{
-		"name": "Sokolinoye",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "43",
-		"stateName": "Crimea",
-		"latitude": "44.55041",
-		"longitude": "33.95897",
-		"population": 1251,
-		"timezone": "Europe/Simferopol",
-		"geonameId": 693272
-	},
-	{
 		"name": "Sokolivka",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2520130,6 +2520190,18 @@
 		"population": 1084,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 693263
+	},
+	{
+		"name": "Sokolyne",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "43",
+		"stateName": "Crimea",
+		"latitude": "44.55041",
+		"longitude": "33.95897",
+		"population": 1251,
+		"timezone": "Europe/Simferopol",
+		"geonameId": 693272
 	},
 	{
 		"name": "Sokyrnytsia",

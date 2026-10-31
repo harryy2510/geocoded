@@ -1164,7 +1164,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-26T16:58:29Z",
+			"updatedAt": "2026-10-30T21:20:19Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/ethiopia"
 		}
 	},
@@ -1869,7 +1869,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-28T11:16:05Z",
+			"updatedAt": "2026-10-30T12:31:34Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/kenya"
 		}
 	},
@@ -2043,7 +2043,7 @@
 		"uk": {
 			"destination": "Kazakhstan",
 			"alertStatus": [],
-			"updatedAt": "2026-10-13T14:04:04Z",
+			"updatedAt": "2026-10-30T14:52:10Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/kazakhstan"
 		}
 	},
@@ -3771,7 +3771,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-20T14:04:46Z",
+			"updatedAt": "2026-10-30T14:45:53Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/tanzania"
 		}
 	},
@@ -3825,7 +3825,7 @@
 		"uk": {
 			"destination": "USA",
 			"alertStatus": [],
-			"updatedAt": "2026-08-18T09:29:04Z",
+			"updatedAt": "2026-10-30T16:55:54Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/usa"
 		}
 	},
