@@ -60327,34 +60327,6 @@
 		}
 	},
 	{
-		"name": "Judea and Samaria Area",
-		"iso2": "WE",
-		"iso31662": "IL-WE",
-		"countryCode": "IL",
-		"countryName": "Israel",
-		"geonameId": 11821181,
-		"latitude": "32.10578",
-		"longitude": "35.18635",
-		"timezone": "Asia/Jerusalem",
-		"capital": "Ariel",
-		"population": 491923,
-		"type": "district",
-		"native": "Judea and Samaria Area",
-		"wikidataId": "Q513200",
-		"translations": {
-			"ar": "يهودا والسامرة",
-			"en": "Judea and Samaria Area",
-			"es": "Área de Judea y Samaria",
-			"fr": "Zone de Judée-Samarie",
-			"bn": "যিহূদা এবং সামারিয়া এলাকা",
-			"de": "Judäa und Samaria",
-			"ja": "ユダヤ・サマリア地域",
-			"jv": "Wilayah Yudea lan Samaria",
-			"pa": "ਯਹੂਦਾ ਅਤੇ ਸਮਾਰੀਆ ਖੇਤਰ",
-			"pt": "Área da Judeia e Samaria"
-		}
-	},
-	{
 		"name": "Northern District",
 		"iso2": "Z",
 		"iso31662": "IL-Z",

@@ -177324,6 +177324,18 @@
 		"geonameId": 727423
 	},
 	{
+		"name": "Seliminovo",
+		"countryCode": "BG",
+		"countryName": "Bulgaria",
+		"stateCode": "20",
+		"stateName": "Sliven",
+		"latitude": "42.65",
+		"longitude": "26.15",
+		"population": 1466,
+		"timezone": "Europe/Sofia",
+		"geonameId": 727391
+	},
+	{
 		"name": "Senovo",
 		"countryCode": "BG",
 		"countryName": "Bulgaria",
@@ -1372479,8 +1372491,8 @@
 		"name": "Ariel",
 		"countryCode": "IL",
 		"countryName": "Israel",
-		"stateCode": "WE",
-		"stateName": "Judea and Samaria Area",
+		"stateCode": "",
+		"stateName": "",
 		"latitude": "32.1065",
 		"longitude": "35.18449",
 		"population": 20540,
@@ -1374819,8 +1374831,8 @@
 		"name": "Hashmonaim",
 		"countryCode": "IL",
 		"countryName": "Israel",
-		"stateCode": "WE",
-		"stateName": "Judea and Samaria Area",
+		"stateCode": "",
+		"stateName": "",
 		"latitude": "31.92973",
 		"longitude": "35.0215",
 		"population": 2771,
@@ -1468860,6 +1468872,18 @@
 		"geonameId": 99039
 	},
 	{
+		"name": "Al-Mūwaffaqiyah",
+		"countryCode": "IQ",
+		"countryName": "Iraq",
+		"stateCode": "NI",
+		"stateName": "Nineveh",
+		"latitude": "36.35645",
+		"longitude": "43.32992",
+		"population": 10896,
+		"timezone": "Asia/Baghdad",
+		"geonameId": 13731884
+	},
+	{
 		"name": "Al-Qāsim",
 		"countryCode": "IQ",
 		"countryName": "Iraq",
@@ -1469616,6 +1469640,18 @@
 		"geonameId": 446208
 	},
 	{
+		"name": "Khaznah Tabah",
+		"countryCode": "IQ",
+		"countryName": "Iraq",
+		"stateCode": "NI",
+		"stateName": "Nineveh",
+		"latitude": "36.36306",
+		"longitude": "43.35824",
+		"population": 14075,
+		"timezone": "Asia/Baghdad",
+		"geonameId": 445592
+	},
+	{
 		"name": "Kifrī",
 		"countryCode": "IQ",
 		"countryName": "Iraq",
@@ -1469902,6 +1469938,30 @@
 		"population": 110000,
 		"timezone": "Asia/Baghdad",
 		"geonameId": 92511
+	},
+	{
+		"name": "Qaryat al Lakk",
+		"countryCode": "IQ",
+		"countryName": "Iraq",
+		"stateCode": "NI",
+		"stateName": "Nineveh",
+		"latitude": "36.30156",
+		"longitude": "43.26257",
+		"population": 1889,
+		"timezone": "Asia/Baghdad",
+		"geonameId": 6860784
+	},
+	{
+		"name": "Qaryat Manārat Shabak",
+		"countryCode": "IQ",
+		"countryName": "Iraq",
+		"stateCode": "NI",
+		"stateName": "Nineveh",
+		"latitude": "36.31701",
+		"longitude": "43.33102",
+		"population": 7745,
+		"timezone": "Asia/Baghdad",
+		"geonameId": 93726
 	},
 	{
 		"name": "Qeładizê",
@@ -1471786,18 +1471846,6 @@
 		"population": 5817,
 		"timezone": "Asia/Tehran",
 		"geonameId": 144410
-	},
-	{
-		"name": "Akbarābād",
-		"countryCode": "IR",
-		"countryName": "Iran",
-		"stateCode": "14",
-		"stateName": "Fars",
-		"latitude": "29.24607",
-		"longitude": "52.78084",
-		"population": 5817,
-		"timezone": "Asia/Tehran",
-		"geonameId": 6652945
 	},
 	{
 		"name": "Akhand",
@@ -1474006,18 +1474054,6 @@
 		"population": 9232,
 		"timezone": "Asia/Tehran",
 		"geonameId": 140958
-	},
-	{
-		"name": "Bahābād",
-		"countryCode": "IR",
-		"countryName": "Iran",
-		"stateCode": "25",
-		"stateName": "Yazd Province",
-		"latitude": "31.87091",
-		"longitude": "56.02433",
-		"population": 0,
-		"timezone": "Asia/Tehran",
-		"geonameId": 9533956
 	},
 	{
 		"name": "Bahādor Bayk",
@@ -1477908,6 +1477944,18 @@
 		"geonameId": 137436
 	},
 	{
+		"name": "Darreh Shūr",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "28.29617",
+		"longitude": "54.38119",
+		"population": 1761,
+		"timezone": "Asia/Tehran",
+		"geonameId": 137432
+	},
+	{
 		"name": "Darvīsheh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1479994,6 +1480042,18 @@
 		"population": 1904,
 		"timezone": "Asia/Tehran",
 		"geonameId": 135301
+	},
+	{
+		"name": "Esfeden",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "29",
+		"stateName": "South Khorasan Province",
+		"latitude": "33.64574",
+		"longitude": "59.77717",
+		"population": 3598,
+		"timezone": "Asia/Tehran",
+		"geonameId": 135295
 	},
 	{
 		"name": "Esfeshād",
@@ -1484890,6 +1484950,18 @@
 		"population": 2348,
 		"timezone": "Asia/Tehran",
 		"geonameId": 130175
+	},
+	{
+		"name": "Jerā",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "24",
+		"stateName": "Hamadan Province",
+		"latitude": "34.4126",
+		"longitude": "48.29492",
+		"population": 626,
+		"timezone": "Asia/Tehran",
+		"geonameId": 130167
 	},
 	{
 		"name": "Jereh",
@@ -1494658,18 +1494730,6 @@
 		"population": 6886,
 		"timezone": "Asia/Tehran",
 		"geonameId": 400756
-	},
-	{
-		"name": "Parandak",
-		"countryCode": "IR",
-		"countryName": "Iran",
-		"stateCode": "26",
-		"stateName": "Tehran",
-		"latitude": "35.4951",
-		"longitude": "51.0426",
-		"population": 5038,
-		"timezone": "Asia/Tehran",
-		"geonameId": 6666853
 	},
 	{
 		"name": "Pardanjān",
@@ -1518838,6 +1518898,18 @@
 		"population": 532,
 		"timezone": "Europe/Rome",
 		"geonameId": 3181810
+	},
+	{
+		"name": "Borgo Cittadella",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "AL",
+		"stateName": "Provincia di Alessandria",
+		"latitude": "44.9223",
+		"longitude": "8.61069",
+		"population": 1300,
+		"timezone": "Europe/Rome",
+		"geonameId": 13731889
 	},
 	{
 		"name": "Borgo Crimea",
@@ -1547880,6 +1547952,18 @@
 		"geonameId": 8949899
 	},
 	{
+		"name": "Cristo",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "AL",
+		"stateName": "Provincia di Alessandria",
+		"latitude": "44.90058",
+		"longitude": "8.60314",
+		"population": 7596,
+		"timezone": "Europe/Rome",
+		"geonameId": 13731888
+	},
+	{
 		"name": "Croce",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1551058,6 +1551142,18 @@
 		"population": 363,
 		"timezone": "Europe/Rome",
 		"geonameId": 3177330
+	},
+	{
+		"name": "Europa",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "AL",
+		"stateName": "Provincia di Alessandria",
+		"latitude": "44.90032",
+		"longitude": "8.62154",
+		"population": 6166,
+		"timezone": "Europe/Rome",
+		"geonameId": 13731886
 	},
 	{
 		"name": "Evangelisti-Rubino",
@@ -1587804,6 +1587900,18 @@
 		"geonameId": 3171895
 	},
 	{
+		"name": "Orti",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "AL",
+		"stateName": "Provincia di Alessandria",
+		"latitude": "44.9282",
+		"longitude": "8.62379",
+		"population": 4100,
+		"timezone": "Europe/Rome",
+		"geonameId": 13731887
+	},
+	{
 		"name": "Ortignano Raggiolo",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1596766,6 +1596874,18 @@
 		"population": 772,
 		"timezone": "Europe/Rome",
 		"geonameId": 3170626
+	},
+	{
+		"name": "Pista",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "AL",
+		"stateName": "Provincia di Alessandria",
+		"latitude": "44.90476",
+		"longitude": "8.6187",
+		"population": 4303,
+		"timezone": "Europe/Rome",
+		"geonameId": 13731885
 	},
 	{
 		"name": "Pisticci",
@@ -1693186,18 +1693306,6 @@
 		"population": 394630,
 		"timezone": "Asia/Seoul",
 		"geonameId": 11523293
-	},
-	{
-		"name": "Sejong",
-		"countryCode": "KR",
-		"countryName": "South Korea",
-		"stateCode": "50",
-		"stateName": "Sejong-si",
-		"latitude": "36.48039",
-		"longitude": "127.28821",
-		"population": 0,
-		"timezone": "Asia/Seoul",
-		"geonameId": 13715696
 	},
 	{
 		"name": "Seodong",
