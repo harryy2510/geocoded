@@ -32959,7 +32959,7 @@
 		"stateName": "Mendoza",
 		"latitude": "-33.03917",
 		"longitude": "-68.87955",
-		"population": 0,
+		"population": 25728,
 		"timezone": "America/Argentina/Mendoza",
 		"geonameId": 3845393
 	},
@@ -1372491,8 +1372491,8 @@
 		"name": "Ariel",
 		"countryCode": "IL",
 		"countryName": "Israel",
-		"stateCode": "",
-		"stateName": "",
+		"stateCode": "WE",
+		"stateName": "Judea and Samaria Area",
 		"latitude": "32.1065",
 		"longitude": "35.18449",
 		"population": 20540,
@@ -1374831,8 +1374831,8 @@
 		"name": "Hashmonaim",
 		"countryCode": "IL",
 		"countryName": "Israel",
-		"stateCode": "",
-		"stateName": "",
+		"stateCode": "WE",
+		"stateName": "Judea and Samaria Area",
 		"latitude": "31.92973",
 		"longitude": "35.0215",
 		"population": 2771,
@@ -1478268,6 +1478268,18 @@
 		"geonameId": 6649516
 	},
 	{
+		"name": "Deh ‘Abbās",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.5613",
+		"longitude": "51.2797",
+		"population": 958,
+		"timezone": "Asia/Tehran",
+		"geonameId": 137083
+	},
+	{
 		"name": "Deh Barm",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1481916,6 +1481928,18 @@
 		"geonameId": 133538
 	},
 	{
+		"name": "Gerīmenj",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "29",
+		"stateName": "South Khorasan Province",
+		"latitude": "33.89597",
+		"longitude": "58.90056",
+		"population": 878,
+		"timezone": "Asia/Tehran",
+		"geonameId": 133537
+	},
+	{
 		"name": "Germī",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1484206,6 +1484230,18 @@
 		"population": 131232,
 		"timezone": "Asia/Tehran",
 		"geonameId": 1160939
+	},
+	{
+		"name": "Īrīn",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.57822",
+		"longitude": "51.21409",
+		"population": 1822,
+		"timezone": "Asia/Tehran",
+		"geonameId": 130748
 	},
 	{
 		"name": "Isfahan",
@@ -1486872,6 +1486908,18 @@
 		"geonameId": 128112
 	},
 	{
+		"name": "Khalaf Ţāḩūneh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "14",
+		"stateName": "Fars",
+		"latitude": "30.005",
+		"longitude": "52.9511",
+		"population": 1303,
+		"timezone": "Asia/Tehran",
+		"geonameId": 128101
+	},
+	{
 		"name": "Khalaf-e Mosallam",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1486882,6 +1486930,18 @@
 		"population": 1999,
 		"timezone": "Asia/Tehran",
 		"geonameId": 128103
+	},
+	{
+		"name": "Khalāzīr",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.60808",
+		"longitude": "51.36247",
+		"population": 2356,
+		"timezone": "Asia/Tehran",
+		"geonameId": 404517
 	},
 	{
 		"name": "Khāledābād",
@@ -1499748,6 +1499808,18 @@
 		"geonameId": 31239
 	},
 	{
+		"name": "Shāhīk",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "29",
+		"stateName": "South Khorasan Province",
+		"latitude": "33.7015",
+		"longitude": "59.19062",
+		"population": 600,
+		"timezone": "Asia/Tehran",
+		"geonameId": 21516
+	},
+	{
 		"name": "Shāhīn Dezh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1503360,6 +1503432,18 @@
 		"geonameId": 33993
 	},
 	{
+		"name": "Vādān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.59548",
+		"longitude": "52.14538",
+		"population": 1305,
+		"timezone": "Asia/Tehran",
+		"geonameId": 112356
+	},
+	{
 		"name": "Vafs",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1503490,6 +1503574,18 @@
 		"population": 913,
 		"timezone": "Asia/Tehran",
 		"geonameId": 112289
+	},
+	{
+		"name": "Valīābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "26",
+		"stateName": "Tehran",
+		"latitude": "35.5728",
+		"longitude": "51.341",
+		"population": 3694,
+		"timezone": "Asia/Tehran",
+		"geonameId": 404499
 	},
 	{
 		"name": "Valīsdeh",
@@ -2342971,7 +2343067,7 @@
 		"stateName": "Tabuk Region",
 		"latitude": "25.02126",
 		"longitude": "37.2685",
-		"population": 33874,
+		"population": 46229,
 		"timezone": "Asia/Riyadh",
 		"geonameId": 100926
 	},
@@ -2407599,18 +2407695,6 @@
 		"name": "Gökdepe",
 		"countryCode": "TM",
 		"countryName": "Turkmenistan",
-		"stateCode": "A",
-		"stateName": "Ahal",
-		"latitude": "38.23454",
-		"longitude": "57.96951",
-		"population": 9150,
-		"timezone": "Asia/Ashgabat",
-		"geonameId": 161963
-	},
-	{
-		"name": "Gökdepe",
-		"countryCode": "TM",
-		"countryName": "Turkmenistan",
 		"stateCode": "M",
 		"stateName": "Mary",
 		"latitude": "37.51497",
@@ -2407618,6 +2407702,18 @@
 		"population": 6767,
 		"timezone": "Asia/Ashgabat",
 		"geonameId": 13645711
+	},
+	{
+		"name": "Gökdepe obasy",
+		"countryCode": "TM",
+		"countryName": "Turkmenistan",
+		"stateCode": "A",
+		"stateName": "Ahal",
+		"latitude": "38.23454",
+		"longitude": "57.96951",
+		"population": 9150,
+		"timezone": "Asia/Ashgabat",
+		"geonameId": 161963
 	},
 	{
 		"name": "Görogly",

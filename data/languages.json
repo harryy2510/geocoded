@@ -510,7 +510,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Wagama",
+		"referenceName": "Abaga",
 		"names": [
 			{
 				"printName": "Abaga",
@@ -7080,6 +7080,24 @@
 		"comment": null
 	},
 	{
+		"iso6393": "asw",
+		"iso6392B": null,
+		"iso6392T": null,
+		"iso6391": null,
+		"scope": "individual",
+		"type": "living",
+		"referenceName": "Australian Aborigines Sign Language",
+		"names": [
+			{
+				"printName": "Australian Aborigines Sign Language",
+				"invertedName": "Australian Aborigines Sign Language"
+			}
+		],
+		"macrolanguageCode": null,
+		"macrolanguageMemberCodes": [],
+		"comment": null
+	},
+	{
 		"iso6393": "asx",
 		"iso6392B": null,
 		"iso6392T": null,
@@ -7212,7 +7230,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Mand",
+		"referenceName": "Atemble",
 		"names": [
 			{
 				"printName": "Atemble",
@@ -28155,7 +28173,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Degenang",
+		"referenceName": "Degenan",
 		"names": [
 			{
 				"printName": "Degenan",
@@ -35213,24 +35231,6 @@
 			{
 				"printName": "Fiwaga",
 				"invertedName": "Fiwaga"
-			}
-		],
-		"macrolanguageCode": null,
-		"macrolanguageMemberCodes": [],
-		"comment": null
-	},
-	{
-		"iso6393": "fjs",
-		"iso6392B": null,
-		"iso6392T": null,
-		"iso6391": null,
-		"scope": "individual",
-		"type": "living",
-		"referenceName": "Fiji Sign Language",
-		"names": [
-			{
-				"printName": "Fiji Sign Language",
-				"invertedName": "Fiji Sign Language"
 			}
 		],
 		"macrolanguageCode": null,
@@ -47405,7 +47405,7 @@
 		"iso6391": "iu",
 		"scope": "macrolanguage",
 		"type": "living",
-		"referenceName": "Canadian Inuktut",
+		"referenceName": "Inuktitut",
 		"names": [
 			{
 				"printName": "Canadian Inuktut",
@@ -58638,7 +58638,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Amako",
+		"referenceName": "Korak",
 		"names": [
 			{
 				"printName": "Amako",
@@ -67656,7 +67656,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Pondi",
+		"referenceName": "Langam",
 		"names": [
 			{
 				"printName": "Langam",
@@ -73068,7 +73068,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Mwakai",
+		"referenceName": "Mongol",
 		"names": [
 			{
 				"printName": "Mongol (Papua New Guinea)",
@@ -98107,7 +98107,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Baiyamo",
+		"referenceName": "Papi",
 		"names": [
 			{
 				"printName": "Baiyamo",
@@ -98147,7 +98147,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Uma (Indonesia)",
+		"referenceName": "Uma",
 		"names": [
 			{
 				"printName": "Uma (Indonesia)",
@@ -98165,7 +98165,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Central American Nawat",
+		"referenceName": "Pipil",
 		"names": [
 			{
 				"printName": "Central American Nawat",
@@ -103108,7 +103108,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Uma (Papua New Guinea)",
+		"referenceName": "Ronji",
 		"names": [
 			{
 				"printName": "Ronji",
@@ -106025,7 +106025,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Asaba",
+		"referenceName": "Suarmin",
 		"names": [
 			{
 				"printName": "Asaba",
@@ -111203,7 +111203,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Wia",
+		"referenceName": "Sausi",
 		"names": [
 			{
 				"printName": "Sausi",
@@ -124100,7 +124100,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Ulwa (Nicaragua)",
+		"referenceName": "Ulwa",
 		"names": [
 			{
 				"printName": "Ulwa (Nicaragua)",
@@ -124756,7 +124756,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Kobuka",
+		"referenceName": "Urigina",
 		"names": [
 			{
 				"printName": "Kobuka",
@@ -133141,24 +133141,6 @@
 		"comment": null
 	},
 	{
-		"iso6393": "xiw",
-		"iso6392B": null,
-		"iso6392T": null,
-		"iso6391": null,
-		"scope": "individual",
-		"type": "living",
-		"referenceName": "Shiwa",
-		"names": [
-			{
-				"printName": "Shiwa",
-				"invertedName": "Shiwa"
-			}
-		],
-		"macrolanguageCode": null,
-		"macrolanguageMemberCodes": [],
-		"comment": null
-	},
-	{
 		"iso6393": "xiy",
 		"iso6392B": null,
 		"iso6392T": null,
@@ -138203,7 +138185,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Yeri",
+		"referenceName": "Yapunda",
 		"names": [
 			{
 				"printName": "Yapunda",
@@ -138297,7 +138279,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Tanda",
+		"referenceName": "Yagomi",
 		"names": [
 			{
 				"printName": "Tanda",
@@ -139086,7 +139068,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Ulwa (Papua New Guinea)",
+		"referenceName": "Yaul",
 		"names": [
 			{
 				"printName": "Ulwa (Papua New Guinea)",
@@ -139126,7 +139108,7 @@
 		"iso6391": null,
 		"scope": "individual",
 		"type": "living",
-		"referenceName": "Yeli Dnye",
+		"referenceName": "Yele",
 		"names": [
 			{
 				"printName": "Rossel",
