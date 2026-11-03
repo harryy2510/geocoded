@@ -71952,6 +71952,18 @@
 		"geonameId": 11903684
 	},
 	{
+		"name": "Tosters",
+		"countryCode": "AT",
+		"countryName": "Austria",
+		"stateCode": "8",
+		"stateName": "Vorarlberg",
+		"latitude": "47.23951",
+		"longitude": "9.58379",
+		"population": 0,
+		"timezone": "Europe/Vienna",
+		"geonameId": 13731923
+	},
+	{
 		"name": "Traboch",
 		"countryCode": "AT",
 		"countryName": "Austria",
@@ -298253,8 +298265,8 @@
 		"countryName": "Canada",
 		"stateCode": "ON",
 		"stateName": "Ontario",
-		"latitude": "43.70643",
-		"longitude": "-79.39864",
+		"latitude": "43.65333",
+		"longitude": "-79.38389",
 		"population": 2794356,
 		"timezone": "America/Toronto",
 		"geonameId": 6167865
@@ -1381968,6 +1381980,18 @@
 		"geonameId": 7302805
 	},
 	{
+		"name": "Akkupalle Gokavaram",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.83783",
+		"longitude": "81.34946",
+		"population": 4673,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10768062
+	},
+	{
 		"name": "Aklera",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1386610,6 +1386634,18 @@
 		"population": 22214,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1429898
+	},
+	{
+		"name": "Bādampūdi",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.82592",
+		"longitude": "81.47399",
+		"population": 6654,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10768113
 	},
 	{
 		"name": "Badarpur",
@@ -1394688,6 +1394724,18 @@
 		"geonameId": 6695468
 	},
 	{
+		"name": "Bommidi",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.80114",
+		"longitude": "81.47039",
+		"population": 2443,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10768121
+	},
+	{
 		"name": "Bommināyakkanpatti",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1397158,6 +1397206,18 @@
 		"population": 4252,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1274460
+	},
+	{
+		"name": "Chebrolu",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.82227",
+		"longitude": "81.39733",
+		"population": 14216,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10768055
 	},
 	{
 		"name": "Chechat",
@@ -1407720,6 +1407780,18 @@
 		"geonameId": 11271185
 	},
 	{
+		"name": "Gopinādhapatnam",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.84118",
+		"longitude": "81.38966",
+		"population": 1783,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10768063
+	},
+	{
 		"name": "Gopināthpur",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1414836,6 +1414908,18 @@
 		"geonameId": 8541672
 	},
 	{
+		"name": "Kāgupādu",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.80152",
+		"longitude": "81.44624",
+		"population": 1663,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10768118
+	},
+	{
 		"name": "Kahi Kuchi",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1414894,6 +1414978,18 @@
 		"population": 20763,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1268627
+	},
+	{
+		"name": "Kaikaram",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.81084",
+		"longitude": "81.36611",
+		"population": 9532,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1268626
 	},
 	{
 		"name": "Kailāras",
@@ -1436004,6 +1436100,18 @@
 		"geonameId": 11682028
 	},
 	{
+		"name": "Nallamadu",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.8802",
+		"longitude": "81.35494",
+		"population": 8164,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10768069
+	},
+	{
 		"name": "Nallampatti",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1449466,6 +1449574,18 @@
 		"population": 36055,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10689579
+	},
+	{
+		"name": "Ravulaparru",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.79328",
+		"longitude": "81.42744",
+		"population": 2039,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10768125
 	},
 	{
 		"name": "Rawālsar",
@@ -1463940,6 +1464060,18 @@
 		"geonameId": 13157125
 	},
 	{
+		"name": "Ungutūru",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.82204",
+		"longitude": "81.42405",
+		"population": 14280,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10768114
+	},
+	{
 		"name": "Unhel",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1466182,6 +1466314,18 @@
 		"population": 9540,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 13494668
+	},
+	{
+		"name": "Venkatādri Appārāopuram",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "AP",
+		"stateName": "Andhra Pradesh",
+		"latitude": "16.76684",
+		"longitude": "81.47386",
+		"population": 976,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 10768132
 	},
 	{
 		"name": "Venkatagiri",
@@ -1479900,6 +1480044,18 @@
 		"geonameId": 135362
 	},
 	{
+		"name": "Eqbāliyeh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "28",
+		"stateName": "Qazvin Province",
+		"latitude": "36.23081",
+		"longitude": "49.92499",
+		"population": 55066,
+		"timezone": "Asia/Tehran",
+		"geonameId": 114106
+	},
+	{
 		"name": "Eqbālīyeh",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1479910,18 +1480066,6 @@
 		"population": 575,
 		"timezone": "Asia/Tehran",
 		"geonameId": 41708
-	},
-	{
-		"name": "Eqbālīyeh",
-		"countryCode": "IR",
-		"countryName": "Iran",
-		"stateCode": "28",
-		"stateName": "Qazvin Province",
-		"latitude": "36.23081",
-		"longitude": "49.92499",
-		"population": 55066,
-		"timezone": "Asia/Tehran",
-		"geonameId": 114106
 	},
 	{
 		"name": "Eqbālīyeh",
@@ -1480399,7 +1480543,7 @@
 		"stateName": "Kerman",
 		"latitude": "28.9502",
 		"longitude": "58.885",
-		"population": 0,
+		"population": 6876,
 		"timezone": "Asia/Tehran",
 		"geonameId": 134962
 	},
@@ -1480699,7 +1480843,7 @@
 		"stateName": "Razavi Khorasan",
 		"latitude": "35.70685",
 		"longitude": "59.85006",
-		"population": 0,
+		"population": 39515,
 		"timezone": "Asia/Tehran",
 		"geonameId": 134809
 	},
@@ -1483440,6 +1483584,18 @@
 		"geonameId": 131962
 	},
 	{
+		"name": "Hārūnābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "24",
+		"stateName": "Hamadan Province",
+		"latitude": "34.9975",
+		"longitude": "48.3943",
+		"population": 605,
+		"timezone": "Asia/Tehran",
+		"geonameId": 131955
+	},
+	{
 		"name": "Hārūnī",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1484206,6 +1484362,18 @@
 		"population": 1421,
 		"timezone": "Asia/Tehran",
 		"geonameId": 130760
+	},
+	{
+		"name": "Īrāj",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "04",
+		"stateName": "Isfahan",
+		"latitude": "33.45762",
+		"longitude": "54.86866",
+		"population": 655,
+		"timezone": "Asia/Tehran",
+		"geonameId": 130761
 	},
 	{
 		"name": "Īrānābād",
@@ -1487878,6 +1488046,18 @@
 		"population": 3520,
 		"timezone": "Asia/Tehran",
 		"geonameId": 127651
+	},
+	{
+		"name": "Khowrābād",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "39",
+		"stateName": "Qom Province",
+		"latitude": "34.5108",
+		"longitude": "50.9578",
+		"population": 1929,
+		"timezone": "Asia/Tehran",
+		"geonameId": 127205
 	},
 	{
 		"name": "Khowrzūq",
@@ -2408076,6 +2408256,18 @@
 		"geonameId": 1218856
 	},
 	{
+		"name": "Könegümmez",
+		"countryCode": "TM",
+		"countryName": "Turkmenistan",
+		"stateCode": "A",
+		"stateName": "Ahal",
+		"latitude": "38.38434",
+		"longitude": "56.95768",
+		"population": 1064,
+		"timezone": "Asia/Ashgabat",
+		"geonameId": 161730
+	},
+	{
 		"name": "Könekesir",
 		"countryCode": "TM",
 		"countryName": "Turkmenistan",
@@ -2413282,6 +2413474,18 @@
 		"population": 1642,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 13715464
+	},
+	{
+		"name": "Afşar",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.13639",
+		"longitude": "30.97778",
+		"population": 657,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 325316
 	},
 	{
 		"name": "Afşin",
@@ -2418492,6 +2418696,18 @@
 		"geonameId": 322508
 	},
 	{
+		"name": "Bağıllı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.13722",
+		"longitude": "31.04472",
+		"population": 1168,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 322504
+	},
+	{
 		"name": "Bağışlı",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2418511,7 +2418727,7 @@
 		"stateName": "Isparta",
 		"latitude": "38.2175",
 		"longitude": "31.27222",
-		"population": 0,
+		"population": 1030,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 322486
 	},
@@ -2419066,6 +2419282,18 @@
 		"population": 0,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 322202
+	},
+	{
+		"name": "Balcı",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.11694",
+		"longitude": "31.10667",
+		"population": 904,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 322203
 	},
 	{
 		"name": "Balcı",
@@ -2425236,6 +2425464,18 @@
 		"geonameId": 318745
 	},
 	{
+		"name": "Çetince",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.18444",
+		"longitude": "31.21361",
+		"population": 1322,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 318742
+	},
+	{
 		"name": "Çetinkaya",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2425726,18 +2425966,6 @@
 		"population": 0,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 749100
-	},
-	{
-		"name": "Cimin",
-		"countryCode": "TR",
-		"countryName": "Turkey",
-		"stateCode": "24",
-		"stateName": "Erzincan",
-		"latitude": "39.70947",
-		"longitude": "39.70015",
-		"population": 39591,
-		"timezone": "Europe/Istanbul",
-		"geonameId": 298230
 	},
 	{
 		"name": "Çinçin",
@@ -2427382,6 +2427610,18 @@
 		"population": 1729,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 317490
+	},
+	{
+		"name": "Dedeçam",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.17583",
+		"longitude": "31.32194",
+		"population": 883,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 317483
 	},
 	{
 		"name": "Dedeköy",
@@ -2432539,7 +2432779,7 @@
 		"stateName": "Isparta",
 		"latitude": "38.12083",
 		"longitude": "31.01528",
-		"population": 7274,
+		"population": 5172,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 314698
 	},
@@ -2437618,6 +2437858,18 @@
 		"population": 11502,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 311777
+	},
+	{
+		"name": "Huyuklu",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.23778",
+		"longitude": "31.12472",
+		"population": 1991,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 311766
 	},
 	{
 		"name": "İbecik",
@@ -2445720,6 +2445972,18 @@
 		"geonameId": 742657
 	},
 	{
+		"name": "Körküler",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.39611",
+		"longitude": "31.04806",
+		"population": 986,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 306478
+	},
+	{
 		"name": "Korkut",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2445802,6 +2446066,18 @@
 		"population": 3050,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 742617
+	},
+	{
+		"name": "Koruyaka",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.14444",
+		"longitude": "31.22444",
+		"population": 791,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 306369
 	},
 	{
 		"name": "Kösbucağı",
@@ -2446272,6 +2446548,18 @@
 		"geonameId": 305158
 	},
 	{
+		"name": "Kozluçay",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.20296",
+		"longitude": "31.29538",
+		"population": 1413,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 314708
+	},
+	{
 		"name": "Kozluk",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2446615,7 +2446903,7 @@
 		"stateName": "Isparta",
 		"latitude": "38.3239",
 		"longitude": "30.9764",
-		"population": 0,
+		"population": 1156,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 305697
 	},
@@ -2447403,6 +2447691,18 @@
 		"name": "Kuyucak",
 		"countryCode": "TR",
 		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.2318",
+		"longitude": "31.23155",
+		"population": 741,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 305207
+	},
+	{
+		"name": "Kuyucak",
+		"countryCode": "TR",
+		"countryName": "Turkey",
 		"stateCode": "09",
 		"stateName": "Aydın",
 		"latitude": "37.9133",
@@ -2447770,6 +2448070,18 @@
 		"population": 521,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 741834
+	},
+	{
+		"name": "Madenli",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.18347",
+		"longitude": "31.1027",
+		"population": 731,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 325255
 	},
 	{
 		"name": "Mağaralı",
@@ -2451454,6 +2451766,18 @@
 		"population": 823,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 740783
+	},
+	{
+		"name": "Özbayat",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.25909",
+		"longitude": "31.22391",
+		"population": 776,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 314667
 	},
 	{
 		"name": "Özbek",
@@ -2456400,6 +2456724,18 @@
 		"geonameId": 300304
 	},
 	{
+		"name": "Sucullu",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.35",
+		"longitude": "31.15472",
+		"population": 1462,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 300292
+	},
+	{
 		"name": "Sudugunu",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2459991,6 +2460327,18 @@
 		"name": "Uzumlu",
 		"countryCode": "TR",
 		"countryName": "Turkey",
+		"stateCode": "24",
+		"stateName": "Erzincan",
+		"latitude": "39.70947",
+		"longitude": "39.70015",
+		"population": 39591,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 298230
+	},
+	{
+		"name": "Uzumlu",
+		"countryCode": "TR",
+		"countryName": "Turkey",
 		"stateCode": "09",
 		"stateName": "Aydın",
 		"latitude": "37.8273",
@@ -2460610,6 +2460958,18 @@
 		"population": 25019,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 297917
+	},
+	{
+		"name": "Yaka",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.10055",
+		"longitude": "31.04108",
+		"population": 1447,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 297907
 	},
 	{
 		"name": "Yakabaşı",
@@ -2462331,6 +2462691,18 @@
 		"name": "Yenice",
 		"countryCode": "TR",
 		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.14178",
+		"longitude": "30.94565",
+		"population": 812,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 8212750
+	},
+	{
+		"name": "Yenice",
+		"countryCode": "TR",
+		"countryName": "Turkey",
 		"stateCode": "23",
 		"stateName": "Elazığ",
 		"latitude": "38.57893",
@@ -2462986,6 +2463358,18 @@
 		"population": 702,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 323104
+	},
+	{
+		"name": "Yeşilköy",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "37.99222",
+		"longitude": "30.99666",
+		"population": 1118,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 296843
 	},
 	{
 		"name": "Yeşilköy",
@@ -2464018,6 +2464402,18 @@
 		"population": 505,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 296406
+	},
+	{
+		"name": "Yukarıkaşıkara",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "32",
+		"stateName": "Isparta",
+		"latitude": "38.34556",
+		"longitude": "30.86695",
+		"population": 1068,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 296343
 	},
 	{
 		"name": "Yukarıkülecik",
