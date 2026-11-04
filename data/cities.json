@@ -323040,6 +323040,18 @@
 		"geonameId": 2658572
 	},
 	{
+		"name": "Sisseln",
+		"countryCode": "CH",
+		"countryName": "Switzerland",
+		"stateCode": "AG",
+		"stateName": "Aargau",
+		"latitude": "47.55313",
+		"longitude": "7.9917",
+		"population": 1677,
+		"timezone": "Europe/Zurich",
+		"geonameId": 6698599
+	},
+	{
 		"name": "Sitten",
 		"countryCode": "CH",
 		"countryName": "Switzerland",
@@ -1486903,7 +1486915,7 @@
 		"stateName": "Kermanshah Province",
 		"latitude": "34.2842",
 		"longitude": "46.2423",
-		"population": 0,
+		"population": 7798,
 		"timezone": "Asia/Tehran",
 		"geonameId": 128252
 	},
