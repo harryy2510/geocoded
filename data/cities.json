@@ -142848,6 +142848,18 @@
 		"geonameId": 1213265
 	},
 	{
+		"name": "Aich Noadda Shahibag",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.85",
+		"longitude": "90.26667",
+		"population": 13365,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1213161
+	},
+	{
 		"name": "Ajmiriganj",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -142870,6 +142882,30 @@
 		"population": 924,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 7487911
+	},
+	{
+		"name": "Ānandapur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.83542",
+		"longitude": "90.26073",
+		"population": 9533,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1212746
+	},
+	{
+		"name": "Ārāpāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.85529",
+		"longitude": "90.24981",
+		"population": 2167,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1212590
 	},
 	{
 		"name": "Arpāra",
@@ -143086,6 +143122,30 @@
 		"population": 37807,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185274
+	},
+	{
+		"name": "Bank Colony",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.84406",
+		"longitude": "90.25299",
+		"population": 26142,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 13731988
+	},
+	{
+		"name": "Bank Town",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.82109",
+		"longitude": "90.26002",
+		"population": 6903,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 13731989
 	},
 	{
 		"name": "Bara Bālihāra",
@@ -143616,6 +143676,18 @@
 		"geonameId": 1185241
 	},
 	{
+		"name": "Dhanāid",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.94926",
+		"longitude": "90.31472",
+		"population": 7173,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1204453
+	},
+	{
 		"name": "Dhanmondi",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143626,6 +143698,18 @@
 		"population": 54210,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 7683974
+	},
+	{
+		"name": "Diakhāli",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.94453",
+		"longitude": "90.32354",
+		"population": 2789,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1204097
 	},
 	{
 		"name": "Dihi Kanejpur",
@@ -143772,6 +143856,18 @@
 		"geonameId": 1200109
 	},
 	{
+		"name": "Genda",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.82837",
+		"longitude": "90.26316",
+		"population": 26905,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1202702
+	},
+	{
 		"name": "Ghona",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143916,6 +144012,18 @@
 		"geonameId": 1200863
 	},
 	{
+		"name": "Imandipur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.83915",
+		"longitude": "90.26754",
+		"population": 14740,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1200782
+	},
+	{
 		"name": "Indurkani",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -143950,6 +144058,18 @@
 		"population": 3000,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1200474
+	},
+	{
+		"name": "Jaleshwar",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.85",
+		"longitude": "90.26667",
+		"population": 14139,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1200398
 	},
 	{
 		"name": "Jalkar",
@@ -143988,6 +144108,18 @@
 		"geonameId": 1200303
 	},
 	{
+		"name": "Jāmsing",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.86471",
+		"longitude": "90.25993",
+		"population": 9855,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1200292
+	},
+	{
 		"name": "Jessore",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144022,6 +144154,18 @@
 		"population": 41957,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185204
+	},
+	{
+		"name": "Jirāba",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.91072",
+		"longitude": "90.32154",
+		"population": 17168,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1199862
 	},
 	{
 		"name": "Joypur Hāt",
@@ -144132,6 +144276,18 @@
 		"geonameId": 1198689
 	},
 	{
+		"name": "Karnapāra",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.8267",
+		"longitude": "90.25513",
+		"population": 15884,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1198385
+	},
+	{
 		"name": "Karnaphuli",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -144190,6 +144346,18 @@
 		"population": 50364,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185252
+	},
+	{
+		"name": "Khalitākhāli",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.83102",
+		"longitude": "90.25552",
+		"population": 605,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1197685
 	},
 	{
 		"name": "Khanbaniara",
@@ -145152,6 +145320,18 @@
 		"geonameId": 1185138
 	},
 	{
+		"name": "Purba Narsinghapur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.94183",
+		"longitude": "90.30937",
+		"population": 20451,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1190723
+	},
+	{
 		"name": "Purbadhala",
 		"countryCode": "BD",
 		"countryName": "Bangladesh",
@@ -145198,6 +145378,18 @@
 		"population": 64652,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185236
+	},
+	{
+		"name": "Rājāsan",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.84522",
+		"longitude": "90.27363",
+		"population": 35201,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1190284
 	},
 	{
 		"name": "Rajshahi",
@@ -145678,6 +145870,18 @@
 		"population": 237000,
 		"timezone": "Asia/Dhaka",
 		"geonameId": 1185099
+	},
+	{
+		"name": "Tājpur",
+		"countryCode": "BD",
+		"countryName": "Bangladesh",
+		"stateCode": "C",
+		"stateName": "Dhaka",
+		"latitude": "23.95384",
+		"longitude": "90.32295",
+		"population": 5968,
+		"timezone": "Asia/Dhaka",
+		"geonameId": 1186692
 	},
 	{
 		"name": "Taluker Char Doani",
@@ -752098,6 +752302,18 @@
 		"population": 9921,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2843395
+	},
+	{
+		"name": "Rüdigershagen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.34768",
+		"longitude": "10.44356",
+		"population": 618,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2843387
 	},
 	{
 		"name": "Rüdnitz",
@@ -1490052,6 +1490268,18 @@
 		"geonameId": 125671
 	},
 	{
+		"name": "Līrdaf",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "23",
+		"stateName": "Hormozgan",
+		"latitude": "25.63795",
+		"longitude": "58.86532",
+		"population": 1734,
+		"timezone": "Asia/Tehran",
+		"geonameId": 125665
+	},
+	{
 		"name": "Līsār",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1498522,6 +1498750,18 @@
 		"population": 12583,
 		"timezone": "Asia/Tehran",
 		"geonameId": 117461
+	},
+	{
+		"name": "Sangdevīn",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "27",
+		"stateName": "Golestan",
+		"latitude": "36.99745",
+		"longitude": "54.85658",
+		"population": 4203,
+		"timezone": "Asia/Tehran",
+		"geonameId": 39619
 	},
 	{
 		"name": "Sankhvāst",
@@ -1971895,7 +1972135,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.14925",
 		"longitude": "5.48346",
-		"population": 525,
+		"population": 585,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2760053
 	},
@@ -1972807,7 +1973047,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.12952",
 		"longitude": "5.47643",
-		"population": 895,
+		"population": 1040,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759652
 	},
@@ -1973839,7 +1974079,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.2437",
 		"longitude": "5.65101",
-		"population": 2530,
+		"population": 2685,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759057
 	},
@@ -1974084,6 +1974324,18 @@
 		"geonameId": 6621526
 	},
 	{
+		"name": "Bitgum",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "FR",
+		"stateName": "Friesland",
+		"latitude": "53.23333",
+		"longitude": "5.68333",
+		"population": 770,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2759283
+	},
+	{
 		"name": "Bitgummole",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1974091,7 +1974343,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.2352",
 		"longitude": "5.70469",
-		"population": 910,
+		"population": 895,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759281
 	},
@@ -1974151,7 +1974403,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.02134",
 		"longitude": "5.53359",
-		"population": 590,
+		"population": 600,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758851
 	},
@@ -1974403,7 +1974655,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.06555",
 		"longitude": "5.53176",
-		"population": 9160,
+		"population": 9960,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758682
 	},
@@ -1976431,7 +1976683,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.19182",
 		"longitude": "5.72431",
-		"population": 885,
+		"population": 1020,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757475
 	},
@@ -1977259,7 +1977511,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.2",
 		"longitude": "5.65",
-		"population": 3486,
+		"population": 3360,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756561
 	},
@@ -1984795,7 +1985047,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.2105",
 		"longitude": "5.72637",
-		"population": 1185,
+		"population": 1025,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751122
 	},
@@ -1985155,7 +1985407,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.21797",
 		"longitude": "5.66124",
-		"population": 2820,
+		"population": 2840,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750965
 	},
@@ -1985503,7 +1985755,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.25104",
 		"longitude": "5.59513",
-		"population": 1625,
+		"population": 1745,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750790
 	},
@@ -1987524,6 +1987776,18 @@
 		"geonameId": 2749503
 	},
 	{
+		"name": "Oosterbierum",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "FR",
+		"stateName": "Friesland",
+		"latitude": "53.23419",
+		"longitude": "5.51136",
+		"population": 550,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2749500
+	},
+	{
 		"name": "Oosterblokker",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1988251,7 +1988515,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.30048",
 		"longitude": "5.71849",
-		"population": 680,
+		"population": 960,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749155
 	},
@@ -1990435,7 +1990699,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.21823",
 		"longitude": "5.48402",
-		"population": 1530,
+		"population": 1755,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747380
 	},
@@ -1990519,7 +1990783,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.2762",
 		"longitude": "5.65727",
-		"population": 3935,
+		"population": 5000,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747297
 	},
@@ -1990579,7 +1990843,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.27291",
 		"longitude": "5.60354",
-		"population": 1380,
+		"population": 1630,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747270
 	},
@@ -1992571,7 +1992835,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.15899",
 		"longitude": "5.56277",
-		"population": 1115,
+		"population": 1105,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746024
 	},
@@ -1992583,7 +1992847,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.23733",
 		"longitude": "5.54612",
-		"population": 1205,
+		"population": 1390,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746023
 	},
@@ -1993891,7 +1994155,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.27928",
 		"longitude": "5.70036",
-		"population": 515,
+		"population": 705,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745163
 	},
@@ -1995295,7 +1995559,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.1519",
 		"longitude": "5.63359",
-		"population": 995,
+		"population": 1080,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744338
 	},
@@ -2499715,7 +2499979,7 @@
 		"stateName": "Kyiv Oblast",
 		"latitude": "49.38608",
 		"longitude": "30.78029",
-		"population": 0,
+		"population": 2628,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 701429
 	},
@@ -2522950,6 +2523214,18 @@
 		"population": 3255,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 692465
+	},
+	{
+		"name": "Strakholissya",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "32",
+		"stateName": "Kyiv Oblast",
+		"latitude": "51.07449",
+		"longitude": "30.39607",
+		"population": 720,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 692463
 	},
 	{
 		"name": "Strilecha",
@@ -2674702,6 +2674978,18 @@
 		"population": 2412,
 		"timezone": "America/Los_Angeles",
 		"geonameId": 5368676
+	},
+	{
+		"name": "Lost Mountain",
+		"countryCode": "US",
+		"countryName": "United States",
+		"stateCode": "GA",
+		"stateName": "Georgia",
+		"latitude": "33.94066",
+		"longitude": "-84.70244",
+		"population": 73312,
+		"timezone": "America/New_York",
+		"geonameId": 4206830
 	},
 	{
 		"name": "Lost Nation",
