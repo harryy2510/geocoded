@@ -3,7 +3,7 @@ import '../styles/global.css'
 import { PlaceSearch } from '../components/place-search'
 import { SITE_API_URL } from '../lib/api-url'
 
-type NavKey = 'home' | 'explore' | 'compare' | 'insights' | 'docs'
+type NavKey = 'home' | 'explore' | 'compare' | 'insights' | 'sdks' | 'docs'
 
 type Props = {
 	title?: string
@@ -24,6 +24,7 @@ const links: { key: NavKey; label: string; href: string }[] = [
 	{ key: 'explore', label: 'Explore', href: '/explore' },
 	{ key: 'compare', label: 'Compare', href: '/compare' },
 	{ key: 'insights', label: 'Insights', href: '/insights' },
+	{ key: 'sdks', label: 'SDKs', href: '/sdks' },
 	{ key: 'docs', label: 'API', href: '/docs' }
 ]
 ---
@@ -166,6 +167,7 @@ const links: { key: NavKey; label: string; href: string }[] = [
 			<div class="flex flex-col gap-2.5">
 				<span class="font-semibold text-ink">Developers</span>
 				<a class="hover:text-signal" href="/docs">API reference</a>
+				<a class="hover:text-signal" href="/sdks">SDKs and packages</a>
 				<a class="hover:text-signal" href={`${SITE_API_URL}/v2/openapi.json`}>OpenAPI spec</a>
 				<a class="hover:text-signal" href="https://github.com/harryy2510/geocoded">GitHub</a>
 			</div>

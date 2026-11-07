@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { sdkGroups } from '../lib/sdk-packages'
+
+const groups = sdkGroups()
+const total = groups.reduce((sum, g) => sum + g.packages.length, 0)
+const wrap = 'mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12'
+const clientSample = `import { getCountry, fetchStates, search } from '@geocoded/client'
+
+const japan = await getCountry('JP')
+const states = await fetchStates('US')
+const places = await search('paris', { type: 'city' })`
+---
+
+<Layout
+	title="SDKs and packages | Geocoded"
+	description={`${total} official Geocoded packages: a typed TypeScript API client plus React and React Native pickers for countries, regions, cities, currencies, timezones and phone numbers.`}
+	active="sdks"
+>
+	<header
+		class={`${wrap} flex flex-col gap-8 border-b border-rule pt-10 pb-10 lg:flex-row lg:items-end lg:justify-between lg:pt-16 lg:pb-12`}
+	>
+		<div class="flex max-w-[820px] flex-col gap-4">
+			<span class="eyebrow">SDKs and packages</span>
+			<h1 class="serif m-0 text-[56px] leading-[0.95] tracking-[-0.02em] lg:text-[88px]">
+				Use Geocoded from your stack.
+			</h1>
+			<p class="m-0 text-lg leading-normal text-ink-soft lg:text-xl">
+				Official, MIT-licensed packages for TypeScript, React and React Native. They are
+				tree-shakeable, fetch from the API instead of bundling datasets, and need no API key.
+			</p>
+		</div>
+		<div class="flex gap-10">
+			<div class="flex flex-col gap-1">
+				<span class="serif text-[52px] leading-none">{total}</span>
+				<span class="text-sm text-ink-soft">packages</span>
+			</div>
+			<div class="flex flex-col gap-1">
+				<span class="serif text-[52px] leading-none">{groups.length}</span>
+				<span class="text-sm text-ink-soft">platform groups</span>
+			</div>
+		</div>
+	</header>
+
+	<nav aria-label="Package groups" class={`${wrap} flex flex-wrap gap-2.5 border-b border-rule py-5`}>
+		{
+			groups.map((g) => (
+				<a href={`#${g.id}`} class="btn btn-outline h-10 px-4 text-sm">
+					{g.title}
+					<span class="ml-2 text-ink-soft">{g.packages.length}</span>
+				</a>
+			))
+		}
+	</nav>
+
+	<section
+		class={`${wrap} flex flex-col gap-10 border-b border-rule py-10 lg:flex-row lg:gap-14 lg:py-16`}
+	>
+		<div class="flex shrink-0 flex-col gap-[18px] lg:w-[380px]">
+			<span class="eyebrow">Quick start</span>
+			<h2 class="serif m-0 text-4xl leading-none lg:text-[52px]">Install and call.</h2>
+			<p class="m-0 text-base leading-relaxed text-ink-soft">
+				The client works in browsers, Node, Bun and Workers. Get-one lookups accept a name or an
+				ISO code. The <a href="/docs" class="underline hover:text-signal">API reference</a> lists
+				every endpoint it wraps.
+			</p>
+		</div>
+		<div class="flex min-w-0 grow flex-col gap-3">
+			<pre
+				class="m-0 overflow-x-auto rounded-lg bg-ink p-4 font-mono text-[13px] text-code">bun add @geocoded/client</pre>
+			<pre
+				class="m-0 overflow-x-auto rounded-lg bg-ink p-4 font-mono text-[13px] leading-[1.65] text-code">{clientSample}</pre>
+		</div>
+	</section>
+
+	{
+		groups.map((g) => (
+			<section
+				id={g.id}
+				class={`${wrap} flex scroll-mt-[88px] flex-col gap-8 border-b border-rule py-10 lg:flex-row lg:gap-14 lg:py-16`}
+			>
+				<div class="flex shrink-0 flex-col gap-[18px] lg:w-[380px]">
+					<span class="eyebrow">{g.packages.length} packages</span>
+					<h2 class="serif m-0 text-4xl leading-none lg:text-[52px]">{g.title}</h2>
+					<p class="m-0 text-base leading-relaxed text-ink-soft">{g.desc}</p>
+				</div>
+				<div class="grid min-w-0 grow grid-cols-1 gap-4 md:grid-cols-2">
+					{g.packages.map((pkg) => (
+						<article class="flex flex-col gap-3 rounded-[14px] border border-rule bg-card p-5">
+							<div class="flex flex-wrap items-baseline justify-between gap-2">
+								<h3 class="m-0 font-mono text-[15px] font-medium break-all">{pkg.name}</h3>
+								<span class="rounded bg-rule-soft px-1.5 py-0.5 text-xs text-ink-soft">
+									v{pkg.version}
+								</span>
+							</div>
+							{pkg.description && (
+								<p class="m-0 text-sm leading-relaxed text-ink-soft">{pkg.description}</p>
+							)}
+							<code class="mt-auto rounded bg-rule-soft px-2.5 py-1.5 font-mono text-[13px] break-all">
+								bun add {pkg.name}
+							</code>
+							<div class="flex gap-4 text-[13px]">
+								<a href={pkg.npmUrl} class="text-ink-soft hover:text-signal">
+									npm
+								</a>
+								{pkg.sourceUrl && (
+									<a href={pkg.sourceUrl} class="text-ink-soft hover:text-signal">
+										Source
+									</a>
+								)}
+							</div>
+						</article>
+					))}
+				</div>
+			</section>
+		))
+	}
+</Layout>

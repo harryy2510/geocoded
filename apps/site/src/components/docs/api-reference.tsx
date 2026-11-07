@@ -67,7 +67,11 @@ const GUIDES: Guide[] = [
 				<P>
 					From JavaScript, use <Code>fetch</Code>. From TypeScript, the{' '}
 					<Code>@geocoded/client</Code> package gives you typed helpers for the
-					same endpoints.
+					same endpoints. See{' '}
+					<a href="/sdks" className="underline hover:text-signal">
+						SDKs and packages
+					</a>{' '}
+					for React and React Native pickers too.
 				</P>
 				<pre className="m-0 overflow-x-auto rounded-lg bg-ink p-4 font-mono text-[13px] text-code">
 					{`const res = await fetch('${v2Url('/v2/countries/JP')}')\nconst japan = await res.json()`}

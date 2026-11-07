@@ -7,7 +7,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* **package:** update package.json to private ([f8c101c](https://github.com/harryy2510/geocoded/commit/f8c101c57534844788714cc5696e56bb3b690295))
+- **package:** update package.json to private ([f8c101c](https://github.com/harryy2510/geocoded/commit/f8c101c57534844788714cc5696e56bb3b690295))
 
 ## [0.3.1](https://github.com/harryy2510/geocoded/compare/react-country-state-city-picker%400.3.0...react-country-state-city-picker%400.3.1) (2026-09-28)
 
