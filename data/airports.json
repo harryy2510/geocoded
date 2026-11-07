@@ -138327,6 +138327,30 @@
 		"modificationDate": "2022-12-26"
 	},
 	{
+		"geonameId": 13732123,
+		"name": "Kiwirok Airport",
+		"asciiName": "Kiwirok Airport",
+		"alternateNames": [
+			"KWR",
+			"WAJK"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "-4.7135",
+		"longitude": "140.7401",
+		"countryCode": "ID",
+		"countryName": "Indonesia",
+		"admin1Code": "PE",
+		"admin2Code": "9417",
+		"stateCode": "PE",
+		"stateName": "Highland Papua",
+		"elevation": 0,
+		"timezone": "Asia/Jayapura",
+		"modificationDate": "2026-11-06"
+	},
+	{
 		"geonameId": 6301182,
 		"name": "Kokonao / Timuka",
 		"asciiName": "Kokonao / Timuka",
@@ -191955,6 +191979,30 @@
 		"modificationDate": "2016-01-30"
 	},
 	{
+		"geonameId": 13315960,
+		"name": "Chinua Achebe International Airport",
+		"asciiName": "Chinua Achebe International Airport",
+		"alternateNames": [
+			"CHE",
+			"DNAN"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "6.26709",
+		"longitude": "6.8714",
+		"countryCode": "NG",
+		"countryName": "Nigeria",
+		"admin1Code": "25",
+		"admin2Code": "4002",
+		"stateCode": "AN",
+		"stateName": "Anambra",
+		"elevation": 0,
+		"timezone": "Africa/Lagos",
+		"modificationDate": "2026-11-06"
+	},
+	{
 		"geonameId": 13562409,
 		"name": "Ekiti Agro-Allied International Cargo Airport",
 		"asciiName": "Ekiti Agro-Allied International Cargo Airport",
@@ -234543,6 +234591,30 @@
 		"modificationDate": "2023-05-29"
 	},
 	{
+		"geonameId": 13732120,
+		"name": "Malham International Airport",
+		"asciiName": "Malham International Airport",
+		"alternateNames": [
+			"OESL",
+			"RMH"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "25.25299",
+		"longitude": "46.39198",
+		"countryCode": "SA",
+		"countryName": "Saudi Arabia",
+		"admin1Code": "10",
+		"admin2Code": "",
+		"stateCode": "01",
+		"stateName": "Riyadh Region",
+		"elevation": 0,
+		"timezone": "Asia/Riyadh",
+		"modificationDate": "2026-11-06"
+	},
+	{
 		"geonameId": 6300023,
 		"name": "Najran Airport",
 		"asciiName": "Najran Airport",
@@ -235736,7 +235808,7 @@
 		"stateName": "Malaita Province",
 		"elevation": 0,
 		"timezone": "Pacific/Guadalcanal",
-		"modificationDate": "2025-10-02"
+		"modificationDate": "2026-11-06"
 	},
 	{
 		"geonameId": 8298985,

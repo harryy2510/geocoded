@@ -71952,18 +71952,6 @@
 		"geonameId": 11903684
 	},
 	{
-		"name": "Tosters",
-		"countryCode": "AT",
-		"countryName": "Austria",
-		"stateCode": "8",
-		"stateName": "Vorarlberg",
-		"latitude": "47.23951",
-		"longitude": "9.58379",
-		"population": 0,
-		"timezone": "Europe/Vienna",
-		"geonameId": 13731923
-	},
-	{
 		"name": "Traboch",
 		"countryCode": "AT",
 		"countryName": "Austria",
@@ -139020,6 +139008,18 @@
 		"geonameId": 3203950
 	},
 	{
+		"name": "Bogutovo Selo",
+		"countryCode": "BA",
+		"countryName": "Bosnia and Herzegovina",
+		"stateCode": "02",
+		"stateName": "Srpska",
+		"latitude": "44.66235",
+		"longitude": "18.97708",
+		"population": 652,
+		"timezone": "Europe/Sarajevo",
+		"geonameId": 3203812
+	},
+	{
 		"name": "Bosanska Krupa",
 		"countryCode": "BA",
 		"countryName": "Bosnia and Herzegovina",
@@ -139546,6 +139546,18 @@
 		"population": 3782,
 		"timezone": "Europe/Sarajevo",
 		"geonameId": 3201660
+	},
+	{
+		"name": "Donja Trnova",
+		"countryCode": "BA",
+		"countryName": "Bosnia and Herzegovina",
+		"stateCode": "02",
+		"stateName": "Srpska",
+		"latitude": "44.65778",
+		"longitude": "19.10167",
+		"population": 1154,
+		"timezone": "Europe/Sarajevo",
+		"geonameId": 3201607
 	},
 	{
 		"name": "Donji Dubovik",
@@ -140422,6 +140434,18 @@
 		"population": 3395,
 		"timezone": "Europe/Sarajevo",
 		"geonameId": 3206012
+	},
+	{
+		"name": "Korenita",
+		"countryCode": "BA",
+		"countryName": "Bosnia and Herzegovina",
+		"stateCode": "02",
+		"stateName": "Srpska",
+		"latitude": "44.7553",
+		"longitude": "18.94838",
+		"population": 557,
+		"timezone": "Europe/Sarajevo",
+		"geonameId": 3197696
 	},
 	{
 		"name": "Korovi",
@@ -141648,6 +141672,18 @@
 		"geonameId": 3191808
 	},
 	{
+		"name": "Ravno Polje",
+		"countryCode": "BA",
+		"countryName": "Bosnia and Herzegovina",
+		"stateCode": "02",
+		"stateName": "Srpska",
+		"latitude": "44.69026",
+		"longitude": "19.06625",
+		"population": 598,
+		"timezone": "Europe/Sarajevo",
+		"geonameId": 3211562
+	},
+	{
 		"name": "Rodoč",
 		"countryCode": "BA",
 		"countryName": "Bosnia and Herzegovina",
@@ -141936,6 +141972,18 @@
 		"geonameId": 3190158
 	},
 	{
+		"name": "Srednja Trnova",
+		"countryCode": "BA",
+		"countryName": "Bosnia and Herzegovina",
+		"stateCode": "02",
+		"stateName": "Srpska",
+		"latitude": "44.63791",
+		"longitude": "19.06995",
+		"population": 579,
+		"timezone": "Europe/Sarajevo",
+		"geonameId": 3190137
+	},
+	{
 		"name": "Stanari",
 		"countryCode": "BA",
 		"countryName": "Bosnia and Herzegovina",
@@ -141958,6 +142006,18 @@
 		"population": 2300,
 		"timezone": "Europe/Sarajevo",
 		"geonameId": 3246028
+	},
+	{
+		"name": "Stari Ugljevik",
+		"countryCode": "BA",
+		"countryName": "Bosnia and Herzegovina",
+		"stateCode": "02",
+		"stateName": "Srpska",
+		"latitude": "44.66965",
+		"longitude": "19.00948",
+		"population": 737,
+		"timezone": "Europe/Sarajevo",
+		"geonameId": 13732116
 	},
 	{
 		"name": "Stijena",
@@ -142272,6 +142332,18 @@
 		"geonameId": 3188633
 	},
 	{
+		"name": "Tutnjevac",
+		"countryCode": "BA",
+		"countryName": "Bosnia and Herzegovina",
+		"stateCode": "02",
+		"stateName": "Srpska",
+		"latitude": "44.71867",
+		"longitude": "18.93925",
+		"population": 1042,
+		"timezone": "Europe/Sarajevo",
+		"geonameId": 3188586
+	},
+	{
 		"name": "Tuzla",
 		"countryCode": "BA",
 		"countryName": "Bosnia and Herzegovina",
@@ -142284,16 +142356,28 @@
 		"geonameId": 3188582
 	},
 	{
+		"name": "Ugljevička Obrijež",
+		"countryCode": "BA",
+		"countryName": "Bosnia and Herzegovina",
+		"stateCode": "02",
+		"stateName": "Srpska",
+		"latitude": "44.69383",
+		"longitude": "19.03963",
+		"population": 945,
+		"timezone": "Europe/Sarajevo",
+		"geonameId": 3194251
+	},
+	{
 		"name": "Ugljevik",
 		"countryCode": "BA",
 		"countryName": "Bosnia and Herzegovina",
 		"stateCode": "02",
 		"stateName": "Srpska",
-		"latitude": "44.67771",
-		"longitude": "19.03384",
-		"population": 3452,
+		"latitude": "44.6929",
+		"longitude": "18.9944",
+		"population": 3922,
 		"timezone": "Europe/Sarajevo",
-		"geonameId": 3188532
+		"geonameId": 3253930
 	},
 	{
 		"name": "Ustikolina",
@@ -142510,6 +142594,18 @@
 		"population": 3535,
 		"timezone": "Europe/Sarajevo",
 		"geonameId": 3187040
+	},
+	{
+		"name": "Zabrđe",
+		"countryCode": "BA",
+		"countryName": "Bosnia and Herzegovina",
+		"stateCode": "02",
+		"stateName": "Srpska",
+		"latitude": "44.70667",
+		"longitude": "18.9925",
+		"population": 1551,
+		"timezone": "Europe/Sarajevo",
+		"geonameId": 3186967
 	},
 	{
 		"name": "Zabrišće",
@@ -1372003,7 +1372099,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.16046",
 		"longitude": "35.02274",
-		"population": 17640,
+		"population": 21259,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8374203
 	},
@@ -1372039,7 +1372135,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.73503",
 		"longitude": "34.77016",
-		"population": 1147,
+		"population": 1243,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295635
 	},
@@ -1372867,7 +1372963,7 @@
 		"stateName": "Tel Aviv",
 		"latitude": "32.02449",
 		"longitude": "34.80595",
-		"population": 12957,
+		"population": 13067,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295584
 	},
@@ -1373071,7 +1373167,7 @@
 		"stateName": "Central District",
 		"latitude": "31.94433",
 		"longitude": "34.83902",
-		"population": 27768,
+		"population": 37491,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295525
 	},
@@ -1373515,7 +1373611,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.49658",
 		"longitude": "35.4965",
-		"population": 16800,
+		"population": 20252,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295435
 	},
@@ -1373947,7 +1374043,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.86196",
 		"longitude": "35.36365",
-		"population": 10339,
+		"population": 10762,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295339
 	},
@@ -1375663,7 +1375759,7 @@
 		"stateName": "Central District",
 		"latitude": "32.11443",
 		"longitude": "34.9756",
-		"population": 23823,
+		"population": 27996,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294604
 	},
@@ -1375723,7 +1375819,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.90951",
 		"longitude": "35.29768",
-		"population": 46252,
+		"population": 47941,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294577
 	},
@@ -1376155,7 +1376251,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.95451",
 		"longitude": "35.1623",
-		"population": 10133,
+		"population": 10526,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294600
 	},
@@ -1376551,7 +1376647,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.88888",
 		"longitude": "35.40831",
-		"population": 22957,
+		"population": 23486,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294387
 	},
@@ -1376563,7 +1376659,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.92094",
 		"longitude": "35.25438",
-		"population": 15455,
+		"population": 15429,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294373
 	},
@@ -1376755,7 +1376851,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.44487",
 		"longitude": "35.04158",
-		"population": 2017,
+		"population": 1952,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294470
 	},
@@ -1376779,7 +1376875,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.66325",
 		"longitude": "35.55512",
-		"population": 1033,
+		"population": 1201,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294273
 	},
@@ -1376959,7 +1377055,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.67788",
 		"longitude": "35.24158",
-		"population": 25675,
+		"population": 28430,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294210
 	},
@@ -1377499,7 +1377595,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.76622",
 		"longitude": "35.04425",
-		"population": 24148,
+		"population": 22896,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294078
 	},
@@ -1377559,7 +1377655,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.42305",
 		"longitude": "34.58911",
-		"population": 43732,
+		"population": 56019,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294068
 	},
@@ -1377931,7 +1378027,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.3141",
 		"longitude": "34.62025",
-		"population": 34666,
+		"population": 39893,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293992
 	},
@@ -1377943,7 +1378039,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.5064",
 		"longitude": "34.92087",
-		"population": 18972,
+		"population": 25922,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293969
 	},
@@ -1378027,7 +1378123,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.47408",
 		"longitude": "34.97781",
-		"population": 44840,
+		"population": 46601,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293943
 	},
@@ -1378171,7 +1378267,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.8275",
 		"longitude": "35.08583",
-		"population": 43955,
+		"population": 47073,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293844
 	},
@@ -1378195,7 +1378291,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.72888",
 		"longitude": "34.74632",
-		"population": 25362,
+		"population": 27959,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293835
 	},
@@ -1378219,7 +1378315,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.21204",
 		"longitude": "35.57044",
-		"population": 22512,
+		"population": 24437,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293825
 	},
@@ -1378231,7 +1378327,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.71217",
 		"longitude": "35.12505",
-		"population": 18130,
+		"population": 19158,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293823
 	},
@@ -1378255,7 +1378351,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.803",
 		"longitude": "35.102",
-		"population": 6128,
+		"population": 7839,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293821
 	},
@@ -1378303,7 +1378399,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.39547",
 		"longitude": "34.75699",
-		"population": 19586,
+		"population": 77997,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8184212
 	},
@@ -1378627,7 +1378723,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.04904",
 		"longitude": "35.48815",
-		"population": 1195,
+		"population": 1188,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293706
 	},
@@ -2110980,6 +2111076,18 @@
 		"geonameId": 1175678
 	},
 	{
+		"name": "Kabal",
+		"countryCode": "PK",
+		"countryName": "Pakistan",
+		"stateCode": "KP",
+		"stateName": "Khyber Pakhtunkhwa",
+		"latitude": "34.79176",
+		"longitude": "72.28451",
+		"population": 132414,
+		"timezone": "Asia/Karachi",
+		"geonameId": 13732115
+	},
+	{
 		"name": "Kabirwala",
 		"countryCode": "PK",
 		"countryName": "Pakistan",
@@ -2111806,6 +2111914,18 @@
 		"population": 10000,
 		"timezone": "Asia/Karachi",
 		"geonameId": 1172866
+	},
+	{
+		"name": "Kotlai",
+		"countryCode": "PK",
+		"countryName": "Pakistan",
+		"stateCode": "KP",
+		"stateName": "Khyber Pakhtunkhwa",
+		"latitude": "34.78655",
+		"longitude": "72.23517",
+		"population": 14763,
+		"timezone": "Asia/Karachi",
+		"geonameId": 1383465
 	},
 	{
 		"name": "Kotli",
@@ -2376214,6 +2376334,18 @@
 		"population": 1517,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 3058390
+	},
+	{
+		"name": "Opoj",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "48.30207",
+		"longitude": "17.6438",
+		"population": 1349,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3058382
 	},
 	{
 		"name": "Oravská Lesná",
