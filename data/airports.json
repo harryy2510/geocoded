@@ -194409,9 +194409,13 @@
 			"Aeropuerto de Båtsfjord",
 			"Aéroport de Båtsfjord",
 			"BJF",
+			"Bahcavuona girdihamman",
 			"Batsfjord Airport",
+			"Batsfjord flyplass",
 			"Batsfjord lufthavn",
+			"Báhcavuona girdihámman",
 			"Båtsfjord Airport",
+			"Båtsfjord flyplass",
 			"Båtsfjord lufthavn",
 			"ENBS",
 			"Flughafen Batsfjord",
@@ -194433,7 +194437,7 @@
 		"stateName": "Finnmark",
 		"elevation": 149,
 		"timezone": "Europe/Oslo",
-		"modificationDate": "2024-01-27"
+		"modificationDate": "2026-11-07"
 	},
 	{
 		"geonameId": 6296727,

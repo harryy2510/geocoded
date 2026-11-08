@@ -1167948,6 +1167948,18 @@
 		"geonameId": 2635234
 	},
 	{
+		"name": "Uffington",
+		"countryCode": "GB",
+		"countryName": "United Kingdom",
+		"stateCode": "OXF",
+		"stateName": "Oxfordshire",
+		"latitude": "51.60251",
+		"longitude": "-1.55997",
+		"population": 783,
+		"timezone": "Europe/London",
+		"geonameId": 2635233
+	},
+	{
 		"name": "Ufford",
 		"countryCode": "GB",
 		"countryName": "United Kingdom",
@@ -1372195,7 +1372207,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.83675",
 		"longitude": "35.40083",
-		"population": 5752,
+		"population": 5849,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295291
 	},
@@ -1372219,7 +1372231,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.72325",
 		"longitude": "35.35298",
-		"population": 13335,
+		"population": 14029,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295285
 	},
@@ -1372255,7 +1372267,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.7902",
 		"longitude": "35.11528",
-		"population": 1250,
+		"population": 1417,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295284
 	},
@@ -1372279,7 +1372291,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.62899",
 		"longitude": "34.94483",
-		"population": 1150,
+		"population": 1260,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295225
 	},
@@ -1372807,7 +1372819,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.7222",
 		"longitude": "35.3156",
-		"population": 15621,
+		"population": 20653,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295174
 	},
@@ -1374007,7 +1374019,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.70723",
 		"longitude": "35.57471",
-		"population": 528,
+		"population": 664,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295345
 	},
@@ -1374031,7 +1374043,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.9362",
 		"longitude": "35.26383",
-		"population": 12514,
+		"population": 12619,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295341
 	},
@@ -1374175,7 +1374187,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.98338",
 		"longitude": "35.09837",
-		"population": 3900,
+		"population": 3920,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295249
 	},
@@ -1374187,7 +1374199,7 @@
 		"stateName": "Central District",
 		"latitude": "32.05108",
 		"longitude": "34.95704",
-		"population": 48763,
+		"population": 50846,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8428480
 	},
@@ -1374295,7 +1374307,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.9941",
 		"longitude": "35.14805",
-		"population": 2887,
+		"population": 2996,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295157
 	},
@@ -1374415,7 +1374427,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.04882",
 		"longitude": "35.30896",
-		"population": 3172,
+		"population": 3426,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295104
 	},
@@ -1374499,7 +1374511,7 @@
 		"stateName": "Central District",
 		"latitude": "31.78737",
 		"longitude": "34.70659",
-		"population": 23869,
+		"population": 25144,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295080
 	},
@@ -1374619,7 +1374631,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.66273",
 		"longitude": "34.95558",
-		"population": 1200,
+		"population": 1179,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295037
 	},
@@ -1374643,7 +1374655,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.27094",
 		"longitude": "35.62334",
-		"population": 2607,
+		"population": 2738,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 173882
 	},
@@ -1374763,7 +1374775,7 @@
 		"stateName": "Central District",
 		"latitude": "32.39959",
 		"longitude": "34.93266",
-		"population": 1176,
+		"population": 1283,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294995
 	},
@@ -1375243,7 +1375255,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.7475",
 		"longitude": "35.50283",
-		"population": 1060,
+		"population": 1202,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294805
 	},
@@ -1375603,7 +1375615,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.53684",
 		"longitude": "34.9127",
-		"population": 14930,
+		"population": 15824,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294626
 	},
@@ -1375747,7 +1375759,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.50527",
 		"longitude": "35.05215",
-		"population": 19018,
+		"population": 21066,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294605
 	},
@@ -1376335,7 +1376347,7 @@
 		"stateName": "Tel Aviv",
 		"latitude": "32.06124",
 		"longitude": "34.85618",
-		"population": 39986,
+		"population": 45049,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 12031840
 	},
@@ -1376443,7 +1376455,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.3185",
 		"longitude": "34.8589",
-		"population": 14075,
+		"population": 19362,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8184241
 	},
@@ -1379059,7 +1379071,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.698",
 		"longitude": "35.142",
-		"population": 1103,
+		"population": 1082,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293615
 	},
@@ -1379947,7 +1379959,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.80462",
 		"longitude": "34.9321",
-		"population": 1044,
+		"population": 1115,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293092
 	},
@@ -1379959,7 +1379971,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.74535",
 		"longitude": "35.28003",
-		"population": 972,
+		"population": 1002,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293057
 	},
@@ -1380655,7 +1380667,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.70927",
 		"longitude": "34.94488",
-		"population": 1124,
+		"population": 1392,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293094
 	},
@@ -1380679,7 +1380691,7 @@
 		"stateName": "Central District",
 		"latitude": "31.97631",
 		"longitude": "34.88868",
-		"population": 1064,
+		"population": 1191,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293078
 	},
@@ -1478340,6 +1478352,18 @@
 		"geonameId": 137586
 	},
 	{
+		"name": "Darībekeh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "02",
+		"stateName": "West Azerbaijan",
+		"latitude": "36.7318",
+		"longitude": "45.1785",
+		"population": 2007,
+		"timezone": "Asia/Tehran",
+		"geonameId": 137898
+	},
+	{
 		"name": "Dārīūn",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1482571,7 +1482595,7 @@
 		"stateName": "Kermanshah Province",
 		"latitude": "34.1421",
 		"longitude": "45.9203",
-		"population": 0,
+		"population": 22331,
 		"timezone": "Asia/Tehran",
 		"geonameId": 133345
 	},
@@ -1486344,6 +1486368,18 @@
 		"geonameId": 129230
 	},
 	{
+		"name": "Kalehkīn",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "02",
+		"stateName": "West Azerbaijan",
+		"latitude": "36.7391",
+		"longitude": "45.1353",
+		"population": 914,
+		"timezone": "Asia/Tehran",
+		"geonameId": 3344
+	},
+	{
 		"name": "Kaleybar",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1486570,6 +1486606,18 @@
 		"population": 563,
 		"timezone": "Asia/Tehran",
 		"geonameId": 18589
+	},
+	{
+		"name": "Kānī Sūr",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "16",
+		"stateName": "Kurdistan Province",
+		"latitude": "36.0583",
+		"longitude": "45.7481",
+		"population": 1284,
+		"timezone": "Asia/Tehran",
+		"geonameId": 3471
 	},
 	{
 		"name": "Kanzaq",
@@ -1494910,6 +1494958,18 @@
 		"population": 50661,
 		"timezone": "Asia/Tehran",
 		"geonameId": 121795
+	},
+	{
+		"name": "Oshnūzang",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "02",
+		"stateName": "West Azerbaijan",
+		"latitude": "36.764",
+		"longitude": "45.2374",
+		"population": 567,
+		"timezone": "Asia/Tehran",
+		"geonameId": 3347
 	},
 	{
 		"name": "Oshtorīnān",
@@ -1505314,6 +1505374,18 @@
 		"population": 523,
 		"timezone": "Asia/Tehran",
 		"geonameId": 8536
+	},
+	{
+		"name": "Zarrīn Rūd",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "11",
+		"stateName": "Zanjan",
+		"latitude": "35.75925",
+		"longitude": "48.47848",
+		"population": 5664,
+		"timezone": "Asia/Tehran",
+		"geonameId": 111248
 	},
 	{
 		"name": "Zarrīn Shahr",
@@ -2380222,6 +2380294,18 @@
 		"population": 540,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 723096
+	},
+	{
+		"name": "Zavar",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "48.35277",
+		"longitude": "17.67377",
+		"population": 2622,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3056572
 	},
 	{
 		"name": "Závod",
