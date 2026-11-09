@@ -883008,6 +883008,18 @@
 		"geonameId": 3110142
 	},
 	{
+		"name": "Sant Pere de Torelló",
+		"countryCode": "ES",
+		"countryName": "Spain",
+		"stateCode": "B",
+		"stateName": "Província de Barcelona",
+		"latitude": "42.08333",
+		"longitude": "2.3",
+		"population": 2271,
+		"timezone": "Europe/Madrid",
+		"geonameId": 3110139
+	},
+	{
 		"name": "Sant Pere de Vilamajor",
 		"countryCode": "ES",
 		"countryName": "Spain",
@@ -896446,18 +896458,6 @@
 		"population": 1546,
 		"timezone": "Europe/Madrid",
 		"geonameId": 3105806
-	},
-	{
-		"name": "Vilaseca",
-		"countryCode": "ES",
-		"countryName": "Spain",
-		"stateCode": "B",
-		"stateName": "Província de Barcelona",
-		"latitude": "42.06174",
-		"longitude": "2.25528",
-		"population": 17305,
-		"timezone": "Europe/Madrid",
-		"geonameId": 3105805
 	},
 	{
 		"name": "Vilassar de Mar",
@@ -1373359,7 +1373359,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.73606",
 		"longitude": "34.65594",
-		"population": 1116,
+		"population": 1167,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295471
 	},
@@ -1373407,7 +1373407,7 @@
 		"stateName": "Central District",
 		"latitude": "31.84429",
 		"longitude": "34.80368",
-		"population": 6042,
+		"population": 1629,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295473
 	},
@@ -1373431,7 +1373431,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.61294",
 		"longitude": "34.89571",
-		"population": 1016,
+		"population": 505,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295467
 	},
@@ -1373491,7 +1373491,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.55189",
 		"longitude": "35.43889",
-		"population": 1263,
+		"population": 1468,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295458
 	},
@@ -1373527,7 +1373527,7 @@
 		"stateName": "Central District",
 		"latitude": "31.79281",
 		"longitude": "34.81048",
-		"population": 1248,
+		"population": 1403,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295455
 	},
@@ -1373659,7 +1373659,7 @@
 		"stateName": "Central District",
 		"latitude": "32.25933",
 		"longitude": "34.86478",
-		"population": 1046,
+		"population": 1107,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295425
 	},
@@ -1373767,7 +1373767,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.97832",
 		"longitude": "35.49973",
-		"population": 968,
+		"population": 956,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295402
 	},
@@ -1373791,7 +1373791,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.79446",
 		"longitude": "34.72806",
-		"population": 1258,
+		"population": 1330,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295395
 	},
@@ -1373899,7 +1373899,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.97803",
 		"longitude": "35.33362",
-		"population": 5893,
+		"population": 6114,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295379
 	},
@@ -1373911,7 +1373911,7 @@
 		"stateName": "Central District",
 		"latitude": "32.32399",
 		"longitude": "34.96229",
-		"population": 1136,
+		"population": 1130,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295375
 	},
@@ -1479324,6 +1479324,18 @@
 		"geonameId": 434104
 	},
 	{
+		"name": "Delbarān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "16",
+		"stateName": "Kurdistan Province",
+		"latitude": "35.2461",
+		"longitude": "47.9859",
+		"population": 6713,
+		"timezone": "Asia/Tehran",
+		"geonameId": 136422
+	},
+	{
 		"name": "Delgoshā",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1485478,6 +1485490,18 @@
 		"population": 5524,
 		"timezone": "Asia/Tehran",
 		"geonameId": 130676
+	},
+	{
+		"name": "Jāyezān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "10",
+		"stateName": "Khuzestan",
+		"latitude": "30.87506",
+		"longitude": "49.85292",
+		"population": 2357,
+		"timezone": "Asia/Tehran",
+		"geonameId": 130230
 	},
 	{
 		"name": "Jazan",
@@ -2375280,6 +2375304,18 @@
 		"geonameId": 3058901
 	},
 	{
+		"name": "Malá Mača",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "48.22221",
+		"longitude": "17.63942",
+		"population": 587,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3058886
+	},
+	{
 		"name": "Malá Maňa",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2375926,6 +2375962,18 @@
 		"population": 1198,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 3058578
+	},
+	{
+		"name": "Ňárad",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "47.83365",
+		"longitude": "17.61248",
+		"population": 658,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3058574
 	},
 	{
 		"name": "Neded",
@@ -2376598,6 +2376646,18 @@
 		"population": 3241,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 3058262
+	},
+	{
+		"name": "Pavlice",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "48.2579",
+		"longitude": "17.57661",
+		"population": 525,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3058253
 	},
 	{
 		"name": "Pavlovce nad Uhom",
@@ -2377656,6 +2377716,18 @@
 		"geonameId": 3057757
 	},
 	{
+		"name": "Sasinkovo",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "48.37119",
+		"longitude": "17.84934",
+		"population": 801,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3057736
+	},
+	{
 		"name": "Šaštín-Stráže",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2378182,6 +2378254,18 @@
 		"population": 4143,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 3057514
+	},
+	{
+		"name": "Špačince",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "48.44019",
+		"longitude": "17.60735",
+		"population": 3370,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3057506
 	},
 	{
 		"name": "Spišská Belá",
@@ -2378952,6 +2379036,18 @@
 		"geonameId": 3057191
 	},
 	{
+		"name": "Tomášikovo",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "48.08442",
+		"longitude": "17.69149",
+		"population": 1824,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3057183
+	},
+	{
 		"name": "Tomášov",
 		"countryCode": "SK",
 		"countryName": "Slovakia",
@@ -2379538,6 +2379634,18 @@
 		"population": 5612,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 723274
+	},
+	{
+		"name": "Veľká Mača",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "48.24146",
+		"longitude": "17.68991",
+		"population": 2554,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3056912
 	},
 	{
 		"name": "Veľké Bierovce",
@@ -2409216,14 +2409324,14 @@
 		"geonameId": 8707481
 	},
 	{
-		"name": "Saparmurat Turkmenbashy",
+		"name": "Saparmyrat Türkmenbaşy",
 		"countryCode": "TM",
 		"countryName": "Turkmenistan",
 		"stateCode": "D",
 		"stateName": "Dasoguz",
 		"latitude": "42.37986",
 		"longitude": "58.814",
-		"population": 6770,
+		"population": 20720,
 		"timezone": "Asia/Ashgabat",
 		"geonameId": 601532
 	},
@@ -2492693,6 +2492801,18 @@
 		"countryName": "Ukraine",
 		"stateCode": "65",
 		"stateName": "Kherson",
+		"latitude": "46.9432",
+		"longitude": "34.04761",
+		"population": 504,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 706595
+	},
+	{
+		"name": "Kozachi Laheri",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "65",
+		"stateName": "Kherson",
 		"latitude": "46.70538",
 		"longitude": "32.98194",
 		"population": 3587,
@@ -2511634,6 +2511754,18 @@
 		"population": 1734,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 8419721
+	},
+	{
+		"name": "Pishchanivka",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "65",
+		"stateName": "Kherson",
+		"latitude": "46.64898",
+		"longitude": "32.84282",
+		"population": 582,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 697531
 	},
 	{
 		"name": "Pishchanka",
