@@ -1360188,6 +1360188,18 @@
 		"geonameId": 7350546
 	},
 	{
+		"name": "Tumbang Jutuh",
+		"countryCode": "ID",
+		"countryName": "Indonesia",
+		"stateCode": "KT",
+		"stateName": "Central Kalimantan",
+		"latitude": "-1.28229",
+		"longitude": "113.57585",
+		"population": 913,
+		"timezone": "Asia/Pontianak",
+		"geonameId": 1623053
+	},
+	{
 		"name": "Tumbukebon",
 		"countryCode": "ID",
 		"countryName": "Indonesia",
@@ -1372099,7 +1372111,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.75212",
 		"longitude": "35.14733",
-		"population": 1086,
+		"population": 945,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295696
 	},
@@ -1372531,7 +1372543,7 @@
 		"stateName": "Central District",
 		"latitude": "32.33199",
 		"longitude": "34.98558",
-		"population": 1131,
+		"population": 1382,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293985
 	},
@@ -1372555,7 +1372567,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.79074",
 		"longitude": "35.3247",
-		"population": 3276,
+		"population": 3557,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293273
 	},
@@ -1372579,7 +1372591,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.95891",
 		"longitude": "35.17152",
-		"population": 14099,
+		"population": 14542,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295765
 	},
@@ -1372651,7 +1372663,7 @@
 		"stateName": "Central District",
 		"latitude": "31.98231",
 		"longitude": "34.87107",
-		"population": 1906,
+		"population": 2335,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295730
 	},
@@ -1372915,7 +1372927,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.68889",
 		"longitude": "34.94236",
-		"population": 8875,
+		"population": 11611,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295613
 	},
@@ -1373131,7 +1373143,7 @@
 		"stateName": "Central District",
 		"latitude": "32.21376",
 		"longitude": "34.87824",
-		"population": 1213,
+		"population": 965,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295545
 	},
@@ -1373203,7 +1373215,7 @@
 		"stateName": "Central District",
 		"latitude": "32.32131",
 		"longitude": "34.98268",
-		"population": 1143,
+		"population": 1179,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295535
 	},
@@ -1373287,7 +1373299,7 @@
 		"stateName": "Central District",
 		"latitude": "31.85612",
 		"longitude": "34.72747",
-		"population": 1132,
+		"population": 1025,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295504
 	},
@@ -1373347,7 +1373359,7 @@
 		"stateName": "Central District",
 		"latitude": "31.99613",
 		"longitude": "34.93427",
-		"population": 1174,
+		"population": 1137,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295480
 	},
@@ -1373827,7 +1373839,7 @@
 		"stateName": "Central District",
 		"latitude": "32.26221",
 		"longitude": "34.89919",
-		"population": 1171,
+		"population": 1346,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295511
 	},
@@ -1373839,7 +1373851,7 @@
 		"stateName": "Central District",
 		"latitude": "31.77029",
 		"longitude": "34.79105",
-		"population": 1417,
+		"population": 1359,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295510
 	},
@@ -1375735,7 +1375747,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.81095",
 		"longitude": "35.26071",
-		"population": 20188,
+		"population": 22268,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294608
 	},
@@ -1375834,6 +1375846,18 @@
 		"population": 47941,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294577
+	},
+	{
+		"name": "Karmiyya",
+		"countryCode": "IL",
+		"countryName": "Israel",
+		"stateCode": "D",
+		"stateName": "Southern District",
+		"latitude": "31.60439",
+		"longitude": "34.5426",
+		"population": 730,
+		"timezone": "Asia/Jerusalem",
+		"geonameId": 294576
 	},
 	{
 		"name": "Katzrin",
@@ -1376227,7 +1376251,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.68772",
 		"longitude": "35.41996",
-		"population": 4311,
+		"population": 4276,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294502
 	},
@@ -1376275,7 +1376299,7 @@
 		"stateName": "Central District",
 		"latitude": "32.31517",
 		"longitude": "34.9357",
-		"population": 24778,
+		"population": 29820,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294492
 	},
@@ -1376479,7 +1376503,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.67744",
 		"longitude": "34.93464",
-		"population": 1082,
+		"population": 983,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294422
 	},
@@ -1376515,7 +1376539,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.55549",
 		"longitude": "34.91638",
-		"population": 2039,
+		"population": 2093,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294410
 	},
@@ -1376563,7 +1376587,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.42426",
 		"longitude": "35.00632",
-		"population": 1398,
+		"population": 1735,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294347
 	},
@@ -1376767,7 +1376791,7 @@
 		"stateName": "Central District",
 		"latitude": "31.90674",
 		"longitude": "34.87259",
-		"population": 1363,
+		"population": 1478,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294302
 	},
@@ -1376779,7 +1376803,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.06351",
 		"longitude": "35.15758",
-		"population": 1165,
+		"population": 1196,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294295
 	},
@@ -1376803,7 +1376827,7 @@
 		"stateName": "Central District",
 		"latitude": "31.85357",
 		"longitude": "34.84646",
-		"population": 14837,
+		"population": 16334,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294303
 	},
@@ -1376971,7 +1376995,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.802",
 		"longitude": "35.01095",
-		"population": 1215,
+		"population": 942,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294252
 	},
@@ -1376983,7 +1377007,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.27929",
 		"longitude": "35.5787",
-		"population": 1615,
+		"population": 2248,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294247
 	},
@@ -1376995,7 +1377019,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.80186",
 		"longitude": "35.15072",
-		"population": 24052,
+		"population": 26534,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294245
 	},
@@ -1377007,7 +1377031,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.72177",
 		"longitude": "35.10669",
-		"population": 965,
+		"population": 1153,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294244
 	},
@@ -1377295,7 +1377319,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.58687",
 		"longitude": "35.43972",
-		"population": 1068,
+		"population": 1211,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295513
 	},
@@ -1377319,7 +1377343,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.79357",
 		"longitude": "35.15776",
-		"population": 1212,
+		"population": 1661,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294147
 	},
@@ -1377331,7 +1377355,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.51423",
 		"longitude": "35.29622",
-		"population": 4081,
+		"population": 4638,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294142
 	},
@@ -1377379,7 +1377403,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.61403",
 		"longitude": "35.39168",
-		"population": 2324,
+		"population": 2481,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294099
 	},
@@ -1377451,7 +1377475,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.93312",
 		"longitude": "35.31751",
-		"population": 13113,
+		"population": 13995,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294114
 	},
@@ -1377499,7 +1377523,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.63011",
 		"longitude": "35.34857",
-		"population": 1876,
+		"population": 2033,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294089
 	},
@@ -1377715,7 +1377739,7 @@
 		"stateName": "Central District",
 		"latitude": "32.17173",
 		"longitude": "34.93954",
-		"population": 1155,
+		"population": 1377,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294044
 	},
@@ -1377727,7 +1377751,7 @@
 		"stateName": "Central District",
 		"latitude": "32.13275",
 		"longitude": "34.92446",
-		"population": 1348,
+		"population": 1210,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294043
 	},
@@ -1377943,7 +1377967,7 @@
 		"stateName": "Central District",
 		"latitude": "32.30596",
 		"longitude": "35.00394",
-		"population": 1115,
+		"population": 1288,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294012
 	},
@@ -1377955,7 +1377979,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.73854",
 		"longitude": "34.62985",
-		"population": 2461,
+		"population": 2634,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294539
 	},
@@ -1378015,7 +1378039,7 @@
 		"stateName": "Central District",
 		"latitude": "32.31434",
 		"longitude": "34.89568",
-		"population": 1950,
+		"population": 2128,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294003
 	},
@@ -1378099,7 +1378123,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.75519",
 		"longitude": "35.15613",
-		"population": 1314,
+		"population": 1428,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293976
 	},
@@ -1378128,6 +1378152,18 @@
 		"geonameId": 293956
 	},
 	{
+		"name": "Palmaẖim",
+		"countryCode": "IL",
+		"countryName": "Israel",
+		"stateCode": "M",
+		"stateName": "Central District",
+		"latitude": "31.93334",
+		"longitude": "34.70607",
+		"population": 848,
+		"timezone": "Asia/Jerusalem",
+		"geonameId": 293951
+	},
+	{
 		"name": "Pardés H̱anna Karkur",
 		"countryCode": "IL",
 		"countryName": "Israel",
@@ -1378147,7 +1378183,7 @@
 		"stateName": "Central District",
 		"latitude": "32.3071",
 		"longitude": "34.91086",
-		"population": 5930,
+		"population": 7973,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293942
 	},
@@ -1378207,7 +1378243,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.7319",
 		"longitude": "35.54635",
-		"population": 1162,
+		"population": 1441,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293905
 	},
@@ -1378219,7 +1378255,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.74446",
 		"longitude": "35.53855",
-		"population": 1234,
+		"population": 1630,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293906
 	},
@@ -1378243,7 +1378279,7 @@
 		"stateName": "Central District",
 		"latitude": "31.81405",
 		"longitude": "34.79714",
-		"population": 1607,
+		"population": 1732,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293852
 	},
@@ -1378255,7 +1378291,7 @@
 		"stateName": "Central District",
 		"latitude": "31.86119",
 		"longitude": "34.82275",
-		"population": 11001,
+		"population": 11283,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294552
 	},
@@ -1378435,7 +1378471,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.93859",
 		"longitude": "35.36643",
-		"population": 7728,
+		"population": 8405,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293793
 	},
@@ -1378651,7 +1378687,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.74958",
 		"longitude": "35.10057",
-		"population": 12668,
+		"population": 15086,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293721
 	},
@@ -1378723,7 +1378759,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.04395",
 		"longitude": "34.72183",
-		"population": 1075,
+		"population": 868,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293711
 	},
@@ -1378795,7 +1378831,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.96892",
 		"longitude": "35.54184",
-		"population": 3148,
+		"population": 3308,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293688
 	},
@@ -1378831,7 +1378867,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.78855",
 		"longitude": "35.311",
-		"population": 1212,
+		"population": 1446,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293679
 	},
@@ -1378879,7 +1378915,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.94285",
 		"longitude": "35.34161",
-		"population": 4270,
+		"population": 4303,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293657
 	},
@@ -1378915,7 +1378951,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.52242",
 		"longitude": "35.32391",
-		"population": 1644,
+		"population": 1817,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293648
 	},
@@ -1378999,7 +1379035,7 @@
 		"stateName": "Central District",
 		"latitude": "32.15974",
 		"longitude": "34.94334",
-		"population": 1019,
+		"population": 1042,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293624
 	},
@@ -1379047,7 +1379083,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.18791",
 		"longitude": "35.62423",
-		"population": 1235,
+		"population": 1147,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293620
 	},
@@ -1379167,7 +1379203,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.89014",
 		"longitude": "35.23885",
-		"population": 6941,
+		"population": 7789,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293595
 	},
@@ -1379191,7 +1379227,7 @@
 		"stateName": "Central District",
 		"latitude": "32.28981",
 		"longitude": "34.99699",
-		"population": 1907,
+		"population": 2020,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293585
 	},
@@ -1379311,7 +1379347,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.98098",
 		"longitude": "35.08331",
-		"population": 1205,
+		"population": 1321,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293543
 	},
@@ -1379515,7 +1379551,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.79711",
 		"longitude": "35.06525",
-		"population": 1247,
+		"population": 1399,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293476
 	},
@@ -1379575,7 +1379611,7 @@
 		"stateName": "Central District",
 		"latitude": "31.89064",
 		"longitude": "34.84329",
-		"population": 1102,
+		"population": 1125,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293455
 	},
@@ -1379599,7 +1379635,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.60598",
 		"longitude": "35.33435",
-		"population": 2609,
+		"population": 2933,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293449
 	},
@@ -1379791,7 +1379827,7 @@
 		"stateName": "Central District",
 		"latitude": "32.25316",
 		"longitude": "34.86891",
-		"population": 1021,
+		"population": 1055,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293336
 	},
@@ -1379935,7 +1379971,7 @@
 		"stateName": "Central District",
 		"latitude": "32.01425",
 		"longitude": "34.93394",
-		"population": 1201,
+		"population": 1256,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293305
 	},
@@ -1380043,7 +1380079,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.96612",
 		"longitude": "35.59332",
-		"population": 6776,
+		"population": 7173,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293298
 	},
@@ -1380187,7 +1380223,7 @@
 		"stateName": "Central District",
 		"latitude": "31.7974",
 		"longitude": "34.82083",
-		"population": 4268,
+		"population": 4338,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293262
 	},
@@ -1380343,7 +1380379,7 @@
 		"stateName": "Central District",
 		"latitude": "32.1542",
 		"longitude": "34.96868",
-		"population": 1082,
+		"population": 1182,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293231
 	},
@@ -1380463,7 +1380499,7 @@
 		"stateName": "Southern District",
 		"latitude": "30.98822",
 		"longitude": "34.93176",
-		"population": 10294,
+		"population": 11989,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293203
 	},
@@ -1380511,7 +1380547,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.74199",
 		"longitude": "34.78229",
-		"population": 1197,
+		"population": 1255,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293182
 	},
@@ -1380559,7 +1380595,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.64661",
 		"longitude": "35.09202",
-		"population": 23796,
+		"population": 24928,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293153
 	},
@@ -1972543,7 +1972579,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.05024",
 		"longitude": "5.83087",
-		"population": 3440,
+		"population": 3210,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759922
 	},
@@ -1972567,7 +1972603,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.05",
 		"longitude": "5.9",
-		"population": 1525,
+		"population": 1515,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749669
 	},
@@ -1972591,7 +1972627,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.26637",
 		"longitude": "5.88704",
-		"population": 520,
+		"population": 765,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2748941
 	},
@@ -1973359,7 +1973395,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.21785",
 		"longitude": "6.1617",
-		"population": 1075,
+		"population": 1240,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759611
 	},
@@ -1973563,7 +1973599,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.08072",
 		"longitude": "6.25671",
-		"population": 1450,
+		"population": 1890,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759486
 	},
@@ -1973923,7 +1973959,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.05914",
 		"longitude": "6.07711",
-		"population": 3485,
+		"population": 3755,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759275
 	},
@@ -1974859,7 +1974895,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.1617",
 		"longitude": "6.14479",
-		"population": 695,
+		"population": 1210,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758748
 	},
@@ -1974931,7 +1974967,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.08284",
 		"longitude": "6.04578",
-		"population": 1660,
+		"population": 1810,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758633
 	},
@@ -1975531,7 +1975567,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.27466",
 		"longitude": "5.99648",
-		"population": 1115,
+		"population": 1225,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758239
 	},
@@ -1975711,7 +1975747,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.25166",
 		"longitude": "6.14483",
-		"population": 5120,
+		"population": 5910,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2758131
 	},
@@ -1975831,7 +1975867,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.19243",
 		"longitude": "5.99009",
-		"population": 9720,
+		"population": 10190,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759103
 	},
@@ -1976323,7 +1976359,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.29046",
 		"longitude": "5.99785",
-		"population": 5560,
+		"population": 5670,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2757838
 	},
@@ -1976611,7 +1976647,7 @@
 		"stateName": "Friesland",
 		"latitude": "52.96829",
 		"longitude": "5.97116",
-		"population": 1480,
+		"population": 1355,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 6697854
 	},
@@ -1976851,7 +1976887,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.25731",
 		"longitude": "6.0363",
-		"population": 5030,
+		"population": 5220,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2743590
 	},
@@ -1976887,7 +1976923,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.09936",
 		"longitude": "6.0341",
-		"population": 675,
+		"population": 655,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756933
 	},
@@ -1977583,7 +1977619,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.13462",
 		"longitude": "6.14153",
-		"population": 1500,
+		"population": 1245,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756642
 	},
@@ -1977739,7 +1977775,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.2959",
 		"longitude": "6.04609",
-		"population": 840,
+		"population": 945,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756577
 	},
@@ -1977751,7 +1977787,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.20213",
 		"longitude": "6.11183",
-		"population": 1530,
+		"population": 1690,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756567
 	},
@@ -1977931,7 +1977967,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.37475",
 		"longitude": "6.12698",
-		"population": 880,
+		"population": 1065,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2759757
 	},
@@ -1977943,7 +1977979,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.17466",
 		"longitude": "6.05999",
-		"population": 1310,
+		"population": 1580,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749430
 	},
@@ -1977955,7 +1977991,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.37841",
 		"longitude": "6.05347",
-		"population": 810,
+		"population": 915,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749427
 	},
@@ -1978075,7 +1978111,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.33026",
 		"longitude": "6.10033",
-		"population": 610,
+		"population": 840,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756422
 	},
@@ -1978632,6 +1978668,18 @@
 		"geonameId": 2756097
 	},
 	{
+		"name": "Engwierum",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "FR",
+		"stateName": "Friesland",
+		"latitude": "53.32124",
+		"longitude": "6.13621",
+		"population": 530,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2756081
+	},
+	{
 		"name": "Enkhuizen",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1978879,7 +1978927,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.23558",
 		"longitude": "5.98832",
-		"population": 3440,
+		"population": 3635,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745743
 	},
@@ -1978915,7 +1978963,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.33784",
 		"longitude": "5.82533",
-		"population": 1935,
+		"population": 1785,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2755920
 	},
@@ -1978999,7 +1979047,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.10938",
 		"longitude": "6.20642",
-		"population": 785,
+		"population": 1015,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2755819
 	},
@@ -1979083,7 +1979131,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.16667",
 		"longitude": "5.96667",
-		"population": 1545,
+		"population": 1850,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2755729
 	},
@@ -1979383,7 +1979431,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.23794",
 		"longitude": "6.20367",
-		"population": 730,
+		"population": 800,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2755574
 	},
@@ -1979599,7 +1979647,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.00659",
 		"longitude": "6.06402",
-		"population": 7040,
+		"population": 7545,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2755429
 	},
@@ -1980115,7 +1980163,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.24293",
 		"longitude": "5.89502",
-		"population": 2175,
+		"population": 2225,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2755542
 	},
@@ -1980343,7 +1980391,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.30657",
 		"longitude": "5.78379",
-		"population": 2355,
+		"population": 2605,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2754930
 	},
@@ -1980487,7 +1980535,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.18333",
 		"longitude": "6.13333",
-		"population": 4005,
+		"population": 4335,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2754821
 	},
@@ -1981248,6 +1981296,18 @@
 		"geonameId": 2754428
 	},
 	{
+		"name": "Hemrik",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "FR",
+		"stateName": "Friesland",
+		"latitude": "53.03163",
+		"longitude": "6.13876",
+		"population": 745,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2754417
+	},
+	{
 		"name": "Hendrik-Ido-Ambacht",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1981819,7 +1981879,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.36815",
 		"longitude": "5.90073",
-		"population": 1435,
+		"population": 1640,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2753852
 	},
@@ -1982227,7 +1982287,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.15202",
 		"longitude": "6.14524",
-		"population": 905,
+		"population": 940,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2753545
 	},
@@ -1982407,7 +1982467,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.21333",
 		"longitude": "5.94137",
-		"population": 4510,
+		"population": 5200,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2754864
 	},
@@ -1982623,7 +1982683,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.21158",
 		"longitude": "6.06668",
-		"population": 555,
+		"population": 970,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2756321
 	},
@@ -1982659,7 +1982719,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.00396",
 		"longitude": "6.12183",
-		"population": 3230,
+		"population": 3220,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 6692371
 	},
@@ -1982803,7 +1982863,7 @@
 		"stateName": "Friesland",
 		"latitude": "52.94595",
 		"longitude": "6.01261",
-		"population": 600,
+		"population": 605,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2753034
 	},
@@ -1983343,7 +1983403,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.26224",
 		"longitude": "6.07544",
-		"population": 2805,
+		"population": 3010,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2752520
 	},
@@ -1983403,7 +1983463,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.21261",
 		"longitude": "6.09209",
-		"population": 2180,
+		"population": 2435,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2752444
 	},
@@ -1983859,7 +1983919,7 @@
 		"stateName": "Friesland",
 		"latitude": "52.98257",
 		"longitude": "6.0024",
-		"population": 615,
+		"population": 1055,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751894
 	},
@@ -1984507,7 +1984567,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.01835",
 		"longitude": "6.09346",
-		"population": 935,
+		"population": 1330,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751551
 	},
@@ -1985311,7 +1985371,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.32277",
 		"longitude": "5.80198",
-		"population": 1230,
+		"population": 1400,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2751129
 	},
@@ -1985995,7 +1986055,7 @@
 		"stateName": "Friesland",
 		"latitude": "52.93555",
 		"longitude": "6.00154",
-		"population": 685,
+		"population": 680,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750805
 	},
@@ -1986055,7 +1986115,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.35987",
 		"longitude": "6.06703",
-		"population": 885,
+		"population": 830,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750919
 	},
@@ -1986199,9 +1986259,21 @@
 		"stateName": "Friesland",
 		"latitude": "53.25269",
 		"longitude": "5.92026",
-		"population": 570,
+		"population": 685,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750706
+	},
+	{
+		"name": "Munnekezijl",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "FR",
+		"stateName": "Friesland",
+		"latitude": "53.30385",
+		"longitude": "6.272",
+		"population": 505,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2750553
 	},
 	{
 		"name": "Munstergeleen",
@@ -1986451,7 +1986523,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.05207",
 		"longitude": "5.85223",
-		"population": 1080,
+		"population": 965,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750420
 	},
@@ -1986859,7 +1986931,7 @@
 		"stateName": "Friesland",
 		"latitude": "52.95113",
 		"longitude": "6.06342",
-		"population": 1450,
+		"population": 1480,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750310
 	},
@@ -1987032,6 +1987104,18 @@
 		"geonameId": 2750123
 	},
 	{
+		"name": "Nij Beets",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "FR",
+		"stateName": "Friesland",
+		"latitude": "53.07041",
+		"longitude": "6.00128",
+		"population": 1645,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2750103
+	},
+	{
 		"name": "Nijemirdum",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1987183,7 +1987267,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.22135",
 		"longitude": "6.00523",
-		"population": 2385,
+		"population": 2270,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749992
 	},
@@ -1987603,7 +1987687,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.25",
 		"longitude": "5.9",
-		"population": 1965,
+		"population": 2090,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749708
 	},
@@ -1988443,7 +1988527,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.1341",
 		"longitude": "6.05656",
-		"population": 1630,
+		"population": 1780,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749304
 	},
@@ -1988587,7 +1988671,7 @@
 		"stateName": "Friesland",
 		"latitude": "52.94579",
 		"longitude": "5.95038",
-		"population": 1580,
+		"population": 1575,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749251
 	},
@@ -1988887,7 +1988971,7 @@
 		"stateName": "Friesland",
 		"latitude": "52.96281",
 		"longitude": "6.08351",
-		"population": 815,
+		"population": 835,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749109
 	},
@@ -1988959,7 +1989043,7 @@
 		"stateName": "Friesland",
 		"latitude": "52.93343",
 		"longitude": "5.95579",
-		"population": 1590,
+		"population": 1530,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2749007
 	},
@@ -1990015,7 +1990099,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.29695",
 		"longitude": "5.94931",
-		"population": 965,
+		"population": 1100,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2748051
 	},
@@ -1990195,7 +1990279,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.14523",
 		"longitude": "6.10411",
-		"population": 1355,
+		"population": 1415,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747886
 	},
@@ -1990339,7 +1990423,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.22238",
 		"longitude": "5.91717",
-		"population": 811,
+		"population": 785,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2748099
 	},
@@ -1991035,7 +1991119,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.09974",
 		"longitude": "6.2447",
-		"population": 830,
+		"population": 825,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2747339
 	},
@@ -1992379,7 +1992463,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.18333",
 		"longitude": "6",
-		"population": 920,
+		"population": 1375,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746565
 	},
@@ -1992391,7 +1992475,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.18477",
 		"longitude": "6.17031",
-		"population": 5550,
+		"population": 6100,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746558
 	},
@@ -1992403,7 +1992487,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.20475",
 		"longitude": "6.17981",
-		"population": 925,
+		"population": 1255,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746557
 	},
@@ -1992415,7 +1992499,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.17826",
 		"longitude": "5.9273",
-		"population": 540,
+		"population": 635,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746564
 	},
@@ -1992439,7 +1992523,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.24817",
 		"longitude": "6.04746",
-		"population": 585,
+		"population": 550,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2743585
 	},
@@ -1992691,7 +1992775,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.38203",
 		"longitude": "5.96523",
-		"population": 1165,
+		"population": 1335,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746424
 	},
@@ -1992739,7 +1992823,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.01973",
 		"longitude": "6.0478",
-		"population": 545,
+		"population": 995,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746398
 	},
@@ -1992847,7 +1992931,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.03058",
 		"longitude": "5.99193",
-		"population": 1120,
+		"population": 1565,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746304
 	},
@@ -1992907,7 +1992991,7 @@
 		"stateName": "Friesland",
 		"latitude": "52.99729",
 		"longitude": "5.94443",
-		"population": 815,
+		"population": 835,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746274
 	},
@@ -1993075,7 +1993159,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.23152",
 		"longitude": "6.08952",
-		"population": 1020,
+		"population": 1135,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746052
 	},
@@ -1993087,7 +1993171,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.24015",
 		"longitude": "6.04591",
-		"population": 1580,
+		"population": 1830,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746051
 	},
@@ -1993123,7 +1993207,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.21343",
 		"longitude": "5.90961",
-		"population": 1400,
+		"population": 1615,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2746311
 	},
@@ -1993339,7 +1993423,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.09244",
 		"longitude": "6.16718",
-		"population": 3810,
+		"population": 4930,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745936
 	},
@@ -1994647,7 +1994731,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.3",
 		"longitude": "6.03333",
-		"population": 915,
+		"population": 975,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744147
 	},
@@ -1995312,6 +1995396,18 @@
 		"geonameId": 13696827
 	},
 	{
+		"name": "Westergeast",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "FR",
+		"stateName": "Friesland",
+		"latitude": "53.2918",
+		"longitude": "6.08454",
+		"population": 635,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2744744
+	},
+	{
 		"name": "Westerhaar-Vriezenveensewijk",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1995655,7 +1995751,7 @@
 		"stateName": "Friesland",
 		"latitude": "53.05814",
 		"longitude": "6.2047",
-		"population": 1245,
+		"population": 2065,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2744459
 	},
@@ -2407774,18 +2407870,6 @@
 		"population": 4125,
 		"timezone": "Asia/Ashgabat",
 		"geonameId": 162197
-	},
-	{
-		"name": "Arçabil",
-		"countryCode": "TM",
-		"countryName": "Turkmenistan",
-		"stateCode": "A",
-		"stateName": "Ahal",
-		"latitude": "37.915",
-		"longitude": "58.08987",
-		"population": 3000,
-		"timezone": "Asia/Ashgabat",
-		"geonameId": 161983
 	},
 	{
 		"name": "Arçman",

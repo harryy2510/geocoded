@@ -3966,10 +3966,11 @@
 			],
 			"require": "AC",
 			"upper": "C",
-			"zip": "\\d{6}",
+			"zip": "[A-Z]\\d{2}[A-Z0-9]{4}|\\d{6}",
 			"zipex": [
 				"040900",
-				"050012"
+				"050012",
+				"Z00Y5M3"
 			],
 			"posturl": null,
 			"stateNameType": "province",
@@ -5196,14 +5197,16 @@
 				"state"
 			],
 			"require": "AC",
-			"upper": "CS",
-			"zip": "\\d{6}",
+			"upper": "CSZ",
+			"zip": "[A-Z]{2}[ -]?(?:0[1-9]|[1-9]\\d)[ -]?[A-Z\\d]{3}[ -]?[A-Z]{2}[ -]?(?:0[1-9]|[1-9]\\d)|\\d{6}",
 			"zipex": [
+				"FC 02 A09 DB 09",
+				"EK-01-A03-FK-01",
 				"930283",
 				"300001",
 				"931104"
 			],
-			"posturl": "http://www.nigeriapostcodes.com/",
+			"posturl": "https://postcode.gov.ng/",
 			"stateNameType": "state",
 			"zipNameType": "postal",
 			"sublocalityNameType": "suburb",
