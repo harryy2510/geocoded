@@ -278028,6 +278028,18 @@
 		"geonameId": 13512389
 	},
 	{
+		"name": "Highlands",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "BC",
+		"stateName": "British Columbia",
+		"latitude": "48.51633",
+		"longitude": "-123.50264",
+		"population": 2225,
+		"timezone": "America/Vancouver",
+		"geonameId": 13732176
+	},
+	{
 		"name": "Highway 11",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -638902,6 +638914,18 @@
 		"population": 799,
 		"timezone": "Europe/Prague",
 		"geonameId": 3064109
+	},
+	{
+		"name": "Třebětín",
+		"countryCode": "CZ",
+		"countryName": "Czechia",
+		"stateCode": "0641",
+		"stateName": "Okres Blansko",
+		"latitude": "49.55882",
+		"longitude": "16.58904",
+		"population": 892,
+		"timezone": "Europe/Prague",
+		"geonameId": 3064106
 	},
 	{
 		"name": "Třebíč",
@@ -1246824,6 +1246848,18 @@
 		"geonameId": 717825
 	},
 	{
+		"name": "Markaz",
+		"countryCode": "HU",
+		"countryName": "Hungary",
+		"stateCode": "HE",
+		"stateName": "Heves County",
+		"latitude": "47.81667",
+		"longitude": "20.06667",
+		"population": 1736,
+		"timezone": "Europe/Budapest",
+		"geonameId": 717818
+	},
+	{
 		"name": "Maroslele",
 		"countryCode": "HU",
 		"countryName": "Hungary",
@@ -1372255,7 +1372291,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.79366",
 		"longitude": "35.12064",
-		"population": 3505,
+		"population": 3849,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8183198
 	},
@@ -1372519,7 +1372555,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.71763",
 		"longitude": "35.25986",
-		"population": 8356,
+		"population": 9077,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294654
 	},
@@ -1372759,7 +1372795,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.93046",
 		"longitude": "35.27134",
-		"population": 8381,
+		"population": 8714,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295411
 	},
@@ -1373047,7 +1373083,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.99783",
 		"longitude": "35.448",
-		"population": 1072,
+		"population": 1173,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8309435
 	},
@@ -1373095,7 +1373131,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.73913",
 		"longitude": "35.15696",
-		"population": 7916,
+		"population": 8268,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295553
 	},
@@ -1373179,7 +1373215,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.73501",
 		"longitude": "34.72389",
-		"population": 1289,
+		"population": 1495,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293009
 	},
@@ -1373515,7 +1373551,7 @@
 		"stateName": "Central District",
 		"latitude": "31.88894",
 		"longitude": "34.91749",
-		"population": 2197,
+		"population": 2153,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 390265
 	},
@@ -1373587,7 +1373623,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.44749",
 		"longitude": "34.76235",
-		"population": 1405,
+		"population": 1044,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295439
 	},
@@ -1373695,7 +1373731,7 @@
 		"stateName": "Central District",
 		"latitude": "32.33445",
 		"longitude": "34.89009",
-		"population": 2079,
+		"population": 2299,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293580
 	},
@@ -1374091,7 +1374127,7 @@
 		"stateName": "",
 		"latitude": "31.92609",
 		"longitude": "35.13393",
-		"population": 1448,
+		"population": 1593,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8199393
 	},
@@ -1374415,7 +1374451,7 @@
 		"stateName": "Central District",
 		"latitude": "32.27162",
 		"longitude": "34.88563",
-		"population": 13826,
+		"population": 15370,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295122
 	},
@@ -1374883,7 +1374919,7 @@
 		"stateName": "",
 		"latitude": "31.84927",
 		"longitude": "35.16106",
-		"population": 1067,
+		"population": 1171,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8199390
 	},
@@ -1374895,7 +1374931,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.3565",
 		"longitude": "34.75525",
-		"population": 1230,
+		"population": 1352,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 10860931
 	},
@@ -1374979,7 +1375015,7 @@
 		"stateName": "Central District",
 		"latitude": "32.35016",
 		"longitude": "34.90038",
-		"population": 675,
+		"population": 854,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294954
 	},
@@ -1375003,7 +1375039,7 @@
 		"stateName": "Central District",
 		"latitude": "31.96861",
 		"longitude": "34.93252",
-		"population": 875,
+		"population": 1152,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294942
 	},
@@ -1375015,7 +1375051,7 @@
 		"stateName": "Central District",
 		"latitude": "31.78832",
 		"longitude": "34.80011",
-		"population": 558,
+		"population": 707,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294938
 	},
@@ -1375087,7 +1375123,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.83005",
 		"longitude": "35.4901",
-		"population": 1473,
+		"population": 1758,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8309927
 	},
@@ -1375123,7 +1375159,7 @@
 		"stateName": "Central District",
 		"latitude": "32.33278",
 		"longitude": "34.94861",
-		"population": 923,
+		"population": 909,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294881
 	},
@@ -1375195,7 +1375231,7 @@
 		"stateName": "Judea and Samaria Area",
 		"latitude": "31.92973",
 		"longitude": "35.0215",
-		"population": 2771,
+		"population": 3091,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8199382
 	},
@@ -1375243,7 +1375279,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.98234",
 		"longitude": "35.54494",
-		"population": 9272,
+		"population": 11013,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294809
 	},
@@ -1375483,7 +1375519,7 @@
 		"stateName": "Central District",
 		"latitude": "31.83176",
 		"longitude": "34.88231",
-		"population": 1163,
+		"population": 1305,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294674
 	},
@@ -1375495,7 +1375531,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.30084",
 		"longitude": "34.93606",
-		"population": 21558,
+		"population": 23034,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8374209
 	},
@@ -1375507,7 +1375543,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.01762",
 		"longitude": "35.34786",
-		"population": 6410,
+		"population": 6877,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294666
 	},
@@ -1375531,7 +1375567,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.82233",
 		"longitude": "35.19271",
-		"population": 13305,
+		"population": 13634,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294663
 	},
@@ -1375558,6 +1375594,18 @@
 		"population": 14784,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294658
+	},
+	{
+		"name": "Ilaniyya",
+		"countryCode": "IL",
+		"countryName": "Israel",
+		"stateCode": "Z",
+		"stateName": "Northern District",
+		"latitude": "32.75444",
+		"longitude": "35.40776",
+		"population": 528,
+		"timezone": "Asia/Jerusalem",
+		"geonameId": 294657
 	},
 	{
 		"name": "Jaffa",
@@ -1375615,7 +1375663,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.02216",
 		"longitude": "35.44655",
-		"population": 3105,
+		"population": 3243,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294627
 	},
@@ -1375639,7 +1375687,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.9282",
 		"longitude": "35.15705",
-		"population": 21163,
+		"population": 20231,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294622
 	},
@@ -1375675,7 +1375723,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.02122",
 		"longitude": "35.14968",
-		"population": 1054,
+		"population": 1068,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294616
 	},
@@ -1375687,7 +1375735,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.86856",
 		"longitude": "35.21171",
-		"population": 14095,
+		"population": 12589,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294615
 	},
@@ -1375699,7 +1375747,7 @@
 		"stateName": "Central District",
 		"latitude": "32.27782",
 		"longitude": "34.9194",
-		"population": 22490,
+		"population": 22655,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 11524864
 	},
@@ -1375807,7 +1375855,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.91215",
 		"longitude": "35.3605",
-		"population": 1402,
+		"population": 699,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 386301
 	},
@@ -1375879,7 +1375927,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.83155",
 		"longitude": "35.24848",
-		"population": 3589,
+		"population": 4037,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294571
 	},
@@ -1375939,7 +1375987,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.7448",
 		"longitude": "34.75681",
-		"population": 877,
+		"population": 794,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294567
 	},
@@ -1376131,7 +1376179,7 @@
 		"stateName": "",
 		"latitude": "31.91982",
 		"longitude": "35.03669",
-		"population": 2657,
+		"population": 2314,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8199384
 	},
@@ -1376227,7 +1376275,7 @@
 		"stateName": "Central District",
 		"latitude": "32.07734",
 		"longitude": "34.9254",
-		"population": 1502,
+		"population": 1439,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294505
 	},
@@ -1376263,7 +1376311,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.99385",
 		"longitude": "35.27793",
-		"population": 5486,
+		"population": 5534,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 386445
 	},
@@ -1376623,7 +1376671,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.55382",
 		"longitude": "35.18412",
-		"population": 14833,
+		"population": 15486,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 11979755
 	},
@@ -1377235,7 +1377283,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.83907",
 		"longitude": "35.19921",
-		"population": 1070,
+		"population": 1088,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8262022
 	},
@@ -1377259,7 +1377307,7 @@
 		"stateName": "Southern District",
 		"latitude": "30.60944",
 		"longitude": "34.80111",
-		"population": 5211,
+		"population": 5843,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294166
 	},
@@ -1377379,7 +1377427,7 @@
 		"stateName": "",
 		"latitude": "31.96236",
 		"longitude": "35.06553",
-		"population": 2148,
+		"population": 2932,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8199389
 	},
@@ -1377787,7 +1377835,7 @@
 		"stateName": "",
 		"latitude": "31.96396",
 		"longitude": "35.04853",
-		"population": 1786,
+		"population": 2262,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8199388
 	},
@@ -1377859,7 +1377907,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.82542",
 		"longitude": "34.68282",
-		"population": 1396,
+		"population": 1251,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294029
 	},
@@ -1378483,7 +1378531,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.67897",
 		"longitude": "35.20225",
-		"population": 521,
+		"population": 715,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293791
 	},
@@ -1378507,7 +1378555,7 @@
 		"stateName": "Central District",
 		"latitude": "32.21745",
 		"longitude": "34.93803",
-		"population": 1130,
+		"population": 1246,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293785
 	},
@@ -1378567,7 +1378615,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.70104",
 		"longitude": "35.16433",
-		"population": 7785,
+		"population": 7953,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293773
 	},
@@ -1378639,7 +1378687,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.85484",
 		"longitude": "35.26468",
-		"population": 1057,
+		"population": 938,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 386234
 	},
@@ -1378747,7 +1378795,7 @@
 		"stateName": "",
 		"latitude": "32.11926",
 		"longitude": "35.12896",
-		"population": 2632,
+		"population": 3202,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8199422
 	},
@@ -1378939,7 +1378987,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.89286",
 		"longitude": "35.37108",
-		"population": 3340,
+		"population": 3878,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 386253
 	},
@@ -1379179,7 +1379227,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.19918",
 		"longitude": "34.83956",
-		"population": 10362,
+		"population": 16736,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8184332
 	},
@@ -1379503,7 +1379551,7 @@
 		"stateName": "Central District",
 		"latitude": "31.9987",
 		"longitude": "34.94624",
-		"population": 20740,
+		"population": 23592,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8428283
 	},
@@ -1379731,7 +1379779,7 @@
 		"stateName": "",
 		"latitude": "31.93927",
 		"longitude": "35.13539",
-		"population": 4575,
+		"population": 6039,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8199392
 	},
@@ -1379767,7 +1379815,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.65655",
 		"longitude": "35.30228",
-		"population": 1504,
+		"population": 1335,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293410
 	},
@@ -1379791,7 +1379839,7 @@
 		"stateName": "Central District",
 		"latitude": "32.25318",
 		"longitude": "34.91817",
-		"population": 13144,
+		"population": 14771,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293354
 	},
@@ -1379815,7 +1379863,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.24864",
 		"longitude": "34.86007",
-		"population": 20204,
+		"population": 24782,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8310136
 	},
@@ -1380031,7 +1380079,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.64828",
 		"longitude": "34.94726",
-		"population": 1097,
+		"population": 1287,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293080
 	},
@@ -1380067,9 +1380115,21 @@
 		"stateName": "Central District",
 		"latitude": "32.29833",
 		"longitude": "34.91242",
-		"population": 3291,
+		"population": 2769,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293014
+	},
+	{
+		"name": "Tsuri’el",
+		"countryCode": "IL",
+		"countryName": "Israel",
+		"stateCode": "Z",
+		"stateName": "Northern District",
+		"latitude": "33.00681",
+		"longitude": "35.31361",
+		"population": 1130,
+		"timezone": "Asia/Jerusalem",
+		"geonameId": 293019
 	},
 	{
 		"name": "Tūbā Zangarīya",
@@ -1380103,7 +1380163,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.78377",
 		"longitude": "35.11926",
-		"population": 625,
+		"population": 583,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293023
 	},
@@ -1380643,7 +1380703,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.87756",
 		"longitude": "35.27031",
-		"population": 1093,
+		"population": 1179,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 386266
 	},
@@ -1380679,7 +1380739,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.72754",
 		"longitude": "35.21381",
-		"population": 7942,
+		"population": 9149,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8264669
 	},
@@ -1398504,6 +1398564,18 @@
 		"geonameId": 13157130
 	},
 	{
+		"name": "Chhitman",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.54509",
+		"longitude": "85.23462",
+		"population": 928,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11011605
+	},
+	{
 		"name": "Chhokrān",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1405620,6 +1405692,18 @@
 		"geonameId": 1271912
 	},
 	{
+		"name": "Fatehpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.50892",
+		"longitude": "85.19389",
+		"population": 11982,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 1271913
+	},
+	{
 		"name": "Fatehpur Chaurāsi",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1406818,6 +1406902,18 @@
 		"population": 5533,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 10697739
+	},
+	{
+		"name": "Gauharpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.54287",
+		"longitude": "85.23476",
+		"population": 2685,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11011693
 	},
 	{
 		"name": "Gaurela",
@@ -1409134,6 +1409230,18 @@
 		"population": 4013,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1270577
+	},
+	{
+		"name": "Gyan Chak",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.54961",
+		"longitude": "85.24231",
+		"population": 3392,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11011607
 	},
 	{
 		"name": "Gyānpur",
@@ -1428804,6 +1428912,18 @@
 		"geonameId": 1264344
 	},
 	{
+		"name": "Mahuli",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.54295",
+		"longitude": "85.2268",
+		"population": 5881,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11011771
+	},
+	{
 		"name": "Mahur",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1433230,6 +1433350,30 @@
 		"population": 29626,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1263021
+	},
+	{
+		"name": "Mircha",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.54676",
+		"longitude": "85.21858",
+		"population": 1816,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11011603
+	},
+	{
+		"name": "Mirchi",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.55541",
+		"longitude": "85.21394",
+		"population": 5938,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11011602
 	},
 	{
 		"name": "Mirganj",
@@ -1446936,6 +1447080,18 @@
 		"geonameId": 1259251
 	},
 	{
+		"name": "Punādih",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.54838",
+		"longitude": "85.26486",
+		"population": 8277,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11027766
+	},
+	{
 		"name": "Pūnāhāna",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1450992,6 +1451148,18 @@
 		"geonameId": 1257928
 	},
 	{
+		"name": "Sabalpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.5609",
+		"longitude": "85.27029",
+		"population": 19183,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11027750
+	},
+	{
 		"name": "Sabāthu",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1451842,6 +1452010,18 @@
 		"population": 33246,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1257638
+	},
+	{
+		"name": "Sālehpur Kasāra",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.55083",
+		"longitude": "85.26145",
+		"population": 1371,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11027753
 	},
 	{
 		"name": "Salem",
@@ -1456620,6 +1456800,18 @@
 		"geonameId": 1256245
 	},
 	{
+		"name": "Simli Murārpur",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.5792",
+		"longitude": "85.24008",
+		"population": 3739,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11011617
+	},
+	{
 		"name": "Sindgi",
 		"countryCode": "IN",
 		"countryName": "India",
@@ -1457830,6 +1458022,18 @@
 		"population": 19810,
 		"timezone": "Asia/Kolkata",
 		"geonameId": 1255788
+	},
+	{
+		"name": "Sonāwān",
+		"countryCode": "IN",
+		"countryName": "India",
+		"stateCode": "BR",
+		"stateName": "Bihar",
+		"latitude": "25.54449",
+		"longitude": "85.23866",
+		"population": 2322,
+		"timezone": "Asia/Kolkata",
+		"geonameId": 11011606
 	},
 	{
 		"name": "Sonegaon",
@@ -2377978,6 +2378182,30 @@
 		"population": 633,
 		"timezone": "Europe/Bratislava",
 		"geonameId": 723624
+	},
+	{
+		"name": "Siladice",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "48.35809",
+		"longitude": "17.74253",
+		"population": 638,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3057668
+	},
+	{
+		"name": "Šintava",
+		"countryCode": "SK",
+		"countryName": "Slovakia",
+		"stateCode": "TA",
+		"stateName": "Trnava Region",
+		"latitude": "48.28364",
+		"longitude": "17.75827",
+		"population": 1709,
+		"timezone": "Europe/Bratislava",
+		"geonameId": 3057660
 	},
 	{
 		"name": "Skalica",
