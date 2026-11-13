@@ -266040,6 +266040,18 @@
 		"geonameId": 8131396
 	},
 	{
+		"name": "Brébeuf",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.07607",
+		"longitude": "-74.67803",
+		"population": 1009,
+		"timezone": "America/Toronto",
+		"geonameId": 13732210
+	},
+	{
 		"name": "Breckenridge Greens",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -266410,6 +266422,18 @@
 		"population": 5178,
 		"timezone": "America/Edmonton",
 		"geonameId": 7626863
+	},
+	{
+		"name": "Bristol",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.53221",
+		"longitude": "-76.45712",
+		"population": 1120,
+		"timezone": "America/Toronto",
+		"geonameId": 5908998
 	},
 	{
 		"name": "Britannia",
@@ -267132,6 +267156,18 @@
 		"geonameId": 5913490
 	},
 	{
+		"name": "Calixa-Lavallée",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.74603",
+		"longitude": "-73.28168",
+		"population": 509,
+		"timezone": "America/Toronto",
+		"geonameId": 13732211
+	},
+	{
 		"name": "Callaghan",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -267418,6 +267454,18 @@
 		"population": 15947,
 		"timezone": "America/Toronto",
 		"geonameId": 5914826
+	},
+	{
+		"name": "Caniapiscau",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "54.86692",
+		"longitude": "-69.91548",
+		"population": 3882,
+		"timezone": "America/Toronto",
+		"geonameId": 13732212
 	},
 	{
 		"name": "Canmore",
@@ -268090,6 +268138,18 @@
 		"population": 7449,
 		"timezone": "America/Vancouver",
 		"geonameId": 5917868
+	},
+	{
+		"name": "Cascapedia-Saint-Jules",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.25083",
+		"longitude": "-65.90927",
+		"population": 764,
+		"timezone": "America/Toronto",
+		"geonameId": 13732213
 	},
 	{
 		"name": "Casselman",
@@ -269940,6 +270000,18 @@
 		"geonameId": 11791772
 	},
 	{
+		"name": "Colombier",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.8596",
+		"longitude": "-68.8376",
+		"population": 635,
+		"timezone": "America/Toronto",
+		"geonameId": 13732245
+	},
+	{
 		"name": "Colonial Acres",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -271762,6 +271834,18 @@
 		"population": 3379,
 		"timezone": "America/Edmonton",
 		"geonameId": 5937660
+	},
+	{
+		"name": "Denholm",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.81295",
+		"longitude": "-75.75643",
+		"population": 546,
+		"timezone": "America/Toronto",
+		"geonameId": 13732246
 	},
 	{
 		"name": "Denman Island",
@@ -294252,6 +294336,18 @@
 		"geonameId": 6138121
 	},
 	{
+		"name": "Sainte-Ursule",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.28058",
+		"longitude": "-73.02374",
+		"population": 1355,
+		"timezone": "America/Toronto",
+		"geonameId": 13732265
+	},
+	{
 		"name": "Sakaw",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -294634,6 +294730,18 @@
 		"population": 813,
 		"timezone": "America/Toronto",
 		"geonameId": 6142503
+	},
+	{
+		"name": "Scott",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.4993",
+		"longitude": "-71.06842",
+		"population": 2566,
+		"timezone": "America/Toronto",
+		"geonameId": 13732263
 	},
 	{
 		"name": "Scott Creek",
@@ -295066,6 +295174,18 @@
 		"population": 1045,
 		"timezone": "America/St_Johns",
 		"geonameId": 13731660
+	},
+	{
+		"name": "Shefford",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.34526",
+		"longitude": "-72.57075",
+		"population": 7253,
+		"timezone": "America/Toronto",
+		"geonameId": 13732269
 	},
 	{
 		"name": "Shelbourne",
@@ -297108,6 +297228,18 @@
 		"geonameId": 6157977
 	},
 	{
+		"name": "Stratford",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.79153",
+		"longitude": "-71.33552",
+		"population": 1036,
+		"timezone": "America/Toronto",
+		"geonameId": 13732266
+	},
+	{
 		"name": "Strathcona",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -298068,6 +298200,18 @@
 		"geonameId": 6162997
 	},
 	{
+		"name": "Terrasse-Vaudreuil",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.40008",
+		"longitude": "-73.9825",
+		"population": 1986,
+		"timezone": "America/Toronto",
+		"geonameId": 6163010
+	},
+	{
 		"name": "Terrebonne",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -298270,6 +298414,18 @@
 		"population": 21108,
 		"timezone": "America/Toronto",
 		"geonameId": 12156872
+	},
+	{
+		"name": "Thorne",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.74056",
+		"longitude": "-76.38972",
+		"population": 528,
+		"timezone": "America/Toronto",
+		"geonameId": 6165659
 	},
 	{
 		"name": "Thornhill",
@@ -298608,6 +298764,18 @@
 		"geonameId": 6167983
 	},
 	{
+		"name": "Tourville",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.09541",
+		"longitude": "-69.98547",
+		"population": 576,
+		"timezone": "America/Toronto",
+		"geonameId": 13732257
+	},
+	{
 		"name": "Town Plat",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -298680,6 +298848,18 @@
 		"geonameId": 6168326
 	},
 	{
+		"name": "Trécesson",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.65241",
+		"longitude": "-78.30063",
+		"population": 1232,
+		"timezone": "America/Toronto",
+		"geonameId": 13732267
+	},
+	{
 		"name": "Trenton",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -298702,6 +298882,18 @@
 		"population": 863,
 		"timezone": "America/Toronto",
 		"geonameId": 6168788
+	},
+	{
+		"name": "Tring-Jonction",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.27294",
+		"longitude": "-70.99543",
+		"population": 1526,
+		"timezone": "America/Toronto",
+		"geonameId": 13732255
 	},
 	{
 		"name": "Trinity Bay North",
@@ -299374,6 +299566,18 @@
 		"population": 21176,
 		"timezone": "America/Toronto",
 		"geonameId": 6172932
+	},
+	{
+		"name": "Val-Alain",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.41503",
+		"longitude": "-71.7527",
+		"population": 986,
+		"timezone": "America/Toronto",
+		"geonameId": 13732251
 	},
 	{
 		"name": "Val-Brillant",
@@ -301030,6 +301234,18 @@
 		"population": 1225,
 		"timezone": "America/Edmonton",
 		"geonameId": 6178457
+	},
+	{
+		"name": "Westbury",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.50779",
+		"longitude": "-71.6618",
+		"population": 1097,
+		"timezone": "America/Toronto",
+		"geonameId": 13732247
 	},
 	{
 		"name": "Westdale",
@@ -1372231,7 +1372447,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.86594",
 		"longitude": "35.25227",
-		"population": 1121,
+		"population": 1259,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293605
 	},
@@ -1372243,7 +1372459,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.04841",
 		"longitude": "35.18033",
-		"population": 668,
+		"population": 687,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295612
 	},
@@ -1372255,7 +1372471,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.751",
 		"longitude": "34.695",
-		"population": 1495,
+		"population": 1671,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295582
 	},
@@ -1372675,7 +1372891,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.83889",
 		"longitude": "35.12781",
-		"population": 713,
+		"population": 751,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295745
 	},
@@ -1372687,7 +1372903,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.68064",
 		"longitude": "35.57719",
-		"population": 1511,
+		"population": 1140,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295743
 	},
@@ -1372735,7 +1372951,7 @@
 		"stateName": "Central District",
 		"latitude": "31.93545",
 		"longitude": "34.90844",
-		"population": 1377,
+		"population": 1399,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295728
 	},
@@ -1372747,7 +1372963,7 @@
 		"stateName": "Central District",
 		"latitude": "32.38718",
 		"longitude": "34.99072",
-		"population": 1093,
+		"population": 1782,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295727
 	},
@@ -1372759,7 +1372975,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.55385",
 		"longitude": "34.77009",
-		"population": 547,
+		"population": 556,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295726
 	},
@@ -1372831,7 +1373047,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.72936",
 		"longitude": "35.17057",
-		"population": 991,
+		"population": 911,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295716
 	},
@@ -1372870,6 +1373086,18 @@
 		"population": 537,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 8072853
+	},
+	{
+		"name": "Ami'ad",
+		"countryCode": "IL",
+		"countryName": "Israel",
+		"stateCode": "Z",
+		"stateName": "Northern District",
+		"latitude": "32.93035",
+		"longitude": "35.54052",
+		"population": 618,
+		"timezone": "Asia/Jerusalem",
+		"geonameId": 295700
 	},
 	{
 		"name": "Ar Rayna",
@@ -1372939,7 +1373167,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.65829",
 		"longitude": "35.58138",
-		"population": 1003,
+		"population": 960,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295625
 	},
@@ -1372987,7 +1373215,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.53276",
 		"longitude": "34.99377",
-		"population": 821,
+		"population": 779,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295607
 	},
@@ -1373011,7 +1373239,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.71083",
 		"longitude": "34.7444",
-		"population": 826,
+		"population": 947,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295605
 	},
@@ -1373023,7 +1373251,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.02272",
 		"longitude": "35.57677",
-		"population": 1134,
+		"population": 1105,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295587
 	},
@@ -1373047,7 +1373275,7 @@
 		"stateName": "Central District",
 		"latitude": "32.35171",
 		"longitude": "35.01924",
-		"population": 1084,
+		"population": 1062,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295576
 	},
@@ -1373059,7 +1373287,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.63035",
 		"longitude": "35.29651",
-		"population": 528,
+		"population": 643,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295573
 	},
@@ -1373107,7 +1373335,7 @@
 		"stateName": "Central District",
 		"latitude": "32.0169",
 		"longitude": "34.94375",
-		"population": 2082,
+		"population": 2232,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295565
 	},
@@ -1373215,7 +1373443,7 @@
 		"stateName": "Southern District",
 		"latitude": "29.71",
 		"longitude": "34.987",
-		"population": 1033,
+		"population": 1378,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295536
 	},
@@ -1373251,7 +1373479,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.42426",
 		"longitude": "34.49163",
-		"population": 1049,
+		"population": 1124,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 295538
 	},
@@ -1376371,7 +1376599,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.71945",
 		"longitude": "34.72405",
-		"population": 1143,
+		"population": 1199,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294497
 	},
@@ -1376419,7 +1376647,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.71336",
 		"longitude": "35.56122",
-		"population": 689,
+		"population": 815,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294462
 	},
@@ -1376647,7 +1376875,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.81812",
 		"longitude": "35.11109",
-		"population": 793,
+		"population": 901,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294406
 	},
@@ -1376659,7 +1376887,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.45649",
 		"longitude": "35.02832",
-		"population": 812,
+		"population": 951,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294404
 	},
@@ -1376743,7 +1376971,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.44965",
 		"longitude": "34.65477",
-		"population": 1235,
+		"population": 1334,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294395
 	},
@@ -1376832,6 +1377060,18 @@
 		"geonameId": 443100
 	},
 	{
+		"name": "Mash’abbe Sadé",
+		"countryCode": "IL",
+		"countryName": "Israel",
+		"stateCode": "D",
+		"stateName": "Southern District",
+		"latitude": "31.00343",
+		"longitude": "34.78646",
+		"population": 562,
+		"timezone": "Asia/Jerusalem",
+		"geonameId": 294328
+	},
+	{
 		"name": "Mash‘én",
 		"countryCode": "IL",
 		"countryName": "Israel",
@@ -1376839,7 +1377079,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.65791",
 		"longitude": "34.62309",
-		"population": 1064,
+		"population": 946,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294322
 	},
@@ -1376863,7 +1377103,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.70297",
 		"longitude": "34.69129",
-		"population": 697,
+		"population": 731,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294312
 	},
@@ -1376971,7 +1377211,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.7265",
 		"longitude": "34.96151",
-		"population": 1329,
+		"population": 1215,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294286
 	},
@@ -1377043,7 +1377283,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.60531",
 		"longitude": "35.30705",
-		"population": 662,
+		"population": 734,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294260
 	},
@@ -1377067,7 +1377307,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.98635",
 		"longitude": "35.43986",
-		"population": 985,
+		"population": 790,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294258
 	},
@@ -1377139,7 +1377379,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.02763",
 		"longitude": "35.25634",
-		"population": 2700,
+		"population": 3323,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294205
 	},
@@ -1377211,7 +1377451,7 @@
 		"stateName": "Central District",
 		"latitude": "32.40519",
 		"longitude": "34.87254",
-		"population": 1403,
+		"population": 1314,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294204
 	},
@@ -1377235,7 +1377475,7 @@
 		"stateName": "Central District",
 		"latitude": "31.8706",
 		"longitude": "34.94112",
-		"population": 556,
+		"population": 573,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294187
 	},
@@ -1379191,7 +1379431,7 @@
 		"stateName": "Central District",
 		"latitude": "32.20361",
 		"longitude": "34.90722",
-		"population": 1478,
+		"population": 1318,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293616
 	},
@@ -1379311,7 +1379551,7 @@
 		"stateName": "Central District",
 		"latitude": "31.86996",
 		"longitude": "34.98722",
-		"population": 1928,
+		"population": 1987,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293590
 	},
@@ -1379491,7 +1379731,7 @@
 		"stateName": "Central District",
 		"latitude": "32.21745",
 		"longitude": "34.82501",
-		"population": 1302,
+		"population": 1514,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293538
 	},
@@ -1379575,7 +1379815,7 @@
 		"stateName": "Northern District",
 		"latitude": "33.07186",
 		"longitude": "35.14527",
-		"population": 6511,
+		"population": 8225,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293522
 	},
@@ -1379767,7 +1380007,7 @@
 		"stateName": "Jerusalem",
 		"latitude": "31.80466",
 		"longitude": "34.90271",
-		"population": 1369,
+		"population": 1321,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293431
 	},
@@ -1379815,7 +1380055,7 @@
 		"stateName": "Southern District",
 		"latitude": "31.7521",
 		"longitude": "34.76316",
-		"population": 997,
+		"population": 982,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293434
 	},
@@ -1380031,7 +1380271,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.70307",
 		"longitude": "35.22342",
-		"population": 1292,
+		"population": 1443,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293310
 	},
@@ -1380259,7 +1380499,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.46718",
 		"longitude": "35.05811",
-		"population": 1117,
+		"population": 1259,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293284
 	},
@@ -1380367,7 +1380607,7 @@
 		"stateName": "Central District",
 		"latitude": "31.89973",
 		"longitude": "34.89988",
-		"population": 1124,
+		"population": 1246,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293256
 	},
@@ -1380403,7 +1380643,7 @@
 		"stateName": "Haifa",
 		"latitude": "32.74256",
 		"longitude": "35.07786",
-		"population": 1617,
+		"population": 1507,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293248
 	},
@@ -1380511,7 +1380751,7 @@
 		"stateName": "Central District",
 		"latitude": "31.91517",
 		"longitude": "34.84825",
-		"population": 1001,
+		"population": 1145,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293228
 	},
@@ -1380631,7 +1380871,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.67683",
 		"longitude": "35.22346",
-		"population": 1208,
+		"population": 1334,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293187
 	},
@@ -1380691,7 +1380931,7 @@
 		"stateName": "Northern District",
 		"latitude": "32.56298",
 		"longitude": "35.32048",
-		"population": 553,
+		"population": 627,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 293166
 	},

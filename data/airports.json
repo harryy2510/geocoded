@@ -152068,6 +152068,30 @@
 		"modificationDate": "2016-06-22"
 	},
 	{
+		"geonameId": 13732270,
+		"name": "Karbala International Airport",
+		"asciiName": "Karbala International Airport",
+		"alternateNames": [
+			"KHB",
+			"ORKR"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "32.36413",
+		"longitude": "44.19899",
+		"countryCode": "IQ",
+		"countryName": "Iraq",
+		"admin1Code": "12",
+		"admin2Code": "99345",
+		"stateCode": "KA",
+		"stateName": "Karbala",
+		"elevation": 0,
+		"timezone": "Asia/Baghdad",
+		"modificationDate": "2026-11-12"
+	},
+	{
 		"geonameId": 7730757,
 		"name": "Kirkuk Air Base",
 		"asciiName": "Kirkuk Air Base",
@@ -187138,6 +187162,29 @@
 		"elevation": 0,
 		"timezone": "Asia/Kuching",
 		"modificationDate": "2021-04-17"
+	},
+	{
+		"geonameId": 13732271,
+		"name": "Bebuling Airport",
+		"asciiName": "Bebuling Airport",
+		"alternateNames": [
+			"UBL"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "1.46627",
+		"longitude": "111.5006",
+		"countryCode": "MY",
+		"countryName": "Malaysia",
+		"admin1Code": "11",
+		"admin2Code": "1304",
+		"stateCode": "13",
+		"stateName": "Sarawak",
+		"elevation": 0,
+		"timezone": "Asia/Kuching",
+		"modificationDate": "2026-11-12"
 	},
 	{
 		"geonameId": 7730867,
