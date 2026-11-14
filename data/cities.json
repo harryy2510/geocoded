@@ -262884,6 +262884,18 @@
 		"geonameId": 5884467
 	},
 	{
+		"name": "Amherst",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.05009",
+		"longitude": "-74.76596",
+		"population": 1559,
+		"timezone": "America/Toronto",
+		"geonameId": 5884468
+	},
+	{
 		"name": "Amherstburg",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -263494,6 +263506,18 @@
 		"population": 2310,
 		"timezone": "America/Toronto",
 		"geonameId": 13580725
+	},
+	{
+		"name": "Aumond",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.50011",
+		"longitude": "-75.83263",
+		"population": 754,
+		"timezone": "America/Toronto",
+		"geonameId": 5888339
 	},
 	{
 		"name": "Aurora",
@@ -269424,6 +269448,18 @@
 		"geonameId": 5923101
 	},
 	{
+		"name": "Clarendon",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.65011",
+		"longitude": "-76.5161",
+		"population": 1392,
+		"timezone": "America/Toronto",
+		"geonameId": 5923111
+	},
+	{
 		"name": "Clarenville",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -269530,6 +269566,18 @@
 		"population": 2388,
 		"timezone": "America/Vancouver",
 		"geonameId": 5923667
+	},
+	{
+		"name": "Cleveland",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.66678",
+		"longitude": "-72.0824",
+		"population": 1581,
+		"timezone": "America/Toronto",
+		"geonameId": 5923891
 	},
 	{
 		"name": "Cleveland",
@@ -276168,6 +276216,18 @@
 		"geonameId": 5963453
 	},
 	{
+		"name": "Gore",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.76678",
+		"longitude": "-74.24922",
+		"population": 2296,
+		"timezone": "America/Toronto",
+		"geonameId": 5963550
+	},
+	{
 		"name": "Gore Bay",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -276442,6 +276502,18 @@
 		"population": 3384,
 		"timezone": "America/Toronto",
 		"geonameId": 6943814
+	},
+	{
+		"name": "Grande-Vallée",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "49.22402",
+		"longitude": "-65.13316",
+		"population": 1077,
+		"timezone": "America/Toronto",
+		"geonameId": 13732291
 	},
 	{
 		"name": "Grandview Heights",
@@ -277416,6 +277488,18 @@
 		"geonameId": 5971236
 	},
 	{
+		"name": "Harrington",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.84213",
+		"longitude": "-74.64189",
+		"population": 891,
+		"timezone": "America/Toronto",
+		"geonameId": 5971251
+	},
+	{
 		"name": "Harrison Hot Springs",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -277596,6 +277680,18 @@
 		"geonameId": 13592151
 	},
 	{
+		"name": "Havelock",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.04448",
+		"longitude": "-73.75839",
+		"population": 756,
+		"timezone": "America/Toronto",
+		"geonameId": 5972149
+	},
+	{
 		"name": "Havre-Saint-Pierre",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -277726,6 +277822,18 @@
 		"population": 796,
 		"timezone": "America/Halifax",
 		"geonameId": 5973278
+	},
+	{
+		"name": "Hébertville-Station",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.44678",
+		"longitude": "-71.66375",
+		"population": 1216,
+		"timezone": "America/Toronto",
+		"geonameId": 13732357
 	},
 	{
 		"name": "Heffley Creek",
@@ -278398,6 +278506,18 @@
 		"population": 632,
 		"timezone": "America/Vancouver",
 		"geonameId": 5976524
+	},
+	{
+		"name": "Honfleur",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.6535",
+		"longitude": "-70.88387",
+		"population": 881,
+		"timezone": "America/Toronto",
+		"geonameId": 13732355
 	},
 	{
 		"name": "Hope",
@@ -279106,6 +279226,18 @@
 		"population": 1228,
 		"timezone": "America/Halifax",
 		"geonameId": 5983628
+	},
+	{
+		"name": "Inverness",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.25995",
+		"longitude": "-71.52201",
+		"population": 910,
+		"timezone": "America/Toronto",
+		"geonameId": 13732359
 	},
 	{
 		"name": "Ionview",
@@ -280644,6 +280776,18 @@
 		"geonameId": 6053877
 	},
 	{
+		"name": "L'Isle-aux-Coudres",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.37082",
+		"longitude": "-70.40288",
+		"population": 1116,
+		"timezone": "America/Toronto",
+		"geonameId": 13732364
+	},
+	{
 		"name": "L'Isle-Verte",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -281436,6 +281580,18 @@
 		"geonameId": 6049255
 	},
 	{
+		"name": "Landrienne",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.54736",
+		"longitude": "-77.95167",
+		"population": 879,
+		"timezone": "America/Toronto",
+		"geonameId": 13732377
+	},
+	{
 		"name": "Lang's Farm",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -281710,6 +281866,18 @@
 		"population": 2648,
 		"timezone": "America/Edmonton",
 		"geonameId": 6050571
+	},
+	{
+		"name": "Laurierville",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.29724",
+		"longitude": "-71.65907",
+		"population": 1313,
+		"timezone": "America/Toronto",
+		"geonameId": 13732379
 	},
 	{
 		"name": "Laval",
@@ -292764,6 +292932,30 @@
 		"geonameId": 6137842
 	},
 	{
+		"name": "Saint-Édouard-de-Fabre",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.20014",
+		"longitude": "-79.36636",
+		"population": 671,
+		"timezone": "America/Toronto",
+		"geonameId": 5950812
+	},
+	{
+		"name": "Saint-Édouard-de-Lotbinière",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.56934",
+		"longitude": "-71.83649",
+		"population": 1240,
+		"timezone": "America/Toronto",
+		"geonameId": 13732318
+	},
+	{
 		"name": "Saint-Élie-de-Caxton",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -292822,6 +293014,18 @@
 		"population": 2011,
 		"timezone": "America/Toronto",
 		"geonameId": 6138112
+	},
+	{
+		"name": "Saint-Étienne-des-Grès",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.44226",
+		"longitude": "-72.77646",
+		"population": 4539,
+		"timezone": "America/Toronto",
+		"geonameId": 13732317
 	},
 	{
 		"name": "Saint-Eustache",
@@ -293088,6 +293292,18 @@
 		"geonameId": 6943607
 	},
 	{
+		"name": "Saint-Isidore",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.58234",
+		"longitude": "-71.09019",
+		"population": 3286,
+		"timezone": "America/Toronto",
+		"geonameId": 13732393
+	},
+	{
 		"name": "Saint-Isidore-de-Laprairie",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293112,6 +293328,18 @@
 		"geonameId": 6138411
 	},
 	{
+		"name": "Saint-Jacques-de-Leeds",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.28239",
+		"longitude": "-71.34418",
+		"population": 711,
+		"timezone": "America/Toronto",
+		"geonameId": 13732392
+	},
+	{
 		"name": "Saint-Jacques-le-Mineur",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293122,6 +293350,18 @@
 		"population": 1672,
 		"timezone": "America/Toronto",
 		"geonameId": 6138419
+	},
+	{
+		"name": "Saint-Janvier-de-Joly",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.48379",
+		"longitude": "-71.66603",
+		"population": 1079,
+		"timezone": "America/Toronto",
+		"geonameId": 13732391
 	},
 	{
 		"name": "Saint-Jean-Baptiste",
@@ -293172,6 +293412,18 @@
 		"geonameId": 6138501
 	},
 	{
+		"name": "Saint-Joachim",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.05636",
+		"longitude": "-70.85598",
+		"population": 1427,
+		"timezone": "America/Toronto",
+		"geonameId": 13732387
+	},
+	{
 		"name": "Saint-Joseph",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293208,6 +293460,18 @@
 		"geonameId": 6138558
 	},
 	{
+		"name": "Saint-Joseph-de-Lepage",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.5734",
+		"longitude": "-68.1665",
+		"population": 590,
+		"timezone": "America/Toronto",
+		"geonameId": 13732385
+	},
+	{
 		"name": "Saint-Joseph-de-Sorel",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293232,6 +293496,18 @@
 		"geonameId": 6138573
 	},
 	{
+		"name": "Saint-Justin",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.25193",
+		"longitude": "-73.08576",
+		"population": 961,
+		"timezone": "America/Toronto",
+		"geonameId": 13732382
+	},
+	{
 		"name": "Saint-Lambert-de-Lauzon",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293254,6 +293530,18 @@
 		"population": 98828,
 		"timezone": "America/Toronto",
 		"geonameId": 6138610
+	},
+	{
+		"name": "Saint-Laurent-de-l'Île-d'Orléans",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.8606",
+		"longitude": "-71.00496",
+		"population": 1532,
+		"timezone": "America/Toronto",
+		"geonameId": 11903570
 	},
 	{
 		"name": "Saint-Lazare",
@@ -293290,6 +293578,18 @@
 		"population": 615,
 		"timezone": "America/Moncton",
 		"geonameId": 12069928
+	},
+	{
+		"name": "Saint-Léon-le-Grand",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.37702",
+		"longitude": "-67.50762",
+		"population": 968,
+		"timezone": "America/Toronto",
+		"geonameId": 13732356
 	},
 	{
 		"name": "Saint-Léonard",
@@ -293340,6 +293640,18 @@
 		"geonameId": 6138638
 	},
 	{
+		"name": "Saint-Liguori",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.00726",
+		"longitude": "-73.57171",
+		"population": 2066,
+		"timezone": "America/Toronto",
+		"geonameId": 13732373
+	},
+	{
 		"name": "Saint-Lin-Laurentides",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293350,6 +293662,18 @@
 		"population": 17463,
 		"timezone": "America/Toronto",
 		"geonameId": 6138643
+	},
+	{
+		"name": "Saint-Louis",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.85504",
+		"longitude": "-72.97929",
+		"population": 775,
+		"timezone": "America/Toronto",
+		"geonameId": 13732372
 	},
 	{
 		"name": "Saint-Louis de Kent",
@@ -293364,6 +293688,30 @@
 		"geonameId": 6138668
 	},
 	{
+		"name": "Saint-Louis-de-Blandford",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.25484",
+		"longitude": "-72.00969",
+		"population": 1076,
+		"timezone": "America/Toronto",
+		"geonameId": 13732369
+	},
+	{
+		"name": "Saint-Louis-de-Gonzague",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.21389",
+		"longitude": "-74.00043",
+		"population": 1950,
+		"timezone": "America/Toronto",
+		"geonameId": 13732368
+	},
+	{
 		"name": "Saint-Louis-de-Terrebonne",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293376,7 +293724,7 @@
 		"geonameId": 6138671
 	},
 	{
-		"name": "Saint-Louis-du-Ha Ha",
+		"name": "Saint-Louis-du-Ha! Ha!",
 		"countryCode": "CA",
 		"countryName": "Canada",
 		"stateCode": "QC",
@@ -293386,6 +293734,42 @@
 		"population": 1311,
 		"timezone": "America/Toronto",
 		"geonameId": 13061023
+	},
+	{
+		"name": "Saint-Lucien",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.87449",
+		"longitude": "-72.26907",
+		"population": 1584,
+		"timezone": "America/Toronto",
+		"geonameId": 13732360
+	},
+	{
+		"name": "Saint-Magloire",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.57786",
+		"longitude": "-70.28891",
+		"population": 712,
+		"timezone": "America/Toronto",
+		"geonameId": 13732354
+	},
+	{
+		"name": "Saint-Majorique-de-Grantham",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.93239",
+		"longitude": "-72.58357",
+		"population": 1384,
+		"timezone": "America/Toronto",
+		"geonameId": 13732353
 	},
 	{
 		"name": "Saint-Marc-des-Carrières",
@@ -293448,6 +293832,30 @@
 		"geonameId": 6138802
 	},
 	{
+		"name": "Saint-Michel-du-Squatec",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.88208",
+		"longitude": "-68.7186",
+		"population": 1076,
+		"timezone": "America/Toronto",
+		"geonameId": 13732349
+	},
+	{
+		"name": "Saint-Moïse",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.54921",
+		"longitude": "-67.85223",
+		"population": 542,
+		"timezone": "America/Toronto",
+		"geonameId": 13732348
+	},
+	{
 		"name": "Saint-Narcisse",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293458,6 +293866,18 @@
 		"population": 1801,
 		"timezone": "America/Toronto",
 		"geonameId": 6138813
+	},
+	{
+		"name": "Saint-Narcisse-de-Beaurivage",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.48343",
+		"longitude": "-71.23339",
+		"population": 1152,
+		"timezone": "America/Toronto",
+		"geonameId": 13732346
 	},
 	{
 		"name": "Saint-Nazaire",
@@ -293472,6 +293892,30 @@
 		"geonameId": 6138815
 	},
 	{
+		"name": "Saint-Nazaire-d'Acton",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.73744",
+		"longitude": "-72.61908",
+		"population": 826,
+		"timezone": "America/Toronto",
+		"geonameId": 13732345
+	},
+	{
+		"name": "Saint-Nérée-de-Bellechasse",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.72671",
+		"longitude": "-70.72365",
+		"population": 743,
+		"timezone": "America/Toronto",
+		"geonameId": 13732340
+	},
+	{
 		"name": "Saint-Norbert",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293482,6 +293926,18 @@
 		"population": 1059,
 		"timezone": "America/Toronto",
 		"geonameId": 11429023
+	},
+	{
+		"name": "Saint-Norbert-d'Arthabaska",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.09215",
+		"longitude": "-71.76871",
+		"population": 1247,
+		"timezone": "America/Toronto",
+		"geonameId": 13732342
 	},
 	{
 		"name": "Saint-Onésime-d'Ixworth",
@@ -293532,6 +293988,18 @@
 		"geonameId": 8593671
 	},
 	{
+		"name": "Saint-Paul-de-l'Île-aux-Noix",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.12929",
+		"longitude": "-73.27874",
+		"population": 2141,
+		"timezone": "America/Toronto",
+		"geonameId": 13732337
+	},
+	{
 		"name": "Saint-Philippe",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293578,6 +294046,18 @@
 		"population": 0,
 		"timezone": "America/Toronto",
 		"geonameId": 6138920
+	},
+	{
+		"name": "Saint-Pierre-de-la-Rivière-du-Sud",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.91999",
+		"longitude": "-70.6296",
+		"population": 840,
+		"timezone": "America/Toronto",
+		"geonameId": 13732334
 	},
 	{
 		"name": "Saint-Pierre-de-Véronne-à-Pike-River",
@@ -293638,6 +294118,18 @@
 		"population": 1021,
 		"timezone": "America/Toronto",
 		"geonameId": 6138968
+	},
+	{
+		"name": "Saint-Prosper",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.2117",
+		"longitude": "-70.48056",
+		"population": 3596,
+		"timezone": "America/Toronto",
+		"geonameId": 13732332
 	},
 	{
 		"name": "Saint-Quentin",
@@ -293724,6 +294216,30 @@
 		"geonameId": 6138996
 	},
 	{
+		"name": "Saint-René",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.01012",
+		"longitude": "-70.61847",
+		"population": 946,
+		"timezone": "America/Toronto",
+		"geonameId": 13732331
+	},
+	{
+		"name": "Saint-Robert",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.97223",
+		"longitude": "-73.0001",
+		"population": 1813,
+		"timezone": "America/Toronto",
+		"geonameId": 13732330
+	},
+	{
 		"name": "Saint-Roch-de-l'Achigan",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293796,6 +294312,18 @@
 		"geonameId": 6139047
 	},
 	{
+		"name": "Saint-Séverin",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.66892",
+		"longitude": "-72.50455",
+		"population": 812,
+		"timezone": "America/Toronto",
+		"geonameId": 6113791
+	},
+	{
 		"name": "Saint-Siméon",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293808,6 +294336,30 @@
 		"geonameId": 8556258
 	},
 	{
+		"name": "Saint-Siméon",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.07108",
+		"longitude": "-65.56835",
+		"population": 1207,
+		"timezone": "America/Toronto",
+		"geonameId": 13732327
+	},
+	{
+		"name": "Saint-Simon",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.73448",
+		"longitude": "-72.8729",
+		"population": 1413,
+		"timezone": "America/Toronto",
+		"geonameId": 6139071
+	},
+	{
 		"name": "Saint-Simon",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293818,6 +294370,42 @@
 		"population": 700,
 		"timezone": "America/Moncton",
 		"geonameId": 12069937
+	},
+	{
+		"name": "Saint-Simon-les-Mines",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.21159",
+		"longitude": "-70.68054",
+		"population": 573,
+		"timezone": "America/Toronto",
+		"geonameId": 13732328
+	},
+	{
+		"name": "Saint-Stanislas-de-Kostka",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.18144",
+		"longitude": "-74.13096",
+		"population": 1852,
+		"timezone": "America/Toronto",
+		"geonameId": 13732326
+	},
+	{
+		"name": "Saint-Sylvestre",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.36336",
+		"longitude": "-71.22689",
+		"population": 1019,
+		"timezone": "America/Toronto",
+		"geonameId": 13732325
 	},
 	{
 		"name": "Saint-Théophile",
@@ -293892,6 +294480,18 @@
 		"geonameId": 6139166
 	},
 	{
+		"name": "Saint-Valérien",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.33755",
+		"longitude": "-68.66437",
+		"population": 906,
+		"timezone": "America/Toronto",
+		"geonameId": 13732320
+	},
+	{
 		"name": "Saint-Victor",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293902,6 +294502,18 @@
 		"population": 1233,
 		"timezone": "America/Toronto",
 		"geonameId": 6139181
+	},
+	{
+		"name": "Saint-Victor",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.15043",
+		"longitude": "-70.90172",
+		"population": 2313,
+		"timezone": "America/Toronto",
+		"geonameId": 13732319
 	},
 	{
 		"name": "Saint-Vincent-de-Paul",
@@ -293952,6 +294564,18 @@
 		"geonameId": 6137696
 	},
 	{
+		"name": "Sainte-Agathe-de-Lotbinière",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.38365",
+		"longitude": "-71.40924",
+		"population": 1049,
+		"timezone": "America/Toronto",
+		"geonameId": 8617398
+	},
+	{
 		"name": "Sainte-Agathe-des-Monts",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293962,6 +294586,18 @@
 		"population": 10223,
 		"timezone": "America/Toronto",
 		"geonameId": 6137702
+	},
+	{
+		"name": "Sainte-Angèle-de-Monnoir",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.38922",
+		"longitude": "-73.11272",
+		"population": 1812,
+		"timezone": "America/Toronto",
+		"geonameId": 13732316
 	},
 	{
 		"name": "Sainte-Anne-de-Bellevue",
@@ -294000,6 +294636,42 @@
 		"geonameId": 12077044
 	},
 	{
+		"name": "Sainte-Anne-de-Sabrevois",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.20699",
+		"longitude": "-73.22985",
+		"population": 2074,
+		"timezone": "America/Toronto",
+		"geonameId": 6137033
+	},
+	{
+		"name": "Sainte-Anne-de-Sorel",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.05232",
+		"longitude": "-73.07049",
+		"population": 2731,
+		"timezone": "America/Toronto",
+		"geonameId": 13732314
+	},
+	{
+		"name": "Sainte-Anne-des-Lacs",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.85366",
+		"longitude": "-74.13745",
+		"population": 3862,
+		"timezone": "America/Toronto",
+		"geonameId": 13732313
+	},
+	{
 		"name": "Sainte-Anne-des-Monts",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -294024,6 +294696,30 @@
 		"geonameId": 6137753
 	},
 	{
+		"name": "Sainte-Apolline-de-Patton",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.80692",
+		"longitude": "-70.19536",
+		"population": 505,
+		"timezone": "America/Toronto",
+		"geonameId": 13732311
+	},
+	{
+		"name": "Sainte-Barbe",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.1632",
+		"longitude": "-74.19462",
+		"population": 1609,
+		"timezone": "America/Toronto",
+		"geonameId": 13732310
+	},
+	{
 		"name": "Sainte-Béatrix",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -294034,6 +294730,18 @@
 		"population": 1849,
 		"timezone": "America/Toronto",
 		"geonameId": 6137764
+	},
+	{
+		"name": "Sainte-Brigitte-des-Saults",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.02642",
+		"longitude": "-72.48875",
+		"population": 737,
+		"timezone": "America/Toronto",
+		"geonameId": 13732308
 	},
 	{
 		"name": "Sainte-Catherine",
@@ -294072,6 +294780,30 @@
 		"geonameId": 12069938
 	},
 	{
+		"name": "Sainte-Cécile-de-Milton",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.48291",
+		"longitude": "-72.74429",
+		"population": 2195,
+		"timezone": "America/Toronto",
+		"geonameId": 13732301
+	},
+	{
+		"name": "Sainte-Christine",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.61548",
+		"longitude": "-72.42534",
+		"population": 730,
+		"timezone": "America/Toronto",
+		"geonameId": 13732307
+	},
+	{
 		"name": "Sainte-Claire",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -294082,6 +294814,30 @@
 		"population": 3526,
 		"timezone": "America/Toronto",
 		"geonameId": 11696023
+	},
+	{
+		"name": "Sainte-Clotilde",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.15008",
+		"longitude": "-73.68249",
+		"population": 2646,
+		"timezone": "America/Toronto",
+		"geonameId": 6137818
+	},
+	{
+		"name": "Sainte-Clotilde-de-Beauce",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.1261",
+		"longitude": "-71.03017",
+		"population": 569,
+		"timezone": "America/Toronto",
+		"geonameId": 13732304
 	},
 	{
 		"name": "Sainte-Clotilde-de-Horton",
@@ -294108,6 +294864,30 @@
 		"geonameId": 6137823
 	},
 	{
+		"name": "Sainte-Croix",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.62361",
+		"longitude": "-71.73337",
+		"population": 2352,
+		"timezone": "America/Toronto",
+		"geonameId": 13732303
+	},
+	{
+		"name": "Sainte-Edwidge-de-Clifton",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.20366",
+		"longitude": "-71.68092",
+		"population": 504,
+		"timezone": "America/Toronto",
+		"geonameId": 6137860
+	},
+	{
 		"name": "Sainte-Élisabeth",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -294118,6 +294898,18 @@
 		"population": 1559,
 		"timezone": "America/Toronto",
 		"geonameId": 11429024
+	},
+	{
+		"name": "Sainte-Famille-de-l'Île-d'Orléans",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.96667",
+		"longitude": "-70.96667",
+		"population": 850,
+		"timezone": "America/Toronto",
+		"geonameId": 13061014
 	},
 	{
 		"name": "Sainte-Foy",
@@ -294156,6 +294948,18 @@
 		"geonameId": 6137900
 	},
 	{
+		"name": "Sainte-Geneviève-de-Berthier",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.09174",
+		"longitude": "-73.21196",
+		"population": 2253,
+		"timezone": "America/Toronto",
+		"geonameId": 13732297
+	},
+	{
 		"name": "Sainte-Hélène-de-Kamouraska",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -294168,6 +294972,18 @@
 		"geonameId": 13512988
 	},
 	{
+		"name": "Sainte-Hénédine",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.55861",
+		"longitude": "-70.98427",
+		"population": 1440,
+		"timezone": "America/Toronto",
+		"geonameId": 13732295
+	},
+	{
 		"name": "Sainte-Jeanne-d'Arc",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -294178,6 +294994,18 @@
 		"population": 1101,
 		"timezone": "America/Toronto",
 		"geonameId": 6137927
+	},
+	{
+		"name": "Sainte-Jeanne-d'Arc",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.49568",
+		"longitude": "-67.95956",
+		"population": 1101,
+		"timezone": "America/Toronto",
+		"geonameId": 13732293
 	},
 	{
 		"name": "Sainte-Julie",
@@ -294204,6 +295032,30 @@
 		"geonameId": 6137947
 	},
 	{
+		"name": "Sainte-Justine-de-Newton",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.37584",
+		"longitude": "-74.41617",
+		"population": 947,
+		"timezone": "America/Toronto",
+		"geonameId": 13732292
+	},
+	{
+		"name": "Sainte-Louise",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.28342",
+		"longitude": "-70.13048",
+		"population": 674,
+		"timezone": "America/Toronto",
+		"geonameId": 13732289
+	},
+	{
 		"name": "Sainte-Madeleine",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -294214,6 +295066,18 @@
 		"population": 1959,
 		"timezone": "America/Toronto",
 		"geonameId": 6137971
+	},
+	{
+		"name": "Sainte-Marguerite",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.51212",
+		"longitude": "-70.93961",
+		"population": 1175,
+		"timezone": "America/Toronto",
+		"geonameId": 13732287
 	},
 	{
 		"name": "Sainte-Marguerite-du-Lac-Masson",
@@ -294250,6 +295114,18 @@
 		"population": 820,
 		"timezone": "America/Moncton",
 		"geonameId": 12069939
+	},
+	{
+		"name": "Sainte-Marie-Salomé",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.9316",
+		"longitude": "-73.49732",
+		"population": 1221,
+		"timezone": "America/Toronto",
+		"geonameId": 13732286
 	},
 	{
 		"name": "Sainte-Marthe-sur-le-Lac",
@@ -294300,6 +295176,42 @@
 		"geonameId": 11696027
 	},
 	{
+		"name": "Sainte-Perpétue",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.08087",
+		"longitude": "-72.46508",
+		"population": 916,
+		"timezone": "America/Toronto",
+		"geonameId": 13732284
+	},
+	{
+		"name": "Sainte-Pétronille",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.85217",
+		"longitude": "-71.13419",
+		"population": 1055,
+		"timezone": "America/Toronto",
+		"geonameId": 13732281
+	},
+	{
+		"name": "Sainte-Rose-de-Watford",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.32735",
+		"longitude": "-70.4136",
+		"population": 787,
+		"timezone": "America/Toronto",
+		"geonameId": 13732280
+	},
+	{
 		"name": "Sainte-Sophie",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -294310,6 +295222,30 @@
 		"population": 1634,
 		"timezone": "America/Toronto",
 		"geonameId": 6138103
+	},
+	{
+		"name": "Sainte-Sophie-d'Halifax",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.13572",
+		"longitude": "-71.72905",
+		"population": 595,
+		"timezone": "America/Toronto",
+		"geonameId": 13732277
+	},
+	{
+		"name": "Sainte-Sophie-de-Lévrard",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.42853",
+		"longitude": "-72.11081",
+		"population": 733,
+		"timezone": "America/Toronto",
+		"geonameId": 13732276
 	},
 	{
 		"name": "Sainte-Thècle",
@@ -656004,6 +656940,18 @@
 		"geonameId": 2949836
 	},
 	{
+		"name": "Besch",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "SL",
+		"stateName": "Saarland",
+		"latitude": "49.50258",
+		"longitude": "6.3719",
+		"population": 1493,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2949831
+	},
+	{
 		"name": "Bescheid",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -664596,6 +665544,18 @@
 		"geonameId": 2941090
 	},
 	{
+		"name": "Burgtonna",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.06575",
+		"longitude": "10.72418",
+		"population": 859,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2941088
+	},
+	{
 		"name": "Burgwalde",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -672300,6 +673260,18 @@
 		"geonameId": 2933543
 	},
 	{
+		"name": "Eckolstädt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.03604",
+		"longitude": "11.64118",
+		"population": 887,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2933534
+	},
+	{
 		"name": "Eckstedt",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -672514,6 +673486,18 @@
 		"population": 8235,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2933274
+	},
+	{
+		"name": "Eft",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "SL",
+		"stateName": "Saarland",
+		"latitude": "49.47638",
+		"longitude": "6.44691",
+		"population": 9405,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2933272
 	},
 	{
 		"name": "Egeln",
@@ -673054,6 +674038,18 @@
 		"population": 797,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2932827
+	},
+	{
+		"name": "Ehringsdorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.9588",
+		"longitude": "11.34177",
+		"population": 6000,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2932791
 	},
 	{
 		"name": "Ehringshausen",
@@ -681648,6 +682644,18 @@
 		"geonameId": 2923503
 	},
 	{
+		"name": "Gaberndorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.9972",
+		"longitude": "11.27585",
+		"population": 1618,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2923452
+	},
+	{
 		"name": "Gablenz",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -686734,6 +687742,18 @@
 		"population": 3615,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2918282
+	},
+	{
+		"name": "Gräfentonna",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.09217",
+		"longitude": "10.72927",
+		"population": 1991,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2918268
 	},
 	{
 		"name": "Grafenwald",
@@ -700620,6 +701640,18 @@
 		"geonameId": 2899961
 	},
 	{
+		"name": "Holzdorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.94156",
+		"longitude": "11.27867",
+		"population": 1978,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2899962
+	},
+	{
 		"name": "Holzen",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -704062,6 +705094,18 @@
 		"population": 508,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2895623
+	},
+	{
+		"name": "Isserstedt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.96048",
+		"longitude": "11.52157",
+		"population": 843,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2895621
 	},
 	{
 		"name": "Issigau",
@@ -716398,6 +717442,18 @@
 		"population": 6725,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2879653
+	},
+	{
+		"name": "Legefeld",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.9329",
+		"longitude": "11.29446",
+		"population": 2017,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2879652
 	},
 	{
 		"name": "Lehe",
@@ -733092,6 +734148,18 @@
 		"geonameId": 2863401
 	},
 	{
+		"name": "Niedergrunstedt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.95756",
+		"longitude": "11.28433",
+		"population": 527,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2863392
+	},
+	{
 		"name": "Niederhambach",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -737784,6 +738852,18 @@
 		"geonameId": 3207533
 	},
 	{
+		"name": "Oberweimar",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.96546",
+		"longitude": "11.34822",
+		"population": 5947,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2858596
+	},
+	{
 		"name": "Oberweis",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -741907,7 +742987,7 @@
 		"stateName": "Saarland",
 		"latitude": "49.47169",
 		"longitude": "6.38134",
-		"population": 0,
+		"population": 9405,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2854859
 	},
@@ -767868,6 +768948,18 @@
 		"geonameId": 2823936
 	},
 	{
+		"name": "Taubach",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.95125",
+		"longitude": "11.38191",
+		"population": 1033,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2823924
+	},
+	{
 		"name": "Tauberbischofsheim",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -769392,6 +770484,18 @@
 		"geonameId": 2822323
 	},
 	{
+		"name": "Tiefurt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.99198",
+		"longitude": "11.35027",
+		"population": 799,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2822280
+	},
+	{
 		"name": "Tielen",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -770686,6 +771790,18 @@
 		"population": 494,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2821069
+	},
+	{
+		"name": "Tröbsdorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.98326",
+		"longitude": "11.27893",
+		"population": 1074,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2821068
 	},
 	{
 		"name": "Tröchtelborn",
@@ -781284,6 +782400,18 @@
 		"geonameId": 2809889
 	},
 	{
+		"name": "Wewelsburg",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "NW",
+		"stateName": "North Rhine-Westphalia",
+		"latitude": "51.60597",
+		"longitude": "8.65294",
+		"population": 2190,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2809862
+	},
+	{
 		"name": "Wewelsfleth",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -785218,6 +786346,18 @@
 		"population": 571,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2806141
+	},
+	{
+		"name": "Wormstedt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.03054",
+		"longitude": "11.59917",
+		"population": 580,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2806135
 	},
 	{
 		"name": "Wörnersberg",
@@ -794122,6 +795262,18 @@
 		"population": 2662,
 		"timezone": "Europe/Copenhagen",
 		"geonameId": 2609990
+	},
+	{
+		"name": "Bense",
+		"countryCode": "DM",
+		"countryName": "Dominica",
+		"stateCode": "02",
+		"stateName": "Saint Andrew Parish",
+		"latitude": "15.58771",
+		"longitude": "-61.37558",
+		"population": 780,
+		"timezone": "America/Dominica",
+		"geonameId": 3575900
 	},
 	{
 		"name": "Berekua",
@@ -1177488,6 +1178640,18 @@
 		"geonameId": 3382160
 	},
 	{
+		"name": "Charvein",
+		"countryCode": "GF",
+		"countryName": "French Guiana",
+		"stateCode": "GF",
+		"stateName": "Guyane",
+		"latitude": "5.57555",
+		"longitude": "-53.89628",
+		"population": 1600,
+		"timezone": "America/Cayenne",
+		"geonameId": 3382124
+	},
+	{
 		"name": "Grand-Santi",
 		"countryCode": "GF",
 		"countryName": "French Guiana",
@@ -1177510,6 +1178674,18 @@
 		"population": 1536,
 		"timezone": "America/Cayenne",
 		"geonameId": 3381428
+	},
+	{
+		"name": "Javouhey",
+		"countryCode": "GF",
+		"countryName": "French Guiana",
+		"stateCode": "GF",
+		"stateName": "Guyane",
+		"latitude": "5.60659",
+		"longitude": "-53.81855",
+		"population": 1000,
+		"timezone": "America/Cayenne",
+		"geonameId": 3381398
 	},
 	{
 		"name": "Kourou",
@@ -1498944,6 +1500120,18 @@
 		"geonameId": 405225
 	},
 	{
+		"name": "Şā’īn Qal‘eh",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "11",
+		"stateName": "Zanjan",
+		"latitude": "36.30371",
+		"longitude": "49.07453",
+		"population": 12989,
+		"timezone": "Asia/Tehran",
+		"geonameId": 117792
+	},
+	{
 		"name": "Şabbāshahr",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1502698,6 +1503886,18 @@
 		"population": 888,
 		"timezone": "Asia/Tehran",
 		"geonameId": 114277
+	},
+	{
+		"name": "Sīrīk",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "23",
+		"stateName": "Hormozgan",
+		"latitude": "26.51424",
+		"longitude": "57.10331",
+		"population": 5137,
+		"timezone": "Asia/Tehran",
+		"geonameId": 48604
 	},
 	{
 		"name": "Sirjan",
@@ -2454315,18 +2455515,6 @@
 		"name": "Reşadiye",
 		"countryCode": "TR",
 		"countryName": "Turkey",
-		"stateCode": "13",
-		"stateName": "Bitlis",
-		"latitude": "38.48879",
-		"longitude": "42.53501",
-		"population": 570,
-		"timezone": "Europe/Istanbul",
-		"geonameId": 297246
-	},
-	{
-		"name": "Reşadiye",
-		"countryCode": "TR",
-		"countryName": "Turkey",
 		"stateCode": "03",
 		"stateName": "Afyonkarahisar Province",
 		"latitude": "38.42231",
@@ -2463646,6 +2464834,18 @@
 		"population": 700,
 		"timezone": "Europe/Istanbul",
 		"geonameId": 737786
+	},
+	{
+		"name": "Yelkenli",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "13",
+		"stateName": "Bitlis",
+		"latitude": "38.48879",
+		"longitude": "42.53501",
+		"population": 570,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 297246
 	},
 	{
 		"name": "Yelkesen",
@@ -2487996,18 +2489196,6 @@
 		"geonameId": 707296
 	},
 	{
-		"name": "Iziumske",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "63",
-		"stateName": "Kharkiv",
-		"latitude": "49.2695",
-		"longitude": "37.8102",
-		"population": 694,
-		"timezone": "Europe/Kyiv",
-		"geonameId": 810703
-	},
-	{
 		"name": "Izky",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2488102,6 +2489290,18 @@
 		"population": 1128,
 		"timezone": "Europe/Simferopol",
 		"geonameId": 707291
+	},
+	{
+		"name": "Izyumske",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "63",
+		"stateName": "Kharkiv",
+		"latitude": "49.2695",
+		"longitude": "37.8102",
+		"population": 694,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 810703
 	},
 	{
 		"name": "Kacha",
@@ -2768986,6 +2770186,18 @@
 		"population": 768,
 		"timezone": "America/Los_Angeles",
 		"geonameId": 5812841
+	},
+	{
+		"name": "Swedeland",
+		"countryCode": "US",
+		"countryName": "United States",
+		"stateCode": "PA",
+		"stateName": "Pennsylvania",
+		"latitude": "40.08789",
+		"longitude": "-75.33102",
+		"population": 1495,
+		"timezone": "America/New_York",
+		"geonameId": 5215018
 	},
 	{
 		"name": "Swedesboro",

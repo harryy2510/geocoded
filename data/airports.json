@@ -160801,6 +160801,33 @@
 		"modificationDate": "2026-11-05"
 	},
 	{
+		"geonameId": 13732274,
+		"name": "Fukuoka Airport International Passenger Terminal Building",
+		"asciiName": "Fukuoka Airport International Passenger Terminal Building",
+		"alternateNames": [
+			"Fukuoka Airport International Passenger Terminal Building",
+			"fu gang kong gang guo ji xian lu ketaminarubiru",
+			"fukuokakuukoukokusaisenryokyakutaminarubiru",
+			"ふくおかくうこうこくさいせんりょきゃくターミナルビル",
+			"福岡空港国際線旅客ターミナルビル"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "33.58513",
+		"longitude": "130.44417",
+		"countryCode": "JP",
+		"countryName": "Japan",
+		"admin1Code": "07",
+		"admin2Code": "1863955",
+		"stateCode": "40",
+		"stateName": "Fukuoka",
+		"elevation": 0,
+		"timezone": "Asia/Tokyo",
+		"modificationDate": "2026-11-13"
+	},
+	{
 		"geonameId": 6300391,
 		"name": "Fukushima Airport",
 		"asciiName": "Fukushima Airport",
