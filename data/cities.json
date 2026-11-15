@@ -646584,6 +646584,18 @@
 		"geonameId": 2958781
 	},
 	{
+		"name": "Alach",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.98628",
+		"longitude": "10.92981",
+		"population": 988,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2958774
+	},
+	{
 		"name": "Albaching",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -646738,6 +646750,18 @@
 		"population": 1717,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2958631
+	},
+	{
+		"name": "Albrechts",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.61935",
+		"longitude": "10.64186",
+		"population": 1206,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2958625
 	},
 	{
 		"name": "Albsfelde",
@@ -654780,6 +654804,18 @@
 		"geonameId": 2951620
 	},
 	{
+		"name": "Beeckerwerth",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "NW",
+		"stateName": "North Rhine-Westphalia",
+		"latitude": "51.47599",
+		"longitude": "6.70056",
+		"population": 3807,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2951619
+	},
+	{
 		"name": "Beedenbostel",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -658440,6 +658476,18 @@
 		"geonameId": 2948326
 	},
 	{
+		"name": "Bischleben-Stedten",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.92957",
+		"longitude": "10.9795",
+		"population": 1554,
+		"timezone": "Europe/Berlin",
+		"geonameId": 11611205
+	},
+	{
 		"name": "Bischoffen",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -659818,6 +659866,18 @@
 		"population": 4025,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2947090
+	},
+	{
+		"name": "Bödexen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "NW",
+		"stateName": "North Rhine-Westphalia",
+		"latitude": "51.838",
+		"longitude": "9.33632",
+		"population": 757,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2947078
 	},
 	{
 		"name": "Bodman-Ludwigshafen",
@@ -665808,6 +665868,18 @@
 		"geonameId": 2940710
 	},
 	{
+		"name": "Büßleben",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.96319",
+		"longitude": "11.11062",
+		"population": 1235,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2940688
+	},
+	{
 		"name": "Büsum",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -669864,6 +669936,18 @@
 		"geonameId": 2937040
 	},
 	{
+		"name": "Dietzhausen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.60133",
+		"longitude": "10.59457",
+		"population": 1032,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2937034
+	},
+	{
 		"name": "Diez",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -670258,6 +670342,18 @@
 		"population": 2171,
 		"timezone": "Europe/Berlin",
 		"geonameId": 3272935
+	},
+	{
+		"name": "Dittelstedt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.96429",
+		"longitude": "11.07546",
+		"population": 820,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2936754
 	},
 	{
 		"name": "Dittenheim",
@@ -679164,6 +679260,18 @@
 		"geonameId": 2927430
 	},
 	{
+		"name": "Feldhausen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "NW",
+		"stateName": "North Rhine-Westphalia",
+		"latitude": "51.61176",
+		"longitude": "6.96982",
+		"population": 2050,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2927389
+	},
+	{
 		"name": "Feldkirchen",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -681996,6 +682104,18 @@
 		"geonameId": 2924412
 	},
 	{
+		"name": "Frienstedt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.95275",
+		"longitude": "10.90625",
+		"population": 1335,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2924407
+	},
+	{
 		"name": "Friesack",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -682447,7 +682567,7 @@
 		"stateName": "Lower Saxony",
 		"latitude": "51.73333",
 		"longitude": "9.4",
-		"population": 1323,
+		"population": 998,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2923638
 	},
@@ -686542,6 +686662,18 @@
 		"population": 3711,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2919290
+	},
+	{
+		"name": "Goldlauter",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.62855",
+		"longitude": "10.74275",
+		"population": 2450,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2919288
 	},
 	{
 		"name": "Gölenkamp",
@@ -696540,6 +696672,18 @@
 		"geonameId": 2907270
 	},
 	{
+		"name": "Heinrichs",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.60012",
+		"longitude": "10.65549",
+		"population": 1306,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2907263
+	},
+	{
 		"name": "Heinrichsthal",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -697954,6 +698098,18 @@
 		"population": 34192,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2905826
+	},
+	{
+		"name": "Herrenberg",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.95513",
+		"longitude": "11.07654",
+		"population": 7999,
+		"timezone": "Europe/Berlin",
+		"geonameId": 11609486
 	},
 	{
 		"name": "Herrengosserstedt",
@@ -701506,6 +701662,18 @@
 		"population": 1796,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2900176
+	},
+	{
+		"name": "Holthausen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "NW",
+		"stateName": "North Rhine-Westphalia",
+		"latitude": "51.5936",
+		"longitude": "6.9045",
+		"population": 640,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2900141
 	},
 	{
 		"name": "Holthausen",
@@ -705900,6 +706068,18 @@
 		"geonameId": 2894833
 	},
 	{
+		"name": "Johannesvorstadt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.99234",
+		"longitude": "11.03465",
+		"population": 7525,
+		"timezone": "Europe/Berlin",
+		"geonameId": 11611304
+	},
+	{
 		"name": "Johanngeorgenstadt",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -708420,6 +708600,18 @@
 		"geonameId": 2891510
 	},
 	{
+		"name": "Kerspleben",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.00758",
+		"longitude": "11.10146",
+		"population": 1822,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2891499
+	},
+	{
 		"name": "Kerzenheim",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -709414,6 +709606,18 @@
 		"population": 8006,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2890478
+	},
+	{
+		"name": "Kirchhellen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "NW",
+		"stateName": "North Rhine-Westphalia",
+		"latitude": "51.60468",
+		"longitude": "6.92323",
+		"population": 11270,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2890472
 	},
 	{
 		"name": "Kirchhundem",
@@ -712932,6 +713136,18 @@
 		"geonameId": 2884823
 	},
 	{
+		"name": "Krämpfervorstadt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.98465",
+		"longitude": "11.05768",
+		"population": 17791,
+		"timezone": "Europe/Berlin",
+		"geonameId": 12495315
+	},
+	{
 		"name": "Kranenburg",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -714214,6 +714430,18 @@
 		"population": 1116,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2882729
+	},
+	{
+		"name": "Kühnhausen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.03539",
+		"longitude": "10.97115",
+		"population": 1083,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2882712
 	},
 	{
 		"name": "Kuhnhöfen",
@@ -719616,6 +719844,18 @@
 		"geonameId": 2877251
 	},
 	{
+		"name": "Linderbach",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.97949",
+		"longitude": "11.10126",
+		"population": 948,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2877233
+	},
+	{
 		"name": "Lindern",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -722208,6 +722448,18 @@
 		"geonameId": 2874663
 	},
 	{
+		"name": "Mäbendorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.60403",
+		"longitude": "10.62628",
+		"population": 598,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2874652
+	},
+	{
 		"name": "Machern",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -722962,6 +723214,18 @@
 		"population": 368,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2873820
+	},
+	{
+		"name": "Marbach",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.99262",
+		"longitude": "10.98364",
+		"population": 4296,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2873783
 	},
 	{
 		"name": "Marbach am Neckar",
@@ -725112,6 +725376,18 @@
 		"geonameId": 2872117
 	},
 	{
+		"name": "Melchendorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.95204",
+		"longitude": "11.07335",
+		"population": 10602,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2872111
+	},
+	{
 		"name": "Melchow",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -726960,6 +727236,18 @@
 		"geonameId": 2870700
 	},
 	{
+		"name": "Mittelhausen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.04082",
+		"longitude": "11.00576",
+		"population": 1080,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2870701
+	},
+	{
 		"name": "Mittelherwigsdorf",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -727246,6 +727534,18 @@
 		"population": 81021,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2870310
+	},
+	{
+		"name": "Möbisburg",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.92185",
+		"longitude": "10.99212",
+		"population": 1085,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2870307
 	},
 	{
 		"name": "Mochau",
@@ -727594,6 +727894,18 @@
 		"population": 878,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2869963
+	},
+	{
+		"name": "Molsdorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.90742",
+		"longitude": "10.95912",
+		"population": 524,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2869962
 	},
 	{
 		"name": "Mölsheim",
@@ -734470,6 +734782,18 @@
 		"population": 14494,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2863046
+	},
+	{
+		"name": "Niedernissa",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.94972",
+		"longitude": "11.10343",
+		"population": 1691,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2863039
 	},
 	{
 		"name": "Niedernwöhren",
@@ -754776,6 +755100,18 @@
 		"geonameId": 3207539
 	},
 	{
+		"name": "Salomonsborn",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.99972",
+		"longitude": "10.94832",
+		"population": 1081,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2842216
+	},
+	{
 		"name": "Salz",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -757968,6 +758304,18 @@
 		"geonameId": 2837732
 	},
 	{
+		"name": "Schmira",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.9535",
+		"longitude": "10.97029",
+		"population": 955,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2837727
+	},
+	{
 		"name": "Schmißberg",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -760714,6 +761062,18 @@
 		"population": 62,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2834291
+	},
+	{
+		"name": "Schwerborn",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.03828",
+		"longitude": "11.07795",
+		"population": 638,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2834290
 	},
 	{
 		"name": "Schwerin",
@@ -767064,6 +767424,18 @@
 		"geonameId": 2826341
 	},
 	{
+		"name": "Stotternheim",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.05485",
+		"longitude": "11.04242",
+		"population": 3338,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2826336
+	},
+	{
 		"name": "Stöttwang",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -767928,6 +768300,18 @@
 		"geonameId": 2824940
 	},
 	{
+		"name": "Suhler Neundorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.59914",
+		"longitude": "10.68988",
+		"population": 761,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2824938
+	},
+	{
 		"name": "Sukow",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -768166,6 +768550,18 @@
 		"population": 2507,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2824753
+	},
+	{
+		"name": "Sulzer Siedlung",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.02681",
+		"longitude": "11.04146",
+		"population": 951,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2824744
 	},
 	{
 		"name": "Sulzfeld",
@@ -770484,6 +770880,18 @@
 		"geonameId": 2822323
 	},
 	{
+		"name": "Tiefthal",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.02257",
+		"longitude": "10.94834",
+		"population": 1025,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2822281
+	},
+	{
 		"name": "Tiefurt",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -771046,6 +771454,18 @@
 		"population": 628,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2821734
+	},
+	{
+		"name": "Töttelstädt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.00817",
+		"longitude": "10.88446",
+		"population": 618,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2821697
 	},
 	{
 		"name": "Tottleben",
@@ -773892,6 +774312,18 @@
 		"geonameId": 2818230
 	},
 	{
+		"name": "Urbich",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.95981",
+		"longitude": "11.09575",
+		"population": 1112,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2818220
+	},
+	{
 		"name": "Urleben",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -775078,6 +775510,18 @@
 		"population": 76153,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2817311
+	},
+	{
+		"name": "Vieselbach",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.99887",
+		"longitude": "11.14523",
+		"population": 2187,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2817271
 	},
 	{
 		"name": "Viewegs Garten",
@@ -784128,6 +784572,18 @@
 		"geonameId": 2808148
 	},
 	{
+		"name": "Windischholzhausen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.94731",
+		"longitude": "11.09265",
+		"population": 1976,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2808145
+	},
+	{
 		"name": "Windischleuba",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -789312,6 +789768,18 @@
 		"geonameId": 2624784
 	},
 	{
+		"name": "Andrup",
+		"countryCode": "DK",
+		"countryName": "Denmark",
+		"stateCode": "83",
+		"stateName": "South Denmark",
+		"latitude": "55.50004",
+		"longitude": "8.53682",
+		"population": 1471,
+		"timezone": "Europe/Copenhagen",
+		"geonameId": 2624705
+	},
+	{
 		"name": "Ans",
 		"countryCode": "DK",
 		"countryName": "Denmark",
@@ -790128,6 +790596,18 @@
 		"geonameId": 2622793
 	},
 	{
+		"name": "Egebæk",
+		"countryCode": "DK",
+		"countryName": "Denmark",
+		"stateCode": "83",
+		"stateName": "South Denmark",
+		"latitude": "55.2823",
+		"longitude": "8.72721",
+		"population": 1129,
+		"timezone": "Europe/Copenhagen",
+		"geonameId": 2622765
+	},
+	{
 		"name": "Egtved",
 		"countryCode": "DK",
 		"countryName": "Denmark",
@@ -790788,6 +791268,18 @@
 		"geonameId": 2621215
 	},
 	{
+		"name": "Grimstrup",
+		"countryCode": "DK",
+		"countryName": "Denmark",
+		"stateCode": "83",
+		"stateName": "South Denmark",
+		"latitude": "55.52656",
+		"longitude": "8.65871",
+		"population": 559,
+		"timezone": "Europe/Copenhagen",
+		"geonameId": 2621200
+	},
+	{
 		"name": "Grindsted",
 		"countryCode": "DK",
 		"countryName": "Denmark",
@@ -790834,6 +791326,18 @@
 		"population": 916,
 		"timezone": "Europe/Copenhagen",
 		"geonameId": 2621067
+	},
+	{
+		"name": "Guldager",
+		"countryCode": "DK",
+		"countryName": "Denmark",
+		"stateCode": "83",
+		"stateName": "South Denmark",
+		"latitude": "55.53162",
+		"longitude": "8.40071",
+		"population": 949,
+		"timezone": "Europe/Copenhagen",
+		"geonameId": 2621048
 	},
 	{
 		"name": "Gundsømagle",
@@ -793032,6 +793536,18 @@
 		"geonameId": 2615359
 	},
 	{
+		"name": "Øster Vedsted",
+		"countryCode": "DK",
+		"countryName": "Denmark",
+		"stateCode": "83",
+		"stateName": "South Denmark",
+		"latitude": "55.31471",
+		"longitude": "8.73607",
+		"population": 810,
+		"timezone": "Europe/Copenhagen",
+		"geonameId": 2615453
+	},
+	{
 		"name": "Otterup",
 		"countryCode": "DK",
 		"countryName": "Denmark",
@@ -794374,6 +794890,18 @@
 		"population": 10000,
 		"timezone": "Europe/Copenhagen",
 		"geonameId": 2611862
+	},
+	{
+		"name": "Tarp",
+		"countryCode": "DK",
+		"countryName": "Denmark",
+		"stateCode": "83",
+		"stateName": "South Denmark",
+		"latitude": "55.52511",
+		"longitude": "8.4639",
+		"population": 1683,
+		"timezone": "Europe/Copenhagen",
+		"geonameId": 2611859
 	},
 	{
 		"name": "Tårs",
@@ -1988148,6 +1988676,18 @@
 		"geonameId": 2750479
 	},
 	{
+		"name": "Nederhorst den Berg",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "NH",
+		"stateName": "North Holland",
+		"latitude": "52.26333",
+		"longitude": "5.04444",
+		"population": 5390,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2750476
+	},
+	{
 		"name": "Nederweert",
 		"countryCode": "NL",
 		"countryName": "The Netherlands",
@@ -1988818,6 +1989358,18 @@
 		"population": 1325,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2750123
+	},
+	{
+		"name": "Nigtevecht",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "UT",
+		"stateName": "Utrecht",
+		"latitude": "52.27417",
+		"longitude": "5.02778",
+		"population": 1395,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2750106
 	},
 	{
 		"name": "Nij Beets",
@@ -1990558,6 +1991110,18 @@
 		"population": 2035,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2748926
+	},
+	{
+		"name": "Oud-Maarsseveen",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "UT",
+		"stateName": "Utrecht",
+		"latitude": "52.15833",
+		"longitude": "5.09028",
+		"population": 675,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2748924
 	},
 	{
 		"name": "Oud-Vossemeer",
@@ -1996174,6 +1996738,18 @@
 		"population": 4370,
 		"timezone": "Europe/Amsterdam",
 		"geonameId": 2745207
+	},
+	{
+		"name": "Vreeland",
+		"countryCode": "NL",
+		"countryName": "The Netherlands",
+		"stateCode": "UT",
+		"stateName": "Utrecht",
+		"latitude": "52.23",
+		"longitude": "5.03194",
+		"population": 1625,
+		"timezone": "Europe/Amsterdam",
+		"geonameId": 2745196
 	},
 	{
 		"name": "Vreeswijk",
@@ -2515536,18 +2516112,6 @@
 		"geonameId": 696313
 	},
 	{
-		"name": "Primorskyi",
-		"countryCode": "UA",
-		"countryName": "Ukraine",
-		"stateCode": "43",
-		"stateName": "Crimea",
-		"latitude": "45.11201",
-		"longitude": "35.4786",
-		"population": 12560,
-		"timezone": "Europe/Simferopol",
-		"geonameId": 696291
-	},
-	{
 		"name": "Priorka",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
@@ -2516146,6 +2516710,18 @@
 		"population": 1841,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 696282
+	},
+	{
+		"name": "Prymorskyi",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "43",
+		"stateName": "Crimea",
+		"latitude": "45.11201",
+		"longitude": "35.4786",
+		"population": 12560,
+		"timezone": "Europe/Simferopol",
+		"geonameId": 696291
 	},
 	{
 		"name": "Prymorskyi",
@@ -2804662,6 +2805238,18 @@
 		"population": 26297,
 		"timezone": "America/Montevideo",
 		"geonameId": 3442568
+	},
+	{
+		"name": "Fray Marcos",
+		"countryCode": "UY",
+		"countryName": "Uruguay",
+		"stateCode": "FD",
+		"stateName": "Florida",
+		"latitude": "-34.19388",
+		"longitude": "-55.7345",
+		"population": 2701,
+		"timezone": "America/Montevideo",
+		"geonameId": 3442564
 	},
 	{
 		"name": "Gallinal",
