@@ -40320,18 +40320,6 @@
 		"geonameId": 11592427
 	},
 	{
-		"name": "Afiesl",
-		"countryCode": "AT",
-		"countryName": "Austria",
-		"stateCode": "4",
-		"stateName": "Upper Austria",
-		"latitude": "48.58229",
-		"longitude": "14.12777",
-		"population": 0,
-		"timezone": "Europe/Vienna",
-		"geonameId": 6697276
-	},
-	{
 		"name": "Aflenz Kurort",
 		"countryCode": "AT",
 		"countryName": "Austria",
@@ -1477920,6 +1477908,18 @@
 		"geonameId": 8862
 	},
 	{
+		"name": "Bārīkarsaf",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "04",
+		"stateName": "Isfahan",
+		"latitude": "34.0357",
+		"longitude": "51.055",
+		"population": 555,
+		"timezone": "Asia/Tehran",
+		"geonameId": 141263
+	},
+	{
 		"name": "Bārūj",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1495548,6 +1495548,18 @@
 		"geonameId": 123117
 	},
 	{
+		"name": "Mūlān",
+		"countryCode": "IR",
+		"countryName": "Iran",
+		"stateCode": "01",
+		"stateName": "East Azerbaijan",
+		"latitude": "39.0783",
+		"longitude": "47.1846",
+		"population": 734,
+		"timezone": "Asia/Tehran",
+		"geonameId": 123162
+	},
+	{
 		"name": "Mūlenjān",
 		"countryCode": "IR",
 		"countryName": "Iran",
@@ -1504740,7 +1504752,7 @@
 		"geonameId": 113885
 	},
 	{
-		"name": "Şowme‘eh Sarā",
+		"name": "Ṣowme‘eh Sarā",
 		"countryCode": "IR",
 		"countryName": "Iran",
 		"stateCode": "19",
@@ -2056781,8 +2056793,8 @@
 		"countryName": "Philippines",
 		"stateCode": "57",
 		"stateName": "Cotabato",
-		"latitude": "7.33333",
-		"longitude": "124.56667",
+		"latitude": "7.375",
+		"longitude": "124.555",
 		"population": 4987,
 		"timezone": "Asia/Manila",
 		"geonameId": 1731694
@@ -2537902,6 +2537914,18 @@
 		"population": 3317,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 687933
+	},
+	{
+		"name": "Zadnistryanske",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "26",
+		"stateName": "Ivano-Frankivsk",
+		"latitude": "49.18532",
+		"longitude": "24.69126",
+		"population": 1088,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 687924
 	},
 	{
 		"name": "Zadubrivka",

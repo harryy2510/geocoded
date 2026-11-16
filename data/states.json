@@ -24844,7 +24844,7 @@
 		"geonameId": 1529047,
 		"latitude": "41.5",
 		"longitude": "85.5",
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Pyongyang",
 		"capital": "Ürümqi",
 		"population": 21310000,
 		"type": "autonomous region",
@@ -24856,7 +24856,7 @@
 			"fr": "Xinjiang",
 			"de": "Xinjiang",
 			"ru": "Синьцзян",
-			"tr": "Sincan",
+			"tr": "Doğu Türkistan",
 			"ar": "سنجان",
 			"es": "Sinkiang",
 			"uk": "Сіньцзян",
@@ -77926,9 +77926,11 @@
 		"capital": "Balzers",
 		"population": 4642,
 		"type": "municipality",
-		"native": "Balzers",
+		"native": "Gemeinde Balzers",
 		"wikidataId": "Q49663",
-		"translations": {}
+		"translations": {
+			"de": "Gemeinde Balzers"
+		}
 	},
 	{
 		"name": "Eschen",
