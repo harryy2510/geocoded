@@ -84640,11 +84640,11 @@
 		"latitude": "30.33717",
 		"longitude": "-9.54507",
 		"timezone": "Africa/Casablanca",
-		"capital": "Inezgane",
+		"capital": null,
 		"population": 541118,
 		"type": "province",
 		"native": "إقليم إنزكان أيت ملول",
-		"wikidataId": "Q1662264",
+		"wikidataId": "",
 		"translations": {
 			"fr": "Inezgane-Ait Melloul",
 			"ar": "إقليم إنزكان أيت ملول"
@@ -84887,11 +84887,11 @@
 		"latitude": "33.52012",
 		"longitude": "-7.5035",
 		"timezone": "Africa/Casablanca",
-		"capital": "Médiouna Casablanca",
+		"capital": null,
 		"population": 172680,
 		"type": "province",
 		"native": "إقليم مديونة",
-		"wikidataId": "Q1957680",
+		"wikidataId": "",
 		"translations": {
 			"fr": "Mediouna",
 			"ar": "إقليم مديونة",
@@ -85506,7 +85506,7 @@
 		"population": 550374,
 		"type": "province",
 		"native": "إقليم تطوان",
-		"wikidataId": "Q1257443",
+		"wikidataId": "",
 		"translations": {
 			"fr": "Tetouan",
 			"ar": "إقليم تطوان"

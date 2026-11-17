@@ -282768,6 +282768,18 @@
 		"geonameId": 11152651
 	},
 	{
+		"name": "Longue-Rive",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.5347",
+		"longitude": "-69.25991",
+		"population": 918,
+		"timezone": "America/Toronto",
+		"geonameId": 13732446
+	},
+	{
 		"name": "Longueuil",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -282833,8 +282845,8 @@
 		"countryName": "Canada",
 		"stateCode": "QC",
 		"stateName": "Quebec",
-		"latitude": "45.68338",
-		"longitude": "-73.78249",
+		"latitude": "45.6803",
+		"longitude": "-73.78622",
 		"population": 9613,
 		"timezone": "America/Toronto",
 		"geonameId": 6060407
@@ -287328,6 +287340,18 @@
 		"geonameId": 13512391
 	},
 	{
+		"name": "Notre-Dame-Auxiliatrice-de-Buckland",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.6188",
+		"longitude": "-70.54514",
+		"population": 767,
+		"timezone": "America/Toronto",
+		"geonameId": 13732461
+	},
+	{
 		"name": "Notre-Dame-de-Grâce",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -287352,6 +287376,54 @@
 		"geonameId": 6091369
 	},
 	{
+		"name": "Notre-Dame-de-la-Paix",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.80825",
+		"longitude": "-74.9653",
+		"population": 648,
+		"timezone": "America/Toronto",
+		"geonameId": 13732462
+	},
+	{
+		"name": "Notre-Dame-de-Lourdes",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.09898",
+		"longitude": "-73.42753",
+		"population": 3141,
+		"timezone": "America/Toronto",
+		"geonameId": 13732463
+	},
+	{
+		"name": "Notre-Dame-de-Lourdes",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.32107",
+		"longitude": "-71.82695",
+		"population": 787,
+		"timezone": "America/Toronto",
+		"geonameId": 13732464
+	},
+	{
+		"name": "Notre-Dame-de-Stanbridge",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.17001",
+		"longitude": "-73.03038",
+		"population": 660,
+		"timezone": "America/Toronto",
+		"geonameId": 13732465
+	},
+	{
 		"name": "Notre-Dame-des-Érables",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -287362,6 +287434,42 @@
 		"population": 767,
 		"timezone": "America/Moncton",
 		"geonameId": 12070146
+	},
+	{
+		"name": "Notre-Dame-des-Monts",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.66507",
+		"longitude": "-70.38071",
+		"population": 789,
+		"timezone": "America/Toronto",
+		"geonameId": 13732467
+	},
+	{
+		"name": "Notre-Dame-des-Neiges",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.10281",
+		"longitude": "-69.20834",
+		"population": 1194,
+		"timezone": "America/Toronto",
+		"geonameId": 13732468
+	},
+	{
+		"name": "Notre-Dame-des-Pins",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.18778",
+		"longitude": "-70.70943",
+		"population": 1812,
+		"timezone": "America/Toronto",
+		"geonameId": 13732469
 	},
 	{
 		"name": "Notre-Dame-des-Prairies",
@@ -287398,6 +287506,42 @@
 		"population": 1091,
 		"timezone": "America/Toronto",
 		"geonameId": 6091451
+	},
+	{
+		"name": "Notre-Dame-du-Mont-Carmel",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.48822",
+		"longitude": "-72.6563",
+		"population": 6121,
+		"timezone": "America/Toronto",
+		"geonameId": 13732471
+	},
+	{
+		"name": "Notre-Dame-du-Portage",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.76812",
+		"longitude": "-69.60747",
+		"population": 1296,
+		"timezone": "America/Toronto",
+		"geonameId": 13732472
+	},
+	{
+		"name": "Notre-Dame-du-Sacré-Coeur-d'Issoudun",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.58816",
+		"longitude": "-71.61242",
+		"population": 867,
+		"timezone": "America/Toronto",
+		"geonameId": 13732475
 	},
 	{
 		"name": "Nouvelle-Arcadie",
@@ -287868,6 +288012,18 @@
 		"geonameId": 6094201
 	},
 	{
+		"name": "Orford",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.38314",
+		"longitude": "-72.20069",
+		"population": 5007,
+		"timezone": "America/Toronto",
+		"geonameId": 6094289
+	},
+	{
 		"name": "Orillia",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -287986,6 +288142,18 @@
 		"population": 125090,
 		"timezone": "America/Toronto",
 		"geonameId": 6094835
+	},
+	{
+		"name": "Otter Lake",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.85011",
+		"longitude": "-76.4327",
+		"population": 1041,
+		"timezone": "America/Toronto",
+		"geonameId": 6095009
 	},
 	{
 		"name": "Otterburn Park",
@@ -292500,6 +292668,54 @@
 		"geonameId": 6137353
 	},
 	{
+		"name": "Saint-Alexis",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.93333",
+		"longitude": "-73.61667",
+		"population": 1370,
+		"timezone": "America/Toronto",
+		"geonameId": 13060941
+	},
+	{
+		"name": "Saint-Alfred",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.14857",
+		"longitude": "-70.81892",
+		"population": 519,
+		"timezone": "America/Toronto",
+		"geonameId": 13732506
+	},
+	{
+		"name": "Saint-Alphonse",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.18876",
+		"longitude": "-65.62809",
+		"population": 711,
+		"timezone": "America/Toronto",
+		"geonameId": 13732505
+	},
+	{
+		"name": "Saint-Alphonse-de-Granby",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.33338",
+		"longitude": "-72.81583",
+		"population": 3125,
+		"timezone": "America/Toronto",
+		"geonameId": 6137367
+	},
+	{
 		"name": "Saint-Amable",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -292524,28 +292740,28 @@
 		"geonameId": 6137381
 	},
 	{
-		"name": "Saint-Ambroise",
+		"name": "Saint-Ambroise-de-Kildare",
 		"countryCode": "CA",
 		"countryName": "Canada",
 		"stateCode": "QC",
 		"stateName": "Quebec",
 		"latitude": "46.07647",
 		"longitude": "-73.55636",
-		"population": 1655,
+		"population": 4090,
 		"timezone": "America/Toronto",
 		"geonameId": 6137383
 	},
 	{
-		"name": "Saint-André",
+		"name": "Saint-Anaclet-de-Lessard",
 		"countryCode": "CA",
 		"countryName": "Canada",
 		"stateCode": "QC",
 		"stateName": "Quebec",
-		"latitude": "47.67833",
-		"longitude": "-69.72229",
-		"population": 690,
+		"latitude": "48.46564",
+		"longitude": "-68.41607",
+		"population": 3019,
 		"timezone": "America/Toronto",
-		"geonameId": 6354900
+		"geonameId": 8593817
 	},
 	{
 		"name": "Saint-André-Avellin",
@@ -292558,6 +292774,18 @@
 		"population": 3562,
 		"timezone": "America/Toronto",
 		"geonameId": 6137404
+	},
+	{
+		"name": "Saint-André-de-Kamouraska",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.67833",
+		"longitude": "-69.72229",
+		"population": 658,
+		"timezone": "America/Toronto",
+		"geonameId": 6354900
 	},
 	{
 		"name": "Saint-Anselme",
@@ -292692,6 +292920,30 @@
 		"geonameId": 6137489
 	},
 	{
+		"name": "Saint-Benjamin",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.28421",
+		"longitude": "-70.59373",
+		"population": 1090,
+		"timezone": "America/Toronto",
+		"geonameId": 13732499
+	},
+	{
+		"name": "Saint-Benoît-Labre",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.0702",
+		"longitude": "-70.79325",
+		"population": 1617,
+		"timezone": "America/Toronto",
+		"geonameId": 13732498
+	},
+	{
 		"name": "Saint-Bernard-de-l'Île-aux-Coudres",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -292702,6 +292954,18 @@
 		"population": 576,
 		"timezone": "America/Toronto",
 		"geonameId": 12076678
+	},
+	{
+		"name": "Saint-Bernard-de-Lacolle",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.07994",
+		"longitude": "-73.43497",
+		"population": 1542,
+		"timezone": "America/Toronto",
+		"geonameId": 13732497
 	},
 	{
 		"name": "Saint-Boniface",
@@ -292750,6 +293014,30 @@
 		"population": 24388,
 		"timezone": "America/Toronto",
 		"geonameId": 6137540
+	},
+	{
+		"name": "Saint-Camille",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.68313",
+		"longitude": "-71.70386",
+		"population": 551,
+		"timezone": "America/Toronto",
+		"geonameId": 13732496
+	},
+	{
+		"name": "Saint-Camille-de-Lellis",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.462",
+		"longitude": "-70.16719",
+		"population": 737,
+		"timezone": "America/Toronto",
+		"geonameId": 13732495
 	},
 	{
 		"name": "Saint-Canut",
@@ -292812,6 +293100,18 @@
 		"geonameId": 6137579
 	},
 	{
+		"name": "Saint-Charles-de-Bellechasse",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.76926",
+		"longitude": "-70.94364",
+		"population": 2583,
+		"timezone": "America/Toronto",
+		"geonameId": 13732494
+	},
+	{
 		"name": "Saint-Charles-de-Bourget",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -292822,6 +293122,18 @@
 		"population": 690,
 		"timezone": "America/Toronto",
 		"geonameId": 6137587
+	},
+	{
+		"name": "Saint-Christophe-d'Arthabaska",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.03416",
+		"longitude": "-71.94011",
+		"population": 3021,
+		"timezone": "America/Toronto",
+		"geonameId": 13732488
 	},
 	{
 		"name": "Saint-Colomban",
@@ -292836,7 +293148,19 @@
 		"geonameId": 6137626
 	},
 	{
-		"name": "Saint-Côme--Linière",
+		"name": "Saint-Côme",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.26843",
+		"longitude": "-73.77251",
+		"population": 2583,
+		"timezone": "America/Toronto",
+		"geonameId": 11257143
+	},
+	{
+		"name": "Saint-Côme-Linière",
 		"countryCode": "CA",
 		"countryName": "Canada",
 		"stateCode": "QC",
@@ -292858,6 +293182,30 @@
 		"population": 27359,
 		"timezone": "America/Toronto",
 		"geonameId": 6137633
+	},
+	{
+		"name": "Saint-Cyprien",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.89636",
+		"longitude": "-69.0196",
+		"population": 1078,
+		"timezone": "America/Toronto",
+		"geonameId": 13732486
+	},
+	{
+		"name": "Saint-Cyrille-de-Lessard",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.01816",
+		"longitude": "-70.24733",
+		"population": 753,
+		"timezone": "America/Toronto",
+		"geonameId": 13732484
 	},
 	{
 		"name": "Saint-Cyrille-de-Wendover",
@@ -292884,6 +293232,66 @@
 		"geonameId": 6137655
 	},
 	{
+		"name": "Saint-Damase-de-L'Islet",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.19897",
+		"longitude": "-70.12694",
+		"population": 563,
+		"timezone": "America/Toronto",
+		"geonameId": 13732482
+	},
+	{
+		"name": "Saint-Damien",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.3349",
+		"longitude": "-73.47869",
+		"population": 2393,
+		"timezone": "America/Toronto",
+		"geonameId": 13732481
+	},
+	{
+		"name": "Saint-David",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.95697",
+		"longitude": "-72.85512",
+		"population": 872,
+		"timezone": "America/Toronto",
+		"geonameId": 6137668
+	},
+	{
+		"name": "Saint-Denis-De La Bouteillerie",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.50255",
+		"longitude": "-69.93786",
+		"population": 518,
+		"timezone": "America/Toronto",
+		"geonameId": 13732480
+	},
+	{
+		"name": "Saint-Denis-de-Brompton",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.45778",
+		"longitude": "-72.0803",
+		"population": 4594,
+		"timezone": "America/Toronto",
+		"geonameId": 13732479
+	},
+	{
 		"name": "Saint-Denis-sur-Richelieu",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -292896,6 +293304,30 @@
 		"geonameId": 6137676
 	},
 	{
+		"name": "Saint-Didace",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.33079",
+		"longitude": "-73.27984",
+		"population": 688,
+		"timezone": "America/Toronto",
+		"geonameId": 13732478
+	},
+	{
+		"name": "Saint-Donat",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.49587",
+		"longitude": "-68.2537",
+		"population": 835,
+		"timezone": "America/Toronto",
+		"geonameId": 13732477
+	},
+	{
 		"name": "Saint-Donat-de-Montcalm",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -292906,6 +293338,18 @@
 		"population": 1213,
 		"timezone": "America/Toronto",
 		"geonameId": 6137692
+	},
+	{
+		"name": "Saint-Edmond-de-Grantham",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.88083",
+		"longitude": "-72.67506",
+		"population": 804,
+		"timezone": "America/Toronto",
+		"geonameId": 13732457
 	},
 	{
 		"name": "Saint-Édouard",
@@ -292968,6 +293412,18 @@
 		"geonameId": 6137970
 	},
 	{
+		"name": "Saint-Elzéar",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.41018",
+		"longitude": "-71.05887",
+		"population": 2623,
+		"timezone": "America/Toronto",
+		"geonameId": 13732455
+	},
+	{
 		"name": "Saint-Émile-de-Suffolk",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293016,6 +293472,18 @@
 		"geonameId": 13732317
 	},
 	{
+		"name": "Saint-Eusèbe",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.54255",
+		"longitude": "-68.91909",
+		"population": 587,
+		"timezone": "America/Toronto",
+		"geonameId": 13732452
+	},
+	{
 		"name": "Saint-Eustache",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293026,6 +293494,18 @@
 		"population": 42062,
 		"timezone": "America/Toronto",
 		"geonameId": 6138175
+	},
+	{
+		"name": "Saint-Fabien-de-Panet",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.65403",
+		"longitude": "-70.14676",
+		"population": 945,
+		"timezone": "America/Toronto",
+		"geonameId": 13732451
 	},
 	{
 		"name": "Saint-Faustin",
@@ -293076,6 +293556,54 @@
 		"geonameId": 12076655
 	},
 	{
+		"name": "Saint-François-d'Assise",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.98396",
+		"longitude": "-67.16147",
+		"population": 679,
+		"timezone": "America/Toronto",
+		"geonameId": 13732450
+	},
+	{
+		"name": "Saint-François-de-la-Rivière-du-Sud",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.88664",
+		"longitude": "-70.71465",
+		"population": 1580,
+		"timezone": "America/Toronto",
+		"geonameId": 13732445
+	},
+	{
+		"name": "Saint-François-Xavier-de-Brompton",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.53435",
+		"longitude": "-72.04877",
+		"population": 2101,
+		"timezone": "America/Toronto",
+		"geonameId": 13732444
+	},
+	{
+		"name": "Saint-Frédéric",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.29609",
+		"longitude": "-70.97527",
+		"population": 1065,
+		"timezone": "America/Toronto",
+		"geonameId": 13732442
+	},
+	{
 		"name": "Saint-Fulgence",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -293098,6 +293626,18 @@
 		"population": 2901,
 		"timezone": "America/Toronto",
 		"geonameId": 6138260
+	},
+	{
+		"name": "Saint-Gabriel-de-Brandon",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.28148",
+		"longitude": "-73.37968",
+		"population": 2684,
+		"timezone": "America/Toronto",
+		"geonameId": 13732491
 	},
 	{
 		"name": "Saint-Gabriel-Lalemant",
@@ -293146,6 +293686,18 @@
 		"population": 3485,
 		"timezone": "America/Toronto",
 		"geonameId": 6138310
+	},
+	{
+		"name": "Saint-Gervais",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.7149",
+		"longitude": "-70.88953",
+		"population": 2138,
+		"timezone": "America/Toronto",
+		"geonameId": 13732440
 	},
 	{
 		"name": "Saint-Henri",
@@ -293254,6 +293806,18 @@
 		"population": 2048,
 		"timezone": "America/Toronto",
 		"geonameId": 13712858
+	},
+	{
+		"name": "Saint-Ignace-de-Stanbridge",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.17122",
+		"longitude": "-72.94656",
+		"population": 638,
+		"timezone": "America/Toronto",
+		"geonameId": 13732490
 	},
 	{
 		"name": "Saint-Isidore",
@@ -297444,7 +298008,7 @@
 		"geonameId": 12096431
 	},
 	{
-		"name": "St-Bruno",
+		"name": "St-Bruno-de-Kamouraska",
 		"countryCode": "CA",
 		"countryName": "Canada",
 		"stateCode": "QC",
@@ -717708,6 +718272,18 @@
 		"geonameId": 2879543
 	},
 	{
+		"name": "Lehesten",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.47427",
+		"longitude": "11.45215",
+		"population": 1467,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2879545
+	},
+	{
 		"name": "Lehmen",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -730555,7 +731131,7 @@
 		"stateName": "Thuringia",
 		"latitude": "50.89453",
 		"longitude": "11.18108",
-		"population": 0,
+		"population": 309,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2866928
 	},
@@ -738550,6 +739126,18 @@
 		"population": 381,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2859239
+	},
+	{
+		"name": "Oberroßla",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.02237",
+		"longitude": "11.47918",
+		"population": 772,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2859236
 	},
 	{
 		"name": "Oberrot",
@@ -751906,6 +752494,18 @@
 		"population": 43315,
 		"timezone": "Europe/Berlin",
 		"geonameId": 3336893
+	},
+	{
+		"name": "Rödigsdorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.0002",
+		"longitude": "11.44544",
+		"population": 990,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2845926
 	},
 	{
 		"name": "Roding",
@@ -769164,6 +769764,18 @@
 		"geonameId": 2824053
 	},
 	{
+		"name": "Tannroda",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.85952",
+		"longitude": "11.24648",
+		"population": 971,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2824027
+	},
+	{
 		"name": "Tantow",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -773268,6 +773880,18 @@
 		"geonameId": 2820312
 	},
 	{
+		"name": "Ulla",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.97454",
+		"longitude": "11.25989",
+		"population": 820,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2820280
+	},
+	{
 		"name": "Ulm",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -774502,6 +775126,18 @@
 		"population": 655,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2818080
+	},
+	{
+		"name": "Utenbach",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.02835",
+		"longitude": "11.56356",
+		"population": 553,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2818078
 	},
 	{
 		"name": "Utendorf",
@@ -909269,8 +909905,8 @@
 		"countryName": "Finland",
 		"stateCode": "14",
 		"stateName": "North Ostrobothnia",
-		"latitude": "65.01585",
-		"longitude": "25.58402",
+		"latitude": "65.012",
+		"longitude": "25.595",
 		"population": 3097,
 		"timezone": "Europe/Helsinki",
 		"geonameId": 7645640
@@ -918425,8 +919061,8 @@
 		"countryName": "Finland",
 		"stateCode": "18",
 		"stateName": "Uusimaa",
-		"latitude": "60.29139",
-		"longitude": "25.01009",
+		"latitude": "60.295",
+		"longitude": "25.023",
 		"population": 7974,
 		"timezone": "Europe/Helsinki",
 		"geonameId": 847505
@@ -1516620,6 +1517256,18 @@
 		"geonameId": 6535806
 	},
 	{
+		"name": "Bande Nere",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.45924",
+		"longitude": "9.13943",
+		"population": 44222,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022792
+	},
+	{
 		"name": "Bandito",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1517542,6 +1518190,18 @@
 		"population": 428,
 		"timezone": "Europe/Rome",
 		"geonameId": 6535452
+	},
+	{
+		"name": "Barona",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.43713",
+		"longitude": "9.15444",
+		"population": 16616,
+		"timezone": "Europe/Rome",
+		"geonameId": 6693829
 	},
 	{
 		"name": "Barone",
@@ -1520086,6 +1520746,18 @@
 		"population": 796,
 		"timezone": "Europe/Rome",
 		"geonameId": 3182054
+	},
+	{
+		"name": "Bicocca",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.51834",
+		"longitude": "9.21317",
+		"population": 8583,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022828
 	},
 	{
 		"name": "Bidasio",
@@ -1523544,6 +1524216,30 @@
 		"geonameId": 3181644
 	},
 	{
+		"name": "Bovisa",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.50647",
+		"longitude": "9.16466",
+		"population": 13955,
+		"timezone": "Europe/Rome",
+		"geonameId": 3181643
+	},
+	{
+		"name": "Bovisasca",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.51676",
+		"longitude": "9.15708",
+		"population": 7273,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022818
+	},
+	{
 		"name": "Bovisio-Masciago",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1525246,6 +1525942,18 @@
 		"population": 760,
 		"timezone": "Europe/Rome",
 		"geonameId": 3181442
+	},
+	{
+		"name": "Buenos Aires - Venezia",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.47635",
+		"longitude": "9.21484",
+		"population": 62347,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022829
 	},
 	{
 		"name": "Bueriis",
@@ -1541496,6 +1542204,18 @@
 		"geonameId": 8954328
 	},
 	{
+		"name": "Centrale",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.48691",
+		"longitude": "9.20614",
+		"population": 18831,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022837
+	},
+	{
 		"name": "Centro",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1545432,6 +1546152,18 @@
 		"geonameId": 3178613
 	},
 	{
+		"name": "Città Studi",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.4762",
+		"longitude": "9.22834",
+		"population": 36376,
+		"timezone": "Europe/Rome",
+		"geonameId": 6693835
+	},
+	{
 		"name": "Cittadella",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1545502,6 +1546234,18 @@
 		"population": 3861,
 		"timezone": "Europe/Rome",
 		"geonameId": 3178611
+	},
+	{
+		"name": "City Life",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.47729",
+		"longitude": "9.15565",
+		"population": 2600,
+		"timezone": "Europe/Rome",
+		"geonameId": 6693841
 	},
 	{
 		"name": "Civate",
@@ -1549524,6 +1550268,18 @@
 		"geonameId": 2524918
 	},
 	{
+		"name": "Corsica",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.46337",
+		"longitude": "9.23149",
+		"population": 19658,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022808
+	},
+	{
 		"name": "Corsico",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1552140,6 +1552896,18 @@
 		"geonameId": 3177642
 	},
 	{
+		"name": "De Angeli - Monte Rosa",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.47421",
+		"longitude": "9.14876",
+		"population": 21394,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022842
+	},
+	{
 		"name": "Decima",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1552330,6 +1553098,18 @@
 		"population": 1503,
 		"timezone": "Europe/Rome",
 		"geonameId": 2524859
+	},
+	{
+		"name": "Dergano",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.50139",
+		"longitude": "9.1783",
+		"population": 23546,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022827
 	},
 	{
 		"name": "Dernice",
@@ -1553626,6 +1554406,18 @@
 		"population": 1075,
 		"timezone": "Europe/Rome",
 		"geonameId": 8949368
+	},
+	{
+		"name": "Duomo",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.46304",
+		"longitude": "9.1873",
+		"population": 16765,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022815
 	},
 	{
 		"name": "Durazzano",
@@ -1555102,6 +1555894,18 @@
 		"population": 254,
 		"timezone": "Europe/Rome",
 		"geonameId": 3177194
+	},
+	{
+		"name": "Farini",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.49329",
+		"longitude": "9.17495",
+		"population": 3807,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022804
 	},
 	{
 		"name": "Farnese",
@@ -1558416,6 +1559220,18 @@
 		"geonameId": 2524715
 	},
 	{
+		"name": "Forze Armate",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.46182",
+		"longitude": "9.11418",
+		"population": 24871,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022843
+	},
+	{
 		"name": "Fosciandora",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1560348,6 +1561164,18 @@
 		"geonameId": 3176391
 	},
 	{
+		"name": "Gallaratese",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.49592",
+		"longitude": "9.11206",
+		"population": 32544,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022789
+	},
+	{
 		"name": "Galleno",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1561126,6 +1561954,18 @@
 		"population": 2221,
 		"timezone": "Europe/Rome",
 		"geonameId": 3176304
+	},
+	{
+		"name": "Garibaldi Repubblica",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.48292",
+		"longitude": "9.19093",
+		"population": 5863,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022847
 	},
 	{
 		"name": "Garino",
@@ -1562326,6 +1563166,18 @@
 		"population": 918,
 		"timezone": "Europe/Rome",
 		"geonameId": 3220295
+	},
+	{
+		"name": "Giambellino",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.4464",
+		"longitude": "9.13731",
+		"population": 31176,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022790
 	},
 	{
 		"name": "Giammoro",
@@ -1564378,6 +1565230,18 @@
 		"population": 549,
 		"timezone": "Europe/Rome",
 		"geonameId": 3175849
+	},
+	{
+		"name": "Greco",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.50238",
+		"longitude": "9.21083",
+		"population": 16032,
+		"timezone": "Europe/Rome",
+		"geonameId": 6693847
 	},
 	{
 		"name": "Greggio",
@@ -1566490,6 +1567354,18 @@
 		"population": 639,
 		"timezone": "Europe/Rome",
 		"geonameId": 8949996
+	},
+	{
+		"name": "Isola",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.49022",
+		"longitude": "9.18996",
+		"population": 22859,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022841
 	},
 	{
 		"name": "Isola D'Arbia",
@@ -1571316,6 +1572192,18 @@
 		"geonameId": 3174638
 	},
 	{
+		"name": "Lodi - Corvetto",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.43581",
+		"longitude": "9.22879",
+		"population": 36129,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022819
+	},
+	{
 		"name": "Lodi Vecchio",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1571796,6 +1572684,18 @@
 		"geonameId": 6535560
 	},
 	{
+		"name": "Lorenteggio",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.45349",
+		"longitude": "9.13247",
+		"population": 14318,
+		"timezone": "Europe/Rome",
+		"geonameId": 6693839
+	},
+	{
 		"name": "Lorenzago di Cadore",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1571842,6 +1572742,18 @@
 		"population": 7212,
 		"timezone": "Europe/Rome",
 		"geonameId": 3174567
+	},
+	{
+		"name": "Loreto",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.49027",
+		"longitude": "9.22258",
+		"population": 44572,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022838
 	},
 	{
 		"name": "Loreto Aprutino",
@@ -1573498,6 +1574410,18 @@
 		"population": 22566,
 		"timezone": "Europe/Rome",
 		"geonameId": 3174295
+	},
+	{
+		"name": "Magenta - S. Vittore",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.46389",
+		"longitude": "9.17074",
+		"population": 17962,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022817
 	},
 	{
 		"name": "Maggio",
@@ -1586844,6 +1587768,18 @@
 		"geonameId": 3172483
 	},
 	{
+		"name": "Muggiano",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.45073",
+		"longitude": "9.07198",
+		"population": 3088,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022805
+	},
+	{
 		"name": "Muggiò",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1587622,6 +1588558,18 @@
 		"population": 376,
 		"timezone": "Europe/Rome",
 		"geonameId": 3172360
+	},
+	{
+		"name": "Navigli",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.44785",
+		"longitude": "9.16959",
+		"population": 17030,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022823
 	},
 	{
 		"name": "Naz-Sciaves - Natz-Schabs",
@@ -1591020,6 +1591968,18 @@
 		"geonameId": 8949507
 	},
 	{
+		"name": "Ortomercato",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.45275",
+		"longitude": "9.23062",
+		"population": 4183,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022783
+	},
+	{
 		"name": "Ortona",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1592328,6 +1593288,18 @@
 		"geonameId": 3171731
 	},
 	{
+		"name": "Padova",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.50094",
+		"longitude": "9.23458",
+		"population": 37408,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022801
+	},
+	{
 		"name": "Padria",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1592506,6 +1593478,18 @@
 		"population": 180,
 		"timezone": "Europe/Rome",
 		"geonameId": 3171700
+	},
+	{
+		"name": "Pagano",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.47287",
+		"longitude": "9.1632",
+		"population": 17883,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022834
 	},
 	{
 		"name": "Pagazzano",
@@ -1593972,6 +1594956,18 @@
 		"geonameId": 8949806
 	},
 	{
+		"name": "Parco Bosco in Citta",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.48403",
+		"longitude": "9.08609",
+		"population": 645,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022849
+	},
+	{
 		"name": "Parco di Guerra",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1593982,6 +1594978,18 @@
 		"population": 526,
 		"timezone": "Europe/Rome",
 		"geonameId": 8950298
+	},
+	{
+		"name": "Parco Lambro - Cimiano",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.49758",
+		"longitude": "9.25237",
+		"population": 19596,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022788
 	},
 	{
 		"name": "Parco Leonardo",
@@ -1594006,6 +1595014,18 @@
 		"population": 573,
 		"timezone": "Europe/Rome",
 		"geonameId": 8950163
+	},
+	{
+		"name": "Parco Monlue' - Ponte Lambro",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.44883",
+		"longitude": "9.26157",
+		"population": 5213,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022811
 	},
 	{
 		"name": "Parco Principi",
@@ -1603056,6 +1604076,18 @@
 		"geonameId": 12023057
 	},
 	{
+		"name": "Porta Romana",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.44973",
+		"longitude": "9.20549",
+		"population": 16739,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022848
+	},
+	{
 		"name": "Portacomaro",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1606303,7 +1607335,7 @@
 		"stateName": "Città metropolitana di Milano",
 		"latitude": "45.48607",
 		"longitude": "9.13917",
-		"population": 16000,
+		"population": 4098,
 		"timezone": "Europe/Rome",
 		"geonameId": 6693840
 	},
@@ -1606378,6 +1607410,18 @@
 		"population": 37683,
 		"timezone": "Europe/Rome",
 		"geonameId": 6534256
+	},
+	{
+		"name": "Quarto Cagnino",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.47117",
+		"longitude": "9.10982",
+		"population": 9854,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022723
 	},
 	{
 		"name": "Quarto d'Altino",
@@ -1606702,6 +1607746,18 @@
 		"population": 6796,
 		"timezone": "Europe/Rome",
 		"geonameId": 3169663
+	},
+	{
+		"name": "Quinto Romano",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.47613",
+		"longitude": "9.0893",
+		"population": 4736,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022724
 	},
 	{
 		"name": "Quinto Vercellese",
@@ -1611240,6 +1612296,18 @@
 		"geonameId": 3169084
 	},
 	{
+		"name": "Rogoredo",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.43135",
+		"longitude": "9.24491",
+		"population": 10847,
+		"timezone": "Europe/Rome",
+		"geonameId": 3169088
+	},
+	{
 		"name": "Rogoredo-Valaperta-Rimoldo",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1611754,6 +1612822,18 @@
 		"population": 740,
 		"timezone": "Europe/Rome",
 		"geonameId": 8949781
+	},
+	{
+		"name": "Ronchetto Sul Naviglio",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.43779",
+		"longitude": "9.13761",
+		"population": 14563,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022800
 	},
 	{
 		"name": "Ronchi",
@@ -1615858,6 +1616938,18 @@
 		"population": 588,
 		"timezone": "Europe/Rome",
 		"geonameId": 3168454
+	},
+	{
+		"name": "San Cristoforo",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.44136",
+		"longitude": "9.15921",
+		"population": 13793,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022791
 	},
 	{
 		"name": "San Damaso",
@@ -1626564,6 +1627656,18 @@
 		"geonameId": 3167113
 	},
 	{
+		"name": "Sarpi",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.4827",
+		"longitude": "9.17285",
+		"population": 30985,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022836
+	},
+	{
 		"name": "Sarroch",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1628650,6 +1629754,18 @@
 		"population": 2329,
 		"timezone": "Europe/Rome",
 		"geonameId": 8948940
+	},
+	{
+		"name": "Selinunte",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.47071",
+		"longitude": "9.13871",
+		"population": 26586,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022810
 	},
 	{
 		"name": "Sellano",
@@ -1633176,6 +1634292,18 @@
 		"geonameId": 3166223
 	},
 	{
+		"name": "Stadera",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.42927",
+		"longitude": "9.17879",
+		"population": 29683,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022813
+	},
+	{
 		"name": "Staffa",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1636548,6 +1637676,18 @@
 		"geonameId": 3165690
 	},
 	{
+		"name": "Tibaldi",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.43968",
+		"longitude": "9.18081",
+		"population": 11572,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022795
+	},
+	{
 		"name": "Ticchione",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1636582,6 +1637722,18 @@
 		"population": 374,
 		"timezone": "Europe/Rome",
 		"geonameId": 3165684
+	},
+	{
+		"name": "Ticinese",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.44981",
+		"longitude": "9.18166",
+		"population": 20008,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022845
 	},
 	{
 		"name": "Ticineto",
@@ -1638540,6 +1639692,18 @@
 		"geonameId": 3165370
 	},
 	{
+		"name": "Tortona",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.4533",
+		"longitude": "9.16223",
+		"population": 15228,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022814
+	},
+	{
 		"name": "Tortora",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1639186,6 +1640350,18 @@
 		"population": 777,
 		"timezone": "Europe/Rome",
 		"geonameId": 8949702
+	},
+	{
+		"name": "Tre Torri",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.47628",
+		"longitude": "9.15608",
+		"population": 2322,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022785
 	},
 	{
 		"name": "Trebaseleghe",
@@ -1640256,6 +1641432,18 @@
 		"geonameId": 3165155
 	},
 	{
+		"name": "Triulzo Superiore",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.42726",
+		"longitude": "9.24961",
+		"population": 1687,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022807
+	},
+	{
 		"name": "Trivento",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -1641046,6 +1642234,18 @@
 		"population": 11040,
 		"timezone": "Europe/Rome",
 		"geonameId": 3165052
+	},
+	{
+		"name": "Umbria - Molise",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.45158",
+		"longitude": "9.21924",
+		"population": 22982,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022806
 	},
 	{
 		"name": "Umbriatico",
@@ -1642738,6 +1643938,18 @@
 		"population": 3091,
 		"timezone": "Europe/Rome",
 		"geonameId": 3164818
+	},
+	{
+		"name": "Vallette",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "TO",
+		"stateName": "Torino",
+		"latitude": "45.10529",
+		"longitude": "7.64114",
+		"population": 39618,
+		"timezone": "Europe/Rome",
+		"geonameId": 11288654
 	},
 	{
 		"name": "Valleve",
@@ -1645978,6 +1647190,18 @@
 		"population": 521,
 		"timezone": "Europe/Rome",
 		"geonameId": 8950316
+	},
+	{
+		"name": "Vigentina",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.45028",
+		"longitude": "9.19279",
+		"population": 13686,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022844
 	},
 	{
 		"name": "Vigevano",
@@ -1650214,6 +1651438,18 @@
 		"population": 520,
 		"timezone": "Europe/Rome",
 		"geonameId": 3163941
+	},
+	{
+		"name": "Washington",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.46139",
+		"longitude": "9.1564",
+		"population": 27088,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022820
 	},
 	{
 		"name": "Zaccanopoli",
@@ -1728778,6 +1730014,18 @@
 		"population": 640,
 		"timezone": "Europe/Skopje",
 		"geonameId": 784422
+	},
+	{
+		"name": "Vizbegovo",
+		"countryCode": "MK",
+		"countryName": "North Macedonia",
+		"stateCode": "F6",
+		"stateName": "Grad Skopje",
+		"latitude": "42.03639",
+		"longitude": "21.40944",
+		"population": 3748,
+		"timezone": "Europe/Skopje",
+		"geonameId": 784359
 	},
 	{
 		"name": "Vladimirovo",
@@ -1962190,6 +1963438,18 @@
 		"population": 12212,
 		"timezone": "Africa/Lagos",
 		"geonameId": 2350027
+	},
+	{
+		"name": "Amua Ichemidiara",
+		"countryCode": "NG",
+		"countryName": "Nigeria",
+		"stateCode": "DE",
+		"stateName": "Delta",
+		"latitude": "5.66526",
+		"longitude": "5.76564",
+		"population": 2000000,
+		"timezone": "Africa/Lagos",
+		"geonameId": 2338612
 	},
 	{
 		"name": "Anaku",
@@ -2389884,6 +2391144,18 @@
 		"geonameId": 3513144
 	},
 	{
+		"name": "‘Abr Bayt Sayf",
+		"countryCode": "SY",
+		"countryName": "Syria",
+		"stateCode": "HM",
+		"stateName": "Hama",
+		"latitude": "35.37826",
+		"longitude": "36.31691",
+		"population": 2819,
+		"timezone": "Asia/Damascus",
+		"geonameId": 174620
+	},
+	{
 		"name": "‘Afrīn",
 		"countryCode": "SY",
 		"countryName": "Syria",
@@ -2389894,6 +2391166,18 @@
 		"population": 48693,
 		"timezone": "Asia/Damascus",
 		"geonameId": 174186
+	},
+	{
+		"name": "‘Ammūrīn",
+		"countryCode": "SY",
+		"countryName": "Syria",
+		"stateCode": "HM",
+		"stateName": "Hama",
+		"latitude": "35.32174",
+		"longitude": "36.38164",
+		"population": 1145,
+		"timezone": "Asia/Damascus",
+		"geonameId": 173244
 	},
 	{
 		"name": "‘Āmūdā",
@@ -2390016,6 +2391300,18 @@
 		"geonameId": 172232
 	},
 	{
+		"name": "‘Ayn al Kurūm",
+		"countryCode": "SY",
+		"countryName": "Syria",
+		"stateCode": "HM",
+		"stateName": "Hama",
+		"latitude": "35.35283",
+		"longitude": "36.26429",
+		"population": 22000,
+		"timezone": "Asia/Damascus",
+		"geonameId": 172198
+	},
+	{
 		"name": "‘Ayn an Nasr",
 		"countryCode": "SY",
 		"countryName": "Syria",
@@ -2390062,6 +2391358,18 @@
 		"population": 0,
 		"timezone": "Asia/Damascus",
 		"geonameId": 172172
+	},
+	{
+		"name": "‘Aynab",
+		"countryCode": "SY",
+		"countryName": "Syria",
+		"stateCode": "HM",
+		"stateName": "Hama",
+		"latitude": "35.42843",
+		"longitude": "36.24023",
+		"population": 8000,
+		"timezone": "Asia/Damascus",
+		"geonameId": 172266
 	},
 	{
 		"name": "‘Irbīn",
@@ -2391223,7 +2392531,7 @@
 		"stateName": "Hama",
 		"latitude": "35.36674",
 		"longitude": "36.39359",
-		"population": 0,
+		"population": 13920,
 		"timezone": "Asia/Damascus",
 		"geonameId": 163921
 	},
@@ -2391562,6 +2392870,18 @@
 		"population": 6528,
 		"timezone": "Asia/Damascus",
 		"geonameId": 171200
+	},
+	{
+		"name": "Buraydīj",
+		"countryCode": "SY",
+		"countryName": "Syria",
+		"stateCode": "HM",
+		"stateName": "Hama",
+		"latitude": "35.38688",
+		"longitude": "36.46098",
+		"population": 2153,
+		"timezone": "Asia/Damascus",
+		"geonameId": 171186
 	},
 	{
 		"name": "Burj Islām",

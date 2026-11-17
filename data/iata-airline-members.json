@@ -909,6 +909,15 @@
 		"countryCode": "CM"
 	},
 	{
+		"name": "Cambodia Airways",
+		"iataDesignator": "KR",
+		"accountingCode": "733",
+		"icaoCode": "KME",
+		"countryName": "Cambodia",
+		"controlledDuplicate": false,
+		"countryCode": "KH"
+	},
+	{
 		"name": "Capital Airlines",
 		"iataDesignator": "JD",
 		"accountingCode": "898",
@@ -3276,6 +3285,15 @@
 		"countryCode": "UZ"
 	},
 	{
+		"name": "ValueJet",
+		"iataDesignator": "VK",
+		"accountingCode": "688",
+		"icaoCode": "FVJ",
+		"countryName": "Nigeria",
+		"controlledDuplicate": false,
+		"countryCode": "NG"
+	},
+	{
 		"name": "Vietjet",
 		"iataDesignator": "VJ",
 		"accountingCode": "978",
@@ -3382,6 +3400,15 @@
 		"countryName": "Norway",
 		"controlledDuplicate": false,
 		"countryCode": "NO"
+	},
+	{
+		"name": "Winair",
+		"iataDesignator": "WM",
+		"accountingCode": "295",
+		"icaoCode": "WIA",
+		"countryName": "Sint Maarten",
+		"controlledDuplicate": false,
+		"countryCode": "SX"
 	},
 	{
 		"name": "World2Fly",
