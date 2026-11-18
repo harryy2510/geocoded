@@ -263304,6 +263304,18 @@
 		"geonameId": 5887214
 	},
 	{
+		"name": "Arundel",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.96812",
+		"longitude": "-74.6138",
+		"population": 578,
+		"timezone": "America/Toronto",
+		"geonameId": 5887439
+	},
+	{
 		"name": "Arviat",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -269436,6 +269448,18 @@
 		"geonameId": 5923101
 	},
 	{
+		"name": "Clarenceville",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.06678",
+		"longitude": "-73.24915",
+		"population": 1154,
+		"timezone": "America/Toronto",
+		"geonameId": 6138291
+	},
+	{
 		"name": "Clarendon",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -271944,6 +271968,18 @@
 		"geonameId": 11669521
 	},
 	{
+		"name": "Deschambault-Grondines",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.64802",
+		"longitude": "-71.9268",
+		"population": 2235,
+		"timezone": "America/Toronto",
+		"geonameId": 8593828
+	},
+	{
 		"name": "Deseronto",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -274068,6 +274104,18 @@
 		"geonameId": 7839094
 	},
 	{
+		"name": "Evanturel",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "ON",
+		"stateName": "Ontario",
+		"latitude": "47.76833",
+		"longitude": "-79.82495",
+		"population": 502,
+		"timezone": "America/Toronto",
+		"geonameId": 13732531
+	},
+	{
 		"name": "Evergreen",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -276096,6 +276144,18 @@
 		"geonameId": 5962442
 	},
 	{
+		"name": "Godmanchester",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.12576",
+		"longitude": "-74.17202",
+		"population": 1403,
+		"timezone": "America/Toronto",
+		"geonameId": 13732560
+	},
+	{
 		"name": "Gods River",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -276250,6 +276310,18 @@
 		"population": 2325,
 		"timezone": "America/Vancouver",
 		"geonameId": 13495390
+	},
+	{
+		"name": "Gracefield",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.10011",
+		"longitude": "-76.04936",
+		"population": 2376,
+		"timezone": "America/Toronto",
+		"geonameId": 6184755
 	},
 	{
 		"name": "Granby",
@@ -278518,6 +278590,18 @@
 		"population": 6686,
 		"timezone": "America/Vancouver",
 		"geonameId": 5976783
+	},
+	{
+		"name": "Hope",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.0425",
+		"longitude": "-65.18732",
+		"population": 584,
+		"timezone": "America/Toronto",
+		"geonameId": 13732563
 	},
 	{
 		"name": "Hopedale",
@@ -290040,6 +290124,18 @@
 		"geonameId": 6354894
 	},
 	{
+		"name": "Portneuf-sur-Mer",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.66811",
+		"longitude": "-69.1881",
+		"population": 612,
+		"timezone": "America/Toronto",
+		"geonameId": 13732521
+	},
+	{
 		"name": "Portugal Cove-St. Phillip’s",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -290230,6 +290326,18 @@
 		"population": 10132,
 		"timezone": "America/Toronto",
 		"geonameId": 6113198
+	},
+	{
+		"name": "Price",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "48.60353",
+		"longitude": "-68.1296",
+		"population": 1729,
+		"timezone": "America/Toronto",
+		"geonameId": 13732522
 	},
 	{
 		"name": "Prince Albert",
@@ -290722,6 +290830,18 @@
 		"population": 1339,
 		"timezone": "America/Edmonton",
 		"geonameId": 6115713
+	},
+	{
+		"name": "Ragueneau",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "49.0707",
+		"longitude": "-68.53391",
+		"population": 1314,
+		"timezone": "America/Toronto",
+		"geonameId": 13732529
 	},
 	{
 		"name": "Ramsay",
@@ -292176,6 +292296,18 @@
 		"geonameId": 6128682
 	},
 	{
+		"name": "Roxton",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.55084",
+		"longitude": "-72.51516",
+		"population": 1093,
+		"timezone": "America/Toronto",
+		"geonameId": 6128694
+	},
+	{
 		"name": "Roxton Pond",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -292620,6 +292752,18 @@
 		"geonameId": 8740846
 	},
 	{
+		"name": "Saint-Adelphe",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.73044",
+		"longitude": "-72.43035",
+		"population": 922,
+		"timezone": "America/Toronto",
+		"geonameId": 13732525
+	},
+	{
 		"name": "Saint-Adolphe-d'Howard",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -292642,6 +292786,18 @@
 		"population": 4526,
 		"timezone": "America/Toronto",
 		"geonameId": 11696032
+	},
+	{
+		"name": "Saint-Aimé-du-Lac-des-Îles",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.40629",
+		"longitude": "-75.51147",
+		"population": 815,
+		"timezone": "America/Toronto",
+		"geonameId": 13732523
 	},
 	{
 		"name": "Saint-Alexandre",
@@ -293835,6 +293991,18 @@
 		"name": "Saint-Isidore",
 		"countryCode": "CA",
 		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.30008",
+		"longitude": "-73.67998",
+		"population": 2769,
+		"timezone": "America/Toronto",
+		"geonameId": 6138402
+	},
+	{
+		"name": "Saint-Isidore",
+		"countryCode": "CA",
+		"countryName": "Canada",
 		"stateCode": "NB",
 		"stateName": "New Brunswick",
 		"latitude": "47.55545",
@@ -293854,18 +294022,6 @@
 		"population": 3286,
 		"timezone": "America/Toronto",
 		"geonameId": 13732393
-	},
-	{
-		"name": "Saint-Isidore-de-Laprairie",
-		"countryCode": "CA",
-		"countryName": "Canada",
-		"stateCode": "QC",
-		"stateName": "Quebec",
-		"latitude": "45.30008",
-		"longitude": "-73.67998",
-		"population": 0,
-		"timezone": "America/Toronto",
-		"geonameId": 6138402
 	},
 	{
 		"name": "Saint-Jacques",
@@ -294130,6 +294286,18 @@
 		"population": 615,
 		"timezone": "America/Moncton",
 		"geonameId": 12069928
+	},
+	{
+		"name": "Saint-Léon-le-Grand",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "46.31396",
+		"longitude": "-72.93523",
+		"population": 863,
+		"timezone": "America/Toronto",
+		"geonameId": 6138619
 	},
 	{
 		"name": "Saint-Léon-le-Grand",
@@ -299568,6 +299736,18 @@
 		"geonameId": 6162654
 	},
 	{
+		"name": "Témiscouata-sur-le-Lac",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "47.67754",
+		"longitude": "-68.87724",
+		"population": 5054,
+		"timezone": "America/Toronto",
+		"geonameId": 13732532
+	},
+	{
 		"name": "Temiskaming Shores",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -302458,6 +302638,18 @@
 		"population": 1302,
 		"timezone": "America/Toronto",
 		"geonameId": 11838088
+	},
+	{
+		"name": "Wentworth",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.79624",
+		"longitude": "-74.3533",
+		"population": 682,
+		"timezone": "America/Toronto",
+		"geonameId": 6178102
 	},
 	{
 		"name": "West Cambie",
@@ -657780,6 +657972,18 @@
 		"geonameId": 2949589
 	},
 	{
+		"name": "Beulwitz",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.65566",
+		"longitude": "11.32668",
+		"population": 868,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2949583
+	},
+	{
 		"name": "Beuna",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -672084,6 +672288,18 @@
 		"geonameId": 2935483
 	},
 	{
+		"name": "Döse",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "NI",
+		"stateName": "Lower Saxony",
+		"latitude": "53.88366",
+		"longitude": "8.67359",
+		"population": 12773,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2935478
+	},
+	{
 		"name": "Dössel",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -672814,6 +673030,18 @@
 		"population": 1605,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2934707
+	},
+	{
+		"name": "Duhnen",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "NI",
+		"stateName": "Lower Saxony",
+		"latitude": "53.88411",
+		"longitude": "8.64384",
+		"population": 1037,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2934703
 	},
 	{
 		"name": "Duingen",
@@ -683868,6 +684096,18 @@
 		"geonameId": 2922530
 	},
 	{
+		"name": "Garnsdorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.64013",
+		"longitude": "11.34598",
+		"population": 564,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2922514
+	},
+	{
 		"name": "Garrel",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -687742,6 +687982,18 @@
 		"population": 3749,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2918970
+	},
+	{
+		"name": "Gorndorf",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.65482",
+		"longitude": "11.39391",
+		"population": 7031,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2918969
 	},
 	{
 		"name": "Gornhausen",
@@ -710016,6 +710268,18 @@
 		"geonameId": 2890499
 	},
 	{
+		"name": "Kirchhasel",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.73023",
+		"longitude": "11.39352",
+		"population": 510,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2890496
+	},
+	{
 		"name": "Kirchhaslach",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -725998,6 +726262,18 @@
 		"population": 1159,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2872073
+	},
+	{
+		"name": "Mellenbach-Glasbach",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.5907",
+		"longitude": "11.10083",
+		"population": 928,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2872074
 	},
 	{
 		"name": "Mellingen",
@@ -750204,6 +750480,18 @@
 		"geonameId": 2848335
 	},
 	{
+		"name": "Remda",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.75944",
+		"longitude": "11.2272",
+		"population": 829,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2848326
+	},
+	{
 		"name": "Remlingen",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -752731,7 +753019,7 @@
 		"stateName": "Thuringia",
 		"latitude": "50.6",
 		"longitude": "11.21667",
-		"population": 0,
+		"population": 176,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2845699
 	},
@@ -761110,6 +761398,18 @@
 		"population": 1398,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2835193
+	},
+	{
+		"name": "Schwarza",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.68971",
+		"longitude": "11.3225",
+		"population": 5183,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2835194
 	},
 	{
 		"name": "Schwarza",
@@ -773856,6 +774156,18 @@
 		"geonameId": 3205691
 	},
 	{
+		"name": "Uhlstädt",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.74237",
+		"longitude": "11.46877",
+		"population": 780,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2820326
+	},
+	{
 		"name": "Uhyst",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -774766,6 +775078,18 @@
 		"population": 3002,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2818418
+	},
+	{
+		"name": "Unterwirbach",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.66576",
+		"longitude": "11.29215",
+		"population": 848,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2818370
 	},
 	{
 		"name": "Unterwössen",
@@ -2450304,6 +2450628,18 @@
 		"geonameId": 13697147
 	},
 	{
+		"name": "Koprulu",
+		"countryCode": "TR",
+		"countryName": "Turkey",
+		"stateCode": "01",
+		"stateName": "Adana",
+		"latitude": "37.01331",
+		"longitude": "35.33546",
+		"population": 2372,
+		"timezone": "Europe/Istanbul",
+		"geonameId": 13732570
+	},
+	{
 		"name": "Köprülü",
 		"countryCode": "TR",
 		"countryName": "Turkey",
@@ -2484475,7 +2484811,7 @@
 		"stateName": "Dnipropetrovsk",
 		"latitude": "48.46664",
 		"longitude": "35.04066",
-		"population": 968502,
+		"population": 975000,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 709930
 	},
@@ -2485687,7 +2486023,7 @@
 		"stateName": "Donetsk",
 		"latitude": "48.61995",
 		"longitude": "37.52537",
-		"population": 53977,
+		"population": 3630,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 616743
 	},
@@ -2492023,7 +2492359,7 @@
 		"stateName": "Khmelnytskyi",
 		"latitude": "48.67882",
 		"longitude": "26.58516",
-		"population": 97908,
+		"population": 109000,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 706950
 	},
@@ -2496883,7 +2497219,7 @@
 		"stateName": "Donetsk",
 		"latitude": "48.73106",
 		"longitude": "37.56779",
-		"population": 147145,
+		"population": 34000,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 704508
 	},
@@ -2501491,7 +2501827,7 @@
 		"stateName": "Lviv",
 		"latitude": "49.83826",
 		"longitude": "24.02324",
-		"population": 717273,
+		"population": 986000,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 702550
 	},
@@ -2511475,7 +2511811,7 @@
 		"stateName": "Odesa",
 		"latitude": "46.48572",
 		"longitude": "30.74383",
-		"population": 1010537,
+		"population": 907000,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 698740
 	},
@@ -2512474,6 +2512810,18 @@
 		"population": 556,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 12156564
+	},
+	{
+		"name": "Oparypsy",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
+		"stateCode": "56",
+		"stateName": "Rivne Oblast",
+		"latitude": "50.14017",
+		"longitude": "25.23242",
+		"population": 799,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 698469
 	},
 	{
 		"name": "Opishnya",
@@ -2524747,7 +2525095,7 @@
 		"stateName": "Donetsk",
 		"latitude": "48.84974",
 		"longitude": "37.59739",
-		"population": 105141,
+		"population": 19770,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 693468
 	},
@@ -2532067,7 +2532415,7 @@
 		"stateName": "Zakarpattia",
 		"latitude": "48.6242",
 		"longitude": "22.2947",
-		"population": 115449,
+		"population": 160000,
 		"timezone": "Europe/Kyiv",
 		"geonameId": 690548
 	},
