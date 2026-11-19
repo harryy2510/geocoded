@@ -294708,6 +294708,18 @@
 		"geonameId": 8593671
 	},
 	{
+		"name": "Saint-Paul-d'Abbotsford",
+		"countryCode": "CA",
+		"countryName": "Canada",
+		"stateCode": "QC",
+		"stateName": "Quebec",
+		"latitude": "45.43541",
+		"longitude": "-72.8827",
+		"population": 2886,
+		"timezone": "America/Toronto",
+		"geonameId": 11186238
+	},
+	{
 		"name": "Saint-Paul-de-l'Île-aux-Noix",
 		"countryCode": "CA",
 		"countryName": "Canada",
@@ -567200,7 +567212,7 @@
 		"latitude": "41.14917",
 		"longitude": "79.085",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1540678
 	},
 	{
@@ -667860,6 +667872,18 @@
 		"geonameId": 2939731
 	},
 	{
+		"name": "Crossen an der Elster",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "50.97494",
+		"longitude": "11.9781",
+		"population": 1509,
+		"timezone": "Europe/Berlin",
+		"geonameId": 2883557
+	},
+	{
 		"name": "Crostau",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -671914,6 +671938,18 @@
 		"population": 3045,
 		"timezone": "Europe/Berlin",
 		"geonameId": 2935729
+	},
+	{
+		"name": "Dorndorf-Steudnitz",
+		"countryCode": "DE",
+		"countryName": "Germany",
+		"stateCode": "TH",
+		"stateName": "Thuringia",
+		"latitude": "51.0084",
+		"longitude": "11.68111",
+		"population": 2550,
+		"timezone": "Europe/Berlin",
+		"geonameId": 13732625
 	},
 	{
 		"name": "Dornhan",
@@ -735276,18 +735312,6 @@
 		"geonameId": 2863422
 	},
 	{
-		"name": "Niedergeckler",
-		"countryCode": "DE",
-		"countryName": "Germany",
-		"stateCode": "RP",
-		"stateName": "Rheinland-Pfalz",
-		"latitude": "49.96667",
-		"longitude": "6.3",
-		"population": 42,
-		"timezone": "Europe/Berlin",
-		"geonameId": 2863419
-	},
-	{
 		"name": "Niedergörsdorf",
 		"countryCode": "DE",
 		"countryName": "Germany",
@@ -790560,6 +790584,18 @@
 		"geonameId": 2624602
 	},
 	{
+		"name": "Abild",
+		"countryCode": "DK",
+		"countryName": "Denmark",
+		"stateCode": "83",
+		"stateName": "South Denmark",
+		"latitude": "54.97993",
+		"longitude": "8.86332",
+		"population": 505,
+		"timezone": "Europe/Copenhagen",
+		"geonameId": 2625066
+	},
+	{
 		"name": "Åbybro",
 		"countryCode": "DK",
 		"countryName": "Denmark",
@@ -790582,6 +790618,18 @@
 		"population": 935,
 		"timezone": "Europe/Copenhagen",
 		"geonameId": 2625001
+	},
+	{
+		"name": "Agerskov",
+		"countryCode": "DK",
+		"countryName": "Denmark",
+		"stateCode": "83",
+		"stateName": "South Denmark",
+		"latitude": "55.12889",
+		"longitude": "9.13552",
+		"population": 1159,
+		"timezone": "Europe/Copenhagen",
+		"geonameId": 2624973
 	},
 	{
 		"name": "Åkirkeby",
@@ -1379542,6 +1379590,18 @@
 		"population": 951,
 		"timezone": "Asia/Jerusalem",
 		"geonameId": 294404
+	},
+	{
+		"name": "Ma‘barot",
+		"countryCode": "IL",
+		"countryName": "Israel",
+		"stateCode": "M",
+		"stateName": "Central District",
+		"latitude": "32.36437",
+		"longitude": "34.90506",
+		"population": 982,
+		"timezone": "Asia/Jerusalem",
+		"geonameId": 294396
 	},
 	{
 		"name": "Ma‘galim",

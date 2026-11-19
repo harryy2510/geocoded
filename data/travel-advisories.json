@@ -29,7 +29,7 @@
 		"uk": {
 			"destination": "United Arab Emirates",
 			"alertStatus": [],
-			"updatedAt": "2026-10-27T16:03:20Z",
+			"updatedAt": "2026-11-18T16:33:03Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates"
 		}
 	},
@@ -383,7 +383,7 @@
 		"uk": {
 			"destination": "Bahrain",
 			"alertStatus": [],
-			"updatedAt": "2026-10-27T16:06:21Z",
+			"updatedAt": "2026-11-18T16:31:19Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/bahrain"
 		}
 	},
@@ -1681,7 +1681,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-27T16:05:38Z",
+			"updatedAt": "2026-11-18T16:31:51Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/israel"
 		}
 	},
@@ -1737,7 +1737,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-27T16:06:23Z",
+			"updatedAt": "2026-11-18T16:31:24Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/iraq"
 		}
 	},
@@ -1756,7 +1756,7 @@
 			"alertStatus": [
 				"avoid_all_travel_to_whole_country"
 			],
-			"updatedAt": "2026-10-27T16:04:57Z",
+			"updatedAt": "2026-11-18T16:30:59Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/iran"
 		}
 	},
@@ -1832,7 +1832,7 @@
 			"alertStatus": [
 				"avoid_all_travel_to_parts"
 			],
-			"updatedAt": "2026-10-27T16:06:24Z",
+			"updatedAt": "2026-11-18T16:31:10Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/jordan"
 		}
 	},
@@ -1905,7 +1905,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-03-19T14:03:23Z",
+			"updatedAt": "2026-11-18T15:21:31Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/cambodia"
 		}
 	},
@@ -2009,7 +2009,7 @@
 		"uk": {
 			"destination": "Kuwait",
 			"alertStatus": [],
-			"updatedAt": "2026-10-27T16:06:20Z",
+			"updatedAt": "2026-11-18T16:31:45Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/kuwait"
 		}
 	},
@@ -2062,7 +2062,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-08-13T11:10:25Z",
+			"updatedAt": "2026-11-18T15:21:37Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/laos"
 		}
 	},
@@ -2608,7 +2608,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-03-19T14:03:58Z",
+			"updatedAt": "2026-11-18T15:21:43Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/malaysia"
 		}
 	},
@@ -2831,7 +2831,7 @@
 		"uk": {
 			"destination": "Oman",
 			"alertStatus": [],
-			"updatedAt": "2026-10-27T16:01:00Z",
+			"updatedAt": "2026-11-18T16:31:54Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/oman"
 		}
 	},
@@ -2942,7 +2942,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-27T16:05:20Z",
+			"updatedAt": "2026-11-18T16:36:34Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/pakistan"
 		}
 	},
@@ -3007,7 +3007,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-27T16:06:13Z",
+			"updatedAt": "2026-11-18T16:32:19Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/palestine"
 		}
 	},
@@ -3075,7 +3075,7 @@
 		"uk": {
 			"destination": "Qatar",
 			"alertStatus": [],
-			"updatedAt": "2026-10-27T16:03:07Z",
+			"updatedAt": "2026-11-18T16:32:02Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/qatar"
 		}
 	},
@@ -3178,7 +3178,7 @@
 				"avoid_all_travel_to_parts",
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-10-27T16:54:07Z",
+			"updatedAt": "2026-11-18T16:32:22Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia"
 		}
 	},
@@ -3486,7 +3486,7 @@
 			"alertStatus": [
 				"avoid_all_travel_to_whole_country"
 			],
-			"updatedAt": "2026-10-27T16:05:05Z",
+			"updatedAt": "2026-11-18T16:36:20Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/syria"
 		}
 	},
@@ -3701,7 +3701,7 @@
 			"alertStatus": [
 				"avoid_all_travel_to_parts"
 			],
-			"updatedAt": "2026-10-27T16:07:12Z",
+			"updatedAt": "2026-11-18T16:36:28Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/turkey"
 		}
 	},
@@ -3752,7 +3752,7 @@
 		"uk": {
 			"destination": "Taiwan",
 			"alertStatus": [],
-			"updatedAt": "2026-08-28T12:31:24Z",
+			"updatedAt": "2026-11-18T15:21:27Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/taiwan"
 		}
 	},
@@ -4023,7 +4023,7 @@
 			"alertStatus": [
 				"avoid_all_travel_to_whole_country"
 			],
-			"updatedAt": "2026-10-27T16:06:42Z",
+			"updatedAt": "2026-11-18T16:36:14Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/yemen"
 		}
 	},
