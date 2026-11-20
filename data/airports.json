@@ -8417,7 +8417,7 @@
 		"stateName": "Styria",
 		"elevation": 0,
 		"timezone": "Europe/Vienna",
-		"modificationDate": "2017-06-17"
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 9034574,
@@ -29979,12 +29979,12 @@
 		"countryCode": "BE",
 		"countryName": "Belgium",
 		"admin1Code": "VLG",
-		"admin2Code": "",
-		"stateCode": "",
-		"stateName": "",
+		"admin2Code": "VOV",
+		"stateCode": "VOV",
+		"stateName": "Provincie Oost-Vlaanderen",
 		"elevation": 0,
 		"timezone": "Europe/Brussels",
-		"modificationDate": "2025-12-24"
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 6296503,
@@ -77387,36 +77387,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2024-07-13"
-	},
-	{
-		"geonameId": 12624949,
-		"name": "Alaer Talimu Airport",
-		"asciiName": "Alaer Talimu Airport",
-		"alternateNames": [
-			"ACF",
-			"Alaer Talimu Airport",
-			"Aral Talim Airport",
-			"ZWAL",
-			"a la er ta li mu ji chang",
-			"阿拉尔塔里木机场"
-		],
-		"unLocode": null,
-		"airportLocationCode": null,
-		"iataCode": null,
-		"iataCodeSource": null,
-		"latitude": "40.4401",
-		"longitude": "81.26116",
-		"countryCode": "CN",
-		"countryName": "China",
-		"admin1Code": "13",
-		"admin2Code": "6529",
-		"stateCode": "XJ",
-		"stateName": "Xinjiang",
-		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2024-06-20"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 12687172,
@@ -77480,8 +77452,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 750,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2020-10-25"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 8617183,
@@ -77733,6 +77705,34 @@
 		"modificationDate": "2023-10-24"
 	},
 	{
+		"geonameId": 12624949,
+		"name": "Aral Talim Airport",
+		"asciiName": "Aral Talim Airport",
+		"alternateNames": [
+			"ACF",
+			"Alaer Talimu Airport",
+			"Aral Talim Airport",
+			"ZWAL",
+			"a la er ta li mu ji chang",
+			"阿拉尔塔里木机场"
+		],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "40.4401",
+		"longitude": "81.26116",
+		"countryCode": "CN",
+		"countryName": "China",
+		"admin1Code": "13",
+		"admin2Code": "6529",
+		"stateCode": "XJ",
+		"stateName": "Xinjiang",
+		"elevation": 0,
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
+	},
+	{
 		"geonameId": 11101506,
 		"name": "Baicheng Chang'an Airport",
 		"asciiName": "Baicheng Chang'an Airport",
@@ -77848,8 +77848,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2024-12-19"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 7910185,
@@ -81444,8 +81444,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2023-10-24"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 7731092,
@@ -81698,8 +81698,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 1424,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2018-12-06"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 7910482,
@@ -82660,8 +82660,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2021-09-20"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 6301394,
@@ -82718,8 +82718,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2021-09-20"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 7730304,
@@ -82742,8 +82742,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2021-09-20"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 9036019,
@@ -83615,8 +83615,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2026-01-16"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 7731251,
@@ -84590,6 +84590,46 @@
 		"modificationDate": "2021-09-20"
 	},
 	{
+		"geonameId": 7730305,
+		"name": "Piqan Airport",
+		"asciiName": "Piqan Airport",
+		"alternateNames": [
+			"Aeroport de Shanshan",
+			"Aeropuerto de Shanshan",
+			"Aéroport de Shanshan",
+			"Flughafen Shanshan",
+			"Pichan Ajroport",
+			"Piqan Airport",
+			"SXJ",
+			"Shanshan Airport",
+			"Shanshan Jichang",
+			"Shànshàn Jīchǎng",
+			"ZWSS",
+			"mo yu ji chang",
+			"pychan yayyrpwrt",
+			"shan shan ji chang",
+			"Пичан Айропорт",
+			"پىچان ئايىرپورت",
+			"墨玉機場",
+			"鄯善机场"
+		],
+		"unLocode": "CNSXJ",
+		"airportLocationCode": "SXJ",
+		"iataCode": "SXJ",
+		"iataCodeSource": "unlocode-location-code",
+		"latitude": "42.9117",
+		"longitude": "90.2475",
+		"countryCode": "CN",
+		"countryName": "China",
+		"admin1Code": "13",
+		"admin2Code": "6504",
+		"stateCode": "XJ",
+		"stateName": "Xinjiang",
+		"elevation": 0,
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
+	},
+	{
 		"geonameId": 7730300,
 		"name": "Qamdo Bangda Airport",
 		"asciiName": "Qamdo Bangda Airport",
@@ -84697,8 +84737,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2024-07-20"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 6301387,
@@ -84972,8 +85012,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2023-10-24"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 11493782,
@@ -84995,8 +85035,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2021-09-20"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 6740278,
@@ -85306,8 +85346,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2025-02-07"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 6301388,
@@ -85556,46 +85596,6 @@
 		"elevation": 0,
 		"timezone": "Asia/Shanghai",
 		"modificationDate": "2021-09-20"
-	},
-	{
-		"geonameId": 7730305,
-		"name": "Shanshan Airport",
-		"asciiName": "Shanshan Airport",
-		"alternateNames": [
-			"Aeroport de Shanshan",
-			"Aeropuerto de Shanshan",
-			"Aéroport de Shanshan",
-			"Flughafen Shanshan",
-			"Pichan Ajroport",
-			"Piqan Airport",
-			"SXJ",
-			"Shanshan Airport",
-			"Shanshan Jichang",
-			"Shànshàn Jīchǎng",
-			"ZWSS",
-			"mo yu ji chang",
-			"pychan yayyrpwrt",
-			"shan shan ji chang",
-			"Пичан Айропорт",
-			"پىچان ئايىرپورت",
-			"墨玉機場",
-			"鄯善机场"
-		],
-		"unLocode": "CNSXJ",
-		"airportLocationCode": "SXJ",
-		"iataCode": "SXJ",
-		"iataCodeSource": "unlocode-location-code",
-		"latitude": "42.9117",
-		"longitude": "90.2475",
-		"countryCode": "CN",
-		"countryName": "China",
-		"admin1Code": "13",
-		"admin2Code": "6504",
-		"stateCode": "XJ",
-		"stateName": "Xinjiang",
-		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2020-01-12"
 	},
 	{
 		"geonameId": 8260769,
@@ -86337,8 +86337,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2024-07-13"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 11493741,
@@ -86582,8 +86582,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2022-06-28"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 7910191,
@@ -86869,8 +86869,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2025-12-08"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 7731089,
@@ -87291,8 +87291,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2023-10-24"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 7910204,
@@ -88740,8 +88740,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 663,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2024-07-13"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 7668807,
@@ -89302,8 +89302,8 @@
 		"stateCode": "XJ",
 		"stateName": "Xinjiang",
 		"elevation": 0,
-		"timezone": "Asia/Urumqi",
-		"modificationDate": "2022-06-28"
+		"timezone": "Asia/Shanghai",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 7731648,
@@ -173702,12 +173702,12 @@
 		"countryCode": "LU",
 		"countryName": "Luxembourg",
 		"admin1Code": "LU",
-		"admin2Code": "04",
+		"admin2Code": "0305",
 		"stateCode": "LU",
 		"stateName": "Luxembourg",
 		"elevation": 376,
 		"timezone": "Europe/Luxembourg",
-		"modificationDate": "2019-02-28"
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 460411,
@@ -224218,6 +224218,27 @@
 		"elevation": 0,
 		"timezone": "Asia/Krasnoyarsk",
 		"modificationDate": "2020-10-25"
+	},
+	{
+		"geonameId": 13732718,
+		"name": "aerodrom Peschanka",
+		"asciiName": "aerodrom Peschanka",
+		"alternateNames": [],
+		"unLocode": null,
+		"airportLocationCode": null,
+		"iataCode": null,
+		"iataCodeSource": null,
+		"latitude": "69.1852",
+		"longitude": "50.24737",
+		"countryCode": "RU",
+		"countryName": "Russia",
+		"admin1Code": "50",
+		"admin2Code": "",
+		"stateCode": "NEN",
+		"stateName": "Nenets",
+		"elevation": 0,
+		"timezone": "Europe/Moscow",
+		"modificationDate": "2026-11-19"
 	},
 	{
 		"geonameId": 12382126,

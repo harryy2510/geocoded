@@ -311232,6 +311232,18 @@
 		"geonameId": 2661148
 	},
 	{
+		"name": "Cologny",
+		"countryCode": "CH",
+		"countryName": "Switzerland",
+		"stateCode": "GE",
+		"stateName": "Geneva",
+		"latitude": "46.21672",
+		"longitude": "6.18041",
+		"population": 6617,
+		"timezone": "Europe/Zurich",
+		"geonameId": 6691492
+	},
+	{
 		"name": "Colombier",
 		"countryCode": "CH",
 		"countryName": "Switzerland",
@@ -397280,7 +397292,7 @@
 		"latitude": "38.95303",
 		"longitude": "75.42783",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280362
 	},
 	{
@@ -397352,7 +397364,7 @@
 		"latitude": "43.48722",
 		"longitude": "82.40722",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538398
 	},
 	{
@@ -397364,7 +397376,7 @@
 		"latitude": "46.28644",
 		"longitude": "90.42119",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529664
 	},
 	{
@@ -397388,7 +397400,7 @@
 		"latitude": "39.19365",
 		"longitude": "77.32605",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8429545
 	},
 	{
@@ -397580,7 +397592,7 @@
 		"latitude": "39.27711",
 		"longitude": "76.51478",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8430255
 	},
 	{
@@ -397616,7 +397628,7 @@
 		"latitude": "42.98861",
 		"longitude": "81.38",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538363
 	},
 	{
@@ -397640,7 +397652,7 @@
 		"latitude": "37.1692",
 		"longitude": "79.68984",
 		"population": 27352,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450722
 	},
 	{
@@ -397652,7 +397664,7 @@
 		"latitude": "39.13528",
 		"longitude": "75.93083",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12453887
 	},
 	{
@@ -397664,7 +397676,7 @@
 		"latitude": "38.33414",
 		"longitude": "85.57003",
 		"population": 4081,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420871
 	},
 	{
@@ -397692,18 +397704,6 @@
 		"geonameId": 6824981
 	},
 	{
-		"name": "Ālā'ĕr",
-		"countryCode": "CN",
-		"countryName": "China",
-		"stateCode": "XJ",
-		"stateName": "Xinjiang",
-		"latitude": "40.54184",
-		"longitude": "81.26566",
-		"population": 126259,
-		"timezone": "Asia/Urumqi",
-		"geonameId": 1529641
-	},
-	{
 		"name": "Alage’er",
 		"countryCode": "CN",
 		"countryName": "China",
@@ -397712,7 +397712,7 @@
 		"latitude": "39.34295",
 		"longitude": "77.90055",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8429431
 	},
 	{
@@ -397724,7 +397724,7 @@
 		"latitude": "41.54667",
 		"longitude": "82.76639",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1540685
 	},
 	{
@@ -397748,7 +397748,7 @@
 		"latitude": "38.58203",
 		"longitude": "77.47622",
 		"population": 23583,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420915
 	},
 	{
@@ -397844,7 +397844,7 @@
 		"latitude": "46.11923",
 		"longitude": "83.09014",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538330
 	},
 	{
@@ -398312,7 +398312,7 @@
 		"latitude": "44.35787",
 		"longitude": "85.35189",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529645
 	},
 	{
@@ -398612,7 +398612,7 @@
 		"latitude": "43.98333",
 		"longitude": "87.53333",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1532301
 	},
 	{
@@ -399380,20 +399380,8 @@
 		"latitude": "40.43083",
 		"longitude": "79.33556",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529643
-	},
-	{
-		"name": "Aqchi",
-		"countryCode": "CN",
-		"countryName": "China",
-		"stateCode": "XJ",
-		"stateName": "Xinjiang",
-		"latitude": "48.05841",
-		"longitude": "86.41629",
-		"population": 0,
-		"timezone": "Asia/Urumqi",
-		"geonameId": 1529489
 	},
 	{
 		"name": "Aqchi",
@@ -399404,7 +399392,7 @@
 		"latitude": "40.9346",
 		"longitude": "78.39975",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529662
 	},
 	{
@@ -399428,7 +399416,7 @@
 		"latitude": "39.12619",
 		"longitude": "76.57337",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1464532
 	},
 	{
@@ -399444,6 +399432,18 @@
 		"geonameId": 1529660
 	},
 	{
+		"name": "Aral",
+		"countryCode": "CN",
+		"countryName": "China",
+		"stateCode": "XJ",
+		"stateName": "Xinjiang",
+		"latitude": "40.54184",
+		"longitude": "81.26566",
+		"population": 126259,
+		"timezone": "Asia/Shanghai",
+		"geonameId": 1529641
+	},
+	{
 		"name": "Araltobe",
 		"countryCode": "CN",
 		"countryName": "China",
@@ -399452,7 +399452,7 @@
 		"latitude": "46.52089",
 		"longitude": "90.21681",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529639
 	},
 	{
@@ -399488,7 +399488,7 @@
 		"latitude": "38.38008",
 		"longitude": "77.31324",
 		"population": 17398,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420916
 	},
 	{
@@ -399500,7 +399500,7 @@
 		"latitude": "36.81295",
 		"longitude": "81.66687",
 		"population": 17941,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450713
 	},
 	{
@@ -399512,7 +399512,7 @@
 		"latitude": "43.79773",
 		"longitude": "81.52435",
 		"population": 19986,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440503
 	},
 	{
@@ -399548,7 +399548,7 @@
 		"latitude": "39.70842",
 		"longitude": "76.17971",
 		"population": 285000,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1281743
 	},
 	{
@@ -399572,7 +399572,7 @@
 		"latitude": "39.67616",
 		"longitude": "76.12017",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 7073339
 	},
 	{
@@ -399608,7 +399608,7 @@
 		"latitude": "40.64092",
 		"longitude": "80.39151",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529634
 	},
 	{
@@ -399632,7 +399632,7 @@
 		"latitude": "47.72457",
 		"longitude": "88.05108",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529632
 	},
 	{
@@ -399656,7 +399656,7 @@
 		"latitude": "43.93033",
 		"longitude": "81.69317",
 		"population": 15427,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440504
 	},
 	{
@@ -399680,7 +399680,7 @@
 		"latitude": "46.85628",
 		"longitude": "83.12263",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538325
 	},
 	{
@@ -399692,7 +399692,7 @@
 		"latitude": "40.95759",
 		"longitude": "80.13574",
 		"population": 11260,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529630
 	},
 	{
@@ -399704,7 +399704,7 @@
 		"latitude": "43.76",
 		"longitude": "80.74472",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538358
 	},
 	{
@@ -399716,7 +399716,7 @@
 		"latitude": "38.65883",
 		"longitude": "77.4664",
 		"population": 15846,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420918
 	},
 	{
@@ -399824,7 +399824,7 @@
 		"latitude": "39.78498",
 		"longitude": "78.54251",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13457413
 	},
 	{
@@ -399980,7 +399980,7 @@
 		"latitude": "38.48908",
 		"longitude": "77.54022",
 		"population": 16951,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420919
 	},
 	{
@@ -400616,7 +400616,7 @@
 		"latitude": "45.91815",
 		"longitude": "85.47453",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529625
 	},
 	{
@@ -401888,7 +401888,7 @@
 		"latitude": "38.45964",
 		"longitude": "77.47904",
 		"population": 39243,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420920
 	},
 	{
@@ -403076,7 +403076,7 @@
 		"latitude": "47.51797",
 		"longitude": "87.74228",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538343
 	},
 	{
@@ -404216,7 +404216,7 @@
 		"latitude": "44.24872",
 		"longitude": "86.3067",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538452
 	},
 	{
@@ -404828,7 +404828,7 @@
 		"latitude": "39.49383",
 		"longitude": "76.74143",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280959
 	},
 	{
@@ -404852,7 +404852,7 @@
 		"latitude": "43.59881",
 		"longitude": "93.00862",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529614
 	},
 	{
@@ -405032,7 +405032,7 @@
 		"latitude": "41.79175",
 		"longitude": "81.86377",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529629
 	},
 	{
@@ -405212,7 +405212,7 @@
 		"latitude": "43.96586",
 		"longitude": "81.24852",
 		"population": 33131,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440489
 	},
 	{
@@ -405272,7 +405272,7 @@
 		"latitude": "39.09029",
 		"longitude": "77.08413",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8429582
 	},
 	{
@@ -406184,7 +406184,7 @@
 		"latitude": "43.83405",
 		"longitude": "87.57416",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 9275963
 	},
 	{
@@ -406604,7 +406604,7 @@
 		"latitude": "44.06385",
 		"longitude": "89.20901",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538470
 	},
 	{
@@ -406652,7 +406652,7 @@
 		"latitude": "47.35249",
 		"longitude": "87.82053",
 		"population": 20414,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529594
 	},
 	{
@@ -406736,7 +406736,7 @@
 		"latitude": "44.53134",
 		"longitude": "86.31978",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529593
 	},
 	{
@@ -407180,7 +407180,7 @@
 		"latitude": "47.30408",
 		"longitude": "85.87979",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538337
 	},
 	{
@@ -407636,7 +407636,7 @@
 		"latitude": "39.24379",
 		"longitude": "88.89959",
 		"population": 7600,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420886
 	},
 	{
@@ -407996,7 +407996,7 @@
 		"latitude": "44.15568",
 		"longitude": "87.98301",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529506
 	},
 	{
@@ -408008,7 +408008,7 @@
 		"latitude": "44.97299",
 		"longitude": "81.02265",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529090
 	},
 	{
@@ -408068,7 +408068,7 @@
 		"latitude": "41.97875",
 		"longitude": "86.63179",
 		"population": 22283,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529584
 	},
 	{
@@ -408260,7 +408260,7 @@
 		"latitude": "44.05317",
 		"longitude": "85.37747",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529580
 	},
 	{
@@ -408464,7 +408464,7 @@
 		"latitude": "41.71543",
 		"longitude": "80.76959",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8564001
 	},
 	{
@@ -408740,7 +408740,7 @@
 		"latitude": "37.06568",
 		"longitude": "79.79997",
 		"population": 27137,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450717
 	},
 	{
@@ -412196,7 +412196,7 @@
 		"latitude": "44.08864",
 		"longitude": "87.6122",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538459
 	},
 	{
@@ -414164,7 +414164,7 @@
 		"latitude": "38.91358",
 		"longitude": "76.16384",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526310
 	},
 	{
@@ -416108,7 +416108,7 @@
 		"latitude": "36.99996",
 		"longitude": "80.78957",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280227
 	},
 	{
@@ -418172,7 +418172,7 @@
 		"latitude": "43.35623",
 		"longitude": "88.30464",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529563
 	},
 	{
@@ -418844,7 +418844,7 @@
 		"latitude": "44.17932",
 		"longitude": "86.59097",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538449
 	},
 	{
@@ -420908,7 +420908,7 @@
 		"latitude": "36.97861",
 		"longitude": "81.09417",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1464540
 	},
 	{
@@ -421040,7 +421040,7 @@
 		"latitude": "37.75555",
 		"longitude": "76.6123",
 		"population": 9678,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420926
 	},
 	{
@@ -422108,7 +422108,7 @@
 		"latitude": "41.63083",
 		"longitude": "81.55528",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1540689
 	},
 	{
@@ -422348,7 +422348,7 @@
 		"latitude": "44.36264",
 		"longitude": "85.58078",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538421
 	},
 	{
@@ -423848,7 +423848,7 @@
 		"latitude": "44.10695",
 		"longitude": "87.27653",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538464
 	},
 	{
@@ -425492,7 +425492,7 @@
 		"latitude": "44.12448",
 		"longitude": "87.32964",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538465
 	},
 	{
@@ -426632,7 +426632,7 @@
 		"latitude": "43.88333",
 		"longitude": "87.48333",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1532302
 	},
 	{
@@ -426752,7 +426752,7 @@
 		"latitude": "46.01068",
 		"longitude": "83.65645",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538408
 	},
 	{
@@ -429752,7 +429752,7 @@
 		"latitude": "44.06412",
 		"longitude": "85.8034",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538424
 	},
 	{
@@ -431204,7 +431204,7 @@
 		"latitude": "38.85739",
 		"longitude": "77.50474",
 		"population": 17579,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420927
 	},
 	{
@@ -432116,7 +432116,7 @@
 		"latitude": "46.67075",
 		"longitude": "84.00739",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538530
 	},
 	{
@@ -432140,7 +432140,7 @@
 		"latitude": "46.64719",
 		"longitude": "83.0743",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538328
 	},
 	{
@@ -432404,7 +432404,7 @@
 		"latitude": "46.3944",
 		"longitude": "83.55709",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529516
 	},
 	{
@@ -432500,7 +432500,7 @@
 		"latitude": "43.85",
 		"longitude": "87.56667",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1532362
 	},
 	{
@@ -432656,7 +432656,7 @@
 		"latitude": "44.05286",
 		"longitude": "87.17036",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538444
 	},
 	{
@@ -432752,7 +432752,7 @@
 		"latitude": "44.15805",
 		"longitude": "86.9663",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538446
 	},
 	{
@@ -432788,7 +432788,7 @@
 		"latitude": "46.05654",
 		"longitude": "90.15125",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529513
 	},
 	{
@@ -432872,7 +432872,7 @@
 		"latitude": "42.96444",
 		"longitude": "87.66111",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529512
 	},
 	{
@@ -436172,7 +436172,7 @@
 		"latitude": "47.1095",
 		"longitude": "87.4881",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529510
 	},
 	{
@@ -438464,7 +438464,7 @@
 		"latitude": "44.4607",
 		"longitude": "84.52827",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538415
 	},
 	{
@@ -439064,7 +439064,7 @@
 		"latitude": "42.94076",
 		"longitude": "89.1862",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13158434
 	},
 	{
@@ -441116,7 +441116,7 @@
 		"latitude": "39.7698",
 		"longitude": "76.64803",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8429365
 	},
 	{
@@ -441149,8 +441149,8 @@
 		"countryName": "China",
 		"stateCode": "TJ",
 		"stateName": "Tianjin",
-		"latitude": "38.99036",
-		"longitude": "117.50911",
+		"latitude": "38.99368",
+		"longitude": "117.50725",
 		"population": 0,
 		"timezone": "Asia/Shanghai",
 		"geonameId": 1810251
@@ -442004,7 +442004,7 @@
 		"latitude": "43.47986",
 		"longitude": "82.22472",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529498
 	},
 	{
@@ -445532,7 +445532,7 @@
 		"latitude": "39.77345",
 		"longitude": "76.97267",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8431187
 	},
 	{
@@ -445808,7 +445808,7 @@
 		"latitude": "37.59929",
 		"longitude": "78.27545",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280327
 	},
 	{
@@ -445820,7 +445820,7 @@
 		"latitude": "43.95486",
 		"longitude": "87.67309",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 9275017
 	},
 	{
@@ -445832,7 +445832,7 @@
 		"latitude": "43.96319",
 		"longitude": "87.62558",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13457414
 	},
 	{
@@ -447176,8 +447176,20 @@
 		"latitude": "38.55643",
 		"longitude": "76.07525",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526289
+	},
+	{
+		"name": "Habahe",
+		"countryCode": "CN",
+		"countryName": "China",
+		"stateCode": "XJ",
+		"stateName": "Xinjiang",
+		"latitude": "48.05841",
+		"longitude": "86.41629",
+		"population": 0,
+		"timezone": "Asia/Shanghai",
+		"geonameId": 1529489
 	},
 	{
 		"name": "Hada",
@@ -448040,7 +448052,7 @@
 		"latitude": "40.25",
 		"longitude": "76.91667",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529403
 	},
 	{
@@ -448172,7 +448184,7 @@
 		"latitude": "43.93846",
 		"longitude": "81.26144",
 		"population": 10407,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440488
 	},
 	{
@@ -448256,7 +448268,7 @@
 		"latitude": "47.76941",
 		"longitude": "88.38008",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8549073
 	},
 	{
@@ -449216,7 +449228,7 @@
 		"latitude": "46.65684",
 		"longitude": "87.77417",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529479
 	},
 	{
@@ -449240,7 +449252,7 @@
 		"latitude": "44.41113",
 		"longitude": "84.30713",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538418
 	},
 	{
@@ -450440,7 +450452,7 @@
 		"latitude": "42.31069",
 		"longitude": "86.39103",
 		"population": 46600,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529475
 	},
 	{
@@ -452012,7 +452024,7 @@
 		"latitude": "43.90845",
 		"longitude": "81.33299",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8563527
 	},
 	{
@@ -452804,7 +452816,7 @@
 		"latitude": "39.61935",
 		"longitude": "76.79134",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8431235
 	},
 	{
@@ -453104,7 +453116,7 @@
 		"latitude": "46.79507",
 		"longitude": "85.7266",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529473
 	},
 	{
@@ -453320,7 +453332,7 @@
 		"latitude": "47.72413",
 		"longitude": "88.21846",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529471
 	},
 	{
@@ -453860,7 +453872,7 @@
 		"latitude": "41.44244",
 		"longitude": "82.86096",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1540684
 	},
 	{
@@ -454076,7 +454088,7 @@
 		"latitude": "44.43248",
 		"longitude": "84.672",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13293448
 	},
 	{
@@ -455276,7 +455288,7 @@
 		"latitude": "46.51872",
 		"longitude": "86.00214",
 		"population": 22000,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529452
 	},
 	{
@@ -456596,7 +456608,7 @@
 		"latitude": "38.80898",
 		"longitude": "77.44861",
 		"population": 34658,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420928
 	},
 	{
@@ -456800,7 +456812,7 @@
 		"latitude": "44.58304",
 		"longitude": "84.77024",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538413
 	},
 	{
@@ -459800,7 +459812,7 @@
 		"latitude": "43.92551",
 		"longitude": "81.41212",
 		"population": 18537,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440491
 	},
 	{
@@ -460532,7 +460544,7 @@
 		"latitude": "43.95694",
 		"longitude": "80.85028",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529443
 	},
 	{
@@ -460724,7 +460736,7 @@
 		"latitude": "43.22732",
 		"longitude": "81.89209",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 9884151
 	},
 	{
@@ -460736,7 +460748,7 @@
 		"latitude": "46.36994",
 		"longitude": "83.83711",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538529
 	},
 	{
@@ -461072,7 +461084,7 @@
 		"latitude": "43.87141",
 		"longitude": "87.42018",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 9275276
 	},
 	{
@@ -461096,7 +461108,7 @@
 		"latitude": "44.05305",
 		"longitude": "80.87173",
 		"population": 360000,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 11694038
 	},
 	{
@@ -461660,7 +461672,7 @@
 		"latitude": "44.19015",
 		"longitude": "86.89982",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529438
 	},
 	{
@@ -461816,7 +461828,7 @@
 		"latitude": "44.6984",
 		"longitude": "84.83362",
 		"population": 29891,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13561750
 	},
 	{
@@ -462032,7 +462044,7 @@
 		"latitude": "44.42356",
 		"longitude": "84.90069",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529355
 	},
 	{
@@ -462056,7 +462068,7 @@
 		"latitude": "43.57806",
 		"longitude": "81.22389",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538367
 	},
 	{
@@ -462116,7 +462128,7 @@
 		"latitude": "46.60109",
 		"longitude": "83.92013",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529430
 	},
 	{
@@ -462140,7 +462152,7 @@
 		"latitude": "47.49969",
 		"longitude": "85.61828",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529429
 	},
 	{
@@ -462152,7 +462164,7 @@
 		"latitude": "47.0977",
 		"longitude": "87.44536",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538344
 	},
 	{
@@ -462380,7 +462392,7 @@
 		"latitude": "37.19652",
 		"longitude": "79.70572",
 		"population": 24524,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450725
 	},
 	{
@@ -462668,7 +462680,7 @@
 		"latitude": "41.26917",
 		"longitude": "80.56",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529432
 	},
 	{
@@ -462908,7 +462920,7 @@
 		"latitude": "39.44724",
 		"longitude": "76.70287",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8431177
 	},
 	{
@@ -465572,7 +465584,7 @@
 		"latitude": "36.85481",
 		"longitude": "81.63545",
 		"population": 17612,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450714
 	},
 	{
@@ -466664,7 +466676,7 @@
 		"latitude": "43.99747",
 		"longitude": "89.18976",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529419
 	},
 	{
@@ -467180,7 +467192,7 @@
 		"latitude": "44.59939",
 		"longitude": "82.89307",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13312467
 	},
 	{
@@ -467696,7 +467708,7 @@
 		"latitude": "44.31366",
 		"longitude": "85.68466",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538422
 	},
 	{
@@ -470300,7 +470312,7 @@
 		"latitude": "44.54107",
 		"longitude": "84.83259",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538417
 	},
 	{
@@ -471848,7 +471860,7 @@
 		"latitude": "43.90798",
 		"longitude": "81.3434",
 		"population": 10232,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440490
 	},
 	{
@@ -471872,7 +471884,7 @@
 		"latitude": "37.48419",
 		"longitude": "79.59562",
 		"population": 40892,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450862
 	},
 	{
@@ -471908,7 +471920,7 @@
 		"latitude": "37.30096",
 		"longitude": "79.60128",
 		"population": 75730,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12258245
 	},
 	{
@@ -472184,7 +472196,7 @@
 		"latitude": "38.30623",
 		"longitude": "77.50547",
 		"population": 14756,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420929
 	},
 	{
@@ -472196,7 +472208,7 @@
 		"latitude": "46.85591",
 		"longitude": "89.69761",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529397
 	},
 	{
@@ -472220,7 +472232,7 @@
 		"latitude": "44.05802",
 		"longitude": "81.47606",
 		"population": 11766,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440505
 	},
 	{
@@ -472268,7 +472280,7 @@
 		"latitude": "43.67002",
 		"longitude": "81.5431",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538368
 	},
 	{
@@ -472628,7 +472640,7 @@
 		"latitude": "40.73056",
 		"longitude": "77.54194",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529405
 	},
 	{
@@ -472640,7 +472652,7 @@
 		"latitude": "46.76786",
 		"longitude": "83.14697",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538326
 	},
 	{
@@ -472676,7 +472688,7 @@
 		"latitude": "43.84694",
 		"longitude": "82.18972",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538386
 	},
 	{
@@ -472688,7 +472700,7 @@
 		"latitude": "43.74927",
 		"longitude": "82.63556",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538391
 	},
 	{
@@ -472712,7 +472724,7 @@
 		"latitude": "47.19094",
 		"longitude": "86.39848",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529395
 	},
 	{
@@ -472784,7 +472796,7 @@
 		"latitude": "36.30431",
 		"longitude": "79.91459",
 		"population": 6099,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450718
 	},
 	{
@@ -472808,7 +472820,7 @@
 		"latitude": "37.65977",
 		"longitude": "80.08033",
 		"population": 10992,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450863
 	},
 	{
@@ -472928,7 +472940,7 @@
 		"latitude": "38.03511",
 		"longitude": "75.07348",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526543
 	},
 	{
@@ -472964,7 +472976,7 @@
 		"latitude": "40.50213",
 		"longitude": "79.04722",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529408
 	},
 	{
@@ -473192,7 +473204,7 @@
 		"latitude": "42.16056",
 		"longitude": "82.63472",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529391
 	},
 	{
@@ -473228,7 +473240,7 @@
 		"latitude": "39.38533",
 		"longitude": "76.54701",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8431176
 	},
 	{
@@ -473240,7 +473252,7 @@
 		"latitude": "38.65126",
 		"longitude": "76.46791",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280832
 	},
 	{
@@ -473252,7 +473264,7 @@
 		"latitude": "46.17755",
 		"longitude": "89.92692",
 		"population": 11077,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420831
 	},
 	{
@@ -473276,7 +473288,7 @@
 		"latitude": "41.82056",
 		"longitude": "82.43472",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529388
 	},
 	{
@@ -473288,7 +473300,7 @@
 		"latitude": "41.08364",
 		"longitude": "80.51839",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529389
 	},
 	{
@@ -473300,7 +473312,7 @@
 		"latitude": "39.876",
 		"longitude": "76.446",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280829
 	},
 	{
@@ -473324,7 +473336,7 @@
 		"latitude": "47.01741",
 		"longitude": "87.68753",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538345
 	},
 	{
@@ -473336,7 +473348,7 @@
 		"latitude": "43.78286",
 		"longitude": "90.94093",
 		"population": 8361,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 11895425
 	},
 	{
@@ -473900,7 +473912,7 @@
 		"latitude": "37.29601",
 		"longitude": "79.63575",
 		"population": 43212,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450864
 	},
 	{
@@ -473972,7 +473984,7 @@
 		"latitude": "45.57551",
 		"longitude": "84.91801",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13312465
 	},
 	{
@@ -474080,7 +474092,7 @@
 		"latitude": "38.62275",
 		"longitude": "77.27948",
 		"population": 16413,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420930
 	},
 	{
@@ -474092,7 +474104,7 @@
 		"latitude": "37.35453",
 		"longitude": "79.72101",
 		"population": 26346,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450865
 	},
 	{
@@ -474104,7 +474116,7 @@
 		"latitude": "45.82673",
 		"longitude": "83.3098",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529364
 	},
 	{
@@ -475784,7 +475796,7 @@
 		"latitude": "44.63946",
 		"longitude": "85.78104",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529348
 	},
 	{
@@ -475796,7 +475808,7 @@
 		"latitude": "44.11873",
 		"longitude": "88.86423",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538472
 	},
 	{
@@ -475916,7 +475928,7 @@
 		"latitude": "47.89027",
 		"longitude": "88.10956",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8549085
 	},
 	{
@@ -476720,7 +476732,7 @@
 		"latitude": "44.1994",
 		"longitude": "86.45808",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538450
 	},
 	{
@@ -482348,7 +482360,7 @@
 		"latitude": "44.07613",
 		"longitude": "87.40221",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538463
 	},
 	{
@@ -483032,7 +483044,7 @@
 		"latitude": "44.60243",
 		"longitude": "85.91098",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538420
 	},
 	{
@@ -483260,7 +483272,7 @@
 		"latitude": "46.08891",
 		"longitude": "85.68885",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529103
 	},
 	{
@@ -484700,7 +484712,7 @@
 		"latitude": "38.94251",
 		"longitude": "76.05569",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526300
 	},
 	{
@@ -487124,7 +487136,7 @@
 		"latitude": "37.07891",
 		"longitude": "80.18182",
 		"population": 18127,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280691
 	},
 	{
@@ -487436,7 +487448,7 @@
 		"latitude": "43.86667",
 		"longitude": "87.78333",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1532378
 	},
 	{
@@ -488108,7 +488120,7 @@
 		"latitude": "41.77953",
 		"longitude": "84.27049",
 		"population": 43314,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529333
 	},
 	{
@@ -488180,7 +488192,7 @@
 		"latitude": "40.46402",
 		"longitude": "90.85692",
 		"population": 1713,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420887
 	},
 	{
@@ -491600,7 +491612,7 @@
 		"latitude": "44.30638",
 		"longitude": "86.21371",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529323
 	},
 	{
@@ -491672,7 +491684,7 @@
 		"latitude": "37.27516",
 		"longitude": "79.67807",
 		"population": 23408,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450866
 	},
 	{
@@ -491744,7 +491756,7 @@
 		"latitude": "38.92607",
 		"longitude": "76.19967",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526301
 	},
 	{
@@ -492512,7 +492524,7 @@
 		"latitude": "38.84192",
 		"longitude": "76.07969",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526299
 	},
 	{
@@ -493316,7 +493328,7 @@
 		"latitude": "43.85324",
 		"longitude": "81.93701",
 		"population": 12069,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440506
 	},
 	{
@@ -494276,7 +494288,7 @@
 		"latitude": "38.89697",
 		"longitude": "77.63911",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280604
 	},
 	{
@@ -494912,7 +494924,7 @@
 		"latitude": "45.51637",
 		"longitude": "83.86374",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529311
 	},
 	{
@@ -496280,7 +496292,7 @@
 		"latitude": "38.45396",
 		"longitude": "77.24918",
 		"population": 32419,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420931
 	},
 	{
@@ -496520,7 +496532,7 @@
 		"latitude": "43.83013",
 		"longitude": "90.27983",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13293446
 	},
 	{
@@ -496592,7 +496604,7 @@
 		"latitude": "46.81282",
 		"longitude": "85.79743",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538334
 	},
 	{
@@ -496964,7 +496976,7 @@
 		"latitude": "43.2",
 		"longitude": "82.63333",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529299
 	},
 	{
@@ -501428,7 +501440,7 @@
 		"latitude": "43.78894",
 		"longitude": "82.49599",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529290
 	},
 	{
@@ -502088,7 +502100,7 @@
 		"latitude": "37.06543",
 		"longitude": "82.68041",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280555
 	},
 	{
@@ -502232,7 +502244,7 @@
 		"latitude": "37.11226",
 		"longitude": "79.92078",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8992324
 	},
 	{
@@ -502376,7 +502388,7 @@
 		"latitude": "36.32472",
 		"longitude": "81.05972",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280416
 	},
 	{
@@ -502820,7 +502832,7 @@
 		"latitude": "38.55011",
 		"longitude": "77.20825",
 		"population": 19809,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420932
 	},
 	{
@@ -503540,7 +503552,7 @@
 		"latitude": "41.45083",
 		"longitude": "82.5766",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1540681
 	},
 	{
@@ -506144,7 +506156,7 @@
 		"latitude": "37.31739",
 		"longitude": "79.70532",
 		"population": 35142,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450867
 	},
 	{
@@ -506516,7 +506528,7 @@
 		"latitude": "46.47974",
 		"longitude": "90.74567",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529283
 	},
 	{
@@ -506528,7 +506540,7 @@
 		"latitude": "46.81696",
 		"longitude": "85.95543",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538335
 	},
 	{
@@ -506564,7 +506576,7 @@
 		"latitude": "37.88256",
 		"longitude": "77.41255",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279602
 	},
 	{
@@ -506600,7 +506612,7 @@
 		"latitude": "46.20493",
 		"longitude": "82.98518",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13293447
 	},
 	{
@@ -506624,7 +506636,7 @@
 		"latitude": "44.20276",
 		"longitude": "80.41639",
 		"population": 71446,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529377
 	},
 	{
@@ -506648,7 +506660,7 @@
 		"latitude": "41.58389",
 		"longitude": "81.36639",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529276
 	},
 	{
@@ -506672,7 +506684,7 @@
 		"latitude": "46.68861",
 		"longitude": "83.4053",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538327
 	},
 	{
@@ -506708,7 +506720,7 @@
 		"latitude": "38.34239",
 		"longitude": "77.30534",
 		"population": 12972,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420933
 	},
 	{
@@ -506720,7 +506732,7 @@
 		"latitude": "38.04595",
 		"longitude": "75.95737",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526277
 	},
 	{
@@ -507860,7 +507872,7 @@
 		"latitude": "38.93594",
 		"longitude": "76.11552",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526308
 	},
 	{
@@ -508892,7 +508904,7 @@
 		"latitude": "40.56667",
 		"longitude": "79.61667",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529262
 	},
 	{
@@ -509108,7 +509120,7 @@
 		"latitude": "41.53778",
 		"longitude": "82.91139",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529259
 	},
 	{
@@ -509348,7 +509360,7 @@
 		"latitude": "44.90257",
 		"longitude": "82.07629",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13312464
 	},
 	{
@@ -509528,7 +509540,7 @@
 		"latitude": "46.668",
 		"longitude": "90.38032",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529256
 	},
 	{
@@ -510884,7 +510896,7 @@
 		"latitude": "44.08253",
 		"longitude": "88.96515",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538471
 	},
 	{
@@ -512132,7 +512144,7 @@
 		"latitude": "43.54534",
 		"longitude": "80.99907",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538359
 	},
 	{
@@ -512156,7 +512168,7 @@
 		"latitude": "44.06437",
 		"longitude": "90.05849",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538501
 	},
 	{
@@ -513956,7 +513968,7 @@
 		"latitude": "37.07861",
 		"longitude": "82.81528",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1346647
 	},
 	{
@@ -514784,7 +514796,7 @@
 		"latitude": "41.76611",
 		"longitude": "82.1475",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529224
 	},
 	{
@@ -514880,7 +514892,7 @@
 		"latitude": "43.71947",
 		"longitude": "81.86398",
 		"population": 19621,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450711
 	},
 	{
@@ -515240,7 +515252,7 @@
 		"latitude": "44.12801",
 		"longitude": "87.62083",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538460
 	},
 	{
@@ -517100,7 +517112,7 @@
 		"latitude": "44.08958",
 		"longitude": "88.88887",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529232
 	},
 	{
@@ -517760,7 +517772,7 @@
 		"latitude": "40.91889",
 		"longitude": "78.72278",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1540675
 	},
 	{
@@ -517772,7 +517784,7 @@
 		"latitude": "38.93824",
 		"longitude": "76.31538",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526307
 	},
 	{
@@ -517832,7 +517844,7 @@
 		"latitude": "37.46559",
 		"longitude": "79.91012",
 		"population": 9576,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450719
 	},
 	{
@@ -517892,7 +517904,7 @@
 		"latitude": "39.30174",
 		"longitude": "77.81786",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1280050
 	},
 	{
@@ -517916,7 +517928,7 @@
 		"latitude": "39.21252",
 		"longitude": "76.66494",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8430247
 	},
 	{
@@ -519380,7 +519392,7 @@
 		"latitude": "46.63723",
 		"longitude": "83.82391",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538329
 	},
 	{
@@ -521060,7 +521072,7 @@
 		"latitude": "42.8675",
 		"longitude": "90.20463",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529214
 	},
 	{
@@ -522188,7 +522200,7 @@
 		"latitude": "41.22323",
 		"longitude": "82.77787",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529075
 	},
 	{
@@ -528896,7 +528908,7 @@
 		"latitude": "44.05147",
 		"longitude": "80.87471",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529184
 	},
 	{
@@ -529184,7 +529196,7 @@
 		"latitude": "43.83608",
 		"longitude": "87.65511",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1532423
 	},
 	{
@@ -529676,7 +529688,7 @@
 		"latitude": "39.40144",
 		"longitude": "76.05336",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279987
 	},
 	{
@@ -530120,7 +530132,7 @@
 		"latitude": "44.68907",
 		"longitude": "85.70456",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538412
 	},
 	{
@@ -530552,7 +530564,7 @@
 		"latitude": "44.37313",
 		"longitude": "84.226",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529178
 	},
 	{
@@ -530996,7 +531008,7 @@
 		"latitude": "41.96194",
 		"longitude": "86.47667",
 		"population": 8722,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1537890
 	},
 	{
@@ -532280,7 +532292,7 @@
 		"latitude": "38.78407",
 		"longitude": "76.20033",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526296
 	},
 	{
@@ -533060,7 +533072,7 @@
 		"latitude": "43.94222",
 		"longitude": "82.12667",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538385
 	},
 	{
@@ -533324,7 +533336,7 @@
 		"latitude": "38.54516",
 		"longitude": "77.25732",
 		"population": 34554,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420934
 	},
 	{
@@ -534848,7 +534860,7 @@
 		"latitude": "39.0763",
 		"longitude": "77.11814",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8429549
 	},
 	{
@@ -534872,7 +534884,7 @@
 		"latitude": "43.41353",
 		"longitude": "83.05389",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538396
 	},
 	{
@@ -534908,7 +534920,7 @@
 		"latitude": "41.33995",
 		"longitude": "82.42991",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8563988
 	},
 	{
@@ -537552,7 +537564,7 @@
 		"geonameId": 1793073
 	},
 	{
-		"name": "Tashqorghan",
+		"name": "Tashkurgan",
 		"countryCode": "CN",
 		"countryName": "China",
 		"stateCode": "XJ",
@@ -537560,7 +537572,7 @@
 		"latitude": "37.77763",
 		"longitude": "75.22478",
 		"population": 8919,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279901
 	},
 	{
@@ -537596,7 +537608,7 @@
 		"latitude": "38.46667",
 		"longitude": "85.63333",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279903
 	},
 	{
@@ -537764,7 +537776,7 @@
 		"latitude": "43.21669",
 		"longitude": "81.83973",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529147
 	},
 	{
@@ -537896,7 +537908,7 @@
 		"latitude": "42.25857",
 		"longitude": "86.8573",
 		"population": 32541,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529451
 	},
 	{
@@ -539228,7 +539240,7 @@
 		"latitude": "46.16669",
 		"longitude": "84.42834",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529134
 	},
 	{
@@ -539240,7 +539252,7 @@
 		"latitude": "43.91667",
 		"longitude": "87.78333",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1532368
 	},
 	{
@@ -539528,7 +539540,7 @@
 		"latitude": "39.13039",
 		"longitude": "76.99404",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8429588
 	},
 	{
@@ -539540,7 +539552,7 @@
 		"latitude": "39.51068",
 		"longitude": "76.73251",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8431265
 	},
 	{
@@ -539684,7 +539696,7 @@
 		"latitude": "43.51694",
 		"longitude": "82.06222",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538400
 	},
 	{
@@ -539864,7 +539876,7 @@
 		"latitude": "44.54537",
 		"longitude": "83.57278",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529127
 	},
 	{
@@ -539888,7 +539900,7 @@
 		"latitude": "45.93267",
 		"longitude": "83.60413",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529124
 	},
 	{
@@ -541016,7 +541028,7 @@
 		"latitude": "47.43403",
 		"longitude": "85.87113",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538336
 	},
 	{
@@ -541028,7 +541040,7 @@
 		"latitude": "39.37443",
 		"longitude": "75.86153",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13196618
 	},
 	{
@@ -541040,7 +541052,7 @@
 		"latitude": "42.79157",
 		"longitude": "88.65445",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529126
 	},
 	{
@@ -541052,7 +541064,7 @@
 		"latitude": "47.27428",
 		"longitude": "86.12794",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529120
 	},
 	{
@@ -541712,7 +541724,7 @@
 		"latitude": "39.15088",
 		"longitude": "77.78813",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279844
 	},
 	{
@@ -541784,7 +541796,7 @@
 		"latitude": "41.36861",
 		"longitude": "79.96278",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529116
 	},
 	{
@@ -541952,7 +541964,7 @@
 		"latitude": "36.84839",
 		"longitude": "81.47133",
 		"population": 14573,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450715
 	},
 	{
@@ -541988,7 +542000,7 @@
 		"latitude": "37.24227",
 		"longitude": "79.69283",
 		"population": 18800,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450868
 	},
 	{
@@ -542036,7 +542048,7 @@
 		"latitude": "38.36309",
 		"longitude": "77.23151",
 		"population": 29579,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420983
 	},
 	{
@@ -542060,7 +542072,7 @@
 		"latitude": "38.76829",
 		"longitude": "76.31012",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526295
 	},
 	{
@@ -542216,7 +542228,7 @@
 		"latitude": "43.51071",
 		"longitude": "83.4597",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 9884155
 	},
 	{
@@ -542348,7 +542360,7 @@
 		"latitude": "37.34488",
 		"longitude": "79.7681",
 		"population": 24685,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450869
 	},
 	{
@@ -542444,7 +542456,7 @@
 		"latitude": "44.28848",
 		"longitude": "85.85731",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538423
 	},
 	{
@@ -545636,7 +545648,7 @@
 		"latitude": "43.75598",
 		"longitude": "81.86063",
 		"population": 18669,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450712
 	},
 	{
@@ -546824,7 +546836,7 @@
 		"latitude": "41.27548",
 		"longitude": "80.23612",
 		"population": 83110,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529088
 	},
 	{
@@ -547052,7 +547064,7 @@
 		"latitude": "39.69179",
 		"longitude": "77.27846",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8431129
 	},
 	{
@@ -547244,7 +547256,7 @@
 		"latitude": "37.32019",
 		"longitude": "79.55926",
 		"population": 16400,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450870
 	},
 	{
@@ -547496,7 +547508,7 @@
 		"latitude": "38.3618",
 		"longitude": "77.12973",
 		"population": 31525,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420984
 	},
 	{
@@ -547856,7 +547868,7 @@
 		"latitude": "44.19212",
 		"longitude": "86.79624",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538448
 	},
 	{
@@ -548792,7 +548804,7 @@
 		"latitude": "40.45056",
 		"longitude": "80.48444",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529493
 	},
 	{
@@ -548996,7 +549008,7 @@
 		"latitude": "39.71837",
 		"longitude": "75.25596",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279783
 	},
 	{
@@ -549248,7 +549260,7 @@
 		"latitude": "41.21464",
 		"longitude": "79.23168",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529084
 	},
 	{
@@ -549308,7 +549320,7 @@
 		"latitude": "39.47054",
 		"longitude": "75.98271",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13196619
 	},
 	{
@@ -549356,7 +549368,7 @@
 		"latitude": "39.02211",
 		"longitude": "88.13317",
 		"population": 4360,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12420891
 	},
 	{
@@ -550124,7 +550136,7 @@
 		"latitude": "47.5225",
 		"longitude": "86.21583",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538339
 	},
 	{
@@ -550232,7 +550244,7 @@
 		"latitude": "46.3434",
 		"longitude": "86.23456",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529073
 	},
 	{
@@ -550256,7 +550268,7 @@
 		"latitude": "39.81582",
 		"longitude": "77.36649",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279748
 	},
 	{
@@ -550268,7 +550280,7 @@
 		"latitude": "47.79623",
 		"longitude": "87.9663",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529071
 	},
 	{
@@ -553508,7 +553520,7 @@
 		"latitude": "45.1285",
 		"longitude": "85.04457",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529066
 	},
 	{
@@ -555032,7 +555044,7 @@
 		"latitude": "39.46831",
 		"longitude": "76.6177",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8431264
 	},
 	{
@@ -555788,7 +555800,7 @@
 		"latitude": "44.07289",
 		"longitude": "89.56193",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538469
 	},
 	{
@@ -556148,7 +556160,7 @@
 		"latitude": "44.33478",
 		"longitude": "84.57902",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538419
 	},
 	{
@@ -556184,7 +556196,7 @@
 		"latitude": "44.06593",
 		"longitude": "89.73856",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529057
 	},
 	{
@@ -556748,7 +556760,7 @@
 		"latitude": "44.05467",
 		"longitude": "85.5171",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538425
 	},
 	{
@@ -557024,7 +557036,7 @@
 		"latitude": "44.53377",
 		"longitude": "84.62708",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538416
 	},
 	{
@@ -559508,7 +559520,7 @@
 		"latitude": "43.7852",
 		"longitude": "87.63545",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 9275564
 	},
 	{
@@ -560636,7 +560648,7 @@
 		"latitude": "41.5468",
 		"longitude": "82.6096",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529049
 	},
 	{
@@ -564284,7 +564296,7 @@
 		"latitude": "47.35574",
 		"longitude": "88.01785",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529044
 	},
 	{
@@ -565064,7 +565076,7 @@
 		"latitude": "36.98171",
 		"longitude": "81.36469",
 		"population": 4312,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450716
 	},
 	{
@@ -565592,7 +565604,7 @@
 		"latitude": "43.45005",
 		"longitude": "82.95914",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 9884154
 	},
 	{
@@ -568820,7 +568832,7 @@
 		"latitude": "44.1584",
 		"longitude": "87.58578",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538461
 	},
 	{
@@ -569828,7 +569840,7 @@
 		"latitude": "43.77332",
 		"longitude": "87.58879",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 9275960
 	},
 	{
@@ -570356,7 +570368,7 @@
 		"latitude": "42.06321",
 		"longitude": "86.57185",
 		"population": 31773,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529031
 	},
 	{
@@ -570608,7 +570620,7 @@
 		"latitude": "38.99408",
 		"longitude": "77.66083",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279616
 	},
 	{
@@ -571736,7 +571748,7 @@
 		"latitude": "37.4119",
 		"longitude": "79.51429",
 		"population": 33949,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450871
 	},
 	{
@@ -571940,7 +571952,7 @@
 		"latitude": "38.38771",
 		"longitude": "77.22931",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13457412
 	},
 	{
@@ -571952,7 +571964,7 @@
 		"latitude": "39.27374",
 		"longitude": "76.58448",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8430256
 	},
 	{
@@ -572012,7 +572024,7 @@
 		"latitude": "41.3525",
 		"longitude": "79.46861",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529024
 	},
 	{
@@ -572036,7 +572048,7 @@
 		"latitude": "41.34639",
 		"longitude": "82.65083",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1540680
 	},
 	{
@@ -572048,7 +572060,7 @@
 		"latitude": "38.92583",
 		"longitude": "76.17139",
 		"population": 31113,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279590
 	},
 	{
@@ -572072,7 +572084,7 @@
 		"latitude": "43.96612",
 		"longitude": "81.15502",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 9884158
 	},
 	{
@@ -572204,7 +572216,7 @@
 		"latitude": "36.66667",
 		"longitude": "83.23333",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279586
 	},
 	{
@@ -572504,7 +572516,7 @@
 		"latitude": "38.34075",
 		"longitude": "77.46915",
 		"population": 27038,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440484
 	},
 	{
@@ -572516,7 +572528,7 @@
 		"latitude": "38.64272",
 		"longitude": "76.1954",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526292
 	},
 	{
@@ -572804,7 +572816,7 @@
 		"latitude": "37.96111",
 		"longitude": "77.24917",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1346620
 	},
 	{
@@ -572864,7 +572876,7 @@
 		"latitude": "41.20417",
 		"longitude": "79.45806",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1540676
 	},
 	{
@@ -572948,7 +572960,7 @@
 		"latitude": "37.25468",
 		"longitude": "79.90014",
 		"population": 10253,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450720
 	},
 	{
@@ -572996,7 +573008,7 @@
 		"latitude": "41.16454",
 		"longitude": "80.26327",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13216211
 	},
 	{
@@ -573356,7 +573368,7 @@
 		"latitude": "39.51068",
 		"longitude": "76.80144",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8431236
 	},
 	{
@@ -573512,7 +573524,7 @@
 		"latitude": "39.16538",
 		"longitude": "77.62035",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8429518
 	},
 	{
@@ -573524,7 +573536,7 @@
 		"latitude": "38.31368",
 		"longitude": "77.22775",
 		"population": 10582,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440485
 	},
 	{
@@ -573584,7 +573596,7 @@
 		"latitude": "37.37312",
 		"longitude": "79.77745",
 		"population": 11485,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450872
 	},
 	{
@@ -573596,7 +573608,7 @@
 		"latitude": "38.97341",
 		"longitude": "76.29106",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8526304
 	},
 	{
@@ -574232,7 +574244,7 @@
 		"latitude": "37.58491",
 		"longitude": "80.18401",
 		"population": 19828,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450721
 	},
 	{
@@ -574388,7 +574400,7 @@
 		"latitude": "43.24968",
 		"longitude": "94.68801",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12725745
 	},
 	{
@@ -574532,7 +574544,7 @@
 		"latitude": "42.82352",
 		"longitude": "93.51632",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13158433
 	},
 	{
@@ -576176,7 +576188,7 @@
 		"latitude": "41.55248",
 		"longitude": "82.39179",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8563989
 	},
 	{
@@ -577208,7 +577220,7 @@
 		"latitude": "39.71184",
 		"longitude": "77.74601",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 8430547
 	},
 	{
@@ -577496,7 +577508,7 @@
 		"latitude": "39.23503",
 		"longitude": "76.76819",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279564
 	},
 	{
@@ -578120,7 +578132,7 @@
 		"latitude": "39.08335",
 		"longitude": "77.56662",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279552
 	},
 	{
@@ -578156,7 +578168,7 @@
 		"latitude": "41.33699",
 		"longitude": "86.25663",
 		"population": 22474,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1529001
 	},
 	{
@@ -579356,7 +579368,7 @@
 		"latitude": "46.70969",
 		"longitude": "84.04502",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538332
 	},
 	{
@@ -579440,7 +579452,7 @@
 		"latitude": "44.0467",
 		"longitude": "87.12908",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1538443
 	},
 	{
@@ -580016,7 +580028,7 @@
 		"latitude": "37.28333",
 		"longitude": "78.76667",
 		"population": 13027,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1279524
 	},
 	{
@@ -580340,7 +580352,7 @@
 		"latitude": "43.53682",
 		"longitude": "83.27864",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 9884156
 	},
 	{
@@ -582992,7 +583004,7 @@
 		"latitude": "43.15295",
 		"longitude": "81.11777",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 1528992
 	},
 	{
@@ -583220,7 +583232,7 @@
 		"latitude": "37.21421",
 		"longitude": "79.62897",
 		"population": 52165,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12450873
 	},
 	{
@@ -586316,7 +586328,7 @@
 		"latitude": "45.69365",
 		"longitude": "85.13769",
 		"population": 0,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 13312466
 	},
 	{
@@ -589112,7 +589124,7 @@
 		"latitude": "38.21581",
 		"longitude": "77.03419",
 		"population": 10504,
-		"timezone": "Asia/Urumqi",
+		"timezone": "Asia/Shanghai",
 		"geonameId": 12440487
 	},
 	{
@@ -611026,6 +611038,18 @@
 		"population": 4695,
 		"timezone": "America/Curacao",
 		"geonameId": 3513861
+	},
+	{
+		"name": "Cher Asile",
+		"countryCode": "CW",
+		"countryName": "Curacao",
+		"stateCode": "",
+		"stateName": "",
+		"latitude": "12.10667",
+		"longitude": "-68.91528",
+		"population": 734,
+		"timezone": "America/Curacao",
+		"geonameId": 3740337
 	},
 	{
 		"name": "Dorp Soto",
@@ -792598,6 +792622,18 @@
 		"population": 5790,
 		"timezone": "Europe/Copenhagen",
 		"geonameId": 2620528
+	},
+	{
+		"name": "Hellerup",
+		"countryCode": "DK",
+		"countryName": "Denmark",
+		"stateCode": "84",
+		"stateName": "Capital Region",
+		"latitude": "55.73204",
+		"longitude": "12.57093",
+		"population": 18781,
+		"timezone": "Europe/Copenhagen",
+		"geonameId": 2620516
 	},
 	{
 		"name": "Helsinge",
@@ -1181266,6 +1181302,18 @@
 		"population": 151255,
 		"timezone": "Africa/Accra",
 		"geonameId": 2299522
+	},
+	{
+		"name": "Kokoago",
+		"countryCode": "GH",
+		"countryName": "Ghana",
+		"stateCode": "14",
+		"stateName": "Bono East",
+		"latitude": "7.71963",
+		"longitude": "-2.05634",
+		"population": 5000,
+		"timezone": "Africa/Accra",
+		"geonameId": 12105801
 	},
 	{
 		"name": "Konongo",
@@ -1963824,18 +1963872,6 @@
 		"geonameId": 2350027
 	},
 	{
-		"name": "Amua Ichemidiara",
-		"countryCode": "NG",
-		"countryName": "Nigeria",
-		"stateCode": "DE",
-		"stateName": "Delta",
-		"latitude": "5.66526",
-		"longitude": "5.76564",
-		"population": 2000000,
-		"timezone": "Africa/Lagos",
-		"geonameId": 2338612
-	},
-	{
 		"name": "Anaku",
 		"countryCode": "NG",
 		"countryName": "Nigeria",
@@ -1967014,6 +1967050,18 @@
 		"population": 0,
 		"timezone": "Africa/Lagos",
 		"geonameId": 2339220
+	},
+	{
+		"name": "Ichemidiara Commuity",
+		"countryCode": "NG",
+		"countryName": "Nigeria",
+		"stateCode": "DE",
+		"stateName": "Delta",
+		"latitude": "5.66526",
+		"longitude": "5.76564",
+		"population": 5000,
+		"timezone": "Africa/Lagos",
+		"geonameId": 2338612
 	},
 	{
 		"name": "Icheu",
@@ -2004010,6 +2004058,18 @@
 		"population": 539,
 		"timezone": "Europe/Oslo",
 		"geonameId": 777728
+	},
+	{
+		"name": "Jar",
+		"countryCode": "NO",
+		"countryName": "Norway",
+		"stateCode": "02",
+		"stateName": "Akershus",
+		"latitude": "59.91667",
+		"longitude": "10.61667",
+		"population": 7271,
+		"timezone": "Europe/Oslo",
+		"geonameId": 3150915
 	},
 	{
 		"name": "Jaren",
@@ -2785524,6 +2785584,18 @@
 		"geonameId": 4176509
 	},
 	{
+		"name": "Villanova",
+		"countryCode": "US",
+		"countryName": "United States",
+		"stateCode": "PA",
+		"stateName": "Pennsylvania",
+		"latitude": "40.03733",
+		"longitude": "-75.34908",
+		"population": 8213,
+		"timezone": "America/New_York",
+		"geonameId": 5217246
+	},
+	{
 		"name": "Villas",
 		"countryCode": "US",
 		"countryName": "United States",
@@ -2797318,6 +2797390,18 @@
 		"population": 3445,
 		"timezone": "America/Chicago",
 		"geonameId": 4555211
+	},
+	{
+		"name": "Wexford",
+		"countryCode": "US",
+		"countryName": "United States",
+		"stateCode": "PA",
+		"stateName": "Pennsylvania",
+		"latitude": "40.62646",
+		"longitude": "-80.05589",
+		"population": 25763,
+		"timezone": "America/New_York",
+		"geonameId": 5219062
 	},
 	{
 		"name": "Weyauwega",
@@ -2843386,6 +2843470,30 @@
 		"population": 4065,
 		"timezone": "Africa/Johannesburg",
 		"geonameId": 957995
+	},
+	{
+		"name": "Sandown",
+		"countryCode": "ZA",
+		"countryName": "South Africa",
+		"stateCode": "GP",
+		"stateName": "Gauteng",
+		"latitude": "-26.10581",
+		"longitude": "28.06183",
+		"population": 6354,
+		"timezone": "Africa/Johannesburg",
+		"geonameId": 957811
+	},
+	{
+		"name": "Sandton",
+		"countryCode": "ZA",
+		"countryName": "South Africa",
+		"stateCode": "GP",
+		"stateName": "Gauteng",
+		"latitude": "-26.104",
+		"longitude": "28.054",
+		"population": 222415,
+		"timezone": "Africa/Johannesburg",
+		"geonameId": 957654
 	},
 	{
 		"name": "Sannieshof",
