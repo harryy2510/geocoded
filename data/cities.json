@@ -1569492,6 +1569492,18 @@
 		"geonameId": 3175181
 	},
 	{
+		"name": "Lampugnano",
+		"countryCode": "IT",
+		"countryName": "Italy",
+		"stateCode": "MI",
+		"stateName": "Città metropolitana di Milano",
+		"latitude": "45.48705",
+		"longitude": "9.12519",
+		"population": 4240,
+		"timezone": "Europe/Rome",
+		"geonameId": 12022725
+	},
+	{
 		"name": "Lana",
 		"countryCode": "IT",
 		"countryName": "Italy",
@@ -2488071,6 +2488083,18 @@
 		"name": "Hirnyk",
 		"countryCode": "UA",
 		"countryName": "Ukraine",
+		"stateCode": "09",
+		"stateName": "Luhansk",
+		"latitude": "48.07017",
+		"longitude": "39.19371",
+		"population": 907,
+		"timezone": "Europe/Kyiv",
+		"geonameId": 708394
+	},
+	{
+		"name": "Hirnyk",
+		"countryCode": "UA",
+		"countryName": "Ukraine",
 		"stateCode": "14",
 		"stateName": "Donetsk",
 		"latitude": "48.05728",
@@ -2683534,18 +2683558,6 @@
 		"population": 1155,
 		"timezone": "America/New_York",
 		"geonameId": 5161684
-	},
-	{
-		"name": "Malvern",
-		"countryCode": "US",
-		"countryName": "United States",
-		"stateCode": "PA",
-		"stateName": "Pennsylvania",
-		"latitude": "40.03622",
-		"longitude": "-75.51381",
-		"population": 3430,
-		"timezone": "America/New_York",
-		"geonameId": 5199600
 	},
 	{
 		"name": "Malverne",

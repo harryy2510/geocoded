@@ -84080,7 +84080,7 @@
 		"population": 399654,
 		"type": "province",
 		"native": "إقليم الحسيمة",
-		"wikidataId": "Q1969619",
+		"wikidataId": "",
 		"translations": {
 			"fr": "Al-Hoceima",
 			"ar": "إقليم الحسيمة"
@@ -84351,11 +84351,11 @@
 		"latitude": "30.02948",
 		"longitude": "-9.30909",
 		"timezone": "Africa/Casablanca",
-		"capital": "Biougra",
+		"capital": null,
 		"population": 371102,
 		"type": "province",
 		"native": "إقليم شتوكة أيت باها",
-		"wikidataId": "Q2424820",
+		"wikidataId": "",
 		"translations": {
 			"fr": "Chtouka-Ait-Baha",
 			"ar": "إقليم شتوكة أيت باها"
@@ -84705,7 +84705,7 @@
 		"population": 1061435,
 		"type": "province",
 		"native": "إقليم القنيطرة",
-		"wikidataId": "Q284878",
+		"wikidataId": "",
 		"translations": {
 			"fr": "Kenitra",
 			"ar": "إقليم القنيطرة"
@@ -84792,11 +84792,11 @@
 		"latitude": "27.83333",
 		"longitude": "-12.33333",
 		"timezone": "Africa/Casablanca",
-		"capital": "Laayoune",
+		"capital": null,
 		"population": 238096,
 		"type": "province",
 		"native": "إقليم العيون",
-		"wikidataId": "Q631610",
+		"wikidataId": "",
 		"translations": {
 			"fr": "Province de  Laâyoune",
 			"ar": "إقليم العيون"

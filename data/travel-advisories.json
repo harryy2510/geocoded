@@ -1057,7 +1057,7 @@
 			"alertStatus": [
 				"avoid_all_but_essential_travel_to_parts"
 			],
-			"updatedAt": "2026-11-01T19:30:00Z",
+			"updatedAt": "2026-11-20T13:14:04Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/ecuador"
 		}
 	},
@@ -3825,7 +3825,7 @@
 		"uk": {
 			"destination": "USA",
 			"alertStatus": [],
-			"updatedAt": "2026-11-14T02:26:03Z",
+			"updatedAt": "2026-11-20T19:57:12Z",
 			"url": "https://www.gov.uk/foreign-travel-advice/usa"
 		}
 	},
